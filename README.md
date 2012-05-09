@@ -8,7 +8,7 @@ to deal with the HTTP networking protocol.
 <http://zn.stfx.eu>
 
 
-## Please read the [Smalltalk Object Notation](https://github.com/svenvc/zinc/blob/master/ston-paper.md) paper
+## Please read the [Zinc HTTP Components](https://github.com/svenvc/zinc/blob/master/zinc-http-components-paper.md) paper
 
 
 *Sven Van Caekenberghe* 
