@@ -238,8 +238,7 @@ To install a local failure handler, there is the #ifFail: option.
 This will invoke a block, optionally passing an exception, whenever something goes wrong.
 Together, this allows the above code to be rewritten as follows.
 
-    | client |
-    client := ZnClient new
+    ZnClient new
       enforceHttpSuccess: true;
       ifFail: [ :exception | 
                   self inform: 'Cannot get numbers: ', exception printString ];
@@ -363,6 +362,69 @@ When producing an external representation, proper encoding will take place.
 In a later subsection, we will have a more detailed look at the capabilities of ZnUrl as a standalone object.
 
 
+## ZnClient lifecycle
+
+
+HTTP 1.1 defaults to keeping the client connection to a server open, and the server will do the same.
+This is useful and faster if you to issue more than one request.
+ZnClient implements this behavior by default.
+
+    Array streamContents: [ :stream | | client |
+      client := ZnClient new url: 'http://zn.stfx.eu'.
+      (1 to: 10) collect: [ :each | | url |
+        url := '/random/', each asString.
+        stream nextPut: (client path: url; get) ].
+      client close ].
+
+The above example sets up a client to connect to a specific host.
+Then it collects the results of 10 different requests, asking for random strings of a specific size.
+All request will go over the same network connection.
+
+Neither party is required to keep the connection open for a long time, as this consumes resources.
+Both parties should be prepared to deal with connections closing, this is not an error.
+ZnClient will try to reuse an existing connection and reconnect once if this reuse fails.
+The option connectionReuseTimeout limits how old a connection can be for reuse to be attempted.
+
+Note how we also close the client. A network connection is an external resource, like a file, 
+that should be properly closed after use.
+If you don't do that, they will get cleaned up eventually by the system, but it is more efficient to do it yourself.
+
+In many situations, you only want to do one single request.
+HTTP 1.1 has provisions for this situation.
+The beOneShot option of ZnClient will do just that.
+
+    ZnClient new
+      beOneShot;
+      get: 'http://zn.stfx.eu/numbers.txt'.
+
+With the beOneShot option, the client notifies the server that it will do just one request 
+and both parties will consequently close the connection automatically. An explicit close it thus not needed.
+
+
+## Basic Authentication
+
+
+There are various techniques to add authentication, a mechanism to control who accesses which resources, to HTTP.
+This is orthogonal to HTTP itself.
+The simplest and most common form of authentication is called 'Basic Authentication'.
+
+    ZnClient new
+      username: 'john@hacker.com' password: 'trustno1';
+      get: 'http://www.example.com/secret.txt'.
+
+That is all there is to it.
+If you want to understand how this works, look at the implementation of 
+ZnRequest>>#setBasicAuthenticationUsername:password:
+
+Basic authentication over plain HTTP is insecure because it transfers your username/password combination 
+obfuscated by encoding it using the Base64 encoding.
+When used over HTTPS, basic authentication is secure though.
+
+Note that when sending multiple requests while reusing the same client, 
+authentication is reset for each request, 
+to prevent the accidental transfer of sensitive data.
+
+
 ## Content-types, mime-types and the accept header
 
 
@@ -445,13 +507,73 @@ Note that the content-type and content-length headers will be set,
 as if there was an entity, although none is transferred. 
 
 
+## Running a simple HTTP server
+
+
+Getting an independent HTTP server up and running inside your Smalltalk image is surprisingly easy.
+
+    ZnServer startDefaultOn: 1701.
+
+Don't just try this yet. 
+To be able to see what is going on, it is better to try this with logging enabled.
+
+    (ZnServer defaultOn: 1701)
+      logToTranscript;
+      start.
+
+So we are starting an HTTP server listening on port 1701.
+Using a port below 1024 requires special OS level priviledges, ports like 8080 might already be in use.
+Now just visit <http://localhost:1701> with your browser to see the Zn welcome page.
+Or you can try accessing the welcome page using Zn itself.
+
+    ZnClient new get: 'http://localhost:1701'.
+
+On the Transcript you should see output related to the server's activities.
+
+    2012-05-10 13:09:10 879179 I Starting ZnManagingMultiThreadedServer HTTP port 1701
+    2012-05-10 13:09:10 580596 D Initializing server socket
+    2012-05-10 13:09:20 398924 D Executing request/response loop
+    2012-05-10 13:09:20 398924 I Read a ZnRequest(GET /)
+    2012-05-10 13:09:20 398924 T GET / 200 1195B 0ms
+    2012-05-10 13:09:20 398924 I Wrote a ZnResponse(200 OK text/html;charset=utf-8 1195B)
+    2012-05-10 13:09:20 398924 I Read a ZnRequest(GET /favicon.ico)
+    2012-05-10 13:09:20 398924 T GET /favicon.ico 200 318B 0ms
+    2012-05-10 13:09:20 398924 I Wrote a ZnResponse(200 OK image/vnd.microsoft.icon 318B)
+    2012-05-10 13:09:50 398924 D ConnectionTimedOut: Data receive timed out. while reading request
+    2012-05-10 13:09:50 398924 D Closing stream
+
+You can see the server starting and initializing its server socket on which it listens for incoming connections.
+When a connection comes in, it starts executing its request-response loop.
+Then it gets a GET request for / (the home page), for which it answers a 200 OK response with 1195 bytes of HTML.
+The browser also asks for a favicon.ico, which the server supplies.
+The request-response loop is kept alive for some time and usually closes when the other end does.
+Although it looks like an error, it actually is normal, expected behavior.
+
+Zn manages a default server to easy interactive experimentation. 
+The default server also survives image save and restart cycles.
+All this makes it extra convenient to access the server object itself for further inspection or to stop the server.
+
+    ZnServer default.
+    ZnServer stopDefault.
+
+The Transcript output will confirm what happens.
+
+    2012-05-10 13:14:20 580596 D Wait for accept timed out
+    2012-05-10 13:19:20 580596 D Wait for accept timed out
+    2012-05-10 13:19:42 879179 D Releasing server socket
+    2012-05-10 13:19:42 879179 I Stopped ZnManagingMultiThreadedServer HTTP port 1701
+
+Due to its implementation, the server will print an 'Wait for accept timed out' debug notification every 5 minutes.
+Again, although it looks like an error, it is by design and normal, expected behavior.
+
+
+
 ## Todo
 
 This is a list of subjects that should be in the paper:
 
-1. using basic authentication
-1. reusing a client for multiple request (reuse timeout)
-1. issues related to reusing a client 
+### Client related
+
 1. cookie handling
 1. client redirects
 1. general client option mechanism
@@ -472,11 +594,10 @@ This is a list of subjects that should be in the paper:
 1. client streaming
 1. proxy options
 
-1. running an http server
+### Server related
+
 1. delegate & handleRequest:
 1. authenticator & authenticateRequest:do:
-1. default server
-1. starting & stopping server
 1. managed servers (register/unregister)
 1. server port, server bindingAddress
 1. server logging
@@ -489,6 +610,8 @@ This is a list of subjects that should be in the paper:
 1. value delegate
 1. monticello server delegate
 1. dispatcher delegate
+
+### Framework related
 
 1. zn url features
 1. zn mimetype features
