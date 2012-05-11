@@ -424,6 +424,136 @@ Note that when sending multiple requests while reusing the same client,
 authentication is reset for each request, 
 to prevent the accidental transfer of sensitive data.
 
+Beware that basic authentication is not the same as a web application where you have to log in using a form.
+See the subsection about cookies and sessions for an example of how this works.
+
+
+## Submitting HTML forms
+
+
+In many web applications HTML forms are used.
+Examples are forms to enter a search string, a form with a username and password to log in
+or complicated registration forms.
+The classic, most common way this is implemented is by sending the data entered in the fields
+to the server when a submit button is clicked.
+It is possible to implement the same behavior programmatically using ZnClient.
+
+First you have to find out how the form is implemented by looking at the HTML code.
+Here is an example.
+
+    <form action="search-handler" method="POST" enctype="application/x-www-form-urlencoded">
+      Search for: <input type="text" name="search-field"/>
+      <input type="submit" value="Go!"/>
+    </form>
+
+This form shows one text input field, preceded by a 'Search for:' label and followed by
+a submit button with 'Go!' as label. 
+Assuming this appears on a page with URL http://www.search-engine.com/
+we can implement the behavior of the browser when the user clicks the button,
+submitting or sending the form data to the server.
+
+    ZnClient new
+      url: 'http://www.search-engine.com/search-handler';
+      formAt: 'search-field' put: 'Pharo Smalltalk';
+      post.
+
+The URL is composed by combining the URL of the page that contains the form with the action specified.
+The default form encoding is, as explicitely specified here, 'application/x-www-form-urlencoded'.
+By using the #formAt:put: method to set the value of a field, 
+an entity of type ZnApplicationFormUrlEncodedEntity will be created if needed,
+and the field name/value association will be stored in it.
+When finally #post is invoked, the HTTP request sent to the server will include
+a properly encoded entity. 
+As far as the server is concerned, it will seems as if a real user submitted the form.
+Consequently, the response should be as when you submit the form using a browser.
+Be careful to include all relevant fields, even the hidden ones.
+
+There is a second type of form encoding called 'multipart/form-data'.
+Instead of adding fields, you add ZnMimePart instances. 
+Suppose the HTML form specified a different enctype.
+
+    <form action="search-handler" method="POST" enctype="multipart/form-data">
+      Search for: <input type="text" name="search-field"/>
+      <input type="submit" value="Go!"/>
+    </form>
+
+The code to do the upload would then be as follows.
+
+    ZnClient new
+      url: 'http://www.search-engine.com/search-handler';
+      addPart: (ZnMimePart fieldName: 'search-field' value: 'Pharo Smalltalk');
+      post.
+
+In this case, an entity of type ZnZnMultiPartFormDataEntity is created and used.
+This type is often used in forms that upload files. Here is an example.
+
+    <form action="upload-handler" method="POST" enctype="multipart/form-datad">
+      Photo file: <input type="file" name="photo-file"/>
+      <input type="submit" value="Upload!"/>
+    </form>
+
+This would be the way to do the upload programmatically.
+
+    ZnClient new
+      url: 'http://www.search-engine.com/upload-handler';
+      addPart: (ZnMimePart fieldName: 'photo-file' fileNamed: '/Pictures/cat.jpg');
+      post.
+
+Sometimes, the form's submit method is GET instead of POST, 
+just send #get instead of #post to the client.
+Note that this technique of sending form data to a server is different than
+what happens with raw POST or PUT requests using a REST API.
+In a later subsection we will come back to this. 
+
+
+## Cookies and sessions
+
+
+HTTP is by design a stateless protocol: each request/response cycle is independent.
+This principle is crucial to the scaleability of the internet.
+However, in web applications like a shopping cart in an online store, state is needed.
+During your interaction with the web application, the server needs to know that your 
+request/responses are part of your session: you log in, you add items to your shopping cart 
+and you finally check out and pay. 
+It would be problematic if the server mixed the request/responses of different users.
+
+The most commonly used technique to track state across different request/response
+cycles is the use of so called cookies. 
+Cookies are basically key/value pairs connected to a specific domain.
+Using a special header, the server asks the client to remember or update the value of a cookie for a domain.
+On subsequent requests to the same domain, the client will use a special header to present the cookie and 
+its remembered value again to the server.
+
+As we saw before, a ZnClient instance is essentially stateful.
+It not only tries to reuse a network connection but it also maintains a session
+using a ZnUserAgentSession object.
+One of the main functions of this session object is to manage cookies,
+just like your browser does.
+ZnCookie objects are held in a ZnCookieJar inside the session object.
+
+Cookie handling will happen automatically.
+This is a hypothetical example of how this might work, 
+assuming a site where you have to log in before you are able to access a specific file.
+
+    ZnClient
+      url: 'http://cloud-storage.com/login';
+      formAt: 'username' put: 'john.doe@acme.com';
+      formAt: 'password' put: 'trustno1';
+      post;
+      get: 'http://cloud-storage.com/my-file'.
+
+After the #post, the server will presumably set a cookie to acknowledge a successful login.
+When a specific file is next requested, the client presents the cookie to prove the login.
+The server knows it can send back the file because it recognizes the cookie as valid.
+By sending #session to the client object, you can access the remembered cookies.
+
+
+## PUT and POST
+
+
+## DELETE and other HTTP methods
+
+
 
 ## Content-types, mime-types and the accept header
 
@@ -491,6 +621,37 @@ A nice feature here, more as an example, are some direct ways to ask for image r
 When you explore the implementation, you will notice that ZnEasy uses a ZnClient object internally.
 
 
+## Headers
+
+
+HTTP meta data, both for requests and for responses, is specified using headers.
+These are key/value pairs, both strings.
+A large number of predefined headers exists, see this 
+[List of HTTP header fields](http://en.wikipedia.org/wiki/HTTP_header).
+The exact semantics of each header, especially their value, can be very complicated.
+
+Although headers are key/value pairs, they are more than a regular dictionary.
+There can be more values for the same key and keys are often written using a canonical capitalization, like 'Content-Type'.
+
+ZnClient allows you to easily specify custom headers for which there is not yet a predefined accessor, which is most of them.
+At the framework level, ZnResponse and ZnRequest offer some more predefined accessors, 
+as well as a way to set and query any custom header by accessing their headers sub object. 
+The following are all equivalent:
+
+    ZnClient new accept: 'text/*'.
+    ZnClient new request setAccept: 'text/*'.
+    ZnClient new request headers at: 'Accept' put: 'text/*'. 
+    ZnClient new request headers at: 'ACCEPT' put: 'text/*'. 
+    ZnClient new request headers at: 'accept' put: 'text/*'. 
+
+Once a request is executed, you can query the response headers like this
+
+    client response isConnectionClose.
+    (client response headers at: 'Connection' ifAbsent: [ '' ]) sameAs: 'close'.
+
+There is also the option to bulk transfer any keyedCollection holding a set of key/value pairs.
+
+
 ## Just the meta data, please
 
 
@@ -505,6 +666,53 @@ This is called a HEAD request.
 Since there is no contents, we have to look at the response object.
 Note that the content-type and content-length headers will be set,
 as if there was an entity, although none is transferred. 
+
+
+## Client options and policies
+
+
+To handle its large set of options, ZnClient implements a uniform, generic option mechanism
+using the key methods #optionAt:put: and #optionAt:ifAbsent: (this last one always defines an explicit default),
+storing them lazily in a dictionary.
+The method category 'options' includes all accessor to actual settings.
+
+Options are generally named after their accessor. An exception is #beOneShot.
+For example, the timeout option has a getter named #timeout and setter named #timeout:
+whose implementation defines its default
+
+    ^ self 
+        optionAt: #timeout
+        ifAbsent: [ ZnNetworkingUtils defaultSocketStreamTimeout ]
+
+The set of all option defaults defines the default policy of ZnClient.
+For certain scenarios, there are policy methods that set several options at once.
+The most useful one is called systemPolicy. 
+It currently does the following.
+
+    self 
+       enforceHttpSuccess: true;
+       enforceAcceptContentType: true;
+       numberOfRetries: 2
+
+This kind of behavior is good practice when system level code does an HTTP call.
+
+
+## Proxy settings
+
+
+In some networks you do not visit internet web servers directly, but indirectly via a proxy.
+Such a proxy controls and regulates traffic.
+A proxy can improve performance by caching often used resources,
+but only if there is a sufficient hit rate.
+
+Zn client functionality will automatically use the proxy settings defined in your Pharo image.
+The UI to set a proxy host, port, username or password can be found in the Settings browser
+under the Network category.
+
+Accessing localhost will bypass the proxy.
+To find out more about Zn's usage of the proxy settings, 
+start by browsing the 'proxy' method category of ZnNetworkingUtils.
+
 
 
 ## Running a simple HTTP server
@@ -567,20 +775,101 @@ Due to its implementation, the server will print an 'Wait for accept timed out' 
 Again, although it looks like an error, it is by design and normal, expected behavior.
 
 
+## The default server delegate
+
+
+Out of the box, a ZnServer will have a certain functionality that is related to testing and debugging.
+This behavior is implemented by the ZnDefaultServerDelegate object.
+Assuming your server is running locally on port 1701, this is the list of URLs that are available.
+
+- <http://localhost:1701/> the default for /, equivalent to /welcome
+- <http://localhost:1701/welcome> standard Zn greeting page 
+- <http://localhost:1701/favicon.ico> nice Zn favicon used by browsers
+- <http://localhost:1701/help> a list of these URLs
+- <http://localhost:1701/status> a textual page showing some server internals
+- <http://localhost:1701/dw-bench> a dynamically generated page for benchnarking
+- <http://localhost:1701/unicode> a UTF-8 encoded page listing the first 591 Unicode characters
+- <http://localhost:1701/random> a random string of characters
+- <http://localhost:1701/bytes> a collection of bytes 
+- <http://localhost:1701/echo> a textual response echoing the request
+
+The random handler normally returns 64 characters, you can specify your own size as well.
+For example, /random/1024 will respond with a 1Kb random string.
+The random pattern consists of hexadecimal digits and ends with a linefeed.
+The standard, slower UTF-8 encoding is used instead of the faster LATIN-1 encoding.
+
+The bytes handler has a similar size option. Its output is in the form of a repeating BCDA pattern.
+When requesting equally sized byte patterns repeatably, some extra server side caching will improve performance.
+
+The echo handler is used extensively by the unit tests. 
+It not only list the request headers as received by the server,
+but even the entity if there is one.
+In case of a non-binary entity, the textual contents will be included.
+This is really useful to debug PUT or POST requests.
+
+
+## Logging
+
+
+Log output consists of an arbitrary message preceded by a number of fixed fields.
+Here is an example of a server log.
+
+    2012-05-10 13:09:10 879179 I Starting ZnManagingMultiThreadedServer HTTP port 1701
+    2012-05-10 13:09:10 580596 D Initializing server socket
+    2012-05-10 13:09:20 398924 D Executing request/response loop
+    2012-05-10 13:09:20 398924 I Read a ZnRequest(GET /)
+    2012-05-10 13:09:20 398924 T GET / 200 1195B 0ms
+    2012-05-10 13:09:20 398924 I Wrote a ZnResponse(200 OK text/html;charset=utf-8 1195B)
+
+The first two fields are the date and time in a fixed sized format.
+The next number is a fixed sized hash of the process ID.
+Note how 3 different processes are involved: the one starting the server (probably the UI process),
+the actual server listening process, and the client worker process spawned to handle the request.
+Finally, the single capital letter indicates the category. 
+Then the actual message is printed.
+  
+Both ZnClient and ZnServer implement logging using a similar mechanism based on the announcements framework.
+ZnLogEvents are subclasses of Announcement sent by an HTTP server or client containing logging information.
+A log event has a TimeStamp, a Process ID, a category and a message.
+The following categories are used: #info (I), #debug (D) and #transaction (T).
+
+To help in the implementation, a ZnLogSupport object is used.
+A hierarchy of listeners under ZnLogListener can then be used to process log events.
+Log listeners feature a filtering mechanism.
+The following concrete listeners are provided.
+
+- ZnTranscriptLogger
+- ZnFileLogger
+- ZnStandardOutputLogger
+- ZnMemoryLogger
+
+To log something, send #info: #debug: or #transaction: to the log support object of a client or server (accessible by #log).
+The argument can be either a string or a block that will only be executed when logging is actually enabled.
+
+    server log info: [ 'User ', self getUsername, ' logged in.' ].
+
+The Zn logging mechanism using an internal lock to make it thread safe, but it does serialize logging by multiple processes.
+It is important to make the time spent inside the log block short and non blocking.
+
+You can customize a listener before adding it to a log support.
+The following example asks the default server to log just transaction events to a file named 'zn.log', next to your image.
+
+    | logger |
+    logger := ZnFileLogger onFileNamed: (FileDirectory default / 'zn.log') pathName.
+    logger filter: #transaction.   
+    ZnServer default log addListener: logger.
+
 
 ## Todo
 
+
 This is a list of subjects that should be in the paper:
+
 
 ### Client related
 
-1. cookie handling
 1. client redirects
-1. general client option mechanism
-1. client session concept
 1. entity hierarchy (string, bytearray, streaming)
-1. form url encoded and multipart form data entities
-1. settings arbitrary headers
 1. special non-predefined methods
 1. delete
 1. put/post difference (location, 201)
@@ -589,10 +878,8 @@ This is a list of subjects that should be in the paper:
 1. client content reader/writer
 1. client download to
 1. client upload entity from
-1. client policies, oneShot
 1. client progress signalling
 1. client streaming
-1. proxy options
 
 ### Server related
 
@@ -600,7 +887,6 @@ This is a list of subjects that should be in the paper:
 1. authenticator & authenticateRequest:do:
 1. managed servers (register/unregister)
 1. server port, server bindingAddress
-1. server logging
 1. single threaded, multi threaded, managed multi threaded variants
 1. last request, last response
 1. server reader customization
@@ -615,7 +901,6 @@ This is a list of subjects that should be in the paper:
 
 1. zn url features
 1. zn mimetype features
-1. logging options
 1. resource protection limits
 1. constants and global settings
 1. zn character encoding support
