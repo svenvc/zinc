@@ -484,7 +484,7 @@ The code to do the upload would then be as follows.
       addPart: (ZnMimePart fieldName: 'search-field' value: 'Pharo Smalltalk');
       post.
 
-In this case, an entity of type ZnZnMultiPartFormDataEntity is created and used.
+In this case, an entity of type ZnMultiPartFormDataEntity is created and used.
 This type is often used in forms that upload files. Here is an example.
 
     <form action="upload-handler" method="POST" enctype="multipart/form-datad">
@@ -519,17 +519,18 @@ It would be problematic if the server mixed the request/responses of different u
 
 The most commonly used technique to track state across different request/response
 cycles is the use of so called cookies. 
-Cookies are basically key/value pairs connected to a specific domain.
+Cookies are basically key/value pairs connected to a specific server domain.
 Using a special header, the server asks the client to remember or update the value of a cookie for a domain.
 On subsequent requests to the same domain, the client will use a special header to present the cookie and 
 its remembered value again to the server.
+Semantically, the server manages a variable's value on the client.
 
 As we saw before, a ZnClient instance is essentially stateful.
 It not only tries to reuse a network connection but it also maintains a session
 using a ZnUserAgentSession object.
 One of the main functions of this session object is to manage cookies,
 just like your browser does.
-ZnCookie objects are held in a ZnCookieJar inside the session object.
+ZnCookie objects are held in a ZnCookieJar object inside the session object.
 
 Cookie handling will happen automatically.
 This is a hypothetical example of how this might work, 
@@ -543,7 +544,7 @@ assuming a site where you have to log in before you are able to access a specifi
       get: 'http://cloud-storage.com/my-file'.
 
 After the #post, the server will presumably set a cookie to acknowledge a successful login.
-When a specific file is next requested, the client presents the cookie to prove the login.
+When a specific file is next requested from the same domain, the client presents the cookie to prove the login.
 The server knows it can send back the file because it recognizes the cookie as valid.
 By sending #session to the client object, you can access the remembered cookies.
 
@@ -551,8 +552,69 @@ By sending #session to the client object, you can access the remembered cookies.
 ## PUT and POST
 
 
+A regular request for a resource is done using a GET request.
+A GET request does not send an entity to the server.
+The only way for a GET request to transfer information to the server is by 
+encoding it in the URL, either in the path or in query variables.
+To be 100% correct we should add that data can be sent as custom headers as well.
+
+HTTP provides for two methods (or verbs) to send information to a server.
+These are called PUT and POST. They both send an entity to transfer data to the server.
+
+In the subsection about submitting HTML forms we already saw how POST is used
+to send either a ZnApplicationFormUrlEncodedEntity or ZnMultiPartFormDataEntity
+containing structered data to a server.
+
+Apart from that, it is also possible to send a raw entity to a server.
+Of course, the server needs to be prepared to handle this kind of entity coming in.
+Here are a couple of examples of doing a raw PUT and POST request.
+
+    ZnClient new
+       put: 'http://zn.stfx.eu/echo' contents:'Hello there!'.
+
+    ZnClient new
+       post: 'http://zn.stfx.eu/echo' contents: #[0 1 2 3 4 5 6 7 8 9]. 
+
+    ZnClient new
+       entity: (ZnEntity 
+                  with: '<xml><object><id>42</id></object></xml>'
+                  type: ZnMimeType applicationXml);
+       post.
+
+In the last example we explicitely set the entity to be XML and do a POST.
+In the first two examples, the convenience contents system is used to automatically create
+a ZnStringEntity of type ZnMimeType textPlain and a ZnByteArrayEntity of type ZnMimeType applicationOctectStream.
+
+The difference between PUT and POST is semantic. 
+POST is generally used to create a new resource inside an existing collection or container.
+For this reason, the normal response to a POST request is to return the URL (or URI) of the newly created resource.
+Conventionally, the response will contain a so called location handle accessible via #location and 
+will often repeat that in the entity is sends back.
+When a POST successfully created the resource, its HTTP response will be 201 Created.
+PUT is generally used to update an existing resource of which you know the exact URL (of URI).
+When a PUT is succesful, its HTTP response will be just 200 OK and nothing else will be returned.
+In the subsection about REST Web Service APIs, we will come back to this.
+
+
 ## DELETE and other HTTP methods
 
+
+The fourth member of the common set of HTTP methods is DELETE.
+It is very similar to both GET and PUT: you just specify an URL of the resource that you want to delete or remove.
+When successful, the server will just reply with a 200 OK.
+That is all there is to it.
+
+Certain HTTP based protocols, like WebDAV use even more HTTP methods.
+These can be specified explicitely using the #method: setter and the #execute operation.
+
+    ZnClient new
+       url: 'http://www.apache.org';
+       method: #OPTIONS;
+       execute;
+       response.
+
+Since the OPTIONS request does not return an entity, but only meta data we access the response.
+Have a look at the 'Allow' header.
 
 
 ## Content-types, mime-types and the accept header
@@ -697,6 +759,37 @@ It currently does the following.
 This kind of behavior is good practice when system level code does an HTTP call.
 
 
+## Entity hierarchy
+
+By now we used almost all concrete subclasses of ZnEntity:
+
+- ZnStringEntity
+- ZnByteArrayEntity
+- ZnApplicationFormUrlEncodedEntity
+- ZnMultiPartFormDataEntity
+- ZnStreamingEntity
+
+Like all other fundamental Zn domain model objects, these can and are used both by client and servers.
+All ZnEntities have a content type (in bytes) and a content length (a mime-type).
+There basic behavior is that can be written to or read from a binary stream.
+All but the last one are classic, in-memory objects.
+
+ZnStreamingEntity is special: it contains a read or write stream to be used once in one direction only.
+If you want to transfer a 10 Mb file, using a normal entity would result in the 10 Mb being taken into memory.
+With a streaming entity, a file stream is opened to the file, and the data is then copied using a buffer of a couple of tens of Kb.
+This is obviously more efficient.
+The limitation is that this only works if the exact size is known upfront.
+The subsection about streaming, uploading and downloading contains higher level examples of using ZnStreamingEntities.
+
+
+## Content readers and writers
+
+
+
+## Streaming, downloading and uploading
+
+
+
 ## Proxy settings
 
 
@@ -712,7 +805,6 @@ under the Network category.
 Accessing localhost will bypass the proxy.
 To find out more about Zn's usage of the proxy settings, 
 start by browsing the 'proxy' method category of ZnNetworkingUtils.
-
 
 
 ## Running a simple HTTP server
@@ -869,10 +961,6 @@ This is a list of subjects that should be in the paper:
 ### Client related
 
 1. client redirects
-1. entity hierarchy (string, bytearray, streaming)
-1. special non-predefined methods
-1. delete
-1. put/post difference (location, 201)
 1. setting a custom port
 1. using if modified since
 1. client content reader/writer
