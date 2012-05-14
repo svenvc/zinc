@@ -4,6 +4,8 @@
 
 *May 2012*
 
+*(This is a draft for inclusion as a chapter in the 'Pharo By Example 2' book.)*
+
 
 HTTP is arguably the most important application level network protocol for what we consider to be the internet.
 It is the protocol that allows web browsers and web servers to communicate.
@@ -344,6 +346,7 @@ You can build the same URL with the ZnUrl object, in several ways.
     ZnUrl new
       scheme: #http;
       host: 'www.google.com';
+      port: 80;
       addPathSegment: 'search';
       queryAt: 'q' put: 'Pharo Smalltalk';
       yourself.
@@ -355,7 +358,7 @@ The printable representation of the URL is
 This can easily be parsed again into a ZnUrl object
 
     'http://www.google.com/search?q=Pharo%20Smalltalk' asZnUrl
-    'http://www.google.com/search?q=Pharo Smalltalk' asZnUrl
+    'http://www.google.com:80/search?q=Pharo Smalltalk' asZnUrl
 
 Note how the ZnUrl parser is forgiving with respect to the space, like most browser would do.
 When producing an external representation, proper encoding will take place.
@@ -661,6 +664,28 @@ Again, this will be handled by the #ifFail: block, when specified.
 This technique further improves your HTTP interaction.
 
 
+## Redirects
+
+
+Sometimes when requesting a URL, an HTTP server will not answer but redirect you to another location.
+Seaside actually does this on each request.
+This is done with a 301 or 302 response code.
+You can ask a ZnResponse whether its a redirect with #isRedirect.
+In case of a redirect response, the 'Location' header will contain the location the server redirects you to.
+You can access that URL using #location.
+
+By default, ZnClient will follow redirects automatically for up to 3 redirects.
+You won't even notice unless you activate logging.
+
+If for some reason you want to disable this feature, send a #followRedirects: false to your client.
+To modified the maximum number of redirects that could be followed, use #maxNumberOfRedirects:.
+
+Following redirects can be tricky when PUT or POST are involved.
+Zn implements the common behavior of changing a redirected PUT or POST into a GET while dropping the body entity.
+Cookies will be resubmitted.
+Zn also handles relative redirect URLs, although these are not strictly part of the standard.
+
+
 ## ZnEasy, typing even less, accessing images as forms
 
 
@@ -785,9 +810,144 @@ The subsection about streaming, uploading and downloading contains higher level 
 ## Content readers and writers
 
 
+As mentioned before, ZnMessages (ZnRequests and ZnResponses) can hold an optional ZnEntity as body.
+In the subsection about the ZnEntity hierarchy we saw that there are a couple of different types.
+But knowing that a ZnStringEntity has a content type of XML or JSON is not enough to interpret the data correctly.
 
-## Streaming, downloading and uploading
+You might need a parser to convert the representation to Smalltalk or 
+a writer to convert Smalltalk into the proper representation.
+That is where the options #contentReader and #contentWriter are useful.
 
+If the content reader is nil (the default), #contents will return the #contents of the response object,
+usually a String or ByteArray. 
+To customize the content reader, you specify a block that will be given the incoming entity 
+and that is then supposed to parse the incoming representation.
+
+    ZnClient new
+      systemPolicy;
+      url: 'http://easy.t3-platform.net/rest/geo-ip';
+      queryAt: 'address' put: '81.83.7.35';
+      accept: ZnMimeType applicationJson;
+      contentReader: [ :entity | JSJsonParser parse: entity contents ];
+      get.
+
+In the above example, #get (which returns #contents) will no longer return a String containing JSON,
+but the Smalltalk dictionary that was encoded as JSON.
+BTW, the above example returns a country code, with central longitute/latitude coordinates, given an IP address.
+Note also that by using #systemPolicy in combination with an #accept: we handle most error cases
+before the content reader start doing its work, so it does no longer have to check for good incoming data.
+In any case, when the #contentReader throws an exception, it can be caught by the #ifFail: block.
+
+Here is a simpler example just parsing lines of numbers. 
+Note how we can be fairly sure that the result will be a collection of numbers that we can sum together.
+
+    (ZnClient new
+       systemPolicy;
+       url: 'http://zn.stfx.eu/zn/numbers.txt';
+       accept: ZnMimeType textPlain;
+       contentReader: [ :entity | 
+                           entity contents lines 
+                             collect: [ :each | each asInteger ] ];
+      get) sum.
+
+If the content writer is nil (the default), #contents: will take a Smalltalk object and pass it 
+to ZnEntity class' #with: instance creation method.
+This will create either a text/plain String entity or an application/octectstream ByteArray entity.
+You could further customize the entity by sending #contentType: with another mime type.
+Or you could completely skip the #contents: mechanism and supply your own entity to #entity:.
+
+To customize the content writer, you specify a block that when given a Smalltalk object 
+is then supposed to create and return an entity.
+Here is a theoretical example.
+
+    ZnClient new
+      url: 'http://internet-calculator.com/sum';
+      contentWriter: [ :numberCollection | 
+                          ZnEntity text: 
+                            (Character space join: 
+                               (numberCollection collect: [ :each | each asString ])) ];
+      contentReader: [ :entity | entity contents asNumber ];
+      post.
+
+Assuming there is an web service at http://internet-calculator.com where you can send numbers to,
+we send a whitespace separated list of numbers to its sum URI and expect a number back.
+Exception occuring in the content writer can be caught with the #ifFail: block.
+
+
+## Downloading and uploading
+
+
+Often, you want to download a resource from some internet server and store its contents in a file.
+The well known curl and wget Unix utilities are often used to do this in scripts.
+There is a handly convenience method in ZnClient to do just that.
+
+    ZnClient new
+      url: 'http://zn.stfx.eu/zn/numbers.txt';
+      downloadTo: FileDirectory default pathName.
+
+The example will download the URL and save it in a file named 'numbers.txt' next to your image.
+The argument to #downloadTo: is a path string, naming either a file or a directory.
+When it is a directory, the last component of the URL will be used to create a new file in that directory.
+When it is a file, that file will be used as given.
+Additionally, the #downloadTo: operation will use streaming so that a large file will not be taken into memory all at once,
+but with be copied in a loop using a buffer.
+
+The inverse, uploading the raw contents of file, is just as easy using the #uploadEntityFrom: convenience method.
+Given a file path string, it will set the current request entity to be equal 
+to a ZnStreamingEntity reading from byte from the named file. 
+The content type will be set based on the file name extension, a guess.
+If needed you can next override that mime type using #contentType:.
+Here is a hypothetical example.
+
+    ZnClient new
+      url: 'http://cloudstorage.com/myfiles/';
+      username: 'john@foo.co.uk' password: 'asecret';
+      uploadEntityFrom: (FileDirectory default / 'numbers.txt') pathName;
+      post.
+
+The contents of the file 'numbers.txt' will be upload using a POST to the URL specified,
+again using an efficient streaming copy.
+
+
+## Signalling progress
+
+
+Some HTTP operations, particulary those involving large resources, might take some time,
+especially when slower networks or servers are involved.
+During interactive use, Pharo Smalltalk often indicates progress during operations that take a bit longer.
+ZnClient can do that too using the #signalProgess option. By default this is off.
+Here is an artificial example.
+
+    UIManager default informUserDuring: [ :bar |
+      [ ^ ZnClient new
+            signalProgress: true;
+            get: 'http://zn.stfx.eu/echo?delay=2' ]
+        on: HTTPProgress 
+        do: [ :progress | bar value: progress printString. progress resume ] ]
+
+
+## Using If-Modified-Since
+
+
+HTTP has several options to improve the overall web experience.
+One of them is a technique whereby a client that already requested a resource in the past,
+asks a server if that resource has been modified (i.e. is newer) since he last requested it.
+If so, the server will give a quick 304 Not Modified response without sending the resource over again.
+This is done by settings the If-Modified-Since header using #ifModifiedSince:.
+This works both for regular requests as well as for downloads.
+
+    ZnClient new
+      url: 'http://zn.stfx.eu/zn/numbers.txt';
+      ifModifiedSince: (Date year: 2011 month: 1 day: 1);
+      downloadTo: FileDirectory default pathName.
+
+    ZnClient new
+      url: 'http://zn.stfx.eu/zn/numbers.txt';
+      setIfModifiedSince: (Date year: 2012 month: 1 day: 1);
+      get;
+      response.
+
+For this to work, the server has to honor this particular protocol interaction, of course.
 
 
 ## Proxy settings
@@ -957,18 +1117,6 @@ The following example asks the default server to log just transaction events to 
 
 This is a list of subjects that should be in the paper:
 
-
-### Client related
-
-1. client redirects
-1. setting a custom port
-1. using if modified since
-1. client content reader/writer
-1. client download to
-1. client upload entity from
-1. client progress signalling
-1. client streaming
-
 ### Server related
 
 1. delegate & handleRequest:
@@ -987,10 +1135,7 @@ This is a list of subjects that should be in the paper:
 
 ### Framework related
 
-1. zn url features
-1. zn mimetype features
 1. resource protection limits
-1. constants and global settings
 1. zn character encoding support
 1. chunked transfer
 1. gzip transfer
