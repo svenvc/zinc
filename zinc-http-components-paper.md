@@ -983,7 +983,7 @@ To be able to see what is going on, it is better to try this with logging enable
 
 So we are starting an HTTP server listening on port 1701.
 Using a port below 1024 requires special OS level priviledges, ports like 8080 might already be in use.
-Now just visit <http://localhost:1701> with your browser to see the Zn welcome page.
+Now visit <http://localhost:1701> with your browser to see the Zn welcome page.
 Or you can try accessing the welcome page using Zn itself.
 
     ZnClient new get: 'http://localhost:1701'.
@@ -1027,6 +1027,45 @@ Due to its implementation, the server will print an 'Wait for accept timed out' 
 Again, although it looks like an error, it is by design and normal, expected behavior.
 
 
+## Server delegate
+
+
+An HTTP client sends a request and receives a response.
+An HTTP server receives a request and sends a response.
+They are each other's mirror.
+The fundamental Zn framework objects are used to implement both clients and servers.
+
+The functional behavior of a ZnServer is defined by an object called its delegate.
+A delegate implements the key method #handleRequest: which gets the incoming request as parameter
+and has to produce a response as result.
+The delegate can reason purely in terms of a ZnRequest and a ZnResponse.
+The technical side of being an HTTP server, like the networking and (optional) multiprocessing, 
+is handled by the server object.
+Here is the simplest possible server.
+
+    (ZnServer startDefaultOn: 1701)
+       onRequestRespond: [ :request | 
+          ZnResponse ok: (ZnEntity text: 'Hello World!') ]. 
+
+Now go to <http://localhost:1701> or do:
+
+    ZnEasy get: 'http://localhost:1701'.
+
+This server does not even look at the incoming request.
+No matter what, it answers 200 OK with a text/plain string 'Hello World!'.
+The method #onRequestRespond: accepts a block taking a request and should produce a response.
+It is implemented using the helper object ZnValueDelegate, 
+which converts #handleRequest: to #value: on a wrapped block.
+
+To help in debugging a server, enabling logging is important to learn what is going on.
+You can also put breakpoints where ever you want.
+Interrupting a running server can sometimes be a bit hard or produce strange results
+since the server and its spawned handler subprocesses are different from the UI process.
+
+When logging is enabled, the server will also keep track of the last request and response it processed.
+You can inspect these to find out what happened, even if there was no debugger raised.
+
+
 ## The default server delegate
 
 
@@ -1058,6 +1097,30 @@ It not only list the request headers as received by the server,
 but even the entity if there is one.
 In case of a non-binary entity, the textual contents will be included.
 This is really useful to debug PUT or POST requests.
+
+
+## Server authenticator
+
+
+Like a delegate, a ZnServer also has an authenticator object whose functional job it is to 
+authenticate requests. An authenticator has to implement the key #authenticateRequest:do: method
+whose first argument is the incoming request and second argument a block.
+This method has to produce a response, like #handleRequest: does.
+If the request is allowed, the block will be evaluated and produce a response.
+If the request is denied, the authenticator will generate a 401 Unauthorized response.
+One simple authenticator is available to add basic HTTP authentication.
+
+    (ZnServer startDefaultOn: 1701)
+       authenticator: (ZnBasicAuthenticator username: 'admin' password: 'secret').
+
+Now, when you try to visit the server at <http://localhost:1701> 
+you will have to provide a username and password.
+
+    ZnEasy get: 'http://localhost:1701' username: 'admin' password: 'secret'.
+    ZnEasy get: 'http://localhost:1701'.
+
+Using ZnBasicAuthenticator or implementing an alternative is but one of several 
+possibilities to the problem of adding security to a web site or web application.
 
 
 ## Logging
@@ -1112,6 +1175,43 @@ The following example asks the default server to log just transaction events to 
     ZnServer default log addListener: logger.
 
 
+## Server management
+
+
+Servers instances can be started and stopped using #start and #stop.
+By registering a server instance, by sending it #register, it becomes managed.
+That means it will now survive image save and restart.
+This only happens automatically with the #default server,
+for other server instances you have to enable it manually.
+
+The main parameter a server needs is the port on which it will listen.
+Additionally, you can restrict the network interface the server should listen on
+by setting its #bindingAddress: to some IP address.
+The default, nil or #[0 0 0 0], means to listen on all interfaces.
+With an argument of #[127 0 0 0], the server will not respond to request over its normal network,
+but only to request coming from the same host. This is often used to increase security while proxying.
+
+
+## Server variants
+
+
+The class side of ZnServer is actually a facade to instanciate a particular concrete ZnServer subclass,
+as can be seen in #defaultServerClass. The hierarchy looks as follows.
+
+    ZnServer
+      + ZnSingleThreadedServer
+         + ZnMultiThreadedServer
+            + ZnManagedMultiThreadedServers
+ 
+ZnServer is an abstract class. ZnSingleThreadedServer implements the core server functionality.
+It runs in one single process, which means it can only handle one request at a time.
+This one is easier to understand and debug.
+ZnMultiThreadedServer spawns a new process on each incoming request, possibly handling 
+multiple request/response cycles on the same connection.
+ZnManagedMultiThreadedServers keeps explicit track of which connection are alive
+so that they can be stopped when the server stops instead of letting them die out.
+
+
 ## Todo
 
 
@@ -1119,17 +1219,8 @@ This is a list of subjects that should be in the paper:
 
 ### Server related
 
-1. delegate & handleRequest:
-1. authenticator & authenticateRequest:do:
-1. managed servers (register/unregister)
-1. server port, server bindingAddress
-1. single threaded, multi threaded, managed multi threaded variants
-1. last request, last response
-1. server reader customization
 1. seaside adaptor
-1. default delegate
 1. static file server delegate
-1. value delegate
 1. monticello server delegate
 1. dispatcher delegate
 
