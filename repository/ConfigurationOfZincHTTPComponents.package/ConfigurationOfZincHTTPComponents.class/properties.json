@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfZincHTTPComponents",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "SvenVanCaekenberghe 1/15/2011 18:04",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfZincHTTPComponents",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

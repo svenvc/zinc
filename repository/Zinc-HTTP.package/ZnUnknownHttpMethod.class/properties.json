@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 12/11/2011 18:09",
+	"instvars" : [
+		"method" ],
+	"name" : "ZnUnknownHttpMethod",
+	"pools" : [
+		 ],
+	"super" : "ZnParseError",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

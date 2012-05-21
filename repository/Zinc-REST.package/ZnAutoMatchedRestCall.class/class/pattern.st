@@ -1,0 +1,3 @@
+accessing
+pattern
+	^ self subclassResponsibility 

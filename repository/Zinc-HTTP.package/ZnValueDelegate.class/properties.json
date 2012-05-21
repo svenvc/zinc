@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Client-Server",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 12/7/2010 16:14",
+	"instvars" : [
+		"object" ],
+	"name" : "ZnValueDelegate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

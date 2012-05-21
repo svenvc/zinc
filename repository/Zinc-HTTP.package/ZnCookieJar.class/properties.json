@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 12/7/2010 00:01",
+	"instvars" : [
+		"cookies" ],
+	"name" : "ZnCookieJar",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 1/2/2012 19:41",
+	"instvars" : [
+		"limit" ],
+	"name" : "ZnMultiValueDictionary",
+	"pools" : [
+		 ],
+	"super" : "Dictionary",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

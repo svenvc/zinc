@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Deprecated",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 11/8/2011 22:12",
+	"instvars" : [
+		 ],
+	"name" : "ZnClientOld",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

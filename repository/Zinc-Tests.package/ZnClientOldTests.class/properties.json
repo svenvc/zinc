@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ZnClientOldTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

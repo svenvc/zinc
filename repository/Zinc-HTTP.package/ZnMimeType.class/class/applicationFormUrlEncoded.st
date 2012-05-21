@@ -1,0 +1,3 @@
+convenience
+applicationFormUrlEncoded
+	^ self predefinedInstanceAt: #applicationFormUrlEncoded

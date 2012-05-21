@@ -1,0 +1,23 @@
+{
+	"category" : "Zinc-HTTP-Client-Server",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 11/8/2011 22:31",
+	"instvars" : [
+		"request",
+		"response",
+		"connection",
+		"lastUsed",
+		"state",
+		"options",
+		"session",
+		"log" ],
+	"name" : "ZnClient",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

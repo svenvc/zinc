@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Client-Server",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		"ManagedServers" ],
+	"commentStamp" : "SvenVanCaekenberghe 12/22/2011 12:01",
+	"instvars" : [
+		 ],
+	"name" : "ZnServer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

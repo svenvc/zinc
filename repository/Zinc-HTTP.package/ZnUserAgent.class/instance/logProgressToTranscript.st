@@ -1,0 +1,3 @@
+accessing
+logProgressToTranscript
+	self logToTranscript

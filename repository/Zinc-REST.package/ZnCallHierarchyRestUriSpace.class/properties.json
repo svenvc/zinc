@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-REST-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 6/15/2011 16:16",
+	"instvars" : [
+		"rootClass" ],
+	"name" : "ZnCallHierarchyRestUriSpace",
+	"pools" : [
+		 ],
+	"super" : "ZnRestUriSpace",
+	"type" : "normal" }

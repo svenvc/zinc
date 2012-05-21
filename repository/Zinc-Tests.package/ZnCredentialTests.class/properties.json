@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ZnCredentialTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

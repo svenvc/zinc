@@ -1,0 +1,21 @@
+{
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 1/24/2012 11:48",
+	"instvars" : [
+		"scheme",
+		"host",
+		"port",
+		"segments",
+		"query",
+		"fragment" ],
+	"name" : "ZnUrl",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

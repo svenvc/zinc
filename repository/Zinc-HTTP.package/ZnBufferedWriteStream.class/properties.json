@@ -1,0 +1,18 @@
+{
+	"category" : "Zinc-HTTP-Streaming",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 12/8/2010 10:10",
+	"instvars" : [
+		"stream",
+		"buffer",
+		"position" ],
+	"name" : "ZnBufferedWriteStream",
+	"pools" : [
+		 ],
+	"super" : "Stream",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

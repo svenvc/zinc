@@ -1,0 +1,19 @@
+{
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		"ExtensionsMap",
+		"MimeTypes" ],
+	"commentStamp" : "SvenVanCaekenberghe 12/6/2011 20:52",
+	"instvars" : [
+		"main",
+		"sub",
+		"parameters" ],
+	"name" : "ZnMimeType",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

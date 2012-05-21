@@ -1,0 +1,22 @@
+{
+	"category" : "Zinc-HTTP-Streaming",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 1/18/2011 11:01",
+	"instvars" : [
+		"stream",
+		"chunk",
+		"position",
+		"limit",
+		"atEnd",
+		"totalSize",
+		"extraHeaders" ],
+	"name" : "ZnChunkedReadStream",
+	"pools" : [
+		 ],
+	"super" : "Stream",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

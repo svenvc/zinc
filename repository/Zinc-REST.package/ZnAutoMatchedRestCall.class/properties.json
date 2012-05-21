@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-REST-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 6/15/2011 16:35",
+	"instvars" : [
+		 ],
+	"name" : "ZnAutoMatchedRestCall",
+	"pools" : [
+		 ],
+	"super" : "ZnRestCall",
+	"type" : "normal" }

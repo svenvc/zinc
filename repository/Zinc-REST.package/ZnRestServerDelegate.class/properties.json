@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-REST-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 6/15/2011 16:14",
+	"instvars" : [
+		"uriSpace",
+		"server",
+		"debug" ],
+	"name" : "ZnRestServerDelegate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

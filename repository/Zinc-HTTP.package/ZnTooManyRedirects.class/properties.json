@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 9/19/2011 09:59",
+	"instvars" : [
+		 ],
+	"name" : "ZnTooManyRedirects",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

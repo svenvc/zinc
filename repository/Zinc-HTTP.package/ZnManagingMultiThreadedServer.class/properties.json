@@ -1,0 +1,17 @@
+{
+	"category" : "Zinc-HTTP-Client-Server",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 4/7/2012 17:49",
+	"instvars" : [
+		"lock",
+		"connections" ],
+	"name" : "ZnManagingMultiThreadedServer",
+	"pools" : [
+		 ],
+	"super" : "ZnMultiThreadedServer",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

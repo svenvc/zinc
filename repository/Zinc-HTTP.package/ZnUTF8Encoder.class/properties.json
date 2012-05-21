@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-HTTP-Streaming",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 12/6/2010 12:55",
+	"instvars" : [
+		 ],
+	"name" : "ZnUTF8Encoder",
+	"pools" : [
+		 ],
+	"super" : "ZnCharacterEncoder",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

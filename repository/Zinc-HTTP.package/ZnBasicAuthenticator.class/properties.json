@@ -1,0 +1,17 @@
+{
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 9/30/2010 15:37",
+	"instvars" : [
+		"credentials",
+		"realm" ],
+	"name" : "ZnBasicAuthenticator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }
