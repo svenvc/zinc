@@ -86,7 +86,7 @@ Let's make it a bit more explicit what happened.
       get;
       response.
 
-Here we explicitely set the url using #url:, execute an HTTP GET using #get and ask for the response object using #response.  
+Here we explicitely set the url using #url:, execute an HTTP GET using #get and ask for the response object using #response.
 The above returns a ZnResponse object. It consists of 3 elements:
 
 1. a ZnStatusLine object
@@ -221,7 +221,7 @@ The most common code, the one that indicates success is numeric code 200 with re
 Have a look at the testing protocol of ZnResponse for how to interpret some of them. 
 
 So if you do an HTTP request and get something back, you cannot just assume that all is well.
-You first have to make sure that the call itself (more specifically) the response was successful.
+You first have to make sure that the call itself (more specifically the response) was successful.
 As mentioned before, you can do so by sending #isSuccess to the response or the client.
 
     | client |
@@ -267,8 +267,8 @@ eloquently list the issues involved:
 - The network is homogeneous.
 
 Zn will signal various exceptions when things go wrong, at different levels.
-ZnClient and the underlying framework has constants, settings and options to deal 
-with varioius aspects related to these issues.
+ZnClient and the underlying framework have constants, settings and options to deal 
+with various aspects related to these issues.
 
 Doing an HTTP request-response cycle can take an unpredictable amount of time.
 Client code has to specify a timeout, the maximum amount of time we are prepared to wait for a response,
@@ -296,7 +296,7 @@ Zn defines its global default timeout in seconds as a setting.
 
 This setting affects most framework level operations, if nothing else is specified.
 
-During the execution of HTTP various network exceptions, as subclasses of NetworkError, might be thrown.
+During the execution of HTTP, various network exceptions, as subclasses of NetworkError, might be thrown.
 These will all be caught by the #ifFail: block when installed.
 
 To deal with temporary or intermittend network or server problems, ZnClient offers a retry protocol.
@@ -357,12 +357,13 @@ The printable representation of the URL is
 
 This can easily be parsed again into a ZnUrl object
 
-    'http://www.google.com/search?q=Pharo%20Smalltalk' asZnUrl
-    'http://www.google.com:80/search?q=Pharo Smalltalk' asZnUrl
+    'http://www.google.com/search?q=Pharo%20Smalltalk' asZnUrl.
+    'http://www.google.com:80/search?q=Pharo Smalltalk' asZnUrl.
 
 Note how the ZnUrl parser is forgiving with respect to the space, like most browser would do.
 When producing an external representation, proper encoding will take place.
-In a later subsection, we will have a more detailed look at the capabilities of ZnUrl as a standalone object.
+Please consult the class comment of ZnUrl for a more detailed look 
+at the capabilities of ZnUrl as a standalone object.
 
 
 ## ZnClient lifecycle
@@ -401,7 +402,8 @@ The beOneShot option of ZnClient will do just that.
       get: 'http://zn.stfx.eu/numbers.txt'.
 
 With the beOneShot option, the client notifies the server that it will do just one request 
-and both parties will consequently close the connection automatically. An explicit close it thus not needed.
+and both parties will consequently close the connection after use, automatically. 
+An explicit close of the ZnClient object it no longer needed.
 
 
 ## Basic Authentication
@@ -420,7 +422,7 @@ If you want to understand how this works, look at the implementation of
 ZnRequest>>#setBasicAuthenticationUsername:password:
 
 Basic authentication over plain HTTP is insecure because it transfers your username/password combination 
-obfuscated by encoding it using the Base64 encoding.
+obfuscated by encoding it using the trivial Base64 encoding.
 When used over HTTPS, basic authentication is secure though.
 
 Note that when sending multiple requests while reusing the same client, 
@@ -437,7 +439,8 @@ See the subsection about cookies and sessions for an example of how this works.
 In many web applications HTML forms are used.
 Examples are forms to enter a search string, a form with a username and password to log in
 or complicated registration forms.
-The classic, most common way this is implemented is by sending the data entered in the fields
+The classic, most common way this is implemented is by sending the
+data entered in the fields of a form
 to the server when a submit button is clicked.
 It is possible to implement the same behavior programmatically using ZnClient.
 
@@ -468,12 +471,13 @@ and the field name/value association will be stored in it.
 When finally #post is invoked, the HTTP request sent to the server will include
 a properly encoded entity. 
 As far as the server is concerned, it will seems as if a real user submitted the form.
-Consequently, the response should be as when you submit the form using a browser.
+Consequently, the response should be the same as when you submit the
+form manually using a browser.
 Be careful to include all relevant fields, even the hidden ones.
 
 There is a second type of form encoding called 'multipart/form-data'.
 Instead of adding fields, you add ZnMimePart instances. 
-Suppose the HTML form specified a different enctype.
+The HTML form will specify a different enctype.
 
     <form action="search-handler" method="POST" enctype="multipart/form-data">
       Search for: <input type="text" name="search-field"/>
@@ -513,7 +517,7 @@ In a later subsection we will come back to this.
 
 
 HTTP is by design a stateless protocol: each request/response cycle is independent.
-This principle is crucial to the scaleability of the internet.
+This principle is crucial to the scalability of the internet.
 However, in web applications like a shopping cart in an online store, state is needed.
 During your interaction with the web application, the server needs to know that your 
 request/responses are part of your session: you log in, you add items to your shopping cart 
@@ -589,10 +593,12 @@ In the first two examples, the convenience contents system is used to automatica
 a ZnStringEntity of type ZnMimeType textPlain and a ZnByteArrayEntity of type ZnMimeType applicationOctectStream.
 
 The difference between PUT and POST is semantic. 
-POST is generally used to create a new resource inside an existing collection or container.
+POST is generally used to create a new resource inside an existing
+collection or container, or to initiate some action or process.
 For this reason, the normal response to a POST request is to return the URL (or URI) of the newly created resource.
-Conventionally, the response will contain a so called location handle accessible via #location and 
+Conventionally, the response will contain a 'Location' header accessible via #location and 
 will often repeat that in the entity is sends back.
+
 When a POST successfully created the resource, its HTTP response will be 201 Created.
 PUT is generally used to update an existing resource of which you know the exact URL (of URI).
 When a PUT is succesful, its HTTP response will be just 200 OK and nothing else will be returned.
@@ -623,7 +629,7 @@ Have a look at the 'Allow' header.
 ## Content-types, mime-types and the accept header
 
 
-Just because you ask for some resource which you thing is of a certain mime-type,
+Just because you ask for some resource which you think is of a certain mime-type,
 does not yet mean that is what you will get back.
 The people maintaining the server might have reconfigured things.
 The extension at the end of a URL has no real significance.
@@ -667,7 +673,8 @@ This technique further improves your HTTP interaction.
 ## Redirects
 
 
-Sometimes when requesting a URL, an HTTP server will not answer but redirect you to another location.
+Sometimes when requesting a URL, an HTTP server will not answer
+immediately but redirect you to another location.
 Seaside actually does this on each request.
 This is done with a 301 or 302 response code.
 You can ask a ZnResponse whether its a redirect with #isRedirect.
@@ -678,7 +685,7 @@ By default, ZnClient will follow redirects automatically for up to 3 redirects.
 You won't even notice unless you activate logging.
 
 If for some reason you want to disable this feature, send a #followRedirects: false to your client.
-To modified the maximum number of redirects that could be followed, use #maxNumberOfRedirects:.
+To modify the maximum number of redirects that could be followed, use #maxNumberOfRedirects:.
 
 Following redirects can be tricky when PUT or POST are involved.
 Zn implements the common behavior of changing a redirected PUT or POST into a GET while dropping the body entity.
@@ -691,7 +698,8 @@ Zn also handles relative redirect URLs, although these are not strictly part of 
 
 Although ZnClient is absolutely the preferred object to deal with all the intricacies of HTTP,
 you sometimes wish you could to a quick HTTP request with an absolute minimum amount of typing,
-especially during debugging. For these occasions there is ZnEasy, a class side API for quick HTTP requests.
+especially during debugging. For these occasions there is ZnEasy, a
+class side only API for quick HTTP requests.
 
     ZnEasy get: 'http://zn.stfx.eu/zn/numbers.txt'.
 
@@ -795,12 +803,12 @@ By now we used almost all concrete subclasses of ZnEntity:
 - ZnStreamingEntity
 
 Like all other fundamental Zn domain model objects, these can and are used both by client and servers.
-All ZnEntities have a content type (in bytes) and a content length (a mime-type).
-There basic behavior is that can be written to or read from a binary stream.
+All ZnEntities have a content type (a mime-type) and a content length  (in bytes).
+Their basic behavior is that they can be written to or read from a binary stream.
 All but the last one are classic, in-memory objects.
 
 ZnStreamingEntity is special: it contains a read or write stream to be used once in one direction only.
-If you want to transfer a 10 Mb file, using a normal entity would result in the 10 Mb being taken into memory.
+If you want to transfer a 10 Mb file, using a normal entity, this would result in the 10 Mb being taken into memory.
 With a streaming entity, a file stream is opened to the file, and the data is then copied using a buffer of a couple of tens of Kb.
 This is obviously more efficient.
 The limitation is that this only works if the exact size is known upfront.
@@ -871,7 +879,7 @@ Here is a theoretical example.
 
 Assuming there is an web service at http://internet-calculator.com where you can send numbers to,
 we send a whitespace separated list of numbers to its sum URI and expect a number back.
-Exception occuring in the content writer can be caught with the #ifFail: block.
+Exceptions occuring in the content writer can be caught with the #ifFail: block.
 
 
 ## Downloading and uploading
@@ -890,11 +898,11 @@ The argument to #downloadTo: is a path string, naming either a file or a directo
 When it is a directory, the last component of the URL will be used to create a new file in that directory.
 When it is a file, that file will be used as given.
 Additionally, the #downloadTo: operation will use streaming so that a large file will not be taken into memory all at once,
-but with be copied in a loop using a buffer.
+but will be copied in a loop using a buffer.
 
 The inverse, uploading the raw contents of file, is just as easy using the #uploadEntityFrom: convenience method.
 Given a file path string, it will set the current request entity to be equal 
-to a ZnStreamingEntity reading from byte from the named file. 
+to a ZnStreamingEntity reading bytes from the named file. 
 The content type will be set based on the file name extension, a guess.
 If needed you can next override that mime type using #contentType:.
 Here is a hypothetical example.
@@ -953,7 +961,7 @@ For this to work, the server has to honor this particular protocol interaction, 
 ## Proxy settings
 
 
-In some networks you do not visit internet web servers directly, but indirectly via a proxy.
+In some networks you do not talk to internet web servers directly, but indirectly via a proxy.
 Such a proxy controls and regulates traffic.
 A proxy can improve performance by caching often used resources,
 but only if there is a sufficient hit rate.
@@ -982,7 +990,7 @@ To be able to see what is going on, it is better to try this with logging enable
       start.
 
 So we are starting an HTTP server listening on port 1701.
-Using a port below 1024 requires special OS level priviledges, ports like 8080 might already be in use.
+Using a port below 1024 requires special OS level privileges, ports like 8080 might already be in use.
 Now visit <http://localhost:1701> with your browser to see the Zn welcome page.
 Or you can try accessing the welcome page using Zn itself.
 
@@ -1039,9 +1047,10 @@ The functional behavior of a ZnServer is defined by an object called its delegat
 A delegate implements the key method #handleRequest: which gets the incoming request as parameter
 and has to produce a response as result.
 The delegate can reason purely in terms of a ZnRequest and a ZnResponse.
-The technical side of being an HTTP server, like the networking and (optional) multiprocessing, 
+The technical side of being an HTTP server, like the protocol itself,
+the networking and the (optional) multiprocessing, 
 is handled by the server object.
-Here is the simplest possible server.
+Here is the simplest possible delegate.
 
     (ZnServer startDefaultOn: 1701)
        onRequestRespond: [ :request | 
@@ -1076,9 +1085,9 @@ Assuming your server is running locally on port 1701, this is the list of URLs t
 - <http://localhost:1701/> the default for /, equivalent to /welcome
 - <http://localhost:1701/welcome> standard Zn greeting page 
 - <http://localhost:1701/favicon.ico> nice Zn favicon used by browsers
-- <http://localhost:1701/help> a list of these URLs
+- <http://localhost:1701/help> this list of URLs
 - <http://localhost:1701/status> a textual page showing some server internals
-- <http://localhost:1701/dw-bench> a dynamically generated page for benchnarking
+- <http://localhost:1701/dw-bench> a dynamically generated page for benchmarking
 - <http://localhost:1701/unicode> a UTF-8 encoded page listing the first 591 Unicode characters
 - <http://localhost:1701/random> a random string of characters
 - <http://localhost:1701/bytes> a collection of bytes 
@@ -1093,7 +1102,7 @@ The bytes handler has a similar size option. Its output is in the form of a repe
 When requesting equally sized byte patterns repeatably, some extra server side caching will improve performance.
 
 The echo handler is used extensively by the unit tests. 
-It not only list the request headers as received by the server,
+It not only lists the request headers as received by the server,
 but even the entity if there is one.
 In case of a non-binary entity, the textual contents will be included.
 This is really useful to debug PUT or POST requests.
@@ -1141,7 +1150,7 @@ The next number is a fixed sized hash of the process ID.
 Note how 3 different processes are involved: the one starting the server (probably the UI process),
 the actual server listening process, and the client worker process spawned to handle the request.
 Finally, the single capital letter indicates the category. 
-Then the actual message is printed.
+After these fields, the actual message is printed.
   
 Both ZnClient and ZnServer implement logging using a similar mechanism based on the announcements framework.
 ZnLogEvents are subclasses of Announcement sent by an HTTP server or client containing logging information.
@@ -1163,7 +1172,7 @@ The argument can be either a string or a block that will only be executed when l
 
     server log info: [ 'User ', self getUsername, ' logged in.' ].
 
-The Zn logging mechanism using an internal lock to make it thread safe, but it does serialize logging by multiple processes.
+The Zn logging mechanism is using an internal lock to make it thread safe, but it does serialize logging by multiple processes.
 It is important to make the time spent inside the log block short and non blocking.
 
 You can customize a listener before adding it to a log support.
@@ -1208,7 +1217,7 @@ It runs in one single process, which means it can only handle one request at a t
 This one is easier to understand and debug.
 ZnMultiThreadedServer spawns a new process on each incoming request, possibly handling 
 multiple request/response cycles on the same connection.
-ZnManagedMultiThreadedServers keeps explicit track of which connection are alive
+ZnManagedMultiThreadedServers keeps explicit track of which connections are alive
 so that they can be stopped when the server stops instead of letting them die out.
 
 
@@ -1298,10 +1307,11 @@ Now create an MCHttpRepository pointing to your own server.
       user: ''
       password: ''.
 
-It should work just like any other repository, although it is storage only of course.
+It should work just like any other repository, although it is for
+package storage only.
 What makes this example interesting is that implements 3 different kinds of requests:
 
-- list a repository, a GET for /
+- list the repository, a GET for /
 - get a version, a GET for a specific file
 - store a version, a PUT of a specific file
 
@@ -1311,7 +1321,7 @@ What makes this example interesting is that implements 3 different kinds of requ
 
 Dispatching or routing is HTTP application server speak for deciding 
 what part of your software will handle an incoming request.
-This decision can be made on any of the properties of the request, the HTTP method,
+This decision can be made on any of the properties of the request: the HTTP method,
 the URL or part of it, the query parameters, the meta headers and the entity body.
 Different applications will prefer different kinds of solutions to this problem.
 
@@ -1320,7 +1330,7 @@ Out of the box, there are the different delegates that we discussed before.
 Most of these have hand coded dispatching in their #handleRequest: method.
 
 ZnDefaultServerDelegate uses a prefix map internally that maps URI prefixes to internal methods.
-But is can be customized by installing a block as the value to a prefix,
+But it can be customized by installing a block as the value to a prefix,
 which accepts the request and produces a response.
 Here is an example of using that capability.
 
@@ -1368,7 +1378,8 @@ the incoming request and an already instanciated response.
 [Seaside](http://www.seaside.st) is a well known, cross platform, advanced Smalltalk web application framework.
 It does not provide its own HTTP server but relies on an existing one by means of an adaptor.
 It does work well with Zn, through the use of a ZnZincServerAdaptor.
-You can load it with the Zinc-Seaside package, but is also comes with certain Seaside distributions.
+You can load it with the Zinc-Seaside package, but is also comes
+already included with certain Seaside distributions.
 In fact, on Pharo Smalltalk it is the default.
 
 Starting this adaptor can be done using the Seaside Control panel in the normal way.
@@ -1416,11 +1427,11 @@ feel free to substitute any Unicode character to make the test more interesting.
 
 
 Internet facing HTTP servers will come under attack by malicious clients.
-Security is therefor important. 
+Good security is thus important. 
 The first step is a correct and safe implementation of the HTTP protocol.
 One way a server protects itself is by implementing some resource limits.
 
-Zinc HTTP Components currently implements and enforces the current limits, 
+Zinc HTTP Components currently implements and enforces the following limits, 
 most of them are hard constants.
 
 - maximumLineLength (4Kb) which impact mainly the size of a header pair
