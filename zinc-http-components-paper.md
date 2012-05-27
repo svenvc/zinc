@@ -70,8 +70,8 @@ Installation or updating instructions can be found there.
 
 
 The key object to programmatically execute HTTP requests is called ZnClient.
-You instanciate it, use its rich API to configure and execute an HTTP request and access the response.
-ZnClient is a stateful object to be threated like a builder.
+You instantiate it, use its rich API to configure and execute an HTTP request and access the response.
+ZnClient is a stateful object to be treated like a builder.
 Let's get started with the simplest possible usage.
 
     ZnClient new get: 'http://zn.stfx.eu/zn/small.html'.
@@ -79,26 +79,26 @@ Let's get started with the simplest possible usage.
 Select the above expression and inspect or print it. 
 If all goes well, you'll get a String back containing a very small HTML document. 
 The #get: method belongs to the convenience API.
-Let's make it a bit more explicit what happened.
+Let's be a bit more explicit about what happened.
 
     ZnClient new
       url: 'http://zn.stfx.eu/zn/small.html';
       get;
       response.
 
-Here we explicitely set the url using #url:, execute an HTTP GET using #get and ask for the response object using #response.  
+Here we explicitly set the url using #url:, execute an HTTP GET using #get and ask for the response object using #response.  
 The above returns a ZnResponse object. It consists of 3 elements:
 
 1. a ZnStatusLine object
 2. a ZnHeaders object
 3. an optional ZnEntity object
 
-The status line says HTTP/1.1 200 OK, which means the request was successfull.
+The status line says HTTP/1.1 200 OK, which means the request was successful.
 This can be tested by sending #isSuccess to either the response object or the client itself.
 The headers contain meta data related to the response, including:
 
 - the content-type (a mime-type), accessed with #contentType
-- the content-lenth (a byte count), accessed with #contentLength
+- the content-length (a byte count), accessed with #contentLength
 - the date the response was generated
 - the server that generated the response
 
@@ -107,7 +107,7 @@ Zn will automatically convert non-binary mime-types into Strings using the corre
 In our example, the entity will be an instance of ZnStringEntity, a concrete subclass of ZnEntity.
 
 Like any Smalltalk object, you can inspect or explore the ZnResponse object.
-You might be wondering how this response was actually tranferred over the network.
+You might be wondering how this response was actually transferred over the network.
 That is easy with Zn, as the key HTTP objects all implement #writeOn: for this purpose.
 
     | response |
@@ -156,7 +156,7 @@ In an open Transcript you will now see:
     User-Agent: Zinc HTTP Components 1.0
     Host: zn.stfx.eu    
 
-A ZnRequest object constists of 3 elements:
+A ZnRequest object consists of 3 elements:
 
 1. a ZnRequestLine object
 2. a ZnHeaders object
@@ -268,7 +268,7 @@ eloquently list the issues involved:
 
 Zn will signal various exceptions when things go wrong, at different levels.
 ZnClient and the underlying framework has constants, settings and options to deal 
-with varioius aspects related to these issues.
+with various aspects related to these issues.
 
 Doing an HTTP request-response cycle can take an unpredictable amount of time.
 Client code has to specify a timeout, the maximum amount of time we are prepared to wait for a response,
@@ -299,7 +299,7 @@ This setting affects most framework level operations, if nothing else is specifi
 During the execution of HTTP various network exceptions, as subclasses of NetworkError, might be thrown.
 These will all be caught by the #ifFail: block when installed.
 
-To deal with temporary or intermittend network or server problems, ZnClient offers a retry protocol.
+To deal with temporary or intermittent network or server problems, ZnClient offers a retry protocol.
 You can set how many times a request should be retried and how many seconds to wait between retries.
 
     ZnClient new
@@ -325,7 +325,7 @@ Let us revisit our initial example, using explicit URL construction with the ZnC
       get.
 
 Instead of giving a string argument to be parsed into a ZnUrl, 
-we now provide the necessary elements to constuct the URL manually,
+we now provide the necessary elements to construct the URL manually,
 by sending messages to our ZnClient object.
 With #http we set what is called the scheme.
 Then we set the hostname. Since we don't specify a port, the default port for HTTP will be used, port 80.
@@ -461,7 +461,7 @@ submitting or sending the form data to the server.
       post.
 
 The URL is composed by combining the URL of the page that contains the form with the action specified.
-The default form encoding is, as explicitely specified here, 'application/x-www-form-urlencoded'.
+The default form encoding is, as explicitly specified here, 'application/x-www-form-urlencoded'.
 By using the #formAt:put: method to set the value of a field, 
 an entity of type ZnApplicationFormUrlEncodedEntity will be created if needed,
 and the field name/value association will be stored in it.
@@ -566,7 +566,7 @@ These are called PUT and POST. They both send an entity to transfer data to the 
 
 In the subsection about submitting HTML forms we already saw how POST is used
 to send either a ZnApplicationFormUrlEncodedEntity or ZnMultiPartFormDataEntity
-containing structered data to a server.
+containing structured data to a server.
 
 Apart from that, it is also possible to send a raw entity to a server.
 Of course, the server needs to be prepared to handle this kind of entity coming in.
@@ -584,7 +584,7 @@ Here are a couple of examples of doing a raw PUT and POST request.
                   type: ZnMimeType applicationXml);
        post.
 
-In the last example we explicitely set the entity to be XML and do a POST.
+In the last example we explicitly set the entity to be XML and do a POST.
 In the first two examples, the convenience contents system is used to automatically create
 a ZnStringEntity of type ZnMimeType textPlain and a ZnByteArrayEntity of type ZnMimeType applicationOctectStream.
 
@@ -595,7 +595,7 @@ Conventionally, the response will contain a so called location handle accessible
 will often repeat that in the entity is sends back.
 When a POST successfully created the resource, its HTTP response will be 201 Created.
 PUT is generally used to update an existing resource of which you know the exact URL (of URI).
-When a PUT is succesful, its HTTP response will be just 200 OK and nothing else will be returned.
+When a PUT is successful, its HTTP response will be just 200 OK and nothing else will be returned.
 In the subsection about REST Web Service APIs, we will come back to this.
 
 
@@ -608,7 +608,7 @@ When successful, the server will just reply with a 200 OK.
 That is all there is to it.
 
 Certain HTTP based protocols, like WebDAV use even more HTTP methods.
-These can be specified explicitely using the #method: setter and the #execute operation.
+These can be specified explicitly using the #method: setter and the #execute operation.
 
     ZnClient new
        url: 'http://www.apache.org';
@@ -833,7 +833,7 @@ and that is then supposed to parse the incoming representation.
 
 In the above example, #get (which returns #contents) will no longer return a String containing JSON,
 but the Smalltalk dictionary that was encoded as JSON.
-BTW, the above example returns a country code, with central longitute/latitude coordinates, given an IP address.
+BTW, the above example returns a country code, with central longitude/latitude coordinates, given an IP address.
 Note also that by using #systemPolicy in combination with an #accept: we handle most error cases
 before the content reader start doing its work, so it does no longer have to check for good incoming data.
 In any case, when the #contentReader throws an exception, it can be caught by the #ifFail: block.
@@ -871,7 +871,7 @@ Here is a theoretical example.
 
 Assuming there is an web service at http://internet-calculator.com where you can send numbers to,
 we send a whitespace separated list of numbers to its sum URI and expect a number back.
-Exception occuring in the content writer can be caught with the #ifFail: block.
+Exception occurring in the content writer can be caught with the #ifFail: block.
 
 
 ## Downloading and uploading
@@ -879,7 +879,7 @@ Exception occuring in the content writer can be caught with the #ifFail: block.
 
 Often, you want to download a resource from some internet server and store its contents in a file.
 The well known curl and wget Unix utilities are often used to do this in scripts.
-There is a handly convenience method in ZnClient to do just that.
+There is a handy convenience method in ZnClient to do just that.
 
     ZnClient new
       url: 'http://zn.stfx.eu/zn/numbers.txt';
@@ -912,7 +912,7 @@ again using an efficient streaming copy.
 ## Signalling progress
 
 
-Some HTTP operations, particulary those involving large resources, might take some time,
+Some HTTP operations, particularly those involving large resources, might take some time,
 especially when slower networks or servers are involved.
 During interactive use, Pharo Smalltalk often indicates progress during operations that take a bit longer.
 ZnClient can do that too using the #signalProgess option. By default this is off.
@@ -982,7 +982,7 @@ To be able to see what is going on, it is better to try this with logging enable
       start.
 
 So we are starting an HTTP server listening on port 1701.
-Using a port below 1024 requires special OS level priviledges, ports like 8080 might already be in use.
+Using a port below 1024 requires special OS level privileges, ports like 8080 might already be in use.
 Now visit <http://localhost:1701> with your browser to see the Zn welcome page.
 Or you can try accessing the welcome page using Zn itself.
 
@@ -1078,7 +1078,7 @@ Assuming your server is running locally on port 1701, this is the list of URLs t
 - <http://localhost:1701/favicon.ico> nice Zn favicon used by browsers
 - <http://localhost:1701/help> a list of these URLs
 - <http://localhost:1701/status> a textual page showing some server internals
-- <http://localhost:1701/dw-bench> a dynamically generated page for benchnarking
+- <http://localhost:1701/dw-bench> a dynamically generated page for benchmarking
 - <http://localhost:1701/unicode> a UTF-8 encoded page listing the first 591 Unicode characters
 - <http://localhost:1701/random> a random string of characters
 - <http://localhost:1701/bytes> a collection of bytes 
@@ -1195,7 +1195,7 @@ but only to request coming from the same host. This is often used to increase se
 ## Server variants
 
 
-The class side of ZnServer is actually a facade to instanciate a particular concrete ZnServer subclass,
+The class side of ZnServer is actually a facade to instantiate a particular concrete ZnServer subclass,
 as can be seen in #defaultServerClass. The hierarchy looks as follows.
 
     ZnServer
@@ -1359,7 +1359,7 @@ Another option is to use ZnDispatcherDelegate.
 
 You configure the dispatcher using #map:to: methods.
 First argument is the prefix, second argument is a block taking two arguments:
-the incoming request and an already instanciated response.
+the incoming request and an already instantiated response.
  
 
 ## Seaside adaptor
