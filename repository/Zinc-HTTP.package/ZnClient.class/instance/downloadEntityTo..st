@@ -6,7 +6,7 @@ downloadEntityTo: path
 
 	| target |
 	self entity ifNil: [ ^ self ].
-	target := FileDirectory on: path.
+	target := ServerFileDirectory on: path.
 	target := target exists 
 		ifTrue: [ (target / self request uri lastPathSegment) pathName ] 
 		ifFalse: [ path ].
