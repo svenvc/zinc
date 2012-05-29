@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Streaming",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		"ByteTextConverters" ],
 	"commentStamp" : "SvenVanCaekenberghe 1/25/2011 11:02",
@@ -13,5 +12,4 @@
 	"pools" : [
 		 ],
 	"super" : "ZnCharacterEncoder",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

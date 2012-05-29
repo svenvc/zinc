@@ -4,4 +4,4 @@ sendMethod: aBlock
 	self isAuthenticationRequired ifTrue: [
 		self linkCredentials.
 		aBlock on: Error do: self errorHandler ].
-	self resetParameters 
+	self resetParameters

@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Logging",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 3/29/2011 13:27",
@@ -15,5 +14,4 @@
 	"pools" : [
 		 ],
 	"super" : "Announcement",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

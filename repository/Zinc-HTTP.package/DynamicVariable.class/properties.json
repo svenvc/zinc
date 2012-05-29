@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DynamicVariable",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

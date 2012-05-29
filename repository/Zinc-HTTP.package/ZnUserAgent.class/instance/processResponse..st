@@ -9,4 +9,4 @@ processResponse: stream
 	cookies := (cookies isCollection & cookies isString) ifTrue: [ Array with: cookies ] ifFalse: [ cookies ].
 	cookies do: [ :cookie | 
 		self session cookieJar add: (ZnCookie fromString: cookie for: self request url) ].
-	^ response 
+	^ response

@@ -7,4 +7,4 @@ testReadingGzip
 	chunked := String streamContents: [ :stream |
 		ZnUtils nextPutAll: gzipped on: stream chunked: 16 ].
 	plain := (GZipReadStream on: (ZnChunkedReadStream on: chunked readStream)) upToEnd.
-	self assert: data = plain 
+	self assert: data = plain

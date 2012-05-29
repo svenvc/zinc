@@ -5,4 +5,4 @@ queryAt: key put: value
 	self resetRequestIfNeeded.
 	request url 
 		ifNil: [ request url: (ZnUrl new queryAt: key put: value; yourself) ]
-		ifNotNil: [ request url queryAt: key put: value ]  
+		ifNotNil: [ request url queryAt: key put: value ]

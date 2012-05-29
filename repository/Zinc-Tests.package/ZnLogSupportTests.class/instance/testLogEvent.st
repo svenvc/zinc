@@ -6,4 +6,4 @@ testLogEvent
 	self assert: logEvent timeStamp >= now.
 	self assert: logEvent processId isInteger.
 	self assert: logEvent category = #info.
-	self assert: logEvent message = 'Testing'  
+	self assert: logEvent message = 'Testing'

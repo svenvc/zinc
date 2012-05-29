@@ -1,3 +1,3 @@
 accessing
 defaultCookieJar
-	^ ZnCookieJar 
+	^ ZnCookieJar

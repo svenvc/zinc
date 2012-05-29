@@ -5,4 +5,4 @@ maximumEntitySize
 	Default value is 16Mb. This affects both client and server code.
 	This helps to protect us from malicious content."
 	
-	^ MaximumEntitySize ifNil: [ MaximumEntitySize := 16 * 1024 * 1024 ] 
+	^ MaximumEntitySize ifNil: [ MaximumEntitySize := 16 * 1024 * 1024 ]

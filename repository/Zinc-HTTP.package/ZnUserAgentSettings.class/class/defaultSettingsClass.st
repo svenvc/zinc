@@ -1,3 +1,3 @@
 accessing
 defaultSettingsClass
-	^ self 
+	^ self

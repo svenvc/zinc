@@ -1,5 +1,4 @@
-class initialization
+as yet unclassified
 initialize
-	ManagedServers := IdentitySet new.
-	Smalltalk addToStartUpList: self.
+	Smalltalk addToStartUpList: self "after: AutoStart".
 	Smalltalk addToShutDownList: self

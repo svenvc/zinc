@@ -5,4 +5,4 @@ normalizeHeaderKey: string
 	
 	^ (ZnUtils isCapitalizedString: string)
 		ifTrue: [ string ] 
-		ifFalse: [ ZnUtils capitalizeString: string ] 
+		ifFalse: [ ZnUtils capitalizeString: string ]

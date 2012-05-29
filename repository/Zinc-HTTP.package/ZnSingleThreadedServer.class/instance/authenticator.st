@@ -7,4 +7,4 @@ authenticator
 	when authentication fails, a appropriate response should be returned.
 	If there is no authenticator, all requests will pass"
 	
-	^ authenticator 
+	^ authenticator

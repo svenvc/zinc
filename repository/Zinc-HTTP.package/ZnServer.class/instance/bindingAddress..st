@@ -5,4 +5,4 @@ bindingAddress: address
 	Address must be a 4 element ByteArray, like #[127 0 0 1].
 	Cannot be changed after the server is already running."
 	
-	self subclassResponsibility 
+	self subclassResponsibility

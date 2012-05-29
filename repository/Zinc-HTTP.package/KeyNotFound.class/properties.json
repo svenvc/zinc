@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-HTTP-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "KeyNotFound",
+	"pools" : [
+		 ],
+	"super" : "NotFound",
+	"type" : "normal" }

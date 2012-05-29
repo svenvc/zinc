@@ -1,3 +1,3 @@
 accessing
 host: hostName
-	host := hostName asLowercase 
+	host := hostName asLowercase

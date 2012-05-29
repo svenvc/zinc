@@ -10,4 +10,4 @@ acceptEntityDescription: entity
 		ifNil: [
 			self 
 				removeKey: 'Content-Type' ifAbsent: [];
-				removeKey: 'Content-Length' ifAbsent: [] ] 
+				removeKey: 'Content-Length' ifAbsent: [] ]

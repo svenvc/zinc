@@ -11,4 +11,4 @@ testRedirect
 	client close.
 	response := [ ZnClient new beOneShot; maxNumberOfRedirects: 0; get: 'http://www.pharo-project.org'; response ]
 		on: ZnTooManyRedirects do: [ :exception | exception resume ].
-	self assert: response isRedirect 
+	self assert: response isRedirect

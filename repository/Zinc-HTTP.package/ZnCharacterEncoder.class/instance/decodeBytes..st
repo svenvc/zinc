@@ -4,4 +4,4 @@ decodeBytes: bytes
 	byteStream := bytes readStream.
 	^ String streamContents: [ :stream |
 		[ byteStream atEnd ] whileFalse: [
-			stream nextPut: (self nextFromStream: byteStream) ] ] 
+			stream nextPut: (self nextFromStream: byteStream) ] ]

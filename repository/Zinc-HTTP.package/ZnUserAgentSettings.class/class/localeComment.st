@@ -1,3 +1,3 @@
-accessing
+as yet unclassified
 localeComment
-	^ LocaleID current isoString
+	^System myUserProfile nativeLanguage

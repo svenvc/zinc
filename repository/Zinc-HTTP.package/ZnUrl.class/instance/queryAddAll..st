@@ -4,4 +4,4 @@ queryAddAll: keyedCollection
 	
 	keyedCollection keysAndValuesDo: [ :key :value |
 		self queryAt: key add: value ].
-	^ keyedCollection 
+	^ keyedCollection

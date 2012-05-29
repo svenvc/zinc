@@ -5,4 +5,4 @@ writeOn: stream
 	
 	representation isNil
 		ifTrue: [ self writeRepresentationOn: stream ] 
-		ifFalse: [ stream nextPutAll: representation ] 
+		ifFalse: [ stream nextPutAll: representation ]

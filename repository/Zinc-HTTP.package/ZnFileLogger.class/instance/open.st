@@ -1,8 +1,7 @@
-initialize-release
+as yet unclassified
 open
 	| fileStream |
 	self close.
-	fileStream := FileStream fileNamed: self pathName.
-	fileStream setToEnd.
+	fileStream := GsFile openAppendOnServer: self pathName.
 	self stream: fileStream.
-	self event: (ZnLogEvent info: 'Opening ', self printString) 
+	self event: (ZnLogEvent info: 'Opening ', self printString)

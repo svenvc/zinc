@@ -1,3 +1,3 @@
 accessing
 logToTranscript
-	self log addListener: ZnTranscriptLogger new    
+	self log addListener: ZnTranscriptLogger new

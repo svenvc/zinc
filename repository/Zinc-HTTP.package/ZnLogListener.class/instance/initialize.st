@@ -1,4 +1,4 @@
-initialize-release
+as yet unclassified
 initialize 
-	lock := Monitor new.
-	self enabled: true  
+	lock := TransientSemaphore forMutualExclusion.
+	self enabled: true

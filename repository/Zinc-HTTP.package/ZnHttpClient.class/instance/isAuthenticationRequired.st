@@ -1,3 +1,3 @@
 testing
 isAuthenticationRequired
-	^ self response isAuthenticationRequired 
+	^ self response isAuthenticationRequired

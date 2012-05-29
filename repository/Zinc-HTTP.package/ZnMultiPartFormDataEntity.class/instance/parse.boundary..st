@@ -1,7 +1,7 @@
-private
+as yet unclassified
 parse: bytes boundary: boundary
 	| next start fullBoundary |
-	fullBoundary := #(45 45) asByteArray , boundary.
+	fullBoundary := (#(45 45) asByteArray), boundary.
 	start := fullBoundary size + 1.
 	next := bytes
 		indexOfSubCollection: fullBoundary

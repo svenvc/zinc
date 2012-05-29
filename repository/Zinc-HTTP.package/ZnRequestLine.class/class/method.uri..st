@@ -4,4 +4,4 @@ method: method uri: uri
 		method: method;
 		uri: uri;
 		version: ZnConstants defaultHTTPVersion;
-		yourself 
+		yourself

@@ -1,4 +1,4 @@
 private
 newConnection
 	self log debug: 'Opening connection'.
-	^ ZnNetworkingUtils socketStreamToUrl: self baseUrl 
+	^ ZnNetworkingUtils socketStreamToUrl: self baseUrl

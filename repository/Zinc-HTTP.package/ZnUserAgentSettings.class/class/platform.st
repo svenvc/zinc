@@ -1,3 +1,3 @@
-accessing
+as yet unclassified
 platform
-	^ SmalltalkImage current os
+	^ Smalltalk os

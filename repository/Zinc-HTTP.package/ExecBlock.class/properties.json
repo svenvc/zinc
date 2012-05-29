@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ExecBlock",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

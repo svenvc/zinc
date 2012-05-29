@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Support",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 5/9/2012 20:54",
@@ -12,5 +11,4 @@
 	"pools" : [
 		 ],
 	"super" : "DynamicVariable",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

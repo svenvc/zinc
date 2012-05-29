@@ -1,0 +1,3 @@
+*zinc-http
+asTimeStamp
+	^self

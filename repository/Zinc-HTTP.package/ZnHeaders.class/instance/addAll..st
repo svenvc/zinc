@@ -4,4 +4,4 @@ addAll: keyedCollection
 	
 	keyedCollection keysAndValuesDo: [ :key :value |
 		self at: key add: value ].
-	^ keyedCollection 
+	^ keyedCollection

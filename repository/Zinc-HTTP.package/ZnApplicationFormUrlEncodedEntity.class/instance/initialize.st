@@ -2,4 +2,4 @@ initialize-release
 initialize
 	super initialize.
 	fields := ZnMultiValueDictionary new.
-	self contentType: self class designatedMimeType 
+	self contentType: self class designatedMimeType
