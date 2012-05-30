@@ -1,3 +1,3 @@
 accessing
 lock
-	^ lock ifNil: [ lock := Mutex new ]
+	^ lock ifNil: [ lock := TransientMutex new ]

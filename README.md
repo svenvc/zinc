@@ -33,7 +33,7 @@ to deal with the HTTP networking protocol.
 
     ```shell
     cd /opt/git/
-    git clone -b gemstone https://dalehenrich@github.com/glassdb/zinc.git
+    git clone -b gemstone2.4 https://github.com/glassdb/zinc.git
     ```
 
 4. Install Zinc:
