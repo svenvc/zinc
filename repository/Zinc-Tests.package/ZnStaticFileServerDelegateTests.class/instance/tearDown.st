@@ -1,5 +1,4 @@
 running
 tearDown
-	(FileDirectory default fileExists: 'small.html')
-		ifTrue: [ FileDirectory default deleteFileNamed: 'small.html' ]
-	
+	(ServerFileDirectory default fileExists: 'small.html')
+		ifTrue: [ ServerFileDirectory default deleteFileNamed: 'small.html' ]

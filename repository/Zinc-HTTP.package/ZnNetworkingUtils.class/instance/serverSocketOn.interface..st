@@ -1,7 +1,7 @@
 public
 serverSocketOn: port interface: address
 	| socket |
-	socket := Socket newTCP.
+	socket := SocketStreamSocket newTCPSocket.
 	self setServerSocketOptions: socket.
 	socket 
 		listenOn: port 

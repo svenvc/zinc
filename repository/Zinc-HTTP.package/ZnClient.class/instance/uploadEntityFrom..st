@@ -9,6 +9,6 @@ uploadEntityFrom: path
 	| stream type length |
 	stream := FileStream fileNamed: path.
 	stream binary.
-	type := ZnMimeType forFilenameExtension: (FileDirectory extensionFor: path).
-	length := (FileDirectory root directoryEntryFor: path) fileSize.
+	type := ZnMimeType forFilenameExtension: (ServerFileDirectory extensionFor: path).
+	length := (ServerFileDirectory root directoryEntryFor: path) fileSize.
 	self entity: (ZnStreamingEntity readFrom: stream usingType: type andLength: length)

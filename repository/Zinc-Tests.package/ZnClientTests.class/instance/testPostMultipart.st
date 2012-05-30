@@ -1,8 +1,8 @@
 testing
 testPostMultipart
 	| client filename |
-	filename := (FileDirectory default / 'testPostMultiPart.txt') fullName.
-	FileDirectory default fileNamed: filename do: [ :stream | stream nextPutAll: '0123456789' ].
+	filename := (ServerFileDirectory default / 'testPostMultiPart.txt') fullName.
+	ServerFileDirectory default fileNamed: filename do: [ :stream | stream nextPutAll: '0123456789' ].
 	self withServerDo: [ :server |
 		(client := ZnClient new)
 			url: server localUrl;
@@ -13,4 +13,4 @@ testPostMultipart
 			post.
 		self assert: client isSuccess.
 		self assert: (client contents includesSubString: 'multipart') ].
-	FileDirectory default deleteFileNamed: filename
+	ServerFileDirectory default deleteFileNamed: filename

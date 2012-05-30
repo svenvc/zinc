@@ -1,4 +1,4 @@
 as yet unclassified
 initialize 
-	lock := TransientSemaphore forMutualExclusion.
+	lock := TransientMutex new.
 	self enabled: true

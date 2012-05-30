@@ -1,7 +1,7 @@
 private
 responseForFile: filename fromRequest: aRequest
 	| entry size time mimeType fileStream entity response modified |
-	entry := FileDirectory root directoryEntryFor: filename.
+	entry := ServerFileDirectory root directoryEntryFor: filename.
 	size := entry fileSize.
 	time := entry modificationDateAndTime.
 	modified := true.
@@ -10,8 +10,8 @@ responseForFile: filename fromRequest: aRequest
 		ifPresent: [ modified := time > (ZnUtils parseHttpDate: (aRequest headers at: 'If-Modified-Since')) ].
 	modified
 		ifTrue: [ 
-			mimeType := ZnMimeType forFilenameExtension: (FileDirectory extensionFor: filename).
-			fileStream := FileDirectory root oldFileNamed: filename.
+			mimeType := ZnMimeType forFilenameExtension: (ServerFileDirectory extensionFor: filename).
+			fileStream := ServerFileDirectory root oldFileNamed: filename.
 			mimeType isBinary
 				ifTrue: [ fileStream binary ].
 			(entity := ZnStreamingEntity type: mimeType length: size) stream: fileStream.
