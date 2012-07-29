@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Streaming",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 4/7/2012 16:37",
@@ -16,5 +15,4 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

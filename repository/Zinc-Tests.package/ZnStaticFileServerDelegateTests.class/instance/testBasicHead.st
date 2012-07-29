@@ -11,7 +11,7 @@ testBasicHead
 		self deny: client response hasEntity.
 		self 
 			assert: (ZnUtils parseHttpDate: (client response headers at: 'Modification-Date'))
-			equals: (FileDirectory default directoryEntryFor: 'small.html') modificationDateAndTime asUTC asTimeStamp.
+			equals: (ZnFileSystemUtils modificationTimeFor: 'small.html') asUTC asTimeStamp.
 		self 
 			assert: (ZnUtils parseHttpDate: (client response headers at: 'Expires')) > (DateAndTime now + 10 days).
 		self 

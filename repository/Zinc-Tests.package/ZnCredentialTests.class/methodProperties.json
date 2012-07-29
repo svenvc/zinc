@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"ignoringDeprecation:" : "SvenVanCaekenberghe 10/4/2011 14:11",
+		"port" : "SvenVanCaekenberghe 3/12/2012 21:32",
+		"testBasicAuthorization" : "SvenVanCaekenberghe 3/12/2012 21:34",
+		"testBasicAuthorizationFailure" : "SvenVanCaekenberghe 3/12/2012 21:37",
+		"testDigestAuthorization" : "SvenVanCaekenberghe 3/12/2012 21:38",
+		"testDigestAuthorizationFailure" : "SvenVanCaekenberghe 3/12/2012 21:39",
+		"testFindHandlerFor" : "SvenVanCaekenberghe 3/12/2012 21:39",
+		"testFindRealmFor" : "SvenVanCaekenberghe 3/12/2012 21:40",
+		"testZnServerBasicAuthRealm" : "SvenVanCaekenberghe 3/12/2012 21:41",
+		"withServerDo:" : "SvenVanCaekenberghe 3/12/2012 21:32" } }

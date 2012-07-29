@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"defaultRealm" : "SvenVanCaekenberghe 8/18/2011 14:19",
+		"new" : "SvenVanCaekenberghe 9/30/2010 15:36",
+		"username:password:" : "SvenVanCaekenberghe 9/30/2010 15:36",
+		"username:password:realm:" : "MattKennedy 9/30/2010 15:55" },
+	"instance" : {
+		"atUsername:putPassword:" : "MattKennedy 9/30/2010 17:19",
+		"authHeader" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"authenticateRequest:do:" : "MattKennedy 9/30/2010 15:56",
+		"initialize" : "SvenVanCaekenberghe 9/30/2010 15:37",
+		"isRequestAuthenticated:" : "SvenVanCaekenberghe 2/23/2012 22:13",
+		"realm" : "SvenVanCaekenberghe 8/18/2011 14:02",
+		"realm:" : "MattKennedy 9/30/2010 15:51",
+		"removeAll" : "SvenVanCaekenberghe 9/30/2010 15:41",
+		"removeUsername:" : "SvenVanCaekenberghe 9/30/2010 15:41" } }

@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"expected:actual:" : "SvenVanCaekenberghe 12/20/2011 12:48" },
+	"instance" : {
+		"actualContentType" : "SvenVanCaekenberghe 12/20/2011 12:39",
+		"actualContentType:" : "SvenVanCaekenberghe 12/20/2011 12:39",
+		"expectedContentType" : "SvenVanCaekenberghe 12/20/2011 12:39",
+		"expectedContentType:" : "SvenVanCaekenberghe 12/20/2011 12:39",
+		"messageText" : "SvenVanCaekenberghe 12/20/2011 12:45",
+		"standardMessageText" : "SvenVanCaekenberghe 12/20/2011 12:43" } }

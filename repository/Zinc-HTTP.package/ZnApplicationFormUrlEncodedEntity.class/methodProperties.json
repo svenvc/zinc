@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"designatedMimeType" : "SvenVanCaekenberghe 9/11/2010 20:41",
+		"withAll:" : "SvenVanCaekenberghe 9/13/2010 22:23" },
+	"instance" : {
+		"add:" : "SvenVanCaekenberghe 8/16/2011 23:26",
+		"addAll:" : "SvenVanCaekenberghe 9/13/2010 22:23",
+		"at:" : "SvenVanCaekenberghe 9/11/2010 21:07",
+		"at:add:" : "SvenVanCaekenberghe 1/12/2011 11:23",
+		"at:ifAbsent:" : "SvenVanCaekenberghe 9/12/2010 10:23",
+		"at:put:" : "SvenVanCaekenberghe 9/12/2010 10:23",
+		"computeRepresentation" : "SvenVanCaekenberghe 9/12/2010 10:19",
+		"contentLength" : "SvenVanCaekenberghe 9/12/2010 10:22",
+		"contents" : "SvenVanCaekenberghe 9/17/2010 16:19",
+		"fields" : "SvenVanCaekenberghe 9/11/2010 21:00",
+		"fieldsDo:" : "SvenVanCaekenberghe 1/31/2011 12:16",
+		"initialize" : "SvenVanCaekenberghe 1/31/2011 12:15",
+		"invalidateRepresentation" : "SvenVanCaekenberghe 9/12/2010 10:17",
+		"isEmpty" : "SvenVanCaekenberghe 12/4/2010 12:41",
+		"printContentsOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
+		"readFrom:" : "SvenVanCaekenberghe 8/18/2011 14:44",
+		"writeOn:" : "SvenVanCaekenberghe 9/12/2010 10:22",
+		"writeRepresentationOn:" : "NorbertHartl 12/6/2011 17:40" } }

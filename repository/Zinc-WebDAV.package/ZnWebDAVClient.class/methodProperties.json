@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"at:" : "SvenVanCaekenberghe 12/13/2011 10:59",
+		"at:put:" : "SvenVanCaekenberghe 12/11/2011 19:41",
+		"basePath" : "SvenVanCaekenberghe 12/13/2011 10:55",
+		"basePath:" : "SvenVanCaekenberghe 12/13/2011 10:55",
+		"close" : "SvenVanCaekenberghe 12/11/2011 19:24",
+		"host:" : "SvenVanCaekenberghe 12/11/2011 19:27",
+		"httpClient" : "SvenVanCaekenberghe 12/11/2011 19:27",
+		"list" : "SvenVanCaekenberghe 12/13/2011 10:55",
+		"parsePropFindResponse:" : "SvenVanCaekenberghe 12/11/2011 19:35",
+		"port:" : "SvenVanCaekenberghe 12/11/2011 19:27",
+		"propFindQuery" : "SvenVanCaekenberghe 12/11/2011 19:34",
+		"username:password:" : "SvenVanCaekenberghe 12/11/2011 19:24" } }

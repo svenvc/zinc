@@ -1,7 +1,8 @@
 testing
 testGoogleEncrypted
 	| client |
-	self ensureSocketStreamFactory.     
+	self ensureSocketStreamFactory.
+	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
 	(client := ZnClient new) 
 		get: 'https://encrypted.google.com/search?q=Smalltalk'.
 	self assert: client isSuccess.

@@ -1,6 +1,6 @@
 operations
 getGif: urlObject
-	"self getGif: 'http://homepage.mac.com/svc/ADayAtTheBeach/calculator.gif'."
+	"self getGif: 'http://zn.stfx.eu/zn/Hot-Air-Balloon.gif'."
 	
 	^ self 
 		getImageOfType: ZnMimeType imageGif 

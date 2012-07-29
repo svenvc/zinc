@@ -4,4 +4,5 @@ readOneHeaderFrom: stream
 	key := stream upTo: $:.
 	[ stream peek == Character space ] whileTrue: [ stream next ].
 	value := stream upToEnd.
-	self at: key add: value
+	self at: key add: value.
+	^ key

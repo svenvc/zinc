@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Support",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		"ExtensionsMap",
 		"MimeTypes" ],
@@ -15,5 +14,4 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

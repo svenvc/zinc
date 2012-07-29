@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-WWS-Client",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DefaultEndpoint" ],
+	"commentStamp" : "SvenVanCaekenberghe 1/29/2012 19:25",
+	"instvars" : [
+		"endpoint" ],
+	"name" : "ZnWebWorkspaceAccessor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

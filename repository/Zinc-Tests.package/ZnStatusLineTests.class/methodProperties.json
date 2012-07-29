@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testReading" : "SvenVanCaekenberghe 9/15/2010 14:09",
+		"testReadingWrongCode" : "DamienPollet 8/4/2011 14:04",
+		"testReadingWrongVersion" : "DamienPollet 8/4/2011 14:05",
+		"testReadingWrongVersion2" : "DamienPollet 8/4/2011 14:05",
+		"testWriting" : "NickAger 5/10/2011 09:03" } }

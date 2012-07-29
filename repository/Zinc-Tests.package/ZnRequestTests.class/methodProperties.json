@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testBasicAuthenticate" : "SvenVanCaekenberghe 9/12/2010 20:25",
+		"testCookiesParsing" : "SvenVanCaekenberghe 3/4/2012 21:40",
+		"testCookiesWriting" : "SvenVanCaekenberghe 3/4/2012 23:18",
+		"testReading" : "SvenVanCaekenberghe 12/4/2010 13:34",
+		"testReadingWithEntity" : "SvenVanCaekenberghe 12/4/2010 13:35" } }

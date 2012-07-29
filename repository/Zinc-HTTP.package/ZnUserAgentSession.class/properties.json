@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Support",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 12/6/2010 13:04",
@@ -14,5 +13,4 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

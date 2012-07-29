@@ -1,5 +1,5 @@
 accessing
 defaultPortForScheme: scheme
-	scheme = #http ifTrue: [ ^ 80 ].
-	scheme = #https ifTrue: [ ^ 443 ].
+	(#(http ws) includes: scheme) ifTrue: [ ^ 80 ].
+	(#(https wss) includes: scheme)  ifTrue: [ ^ 443 ].
 	(ZnUnknownScheme scheme: scheme) signal

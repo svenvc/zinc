@@ -1,8 +1,7 @@
 {
-	"category" : "Zinc-HTTP-Client-Server",
+	"category" : "Zinc-FileSystem-Legacy",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 4/26/2011 12:48",
@@ -14,5 +13,4 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "{}",
 	"type" : "normal" }
