@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"defaultHTTPVersion" : "SvenVanCaekenberghe 9/6/2010 15:18",
+		"defaultServerString" : "SvenVanCaekenberghe 3/31/2011 08:54",
+		"defaultUserAgent" : "SvenVanCaekenberghe 9/14/2010 10:49",
+		"faviconBytes" : "PaulDeBruicker 4/10/2011 11:54",
+		"frameworkLicense" : "SvenVanCaekenberghe 9/14/2010 10:36",
+		"frameworkMCVersion" : "SvenVanCaekenberghe 9/17/2010 17:12",
+		"frameworkName" : "SvenVanCaekenberghe 9/14/2010 10:35",
+		"frameworkNameAndVersion" : "SvenVanCaekenberghe 9/14/2010 10:47",
+		"frameworkVersion" : "SvenVanCaekenberghe 3/31/2011 08:58",
+		"httpStatusCodes" : "SvenVanCaekenberghe 9/6/2010 15:53",
+		"initialize" : "SvenVanCaekenberghe 9/6/2010 15:51",
+		"initializeHTTPStatusCodes" : "SvenVanCaekenberghe 9/6/2010 16:22",
+		"knownHTTPMethods" : "SvenVanCaekenberghe 12/11/2011 18:07",
+		"knownHTTPVersions" : "SvenVanCaekenberghe 9/6/2010 15:22",
+		"maximumEntitySize" : "SvenVanCaekenberghe 1/31/2012 13:42",
+		"maximumEntitySize:" : "SvenVanCaekenberghe 1/31/2012 12:17",
+		"maximumLineLength" : "SvenVanCaekenberghe 1/2/2012 17:45",
+		"maximumNumberOfDictionaryEntries" : "SvenVanCaekenberghe 1/2/2012 17:54",
+		"remoteAddressHeader" : "SvenVanCaekenberghe 9/9/2010 20:19",
+		"standardHtmlDocType" : "SvenVanCaekenberghe 8/18/2011 14:19",
+		"welcomePageHtml" : "SvenVanCaekenberghe 5/11/2012 14:43" },
+	"instance" : {
+		 } }

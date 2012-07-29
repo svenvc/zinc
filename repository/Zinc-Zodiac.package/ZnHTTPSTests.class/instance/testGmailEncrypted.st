@@ -1,7 +1,8 @@
 testing
 testGmailEncrypted
 	| client |
-	self ensureSocketStreamFactory.     
+	self ensureSocketStreamFactory.
+	self isNativeSSLPluginPresent ifFalse: [ ^ self ].  
 	(client := ZnClient new) 
 		get: 'https://www.gmail.com'.
 	self assert: client isSuccess.

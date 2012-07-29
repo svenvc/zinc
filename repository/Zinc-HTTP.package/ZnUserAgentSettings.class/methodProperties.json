@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"commentString" : "SvenVanCaekenberghe 8/18/2011 14:25",
+		"defaultCookieJar" : "SvenVanCaekenberghe 12/7/2010 00:00",
+		"defaultSessionClass" : "SvenVanCaekenberghe 8/18/2011 14:25",
+		"defaultSettingsClass" : "SvenVanCaekenberghe 1/4/2011 21:00",
+		"defaultUserAgentString" : "SvenVanCaekenberghe 8/18/2011 14:25",
+		"encryptionStrengthComment" : "SvenVanCaekenberghe 8/18/2011 14:25",
+		"localeComment" : "SvenVanCaekenberghe 8/18/2011 14:24",
+		"platform" : "SvenVanCaekenberghe 10/6/2010 09:32",
+		"platformDetails" : "SvenVanCaekenberghe 8/18/2011 14:25" },
+	"instance" : {
+		"agent" : "SvenVanCaekenberghe 8/18/2011 14:15",
+		"agent:" : "SvenVanCaekenberghe 1/12/2011 13:38",
+		"followRedirect" : "SvenVanCaekenberghe 8/18/2011 14:15",
+		"followRedirect:" : "SvenVanCaekenberghe 1/12/2011 13:39",
+		"initialize" : "MattKennedy 9/26/2010 16:12",
+		"loadSession" : "SvenVanCaekenberghe 8/18/2011 14:24",
+		"redirectLimit" : "SvenVanCaekenberghe 8/18/2011 14:14",
+		"redirectLimit:" : "SvenVanCaekenberghe 1/12/2011 13:39",
+		"settings" : "SvenVanCaekenberghe 8/18/2011 14:14",
+		"settings:" : "MattKennedy 9/25/2010 21:30",
+		"timeout" : "SvenVanCaekenberghe 8/18/2011 14:15",
+		"timeout:" : "SvenVanCaekenberghe 1/12/2011 13:39" } }

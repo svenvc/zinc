@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"generateTestData:" : "SvenVanCaekenberghe 6/27/2012 13:26",
+		"generateTestFiles" : "SvenVanCaekenberghe 6/27/2012 13:27" },
+	"instance" : {
+		"ensureSocketStreamFactory" : "SvenVanCaekenberghe 7/4/2012 11:32",
+		"isNativeSSLPluginPresent" : "SvenVanCaekenberghe 7/4/2012 11:32",
+		"testAmazonAWS" : "SvenVanCaekenberghe 7/4/2012 11:33",
+		"testGForceInria" : "SvenVanCaekenberghe 7/4/2012 11:33",
+		"testGmailEncrypted" : "SvenVanCaekenberghe 7/4/2012 11:33",
+		"testGoogleEncrypted" : "SvenVanCaekenberghe 7/4/2012 11:33",
+		"testPayPal" : "SvenVanCaekenberghe 7/4/2012 11:34",
+		"testRequestResponse" : "SvenVanCaekenberghe 7/4/2012 11:35",
+		"testTransfers" : "SvenVanCaekenberghe 7/4/2012 11:35",
+		"testTransfersSingleClient" : "SvenVanCaekenberghe 7/4/2012 11:34",
+		"testWikimedia" : "SvenVanCaekenberghe 7/4/2012 11:34" } }

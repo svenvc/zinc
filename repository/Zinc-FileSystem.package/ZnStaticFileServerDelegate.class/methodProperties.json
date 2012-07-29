@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"defaultMimeTypeExpirations" : "SvenVanCaekenberghe 5/14/2012 10:26" },
+	"instance" : {
+		"actualFilenameFor:" : "SvenVanCaekenberghe 7/3/2012 16:38",
+		"directory" : "SvenVanCaekenberghe 4/26/2011 11:06",
+		"directory:" : "SvenVanCaekenberghe 4/26/2011 11:07",
+		"directoryRedirectFor:" : "SvenVanCaekenberghe 4/26/2011 12:35",
+		"expirationDateFor:" : "SvenVanCaekenberghe 5/14/2012 10:30",
+		"handleRequest:" : "PaulDeBruicker 5/12/2012 09:56",
+		"indexFileIn:" : "SvenVanCaekenberghe 7/3/2012 14:43",
+		"maxAgeFor:" : "SvenVanCaekenberghe 5/14/2012 09:41",
+		"mimeTypeExpirations" : "SvenVanCaekenberghe 5/14/2012 09:39",
+		"mimeTypeExpirations:" : "SvenVanCaekenberghe 5/14/2012 09:39",
+		"prefix" : "SvenVanCaekenberghe 4/26/2011 12:46",
+		"prefix:" : "SvenVanCaekenberghe 4/26/2011 11:08",
+		"prefixFromString:" : "SvenVanCaekenberghe 4/26/2011 11:09",
+		"redirectNeededFor:actualFilename:" : "SvenVanCaekenberghe 4/26/2011 13:11",
+		"responseForFile:fromRequest:" : "SvenVanCaekenberghe 7/3/2012 14:56" } }

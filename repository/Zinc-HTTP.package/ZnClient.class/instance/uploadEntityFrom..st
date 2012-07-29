@@ -7,8 +7,8 @@ uploadEntityFrom: path
 	You can then use #put or #post to actually do an upload."
 	
 	| stream type length |
-	stream := FileStream fileNamed: path.
+	stream := ZnFileSystemUtils fileStreamFor: path.
 	stream binary.
-	type := ZnMimeType forFilenameExtension: (FileDirectory extensionFor: path).
-	length := (FileDirectory root directoryEntryFor: path) fileSize.
+	type := ZnMimeType forFilenameExtension: (ZnFileSystemUtils extensionFor: path).
+	length := ZnFileSystemUtils fileSizeFor: path.
 	self entity: (ZnStreamingEntity readFrom: stream usingType: type andLength: length)

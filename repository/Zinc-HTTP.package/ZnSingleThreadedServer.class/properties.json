@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Client-Server",
 	"classinstvars" : [
 		"Default" ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 12/15/2010 15:38",
@@ -21,5 +20,4 @@
 	"pools" : [
 		 ],
 	"super" : "ZnServer",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

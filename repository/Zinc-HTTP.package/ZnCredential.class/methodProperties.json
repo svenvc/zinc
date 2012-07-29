@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"authName" : "MattKennedy 9/28/2010 17:28",
+		"findHandlerFor:" : "SvenVanCaekenberghe 8/18/2011 14:09",
+		"findRealmFor:" : "SvenVanCaekenberghe 8/18/2011 14:21" },
+	"instance" : {
+		"authToken" : "SvenVanCaekenberghe 8/18/2011 14:20",
+		"authTokenForUrl:method:" : "MattKennedy 9/29/2010 13:48",
+		"domain" : "MattKennedy 9/28/2010 14:27",
+		"domain:" : "MattKennedy 9/28/2010 14:27",
+		"isComplete" : "SvenVanCaekenberghe 8/18/2011 14:20",
+		"linkToAuthRequest:" : "MattKennedy 9/29/2010 16:10",
+		"realm" : "SvenVanCaekenberghe 8/18/2011 14:07",
+		"realm:" : "MattKennedy 9/28/2010 14:27",
+		"setAuthorizationHeader:for:method:" : "MattKennedy 9/29/2010 13:42" } }

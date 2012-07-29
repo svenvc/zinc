@@ -1,0 +1,17 @@
+{
+	"category" : "Zinc-AWS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 9/17/2011 14:06",
+	"instvars" : [
+		"accessKeyId",
+		"secretAccessKey",
+		"checkIntegrity",
+		"httpClient" ],
+	"name" : "ZnAWSS3Client",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
