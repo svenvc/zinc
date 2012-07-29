@@ -10,7 +10,7 @@
 		"testGetGeoIP" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testGetSmallHTML" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testGetSmallHTMLOneShot" : "SvenVanCaekenberghe 11/8/2011 22:16",
-		"testGetSmallHTMLStreaming" : "SvenVanCaekenberghe 11/8/2011 22:16",
+		"testGetSmallHTMLStreaming" : "SvenVanCaekenberghe 7/13/2012 20:28",
 		"testGetSmallHTMLTwice" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testGetSmallHTMLUrlConstruction" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testHeadSmallHTML" : "SvenVanCaekenberghe 3/12/2012 20:13",

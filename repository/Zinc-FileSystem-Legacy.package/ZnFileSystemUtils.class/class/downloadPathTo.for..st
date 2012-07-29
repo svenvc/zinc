@@ -1,8 +1,11 @@
 paths
-downloadPathTo: directoryOfFileName for: baseName
+downloadPathTo: directoryOrFileName for: baseName
 	| downloadPath |
-	downloadPath := FileDirectory on: directoryOfFileName.
-	^ downloadPath exists
-		ifTrue: [ (downloadPath / baseName) pathName ]
-		ifFalse: [ directoryOfFileName ]
-	
+	downloadPath := FileDirectory on: directoryOrFileName.
+	^ (downloadPath exists and: [ downloadPath directoryEntry isDirectory ])
+		ifTrue: [
+			baseName ifNil: [ 
+				self error: 'Not enough information to construct a download path' ]. 
+			(downloadPath / baseName) pathName ]
+		ifFalse: [ 
+			directoryOrFileName ]

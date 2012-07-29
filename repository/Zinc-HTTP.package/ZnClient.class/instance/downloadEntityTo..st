@@ -10,7 +10,8 @@ downloadEntityTo: path
 		downloadPathTo: path 
 		for: self request uri lastPathSegment.
 	ZnFileSystemUtils 
-		fileNamed: target 
+		newFileNamed: target 
 		do:  [ :fileStream |
 			fileStream binary.
-			self entity writeOn: fileStream ]
+			self withProgressDo: [
+				self entity writeOn: fileStream ] ]
