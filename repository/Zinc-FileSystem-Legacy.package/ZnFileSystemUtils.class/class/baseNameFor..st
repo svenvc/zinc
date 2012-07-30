@@ -1,3 +1,3 @@
 paths
 baseNameFor: fileName
-	^ (FileDirectory root directoryEntryFor: fileName) name
+	^ (self fileDirectoryClass root directoryEntryFor: fileName) name

@@ -1,3 +1,3 @@
 paths
 exists: path
-	^ FileDirectory default fileExists: path
+	^ self fileDirectoryClass default fileExists: path

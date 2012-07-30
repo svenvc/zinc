@@ -1,3 +1,3 @@
 paths
 delete: path
-	^ FileDirectory default deleteFileNamed: path
+	^ self fileDirectoryClass default deleteFileNamed: path

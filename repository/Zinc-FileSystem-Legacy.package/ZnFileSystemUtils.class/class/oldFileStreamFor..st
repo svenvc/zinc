@@ -1,3 +1,3 @@
 streams
 oldFileStreamFor: fileName
-	^ FileStream oldFileNamed: fileName
+	^ self fileDirectoryClass oldFileNamed: fileName

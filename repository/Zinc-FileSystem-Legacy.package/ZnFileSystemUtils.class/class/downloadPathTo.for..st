@@ -1,7 +1,7 @@
 paths
 downloadPathTo: directoryOrFileName for: baseName
 	| downloadPath |
-	downloadPath := FileDirectory on: directoryOrFileName.
+	downloadPath := self fileDirectoryClass on: directoryOrFileName.
 	^ (downloadPath exists and: [ downloadPath directoryEntry isDirectory ])
 		ifTrue: [
 			baseName ifNil: [ 

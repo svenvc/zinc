@@ -1,3 +1,3 @@
 queries
 modificationTimeFor: path
-	^ (FileDirectory default directoryEntryFor: path) modificationDateAndTime
+	^ (self fileDirectoryClass default directoryEntryFor: path) modificationDateAndTime
