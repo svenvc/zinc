@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfZincHTTPComponents!
+SystemOrganization addCategory: #'BaselineOfZincHTTPComponents'!

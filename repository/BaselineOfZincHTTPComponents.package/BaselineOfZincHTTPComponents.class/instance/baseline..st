@@ -12,7 +12,6 @@ baseline: spec
                         repository: 'http://www.squeaksource.com/MetacelloRepository' ].
             spec
                 package: 'Zinc-HTTP';
-                package: 'Zinc-Patch-HTTPSocket' with: [ spec requires: 'Zinc-HTTP' ];
                 package: 'Zinc-AWS' with: [ spec requires: #('Zinc-HTTP' 'XML Support') ];
                 package: 'Zinc-REST' with: [ spec requires: 'Zinc-HTTP' ];
                 package: 'Zinc-Zodiac' with: [ spec requires: #('Zinc-HTTP' 'Zodiac-Core') ];
@@ -30,6 +29,10 @@ baseline: spec
                 group: 'REST' with: #('Zinc-REST');
                 group: 'Patch-HTTPSocket' with: #('Zinc-Patch-HTTPSocket') ].
     spec
+        for: #'squeakCommon'
+        do: [ 
+             spec package: 'Zinc-Patch-HTTPSocket' with: [ spec requires: 'Zinc-HTTP' ]].
+    spec
         for: #'pharo1.x'
         do: [ 
             spec
@@ -44,11 +47,7 @@ baseline: spec
     spec
         for: #'gemstone'
         do: [ 
-            spec repository: 'http://seaside.gemstone.com/ss/ZincHTTPComponents'.
-            spec
-                package: 'Zinc-HTTP' with: [ spec includes: #('Zinc-Gemstone') ];
-                package: 'SocketStream' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
-                package: 'Zinc-GemstonePreliminary' with: [ spec requires: #('SocketStream') ];
-                package: 'Zinc-HTTP' with: [ spec requires: #('Zinc-GemstonePreliminary') ];
-                package: 'Zinc-Gemstone' with: [ spec requires: #('Zinc-HTTP') ];
-                package: 'Zinc-Tests' with: [ spec requires: 'Zinc-Gemstone' ] ]
+		spec
+		    package: 'SocketStream' with: [ 
+                    spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
+                package: 'Zinc-HTTP' with: [ spec includes: #('SocketStream') ] ]
