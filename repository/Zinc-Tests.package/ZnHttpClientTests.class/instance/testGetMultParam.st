@@ -2,7 +2,7 @@ testing
 testGetMultParam
 	self ignoringDeprecation: [ | client response |
 		client := ZnHttpClient new
-			url: 'http://homepage.mac.com/svc/Zinc-HTTP-Components/small.html';
+			url: 'http://zn.stfx.eu/zn/small.html';
 			parameterAt: 'test' add: 'value1';
 			parameterAt: 'test' add: 'value2'.
 		self assert: (client params at: 'test') isArray.

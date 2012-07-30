@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"closeConnections" : "SvenVanCaekenberghe 9/5/2011 14:14",
+		"closeSocketStream:" : "SvenVanCaekenberghe 9/5/2011 14:17",
+		"connections" : "SvenVanCaekenberghe 9/5/2011 14:14",
+		"lock" : "SvenVanCaekenberghe 9/5/2011 14:14",
+		"socketStreamOn:" : "SvenVanCaekenberghe 9/5/2011 14:17",
+		"stop" : "SvenVanCaekenberghe 9/5/2011 14:14" } }

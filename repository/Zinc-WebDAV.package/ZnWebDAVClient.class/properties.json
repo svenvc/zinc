@@ -1,0 +1,17 @@
+{
+	"category" : "Zinc-WebDAV",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 12/11/2011 19:35",
+	"instvars" : [
+		"httpClient",
+		"username",
+		"password",
+		"basePath" ],
+	"name" : "ZnWebDAVClient",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

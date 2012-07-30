@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-WWS-Client",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 1/24/2012 23:17",
+	"instvars" : [
+		"url" ],
+	"name" : "ZnWorkspace",
+	"pools" : [
+		 ],
+	"super" : "Workspace",
+	"type" : "normal" }

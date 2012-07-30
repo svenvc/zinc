@@ -1,8 +1,8 @@
-as yet unclassified
+accessing
 scheme: symbol
 	symbol isNil 
 		ifTrue: [ scheme := nil ]
 		ifFalse: [ 
-			(#(http https) includes: symbol asSymbol) 
+			(#(http https ws wws) includes: symbol asSymbol) 
 				ifTrue: [ scheme := symbol asSymbol ]
-					ifFalse: [ (ZnUnknownScheme scheme: symbol) signal ] ]
+				ifFalse: [ (ZnUnknownScheme scheme: symbol) signal ] ]

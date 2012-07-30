@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"allowReadingUpToEnd" : "SvenVanCaekenberghe 10/3/2010 16:07",
+		"allowsReadingUpToEnd" : "SvenVanCaekenberghe 10/3/2010 16:07",
+		"binary" : "SvenVanCaekenberghe 4/7/2012 16:37",
+		"canReadContent" : "SvenVanCaekenberghe 4/20/2011 12:39",
+		"contentLength" : "SvenVanCaekenberghe 9/25/2010 23:10",
+		"contentType" : "SvenVanCaekenberghe 9/25/2010 23:11",
+		"hasContentLength" : "SvenVanCaekenberghe 9/25/2010 22:35",
+		"headers" : "SvenVanCaekenberghe 9/25/2010 22:23",
+		"headers:" : "SvenVanCaekenberghe 9/25/2010 22:22",
+		"isBinary" : "SvenVanCaekenberghe 4/7/2012 16:37",
+		"isChunked" : "SvenVanCaekenberghe 9/26/2010 13:10",
+		"isGzipped" : "SvenVanCaekenberghe 9/27/2010 13:55",
+		"isIdentityEncoded" : "SvenVanCaekenberghe 9/27/2010 16:45",
+		"isStreaming" : "SvenVanCaekenberghe 9/25/2010 23:03",
+		"readEntity" : "SvenVanCaekenberghe 5/1/2011 17:50",
+		"readEntityFromStream" : "SvenVanCaekenberghe 4/7/2012 16:33",
+		"readFrom:usingType:andLength:" : "SvenVanCaekenberghe 4/7/2012 16:42",
+		"stream" : "SvenVanCaekenberghe 9/25/2010 22:23",
+		"stream:" : "SvenVanCaekenberghe 9/25/2010 22:22",
+		"streaming" : "SvenVanCaekenberghe 9/25/2010 22:31" } }

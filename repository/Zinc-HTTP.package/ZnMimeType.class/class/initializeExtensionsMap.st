@@ -14,4 +14,5 @@ initializeExtensionsMap
 		at: 'js' put: self applicationJavascript;
 		at: 'xml' put: self applicationXml;
 		at: 'css' put: self textCss;
+		at: 'pdf' put: self applicationPdf;
 		yourself

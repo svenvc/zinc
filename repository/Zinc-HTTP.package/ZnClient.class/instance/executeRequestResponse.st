@@ -1,10 +1,10 @@
 private protocol
 executeRequestResponse
 	self logRequest.
-	self signalProgress ifTrue: [ HTTPProgress signal: 'Writing request' ].
+	ZnSignalProgress enabled ifTrue: [ HTTPProgress signal: 'Writing request' ].
 	request writeOn: connection.
 	connection flush.
-	self signalProgress ifTrue: [ HTTPProgress signal: 'Reading response' ].
+	ZnSignalProgress enabled ifTrue: [ HTTPProgress signal: 'Reading response' ].
 	response := request method = #HEAD
 		ifTrue: [ ZnResponse readHeaderFrom: 	connection ]
 		ifFalse: [ 

@@ -5,4 +5,4 @@ contentReader: object
 	as used by #contents to object.
 	Can be used to parse incoming data."
 
-	^ self optionAt: #contentReader put: object
+	self optionAt: #contentReader put: object

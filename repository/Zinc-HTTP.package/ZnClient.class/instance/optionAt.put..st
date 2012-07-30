@@ -4,4 +4,4 @@ optionAt: key put: value
 	This is a generic interface, see my options protocol for specific usages."
 	
 	options ifNil: [ options := Dictionary new ].
-	^ options at: key put: value
+	options at: key put: value
