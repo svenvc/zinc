@@ -1,3 +1,3 @@
 defaults
 defaultDirectoryPath
-	^ FileDirectory default fullName
+	^ self fileDirectoryClass default fullName

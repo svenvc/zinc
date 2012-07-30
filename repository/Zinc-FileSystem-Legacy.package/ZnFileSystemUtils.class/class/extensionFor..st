@@ -1,3 +1,3 @@
 paths
 extensionFor: fileName
-	^ FileDirectory extensionFor: fileName
+	^ self fileDirectoryClass extensionFor: fileName

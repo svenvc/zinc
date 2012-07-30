@@ -1,3 +1,3 @@
 streams
 fileStreamFor: fileName
-	^ FileStream fileNamed: fileName
+	^ self fileStreamClass fileNamed: fileName

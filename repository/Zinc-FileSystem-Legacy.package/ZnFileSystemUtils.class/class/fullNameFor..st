@@ -1,3 +1,3 @@
 paths
 fullNameFor: fileName
-	^ (FileDirectory default / fileName) fullName
+	^ (self fileDirectoryClass default / fileName) fullName

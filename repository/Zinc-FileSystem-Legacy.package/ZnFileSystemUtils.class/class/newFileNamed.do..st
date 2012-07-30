@@ -1,5 +1,5 @@
 streams
 newFileNamed: fileName do: block
-	^ FileStream 
+	^ self fileDirectoryClass 
 		newFileNamed: fileName 
 		do: block
