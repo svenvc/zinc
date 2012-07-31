@@ -1,7 +1,7 @@
 private protocol
 executeWithRetriesRemaining: retryCount
 	^ [ self executeWithRedirectsRemaining: self maxNumberOfRedirects ]
-		on: Exception
+		on: Error
 		do: [ :exception |
 			retryCount > 0
 				ifTrue: [
