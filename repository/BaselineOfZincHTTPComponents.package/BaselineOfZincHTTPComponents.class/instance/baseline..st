@@ -14,7 +14,6 @@ baseline: spec
                 package: 'Zinc-HTTP';
                 package: 'Zinc-AWS' with: [ spec requires: #('Zinc-HTTP' 'XML Support') ];
                 package: 'Zinc-REST' with: [ spec requires: 'Zinc-HTTP' ];
-                package: 'Zinc-Zodiac' with: [ spec requires: #('Zinc-HTTP' 'Zodiac-Core') ];
                 package: 'Zinc-WebDAV' with: [ spec requires: 'Zinc-HTTP' ];
                 package: 'Zinc-WWS-Server' with: [ spec requires: 'Zinc-HTTP' ];
                 package: 'Zinc-WWS-Client' with: [ spec requires: 'Zinc-HTTP' ];
@@ -26,9 +25,12 @@ baseline: spec
                 group: 'AWS' with: #('Zinc-AWS');
                 group: 'WebDAV' with: #('Zinc-WebDAV');
                 group: 'WWS' with: #('Zinc-WWS-Server' 'Zinc-WWS-Client');
-                group: 'REST' with: #('Zinc-REST');
-                group: 'Patch-HTTPSocket' with: #('Zinc-Patch-HTTPSocket') ].
-    spec for: #'squeakCommon' do: [ spec package: 'Zinc-Patch-HTTPSocket' with: [ spec requires: 'Zinc-HTTP' ] ].
+                group: 'REST' with: #('Zinc-REST') ].
+    spec
+        for: #'squeakCommon'
+        do: [ 
+            spec package: 'Zinc-Patch-HTTPSocket' with: [ spec requires: 'Zinc-HTTP' ].
+            spec group: 'Patch-HTTPSocket' with: #('Zinc-Patch-HTTPSocket') ].
     spec
         for: #'pharo1.x'
         do: [ 
