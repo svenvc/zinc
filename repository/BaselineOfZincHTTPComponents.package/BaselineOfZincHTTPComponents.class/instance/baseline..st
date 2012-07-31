@@ -50,4 +50,8 @@ baseline: spec
 		spec
 		    package: 'SocketStream' with: [ 
                     spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
-                package: 'Zinc-HTTP' with: [ spec includes: #('SocketStream') ] ]
+                package: 'Zinc-FileSystem-Legacy';
+                package: 'Zinc-HTTP' with: [ 
+			  spec 
+				requires: #('Zinc-FileSystem-Legacy');
+				includes: #('SocketStream') ] ]
