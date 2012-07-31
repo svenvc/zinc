@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'Zinc-FileSystem-Legacy'!
+SystemOrganization addCategory: #'Zinc-FileSystem-Legacy'!
