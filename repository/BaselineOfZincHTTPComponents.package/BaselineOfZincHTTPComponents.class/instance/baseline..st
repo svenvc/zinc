@@ -28,10 +28,7 @@ baseline: spec
                 group: 'WWS' with: #('Zinc-WWS-Server' 'Zinc-WWS-Client');
                 group: 'REST' with: #('Zinc-REST');
                 group: 'Patch-HTTPSocket' with: #('Zinc-Patch-HTTPSocket') ].
-    spec
-        for: #'squeakCommon'
-        do: [ 
-             spec package: 'Zinc-Patch-HTTPSocket' with: [ spec requires: 'Zinc-HTTP' ]].
+    spec for: #'squeakCommon' do: [ spec package: 'Zinc-Patch-HTTPSocket' with: [ spec requires: 'Zinc-HTTP' ] ].
     spec
         for: #'pharo1.x'
         do: [ 
@@ -47,11 +44,17 @@ baseline: spec
     spec
         for: #'gemstone'
         do: [ 
-		spec
-		    package: 'SocketStream' with: [ 
-                    spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
-                package: 'Zinc-FileSystem-Legacy';
-                package: 'Zinc-HTTP' with: [ 
-			  spec 
-				requires: #('Zinc-FileSystem-Legacy');
-				includes: #('SocketStream') ] ]
+            spec
+                configuration: 'GsCore'
+                with: [ 
+                    spec
+                        version: '0.247';
+                        repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
+            spec
+                package: 'SocketStream' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
+                package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GsCore') ];
+                package: 'Zinc-HTTP'
+                    with: [ 
+                            spec
+                                requires: #('Zinc-FileSystem-Legacy');
+                                includes: #('SocketStream') ] ]
