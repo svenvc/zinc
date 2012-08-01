@@ -4,8 +4,9 @@
 	"instance" : {
 		"decodeBytes:with:" : "SvenVanCaekenberghe 11/30/2010 11:57",
 		"encodeString:with:" : "SvenVanCaekenberghe 11/30/2010 11:57",
+		"expectedFailures" : "dkh 08/01/2012 14:37",
 		"testConvencienceMethods" : "SvenVanCaekenberghe 5/2/2012 16:35",
-		"testLatin2Encoder" : "PaulDeBruicker 04/10/2011 10:44",
+		"testLatin2Encoder" : "dkh 08/01/2012 14:37",
 		"testNullEncoder" : "PaulDeBruicker 04/10/2011 10:45",
 		"testUTF8Encoder" : "PaulDeBruicker 04/10/2011 10:44",
 		"testUTF8EncoderAuto" : "SvenVanCaekenberghe 11/30/2010 13:42",

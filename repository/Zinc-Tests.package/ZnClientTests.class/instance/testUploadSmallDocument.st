@@ -1,6 +1,6 @@
 testing
 testUploadSmallDocument
-	self withServerDo: [ :server | | client contents path |
+	self withServerDo: [ :server | | client contents path x |
 		path := ZnFileSystemUtils fullNameFor: 'small.txt'.
 		contents := String streamContents: [ :stream |
 			stream print: DateAndTime now; space; print: 9999 atRandom ].
@@ -10,12 +10,14 @@ testUploadSmallDocument
 			url: server localUrl;
 			addPath: 'echo';
 			uploadEntityFrom: path.
+		Processor yield.
 		self assert: client request entity contentType = ZnMimeType textPlain.
 		client contentType: ZnMimeType textPlain. "Not needed, just test the code path"
 		self assert: client request entity contentType = ZnMimeType textPlain.
 		client post.
+		Processor yield.
 		self assert: client isSuccess.
 		self assert: client entity contentType = ZnMimeType textPlain.
-		self assert: (client contents includesSubString: contents).
+		self assert: ((x := client contents) includesSubString: contents).
 		client close.
 		ZnFileSystemUtils deleteIfExists: 'small.txt' ]

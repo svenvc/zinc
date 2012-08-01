@@ -12,6 +12,7 @@ testPostMultipart
 			addPart: (ZnMimePart fieldName: 'foo' entity: (ZnEntity text: '123'));
 			addPart: (ZnMimePart fieldName: 'file' fileNamed: filename);
 			post.
+			Processor yield.
 		self assert: client isSuccess.
 		self assert: (client contents includesSubString: 'multipart') ].
 	ZnFileSystemUtils deleteIfExists: 'testPostMultiPart.txt'.
