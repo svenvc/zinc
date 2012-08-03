@@ -56,7 +56,7 @@ baseline: spec
                 with: [ 
                     spec
                         version: '0.9.2';
-                        repository: 'http://seaside.gemstone.com/ss/PharoCompat' ].
+                        repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
             spec
                 package: 'SocketStream' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
                 package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GsCore') ];
