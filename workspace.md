@@ -20,4 +20,8 @@ Metacello image
 	load: 'Tests'.
 
 System signalAlmostOutOfMemoryThreshold: 75.
+
+"
+ZnEntityReaderTests ... off by one stream errors
+ZNEntityTests ... off by one ..."
 ```
