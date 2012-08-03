@@ -1,17 +1,23 @@
 ```Smalltalk
-"Metacello scripts"
-Metacello image
-	configuration: 'MetacelloPreview';
-	get.
-Metacello image
-	configuration: 'MetacelloPreview';
-	load.
+MetacelloProjectRegistration registry.
+
+MetacelloProjectRegistration 
+	resetRegistry;
+	primeRegistryFromImage.
+
 Metacello new
-	baseline: 'ZincHTTPComponents';
+	baseline: [:spec | true ];
 	repository: 'filetree:///opt/git/gs/zinc/repository';
 	get.
-Metacello new
-	baseline: 'ZincHTTPComponents';
-	repository: 'filetree:///opt/git/gs/zinc/repository';
+	
+Metacello image
+	baseline: #('ZincHTTPComponents');
+	silently;
+	get.
+Metacello image
+	baseline: #('ZincHTTPComponents');
+	silently;
 	load: 'Tests'.
+
+System signalAlmostOutOfMemoryThreshold: 75.
 ```
