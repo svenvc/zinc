@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 match: subCollection
 	"Try to read and match the elements of subCollection. 
 	If successful return true and leave the me positioned after the match.
