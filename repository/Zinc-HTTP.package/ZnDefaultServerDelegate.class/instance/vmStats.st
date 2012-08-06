@@ -1,5 +1,5 @@
 private
 vmStats
-	^  [ SmalltalkImage current vm statisticsReport ]
-		on: MessageNotUnderstood 
-		do: [ SmalltalkImage current vmStatisticsReportString ]
+	"augmentation needed"
+
+	^  SystemRepository fileSizeReport
