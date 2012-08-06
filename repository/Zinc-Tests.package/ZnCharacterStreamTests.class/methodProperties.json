@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testReadStream" : "SvenVanCaekenberghe 5/3/2012 21:35",
+		"testSimpleUTF8ReadStream" : "SvenVanCaekenberghe 5/3/2012 21:26",
+		"testSimpleUTF8WriteStream" : "SvenVanCaekenberghe 5/3/2012 21:27" } }

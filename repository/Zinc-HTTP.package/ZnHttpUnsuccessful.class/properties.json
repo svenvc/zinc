@@ -2,7 +2,6 @@
 	"category" : "Zinc-HTTP-Exceptions",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 12/20/2011 12:52",
@@ -12,5 +11,4 @@
 	"pools" : [
 		 ],
 	"super" : "Error",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

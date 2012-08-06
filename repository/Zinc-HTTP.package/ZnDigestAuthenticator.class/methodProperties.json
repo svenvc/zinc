@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"hasMD5Support" : "SvenVanCaekenberghe 8/18/2011 14:19",
+		"md5Hash:" : "SvenVanCaekenberghe 8/18/2011 14:27",
+		"parseAuthRequest:" : "SvenVanCaekenberghe 5/22/2012 10:21" },
+	"instance" : {
+		"a1for:" : "SvenVanCaekenberghe 8/18/2011 14:03",
+		"a2forUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"authHeader" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"createNonce" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"createOpaque" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"isRequestAuthenticated:" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"nonces" : "SvenVanCaekenberghe 8/18/2011 14:18" } }

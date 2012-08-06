@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"authName" : "SvenVanCaekenberghe 8/18/2011 14:21" },
+	"instance" : {
+		"a1" : "SvenVanCaekenberghe 8/18/2011 14:21",
+		"a2ForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:21",
+		"authTokenForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:37",
+		"isComplete" : "SvenVanCaekenberghe 8/18/2011 14:21",
+		"linkToAuthRequest:" : "SvenVanCaekenberghe 8/18/2011 14:08",
+		"nonce" : "MattKennedy 9/28/2010 14:48",
+		"nonce:" : "MattKennedy 9/28/2010 14:48",
+		"opaque" : "MattKennedy 9/28/2010 14:48",
+		"opaque:" : "MattKennedy 9/28/2010 14:48",
+		"parseAuthRequest:" : "SvenVanCaekenberghe 8/18/2011 14:21",
+		"responseForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:21",
+		"setAuthorizationHeader:for:method:" : "MattKennedy 9/29/2010 16:28",
+		"uriPathFrom:" : "SvenVanCaekenberghe 8/18/2011 14:08" } }

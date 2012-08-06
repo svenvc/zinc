@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAsMimeType" : "SvenVanCaekenberghe 1/4/2011 19:59",
+		"testCharset" : "SvenVanCaekenberghe 3/6/2012 11:05",
+		"testCopying" : "SvenVanCaekenberghe 12/6/2011 20:51",
+		"testDefault" : "SvenVanCaekenberghe 12/6/2011 20:44",
+		"testIdentity" : "SvenVanCaekenberghe 12/6/2011 20:44",
+		"testParameters" : "SvenVanCaekenberghe 3/6/2012 11:02",
+		"testReading" : "SvenVanCaekenberghe 12/2/2010 11:29",
+		"testWriting" : "SvenVanCaekenberghe 12/2/2010 11:29" } }

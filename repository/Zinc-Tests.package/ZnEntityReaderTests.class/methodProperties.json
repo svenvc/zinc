@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testChunked" : "SvenVanCaekenberghe 12/3/2010 16:03",
+		"testChunkedWithExtraHeaders" : "SvenVanCaekenberghe 12/3/2010 16:04",
+		"testReadStreaming" : "SvenVanCaekenberghe 2/21/2011 23:08",
+		"testReadStreamingWriting" : "SvenVanCaekenberghe 2/21/2011 23:13" } }
