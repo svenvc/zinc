@@ -52,13 +52,18 @@ baseline: spec
                     spec
                         version: '0.247';
                         repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                configuration: 'GsMisc'
+                with: [ 
+                    spec
+                        version: '0.242';
+                        repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
                 configuration: 'GsPharo'
                 with: [ 
                     spec
                         version: '0.9.2';
                         repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
             spec
-                package: 'SocketStream' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
+                package: 'SocketStream-dkh.13' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
                 package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GsCore') ];
                 package: 'Zinc-HTTP'
                     with: [ 

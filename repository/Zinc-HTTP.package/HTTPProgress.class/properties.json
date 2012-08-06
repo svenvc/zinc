@@ -1,14 +1,15 @@
 {
-	"category" : "Zinc-HTTP-Exceptions",
+	"category" : "Zinc-HTTP-GemStone",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"total",
+		"amount" ],
 	"name" : "HTTPProgress",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "Notification",
 	"type" : "normal" }
