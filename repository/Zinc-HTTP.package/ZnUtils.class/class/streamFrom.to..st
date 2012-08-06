@@ -5,7 +5,7 @@ streamFrom: inputStream to: outputStream
 	totalRead := 0.
 	[ inputStream atEnd ]
 		whileFalse: [ | readCount |
-			readCount := inputStream readInto: buffer startingAt: 0 count: buffer size.
+			readCount := inputStream readInto: buffer startingAt: 1 count: buffer size.
 			readCount > 0
 				ifTrue: [
 					totalRead := totalRead + readCount.

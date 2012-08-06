@@ -6,7 +6,7 @@
 		"setUp" : "SvenVanCaekenberghe 7/3/2012 00:35",
 		"smallHtml" : "SvenVanCaekenberghe 5/14/2012 10:08",
 		"tearDown" : "SvenVanCaekenberghe 7/3/2012 00:35",
-		"testBasicGet" : "dkh 07/30/2012 20:14",
-		"testBasicHead" : "dkh 07/30/2012 20:18",
-		"testIfModifiedSinceNotModified" : "dkh 07/30/2012 20:18",
+		"testBasicGet" : "SvenVanCaekenberghe 7/3/2012 00:40",
+		"testBasicHead" : "SvenVanCaekenberghe 7/3/2012 00:40",
+		"testIfModifiedSinceNotModified" : "SvenVanCaekenberghe 8/3/2012 22:47",
 		"withServerDo:" : "SvenVanCaekenberghe 7/3/2012 00:38" } }
