@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"testReading" : "SvenVanCaekenberghe 9/27/2010 15:07",
+		"testReadingBuffered" : "SvenVanCaekenberghe 8/2/2012 10:58",
 		"testReadingGzip" : "SvenVanCaekenberghe 9/27/2010 15:18",
 		"testReadingGzipStepped" : "SvenVanCaekenberghe 9/27/2010 15:17",
 		"testReadingNext" : "SvenVanCaekenberghe 12/3/2011 17:39",
