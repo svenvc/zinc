@@ -63,7 +63,7 @@ baseline: spec
                         version: '0.9.2';
                         repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
             spec
-                package: 'SocketStream-dkh.13' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
+                package: 'SocketStream-dkh.14' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
                 package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GsCore') ];
                 package: 'Zinc-HTTP'
                     with: [ 
