@@ -48,22 +48,27 @@ baseline: spec
         do: [ 
             spec
                 configuration: 'GsCore'
-                with: [ 
-                    spec
-                        version: '0.247';
-                        repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                    with: [ 
+                            spec
+                                version: '0.247';
+                                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
                 configuration: 'GsMisc'
-                with: [ 
-                    spec
-                        version: '0.242';
-                        repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                    with: [ 
+                            spec
+                                version: '0.242';
+                                loads: #('Announcements');
+                                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
                 configuration: 'GsPharo'
-                with: [ 
-                    spec
-                        version: '0.9.2';
-                        repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
+                    with: [ 
+                            spec
+                                version: '0.9.2';
+                                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
             spec
-                package: 'SocketStream-dkh.14' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
+                package: 'SocketStream'
+                    with: [ 
+                            spec
+                                file: 'SocketStream-dkh.14';
+                                repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
                 package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GsCore') ];
                 package: 'Zinc-HTTP'
                     with: [ 
