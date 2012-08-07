@@ -18,32 +18,23 @@ to deal with the HTTP networking protocol.
 
 ## Loading into gemstone
 
-1. [Upgrade to GLASS 1.0-beta.8.7.2](http://code.google.com/p/glassdb/wiki/GemToolsUpdate#Update_GLASS)
-1. [Install FileTree](https://github.com/dalehenrich/filetree/blob/master/doc/GemStoneInstall.md)
-2. Install SocketStream:
+1. [Upgrade to GLASS 1.0-beta.9](http://code.google.com/p/glassdb/wiki/GemToolsUpdate#Update_GLASS)
+2. Install Metacello Preview:
 
     ```Smalltalk
-    Gofer new
-      gemsource: 'PharoCompat';
-      package: 'SocketStream';
+    Metacello new
+      configuration: 'MetacelloPreview';
+      version: #stable;
+      repository: 'github://dalehenrich/metacello-work:configuration';
       load.
     ```
 
-3. Clone Zinc repository:
-
-    ```shell
-    cd /opt/git/
-    git clone -b gemstone2.4 https://github.com/glassdb/zinc.git
-    ```
-
-4. Install Zinc:
+3. Install Zinc for **GemStone2.4.x**:
 
     ```Smalltalk
-    repo := '/opt/git/zinc/repository'. "edit to match path to your cloned repository"
-    Gofer new
-        repository: (MCFileTreeRepository new directory: 
-                        (ServerFileDirectory on: repo));
-        package: 'Zinc-HTTP';
-        package: 'Zinc-Tests';
-        load.
+    Metacello new
+      baseline: 'Zinc';
+	  repository: 'github://glassdb/zinc:gemstone2.4/repository';
+	  load: 'Tests'.
     ```
+
