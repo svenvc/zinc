@@ -1,13 +1,13 @@
 {
-	"category" : "BaselineOfZincHTTPComponents",
+	"category" : "BaselineOfZinc",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "dkh 08/07/2012 06:40",
 	"instvars" : [
 		 ],
-	"name" : "BaselineOfZincHTTPComponents",
+	"name" : "BaselineOfZinc",
 	"pools" : [
 		 ],
 	"super" : "BaselineOf",
