@@ -5,6 +5,6 @@ closeConnections
 		self connections do: [ :each | 
 			self log debug: [ 'Closing ', each printString ].
 			[ each close ] 
-				on: Exception 
+				on: Error 
 				do: [ :exception | exception printString, ' during close' ] ].
 		self connections removeAll ]

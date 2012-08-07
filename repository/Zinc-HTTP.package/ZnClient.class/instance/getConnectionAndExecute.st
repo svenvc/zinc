@@ -3,7 +3,7 @@ getConnectionAndExecute
 	self canReuseConnection 
 		ifTrue: [ 
 			[ ^ self executeRequestResponse; cleanupConnection ] 
-				on: Exception 
+				on: Error 
 				do: [ self noteIgnoringExceptionOnReusedConnection; close ] ].
 	self signalProgress 
 		ifTrue: [ HTTPProgress signal: 'Connecting to ', request url authority ].

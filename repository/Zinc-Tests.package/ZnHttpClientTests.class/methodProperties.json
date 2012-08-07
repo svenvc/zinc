@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"ignoringDeprecation:" : "SvenVanCaekenberghe 10/4/2011 14:11",
+		"port" : "SvenVanCaekenberghe 3/12/2012 20:20",
+		"testBasicAuthorization" : "SvenVanCaekenberghe 3/12/2012 20:31",
+		"testBasicAuthorizationFailure" : "SvenVanCaekenberghe 3/12/2012 20:31",
+		"testCookieAt" : "SvenVanCaekenberghe 3/12/2012 20:23",
+		"testDelete" : "SvenVanCaekenberghe 3/12/2012 20:31",
+		"testDigestAuthorization" : "SvenVanCaekenberghe 3/12/2012 20:31",
+		"testDigestAuthorizationFailure" : "SvenVanCaekenberghe 3/12/2012 20:31",
+		"testGet" : "SvenVanCaekenberghe 7/4/2012 17:32",
+		"testGetMultParam" : "SvenVanCaekenberghe 7/4/2012 17:33",
+		"testPost" : "SvenVanCaekenberghe 3/12/2012 20:32",
+		"testPut" : "SvenVanCaekenberghe 3/12/2012 20:31",
+		"testRelativeRedirect" : "SvenVanCaekenberghe 5/14/2012 17:16",
+		"withServerDo:" : "dkh 08/06/2012 16:01" } }

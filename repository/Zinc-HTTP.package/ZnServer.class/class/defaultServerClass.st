@@ -1,6 +1,5 @@
-as yet unclassified
+accessing
 defaultServerClass
 	"Return the default ZnServer subclass to use"
 	
-	^ ZnMultiThreadedServer 
-"	^ZnSingleThreadedServer"
+	^ ZnManagingMultiThreadedServer

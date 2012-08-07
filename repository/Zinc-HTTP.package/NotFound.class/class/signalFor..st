@@ -1,4 +1,7 @@
-as yet unclassified
-signalFor: aKey
-	"eat the error msg for now"
-	Transcript cr; nextPutAll: aKey; nextPutAll: ' was not found'; cr
+instance creation
+signalFor: anObject
+	"Create and signal a NotFond exception for anObject in the default receiver."
+	
+	^ self new
+		object: anObject;
+		signal

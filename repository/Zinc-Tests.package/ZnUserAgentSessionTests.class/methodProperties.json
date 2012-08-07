@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"dummyCredential" : "MattKennedy 9/28/2010 15:11",
+		"testAccessors" : "SvenVanCaekenberghe 8/30/2011 22:00",
+		"testAddCredential" : "MattKennedy 9/28/2010 15:14",
+		"testWithCookieJar" : "SvenVanCaekenberghe 12/7/2010 00:00" } }

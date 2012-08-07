@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "dkh 08/01/2012 11:29",
+		"testReading" : "SvenVanCaekenberghe 9/27/2010 15:07",
+		"testReadingBuffered" : "SvenVanCaekenberghe 8/2/2012 10:58",
+		"testReadingGzip" : "dkh 08/06/2012 09:28",
+		"testReadingGzipStepped" : "dkh 08/06/2012 09:29",
+		"testReadingNext" : "SvenVanCaekenberghe 12/3/2011 17:39",
+		"testReadingNextInto" : "SvenVanCaekenberghe 12/3/2011 17:40" } }

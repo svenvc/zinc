@@ -1,7 +1,7 @@
 running
 setUp
 	self tearDown.
-	ServerFileDirectory default 
+	ZnFileSystemUtils
 		newFileNamed: 'small.html' 
 		do: [ :stream |
 			stream nextPutAll: self smallHtml ]

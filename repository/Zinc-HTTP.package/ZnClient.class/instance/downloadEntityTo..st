@@ -6,12 +6,12 @@ downloadEntityTo: path
 
 	| target |
 	self entity ifNil: [ ^ self ].
-	target := ServerFileDirectory on: path.
-	target := target exists 
-		ifTrue: [ (target / self request uri lastPathSegment) pathName ] 
-		ifFalse: [ path ].
-	FileStream 
-		fileNamed: target 
-		do: [ :fileStream |
+	target := ZnFileSystemUtils 
+		downloadPathTo: path 
+		for: self request uri lastPathSegment.
+	ZnFileSystemUtils 
+		newFileNamed: target 
+		do:  [ :fileStream |
 			fileStream binary.
-			self entity writeOn: fileStream ]
+			self withProgressDo: [
+				self entity writeOn: fileStream ] ]

@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"port" : "SvenVanCaekenberghe 3/12/2012 20:36",
+		"testAuthorizationFailed" : "SvenVanCaekenberghe 3/12/2012 20:39",
+		"testAuthorizationSuccessful" : "SvenVanCaekenberghe 3/12/2012 20:41",
+		"testDefault" : "SvenVanCaekenberghe 3/12/2012 22:06",
+		"testEcho" : "SvenVanCaekenberghe 3/12/2012 20:42",
+		"testEchoBinary" : "SvenVanCaekenberghe 4/7/2012 18:05",
+		"testEchoLocalInterface" : "SvenVanCaekenberghe 4/13/2012 13:13",
+		"testGetUnicodeUtf8" : "SvenVanCaekenberghe 3/12/2012 20:44",
+		"withServerDo:" : "dkh 08/06/2012 16:01" } }

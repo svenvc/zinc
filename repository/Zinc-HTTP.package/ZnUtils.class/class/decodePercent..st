@@ -2,4 +2,4 @@ conversions
 decodePercent: string
 	^ [ string unescapePercents ]
 		on: Error 
-		do: [ (ZnPercentEncodingWrong string: string) signal ]
+		do: [:ex |  (ZnPercentEncodingWrong string: string) signal ]

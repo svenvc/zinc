@@ -1,5 +1,5 @@
 private
 closeSocketStream: socketStream
 	[ socketStream close ] 
-		on: Exception 
+		on: Error 
 		do: [ :exception | exception printString, ' during close' ]

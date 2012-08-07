@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-FileSystem-Legacy",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 4/26/2011 12:48",
+	"instvars" : [
+		"prefix",
+		"directory",
+		"mimeTypeExpirations" ],
+	"name" : "ZnStaticFileServerDelegate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

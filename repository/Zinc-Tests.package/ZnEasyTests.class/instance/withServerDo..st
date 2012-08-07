@@ -4,6 +4,7 @@ withServerDo: block
 	server := ZnServer on: self port.
 	[ 
 		server start.
+		Processor yield.
 		self assert: server isRunning & server isListening.
 		block cull: server
 	] 
