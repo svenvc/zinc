@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 nextLine
 	self reset.
 	[ self processNext isNil ] whileFalse.

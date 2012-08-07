@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"cookieAt:forUrl:" : "SvenVanCaekenberghe 8/18/2011 14:07",
+		"cookies" : "SvenVanCaekenberghe 8/18/2011 14:07",
+		"cookiesForUrl:" : "SvenVanCaekenberghe 8/18/2011 14:06",
+		"remove:" : "SvenVanCaekenberghe 8/18/2011 14:06",
+		"removeAll" : "SvenVanCaekenberghe 2/29/2012 17:39",
+		"removeIfExpired:" : "SvenVanCaekenberghe 8/18/2011 14:07" } }

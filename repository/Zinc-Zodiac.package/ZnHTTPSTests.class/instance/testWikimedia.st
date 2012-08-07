@@ -1,7 +1,8 @@
 testing
 testWikimedia
 	| client |
-	self ensureSocketStreamFactory.     
+	self ensureSocketStreamFactory.
+	self isNativeSSLPluginPresent ifFalse: [ ^ self ]. 
 	(client := ZnClient new) 
 		get: 'https://secure.wikimedia.org/'.
 	self assert: client isSuccess.

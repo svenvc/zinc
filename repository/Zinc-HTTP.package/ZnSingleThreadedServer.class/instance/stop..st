@@ -4,7 +4,11 @@ stop: unregister
 	If unregister is true, unregister me from the list of managed instances.
 	Does nothing when I am not running"
 	
-	self isRunning ifFalse: [ ^ self ].
+	self isRunning 
+		ifFalse: [ 
+			unregister ifTrue: [ self unregister ].
+			process := nil.
+			^ self ].
 	process terminate. 
 	process := nil.
 	unregister ifTrue: [ self unregister ].

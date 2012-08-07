@@ -11,7 +11,7 @@ testBasicGet
 		self assert: (client contents includesSubString: 'Small').
 		self 
 			assert: (ZnUtils parseHttpDate: (client response headers at: 'Modification-Date'))
-			equals: (ServerFileDirectory default directoryEntryFor: 'small.html') modificationDateAndTime asUTC asTimeStamp.
+			equals: (ZnFileSystemUtils modificationTimeFor: 'small.html') asUTC asTimeStamp.
 		self 
 			assert: (ZnUtils parseHttpDate: (client response headers at: 'Expires')) > (DateAndTime now + 10 days).
 		self 

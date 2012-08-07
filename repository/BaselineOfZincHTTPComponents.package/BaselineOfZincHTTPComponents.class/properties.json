@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfZincHTTPComponents",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfZincHTTPComponents",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

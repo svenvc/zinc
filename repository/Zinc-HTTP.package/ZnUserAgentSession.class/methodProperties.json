@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"withCookieJar:" : "SvenVanCaekenberghe 8/18/2011 14:24" },
+	"instance" : {
+		"addCredential:" : "MattKennedy 9/28/2010 14:31",
+		"cookieJar" : "SvenVanCaekenberghe 8/30/2011 22:00",
+		"cookiejar:" : "MattKennedy 9/28/2010 10:50",
+		"credentialAt:forUrl:" : "SvenVanCaekenberghe 8/18/2011 14:24",
+		"credentials" : "SvenVanCaekenberghe 8/18/2011 14:14",
+		"credentials:" : "MattKennedy 9/28/2010 10:50",
+		"credentialsForUrl:" : "SvenVanCaekenberghe 8/18/2011 14:24",
+		"currentRealm" : "MattKennedy 9/28/2010 17:24",
+		"currentRealm:" : "MattKennedy 9/28/2010 17:24",
+		"resetCookies" : "SvenVanCaekenberghe 2/29/2012 17:40" } }

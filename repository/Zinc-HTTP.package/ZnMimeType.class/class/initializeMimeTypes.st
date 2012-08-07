@@ -7,6 +7,7 @@ initializeMimeTypes
 		at: #applicationJavascript put: (self main: 'application' sub: 'javascript');
 		at: #applicationJson put: (self main: 'application' sub: 'json');
 		at: #applicationXml put: (self main: 'application' sub: 'xml');
+		at: #applicationPdf put: (self main: 'application' sub: 'pdf');
 		at: #applicationFormUrlEncoded put: (self main: 'application' sub: 'x-www-form-urlencoded');
 		at: #imageGif put: (self main: 'image' sub: 'gif');
 		at: #imageJpeg put: (self main: 'image' sub: 'jpeg');

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"newEnabled" : "SvenVanCaekenberghe 3/29/2011 11:40" },
+	"instance" : {
+		"addListener:" : "SvenVanCaekenberghe 10/4/2011 12:28",
+		"announcer" : "SvenVanCaekenberghe 3/28/2011 22:04",
+		"debug:" : "SvenVanCaekenberghe 3/29/2011 09:50",
+		"disable" : "SvenVanCaekenberghe 10/4/2011 12:28",
+		"enable" : "SvenVanCaekenberghe 10/4/2011 12:28",
+		"enabled" : "SvenVanCaekenberghe 3/29/2011 09:29",
+		"enabled:" : "SvenVanCaekenberghe 3/29/2011 09:30",
+		"info:" : "SvenVanCaekenberghe 3/29/2011 09:50",
+		"initialize" : "SvenVanCaekenberghe 10/4/2011 12:28",
+		"removeListener:" : "SvenVanCaekenberghe 10/4/2011 12:28",
+		"transaction:" : "SvenVanCaekenberghe 3/29/2011 09:50" } }

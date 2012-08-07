@@ -9,7 +9,7 @@ testGetGeoIP
 		contentReader: [ :entity | | parserClass |
 			parserClass := Smalltalk at: #JSJsonParser ifAbsent: [ ^ self ].
 			parserClass parse: entity contents ];
-		ifFail: [ ^ self fail ];
+		ifFail: [:ex | ^ self fail ];
 		get.
 	self assert: result isDictionary.
 	self assert: (result at: #country) = 'BE'.

@@ -5,7 +5,7 @@ withServerDo: block
 	[ 
 		(staticFileServerDelegate := ZnStaticFileServerDelegate new)
 			prefixFromString: 'local-files'; 
-			directory: ServerFileDirectory default;
+			directory: ZnFileSystemUtils defaultDirectory;
 			mimeTypeExpirations: ZnStaticFileServerDelegate defaultMimeTypeExpirations. 
 		server delegate: staticFileServerDelegate.
 		server start.
