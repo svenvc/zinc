@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"expectedFailures" : "dkh 08/06/2012 14:55",
 		"testCookie" : "NickAger 5/10/2011 11:30",
 		"testCookies" : "NickAger 5/10/2011 11:30",
 		"testCreated" : "SvenVanCaekenberghe 1/4/2011 14:20",

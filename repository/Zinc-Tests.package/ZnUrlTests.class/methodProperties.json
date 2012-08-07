@@ -4,7 +4,7 @@
 	"instance" : {
 		"testAsZnUrl" : "SvenVanCaekenberghe 1/4/2011 13:40",
 		"testAuthority" : "SvenVanCaekenberghe 1/4/2011 13:05",
-		"testConvenienceMethods" : "SvenVanCaekenberghe 7/9/2012 16:33",
+		"testConvenienceMethods" : "dkh 08/06/2012 15:46",
 		"testDefaultScheme" : "SvenVanCaekenberghe 8/11/2011 15:13",
 		"testDefaultSchemeAndPort" : "SvenVanCaekenberghe 8/11/2011 15:14",
 		"testDefaults" : "SvenVanCaekenberghe 8/11/2011 15:14",
@@ -23,7 +23,7 @@
 		"testPrintingSimple" : "SvenVanCaekenberghe 1/4/2011 12:21",
 		"testQuery" : "SvenVanCaekenberghe 1/4/2011 15:26",
 		"testQueryEncoding" : "SvenVanCaekenberghe 12/13/2011 14:16",
-		"testQueryManipulation" : "SvenVanCaekenberghe 12/13/2011 14:14",
+		"testQueryManipulation" : "dkh 08/06/2012 15:47",
 		"testRelative" : "SvenVanCaekenberghe 8/11/2011 15:10",
 		"testRetrieveContents" : "SvenVanCaekenberghe 1/24/2012 11:44",
 		"testWriteUrlPathQueryFragmentOfOn" : "SvenVanCaekenberghe 1/4/2011 13:57" } }

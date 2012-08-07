@@ -2,4 +2,5 @@ as yet unclassified
 socketStreamTimeout
 	"Access the current timeout in seconds for SocketStream IO"
 	
-	^ self defaultSocketStreamTimeout
+	^ ZnConnectionTimeout value 
+		ifNil: [ ZnNetworkingUtils defaultSocketStreamTimeout ]

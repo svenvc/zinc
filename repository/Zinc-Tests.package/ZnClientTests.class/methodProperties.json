@@ -14,13 +14,13 @@
 		"testGetSmallHTMLTwice" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testGetSmallHTMLUrlConstruction" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testHeadSmallHTML" : "SvenVanCaekenberghe 3/12/2012 20:13",
-		"testIfFailNonExistingHost" : "SvenVanCaekenberghe 11/8/2011 22:16",
+		"testIfFailNonExistingHost" : "dkh 08/06/2012 17:33",
 		"testIfFailNotFound" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testIfFailWrongType" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testIfModifiedSinceNotModified" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testLogging" : "SvenVanCaekenberghe 11/8/2011 22:16",
 		"testPostForm" : "SvenVanCaekenberghe 3/12/2012 20:13",
-		"testPostMultipart" : "dkh 08/01/2012 15:00",
+		"testPostMultipart" : "dkh 08/06/2012 15:59",
 		"testProgress" : "SvenVanCaekenberghe 11/8/2011 22:19",
 		"testProgressNoIfFail" : "SvenVanCaekenberghe 12/20/2011 13:55",
 		"testQueryGoogle" : "SvenVanCaekenberghe 11/8/2011 22:16",
@@ -30,4 +30,4 @@
 		"testRelativeRedirect" : "SvenVanCaekenberghe 5/14/2012 17:16",
 		"testTimeout" : "SvenVanCaekenberghe 3/12/2012 20:14",
 		"testUploadSmallDocument" : "dkh 08/01/2012 15:22",
-		"withServerDo:" : "SvenVanCaekenberghe 8/31/2011 21:59" } }
+		"withServerDo:" : "dkh 08/06/2012 15:50" } }

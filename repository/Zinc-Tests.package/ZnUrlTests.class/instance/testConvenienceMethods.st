@@ -9,7 +9,7 @@ testConvenienceMethods
 		assert: (baseUrl / 'doc' / 'file.html')
 		equals: 'http://api.host.com/doc/file.html' asZnUrl.
 	self 
-		assert: (baseUrl / 'search' ? (#q -> 'Smalltalk') & (#lang -> #en))
+		assert: (baseUrl / 'search' ? ('q' -> 'Smalltalk') & ('lang' -> 'en'))
 		equals: 'http://api.host.com/search?q=Smalltalk&lang=en' asZnUrl.
 	self 
 		assert: baseUrl 

@@ -9,6 +9,5 @@ testIfModifiedSinceNotModified
 			it does not alter the semantics of what we try to test"
 			setIfModifiedSince: (Date today addDays: 2);
 			get.
-		Processor yield.
 		self assert: client response isNotModified.
 		self deny: client response hasEntity ]

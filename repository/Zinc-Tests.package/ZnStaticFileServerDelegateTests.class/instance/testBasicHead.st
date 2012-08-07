@@ -6,7 +6,6 @@ testBasicHead
 			url: server localUrl;
 			addPath: #('local-files' 'small.html');
 			head.
-		Processor yield.
 		self assert: client isSuccess.
 		self assert: client response contentType = ZnMimeType textHtml.
 		self deny: client response hasEntity.

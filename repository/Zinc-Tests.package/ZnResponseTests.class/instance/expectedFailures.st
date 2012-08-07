@@ -1,0 +1,4 @@
+testing
+expectedFailures
+
+	^#(testSlashdotGzipChunked)

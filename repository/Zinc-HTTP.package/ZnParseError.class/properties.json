@@ -10,5 +10,5 @@
 	"name" : "ZnParseError",
 	"pools" : [
 		 ],
-	"super" : "SpError",
+	"super" : "Error",
 	"type" : "normal" }

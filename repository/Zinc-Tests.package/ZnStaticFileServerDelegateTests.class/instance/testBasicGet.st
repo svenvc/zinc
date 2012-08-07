@@ -6,7 +6,6 @@ testBasicGet
 			url: server localUrl;
 			addPath: #('local-files' 'small.html');
 			get.
-		Processor yield.
 		self assert: client isSuccess.
 		self assert: client response contentType = ZnMimeType textHtml.
 		self assert: (client contents includesSubString: 'Small').

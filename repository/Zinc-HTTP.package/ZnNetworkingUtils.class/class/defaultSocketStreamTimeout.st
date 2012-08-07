@@ -1,3 +1,5 @@
-as yet unclassified
+constants
 defaultSocketStreamTimeout
-	^30
+	"Global default timeout in seconds for SocketStream IO"
+	
+	^ DefaultSocketStreamTimeout
