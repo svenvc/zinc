@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"ignoringDeprecation:" : "SvenVanCaekenberghe 10/4/2011 14:11",
+		"port" : "SvenVanCaekenberghe 3/12/2012 20:48",
+		"testCookieAt" : "SvenVanCaekenberghe 3/12/2012 20:48",
+		"testDelete" : "SvenVanCaekenberghe 3/12/2012 20:49",
+		"testErrorHandler" : "SvenVanCaekenberghe 3/12/2012 20:50",
+		"testFollowRedirect" : "SvenVanCaekenberghe 3/12/2012 20:50",
+		"testGetSmallHTMLDocument" : "SvenVanCaekenberghe 7/2/2012 15:30",
+		"testHeadSmallHTMLDocument" : "SvenVanCaekenberghe 7/4/2012 17:33",
+		"testPost" : "SvenVanCaekenberghe 3/12/2012 20:51",
+		"testPut" : "SvenVanCaekenberghe 3/12/2012 20:52",
+		"testRelativeRedirect" : "SvenVanCaekenberghe 5/14/2012 17:17",
+		"withServerDo:" : "SvenVanCaekenberghe 3/12/2012 20:48" } }

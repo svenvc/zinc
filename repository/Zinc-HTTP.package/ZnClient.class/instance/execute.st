@@ -6,6 +6,7 @@ execute
 	| initialMilliseconds result |
 	initialMilliseconds := Time millisecondClockValue.
 	self prepareRequest.
-	result := self executeWithTimeout.
+	self withProgressDo: [
+		result := self executeWithTimeout ].
 	self logRequestResponseStarted: initialMilliseconds.
 	^ result

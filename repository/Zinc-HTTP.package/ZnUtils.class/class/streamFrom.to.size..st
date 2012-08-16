@@ -10,4 +10,12 @@ streamFrom: inputStream to: outputStream size: totalSize
 			inputStream next: readCount into: buffer.
 			leftToRead := leftToRead - readCount.
 			outputStream next: readCount putAll: buffer startingAt: 1.
-			leftToRead > 0 ifTrue: [ outputStream flush ] ]
+			leftToRead > 0 
+				ifTrue: [
+					ZnSignalProgress enabled
+						ifTrue: [ 
+							HTTPProgress new 
+								total: totalSize; 
+								amount: (totalSize - leftToRead);
+								signal: 'Tranferring...' ]. 
+					outputStream flush ] ]

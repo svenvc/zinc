@@ -1,12 +1,11 @@
 testing
 testUploadSmallDocument
 	self withServerDo: [ :server | | client contents path |
-		path := (FileDirectory default / 'small.txt') fullName.
+		path := ZnFileSystemUtils fullNameFor: 'small.txt'.
 		contents := String streamContents: [ :stream |
 			stream print: DateAndTime now; space; print: 9999 atRandom ].
-		(FileDirectory default fileExists: 'small.txt')
-			ifTrue: [ FileDirectory default deleteFileNamed: 'small.txt' ].
-		FileStream fileNamed: path do: [ :stream | stream nextPutAll: contents ].
+		ZnFileSystemUtils deleteIfExists: 'small.txt'.
+		ZnFileSystemUtils newFileNamed: path do: [ :stream | stream nextPutAll: contents ].
 		(client := ZnClient new)
 			url: server localUrl;
 			addPath: 'echo';
@@ -19,5 +18,4 @@ testUploadSmallDocument
 		self assert: client entity contentType = ZnMimeType textPlain.
 		self assert: (client contents includesSubString: contents).
 		client close.
-		(FileDirectory default fileExists: 'small.txt')
-			ifTrue: [ FileDirectory default deleteFileNamed: 'small.txt' ] ]
+		ZnFileSystemUtils deleteIfExists: 'small.txt' ]

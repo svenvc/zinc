@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"designatedMimeType" : "SvenVanCaekenberghe 12/1/2010 20:58",
+		"html:" : "SvenVanCaekenberghe 12/2/2010 12:22",
+		"text:" : "SvenVanCaekenberghe 12/2/2010 12:22",
+		"xml:" : "SvenVanCaekenberghe 12/11/2011 18:12" },
+	"instance" : {
+		"computeContentLength" : "SvenVanCaekenberghe 5/2/2012 16:19",
+		"contentLength" : "SvenVanCaekenberghe 1/27/2011 10:26",
+		"contents" : "SvenVanCaekenberghe 12/1/2010 20:57",
+		"encoder" : "SvenVanCaekenberghe 12/14/2010 11:59",
+		"encoder:" : "SvenVanCaekenberghe 12/3/2010 15:11",
+		"hasEncoder" : "SvenVanCaekenberghe 12/14/2010 12:09",
+		"initializeEncoder" : "SvenVanCaekenberghe 1/25/2011 13:42",
+		"invalidateContentLength" : "SvenVanCaekenberghe 12/2/2010 12:20",
+		"isEmpty" : "SvenVanCaekenberghe 5/1/2011 17:54",
+		"printContentsOn:" : "SvenVanCaekenberghe 12/14/2010 11:20",
+		"readFrom:" : "SvenVanCaekenberghe 5/1/2011 13:03",
+		"readLimitedFrom:" : "SvenVanCaekenberghe 4/15/2012 19:04",
+		"readStream" : "SvenVanCaekenberghe 12/1/2010 20:57",
+		"readUpToEndFrom:" : "SvenVanCaekenberghe 1/31/2012 13:29",
+		"string" : "SvenVanCaekenberghe 12/1/2010 20:57",
+		"string:" : "SvenVanCaekenberghe 12/3/2010 15:11",
+		"writeOn:" : "SvenVanCaekenberghe 12/2/2010 13:09" } }

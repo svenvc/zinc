@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testMergeValued" : "SvenVanCaekenberghe 9/10/2010 20:59",
+		"testMultiValued" : "SvenVanCaekenberghe 9/10/2010 20:57",
+		"testMultiValuedStreaming" : "SvenVanCaekenberghe 9/10/2010 21:03",
+		"testNormalization" : "SvenVanCaekenberghe 9/10/2010 20:55",
+		"testReading" : "SvenVanCaekenberghe 9/6/2010 20:16",
+		"testReadingMultiline" : "SvenVanCaekenberghe 5/22/2012 10:42",
+		"testWriting" : "SvenVanCaekenberghe 9/6/2010 20:20" } }

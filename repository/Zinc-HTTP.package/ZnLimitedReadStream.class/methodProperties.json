@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"on:limit:" : "SvenVanCaekenberghe 9/15/2010 11:15" },
+	"instance" : {
+		"ascii" : "SvenVanCaekenberghe 9/15/2010 13:38",
+		"atEnd" : "SvenVanCaekenberghe 1/31/2012 20:03",
+		"binary" : "SvenVanCaekenberghe 9/15/2010 13:36",
+		"collectionSpecies" : "SvenVanCaekenberghe 9/15/2010 19:34",
+		"contents" : "SvenVanCaekenberghe 5/2/2012 16:02",
+		"contentsOfEntireFile" : "SvenVanCaekenberghe 9/15/2010 20:17",
+		"isBinary" : "SvenVanCaekenberghe 9/17/2010 20:06",
+		"match:" : "SvenVanCaekenberghe 5/2/2012 15:55",
+		"next" : "SvenVanCaekenberghe 2/21/2011 23:19",
+		"next:" : "SvenVanCaekenberghe 1/31/2012 20:14",
+		"next:into:" : "SvenVanCaekenberghe 1/31/2012 20:11",
+		"next:into:startingAt:" : "SvenVanCaekenberghe 1/31/2012 20:14",
+		"nextInto:" : "SvenVanCaekenberghe 8/1/2012 13:35",
+		"on:limit:" : "SvenVanCaekenberghe 9/27/2010 13:06",
+		"peek" : "SvenVanCaekenberghe 12/4/2011 18:43",
+		"position" : "SvenVanCaekenberghe 9/27/2010 13:09",
+		"printOn:" : "SvenVanCaekenberghe 9/15/2010 12:50",
+		"readInto:startingAt:count:" : "SvenVanCaekenberghe 1/31/2012 21:06",
+		"reset" : "SvenVanCaekenberghe 9/26/2010 17:20",
+		"skip:" : "SvenVanCaekenberghe 9/15/2010 20:03",
+		"upTo:" : "SvenVanCaekenberghe 1/31/2012 20:02",
+		"upToEnd" : "SvenVanCaekenberghe 1/31/2012 21:07" } }

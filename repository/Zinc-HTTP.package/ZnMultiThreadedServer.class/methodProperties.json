@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"closeSocketStream:" : "SvenVanCaekenberghe 9/5/2011 14:15",
+		"exceptionSet:" : "SvenVanCaekenberghe 10/4/2011 09:46",
+		"executeRequestResponseLoopOn:" : "SvenVanCaekenberghe 9/4/2011 13:50",
+		"listenLoop" : "SvenVanCaekenberghe 12/10/2010 16:00",
+		"readRequestSafely:" : "SvenVanCaekenberghe 2/1/2012 09:00",
+		"serveConnectionsOn:" : "SvenVanCaekenberghe 9/4/2011 12:38",
+		"workerProcessName" : "SvenVanCaekenberghe 12/13/2010 16:33",
+		"writeResponseSafely:on:" : "SvenVanCaekenberghe 10/4/2011 09:41" } }

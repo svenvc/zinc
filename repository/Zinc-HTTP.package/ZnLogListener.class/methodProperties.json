@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptEvent:" : "SvenVanCaekenberghe 3/29/2011 10:11",
+		"allow:" : "SvenVanCaekenberghe 3/29/2011 10:30",
+		"allowAll" : "SvenVanCaekenberghe 3/29/2011 10:29",
+		"enabled" : "SvenVanCaekenberghe 3/29/2011 09:38",
+		"enabled:" : "SvenVanCaekenberghe 3/29/2011 09:38",
+		"event:" : "SvenVanCaekenberghe 4/20/2011 12:18",
+		"filter" : "SvenVanCaekenberghe 3/29/2011 10:09",
+		"filter:" : "SvenVanCaekenberghe 3/29/2011 10:09",
+		"handleEvent:" : "SvenVanCaekenberghe 3/29/2011 11:46",
+		"initialize" : "SvenVanCaekenberghe 3/29/2011 11:45" } }

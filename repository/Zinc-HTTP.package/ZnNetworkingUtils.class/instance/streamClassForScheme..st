@@ -1,8 +1,8 @@
 private
 streamClassForScheme: scheme
-	scheme = #http ifTrue: [ 
+	(#(http ws) includes: scheme) ifTrue: [ 
 		^ self socketStreamClass ].
-	scheme = #https ifTrue: [ 
+	(#(https wss) includes: scheme) ifTrue: [ 
 		^ self secureSocketStreamClass ifNil: [
 			self error: 'No secure socket stream class set or available' ] ].
 	(ZnUnknownScheme scheme: scheme) signal

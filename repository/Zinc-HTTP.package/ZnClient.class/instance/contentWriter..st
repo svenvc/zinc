@@ -5,4 +5,4 @@ contentWriter: object
 	as used by #contents:. Defaults to nil.
 	Can be used to format data to be uploaded."
 
-	^ self optionAt: #contentWriter put: object
+	self optionAt: #contentWriter put: object
