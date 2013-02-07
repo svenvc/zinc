@@ -1,3 +1,3 @@
 accessing
 useCustomExpirationHeaders: aDictionaryOfMimeTypesAndHeaders
-	self server delegate staticDelegate mimeTypeMaxAges: aDictionaryOfMimeTypesAndHeaders
+	self server delegate staticDelegate mimeTypeExpirations: aDictionaryOfMimeTypesAndHeaders

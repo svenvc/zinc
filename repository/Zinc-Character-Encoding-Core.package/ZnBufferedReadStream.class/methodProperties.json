@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"on:" : "SvenVanCaekenberghe 11/30/2012 10:57",
+		"on:do:" : "SvenVanCaekenberghe 12/2/2012 19:23" },
+	"instance" : {
+		"atEnd" : "SvenVanCaekenberghe 11/30/2012 10:39",
+		"close" : "SvenVanCaekenberghe 11/30/2012 10:28",
+		"collectionSpecies" : "SvenVanCaekenberghe 11/30/2012 20:18",
+		"defaultBufferSize" : "SvenVanCaekenberghe 11/30/2012 20:15",
+		"initialize" : "SvenVanCaekenberghe 11/30/2012 20:15",
+		"isBinary" : "SvenVanCaekenberghe 11/30/2012 21:28",
+		"next" : "SvenVanCaekenberghe 12/1/2012 20:48",
+		"next:" : "SvenVanCaekenberghe 11/30/2012 20:18",
+		"next:into:" : "SvenVanCaekenberghe 11/30/2012 20:11",
+		"next:into:startingAt:" : "SvenVanCaekenberghe 11/30/2012 20:11",
+		"nextBuffer" : "SvenVanCaekenberghe 11/30/2012 11:15",
+		"nextInto:" : "SvenVanCaekenberghe 11/30/2012 20:11",
+		"on:" : "SvenVanCaekenberghe 11/30/2012 20:15",
+		"peek" : "SvenVanCaekenberghe 12/1/2012 20:48",
+		"peekFor:" : "SvenVanCaekenberghe 12/1/2012 20:47",
+		"readInto:startingAt:count:" : "SvenVanCaekenberghe 11/30/2012 22:16",
+		"sizeBuffer:" : "SvenVanCaekenberghe 11/30/2012 20:19",
+		"skip:" : "SvenVanCaekenberghe 11/30/2012 21:36",
+		"upTo:" : "SvenVanCaekenberghe 11/30/2012 21:33",
+		"upToEnd" : "SvenVanCaekenberghe 12/16/2012 16:31",
+		"wrappedStream" : "SvenVanCaekenberghe 11/30/2012 10:27" } }

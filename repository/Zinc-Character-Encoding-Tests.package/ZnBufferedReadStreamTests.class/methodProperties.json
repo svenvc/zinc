@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testBuffering" : "SvenVanCaekenberghe 11/30/2012 20:47",
+		"testPeek" : "SvenVanCaekenberghe 11/30/2012 20:49",
+		"testReadInto" : "SvenVanCaekenberghe 11/30/2012 20:56",
+		"testReadIntoLarger" : "SvenVanCaekenberghe 11/30/2012 21:02",
+		"testReadUpTo" : "SvenVanCaekenberghe 12/16/2012 16:24",
+		"testReadUpToEnd" : "SvenVanCaekenberghe 12/16/2012 16:25" } }

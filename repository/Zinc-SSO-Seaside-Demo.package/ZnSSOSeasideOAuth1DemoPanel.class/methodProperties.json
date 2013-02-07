@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"accessToken" : "JanVanDeSandt 12/23/2012 16:29",
+		"accessToken:" : "JanVanDeSandt 12/23/2012 16:29",
+		"checkSetUp" : "JanVanDeSandt 12/23/2012 16:29",
+		"gotoSignOn:" : "JanVanDeSandt 12/23/2012 16:30",
+		"handleCallback" : "JanVanDeSandt 12/23/2012 17:26",
+		"handleVerificationCode:" : "JanVanDeSandt 12/23/2012 16:31",
+		"hasAccessToken" : "JanVanDeSandt 12/23/2012 16:35",
+		"oauthService" : "JanVanDeSandt 12/23/2012 16:29",
+		"oauthService:" : "JanVanDeSandt 12/23/2012 16:29",
+		"requestToken" : "JanVanDeSandt 12/23/2012 16:29",
+		"requestTokenExtraParameters" : "JanVanDeSandt 12/23/2012 16:30" } }

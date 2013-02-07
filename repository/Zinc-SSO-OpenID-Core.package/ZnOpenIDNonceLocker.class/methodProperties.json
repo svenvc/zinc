@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"acceptedTimeFrame" : "JanVanDeSandt 1/2/2013 16:26",
+		"acceptedTimeFrame:" : "JanVanDeSandt 1/2/2013 16:26",
+		"reset" : "JanVanDeSandt 1/2/2013 16:29" },
+	"instance" : {
+		"dateAndTimeNow" : "JanVanDeSandt 1/2/2013 14:43",
+		"initialize" : "PanuSuominen 11/25/2011 10:09",
+		"minimumRemovalInterval" : "PanuSuominen 11/25/2011 14:16",
+		"nonceCount" : "PanuSuominen 11/25/2011 14:22",
+		"removeOldNonces" : "JanVanDeSandt 1/2/2013 14:43",
+		"resetRemovalTime" : "PanuSuominen 11/25/2011 14:19",
+		"seeAndValidate:" : "JanVanDeSandt 1/1/2013 15:50" } }

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"assocHandle" : "jvds 3/2/2010 11:58",
+		"assocType" : "jvds 3/2/2010 14:18",
+		"expiresIn" : "jvds 3/5/2010 16:50",
+		"isHmacSHA1" : "jvds 3/2/2010 14:20",
+		"macKey" : "jvds 3/2/2010 14:18",
+		"sessionType" : "jvds 3/2/2010 14:18",
+		"sign:andCheck:" : "JanVanDeSandt 1/2/2013 12:29" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-REST-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"server",
+		"client" ],
+	"name" : "ZnExampleStorageRestServerDelegateTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

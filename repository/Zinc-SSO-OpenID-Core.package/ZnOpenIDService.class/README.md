@@ -1,0 +1,1 @@
+See http://code.google.com/apis/accounts/docs/OpenID.html

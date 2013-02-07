@@ -10,8 +10,6 @@
 		"testParseHttpDateAlternative1" : "SeanDeNigris 5/10/2012 11:58",
 		"testParseHttpDateDashes" : "SeanDeNigris 5/10/2012 11:58",
 		"testParseHttpDateDashesAlternative1" : "SvenVanCaekenberghe 5/10/2012 20:27",
-		"testQueryParsing" : "SvenVanCaekenberghe 9/11/2010 21:36",
-		"testQueryWriting" : "SvenVanCaekenberghe 9/17/2010 14:55",
 		"testReadUpToEndBinary" : "SvenVanCaekenberghe 1/31/2012 12:57",
 		"testReadUpToEndNonBinary" : "SvenVanCaekenberghe 1/31/2012 12:58",
 		"testStreamingBinary" : "SvenVanCaekenberghe 1/31/2012 12:56",

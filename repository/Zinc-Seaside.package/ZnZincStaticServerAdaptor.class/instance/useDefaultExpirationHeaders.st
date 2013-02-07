@@ -1,3 +1,3 @@
 accessing
 useDefaultExpirationHeaders
-	self server delegate staticDelegate mimeTypeMaxAges: ZnStaticFileServerDelegate defaultMimeTypeExpirations
+	self server delegate staticDelegate mimeTypeExpirations: ZnStaticFileServerDelegate defaultMimeTypeExpirations

@@ -1,6 +1,5 @@
 private protocol
 prepareRequest
-	state := #inProgress.
 	self isOneShot 
 		ifTrue: [ request setConnectionClose ].
 	request hasEntity

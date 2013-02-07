@@ -1,4 +1,4 @@
 private
 redirectNeededFor: uri actualFilename: actualFilename
-	uri isDirectory ifTrue: [ ^ false ].  
+	uri isDirectoryPath ifTrue: [ ^ false ].  
 	^ (actualFilename endsWith: uri lastPathSegment) not

@@ -1,0 +1,19 @@
+{
+	"category" : "Zinc-SSO-OAuth1-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"getRequestTokenUrl",
+		"authorizeTokenUrl",
+		"getAccessTokenUrl",
+		"consumer",
+		"consumerSecret",
+		"accessTokenClass" ],
+	"name" : "ZnOAuth1ConsumerData",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

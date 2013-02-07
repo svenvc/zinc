@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-SSO-OAuth1-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ZnOAuth1DropboxUserAccess",
+	"pools" : [
+		 ],
+	"super" : "ZnOAuth1UserAccess",
+	"type" : "normal" }

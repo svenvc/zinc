@@ -6,5 +6,5 @@ testWikimedia
 	(client := ZnClient new) 
 		get: 'https://secure.wikimedia.org/'.
 	self assert: client isSuccess.
-	self assert: (client contents includesSubString: 'Wikimedia').
+	self assert: (client contents includesSubstring: 'Wikimedia').
 	client close

@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"canBeRoot" : "JanVanDeSandt 12/7/2012 13:19",
+		"initialize" : "JanVanDeSandt 12/7/2012 13:19",
+		"register" : "JanVanDeSandt 1/2/2013 12:01",
+		"registerCallbackHandlerAt:" : "JanVanDeSandt 12/7/2012 15:50" },
+	"instance" : {
+		"actionAbout" : "JanVanDeSandt 12/26/2012 12:51",
+		"clearResponsePanel" : "JanVanDeSandt 12/7/2012 14:58",
+		"handleCallback" : "JanVanDeSandt 12/7/2012 13:43",
+		"openIDSingleSignOn" : "JanVanDeSandt 1/2/2013 11:35",
+		"renderAnchor:title:imageUrl:on:" : "JanVanDeSandt 1/2/2013 11:38",
+		"renderAnchor:title:imageUrl:target:on:" : "JanVanDeSandt 1/5/2013 17:34",
+		"renderContentOn:" : "JanVanDeSandt 12/26/2012 12:54",
+		"renderHeaderOn:" : "JanVanDeSandt 12/26/2012 12:43",
+		"renderMenuOn:" : "JanVanDeSandt 12/26/2012 12:53",
+		"renderOAuth1Providers:on:" : "JanVanDeSandt 1/4/2013 23:33",
+		"renderOAuth2Providers:on:" : "JanVanDeSandt 12/7/2012 20:55",
+		"renderOpenID2SignInOptions:on:" : "JanVanDeSandt 1/2/2013 11:40",
+		"renderSignInOptionsOn:" : "JanVanDeSandt 1/5/2013 17:36",
+		"responsePanel" : "JanVanDeSandt 12/7/2012 13:53",
+		"responsePanel:" : "JanVanDeSandt 12/7/2012 13:53",
+		"signOnUsingOAuth1Twitter:" : "JanVanDeSandt 12/22/2012 13:09",
+		"signOnUsingOAuth2Facebook:" : "JanVanDeSandt 12/7/2012 13:29",
+		"signOnUsingOAuth2Google:" : "JanVanDeSandt 12/7/2012 15:10",
+		"signOnUsingOAuth2Microsoft:" : "JanVanDeSandt 12/7/2012 20:56",
+		"signOnUsingOpenID2:callbackUrl:" : "JanVanDeSandt 1/5/2013 17:28",
+		"updateRoot:" : "JanVanDeSandt 12/9/2012 13:12" } }

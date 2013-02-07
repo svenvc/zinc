@@ -1,4 +1,4 @@
-private
+request handling
 serveConnectionsOn: listeningSocket
 	"We wait up to acceptWaitTimeout seconds for an incoming connection.
 	If we get one we wrap it in a SocketStream and #executeRequestResponseLoopOn: on it"

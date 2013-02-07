@@ -3,7 +3,7 @@ localUrl
 	"Return a ZnUrl to access me."
 	
 	^ ZnUrl new
-		scheme: #http;
+		scheme: self scheme;
 		host: NetNameResolver loopBackName;
 		port: self port;
 		yourself

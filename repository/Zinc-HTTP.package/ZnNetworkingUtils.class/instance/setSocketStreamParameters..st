@@ -4,5 +4,5 @@ setSocketStreamParameters: stream
 		binary;
 		shouldSignal: true;
 		autoFlush: false;
-		bufferSize: self class socketBufferSize;
-		timeout: self class socketStreamTimeout.
+		bufferSize: self bufferSize;
+		timeout: self timeout.

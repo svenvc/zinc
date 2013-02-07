@@ -6,6 +6,6 @@ testGoogleEncrypted
 	(client := ZnClient new) 
 		get: 'https://encrypted.google.com/search?q=Smalltalk'.
 	self assert: client isSuccess.
-	self assert: (client contents includesSubString: 'Google').    
-	self assert: (client contents includesSubString: 'Smalltalk').
+	self assert: (client contents includesSubstring: 'Google').    
+	self assert: (client contents includesSubstring: 'Smalltalk').
 	client close

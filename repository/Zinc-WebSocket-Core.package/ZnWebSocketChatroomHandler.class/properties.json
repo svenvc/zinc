@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-WebSocket-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"webSockets",
+		"lock" ],
+	"name" : "ZnWebSocketChatroomHandler",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

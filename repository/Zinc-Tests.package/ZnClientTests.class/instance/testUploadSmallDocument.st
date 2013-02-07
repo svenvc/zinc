@@ -16,6 +16,6 @@ testUploadSmallDocument
 		client post.
 		self assert: client isSuccess.
 		self assert: client entity contentType = ZnMimeType textPlain.
-		self assert: (client contents includesSubString: contents).
+		self assert: (client contents includesSubstring: contents).
 		client close.
 		ZnFileSystemUtils deleteIfExists: 'small.txt' ]

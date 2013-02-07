@@ -1,0 +1,4 @@
+accessing
+shouldValidateClaimedIdBelongsToEndpoint: aBoolean
+
+	shouldValidateClaimedIdBelongsToEndpoint := aBoolean

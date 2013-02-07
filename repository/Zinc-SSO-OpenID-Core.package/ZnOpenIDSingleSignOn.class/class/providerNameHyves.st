@@ -1,0 +1,3 @@
+resources
+providerNameHyves
+	^'Hyves'

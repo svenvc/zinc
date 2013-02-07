@@ -1,0 +1,4 @@
+resources
+openIDSingleSignOn
+
+	^ZnOpenIDSingleSignOn default

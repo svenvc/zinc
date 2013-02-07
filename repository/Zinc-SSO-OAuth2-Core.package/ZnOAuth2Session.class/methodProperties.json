@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"facebook:" : "JanVanDeSandt 12/7/2012 15:32",
+		"google:" : "JanVanDeSandt 12/7/2012 15:32",
+		"microsoft:" : "JanVanDeSandt 12/7/2012 20:57",
+		"ssoScopes" : "JanVanDeSandt 12/23/2012 23:42" },
+	"instance" : {
+		"accessToken" : "JanVanDeSandt 10/7/2012 14:04",
+		"authenticationUrl" : "JanVanDeSandt 10/7/2012 15:32",
+		"consumerData" : "JanVanDeSandt 10/7/2012 14:04",
+		"fieldDictionaryFrom:" : "JanVanDeSandt 10/7/2012 14:17",
+		"handleAuthenticationCallback:" : "JanVanDeSandt 12/7/2012 14:38",
+		"initialize" : "JanVanDeSandt 12/23/2012 23:40",
+		"redirectUrl" : "JanVanDeSandt 12/7/2012 15:34",
+		"redirectUrl:" : "JanVanDeSandt 12/7/2012 15:34",
+		"scopeParameter" : "JanVanDeSandt 12/23/2012 23:32",
+		"scopes" : "JanVanDeSandt 12/23/2012 23:32",
+		"scopes:" : "JanVanDeSandt 12/23/2012 23:30",
+		"setConsumerData:" : "JanVanDeSandt 12/7/2012 15:34" } }

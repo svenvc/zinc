@@ -4,6 +4,5 @@ close
 	
 	connection ifNotNil: [ 
 		connection close.
-		connection := nil.
-		state := #closed ].
+		connection := nil ].
 	lastUsed := nil

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"authResponse" : "JanVanDeSandt 1/2/2013 11:42",
+		"gotoSignOn:" : "JanVanDeSandt 1/5/2013 17:27",
+		"handleCallback" : "JanVanDeSandt 1/5/2013 17:29",
+		"providerSession" : "JanVanDeSandt 1/5/2013 17:26",
+		"renderContentOn:" : "JanVanDeSandt 1/2/2013 12:16",
+		"renderField:value:on:" : "JanVanDeSandt 1/2/2013 11:45",
+		"setProviderSession:" : "JanVanDeSandt 1/5/2013 17:25" } }

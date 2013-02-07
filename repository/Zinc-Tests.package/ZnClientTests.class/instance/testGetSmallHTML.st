@@ -7,7 +7,7 @@ testGetSmallHTML
 	self assert: client isSuccess.
 	self assert: client isContentTypeAcceptable.
 	self assert: client response contentType = ZnMimeType textHtml.
-	self assert: (client contents includesSubString: 'Small').
+	self assert: (client contents includesSubstring: 'Small').
 	self assert: client isConnected.
 	client close.
 	self deny: client isConnected

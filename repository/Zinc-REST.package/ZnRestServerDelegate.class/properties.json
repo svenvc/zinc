@@ -4,11 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "SvenVanCaekenberghe 6/15/2011 16:14",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"uriSpace",
-		"server",
-		"debug" ],
+		"uriSpace" ],
 	"name" : "ZnRestServerDelegate",
 	"pools" : [
 		 ],

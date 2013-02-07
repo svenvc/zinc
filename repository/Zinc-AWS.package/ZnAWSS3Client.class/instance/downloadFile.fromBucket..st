@@ -9,7 +9,5 @@ downloadFile: filename fromBucket: bucket
 	response := self at: bucket -> filename.
 	self httpClient streaming: streaming.
 	response isSuccess ifFalse: [ ^ ZnHttpUnsuccessful signal ].
-	FileStream 
-		fileNamed: filename 
-		do: [ :stream | response entity writeOn: stream ].
+	self httpClient downloadEntityTo: filename.
 	^ response

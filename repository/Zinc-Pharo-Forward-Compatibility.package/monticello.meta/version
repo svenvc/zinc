@@ -1,0 +1,1 @@
+(name 'Zinc-Pharo-Forward-Compatibility-SvenVanCaekenberghe.1' message 'added String>>#includesSubstring: as synomym' id 'cf8479af-20ab-4286-b1e6-b7a7a4ae863c' date '27 August 2012' time '9:57:23.067 pm' author 'SvenVanCaekenberghe' ancestors () stepChildren ())

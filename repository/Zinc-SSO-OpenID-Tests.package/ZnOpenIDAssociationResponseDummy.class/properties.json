@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-SSO-OpenID-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"signatureCheck" ],
+	"name" : "ZnOpenIDAssociationResponseDummy",
+	"pools" : [
+		 ],
+	"super" : "ZnOpenIDAssociationResponse",
+	"type" : "normal" }

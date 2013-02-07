@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "SvenVanCaekenberghe 12/10/2012 20:03",
+		"tearDown" : "SvenVanCaekenberghe 12/10/2012 19:18",
+		"testCreate" : "SvenVanCaekenberghe 12/12/2012 10:26",
+		"testDelete" : "SvenVanCaekenberghe 12/12/2012 10:26",
+		"testEmpty" : "SvenVanCaekenberghe 12/10/2012 21:25",
+		"testQuery" : "SvenVanCaekenberghe 12/12/2012 10:27",
+		"testUpdate" : "SvenVanCaekenberghe 12/12/2012 10:28" } }

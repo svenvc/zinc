@@ -17,7 +17,7 @@
 		"checkIntegrity" : "SvenVanCaekenberghe 1/5/2011 20:09",
 		"checkIntegrity:" : "SvenVanCaekenberghe 1/5/2011 20:09",
 		"close" : "SvenVanCaekenberghe 9/17/2011 11:22",
-		"downloadFile:fromBucket:" : "SvenVanCaekenberghe 12/1/2011 10:17",
+		"downloadFile:fromBucket:" : "SvenVanCaekenberghe 9/27/2012 21:17",
 		"eTag" : "SvenVanCaekenberghe 11/23/2011 19:49",
 		"endPoint:" : "SvenVanCaekenberghe 11/23/2011 16:25",
 		"endPointForBucket:" : "SvenVanCaekenberghe 11/23/2011 15:28",
@@ -41,4 +41,4 @@
 		"secretAccessKey:" : "SvenVanCaekenberghe 1/5/2011 20:07",
 		"standardEndPoint" : "SvenVanCaekenberghe 11/23/2011 15:28",
 		"uploadFile:inBucket:" : "SvenVanCaekenberghe 11/24/2011 19:46",
-		"uploadFile:withMd5:inBucket:" : "SvenVanCaekenberghe 12/2/2011 14:53" } }
+		"uploadFile:withMd5:inBucket:" : "SvenVanCaekenberghe 9/27/2012 21:59" } }

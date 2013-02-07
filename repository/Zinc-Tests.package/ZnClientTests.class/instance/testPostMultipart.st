@@ -13,5 +13,5 @@ testPostMultipart
 			addPart: (ZnMimePart fieldName: 'file' fileNamed: filename);
 			post.
 		self assert: client isSuccess.
-		self assert: (client contents includesSubString: 'multipart') ].
+		self assert: (client contents includesSubstring: 'multipart') ].
 	ZnFileSystemUtils deleteIfExists: 'testPostMultiPart.txt'.

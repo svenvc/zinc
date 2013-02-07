@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-SSO-OpenID-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"AcceptedTimeFrame" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"nonces",
+		"lastRemovalRun" ],
+	"name" : "ZnOpenIDNonceLocker",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

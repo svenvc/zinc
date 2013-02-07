@@ -1,0 +1,3 @@
+private
+newNonce
+	^ZnOpenIDNonce new.
