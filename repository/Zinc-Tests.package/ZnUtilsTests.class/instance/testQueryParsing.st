@@ -5,4 +5,3 @@ testQueryParsing
 	fields := ZnUtils parseQueryFrom: string readStream.
 	self assert: (fields at: 'foo') = '100'.
 	self assert: (fields at: 'x') = '/a b'.
-	

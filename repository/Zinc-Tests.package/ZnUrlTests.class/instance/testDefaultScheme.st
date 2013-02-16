@@ -6,4 +6,3 @@ testDefaultScheme
 	self assert: url scheme = #http.
 	self assert: url host = 'www.example.com'.
 	self assert: url pathSegments = (OrderedCollection with: 'foo.html')
-	

@@ -17,4 +17,3 @@ testParseOK
 	self assert: (keys at: 'nc') equals: '00000001'.
 	self assert: (keys at: 'cnonce') equals: '0a4f113b'.
 	self assert: (keys at: 'response') equals: '6629fae49393a05397450978507c4ef1'.
-	

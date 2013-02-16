@@ -6,4 +6,4 @@ testReadUpToEndNonBinary
 			stream nextPut: 'abc' atRandom ] ].
 	self assert: (ZnUtils readUpToEnd: data readStream limit: nil) = data.
 	self assert: (ZnUtils readUpToEnd: data readStream limit: 10000) = data.
-	self should: [ ZnUtils readUpToEnd: data readStream limit: 9999 ] raise: ZnEntityTooLarge 
+	self should: [ ZnUtils readUpToEnd: data readStream limit: 9999 ] raise: ZnEntityTooLarge

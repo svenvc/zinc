@@ -16,5 +16,4 @@ testCookiesParsing
 	self assert: testCookie1 value = '123'.	
 	
 	self assert: testCookie2 notNil.
-	self assert: testCookie2 value = '321'.	
-
+	self assert: testCookie2 value = '321'.

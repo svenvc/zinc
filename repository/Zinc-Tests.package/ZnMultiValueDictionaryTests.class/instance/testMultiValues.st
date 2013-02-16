@@ -10,4 +10,3 @@ testMultiValues
 	dictionary keysAndValuesDo: [ :key :value | keys add: key. values add: value ].
 	self assert: values = (OrderedCollection with: 1 with: 2).
 	self assert: keys = (OrderedCollection with: 'foo' with: 'foo')
-	

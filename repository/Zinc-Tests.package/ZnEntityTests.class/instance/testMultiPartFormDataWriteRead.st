@@ -18,5 +18,3 @@ testMultiPartFormDataWriteRead
 	self assert: (output partNamed: 'extra') fieldValueString = 'my-extra'.
 	self assert: (output partNamed: 'info') fieldValueString = 'my-info'.
 	self assert: (output partNamed: 'file') contents = 'Zinc HTTP Components'.
-
-	

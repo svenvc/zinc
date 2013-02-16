@@ -7,4 +7,3 @@ testStringEntityEncoderInitialization
 	self assert: entity hasEncoder.
 	ByteArray streamContents: [ :stream | response writeOn: stream ].
 	self assert: entity hasEncoder
-	

@@ -14,5 +14,3 @@ testCookiesWriting
 	cookies := client request cookies do: [ :each | each defaultDomain: 'example.com' ].
 	self assert: (cookies includes: testCookie1).
 	self assert: (cookies includes: testCookie2)
-	
-		

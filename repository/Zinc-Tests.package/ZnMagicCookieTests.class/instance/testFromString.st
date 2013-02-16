@@ -6,4 +6,3 @@ testFromString
 	self assert: (cookie path notNil).
 	self assert: (cookie domain = '.google.com').
 	self assert: (cookie isExpired not)
-	

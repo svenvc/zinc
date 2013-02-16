@@ -8,4 +8,3 @@ testEncodedSlash
 	self assert: 'http://example.com/foo/%2Fbar/' asZnUrl pathPrintString = '/foo/%2Fbar/'.
 	self assert: 'http://example.com/foo/%2F/bar/' asZnUrl pathPrintString = '/foo/%2F/bar/'.
 	self assert: 'http://example.com/foo/%2Ffoo.txt' asZnUrl pathPrintString = '/foo/%2Ffoo.txt'.
-

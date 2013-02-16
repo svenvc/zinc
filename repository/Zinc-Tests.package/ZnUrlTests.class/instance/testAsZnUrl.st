@@ -9,4 +9,3 @@ testAsZnUrl
 	self assert: url3 asZnUrl = url3 asUrl asZnUrl.
 	"self assert: '' asZnUrl = '' asUrl asZnUrl."
 	"self assert: '/' asZnUrl = '/' asUrl asZnUrl."
-

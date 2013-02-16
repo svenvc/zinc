@@ -8,5 +8,4 @@ testSimple
 	self assert: memoryLogger logEvents first message = 'Testing'.
 	logSupport removeListener: memoryLogger.
 	logSupport info: 'Void'.
-	self assert: memoryLogger logEvents size = 1     
-	
+	self assert: memoryLogger logEvents size = 1

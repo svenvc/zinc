@@ -12,4 +12,3 @@ testCopying
 	self assert: mimeType1 = mimeType2.
 	self deny: mimeType1 parameters = mimeType2 parameters.
 	self deny: mimeType1 charSet = mimeType2 charSet.
-	

@@ -7,4 +7,3 @@ testQueryEncoding
 	self assert: url printString = 'http://www.google.com/some%20encoding%20here?and%20some%20encoding=here%2C%20too'.
 	self assert: url path =  'some encoding here'.
 	self assert: (url queryAt: 'and some encoding') = 'here, too'
-	

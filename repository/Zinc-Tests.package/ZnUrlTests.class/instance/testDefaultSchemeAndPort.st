@@ -8,4 +8,3 @@ testDefaultSchemeAndPort
 	self assert: url scheme isNil.
 	self assert: url schemeOrDefault = #http.
 	self assert: url portOrDefault = 80
-	
