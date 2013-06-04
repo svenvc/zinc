@@ -1,4 +1,4 @@
-# Zinc HTTP Components
+# Zinc HTTP Components 
 
 
 Zinc HTTP Components is an open-source Smalltalk framework 
