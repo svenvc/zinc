@@ -1,4 +1,4 @@
-# Zinc HTTP Components 
+# Zinc HTTP Components [![Build Status](https://travis-ci.org/glassdb/zinc.png?branch=gemstone2.4)](https://travis-ci.org/glassdb/zinc)
 
 
 Zinc HTTP Components is an open-source Smalltalk framework 
