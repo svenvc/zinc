@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-SSO-OpenID-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"domain" ],
+	"name" : "ZnGoogleAppsOpenIDProvider",
+	"pools" : [
+		 ],
+	"super" : "ZnOpenIDProvider",
+	"type" : "normal" }

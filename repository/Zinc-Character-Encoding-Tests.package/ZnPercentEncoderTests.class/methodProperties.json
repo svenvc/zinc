@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testDecodingErrors" : "SvenVanCaekenberghe 12/16/2012 15:12",
+		"testNonAscii" : "SvenVanCaekenberghe 12/13/2012 11:26",
+		"testSimple" : "SvenVanCaekenberghe 12/13/2012 11:58" } }

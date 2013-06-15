@@ -1,19 +1,16 @@
-private
+request handling
 handleRequest: request
 	"Handle request and return a response.
-	If we have a delegate, pass the responsability.
-	If we have no delegate, we return a page not found"
+	Do logging and timing. Set a dynamic variable referencing the server.
+	If necessary do session management in the response."
 
 	| response initialMilliseconds |
-
 	initialMilliseconds := Time millisecondClockValue.
-	response := self
-		authenticateRequest: request
-		do: [ 
-			self delegate isNil
-				ifTrue: [ ZnResponse notFound: request uri ]
-				ifFalse: [ self delegate handleRequest: request ] ].
+	ZnCurrentServerSession value: nil.
+	response := self handleRequestProtected: request.
 	request method = #HEAD
 		ifTrue: [ response clearEntity ].
 	self logRequest: request response: response started: initialMilliseconds.
+	ZnCurrentServerSession value 
+		ifNotNil: [ :session | self sessionManager setSession: session in: response ].
 	^ response

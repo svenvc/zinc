@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-SSO-OAuth1-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"providerAccount" ],
+	"name" : "ZnOAuth1Service",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

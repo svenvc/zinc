@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		"LastVersionLoad" ],
-	"commentStamp" : "SvenVanCaekenberghe 1/15/2011 18:04",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"project" ],
 	"name" : "ConfigurationOfZincHTTPComponents",

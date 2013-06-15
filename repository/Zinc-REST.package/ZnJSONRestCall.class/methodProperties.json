@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"isAbstract" : "SvenVanCaekenberghe 12/10/2012 13:18" },
+	"instance" : {
+		"acceptMethods:" : "SvenVanCaekenberghe 12/10/2012 13:08",
+		"badRequest:" : "SvenVanCaekenberghe 12/10/2012 13:08",
+		"callUnauthorized" : "SvenVanCaekenberghe 12/10/2012 13:09",
+		"created:" : "SvenVanCaekenberghe 12/10/2012 16:15",
+		"emptyOkResponse" : "SvenVanCaekenberghe 12/10/2012 13:08",
+		"jsonRequest" : "SvenVanCaekenberghe 12/10/2012 13:10",
+		"jsonResponse:" : "SvenVanCaekenberghe 12/10/2012 16:28",
+		"notFound" : "SvenVanCaekenberghe 12/10/2012 13:09",
+		"queryAt:ifAbsent:" : "SvenVanCaekenberghe 12/10/2012 13:07",
+		"serverError:" : "SvenVanCaekenberghe 12/10/2012 13:09",
+		"wrongMethod" : "SvenVanCaekenberghe 12/10/2012 13:09" } }

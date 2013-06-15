@@ -1,0 +1,3 @@
+actions
+doNotCheckSignature
+	signatureCheck := false.

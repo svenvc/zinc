@@ -1,0 +1,3 @@
+resources
+providerNameGoogle
+	^'Google'

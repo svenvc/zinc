@@ -1,0 +1,1 @@
+An abstract class for all the possible OpenID verification errors.

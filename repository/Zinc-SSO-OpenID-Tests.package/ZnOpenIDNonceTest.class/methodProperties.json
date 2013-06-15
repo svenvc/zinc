@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"newNonce" : "JanVanDeSandt 1/1/2013 15:48",
+		"nonceFromString:" : "JanVanDeSandt 1/1/2013 15:48",
+		"testHash" : "JanVanDeSandt 1/2/2013 13:55",
+		"testOrderingNoDistinctor" : "JanVanDeSandt 1/2/2013 13:55",
+		"testOrderingSingleDistinctor" : "JanVanDeSandt 1/16/2013 22:20",
+		"testOrderingWithDistinctors" : "JanVanDeSandt 1/2/2013 13:56",
+		"testPrintingNoDistinctor" : "JanVanDeSandt 1/2/2013 14:06",
+		"testPrintingWithDistinctor" : "JanVanDeSandt 1/2/2013 14:07",
+		"testReadingWithDisctinctor" : "JanVanDeSandt 1/2/2013 14:07",
+		"testReadingWithWrongFormat" : "JanVanDeSandt 1/2/2013 13:56",
+		"testReadingWithoutDisctinctor" : "JanVanDeSandt 1/2/2013 14:08" } }

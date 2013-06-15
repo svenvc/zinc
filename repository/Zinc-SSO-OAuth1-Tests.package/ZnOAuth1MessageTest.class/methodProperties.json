@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"signStringSHA1:usingSecret:" : "SvenVanCaekenberghe 1/8/2013 12:49",
+		"testGoogleSignature" : "JanVanDeSandt 12/26/2012 13:06",
+		"testTwitterCalculator" : "JanVanDeSandt 12/29/2012 21:24",
+		"testTwitterSignature" : "JanVanDeSandt 12/26/2012 13:07" } }

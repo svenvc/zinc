@@ -1,10 +1,8 @@
 testing
 testReadingLimited
-	| limit contents |
+	| contents |
 	contents := String new: 1025 withAll: $X.
-	limit := ZnConstants maximumEntitySize.
-	[
-		ZnConstants maximumEntitySize: 1024.
+	ZnMaximumEntitySize value: 1024 during: [
 		self should: [
 			ZnEntity 
 				readFrom: contents asByteArray readStream 
@@ -16,5 +14,4 @@ testReadingLimited
 				readFrom: contents asByteArray readStream 
 				usingType: ZnMimeType textPlain 
 				andLength: nil ]
-			raise: ZnEntityTooLarge.
-	] ensure: [ ZnConstants maximumEntitySize: limit ]
+			raise: ZnEntityTooLarge ] 

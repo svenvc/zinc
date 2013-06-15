@@ -1,0 +1,3 @@
+actions
+doNotValidateEndpoint
+	endpointValidation := false.

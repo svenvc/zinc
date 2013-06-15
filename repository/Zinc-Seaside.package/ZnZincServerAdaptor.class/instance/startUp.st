@@ -1,4 +1,4 @@
 private
 startUp
-	self server isNil
-		ifFalse: [ self server start ]
+	self isRunning
+		ifFalse: [ server ifNotNil: [ server start ] ]

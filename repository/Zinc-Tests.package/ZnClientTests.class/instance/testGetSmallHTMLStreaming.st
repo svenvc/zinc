@@ -10,5 +10,5 @@ testGetSmallHTMLStreaming
 	self assert: result isStream.
 	self assert: client entity stream = result.
 	contents := ZnUTF8Encoder new decodeBytes: result upToEnd.
-	self assert: (contents includesSubString: 'Small').
+	self assert: (contents includesSubstring: 'Small').
 	client close

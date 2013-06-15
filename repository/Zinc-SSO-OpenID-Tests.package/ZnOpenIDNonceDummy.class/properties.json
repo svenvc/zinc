@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-SSO-OpenID-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isOld",
+		"callCountOfIsOld" ],
+	"name" : "ZnOpenIDNonceDummy",
+	"pools" : [
+		 ],
+	"super" : "ZnOpenIDNonce",
+	"type" : "normal" }

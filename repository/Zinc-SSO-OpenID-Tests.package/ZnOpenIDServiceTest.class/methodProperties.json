@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"currentTime" : "JanVanDeSandt 1/1/2013 16:13",
+		"defaultAuthResponse" : "JanVanDeSandt 1/1/2013 15:48",
+		"dummyProvider" : "JanVanDeSandt 1/2/2013 15:16",
+		"encodeNonceFromTime:andDiscriminator:" : "JanVanDeSandt 1/2/2013 14:36",
+		"generateSimpleXrdsForEndpoint:andLocalId:" : "PanuSuominen 11/25/2011 13:51",
+		"generateValidNonce" : "PanuSuominen 11/25/2011 13:23",
+		"setUp" : "JanVanDeSandt 1/2/2013 16:29",
+		"tearDown" : "JanVanDeSandt 1/2/2013 16:29",
+		"testClaimedIdIsValidatedCorrectEndpoint" : "JanVanDeSandt 1/2/2013 15:16",
+		"testClaimedIdIsValidatedWorksWithsMultipleDefinitions" : "JanVanDeSandt 1/2/2013 15:17",
+		"testClaimedIdIsValidatedWrongEndpoint" : "JanVanDeSandt 1/2/2013 15:18",
+		"testValidateResponseAcceptsNonceInOnlyInCertainTimeFrame" : "JanVanDeSandt 1/2/2013 16:29",
+		"testValidateResponseAcceptsOnlyValidNonces" : "JanVanDeSandt 1/2/2013 15:19",
+		"testValidateResponseAcceptsSameNonceOnlyOnceForSameProvider" : "JanVanDeSandt 1/2/2013 15:19" } }

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"handlesEncoding:" : "SvenVanCaekenberghe 12/17/2012 13:24",
+		"newForEncoding:" : "SvenVanCaekenberghe 1/25/2011 11:19" },
+	"instance" : {
+		"decodeBytes:" : "SvenVanCaekenberghe 5/3/2012 11:32",
+		"encodeString:" : "SvenVanCaekenberghe 5/3/2012 11:32",
+		"encodedByteCountFor:" : "SvenVanCaekenberghe 11/29/2010 21:17",
+		"encodedByteCountForString:" : "SvenVanCaekenberghe 5/3/2012 11:32",
+		"nextFromStream:" : "SvenVanCaekenberghe 1/4/2011 20:52",
+		"nextPut:toStream:" : "SvenVanCaekenberghe 1/25/2011 12:36" } }

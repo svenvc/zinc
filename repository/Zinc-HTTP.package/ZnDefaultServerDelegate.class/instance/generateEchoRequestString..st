@@ -4,6 +4,7 @@ generateEchoRequestString: request
 	
 	^ String streamContents: [ :stream |
 		stream nextPutAll: 'This is Zinc HTTP Components echoing your request !'; crlf.
+		stream nextPutAll: 'Running '; print: request server; crlf.
 		stream nextPutAll: request method; nextPutAll: ' request for '.
 		request uri printPathQueryFragmentOn: stream.
 		stream crlf; nextPutAll: 'with headers'; crlf.

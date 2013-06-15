@@ -10,5 +10,4 @@ prepareRedirect
 	request hasEntity
 		ifTrue: [ request resetEntity: nil ].
 	self url: self redirectUrl.
-	state := #inProgress.
 	self sendCookies

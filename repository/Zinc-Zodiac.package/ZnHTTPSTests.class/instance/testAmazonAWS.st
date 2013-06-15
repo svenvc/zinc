@@ -6,5 +6,5 @@ testAmazonAWS
 	(client := ZnClient new) 
 		get: 'https://aws.amazon.com/'.
 	self assert: client isSuccess.
-	self assert: (client contents includesSubString: 'Amazon').
+	self assert: (client contents includesSubstring: 'Amazon').
 	client close

@@ -1,8 +1,8 @@
-private
+request handling
 authenticateRequest: request do: block
 	"Validate request and execute block.
 	When our authenticator is not nil, pass the responsability"
 
-	^ self authenticator isNil
-		ifTrue: [ block value ]
-		ifFalse: [ self authenticator authenticateRequest: request do: block ]
+	^ self authenticator
+		ifNil: [ block value ]
+		ifNotNil: [ :authenticator | authenticator authenticateRequest: request do: block ]

@@ -6,13 +6,8 @@
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 12/15/2010 15:38",
 	"instvars" : [
-		"port",
-		"interface",
 		"process",
 		"serverSocket",
-		"delegate",
-		"authenticator",
-		"reader",
 		"log",
 		"lastRequest",
 		"lastResponse" ],
