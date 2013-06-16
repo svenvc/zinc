@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'BaselineOfZinc'!
+SystemOrganization addCategory: #'BaselineOfZinc'!
