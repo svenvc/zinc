@@ -1,7 +1,7 @@
 public
 socketStreamToUrlDirectly: url
 	| stream address |
-	address := NetNameResolver addressForName: url host timeout: self timeout. 
+	address := SpIPAddress ipAddressForHostName: url host timeout: self timeout. 
 	stream := (self streamClassForScheme: url scheme) 
 		openConnectionToHost: address
 		port: url portOrDefault
