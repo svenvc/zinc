@@ -8,5 +8,9 @@ readFrom: stream
 			self contentLength > ZnConstants maximumEntitySize
 				ifTrue: [ ZnEntityTooLarge signal ].
 			byteArray := ByteArray ofSize: self contentLength.
-			stream next: self contentLength into: byteArray.
+			self contentLength > ZnUtils streamingBufferSize 
+				ifTrue: [
+					ZnUtils streamFrom: stream to: byteArray writeStream size: self contentLength ]
+				ifFalse: [
+					stream next: self contentLength into: byteArray ]. 
 			self bytes: byteArray ]

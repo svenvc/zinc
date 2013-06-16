@@ -1,5 +1,5 @@
 instance creation
-name:  nameString value: value
+name: nameString value: value
 	^ self new
 		name: nameString;
 		value: value;

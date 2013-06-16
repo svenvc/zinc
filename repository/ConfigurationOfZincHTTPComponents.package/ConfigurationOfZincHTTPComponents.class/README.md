@@ -1,10 +1,12 @@
 I am ConfigurationOfZincHTTPComponents the Metacello configuration of Zinc HTTP Components, an open-source Smalltalk framework to deal with the HTTP networking protocol.
 
-For more information, see http://homepage.mac.com/svc/Zinc-HTTP-Components
+For more information, see http://zn.stfx.eu
 
-One way to load this project is by executing:
+Here are some ways to load this project:
 
+	ConfigurationOfZincHTTPComponents load.
 	ConfigurationOfZincHTTPComponents project latestVersion load.
 	ConfigurationOfZincHTTPComponents project latestVersion load: 'Tests'.
+	ConfigurationOfZincHTTPComponents project bleedingEdge load.
 
 This is open-source software licensed under the MIT License.

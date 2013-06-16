@@ -7,4 +7,4 @@ testEchoBinary
 		self assert: (response contentType = ZnMimeType textPlain).
 		self assert: (response statusLine code = 200).
 		entityOut := ZnEntity with: entityIn string asByteArray type: entityIn contentType.
-		self assert: (response entity contents includesSubString: entityOut printString) ]
+		self assert: (response entity contents includesSubstring: entityOut printString) ]

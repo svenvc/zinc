@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-WebSocket-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"prefix",
+		"handler" ],
+	"name" : "ZnWebSocketDelegate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

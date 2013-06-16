@@ -10,12 +10,11 @@
 		"isCapitalizedString:" : "SvenVanCaekenberghe 8/18/2011 14:15",
 		"nextPutAll:on:chunked:" : "SvenVanCaekenberghe 8/18/2011 14:15",
 		"parseHttpDate:" : "SeanDeNigris 5/10/2012 12:19",
-		"parseQueryFrom:" : "SvenVanCaekenberghe 2/28/2011 15:52",
-		"readUpToEnd:limit:" : "SvenVanCaekenberghe 1/31/2012 12:55",
-		"streamFrom:to:" : "SvenVanCaekenberghe 8/3/2012 22:37",
-		"streamFrom:to:size:" : "SvenVanCaekenberghe 7/12/2012 21:04",
-		"trimString:" : "SvenVanCaekenberghe 10/5/2010 21:24",
-		"writeQueryFields:on:" : "NorbertHartl 12/6/2011 17:34",
-		"writeQueryFields:withTextEncoding:on:" : "NorbertHartl 12/6/2011 17:34" },
+		"readUpToEnd:limit:" : "SvenVanCaekenberghe 9/17/2012 14:46",
+		"signalProgress:total:" : "SvenVanCaekenberghe 1/15/2013 15:52",
+		"streamFrom:to:" : "SvenVanCaekenberghe 9/17/2012 14:47",
+		"streamFrom:to:size:" : "SvenVanCaekenberghe 9/17/2012 14:47",
+		"streamingBufferSize" : "SvenVanCaekenberghe 9/17/2012 14:27",
+		"trimString:" : "SvenVanCaekenberghe 10/5/2010 21:24" },
 	"instance" : {
 		 } }

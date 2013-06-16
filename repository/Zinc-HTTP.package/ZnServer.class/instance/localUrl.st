@@ -1,9 +1,9 @@
-as yet unclassified
+accessing
 localUrl
 	"Return a ZnUrl to access me."
 	
 	^ ZnUrl new
-		scheme: #http;
-		host: (GsSocket getHostAddressByName: 'localhost');
+		scheme: self scheme;
+		host: NetNameResolver loopBackName;
 		port: self port;
 		yourself

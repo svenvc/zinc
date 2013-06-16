@@ -1,0 +1,23 @@
+{
+	"category" : "Zinc-SSO-OAuth1-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"consumerKey",
+		"consumerSecret",
+		"signatureMethod",
+		"version",
+		"nonce",
+		"timestamp",
+		"token",
+		"tokenSecret",
+		"callback",
+		"verifier" ],
+	"name" : "ZnOAuth1AuthorizationCalculator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

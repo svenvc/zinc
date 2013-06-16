@@ -1,4 +1,4 @@
 testing
 isInPath: urlObject
-	^ urlObject pathPrintString includesSubString: self path
+	^ urlObject pathPrintString includesSubstring: self path
 	

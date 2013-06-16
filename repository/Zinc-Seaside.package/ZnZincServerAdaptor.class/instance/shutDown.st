@@ -1,4 +1,4 @@
 private
 shutDown
-	self server isNil
-		ifFalse: [ self server stop ]
+	self isRunning
+		ifTrue: [ server stop ]

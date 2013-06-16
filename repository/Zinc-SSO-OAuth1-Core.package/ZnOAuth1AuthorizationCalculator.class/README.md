@@ -1,0 +1,1 @@
+Utility class to calculate the correct Authorization header for OAuth1 requests.

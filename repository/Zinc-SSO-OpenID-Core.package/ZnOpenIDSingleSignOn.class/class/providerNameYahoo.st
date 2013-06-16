@@ -1,0 +1,3 @@
+resources
+providerNameYahoo
+	^'Yahoo'

@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-SSO-OAuth2-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ZnMicrosoftOAuth2Session",
+	"pools" : [
+		 ],
+	"super" : "ZnOAuth2Session",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+Seaside component that handles the OpenID signin process

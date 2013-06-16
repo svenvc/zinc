@@ -6,6 +6,7 @@ generateStatus
 		stream << ZnConstants standardHtmlDocType.
 		stream nextPutAll: '<html><head><title>ZnServer Status</title></head>'.
 		stream nextPutAll: '<body><h1>ZnServer Status</h1>'.
+		stream nextPutAll: '<p>I am '; print: ZnCurrentServer value; nextPutAll: '</p>'.
 		stream nextPutAll: '<p>'; nextPutAll: self systemVersionInfo; nextPutAll: '</p>'.
 		stream nextPutAll: '<pre>'; nextPutAll: self vmStats; nextPutAll: '</pre>'.  
 		stream nextPutAll: '<h1>Processes</h1><ol>'.

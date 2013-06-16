@@ -1,0 +1,19 @@
+{
+	"category" : "Zinc-SSO-OpenID-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"name",
+		"discoveryUrl",
+		"shouldValidateClaimedIdBelongsToEndpoint",
+		"nonceLocker",
+		"imgUrl",
+		"altText" ],
+	"name" : "ZnOpenIDProvider",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

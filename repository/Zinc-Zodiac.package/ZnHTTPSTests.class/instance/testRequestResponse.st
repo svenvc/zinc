@@ -13,5 +13,5 @@ testRequestResponse
 		response := ZnResponse readFrom: stream.
 	] ensure: [ stream close ].
 	self assert: response isSuccess.
-	self assert: (response contents includesSubString: 'Google').   
-	self assert: (response contents includesSubString: 'Smalltalk').   
+	self assert: (response contents includesSubstring: 'Google').   
+	self assert: (response contents includesSubstring: 'Smalltalk').   

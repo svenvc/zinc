@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-WebSocket-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stream",
+		"role",
+		"log" ],
+	"name" : "ZnWebSocket",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

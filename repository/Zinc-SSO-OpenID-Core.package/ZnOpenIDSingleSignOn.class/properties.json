@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-SSO-OpenID-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"providers",
+		"providerSessions" ],
+	"name" : "ZnOpenIDSingleSignOn",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

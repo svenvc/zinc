@@ -11,4 +11,8 @@ testCookie
 	
 	responseString := String streamContents: [ :stream | response writeOn: stream ].
 	
-	self assert: (responseString includesSubString: 'Set-Cookie: testCookie1=123')
+	self assert: (responseString includesSubstring: 'Set-Cookie: testCookie1=123')	
+
+	
+		
+		

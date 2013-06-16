@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "SvenVanCaekenberghe 11/10/2011 17:23",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"server" ],
 	"name" : "ZnZincServerAdaptor",

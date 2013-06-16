@@ -5,5 +5,5 @@ testPost
 		response := ZnEasy post: (server localUrl addPathSegment: 'echo'; yourself) data: (ZnEntity text: data).
 		self assert: (response headers contentType = ZnMimeType textPlain).
 		self assert: (response statusLine code = 200).
-		self assert: (response entity string includesSubString: 'POST').
-		self assert: (response entity string includesSubString: data) ]
+		self assert: (response entity string includesSubstring: 'POST').
+		self assert: (response entity string includesSubstring: data) ]

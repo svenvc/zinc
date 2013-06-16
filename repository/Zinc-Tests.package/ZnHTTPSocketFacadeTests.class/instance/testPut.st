@@ -13,6 +13,6 @@ testPut
 			user: 'user' 
 			passwd: 'secret'.
 		self assert: (result beginsWith: 'HTTP/1.1 200 OK').
-		self assert: (result includesSubString: '67B')
+		self assert: (result includesSubstring: '67B')
 	]
 		ensure: [ server stop ]

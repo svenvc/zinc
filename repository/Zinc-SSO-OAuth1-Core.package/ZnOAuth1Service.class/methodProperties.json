@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"executeRequest:token:" : "jvds 3/4/2011 21:32",
+		"executeRequest:token:followRedirects:" : "JanVanDeSandt 1/16/2013 22:19",
+		"getAccessToken:" : "jvds 2/10/2011 22:19",
+		"getAccessToken:verifier:" : "JanVanDeSandt 1/26/2013 14:02",
+		"getRequestToken" : "JanVanDeSandt 1/26/2013 14:01",
+		"getRequestTokenFor:" : "jvds 2/10/2011 22:15",
+		"getRequestTokenFor:with:" : "JanVanDeSandt 1/26/2013 14:09",
+		"hasKeys" : "jvds 2/13/2011 22:22",
+		"httpClient" : "JanVanDeSandt 12/23/2012 16:11",
+		"httpGet:using:" : "JanVanDeSandt 12/23/2012 17:20",
+		"loginUrlFor:" : "JanVanDeSandt 12/27/2012 10:41",
+		"loginUrlFor:callbackUrl:" : "JanVanDeSandt 1/26/2013 12:45",
+		"providerAccount" : "jvds 1/2/2011 14:57",
+		"providerAccount:" : "jvds 1/2/2011 14:57",
+		"resourceMetaUtils" : "JanVanDeSandt 12/26/2012 19:54" } }

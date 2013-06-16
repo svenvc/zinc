@@ -1,0 +1,1 @@
+This Seaside configuration class defines the attributes required to use Google OAuth2

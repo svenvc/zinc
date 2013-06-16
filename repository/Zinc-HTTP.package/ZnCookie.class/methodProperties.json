@@ -2,7 +2,7 @@
 	"class" : {
 		"fromString:" : "SvenVanCaekenberghe 8/30/2011 19:46",
 		"fromString:for:" : "SvenVanCaekenberghe 8/30/2011 19:46",
-		"name:value:" : "SvenVanCaekenberghe 8/30/2011 22:23" },
+		"name:value:" : "SvenVanCaekenberghe 11/10/2012 19:25" },
 	"instance" : {
 		"=" : "SvenVanCaekenberghe 8/18/2011 14:05",
 		"defaultDomain:" : "SvenVanCaekenberghe 8/30/2011 19:45",
@@ -19,8 +19,8 @@
 		"httponly:" : "MattKennedy 9/27/2010 20:28",
 		"initialize" : "MattKennedy 9/27/2010 20:21",
 		"isExpired" : "SvenVanCaekenberghe 8/18/2011 14:05",
-		"isInDomain:" : "SvenVanCaekenberghe 8/18/2011 14:19",
-		"isInPath:" : "SvenVanCaekenberghe 8/18/2011 14:19",
+		"isInDomain:" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"isInPath:" : "SvenVanCaekenberghe 8/23/2012 14:34",
 		"maxage" : "SvenVanCaekenberghe 8/18/2011 14:19",
 		"name" : "SvenVanCaekenberghe 8/18/2011 14:19",
 		"name:" : "MattKennedy 9/27/2010 20:23",

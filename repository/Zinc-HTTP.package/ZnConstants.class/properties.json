@@ -3,8 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"HTTPStatusCodes",
-		"MaximumEntitySize" ],
+		"DefaultMaximumEntitySize",
+		"HTTPStatusCodes" ],
 	"commentStamp" : "SvenVanCaekenberghe 1/18/2011 11:01",
 	"instvars" : [
 		 ],

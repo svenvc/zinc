@@ -1,13 +1,15 @@
 initialize-release
 initialize
-	(prefixMap := Dictionary new)
-		at: 'welcome' put: #welcome:;
-		at: 'help' put: #help:;
-		at: 'echo' put: #echoRequest:;
-		at: 'dw-bench' put: #dwbench:;
-		at: 'favicon.ico' put: #favicon:;
-		at: 'random' put: #random:;
-		at: 'bytes' put: #bytes:;
-		at: 'status' put: #status:;
-		at: 'unicode' put: #unicode:;
-		at: '/' put: 'welcome'
+	self
+		map: 'welcome' to: #welcome:;
+		map: 'help' to: #help:;
+		map: 'echo' to: #echoRequest:;
+		map: 'dw-bench' to: #dwbench:;
+		map: 'favicon.ico' to: #favicon:;
+		map: 'random' to: #random:;
+		map: 'bytes' to: #bytes:;
+		map: 'status' to: #status:;
+		map: 'unicode' to: #unicode:;
+		map: 'session' to: #sessionRequest:;
+		map: 'error' to: #errorResponse:;
+		map: '/' to: 'welcome'

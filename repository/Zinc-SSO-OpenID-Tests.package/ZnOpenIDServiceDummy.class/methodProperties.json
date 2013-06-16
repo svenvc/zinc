@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"associationResponse:" : "PanuSuominen 11/25/2011 09:38",
+		"claimedId:xrds:" : "JanVanDeSandt 1/1/2013 16:08",
+		"doNotCheckSignature" : "JanVanDeSandt 1/1/2013 16:08",
+		"doNotValidateEndpoint" : "PanuSuominen 11/25/2011 13:00",
+		"httpClient" : "JanVanDeSandt 1/2/2013 14:34",
+		"httpClient:" : "emm 2/4/2012 12:15",
+		"initialize" : "PanuSuominen 11/25/2011 13:01",
+		"shouldValidateEndpoint" : "PanuSuominen 11/25/2011 13:01",
+		"validateClaimedId:belongsToEndpoint:" : "PanuSuominen 11/25/2011 13:00" } }

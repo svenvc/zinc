@@ -1,7 +1,7 @@
 instance creation
 methodNotAllowed: request
 	^ self new
-		statusLine: (ZnStatusLine methodNotAllowed);
+		statusLine: ZnStatusLine methodNotAllowed;
 		headers: ZnHeaders defaultResponseHeaders;
-		entity: (ZnEntity text: 'Method Not Allowed ', request method, ' ', request uri pathQueryFragmentPrintString, String crlf);
+		entity: (ZnEntity textCRLF: 'Method Not Allowed ' , request method , ' ' , request uri pathQueryFragmentPrintString);
 		yourself

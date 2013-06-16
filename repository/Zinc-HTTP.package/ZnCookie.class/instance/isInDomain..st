@@ -4,5 +4,5 @@ isInDomain: urlObject
 	domain := (self domain beginsWith: '.')
 		ifTrue: [ self domain copyFrom: 2 to: self domain size ]
 		ifFalse: [ self domain ].
-	^ urlObject host includesSubString: domain
+	^ urlObject host includesSubstring: domain
 	

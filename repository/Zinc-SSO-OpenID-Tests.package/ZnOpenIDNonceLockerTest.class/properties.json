@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-SSO-OpenID-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"locker" ],
+	"name" : "ZnOpenIDNonceLockerTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

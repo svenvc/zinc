@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-REST-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ZnJSONRestServerDelegate",
+	"pools" : [
+		 ],
+	"super" : "ZnRestServerDelegate",
+	"type" : "normal" }

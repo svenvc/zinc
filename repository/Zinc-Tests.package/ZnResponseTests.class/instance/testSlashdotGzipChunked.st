@@ -15,4 +15,4 @@ testSlashdotGzipChunked
 	self assert: (response headers at: 'Content-Encoding' ifAbsent: [ 'gzip' ]) = 'gzip'.
 	self assert: (response headers at: 'Transfer-Encoding' ifAbsent: [ 'chunked' ]) = 'chunked'.
 	contents := response entity contents.
-	self assert: ((contents includesSubString: 'Slashdot') or: [ contents includesSubString: 'refresh' ])
+	self assert: ((contents includesSubstring: 'Slashdot') or: [ contents includesSubstring: 'refresh' ])

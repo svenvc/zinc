@@ -1,3 +1,7 @@
 writing
 writeOn: stream
-	stream nextPutAll: self bytes
+	self contentLength > ZnUtils streamingBufferSize 
+		ifTrue: [
+			ZnUtils streamFrom: self readStream to: stream size: self contentLength ]
+		ifFalse: [
+			stream nextPutAll: self bytes ]

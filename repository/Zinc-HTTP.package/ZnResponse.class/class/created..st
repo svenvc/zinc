@@ -1,10 +1,10 @@
 instance creation
 created: url
 	| location |
-	location := url asZnUrl pathQueryFragmentPrintString.
+	location := url asString.
 	^ self new
-		statusLine: (ZnStatusLine created);
+		statusLine: ZnStatusLine created;
 		headers: ZnHeaders defaultResponseHeaders;
 		setLocation: location;
-		entity: (ZnEntity text: 'Created ', location, String crlf);
+		entity: (ZnEntity textCRLF: 'Created ' , location);
 		yourself

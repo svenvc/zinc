@@ -1,0 +1,3 @@
+accessing
+consumer
+	^ consumer

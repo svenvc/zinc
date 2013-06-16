@@ -7,4 +7,4 @@ testCreated
 	self assert: response hasHeaders.
 	self assert: (response headers at: 'Location') = uri.
 	self assert: response hasEntity.
-	self assert: (response entity contents includesSubString: uri)
+	self assert: (response entity contents includesSubstring: uri)
