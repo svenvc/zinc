@@ -4,6 +4,6 @@ localUrl
 	
 	^ ZnUrl new
 		scheme: self scheme;
-		host: NetNameResolver loopBackName;
+		host: 'localhost';
 		port: self port;
 		yourself

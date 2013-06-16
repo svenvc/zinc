@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'Zinc-Tests'!
+SystemOrganization addCategory: #'Zinc-Tests'!
