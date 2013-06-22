@@ -1,5 +1,5 @@
 initialize-release
 initialize
 	super initialize.
-	attributes := SmallDictionary new.
+	attributes := GRSmallDictionary new.
 	created := modified := DateAndTime now

@@ -7,7 +7,7 @@ shouldProxyUrl: url
 	^ self isProxySet
 		and: [ 
 			url isLocalHost not
-				or: [ 
+				"or: [ 
 					[ (NetworkSystemSettings isAnExceptionFor: url) not ]
 						on: MessageNotUnderstood
-						do: [ true ] ] ]
+						do: [ true ] ]" ]
