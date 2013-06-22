@@ -2,11 +2,11 @@ writing
 writeRepresentationOn: stream
 	self contentType charSet
 		ifNotNil: [:charSet|
-			ZnUtils 
+			ZnResourceMetaUtils
 				writeQueryFields: self fields 
 				withTextEncoding: charSet 
 				on: stream] 
 		ifNil: [ 
-			ZnUtils 
+			ZnResourceMetaUtils 
 				writeQueryFields: self fields 
 				on: stream ]

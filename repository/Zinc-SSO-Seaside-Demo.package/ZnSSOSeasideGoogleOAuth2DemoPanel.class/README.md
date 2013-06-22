@@ -1,0 +1,1 @@
+Seaside component that handles the Google SSO callback and displays profile information.

@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"defaultEncoder" : "SvenVanCaekenberghe 5/3/2012 14:43",
+		"on:" : "SvenVanCaekenberghe 5/3/2012 14:40",
+		"on:encoding:" : "SvenVanCaekenberghe 5/3/2012 15:13" },
+	"instance" : {
+		"atEnd" : "SvenVanCaekenberghe 5/3/2012 21:29",
+		"close" : "SvenVanCaekenberghe 5/3/2012 14:39",
+		"collectionSpecies" : "SvenVanCaekenberghe 5/3/2012 15:09",
+		"contents" : "SvenVanCaekenberghe 5/3/2012 15:12",
+		"encoder" : "SvenVanCaekenberghe 5/3/2012 14:42",
+		"encoder:" : "SvenVanCaekenberghe 5/3/2012 14:41",
+		"encoding:" : "SvenVanCaekenberghe 12/3/2012 13:41",
+		"isBinary" : "SvenVanCaekenberghe 5/3/2012 15:07",
+		"next" : "SvenVanCaekenberghe 5/3/2012 15:46",
+		"next:" : "SvenVanCaekenberghe 5/3/2012 15:18",
+		"next:into:" : "SvenVanCaekenberghe 5/3/2012 15:18",
+		"next:into:startingAt:" : "SvenVanCaekenberghe 5/3/2012 15:19",
+		"on:" : "SvenVanCaekenberghe 5/3/2012 14:40",
+		"peek" : "SvenVanCaekenberghe 5/3/2012 15:35",
+		"peekFor:" : "SvenVanCaekenberghe 12/3/2012 13:05",
+		"readInto:startingAt:count:" : "SvenVanCaekenberghe 5/3/2012 15:57",
+		"skip:" : "SvenVanCaekenberghe 5/3/2012 15:11",
+		"upTo:" : "SvenVanCaekenberghe 5/3/2012 15:17",
+		"upToEnd" : "SvenVanCaekenberghe 12/16/2012 15:42",
+		"wrappedStream" : "SvenVanCaekenberghe 5/3/2012 14:41" } }

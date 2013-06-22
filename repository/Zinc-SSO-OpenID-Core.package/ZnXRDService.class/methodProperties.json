@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"newFromXmlElement:" : "PanuSuominen 11/25/2011 12:26",
+		"parseOPEndpointFromXrds:" : "JanVanDeSandt 1/2/2013 16:02",
+		"parseServiceElement:" : "JanVanDeSandt 1/16/2013 22:22",
+		"parseServicesFromXrds:" : "JanVanDeSandt 1/2/2013 15:44",
+		"xmlParser" : "JanVanDeSandt 1/2/2013 12:36" },
+	"instance" : {
+		"isClaimedIdService" : "PanuSuominen 11/25/2011 12:55" } }

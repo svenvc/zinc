@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"assocTypeHmacSHA1" : "jvds 2/8/2011 10:58",
+		"newFromDictionary:" : "JanVanDeSandt 1/2/2013 20:51",
+		"newFromKeyValueForm:" : "jvds 3/5/2010 11:01",
+		"newFromUrl:" : "JanVanDeSandt 1/2/2013 13:51",
+		"nsAttributeExchangeExtension" : "jvds 2/8/2011 10:57",
+		"nsOAuth" : "jvds 2/8/2011 10:57",
+		"nsOpenId2" : "jvds 2/8/2011 10:57",
+		"nsPape" : "jvds 2/8/2011 10:57",
+		"propertyPrefix" : "jvds 11/6/2011 14:08",
+		"signStringSHA1:usingSecret:" : "JanVanDeSandt 12/23/2012 15:55" },
+	"instance" : {
+		"addToUrl:" : "JanVanDeSandt 1/2/2013 17:06",
+		"errorPropertyNotFound:" : "jvds 3/2/2010 11:12",
+		"initialize" : "jvds 3/2/2010 11:41",
+		"prefixForNamespace:ifAbsent:" : "jvds 2/14/2011 12:54",
+		"properties" : "jvds 3/2/2010 11:10",
+		"propertyAt:" : "jvds 3/2/2010 11:11",
+		"propertyAt:ifAbsent:" : "jvds 3/2/2010 11:11",
+		"propertyAt:ifAbsentPut:" : "jvds 3/2/2010 11:11",
+		"propertyAt:ifPresent:" : "jvds 3/2/2010 11:11",
+		"propertyAt:put:" : "jvds 3/2/2010 11:12",
+		"removePropertyAt:" : "jvds 2/10/2011 21:15" } }

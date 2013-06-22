@@ -1,0 +1,18 @@
+{
+	"category" : "Zinc-SSO-OpenID-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jvds 3/26/2010 14:31",
+	"instvars" : [
+		"provider",
+		"endpoint",
+		"associationResponse",
+		"associationExpireTime",
+		"realm" ],
+	"name" : "ZnOpenIDService",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

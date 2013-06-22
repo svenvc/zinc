@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-SSO-OpenID-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ZnOpenIDAssociationResponse",
+	"pools" : [
+		 ],
+	"super" : "ZnSSOMessage",
+	"type" : "normal" }

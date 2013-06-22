@@ -4,15 +4,15 @@ testGetAfterPost
 		server onRequestRespond: [ :request | 
 			request uri firstPathSegment = 'one'
 				ifTrue: [
-					self assert: (request method = #POST).
-					self assert: request hasEntity. 
-					ZnResponse ok: (ZnEntity text: 'OK for one') ]
+					(request method = #POST and: [ request hasEntity ])
+						ifTrue: [ ZnResponse ok: (ZnEntity text: 'OK for one') ]
+						ifFalse: [ ZnResponse badRequest: request ] ]
 				ifFalse: [
 					request uri firstPathSegment = 'two'
 						ifTrue: [ 
-							self assert: (request method = #GET).
-							self deny: request hasEntity.
-							ZnResponse ok: (ZnEntity text: 'OK for two') ]
+							(request method = #GET and: [ request hasEntity not ])
+								ifTrue: [ ZnResponse ok: (ZnEntity text: 'OK for two') ]
+								ifFalse: [ ZnResponse badRequest: request ] ]
 		 				ifFalse: [ ZnResponse notFound: request uri ] ] ].
 		(client := ZnClient new) 
 			url: server localUrl;

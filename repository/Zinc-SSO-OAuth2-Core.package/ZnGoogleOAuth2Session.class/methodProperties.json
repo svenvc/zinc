@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"scopeUserinfoEmail" : "JanVanDeSandt 12/23/2012 23:01",
+		"scopeUserinfoProfile" : "JanVanDeSandt 12/23/2012 23:00",
+		"ssoScopes" : "JanVanDeSandt 12/23/2012 23:25" },
+	"instance" : {
+		"authenticationUrl" : "JanVanDeSandt 12/7/2012 16:11",
+		"authenticationUrlWithState:" : "JanVanDeSandt 12/23/2012 23:35",
+		"getUserData" : "JanVanDeSandt 10/7/2012 15:27",
+		"handleAuthenticationCallback:" : "JanVanDeSandt 12/7/2012 16:58" } }

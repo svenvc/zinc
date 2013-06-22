@@ -1,0 +1,20 @@
+{
+	"category" : "Zinc-SSO-Demo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"facebookData",
+		"googleData",
+		"microsoftData",
+		"twitterData",
+		"dropboxData",
+		"googleOpenIDService",
+		"yahooOpenIDService" ],
+	"name" : "ZnSSOServerDelegate",
+	"pools" : [
+		 ],
+	"super" : "ZnDefaultServerDelegate",
+	"type" : "normal" }

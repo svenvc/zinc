@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"doNotCheckSignature" : "PanuSuominen 11/25/2011 09:36",
+		"initialize" : "PanuSuominen 11/25/2011 09:37",
+		"shouldCheckSignature" : "PanuSuominen 11/25/2011 09:37",
+		"sign:andCheck:" : "PanuSuominen 11/25/2011 09:37" } }

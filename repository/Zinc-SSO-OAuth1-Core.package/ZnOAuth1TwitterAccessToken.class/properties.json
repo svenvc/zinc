@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-SSO-OAuth1-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"userId",
+		"screenName" ],
+	"name" : "ZnOAuth1TwitterAccessToken",
+	"pools" : [
+		 ],
+	"super" : "ZnOAuth1Token",
+	"type" : "normal" }

@@ -1,3 +1,0 @@
-testing
-hasQuery
-	^ query notNil

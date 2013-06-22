@@ -4,7 +4,7 @@ readFrom: stream
 	
 	| readStream |
 	representation := nil.
-	self contentLength isNil
-		ifTrue: [ readStream := stream ]
-		ifFalse: [ (readStream := ZnLimitedReadStream on: stream limit: self contentLength) ascii ].
-	fields := ZnUtils parseQueryFrom: readStream
+	contentLength isNil
+		ifTrue: [ readStream := ZnCharacterReadStream on: stream encoding: 'ascii' ]
+		ifFalse: [ (readStream := ZnLimitedReadStream on: stream limit: contentLength) ascii ].
+	fields := ZnResourceMetaUtils parseQueryFrom: readStream

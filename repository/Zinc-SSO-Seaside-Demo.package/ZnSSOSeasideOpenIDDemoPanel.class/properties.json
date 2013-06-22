@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-SSO-Seaside-Demo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"providerSession",
+		"authResponse" ],
+	"name" : "ZnSSOSeasideOpenIDDemoPanel",
+	"pools" : [
+		 ],
+	"super" : "ZnSSOSeasideDemoPanel",
+	"type" : "normal" }

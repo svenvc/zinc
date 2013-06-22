@@ -2,12 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testCookie" : "NickAger 5/10/2011 11:30",
-		"testCookies" : "NickAger 5/10/2011 11:30",
-		"testCreated" : "SvenVanCaekenberghe 1/4/2011 14:20",
+		"testAbsoluteCreated" : "SvenVanCaekenberghe 1/6/2013 22:42",
+		"testAbsoluteRedirect" : "SvenVanCaekenberghe 1/6/2013 22:37",
+		"testCookie" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"testCookies" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"testCreated" : "SvenVanCaekenberghe 8/23/2012 14:34",
 		"testIsError" : "PaulDeBruicker 4/19/2012 17:01",
-		"testNotFound" : "SvenVanCaekenberghe 1/4/2011 14:20",
-		"testRedirect" : "SvenVanCaekenberghe 1/4/2011 14:20",
-		"testSlashdotGzipChunked" : "SvenVanCaekenberghe 9/13/2011 22:18",
-		"testWritingBinary" : "SvenVanCaekenberghe 12/3/2010 21:29",
-		"testWritingCharacter" : "SvenVanCaekenberghe 12/3/2010 21:30" } }
+		"testNotFound" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"testRedirect" : "SvenVanCaekenberghe 1/6/2013 22:38",
+		"testSlashdotGzipChunked" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"testWritingBinary" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"testWritingCharacter" : "SvenVanCaekenberghe 8/23/2012 14:34" } }

@@ -1,0 +1,1 @@
+This Seaside configuration class defines the attributes required to use Facebook OAuth2

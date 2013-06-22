@@ -1,6 +1,6 @@
 public
 match: request
-	rootClass subclassesDo: [ :each |
+	rootClass withAllSubclassesDo: [ :each |
 		(each match: request)
 			ifNotNil: [ :variables |
 				^ each new

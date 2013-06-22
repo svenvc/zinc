@@ -1,3 +1,3 @@
 accessing
 prefixMap
-	^ prefixMap 
+	^ prefixMap ifNil: [ prefixMap := Dictionary new ]

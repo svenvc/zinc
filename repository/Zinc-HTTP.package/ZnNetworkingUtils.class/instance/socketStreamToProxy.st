@@ -1,4 +1,4 @@
-private
+proxy
 socketStreamToProxy
 	| proxyUrl |
 	"System settings do currently not support HTTPS proxies."

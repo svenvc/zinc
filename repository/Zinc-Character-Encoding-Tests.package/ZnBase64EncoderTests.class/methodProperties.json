@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testDecodingErrors" : "SvenVanCaekenberghe 12/15/2012 13:43",
+		"testEmpty" : "SvenVanCaekenberghe 12/15/2012 13:44",
+		"testFullSpectrum" : "SvenVanCaekenberghe 12/15/2012 10:16",
+		"testPadding" : "SvenVanCaekenberghe 12/15/2012 13:39",
+		"testQuote" : "KenTreis 01/19/2013 09:28",
+		"testSimple" : "SvenVanCaekenberghe 12/15/2012 00:07" } }

@@ -1,5 +1,6 @@
 accessing
 addAll: keyedCollection
-	keyedCollection keysAndValuesDo: [ :key :value |
-		self at: key put: value ].
+	"Note that we use #addAllMulti:"
+
+	self fields addAllMulti: keyedCollection.
 	^ keyedCollection 

@@ -1,0 +1,3 @@
+resources
+providerNameMyOpenID
+	^'myOpenID'

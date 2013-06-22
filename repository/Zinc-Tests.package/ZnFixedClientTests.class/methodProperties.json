@@ -1,7 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"ignoringDeprecation:" : "SvenVanCaekenberghe 10/4/2011 13:55",
-		"testGetSmallHTMLDocument" : "SvenVanCaekenberghe 7/2/2012 15:31",
-		"testIfModifiedSinceNotModified" : "SvenVanCaekenberghe 10/4/2011 13:55" } }

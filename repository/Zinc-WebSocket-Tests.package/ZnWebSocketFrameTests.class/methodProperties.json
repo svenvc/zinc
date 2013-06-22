@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testReading256ByteSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 10:46",
+		"testReading256KiBSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 10:46",
+		"testReadingFragmentedUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 10:29",
+		"testReadingPing" : "SvenVanCaekenberghe 8/22/2012 10:32",
+		"testReadingPong" : "SvenVanCaekenberghe 8/22/2012 10:32",
+		"testReadingSingleFrameMaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 10:12",
+		"testReadingSingleFrameUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 10:12",
+		"testWriting256ByteSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 12:15",
+		"testWriting256KiBSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 12:18",
+		"testWritingPing" : "SvenVanCaekenberghe 8/22/2012 12:11",
+		"testWritingSingleFrameUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 12:05" } }

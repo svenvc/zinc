@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"accessToken:" : "JanVanDeSandt 12/23/2012 16:32",
+		"actionUpdateStatus:" : "JanVanDeSandt 12/26/2012 22:51",
+		"defaulStatusText" : "JanVanDeSandt 12/26/2012 23:11",
+		"initialize" : "JanVanDeSandt 12/26/2012 22:06",
+		"renderContentOn:" : "JanVanDeSandt 12/26/2012 22:48",
+		"renderMessage:on:" : "JanVanDeSandt 12/23/2012 16:35",
+		"renderStatusFormOn:" : "JanVanDeSandt 12/27/2012 10:34",
+		"twitterAccess" : "JanVanDeSandt 12/23/2012 16:34" } }

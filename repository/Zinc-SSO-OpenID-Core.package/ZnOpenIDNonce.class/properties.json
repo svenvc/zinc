@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-SSO-OpenID-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"timestamp",
+		"distinctor" ],
+	"name" : "ZnOpenIDNonce",
+	"pools" : [
+		 ],
+	"super" : "Magnitude",
+	"type" : "normal" }

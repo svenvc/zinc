@@ -4,7 +4,6 @@ multiPartFormDataEntity
 	Return the existing entity if there is one. 
 	Fail if another type was already set."
 
-	self resetRequestIfNeeded.
 	request hasEntity
 		ifTrue: [
 			request entity contentType = ZnMimeType multiPartFormData

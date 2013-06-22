@@ -1,3 +1,3 @@
 testing
 isRedirect
-	^ #(301 302) includes: self code
+	^ #(301 302 303 307) includes: self code

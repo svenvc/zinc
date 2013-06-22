@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"decodeBytes:with:" : "SvenVanCaekenberghe 11/30/2010 11:57",
+		"encodeString:with:" : "SvenVanCaekenberghe 11/30/2010 11:57",
+		"testBeLenient" : "SvenVanCaekenberghe 12/17/2012 15:13",
+		"testConvencienceMethods" : "SvenVanCaekenberghe 5/2/2012 16:35",
+		"testLatin1Encoder" : "SvenVanCaekenberghe 12/15/2012 19:12",
+		"testLatin2Encoder" : "PaulDeBruicker 04/10/2011 10:44",
+		"testNullEncoder" : "PaulDeBruicker 04/10/2011 10:45",
+		"testUTF8Encoder" : "PaulDeBruicker 04/10/2011 10:44",
+		"testUTF8EncoderAuto" : "SvenVanCaekenberghe 11/30/2010 13:42",
+		"testUTF8EncoderByteCount" : "PaulDeBruicker 04/10/2011 10:44" } }

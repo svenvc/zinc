@@ -1,9 +1,11 @@
 public
 socketStreamToUrlDirectly: url
-	| stream |
+	| stream address |
+	address := NetNameResolver addressForName: url host timeout: self timeout. 
 	stream := (self streamClassForScheme: url scheme) 
-		openConnectionToHostNamed: url host
-		port: url portOrDefault.  
+		openConnectionToHost: address
+		port: url portOrDefault
+		timeout: self timeout.  
 	self setSocketStreamParameters: stream.  
-	url isHttps ifTrue: [ stream connect ].  
+	(#(https wss) includes: url scheme) ifTrue: [ stream connect ].  
 	^ stream
