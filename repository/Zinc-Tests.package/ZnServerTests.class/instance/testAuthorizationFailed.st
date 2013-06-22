@@ -5,5 +5,5 @@ testAuthorizationFailed
 		response := ZnEasy get: (server localUrl addPathSegment: 'echo'; yourself).
 		self assert: (response headers contentType = ZnMimeType textPlain).
 		self assert: (response statusLine code = 401).
-		self assert: ((response headers at: 'WWW-Authenticate') includesSubString: 'Basic').
-		self assert: ((response headers at: 'WWW-Authenticate') includesSubString: 'Zinc') ]
+		self assert: ((response headers at: 'WWW-Authenticate') includesSubstring: 'Basic').
+		self assert: ((response headers at: 'WWW-Authenticate') includesSubstring: 'Zinc') ]

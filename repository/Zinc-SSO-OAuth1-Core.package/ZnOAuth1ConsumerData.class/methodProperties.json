@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"newForDropbox" : "SvenVanCaekenberghe 1/23/2013 16:29",
+		"newForGoogle" : "jvds 2/13/2011 22:13",
+		"newForTwitter" : "JanVanDeSandt 12/23/2012 15:12",
+		"newForTwitterAuthentication" : "jvds 6/2/2011 16:31" },
+	"instance" : {
+		"accessTokenClass" : "JanVanDeSandt 12/23/2012 15:12",
+		"accessTokenClass:" : "jvds 6/2/2011 16:29",
+		"authorizeTokenUrl" : "jvds 1/1/2011 21:01",
+		"authorizeTokenUrl:" : "jvds 1/1/2011 21:01",
+		"consumer" : "jvds 1/1/2011 21:01",
+		"consumer:" : "jvds 1/1/2011 21:01",
+		"consumerSecret" : "jvds 1/1/2011 21:01",
+		"consumerSecret:" : "jvds 1/1/2011 21:01",
+		"getAccessTokenUrl" : "jvds 1/1/2011 21:01",
+		"getAccessTokenUrl:" : "jvds 1/1/2011 21:01",
+		"getRequestTokenUrl" : "jvds 1/1/2011 21:01",
+		"getRequestTokenUrl:" : "jvds 1/1/2011 21:01",
+		"hasKeys" : "jvds 2/13/2011 22:14",
+		"newCalculator" : "JanVanDeSandt 12/26/2012 18:49" } }

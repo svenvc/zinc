@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"clear" : "jvds 12/30/2010 12:16",
+		"default" : "JanVanDeSandt 1/2/2013 15:36",
+		"default:" : "JanVanDeSandt 1/2/2013 15:32",
+		"defaultProviders" : "JanVanDeSandt 1/5/2013 17:58",
+		"providerNameGoogle" : "jvds 11/20/2010 21:21",
+		"providerNameHyves" : "jvds 11/20/2010 21:21",
+		"providerNameMyOpenID" : "jvds 12/29/2010 13:12",
+		"providerNameYahoo" : "jvds 11/20/2010 21:21",
+		"unload" : "jvds 2/14/2011 14:10" },
+	"instance" : {
+		"addProvider:" : "JanVanDeSandt 1/2/2013 15:35",
+		"addProviders:" : "JanVanDeSandt 1/2/2013 15:35",
+		"googleProvider" : "jvds 12/29/2010 11:40",
+		"googleSession" : "jvds 11/20/2010 21:31",
+		"hyvesSession" : "jvds 11/20/2010 21:38",
+		"initialize" : "JanVanDeSandt 1/2/2013 15:54",
+		"myOpenIDProvider" : "jvds 12/29/2010 13:12",
+		"providerSessions" : "jvds 11/20/2010 21:29",
+		"providers" : "jvds 11/20/2010 21:27",
+		"sessionForGoogleAppsDomain:" : "JanVanDeSandt 1/2/2013 16:11",
+		"sessionForProvider:" : "jvds 11/20/2010 21:32",
+		"sessionForProviderNamed:" : "jvds 11/20/2010 21:30",
+		"yahooSession" : "jvds 11/20/2010 21:31" } }

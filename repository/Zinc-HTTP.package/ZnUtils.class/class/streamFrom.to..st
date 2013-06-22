@@ -1,7 +1,7 @@
 streaming
 streamFrom: inputStream to: outputStream
 	| buffer totalRead |
-	buffer := (inputStream isBinary ifTrue: [ ByteArray ] ifFalse: [ String ]) new: 16384.
+	buffer := (inputStream isBinary ifTrue: [ ByteArray ] ifFalse: [ String ]) new: self streamingBufferSize.
 	totalRead := 0.
 	[ inputStream atEnd ]
 		whileFalse: [ | readCount |
@@ -12,8 +12,5 @@ streamFrom: inputStream to: outputStream
 					outputStream next: readCount putAll: buffer startingAt: 1 ].
 			inputStream atEnd
 				ifFalse: [
-					ZnSignalProgress enabled
-						ifTrue: [ 
-							HTTPProgress new 
-								signal: ('Tranferred {0} bytes ...' format: { totalRead asBytesDescription }) ]. 
+					self signalProgress: totalRead total: nil. 
 					outputStream flush ] ]

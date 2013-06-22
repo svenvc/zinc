@@ -18,6 +18,7 @@
 		"socketStreamTimeout" : "dkh 08/06/2012 16:29",
 		"socketStreamToUrl:" : "SvenVanCaekenberghe 5/2/2011 22:40" },
 	"instance" : {
+		"bufferSize" : "SvenVanCaekenberghe 9/18/2012 09:30",
 		"httpProxyPassword" : "dkh 08/06/2012 11:57",
 		"httpProxyPort" : "dkh 07/31/2012 17:42",
 		"httpProxyServer" : "dkh 07/31/2012 17:34",
@@ -31,13 +32,13 @@
 		"serverSocketOn:" : "SvenVanCaekenberghe 5/2/2011 22:41",
 		"serverSocketOn:interface:" : "SvenVanCaekenberghe 3/12/2012 19:22",
 		"setServerSocketOptions:" : "dkh 08/06/2012 14:48",
-		"setSocketStreamParameters:" : "SvenVanCaekenberghe 5/2/2011 22:42",
-		"shouldProxyUrl:" : "SvenVanCaekenberghe 6/16/2011 22:38",
+		"setSocketStreamParameters:" : "SvenVanCaekenberghe 9/18/2012 09:30",
+		"shouldProxyUrl:" : "JohanBrichau 06/22/2013 09:07",
 		"socketStreamClass" : "SvenVanCaekenberghe 11/10/2011 13:47",
 		"socketStreamClass:" : "SvenVanCaekenberghe 11/10/2011 13:15",
 		"socketStreamOn:" : "SvenVanCaekenberghe 11/10/2011 13:16",
-		"socketStreamToHostNamed:port:" : "SvenVanCaekenberghe 8/18/2011 14:41",
 		"socketStreamToProxy" : "SvenVanCaekenberghe 11/10/2011 13:30",
 		"socketStreamToUrl:" : "SvenVanCaekenberghe 8/11/2011 19:37",
-		"socketStreamToUrlDirectly:" : "SvenVanCaekenberghe 11/10/2011 13:30",
-		"streamClassForScheme:" : "SvenVanCaekenberghe 7/19/2012 16:09" } }
+		"socketStreamToUrlDirectly:" : "JohanBrichau 06/16/2013 15:08",
+		"streamClassForScheme:" : "SvenVanCaekenberghe 7/19/2012 16:09",
+		"timeout" : "SvenVanCaekenberghe 9/18/2012 09:30" } }

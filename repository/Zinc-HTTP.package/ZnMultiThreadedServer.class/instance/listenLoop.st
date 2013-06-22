@@ -1,4 +1,4 @@
-private
+request handling
 listenLoop
 	"We create a listening Socket, then wait for a connection.
 	After each connection we also check that the listening Socket is still valid 

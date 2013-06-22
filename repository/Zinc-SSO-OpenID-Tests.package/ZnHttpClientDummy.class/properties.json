@@ -1,0 +1,16 @@
+{
+	"category" : "Zinc-SSO-OpenID-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"url",
+		"responses",
+		"response" ],
+	"name" : "ZnHttpClientDummy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

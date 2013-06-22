@@ -9,5 +9,5 @@ testQueryGoogle
 		get.
 	self assert: client isSuccess.
 	self assert: client response contentType = ZnMimeType textHtml.
-	self assert: (client contents includesSubString: 'pharo-project.org').
+	self assert: (client contents includesSubstring: 'pharo-project.org').
 	client close

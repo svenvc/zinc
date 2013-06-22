@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "JanVanDeSandt 1/2/2013 16:38",
+		"testLockerHasSize" : "JanVanDeSandt 1/2/2013 16:38",
+		"testSameNonceIsNotAcceptedTwice" : "JanVanDeSandt 1/16/2013 22:19",
+		"testTooOldNodesAreNotPolledAllTheTime" : "JanVanDeSandt 1/16/2013 22:18",
+		"testTooOldNodesAreRemoved" : "JanVanDeSandt 1/2/2013 16:38",
+		"testVaultHasSize" : "JanVanDeSandt 1/2/2013 16:38" } }

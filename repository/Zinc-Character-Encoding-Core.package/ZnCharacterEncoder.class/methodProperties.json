@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"handlesEncoding:" : "SvenVanCaekenberghe 1/25/2011 11:07",
+		"newForEncoding:" : "SvenVanCaekenberghe 1/25/2011 13:27" },
+	"instance" : {
+		"=" : "SvenVanCaekenberghe 12/14/2010 11:56",
+		"beLenient" : "SvenVanCaekenberghe 12/17/2012 14:47",
+		"decodeBytes:" : "SvenVanCaekenberghe 12/16/2012 15:17",
+		"encodeString:" : "SvenVanCaekenberghe 12/16/2012 15:17",
+		"encodedByteCountFor:" : "SvenVanCaekenberghe 11/29/2010 21:17",
+		"encodedByteCountForString:" : "SvenVanCaekenberghe 12/16/2012 15:18",
+		"error:" : "SvenVanCaekenberghe 12/16/2012 15:21",
+		"hash" : "SvenVanCaekenberghe 4/20/2011 12:19",
+		"nextFromStream:" : "SvenVanCaekenberghe 11/29/2010 21:16",
+		"nextPut:toStream:" : "SvenVanCaekenberghe 11/29/2010 21:16" } }

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "SvenVanCaekenberghe 2/28/2011 15:50",
+	"commentStamp" : "",
 	"instvars" : [
 		"string" ],
 	"name" : "ZnPercentEncodingWrong",

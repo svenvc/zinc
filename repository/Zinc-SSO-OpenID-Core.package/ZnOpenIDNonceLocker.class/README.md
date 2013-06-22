@@ -1,0 +1,1 @@
+I can validate a Nonce for a particular provider. To check the uniqueness of a Nonce I hold a collection of recent Nonces.

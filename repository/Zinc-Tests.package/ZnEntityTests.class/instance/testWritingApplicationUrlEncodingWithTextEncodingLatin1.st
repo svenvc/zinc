@@ -7,4 +7,3 @@ testWritingApplicationUrlEncodingWithTextEncodingLatin1
 	string := String streamContents: [ :stream | entity writeOn: stream ].
 	self assert: string = 'foo=%F6'.
 	self assert: entity contentLength = 7
-	

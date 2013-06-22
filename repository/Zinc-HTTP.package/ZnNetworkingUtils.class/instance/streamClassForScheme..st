@@ -1,4 +1,4 @@
-private
+accessing
 streamClassForScheme: scheme
 	(#(http ws) includes: scheme) ifTrue: [ 
 		^ self socketStreamClass ].

@@ -9,5 +9,5 @@ testPostForm
 			formAdd: 'password' -> 'secret';
 			post.
 		self assert: client isSuccess.
-		self assert: (client contents includesSubString: 'john').
-		self assert: (client contents includesSubString: 'secret') ]
+		self assert: (client contents includesSubstring: 'john').
+		self assert: (client contents includesSubstring: 'secret') ]

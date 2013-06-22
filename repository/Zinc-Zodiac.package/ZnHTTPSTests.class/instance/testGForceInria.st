@@ -6,5 +6,5 @@ testGForceInria
 	(client := ZnClient new)
 		get: 'http://gforge.inria.fr/frs/?group_id=1299'.
 	self assert: client isSuccess.
-	self assert: (client contents includesSubString: 'INRIA').
+	self assert: (client contents includesSubstring: 'INRIA').
 	client close

@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"initialize" : "SvenVanCaekenberghe 12/16/2012 12:54" },
+	"instance" : {
+		"alphabet:" : "SvenVanCaekenberghe 12/16/2012 15:15",
+		"breakLines" : "SvenVanCaekenberghe 12/15/2012 14:06",
+		"breakLinesAt:" : "SvenVanCaekenberghe 12/16/2012 15:13",
+		"decode:" : "SvenVanCaekenberghe 12/15/2012 14:07",
+		"decode:and:and:and:to:" : "SvenVanCaekenberghe 12/15/2012 00:41",
+		"decode:to:" : "SvenVanCaekenberghe 12/16/2012 15:13",
+		"encode:" : "SvenVanCaekenberghe 12/15/2012 14:08",
+		"encode:and:and:to:" : "SvenVanCaekenberghe 12/15/2012 00:42",
+		"encode:to:" : "SvenVanCaekenberghe 12/15/2012 00:54",
+		"initialize" : "SvenVanCaekenberghe 12/15/2012 13:48",
+		"lineEndConvention:" : "SvenVanCaekenberghe 12/15/2012 00:50",
+		"skipWhiteSpace:" : "SvenVanCaekenberghe 12/16/2012 16:42",
+		"valueForCharacter:" : "SvenVanCaekenberghe 12/15/2012 00:31" } }

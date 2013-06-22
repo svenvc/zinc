@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAsFileReference" : "SvenVanCaekenberghe 2/6/2013 04:56",
+		"testAsZnUrl" : "SvenVanCaekenberghe 2/6/2013 04:54",
+		"testRelative" : "SvenVanCaekenberghe 1/14/2013 12:30",
+		"testRoot" : "SvenVanCaekenberghe 2/6/2013 04:51",
+		"testSlash" : "SvenVanCaekenberghe 1/14/2013 12:10",
+		"testSpaces" : "SvenVanCaekenberghe 2/6/2013 04:53",
+		"testTrailingSlash" : "SvenVanCaekenberghe 1/14/2013 12:23",
+		"testWrongScheme" : "SvenVanCaekenberghe 1/14/2013 12:17" } }

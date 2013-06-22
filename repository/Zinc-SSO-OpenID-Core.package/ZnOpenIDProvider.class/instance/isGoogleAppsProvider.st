@@ -1,0 +1,3 @@
+testing
+isGoogleAppsProvider
+	^false

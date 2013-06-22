@@ -1,3 +1,3 @@
 updating
 serveFilesFrom: aDirectoryPathString
-	self wwwRootDirectory: (FileDirectory on: aDirectoryPathString )
+	self wwwRootDirectory: (ZnFileSystemUtils directory: aDirectoryPathString )

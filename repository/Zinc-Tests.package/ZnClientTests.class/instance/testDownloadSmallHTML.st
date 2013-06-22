@@ -10,7 +10,7 @@ testDownloadSmallHTML
 	self assert: client response contentType = ZnMimeType textHtml.
 	ZnFileSystemUtils 
 		oldFileNamed: 'small.html' 
-		do: [ :stream | self assert: (stream upToEnd includesSubString: 'Small') ].
+		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].
 	ZnFileSystemUtils deleteIfExists: 'small.html'.
 	"Second download to an explicitly named file"
 	client 
@@ -20,6 +20,6 @@ testDownloadSmallHTML
 	self assert: client response contentType = ZnMimeType textHtml.
 	ZnFileSystemUtils 
 		oldFileNamed: 'small.html' 
-		do: [ :stream | self assert: (stream upToEnd includesSubString: 'Small') ].	
+		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].	
 	client close.
 	ZnFileSystemUtils deleteIfExists: 'small.html'.

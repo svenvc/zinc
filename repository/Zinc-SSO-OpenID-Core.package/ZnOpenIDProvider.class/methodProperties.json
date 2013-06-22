@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"newGoogleProvider" : "JanVanDeSandt 1/5/2013 17:51",
+		"newHyvesProvider" : "JanVanDeSandt 1/5/2013 17:56",
+		"newMyOpenIDProvider" : "JanVanDeSandt 1/5/2013 17:54",
+		"newYahooProvider" : "JanVanDeSandt 1/5/2013 17:52" },
+	"instance" : {
+		"altText" : "BartVeenstra 10/1/2010 15:55",
+		"altText:" : "BartVeenstra 10/1/2010 15:55",
+		"createSession" : "JanVanDeSandt 1/1/2013 15:45",
+		"discoverEndpoint" : "JanVanDeSandt 1/16/2013 22:19",
+		"discoveryUrl" : "jvds 11/20/2010 21:06",
+		"discoveryUrl:" : "jvds 11/20/2010 21:06",
+		"httpClient" : "JanVanDeSandt 1/2/2013 15:55",
+		"imgUrl" : "BartVeenstra 10/1/2010 16:03",
+		"imgUrl:" : "BartVeenstra 10/1/2010 16:03",
+		"isGoogleAppsProvider" : "JanVanDeSandt 1/1/2013 16:20",
+		"name" : "jvds 11/20/2010 21:19",
+		"name:" : "jvds 11/20/2010 21:19",
+		"nonceLocker" : "JanVanDeSandt 1/2/2013 16:21",
+		"printOn:" : "jvds 3/29/2011 16:35",
+		"shouldValidateClaimedIdBelongsToEndpoint" : "JanVanDeSandt 1/2/2013 15:13",
+		"shouldValidateClaimedIdBelongsToEndpoint:" : "JanVanDeSandt 1/2/2013 15:14" } }

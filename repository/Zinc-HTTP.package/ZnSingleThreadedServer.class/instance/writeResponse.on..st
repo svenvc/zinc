@@ -1,4 +1,4 @@
-private
+request handling
 writeResponse: response on: stream
 	"Write response to stream and flush the stream"
 	

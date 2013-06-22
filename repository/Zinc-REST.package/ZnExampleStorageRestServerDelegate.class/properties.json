@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-REST-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"storage",
+		"idCounter" ],
+	"name" : "ZnExampleStorageRestServerDelegate",
+	"pools" : [
+		 ],
+	"super" : "ZnJSONRestServerDelegate",
+	"type" : "normal" }

@@ -8,5 +8,4 @@ testFilter
 	logSupport info: 'Testing'.
 	self assert: memoryLogger logEvents first message = 'Testing'.
 	logSupport debug: 'Void'.
-	self assert: memoryLogger logEvents size = 1     
-	
+	self assert: memoryLogger logEvents size = 1

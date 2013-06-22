@@ -12,4 +12,3 @@ testNext
 	self assert: limitedReadStream next = $C.
 	self assert: limitedReadStream next isNil.
 	self assert: limitedReadStream atEnd
-	

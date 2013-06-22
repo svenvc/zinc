@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-WebSocket-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"response" ],
+	"name" : "ZnWebSocketFailed",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

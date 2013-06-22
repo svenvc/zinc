@@ -1,0 +1,1 @@
+Abstract Seaside component with common functionality for the different OAuth1 based SSO providers.

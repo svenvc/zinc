@@ -5,5 +5,5 @@ testPut
 		response := ZnEasy put: (server localUrl addPathSegment: 'echo'; yourself) data: (ZnEntity text: data).
 		self assert: (response headers contentType = ZnMimeType textPlain).
 		self assert: (response statusLine code = 200).
-		self assert: (response entity string includesSubString: 'PUT').
-		self assert: (response entity string includesSubString: data) ]
+		self assert: (response entity string includesSubstring: 'PUT').
+		self assert: (response entity string includesSubstring: data) ]

@@ -1,0 +1,3 @@
+private
+currentTime
+	^ DateAndTime now

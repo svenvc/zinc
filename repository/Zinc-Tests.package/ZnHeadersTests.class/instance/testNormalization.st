@@ -8,5 +8,3 @@ testNormalization
 	self assert: (headers at: 'Content-Type') = 'text/plain'.
 	headers at: 'CONTENT-type' put: 'text/html'.
 	self assert: (headers at: 'Content-Type') = 'text/html'.
-
-	

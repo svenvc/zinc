@@ -1,0 +1,4 @@
+actions
+clearResponsePanel
+
+	responsePanel := nil

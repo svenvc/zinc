@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-FileSystem-Legacy",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"directory" ],
+	"name" : "ZnMonticelloServerDelegate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
