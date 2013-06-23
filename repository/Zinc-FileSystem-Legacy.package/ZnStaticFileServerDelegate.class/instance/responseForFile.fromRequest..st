@@ -7,7 +7,7 @@ responseForFile: filename fromRequest: aRequest
 	modified := true.
 	aRequest headers
 		at: 'If-Modified-Since'
-		ifPresent: [ modified := time > (ZnUtils parseHttpDate: (aRequest headers at: 'If-Modified-Since')) ].
+		ifPresent: [:ignored | modified := time > (ZnUtils parseHttpDate: (aRequest headers at: 'If-Modified-Since')) ].
 	modified
 		ifTrue: [ 
 			mimeType := ZnMimeType forFilenameExtension: (ZnFileSystemUtils fileDirectoryClass extensionFor: filename).
