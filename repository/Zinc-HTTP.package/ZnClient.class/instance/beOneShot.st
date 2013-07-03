@@ -7,4 +7,4 @@ beOneShot
 	
 	self streaming
 		ifTrue: [ self error: 'I cannot be one shot when #streaming is true.' ].
-	self optionAt: #oneShot put: true   
+	self optionAt: #oneShot put: true

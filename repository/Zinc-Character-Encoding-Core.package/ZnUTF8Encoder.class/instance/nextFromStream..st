@@ -6,24 +6,30 @@ nextFromStream: stream
 	(byte bitAnd: 2r11100000) == 2r11000000
 		ifTrue: [ 
 			code := byte bitAnd: 2r00011111.
-			((next := stream next) bitAnd: 2r11000000) == 2r10000000
+			((next := stream next ifNil: [ self errorIncomplete ]) bitAnd: 2r11000000) == 2r10000000
 				ifTrue: [ code := (code bitShift: 6) + (next bitAnd: 2r00111111) ]
-				ifFalse: [ ^ self error: 'illegal UTF-8 encoding' ].
+				ifFalse: [ ^ self error ].
+			code < 128 ifTrue: [ self errorOverlong ].
 			^ Character codePoint: code ].
 	(byte bitAnd: 2r11110000) == 2r11100000
 		ifTrue: [ 
 			code := byte bitAnd: 2r00001111.
 			2 timesRepeat: [ 
-				((next := stream next) bitAnd: 2r11000000) == 2r10000000
+				((next := stream next ifNil: [ self errorIncomplete ]) bitAnd: 2r11000000) == 2r10000000
 					ifTrue: [ code := (code bitShift: 6) + (next bitAnd: 2r00111111) ]
-					ifFalse: [ ^ self error: 'illegal UTF-8 encoding' ] ].
+					ifFalse: [ ^ self error ] ].
+			code < 2048 ifTrue: [ self errorOverlong ].
+			code = 65279 "Unicode Byte Order Mark" ifTrue: [ 
+				stream atEnd ifTrue: [ self errorIncomplete ].
+				^ self nextFromStream: stream ].
 			^ Character codePoint: code ].
 	(byte bitAnd: 2r11111000) == 2r11110000
 		ifTrue: [ 
 			code := byte bitAnd: 2r00000111.
 			3 timesRepeat: [ 
-				((next := stream next) bitAnd: 2r11000000) == 2r10000000
+				((next := stream next ifNil: [ self errorIncomplete ]) bitAnd: 2r11000000) == 2r10000000
 					ifTrue: [ code := (code bitShift: 6) + (next bitAnd: 2r00111111) ]
-					ifFalse: [ ^ self error: 'illegal UTF-8 encoding' ] ].
+					ifFalse: [ ^ self error ] ].
+			code < 65535 ifTrue: [ self errorOverlong ].
 			^ Character codePoint: code ].
-	self error: 'illegal UTF-8 encoding'
+	self error

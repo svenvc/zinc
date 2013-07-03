@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 9/17/2011 14:06",
 	"instvars" : [
-		"accessKeyId",
-		"secretAccessKey",
+		"signatureTool",
 		"checkIntegrity",
 		"httpClient" ],
 	"name" : "ZnAWSS3Client",

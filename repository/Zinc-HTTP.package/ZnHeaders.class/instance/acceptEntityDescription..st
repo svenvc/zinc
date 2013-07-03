@@ -9,5 +9,5 @@ acceptEntityDescription: entity
 				at: 'Content-Length' put: entity contentLength printString ]
 		ifNil: [
 			self 
-				removeKey: 'Content-Type' ifAbsent: [];
-				removeKey: 'Content-Length' ifAbsent: [] ] 
+				clearContentType; 
+				clearContentLength ]

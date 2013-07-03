@@ -1,3 +1,3 @@
 accessing
 authName
-	self subclassResponsibility 
+	self subclassResponsibility

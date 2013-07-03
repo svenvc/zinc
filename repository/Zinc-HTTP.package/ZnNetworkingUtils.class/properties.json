@@ -5,7 +5,7 @@
 	"classvars" : [
 		"Default",
 		"DefaultSocketStreamTimeout" ],
-	"commentStamp" : "SvenVanCaekenberghe 5/2/2011 22:05",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"socketStreamClass",
 		"secureSocketStreamClass" ],

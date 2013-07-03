@@ -9,4 +9,4 @@ testUTF8Encoder
 	outputBytes := self encodeString: inputString with: encoder.
 	self assert: outputBytes = inputBytes.
 	outputString := self decodeBytes: inputBytes with: encoder.
-	self assert: outputString = inputString 
+	self assert: outputString = inputString

@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 on: writeStream encoding: encoding
 	^ self new
 		on: writeStream;

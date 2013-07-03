@@ -1,3 +1,3 @@
 accessing
 frameworkNameAndVersion
-	^ self frameworkName, ' ', self frameworkVersion 
+	^ self frameworkName, ' ', self frameworkVersion

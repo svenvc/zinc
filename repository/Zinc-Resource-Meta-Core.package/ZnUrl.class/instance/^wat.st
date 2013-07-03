@@ -1,3 +1,3 @@
 convenience
 ? association
-	^ self withQuery: association 
+	^ self withQuery: association

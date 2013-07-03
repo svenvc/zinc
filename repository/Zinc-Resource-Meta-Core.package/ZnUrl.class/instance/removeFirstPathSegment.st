@@ -1,4 +1,4 @@
 accessing-path
 removeFirstPathSegment
-	segments isEmpty 
-		ifFalse: [ segments removeFirst ]
+	self hasPath
+		ifTrue: [ segments removeFirst ]

@@ -6,9 +6,11 @@ testGetGeoIP
 		url: 'http://easy.t3-platform.net/rest/geo-ip';
 		queryAt: 'address' put: '81.83.7.35';
 		accept: ZnMimeType applicationJson;
-		contentReader: [ :entity | | parserClass |
-			parserClass := Smalltalk at: #JSJsonParser ifAbsent: [ ^ self ].
-			parserClass parse: entity contents ];
+		contentReader: [ :entity |
+			Smalltalk globals 
+				at: #NeoJSONReader
+				ifPresent: [ :parserClass | parserClass fromString: entity contents ]
+				ifAbsent: [ ^ self ] ];
 		ifFail: [ ^ self fail ];
 		get.
 	self assert: result isDictionary.

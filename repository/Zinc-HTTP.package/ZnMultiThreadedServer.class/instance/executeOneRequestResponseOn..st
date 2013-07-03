@@ -9,7 +9,7 @@ executeOneRequestResponseOn: stream
 		ifNil: [ ^ true ]
 		ifNotNil: [ 
 			response := self handleRequest: request.
-			response setKeepAliveFor: request.
+			self augmentResponse: response forRequest: request.
 			self writeResponseSafely: response on: stream.
 			response useConnection: stream ].
 	^ request wantsConnectionClose or: [ response wantsConnectionClose ]

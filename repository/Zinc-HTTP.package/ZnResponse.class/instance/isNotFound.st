@@ -1,3 +1,3 @@
 testing
 isNotFound
-	^ self code = 404 
+	^ self code = 404

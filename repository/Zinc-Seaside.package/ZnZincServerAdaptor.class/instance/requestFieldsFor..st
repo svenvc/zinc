@@ -4,11 +4,10 @@ requestFieldsFor: aZincRequest
 	fields := WARequestFields new.
 	(aZincRequest method = #POST and: [ aZincRequest hasEntity ])
 		ifTrue: [ 
-			aZincRequest entity contentType = ZnMimeType applicationFormUrlEncoded
+			(aZincRequest entity contentType matches: ZnMimeType applicationFormUrlEncoded)
 				ifTrue: [
 					fields addAll: aZincRequest entity fields ].
-			aZincRequest entity contentType = ZnMimeType multiPartFormData
+			(aZincRequest entity contentType matches: ZnMimeType multiPartFormData)
 				ifTrue: [
 					fields addAll: (self convertMultipart: aZincRequest entity) ] ].
 	^ fields
-	

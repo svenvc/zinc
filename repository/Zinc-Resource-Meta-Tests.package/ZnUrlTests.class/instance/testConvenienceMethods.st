@@ -6,7 +6,16 @@ testConvenienceMethods
 		assert: baseUrl 
 		equals: 'http://api.host.com' asZnUrl.
 	self 
-		assert: (baseUrl / 'doc' / 'file.html')
+		assert: baseUrl / 'doc' / 'file.html'
+		equals: 'http://api.host.com/doc/file.html' asZnUrl.
+	self 
+		assert: baseUrl / 'doc/file.html'
+		equals: 'http://api.host.com/doc/file.html' asZnUrl.
+	self 
+		assert: baseUrl / #( 'doc' 'file.html' )
+		equals: 'http://api.host.com/doc/file.html' asZnUrl.
+	self 
+		assert: baseUrl / 'doc/file.html' asZnUrl
 		equals: 'http://api.host.com/doc/file.html' asZnUrl.
 	self 
 		assert: (baseUrl / 'search' ? (#q -> 'Smalltalk') & (#lang -> #en))

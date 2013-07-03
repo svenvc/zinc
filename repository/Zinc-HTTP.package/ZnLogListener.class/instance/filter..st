@@ -1,3 +1,3 @@
 accessing
 filter: symbolOrBlock
-	filter := symbolOrBlock 
+	filter := symbolOrBlock
