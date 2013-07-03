@@ -6,7 +6,6 @@ readInto: collection startingAt: offset count: requestedCount
 	| read toRead |
 	read := 0.
 	[ read < requestedCount and: [ self atEnd not] ] whileTrue: [
-		self ensureChunkOrAtEnd.
 		toRead := (limit - position) min: (requestedCount - read).
 		collection 
 			replaceFrom: offset + read 

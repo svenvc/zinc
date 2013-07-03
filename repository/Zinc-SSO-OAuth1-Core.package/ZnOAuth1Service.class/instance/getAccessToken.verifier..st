@@ -27,4 +27,4 @@ getAccessToken: aToken verifier: aVerifier
 	responseProperties isString
 		ifTrue: [ responseProperties := self resourceMetaUtils parseQueryFrom: responseProperties readStream ].
 
-	^self providerAccount accessTokenClass newFromDictionary: responseProperties 
+	^self providerAccount accessTokenClass newFromDictionary: responseProperties

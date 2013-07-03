@@ -8,4 +8,4 @@ isBrowserRequest: request
 				q1 := (x parameterAt: 'q' ifAbsent: [ 1.0 ]) asNumber.
 				q2 := (y parameterAt: 'q' ifAbsent: [ 1.0 ]) asNumber.
 				q1 >= q2 ]) first.
-	^ primaryMimeType = ZnMimeType textHtml 
+	^ primaryMimeType = ZnMimeType textHtml

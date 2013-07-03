@@ -1,5 +1,5 @@
 accessing-path
 file
 	^ self isDirectoryPath
-		ifTrue: [ '' ]
+		ifTrue: [ String new ]
 		ifFalse: [ segments last ]

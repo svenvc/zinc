@@ -1,3 +1,3 @@
 private
 pathName: aPathName 
-	pathName := aPathName  
+	pathName := aPathName

@@ -5,5 +5,5 @@ contentType: object
 	
 	| newType |
 	newType := object asZnMimeType.
-	self class designatedMimeType = newType
+	(self class matches: newType)
 		ifTrue: [ contentType := newType ]

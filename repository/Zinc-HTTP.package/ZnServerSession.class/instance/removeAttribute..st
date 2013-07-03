@@ -1,3 +1,3 @@
 accessing
 removeAttribute: key
-	attributes removeKey: key ifAbsent: [ ] 
+	attributes removeKey: key ifAbsent: [ ]

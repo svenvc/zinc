@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"ByteASCIISet",
+		"ByteUTF8Encoding" ],
 	"commentStamp" : "SvenVanCaekenberghe 12/6/2010 12:55",
 	"instvars" : [
 		 ],

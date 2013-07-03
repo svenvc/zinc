@@ -4,4 +4,4 @@ formAddAll: keyedCollection
 	the application/x-www-form-urlencoded entity of the current request."
 
 	self applicationFormUrlEncodedEntity 
-		addAll: keyedCollection 
+		addAll: keyedCollection

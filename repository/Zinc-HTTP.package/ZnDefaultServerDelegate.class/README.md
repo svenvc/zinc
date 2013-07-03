@@ -10,6 +10,8 @@ I implement responses to the following prefixes:
 /bytes - bytes according to a pattern (/bytes/32 for a specific size)
 /favicon.ico - a Zn favicon
 /status - a server status page
+/error - force server errors
+/session - a simpler session based counter
 /help - lists all page prefixes
 / - an html welcome page
 

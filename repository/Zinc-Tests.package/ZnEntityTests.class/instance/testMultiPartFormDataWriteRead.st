@@ -8,7 +8,7 @@ testMultiPartFormDataWriteRead
 		yourself.
 	self assert: input contentLength notNil.
 	self assert: input contentLength > 0.
-	self assert: input contentType = ZnMimeType multiPartFormData.
+	self assert: (input contentType matches: ZnMimeType multiPartFormData).
 	bytes := ByteArray streamContents: [ :stream | input writeOn: stream ].
 	output := (ZnMultiPartFormDataEntity type: input contentType) readFrom: bytes readStream.
 	self assert: (output partNamed: 'extra') fieldValueString = 'my-extra'.

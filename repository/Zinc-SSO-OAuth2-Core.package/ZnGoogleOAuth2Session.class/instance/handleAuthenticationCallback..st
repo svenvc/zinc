@@ -21,3 +21,6 @@ handleAuthenticationCallback: aParameterDictionary
 	tokenData := NeoJSONReader fromString: tokenResponse.
 		
 	accessToken := tokenData at: 'access_token'.
+	tokenType := tokenData at: 'token_type'.
+	(tokenData includesKey: 'refresh_token')
+		ifTrue: [ refreshToken := tokenData at: 'refresh_token' ].

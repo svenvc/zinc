@@ -10,4 +10,6 @@ handleRequest: request
 		do: [ :exception | 
 			request server debugMode
 				ifTrue: [ exception pass ]
-				ifFalse: [ self serverError: request exception: exception ] ]
+				ifFalse: [ 
+					request server logServerError: exception.
+					self serverError: request exception: exception ] ]

@@ -1,9 +1,11 @@
 writing
 writeOn: stream
-	| bufferSize |
+	| totalWritten toWrite total  |
 	self initializeEncoder.
-	bufferSize := ZnUtils streamingBufferSize.
-	self string doWithIndex: [ :each :index | 
-		encoder nextPut: each toStream: stream.
-		(index \\ bufferSize) = 0 
-			ifTrue: [ ZnUtils signalProgress: index total: self contentLength ] ]
+	totalWritten := 0.
+	total := string size.
+	[ totalWritten < total ] whileTrue: [ 
+		toWrite := ZnUtils streamingBufferSize min: (total - totalWritten).
+		encoder next: toWrite putAll: string startingAt: totalWritten + 1 toStream: stream.
+		totalWritten := totalWritten + toWrite.
+		ZnUtils signalProgress: totalWritten total: total ]

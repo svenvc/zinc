@@ -1,10 +1,8 @@
 accessing
 at: key ifAbsent: block
-	| fullName entry |
-	fullName := self directory / (key first: 2) / key.
-	(fullName containingDirectory fileExists: fullName localName)  
+	| fullPath |
+	fullPath := self directory / (key first: 2) / key.
+	fullPath exists
 		ifFalse: [ ^ block value ].
-	entry := fullName directoryEntry.
-	^ FileStream 
-		fileNamed: entry fullName 
-		do: [ :stream | stream upToEnd ]
+	^ fullPath readStreamDo: [ :stream | 
+			stream upToEnd ]
