@@ -5,12 +5,12 @@ gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
 "Load Tode ... "
 Metacello new
-	baseline: 'Zinc';
+	baseline: 'BaselineOfZincHTTPComponents';
   repository: 'filetree://', gitPath, '/zinc/repository';
-  load: #('Tests' 'default').
+  load: #('Tests' 'Core').
 
 "Run the Tode tests"
 TravisCIHarness
-  value: #( 'BaselineOfZinc' )
+  value: #( 'BaselineOfZincHTTPComponents' )
   value: 'TravisCISuccess.txt' 
   value: 'TravisCIFailure.txt'.
