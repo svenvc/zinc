@@ -14,4 +14,4 @@ testQuote
 		equals: output.
 	self 
 		assert: (encoder decode: output) 
-		equals: input asByteArray 
+		equals: input asByteArray

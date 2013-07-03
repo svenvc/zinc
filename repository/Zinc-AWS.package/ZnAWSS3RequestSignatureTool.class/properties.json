@@ -1,0 +1,15 @@
+{
+	"category" : "Zinc-AWS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"accessKeyId",
+		"secretAccessKey" ],
+	"name" : "ZnAWSS3RequestSignatureTool",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

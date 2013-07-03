@@ -1,4 +1,4 @@
 networking
 socketStreamToUrl: url
 	^ self default
-		socketStreamToUrl: url  
+		socketStreamToUrl: url

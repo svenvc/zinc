@@ -1,11 +1,9 @@
 accessing
 at: key put: string
 	| subDirectory |
-	self directory assureExistence.
+	self directory ensureDirectory.
 	subDirectory := self directory / (key first: 2).
-	subDirectory assureExistence.
-	FileStream 
-		fileNamed: (subDirectory / key) pathName  
-		do: [ :stream | 
-			stream lineEndConvention: #lf.
-			string linesDo: [ :each | stream nextPutAll: each; cr ] ]
+	subDirectory ensureDirectory.
+	(subDirectory / key) writeStreamDo: [ :stream | 
+		stream lineEndConvention: #lf.
+		string linesDo: [ :each | stream nextPutAll: each; cr ] ]

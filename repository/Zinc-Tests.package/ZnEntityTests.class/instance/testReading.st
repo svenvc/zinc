@@ -9,4 +9,4 @@ testReading
 	self assert: entity contents isString.
 	self assert: entity string = contents.
 	self assert: entity contentLength = contents size.
-	self assert: entity contentType = ZnMimeType textPlain 
+	self assert: entity contentType = ZnMimeType textPlain

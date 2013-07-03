@@ -1,3 +1,3 @@
 testing
 isEmpty 
-	self subclassResponsibility 
+	self subclassResponsibility

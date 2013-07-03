@@ -16,7 +16,7 @@ nextPut: character toStream: stream
 	code <= self maximumUTF8Code ifTrue: [ 
 		^ stream 
 			nextPut: (2r11110000 + (code bitShift: -18));
-			nextPut: (2r10000000 + (code bitShift: -12));
+			nextPut: (2r10000000 + ((code bitShift: -12) bitAnd: 2r111111));
 			nextPut: (2r10000000 + ((code bitShift: -6) bitAnd: 2r111111)); 
 			nextPut: (2r10000000 + (code bitAnd: 2r111111)) ].
-	self error: 'Unicode character code point outside range'
+	self errorOutsideRange

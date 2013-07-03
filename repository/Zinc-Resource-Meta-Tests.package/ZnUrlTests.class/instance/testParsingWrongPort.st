@@ -1,3 +1,3 @@
 testing
 testParsingWrongPort
-	self should: [ ZnUrl fromString: 'http://foo:bar' ] raise: ZnPortNotANumber   
+	self should: [ ZnUrl fromString: 'http://foo:bar' ] raise: ZnPortNotANumber

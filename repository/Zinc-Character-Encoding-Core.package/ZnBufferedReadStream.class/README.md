@@ -1,4 +1,4 @@
-I am STONBufferedReadStream.
+I am ZnBufferedReadStream.
 
 I wrap another ReadStream and add efficient buffering for the typical access pattern of parsers: sending lots of #next, #peek and #atEnd messages.
 

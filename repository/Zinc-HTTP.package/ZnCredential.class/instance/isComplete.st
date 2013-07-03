@@ -1,3 +1,3 @@
 testing
 isComplete
-	^ self subclassResponsibility 
+	^ self subclassResponsibility

@@ -7,4 +7,4 @@ defaultOn: portNumber
 	if it was running stop it, change the port if necessary.
 	Delegate to the default server class."
 
-	^ self defaultServerClass defaultOn: portNumber 
+	^ self defaultServerClass defaultOn: portNumber

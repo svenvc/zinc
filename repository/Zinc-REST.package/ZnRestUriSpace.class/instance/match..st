@@ -1,3 +1,3 @@
 public
 match: request
-	self subclassResponsibility 
+	self subclassResponsibility

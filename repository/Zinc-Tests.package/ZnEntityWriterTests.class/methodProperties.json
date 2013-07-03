@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testChunkedOnly" : "SvenVanCaekenberghe 5/19/2013 11:41",
+		"testGzippedAndChunked" : "SvenVanCaekenberghe 5/18/2013 13:26",
+		"testPlain" : "SvenVanCaekenberghe 5/18/2013 13:10",
+		"testPlainUsingReader" : "SvenVanCaekenberghe 5/18/2013 13:24" } }

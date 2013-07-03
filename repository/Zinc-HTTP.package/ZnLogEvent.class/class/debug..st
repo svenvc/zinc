@@ -1,3 +1,3 @@
 instance creation
 debug: message
-	^ self category: #debug message: message    
+	^ self category: #debug message: message

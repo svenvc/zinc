@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #ConfigurationOfZincHTTPComponents!
+SystemOrganization addCategory: #'ConfigurationOfZincHTTPComponents'!

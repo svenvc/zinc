@@ -9,7 +9,9 @@
 		"consumerData",
 		"redirectUrl",
 		"scopes",
-		"accessToken" ],
+		"accessToken",
+		"tokenType",
+		"refreshToken" ],
 	"name" : "ZnOAuth2Session",
 	"pools" : [
 		 ],
