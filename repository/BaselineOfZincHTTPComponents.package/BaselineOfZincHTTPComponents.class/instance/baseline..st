@@ -98,6 +98,8 @@ baseline: spec
     for: #'pharo1.x'
     do: [ 
       spec
+        package: 'Zinc-Patch-HTTPSocket'
+          with: [ spec file: 'Zinc-Patch-HTTPSocket.pharo1x' ];
         package: 'Zinc-FileSystem-Legacy';
         package: 'Zinc-Pharo-Forward-Compatibility';
         package: 'Zinc-HTTP'
