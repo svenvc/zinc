@@ -8,10 +8,14 @@ gitPath := (Smalltalk at: #'FileDirectory' ifAbsent: [  ])
   ifNotNil: [:fileDirectoryClass | (fileDirectoryClass default directoryNamed: gitCache ) fullName].
 
 "Load Zinc... "
+[
 Metacello new
 	baseline: 'ZincHTTPComponents';
   repository: 'filetree://', gitPath, '/zinc/repository';
   load: #('Tests' 'Core').
+] on: Warning do: [:ex | 
+  Transcript cr; show: 'WARNING: ', ex description.
+  ex resume: true ].
 
 "Run the Zinc tests"
 TravisCIHarness
