@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAsMimeType" : "SvenVanCaekenberghe 1/4/2011 19:59",
+		"testAsMimeType" : "SvenVanCaekenberghe 5/21/2013 20:30",
 		"testCharset" : "SvenVanCaekenberghe 3/6/2012 11:05",
-		"testCopying" : "SvenVanCaekenberghe 12/6/2011 20:51",
+		"testCopying" : "SvenVanCaekenberghe 5/21/2013 20:28",
 		"testDefault" : "SvenVanCaekenberghe 12/6/2011 20:44",
 		"testIdentity" : "SvenVanCaekenberghe 12/6/2011 20:44",
+		"testIsBinary" : "SvenVanCaekenberghe 6/7/2013 11:46",
+		"testMatches" : "SvenVanCaekenberghe 6/7/2013 11:52",
 		"testParameters" : "SvenVanCaekenberghe 3/6/2012 11:02",
 		"testReading" : "SvenVanCaekenberghe 12/2/2010 11:29",
 		"testWriting" : "SvenVanCaekenberghe 12/2/2010 11:29" } }

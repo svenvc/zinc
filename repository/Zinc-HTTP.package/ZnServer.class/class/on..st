@@ -4,4 +4,4 @@ on: portNumber
 	send #start to it to start listening.
 	Delegate to the default server class."
 
-	^ self defaultServerClass on: portNumber 
+	^ self defaultServerClass on: portNumber

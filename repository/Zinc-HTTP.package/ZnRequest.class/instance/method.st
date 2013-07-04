@@ -1,3 +1,3 @@
 accessing
 method
-	^ self requestLine method 
+	^ self requestLine method

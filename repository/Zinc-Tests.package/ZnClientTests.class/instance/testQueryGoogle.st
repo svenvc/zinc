@@ -8,6 +8,6 @@ testQueryGoogle
 		queryAt: 'q' put: 'Pharo Smalltalk';
 		get.
 	self assert: client isSuccess.
-	self assert: client response contentType = ZnMimeType textHtml.
+	self assert: (client response contentType matches: ZnMimeType textHtml).
 	self assert: (client contents includesSubstring: 'pharo-project.org').
 	client close

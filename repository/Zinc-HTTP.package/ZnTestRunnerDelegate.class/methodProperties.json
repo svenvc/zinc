@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"startInServerOn:" : "SvenVanCaekenberghe 5/27/2013 17:16" },
+	"instance" : {
+		"handleGetRequest:" : "SvenVanCaekenberghe 5/28/2013 10:29",
+		"handleRequest:" : "SvenVanCaekenberghe 5/27/2013 17:20",
+		"notFoundResponse:" : "SvenVanCaekenberghe 5/28/2013 10:28",
+		"value:" : "SvenVanCaekenberghe 5/27/2013 17:16" } }

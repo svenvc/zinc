@@ -1,3 +1,3 @@
 conversions
 decodeBase64: string
-	^ string base64Decoded 
+	^ string base64Decoded

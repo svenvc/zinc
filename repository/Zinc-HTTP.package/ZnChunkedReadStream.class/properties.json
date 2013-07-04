@@ -12,6 +12,7 @@
 		"limit",
 		"atEnd",
 		"totalSize",
+		"chunkCount",
 		"extraHeaders" ],
 	"name" : "ZnChunkedReadStream",
 	"pools" : [

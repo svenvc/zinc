@@ -1,12 +1,13 @@
 testing
 testRedirectDontFollow
-	| client |
+	| client target |
+	target := 'http://zn.stfx.eu'.
 	(client := ZnClient new) 
 		dontFollowRedirects;
-		get: 'http://www.pharo-project.org'.
+		get: target.
 	self assert: client response isRedirect.
 	client
 		enforceHttpSuccess: true;
-		get: 'http://www.pharo-project.org'.
+		get: target.
 	self assert: client response isRedirect.
 	client close

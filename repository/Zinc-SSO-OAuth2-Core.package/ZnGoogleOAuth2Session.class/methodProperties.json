@@ -4,7 +4,18 @@
 		"scopeUserinfoProfile" : "JanVanDeSandt 12/23/2012 23:00",
 		"ssoScopes" : "JanVanDeSandt 12/23/2012 23:25" },
 	"instance" : {
+		"accessType" : "YanniChiu 1/31/2013 19:32",
+		"accessType:" : "YanniChiu 1/31/2013 19:32",
+		"approvalPrompt" : "YanniChiu 2/7/2013 10:17",
+		"approvalPrompt:" : "YanniChiu 2/7/2013 10:17",
 		"authenticationUrl" : "JanVanDeSandt 12/7/2012 16:11",
-		"authenticationUrlWithState:" : "JanVanDeSandt 12/23/2012 23:35",
+		"authenticationUrlWithState:" : "YanniChiu 2/7/2013 10:21",
+		"beOfflineAccessType" : "YanniChiu 1/31/2013 19:31",
+		"beOnlineAccessType" : "YanniChiu 1/31/2013 19:32",
+		"forceApprovalPrompt" : "YanniChiu 2/7/2013 10:18",
 		"getUserData" : "JanVanDeSandt 10/7/2012 15:27",
-		"handleAuthenticationCallback:" : "JanVanDeSandt 12/7/2012 16:58" } }
+		"handleAuthenticationCallback:" : "YanniChiu 2/7/2013 11:55",
+		"handleTokenRefresh" : "YanniChiu 2/7/2013 11:54",
+		"initialize" : "YanniChiu 1/31/2013 19:34",
+		"isForceApprovalPrompt" : "YanniChiu 2/7/2013 10:19",
+		"isOfflineAccessType" : "YanniChiu 2/5/2013 15:04" } }

@@ -9,6 +9,7 @@
 		"stopDefault" : "SvenVanCaekenberghe 12/22/2011 11:59" },
 	"instance" : {
 		"acceptWaitTimeout" : "SvenVanCaekenberghe 12/31/2012 16:08",
+		"augmentResponse:forRequest:" : "SvenVanCaekenberghe 5/19/2013 21:12",
 		"authenticateAndDelegateRequest:" : "SvenVanCaekenberghe 1/10/2013 15:12",
 		"authenticateRequest:do:" : "SvenVanCaekenberghe 1/10/2013 15:13",
 		"closeDelegate" : "SvenVanCaekenberghe 1/10/2013 15:14",

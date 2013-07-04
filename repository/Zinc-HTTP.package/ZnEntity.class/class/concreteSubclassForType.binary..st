@@ -4,7 +4,7 @@ concreteSubclassForType: mimeType binary: forceBinary
 	
 	^ self allSubclasses 
 		detect: [ :each | 
-			each designatedMimeType = mimeType ]
+			each matches: mimeType ]
 		ifNone: [ 
 			(mimeType isBinary or: [ forceBinary ])
 				ifTrue: [ self byteArrayEntityClass ] 

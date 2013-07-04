@@ -6,5 +6,5 @@ echoRequest: request
 	delay := Integer readFrom: (request uri queryAt: 'delay' ifAbsent: [ '' ]) ifFail: [ 0 ].
 	delay > 0 ifTrue: [ (Delay forSeconds: delay) wait ].  
 	info := self generateEchoRequestString: request.
-	entity := ZnEntity text: info.
+	entity := ZnEntity textCRLF: info.
 	^ ZnResponse ok: entity

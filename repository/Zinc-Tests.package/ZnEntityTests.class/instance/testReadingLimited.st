@@ -14,4 +14,4 @@ testReadingLimited
 				readFrom: contents asByteArray readStream 
 				usingType: ZnMimeType textPlain 
 				andLength: nil ]
-			raise: ZnEntityTooLarge ] 
+			raise: ZnEntityTooLarge ]

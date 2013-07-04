@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"accessType",
+		"approvalPrompt" ],
 	"name" : "ZnGoogleOAuth2Session",
 	"pools" : [
 		 ],

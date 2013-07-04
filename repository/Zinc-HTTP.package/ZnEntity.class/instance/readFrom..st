@@ -1,3 +1,3 @@
 initialize-release
 readFrom: stream
-	self subclassResponsibility 
+	self subclassResponsibility

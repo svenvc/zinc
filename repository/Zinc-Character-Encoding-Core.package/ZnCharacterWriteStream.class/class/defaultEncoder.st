@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 defaultEncoder
 	^ ZnUTF8Encoder new
