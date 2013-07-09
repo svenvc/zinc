@@ -21,7 +21,7 @@ In our implementation, /image will serve an HTML page containing the image and a
 
 ## Download Pharo
 
-Go to [http://www.pharo.org](http://www.pharo.org) and download the whole self-contained package for your platform, it is just 12 to 14 MB. Double-click and you enter the Pharo world.
+Go to [http://www.pharo.org](http://www.pharo.org) and download the whole self-contained package for your platform, it is just 12 to 14 MB. Select the released version 2.0. Double-click and you enter the Pharo world.
 
 ![Pharo in action, running the code in the next section](pharo-in-action.png)
 
@@ -377,13 +377,13 @@ The ZnClient object is pretty powerful. It can do a correct multi-part form-data
 
 ## Saving code to a repository
 
-If all is well, you now have a package called MyFirstWebApp containing two classes, MyFirstWebApp and MyFirstWebAppTests. The first one should have 9 methods, the second 5. Our web app should now work as expected, and we have some tests to prove it.
+If all is well, you now have a package called MyFirstWebApp containing two classes, MyFirstWebApp and MyFirstWebAppTests. The first one should have 9 methods, the second 5. If you are unsure about your code, you can double check with the full listing at the end of this document. Our web app should now work as expected, and we have some tests to prove it.
 
 But our code currently only lives in our development image. Let's change that and move our code to a source code repository. For this we first have to create a Monticello package. Click on the package name in the first column of the browser and select the option 'Create an MC package'.
 
 ![Creating a Monticello package](create-mc-package.png)
 
-Pharo uses distributed source code management. Your code can live on your local file system, or it can live on a server. The main place for storing Pharo code is on [SmalltalkHub](http://www.smalltalkhub.com). Go over there and create yourself a new account. Once you have an account, create and register a new project called 'MyFirstWebApp'. Go to the project's page.
+Pharo uses distributed source code management. Your code can live on your local file system, or it can live on a server. The main place for storing Pharo code is on [SmalltalkHub](http://www.smalltalkhub.com). Go over there and create yourself a new account. Once you have an account, create and register a new project called 'MyFirstWebApp'. You can leave the public option checked, it means that you and others can download the code without credentials. Go to the project's page.
 
 ![MyFirstWebApp's project page on SmalltalkHub](sthub.png)
 
@@ -432,6 +432,31 @@ After a successful commit, it is a good idea to save your image. In any case, yo
  
 ## Defining a project configuration
 
+Real software consists of several packages and will depend on extra external libraries and frameworks. In practice, software configuration management, including the management of dependencies and versions, is thus a necessity.
+
+To solve this problem, Pharo is using Metacello. And although we don't really need it for our small example, we are going to use it anyway. Of course, we will not go into details as this is a complex subject.
+
+To create a Metacello configuration, you define an object (what else ?). First create a new package as well as a Metacello package called 'ConfigurationOfMyFirstWebApp'. Then go find the class MetacelloConfigTemplate. You have to copy this class (right-click on the class name) and name it 'ConfigurationOfMyFirstWebApp' as well. Now move the copy to your new package by dragging it, or by editing the category field of the class definition.
+
+We are going to define three methods: one defining a baseline for our configuration, one defining concrete package versions for that baseline, and one declaring that version as the stable released version. Here is the code
+
+    baseline1: spec      <version: '1-baseline'>      spec for: #common do: [
+        spec           blessing: #baseline;          repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/MyFirstWebApp/main/';          package: 'MyFirstWebApp' ]
+
+    version1: spec      <version: '1' imports: #('1-baseline')>      spec for: #common do: [        spec          blessing: #release;          package: 'MyFirstWebApp' with: 'MyFirstWebApp-SvenVanCaekenberghe.1' ]
+
+    stable: spec      <symbolicVersion: #'stable'>      spec for: #common version: '1'
+
+You can test your configuration by trying to load it.
+
+    ConfigurationOfMyFirstWebApp load.
+
+Of course, not much will happen since you already have the specified version loaded. Make sure the Transcript is open and inspect the above expression, for some feedback.
+
+![Loading our Metacello configuration](metacello-load.png)
+
+Now add your SmalltalkHub repository to the ConfigurationOfMyFirstWebApp Monticello package. Double-check the changes in the Monticello Browser, remember we copied a whole class. Now commit by saving to your SmalltalkHub repository. Use the web interface to verify that all went well.
+
 ## Running a real cloud server
 
 ## Deploying for production
@@ -439,3 +464,145 @@ After a successful commit, it is a good idea to save your image. In any case, yo
 ## Conclusion
 
 ## References
+
+## Listing
+
+Here is the full code listing of the web app, including the tests. A similar example is also included in Zinc HTTP Components itself, under the name ZnImageExampleDelegate[Tests].
+
+    Object subclass: #MyFirstWebApp
+      instanceVariableNames: ''
+      classVariableNames: ''
+      poolDictionaries: ''
+      category: 'MyFirstWebApp'
+
+    handleRequest: request
+      request uri path = #image
+        ifTrue: [ 
+          request method = #GET
+            ifTrue: [ ^ self handleGetRequest: request ].
+          request method = #POST
+            ifTrue: [ ^ self handlePostRequest: request ] ].
+      ^ ZnResponse notFound: request uri
+
+    value: request
+      ^ self handleRequest: request
+
+    handleGetRequest: request
+      ^ (request uri queryAt: #raw ifAbsent: [ nil ])
+          ifNil: [ ZnResponse ok: (ZnEntity html: self html) ]
+          ifNotNil: [ ZnResponse ok: self image ]
+
+    handlePostRequest: request
+      | part newImage badRequest |
+      badRequest := [ ^ ZnResponse badRequest: request ].
+      (request hasEntity 
+          and: [ request contentType matches: ZnMimeType multiPartFormData ])
+        ifFalse: badRequest.
+      part := request entity 
+                partNamed: #file
+                ifNone: badRequest.
+      newImage := part entity.
+      (newImage notNil 
+          and: [ newImage contentType matches: 'image/*' asZnMimeType ])
+        ifFalse: badRequest.
+      [ self formForImageEntity: newImage ]
+        on: Error 
+        do: badRequest.
+      image := newImage.
+      ^ ZnResponse redirect: #image
+
+    html
+      ^ '<html><head><title>Image</title>
+      <body>
+      <h1>Image</h1>
+      <img src="image?raw=true"/>
+      <br/>
+      <form enctype="multipart/form-data" action="image" method="POST">
+       <h3>Change the image:</h3>
+       <input type="file" name="file"/>
+       <input type="submit" value= "Upload"/>
+      </form>
+      </body></html>'
+
+    downloadPharoLogo
+      ^ ZnClient new 
+          beOneShot;
+          get: 'http://www.pharo-project.org/images/pharo.png';
+          entity 
+
+    image
+      ^ image ifNil: [ image := self downloadPharoLogo ]
+
+    formForImageEntity: imageEntity
+      | imageType parserClassName parserClass parser |
+      imageType := imageEntity contentType sub.
+      parserClassName := imageType asUppercase, #ReadWriter.
+      parserClass := Smalltalk globals at: parserClassName asSymbol.
+      parser := parserClass on: imageEntity readStream.
+	    ^ parser nextImage
+    
+    form
+      ^ self formForImageEntity: self image
+
+
+    TestsCase subclass: #MyFirstWebAppTests
+      instanceVariableNames: ''
+      classVariableNames: ''
+      poolDictionaries: ''
+      category: 'MyFirstWebApp'
+
+    withServerDo: block
+      | server |
+      server := ZnServer on: 1700 + 10 atRandom.
+      [ 
+        server start.
+        self assert: server isRunning & server isListening.
+        server delegate: MyFirstWebApp new.
+        block cull: server
+      ] 
+        ensure: [ server stop ]
+
+    testMainPage
+      self withServerDo: [ :server |
+        | client |
+        client := ZnClient new.
+        client url: server localUrl; addPath: #image.
+        client get.
+        self assert: client isSuccess.
+        self assert: (client entity contentType matches: ZnMimeType textHtml).
+        self assert: (client contents includesSubstring: 'Image').
+        client close ]
+
+    testDefaultImage
+      self withServerDo: [ :server |
+        | client |
+        client := ZnClient new.
+        client url: server localUrl; addPath: #image; queryAt: #raw put: #true.
+        client get.
+        self assert: client isSuccess.
+        self assert: (client entity contentType matches: 'image/*' asZnMimeType).
+        self assert: client entity equals: server delegate image.
+        client close ]
+
+    image
+      ^ ZnClient new
+          beOneShot;
+          get: 'http://zn.stfx.eu/zn/Hot-Air-Balloon.gif';
+          entity
+
+    testUpload
+      self withServerDo: [ :server |
+        | image client |
+        image := self image.
+        client := ZnClient new.
+        client url: server localUrl; addPath: #image.
+        client addPart: (ZnMimePart fieldName: #file entity: image).
+        client post.
+        self assert: client isSuccess.
+        client resetEntity; queryAt: #raw put: #true.
+        client get.
+        self assert: client isSuccess.
+        self assert: client entity equals: image.
+        client close ]
+
+
