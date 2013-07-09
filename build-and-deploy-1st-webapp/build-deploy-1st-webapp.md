@@ -440,12 +440,24 @@ To create a Metacello configuration, you define an object (what else ?). First c
 
 We are going to define three methods: one defining a baseline for our configuration, one defining concrete package versions for that baseline, and one declaring that version as the stable released version. Here is the code
 
-    baseline1: spec      <version: '1-baseline'>      spec for: #common do: [
-        spec           blessing: #baseline;          repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/MyFirstWebApp/main/';          package: 'MyFirstWebApp' ]
+    baseline1: spec
+      <version: '1-baseline'>
+      spec for: #common do: [
+        spec 
+          blessing: #baseline;
+          repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/MyFirstWebApp/main/';
+          package: 'MyFirstWebApp' ]
 
-    version1: spec      <version: '1' imports: #('1-baseline')>      spec for: #common do: [        spec          blessing: #release;          package: 'MyFirstWebApp' with: 'MyFirstWebApp-SvenVanCaekenberghe.1' ]
+    version1: spec
+      <version: '1' imports: #('1-baseline')>
+      spec for: #common do: [
+        spec
+          blessing: #release;
+          package: 'MyFirstWebApp' with: 'MyFirstWebApp-SvenVanCaekenberghe.1' ]
 
-    stable: spec      <symbolicVersion: #'stable'>      spec for: #common version: '1'
+    stable: spec
+      <symbolicVersion: #'stable'>
+      spec for: #common version: '1'
 
 You can test your configuration by trying to load it.
 
@@ -459,7 +471,45 @@ Now add your SmalltalkHub repository to the ConfigurationOfMyFirstWebApp Montice
 
 ## Running a real cloud server
 
+So we created our first web app and tested it locally. We stored our source code in the SmalltalkHub repository and created a Metacello configuration for it. Now we need a real cloud server to run our web app.
+
+It used to be hard and expensive to get access to a real server permanently connected to the internet. Not any more: prices have comes down and operating cloud servers has become a much easier to use service.
+
+For this guide, we will be using [Digital Ocean](http://www.digitalocean.com). The entry level server there, which is more than powerful enough for our experiment, costs just $5 a month. If you stop and remove the server after a couple of days, you will only pay cents. Go ahead and make yourself an account and register a credit card.
+
+![First part of the Create Droplet form](create-droplet-1.png)
+
+A server instance is called a Droplet. Click the 'Create Droplet ' button and fill in the form. Pick a hostname, select the smallest size, pick a region close to you. As operating system image, we'll be using a 32-bit Ubuntu Linux, version 13.04 x32. You can optionally use an SSH key pair to log in, just skip this option if you are uncomfortable with this. Finally click the 'Create Droplet' button.
+
+![Second part of the Create Droplet form](create-droplet-2.png)
+
+In less than a minute, your new server instance will be ready. Your root password will be emailed to you. If you look at your droplets, you should see your new server in the list. Click on it to see its details. 
+
+![Looking at your Droplet](my-droplet.png)
+
+The important step now is to get SSH command line access to your new server, preferably using a normal terminal. With the IP address from the control panel and the root password emailed to you, try to log in.
+
+    $ ssh root@82.196.12.54
+
+Your server is freshly installed and includes only the most essential core packages. Now we have to install Pharo on it. One easy way to do this is using the functionality offered by [http://get.pharo.org](http://get.pharo.org). The following command will install the VM and a fresh Pharo 2.0 image together with all other files needed.
+
+    # curl get.pharo.org/20+vm | bash
+
+Make sure the VM+image combination works by asking for the version.
+
+    # ./pharo Pharo.image printVersion
+
+Let's quickly test the stock HTTP server that comes with Pharo, like we did in the third section of this guide.
+
+    # ./pharo Pharo.image eval --no-quit 'ZnServer startDefaultOn: 8080'
+
+This command will block. Now access your new HTTP server at [http://82.196.12.54:8080](http://82.196.12.54:8080) after substituting your own IP address of course. You should see the Zinc HTTP Components welcome page. If this works, you can press ctrl-C in the terminal to end our test.
+
 ## Deploying for production
+
+We now have a running server. It can run Pharo too, but it is currently using a generic image. How do we get our code deployed ? By using the Metacello configuration and SmalltalkHub.
+
+
 
 ## Conclusion
 
