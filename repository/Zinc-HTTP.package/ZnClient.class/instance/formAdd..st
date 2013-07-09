@@ -4,4 +4,4 @@ formAdd: association
 	entity of the current request."
 	
 	self applicationFormUrlEncodedEntity 
-		add: association 
+		add: association

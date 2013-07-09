@@ -1,7 +1,8 @@
 accessing
 upToEnd
-	"We use out own collectionSpecies."
+	"We use our own collectionSpecies and read by chunk"
 
 	^ self collectionSpecies streamContents: [ :out |
 		[ self atEnd ] whileFalse: [ 
-			out nextPut: self next ] ]
+			out next: limit putAll: chunk.
+			position := limit ] ]

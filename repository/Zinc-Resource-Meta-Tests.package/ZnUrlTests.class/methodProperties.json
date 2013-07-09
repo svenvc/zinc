@@ -4,7 +4,8 @@
 	"instance" : {
 		"testAsRelativeUrl" : "SvenVanCaekenberghe 1/6/2013 20:43",
 		"testAuthority" : "SvenVanCaekenberghe 1/4/2011 13:05",
-		"testConvenienceMethods" : "SvenVanCaekenberghe 7/9/2012 16:33",
+		"testBogusBackups" : "SvenVanCaekenberghe 3/16/2013 18:41",
+		"testConvenienceMethods" : "SvenVanCaekenberghe 3/16/2013 20:41",
 		"testDefaultScheme" : "SvenVanCaekenberghe 8/11/2011 15:13",
 		"testDefaultSchemeAndPort" : "SvenVanCaekenberghe 8/11/2011 15:14",
 		"testDefaults" : "SvenVanCaekenberghe 8/11/2011 15:14",
@@ -30,4 +31,5 @@
 		"testRelative" : "SvenVanCaekenberghe 8/11/2011 15:10",
 		"testRetrieveContents" : "SvenVanCaekenberghe 1/24/2012 11:44",
 		"testUserInfo" : "SvenVanCaekenberghe 1/30/2013 16:45",
+		"testWindowsFileUrl" : "SvenVanCaekenberghe 2/6/2013 18:21",
 		"testWriteUrlPathQueryFragmentOfOn" : "SvenVanCaekenberghe 1/4/2011 13:57" } }

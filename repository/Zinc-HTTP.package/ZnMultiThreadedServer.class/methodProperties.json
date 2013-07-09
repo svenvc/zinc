@@ -2,14 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
+		"augmentResponse:forRequest:" : "SvenVanCaekenberghe 5/19/2013 20:07",
 		"closeSocketStream:" : "SvenVanCaekenberghe 9/5/2011 14:15",
 		"exceptionSet:" : "SvenVanCaekenberghe 10/4/2011 09:46",
-		"executeOneRequestResponseOn:" : "SvenVanCaekenberghe 1/10/2013 15:06",
+		"executeOneRequestResponseOn:" : "SvenVanCaekenberghe 5/19/2013 20:06",
 		"executeRequestResponseLoopOn:" : "SvenVanCaekenberghe 1/10/2013 15:08",
 		"listenLoop" : "SvenVanCaekenberghe 12/10/2010 16:00",
-		"readRequestExceptionSet" : "SvenVanCaekenberghe 1/10/2013 15:22",
-		"readRequestSafely:" : "SvenVanCaekenberghe 1/10/2013 15:20",
+		"readRequestBadExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:43",
+		"readRequestSafely:" : "SvenVanCaekenberghe 5/14/2013 10:51",
+		"readRequestTerminationExceptionSet" : "SvenVanCaekenberghe 5/27/2013 14:57",
 		"serveConnectionsOn:" : "SvenVanCaekenberghe 9/4/2011 12:38",
 		"workerProcessName" : "SvenVanCaekenberghe 12/13/2010 16:33",
-		"writeResponseExceptionSet" : "SvenVanCaekenberghe 1/10/2013 15:23",
-		"writeResponseSafely:on:" : "SvenVanCaekenberghe 1/10/2013 15:19" } }
+		"writeResponseBad:on:" : "SvenVanCaekenberghe 5/14/2013 10:48",
+		"writeResponseSafely:on:" : "SvenVanCaekenberghe 5/14/2013 10:39",
+		"writeResponseTerminationExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:39" } }

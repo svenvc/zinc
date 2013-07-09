@@ -2,5 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getAccountInfo" : "SvenVanCaekenberghe 1/27/2013 13:03",
-		"getRootInfo" : "SvenVanCaekenberghe 1/27/2013 13:03" } }
+		"getAccountInfo" : "SvenVanCaekenberghe 2/4/2013 10:11",
+		"getFile:" : "SvenVanCaekenberghe 2/4/2013 11:28",
+		"getMetaData:" : "SvenVanCaekenberghe 2/4/2013 11:31",
+		"getRootInfo" : "SvenVanCaekenberghe 2/4/2013 11:27",
+		"putFile:data:" : "SvenVanCaekenberghe 2/4/2013 11:28" } }

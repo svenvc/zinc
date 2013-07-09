@@ -5,4 +5,4 @@ testReading
 	statusLine := ZnStatusLine readFrom: string readStream.
 	self assert: statusLine code = 200.
 	self assert: statusLine reason = 'OK'.
-	self assert: statusLine version = ZnConstants defaultHTTPVersion 
+	self assert: statusLine version = ZnConstants defaultHTTPVersion

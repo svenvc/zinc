@@ -4,4 +4,4 @@ writeResponse: response on: stream
 	
 	response writeOn: stream.
 	stream flush.
-	self logResponse: response 
+	self logResponse: response

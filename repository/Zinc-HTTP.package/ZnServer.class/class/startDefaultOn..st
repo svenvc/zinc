@@ -9,4 +9,4 @@ startDefaultOn: portNumber
 	Starting the default server will register it automatically.
 	Delegate to the default server class."
 
-	^ self defaultServerClass startDefaultOn: portNumber 
+	^ self defaultServerClass startDefaultOn: portNumber
