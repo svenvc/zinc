@@ -15,7 +15,7 @@ The dynamic, interactive nature of Pharo combined with its rich IDE and library 
 
 Let's get started.
 
-## The Web App
+## The web app
 
 The web application that we are going to build will show a picture and allow users to change the picture by uploading a new one. Because we want to focus on the basic mechanics, the fundamentals as well as the build and deploy process, there are some simplifications. There will be one picture for all users, no login and we will store the picture in memory.
 
@@ -23,15 +23,15 @@ The web application that we are going to build will show a picture and allow use
 
 In our implementation, /image will serve an HTML page containing the image and a form. To serve the raw image itself, we'll add a parameter, like /image?raw=true. These will be GET HTTP requests. The form will submit its data to /image as a POST request.
 
-## Download Pharo
+## Downloading Pharo
 
-Go to [http://www.pharo.org](http://www.pharo.org) and download the whole self-contained package for your platform, it is just 12 to 14 MB. Select the released version 2.0. Double-click and you enter the Pharo world.
+Go to [http://www.pharo.org](http://www.pharo.org) and download the whole self-contained package for your platform, it is just 12 to 14 MB. Select the released version 2.0. Although not recommended for beginners, current development version 3.0 will do just fine as well. Double-click and you enter the Pharo world.
 
 ![Pharo in action, running the code in the next section](pharo-in-action.png)
 
 Pharo is an incredible sophisticated and deep environment and toolset. The [Pharo by Example](http://pharobyexample.org) book is probably the best way to get started if all this is totally new to you. In what follows we assume you at least read the first chapter, 'A Quick Tour of Pharo'.
 
-## Running an HTTP Server
+## Running an HTTP server
 
 Open a Workspace, type and execute
 
@@ -68,7 +68,7 @@ If you are curious, please consult the [Zinc HTTP Components](http://zn.stfx.eu/
 
 Let's lay the groundwork for our new web application by making a version that only says 'Hello World!'. We'll be extending the web app gradually until we reach our functional goal. 
 
-Open the Nautilus System Browser and create a new package (right click in the first column) called something like 'MyFirstWebApp'. Now create a new class (right click in the second column) with a similar name. You will be given a template: edit 'NameOfSubclass' and accept by clicking 'OK'. Your definition should now appear in the bottom pane
+Open the Nautilus System Browser and create a new package (right click in the first column) called something like **'MyFirstWebApp'**. Now create a new class (right click in the second column) with the same name, **MyFirstWebApp**. You will be given a template: edit 'NameOfSubclass' and accept by clicking 'OK'. Your definition should now appear in the bottom pane
 
     Object subclass: #MyFirstWebApp
       instanceVariableNames: ''
@@ -76,7 +76,7 @@ Open the Nautilus System Browser and create a new package (right click in the fi
       poolDictionaries: ''
       category: 'MyFirstWebApp'
 
-Any object can be a web app, it only has to respond to a message called #handleRequest: to answer a response based on a request. Now add the following method
+Any object can be a web app, it only has to respond to a message called **#handleRequest:** to answer a response based on a request. Now add the following method
 
     handleRequest: request
       request uri path = #image
@@ -92,7 +92,7 @@ What we do here is look at the incoming request to make sure the URI path is /im
     value: request
       ^ self handleRequest: request
 
-Now do the same for the #value: method, effectively making it an alias of #handleRequest: - this is needed so our web app object can be used more flexibly. To test our web app, we'll add it as one of the pages of the default server, like this
+Now do the same for the **#value:** method, effectively making it an alias of #handleRequest: - this is needed so our web app object can be used more flexibly. To test our web app, we'll add it as one of the pages of the default server, like this
 
     ZnServer startDefaultOn: 8080.
     ZnServer default delegate map: #image to: MyFirstWebApp new.
@@ -109,7 +109,7 @@ Leave the server running. If you want you can enable logging again, or switch to
 
 ## Serving an HTML page
 
-HTML generation and/or using templates can be done with some of the higher level frameworks, here we'll manually compose our HTML. Go ahead and add a new method while changing a previous one slightly
+HTML generation and/or using templates can be done with some of the higher level frameworks, here we'll manually compose our HTML. Go ahead and add a new method, **#html**, while changing a previous one slightly
 
     html
       ^ '<html><head><title>Image</title>
@@ -130,7 +130,7 @@ You have a probably noted the red exclamation mark icon in front of our class na
 
 Images for the purpose of our web app can be any of three types: GIF, JPEG or PNG. We will store them in memory as an entity, an object wrapping the actual bytes together with a mime type.
 
-To simplify our app, we will arrange things so that we always start with a default image, then we always have something to show. Let's add a little helper
+To simplify our app, we will arrange things so that we always start with a default image, then we always have something to show. Let's add a little helper, **#downloadPharoLogo** 
 
     downloadPharoLogo
       ^ ZnClient new 
@@ -138,7 +138,7 @@ To simplify our app, we will arrange things so that we always start with a defau
           get: 'http://www.pharo-project.org/images/pharo.png';
           entity 
 
-Quickly test the code by selecting the method body (not including the name) and inspecting the result. You should get an image entity back. Now add an accessor for the image
+Quickly test the code by selecting the method body (not including the name) and inspecting the result. You should get an image entity back. Now add the accessor **#image**
 
     image
       ^ image ifNil: [ image := self downloadPharoLogo ]
@@ -164,7 +164,7 @@ Remember that we decided we were going to serve the raw image itself using a que
           ifNil: [ ZnResponse ok: (ZnEntity html: self html) ]
           ifNotNil: [ ZnResponse ok: self image ]
 
-We extended our HTML with a IMG element. We delegate some of our request handling to a new method, #handleGetRequest: where we inspect the incoming URI. If it has a non empty query variable raw we serve the raw image directly, else we serve the HTML page like before.
+We extended our HTML with a IMG element. We delegate some of our request handling to a new method, **#handleGetRequest:** where we inspect the incoming URI. If it has a non empty query variable raw we serve the raw image directly, else we serve the HTML page like before.
 
 Check it out: you should now see an image in the browser when visiting [http://localhost:8080/image](http://localhost:8080/image) !
 
@@ -198,7 +198,7 @@ In our request handling, we have to distinguish between GET and POST requests. C
             ifTrue: [ ^ self handlePostRequest: request ] ].
       ^ ZnResponse notFound: request uri
 
-Now we have to add an implementation of #handlePostRequest: to accept the uploaded image and change the current one.
+Now we have to add an implementation of **#handlePostRequest:** to accept the uploaded image and change the current one.
 
     handlePostRequest: request
       | part newImage |
@@ -261,9 +261,9 @@ The abilities to look at the requests and responses coming in and going out of t
 
 Pharo is not just a platform for server applications, it can be used to build regular applications with normal graphics as well. In fact, it is very good at it. That is why it has built-in support to work with JPEG, GIF or PNG.
 
-Would it not be cool to be able to actually parse the image that we were manipulating as an opaque collection of bytes up till now ? To make sure it is real. To look at it while debugging. Turns out this is quite easy. Are you ready for some [image magic](http://en.wikipedia.org/wiki/ImageMagick), pun intended ?
+Would it not be cool to be able to actually parse the image that we were manipulating as an opaque collection of bytes up till now ? To make sure it is real. To look at it while debugging. Turns out this is quite easy. Are you ready for some [image magick](http://en.wikipedia.org/wiki/ImageMagick), pun intended ?
 
-The Pharo object that represents images is called a form. There are objects called GIFReadWriter, PNGReadWriter and JPEGReadWriter that can parse bytes into forms. Add two helper methods.
+The Pharo object that represents images is called a form. There are objects called GIFReadWriter, PNGReadWriter and JPEGReadWriter that can parse bytes into forms. Add two helper methods, **#formForImageEntity:** and **#form**
 
     formForImageEntity: imageEntity
       | imageType parserClassName parserClass parser |
@@ -307,11 +307,11 @@ Before making the actual assignment of the new image to our instance variable we
 
 Once we have a form object, the possibilities are almost endless. You can query a form for the its size, depth and other elements. You can manipulate the form in various ways: scaling, resizing, rotating, flipping, cropping, compositing. And you can do all this in an interactive, dynamic environment.
 
-## Adding Tests
+## Adding tests
 
 We all know that testing is good, but how do we actually test a web app ? Writing some basic tests is actually not difficult, since Zinc HTTP Components covers both the client and the server side with the same objects.
 
-Writing tests is creating objects, letting them interact and then asserting a number of conditions. Create a new subclass of TestCase, MyFirstWebAppTests, and add the following helper method.
+Writing tests is creating objects, letting them interact and then asserting a number of conditions. Create a new subclass of TestCase, **MyFirstWebAppTests**, and add the following helper method.
 
     withServerDo: block
       | server |
@@ -324,7 +324,7 @@ Writing tests is creating objects, letting them interact and then asserting a nu
       ] 
         ensure: [ server stop ]
 
-Since we will be needing a configured server instance with our web app as delegate for each of our tests, we move that logic into #withServerDo: and make sure the server is OK and properly stopped afterwards. Now we are ready for our first test.
+Since we will be needing a configured server instance with our web app as delegate for each of our tests, we move that logic into **#withServerDo:** and make sure the server is OK and properly stopped afterwards. Now we are ready for our first test.
 
     testMainPage
       self withServerDo: [ :server |
@@ -385,11 +385,11 @@ The HTTP client object is pretty powerful. It can do a correct multi-part form-d
 
 If all is well, you now have a package called MyFirstWebApp containing two classes, MyFirstWebApp and MyFirstWebAppTests. The first one should have 9 methods, the second 5. If you are unsure about your code, you can double check with the full listing at the end of this document. Our web app should now work as expected, and we have some tests to prove it.
 
-But our code currently only lives in our development image. Let's change that and move our code to a source code repository. For this we first have to define a Monticello package. Click on the package name in the first column of the browser and select the option 'Create an MC package'.
+But our code currently only lives in our development image. Let's change that and move our code to a source code repository. For this we first have to define a Monticello package. Click on the package name in the first column of the browser and select the option 'Create an MC package'. Use the same name.
 
 ![Creating a Monticello package](create-mc-package.png)
 
-Pharo uses distributed source code management. Your code can live on your local file system, or it can live on a server. The main place for storing Pharo code is on [SmalltalkHub](http://www.smalltalkhub.com). Go over there and create yourself a new account. Once you have an account, create and register a new project called 'MyFirstWebApp'. You can leave the public option checked, it means that you and others can download the code without credentials. Go to the project's page.
+Pharo uses distributed source code management. Your code can live on your local file system, or it can live on a server. The main place for storing Pharo code is on [SmalltalkHub](http://www.smalltalkhub.com). Go over there and create yourself a new account. Once you have an account, create and register a new project called **'MyFirstWebApp'**. You can leave the public option checked, it means that you and others can download the code without credentials. Go to the project's page.
 
 ![MyFirstWebApp's project page on SmalltalkHub](sthub.png)
 
@@ -442,9 +442,9 @@ Real software consists of several packages and will depend on extra external lib
 
 To solve this problem, Pharo is using Metacello. And although we don't really need it for our small example, we are going to use it anyway. Of course, we will not go into details as this is a complex subject.
 
-To create a Metacello configuration, you define an object, what else did you expect ? First create a new package as well as a Metacello package called 'ConfigurationOfMyFirstWebApp'. Then go find the class MetacelloConfigTemplate. You have to copy this class (right-click on the class name) and name it 'ConfigurationOfMyFirstWebApp' as well. Now move the copy to your new package by dragging it, or by editing the category field of the class definition.
+To create a Metacello configuration, you define an object, what else did you expect ? First create a new package as well as a Metacello package called **'ConfigurationOfMyFirstWebApp'**. Then go find the class MetacelloConfigTemplate. You have to copy this class (right-click on the class name) and name it **'ConfigurationOfMyFirstWebApp'** as well. Now move the copy to your new package by dragging it, or by editing the category field of the class definition.
 
-We are going to define three methods: one defining a baseline for our configuration, one defining concrete package versions for that baseline, and one declaring that version as the stable released version. Here is the code
+We are going to define three methods: one defining a baseline for our configuration, one defining concrete package versions for that baseline, and one declaring that version as the stable released version. Here is the code (if you would be working in Pharo 3.0 you will notice that MetacelloConfigTemplate contains some extra template methods, remove any baseline or version related ones and overwrite #stable:) 
 
     baseline1: spec
       <version: '1-baseline'>
