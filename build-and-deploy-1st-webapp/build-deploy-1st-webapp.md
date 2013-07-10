@@ -1,11 +1,15 @@
 # Building and deploying your first web app with Pharo
 ### Understanding HTTP fundamentals through Zinc HTTP Components
 
+*Sven Van Caekenberghe*
+
+*July 2013*
+
 There are lots of ways to get something on the Web today. However, it remains important that you understand the actual mechanics of building and deploying a web application. This guide explains how to build and deploy your first web application using [Pharo](http://www.pharo.org).
 
 Of course, there are an infinite number of ways to make a web app. Even in Pharo, there are multiple frameworks approaching this problem. Here, we'll be using the foundational framework called [Zinc HTTP Components](http://zn.stfx.eu). By doing so, we'll be touching the fundamentals of HTTP and web apps.
 
-Using nice objects abstracting each concept in [HTTP](http://en.wikipedia.org/wiki/Http) and related open standards, the actual code will be easier than you might expect.
+Using nice objects, abstracting each concept in [HTTP](http://en.wikipedia.org/wiki/Http) and related open standards, the actual code will be easier than you might expect.
 
 The dynamic, interactive nature of Pharo combined with its rich IDE and library will allow us to do things that are nearly impossible using other technology stacks. By chronologically following the development process, you will see the app growing from something trivial to the final result. Finally, we will save our source code in a repository and deploy for real in the cloud.
 
@@ -50,11 +54,11 @@ You can see the server entering the request/response loop for a certain connecti
 
 Visit and reload a page. Now you can use the inspector to explore the actual lastRequest and lastResponse objects. Pretty cool, right ?
 
-To complete our little tour, let's try one more thing. We can execute any request programmatically as well, using ZnClient. To visit a page, try inspecting the result of
+To complete our little tour, let's try one more thing. We can execute any request programmatically as well, using an HTTP client. To visit a page, try inspecting the result of
 
     ZnClient new get: 'http://localhost:8080/random'.
 
-If you would look inside the ZnClient object, you would find similar request and response objects. Which makes total sense since the client talks to the server and vice versa, over the network. If you want, you can stop the server using
+If you would look inside the client object, you would find similar request and response objects. Which makes total sense since the client talks to the server and vice versa, over the network. If you want, you can stop the server using
 
     ZnServer stopDefault.
 
@@ -93,7 +97,7 @@ Now do the same for the #value: method, effectively making it an alias of #handl
     ZnServer startDefaultOn: 8080.
     ZnServer default delegate map: #image to: MyFirstWebApp new.
 
-The second expression adds a route from /image to an instance of our web app object. If all is well, [http://localhost:8080/image](http://localhost:8080/image) should show a friendly message. Note how we are not even serving HTML, just plain text. 
+The second expression adds a route from /image to an instance of our web app object. If all is well, [http://localhost:8080/image](http://localhost:8080/image) should show your friendly message. Note how we are not even serving HTML, just plain text. 
 
 Try changing the text. Try putting a breakpoint in MyFirstWebApp>>#handleRequest: (right-click on the method name in the fourth column) and inspecting things. Then just continue the execution. Note how this is a live environment: you make a little change and it is immediately used, you can look into the actual request and response objects moving around.
 
@@ -120,13 +124,13 @@ HTML generation and/or using templates can be done with some of the higher level
 
 Accept the above two methods and test [http://localhost:8080/image](http://localhost:8080/image) again to make sure you now see a real HTML page.
 
-You have a probably noted the red exclamation mark icon in front of our class name in the browser. This is an indication that we have no class comment, which is not good, documentation is important. Click the 'Comment' button and write some documentation. You can also use the class comment as a notepad for yourself, saving useful expressions that you can later execute in place. 
+You have a probably noted the red exclamation mark icon in front of our class name in the browser. This is an indication that we have no class comment, which is not good: documentation is important. Click the 'Comment' button and write some documentation. You can also use the class comment as a notepad for yourself, saving useful expressions that you can later execute in place. 
 
 ## Serving an image
 
 Images for the purpose of our web app can be any of three types: GIF, JPEG or PNG. We will store them in memory as an entity, an object wrapping the actual bytes together with a mime type.
 
-To simplify our app, we will arrange things so that we always start with a default image, then we will always have something to show. Let's add a little helper
+To simplify our app, we will arrange things so that we always start with a default image, then we always have something to show. Let's add a little helper
 
     downloadPharoLogo
       ^ ZnClient new 
@@ -203,7 +207,7 @@ Now we have to add an implementation of #handlePostRequest: to accept the upload
       image := newImage.
       ^ ZnResponse redirect: #image
 
-We start with the simple version without error handling. The entity of the incoming request is a multi-part form-data object containing named parts. Each part, such as the file part, contains another sub-entity. In our case, the uploaded image. Note also how the response to the POST is a redirect to our main page. You should now have a fully functional web app. Go and try it out!
+We start with a simple version without error handling. The entity of the incoming request is a multi-part form-data object containing named parts. Each part, such as the file part, contains another sub-entity. In our case, the uploaded image. Note also how the response to the POST is a redirect to our main page. You should now have a fully functional web app. Go and try it out!
 
 We have taken a bit of a shortcut in the code above. It is pretty dangerous to just accept what is coming in from the internet without doing some checking. Here is a version that does that.
 
@@ -223,7 +227,7 @@ We have taken a bit of a shortcut in the code above. It is pretty dangerous to j
       image := newImage.
       ^ ZnResponse redirect: #image
 
-Our standard response when something is wrong will be a Bad Request (code 400). We define this behaviour to a local variable so that we can reuse it multiple times over. The first test makes sure there actually an entity in the POST request and that it is of the correct type. Next we handle the case when there is no file part. Finally, we make sure the file part is actually an image (JPEG, PNG or GIF) by making sure it matches the image/* mime type.
+Our standard response when something is wrong will be to return a Bad Request (code 400). We define this behaviour to a local variable so that we can reuse it multiple times over. The first test makes sure there actually is an entity in the POST request and that it is of the correct type. Next we handle the case when there is no file part. Finally, we make sure the file part is actually an image (JPEG, PNG or GIF) by matching with the wildcard image/* mime type.
 
 If you are curious, set a breakpoint in the method and inspect the request object of an actual request. You can learn an awful lot from looking at live objects.
 
@@ -237,7 +241,7 @@ The compiler will already complain, ignore the warning and accept the code anywa
 
 ![Handling a MessageNotUnderstood](dnu.png)
 
-But we can do better! Just fix the code and accept it. Now you can restart and proceed the execution. The same request is still active and the server will now do the correct thing. Have a look at your browser: you will see that your initial action, the upload, that first first failed, has now succeeded.
+But we can do better! Just fix the code and accept it. Now you can restart and proceed the execution. The same request is still active and the server will now do the correct thing. Have a look at your web browser: you will see that your initial action, the upload, that first initially hung, has now succeeded.
 
 Up to now, the suggestion was that you can use the debugger and inspector tools to look at requests and responses. But you can actually change them while they are happening ! Prepare for our experiment by making sure that you change the image to be different from the default one. Now set a breakpoint in #handleGetRequest: and reload the main page. There will be two requests coming in: the first one for /image and the second one for /image?raw=true. Proceed the first one. 
 
@@ -257,7 +261,7 @@ The abilities to look at the requests and responses coming in and going out of t
 
 Pharo is not just a platform for server applications, it can be used to build regular applications with normal graphics as well. In fact, it is very good at it. That is why it has built-in support to work with JPEG, GIF or PNG.
 
-Would it not be cool to be able to actually parse the image that we were manipulating as an opaque collection of bytes up till now ? To make sure it is real. To look at it while debugging. Turns out this is quite easy. Are you ready for some image magic, pun intended ?
+Would it not be cool to be able to actually parse the image that we were manipulating as an opaque collection of bytes up till now ? To make sure it is real. To look at it while debugging. Turns out this is quite easy. Are you ready for some [image magic](http://en.wikipedia.org/wiki/ImageMagick), pun intended ?
 
 The Pharo object that represents images is called a form. There are objects called GIFReadWriter, PNGReadWriter and JPEGReadWriter that can parse bytes into forms. Add two helper methods.
 
@@ -272,7 +276,7 @@ The Pharo object that represents images is called a form. There are objects call
     form
       ^ self formForImageEntity: self image
 
-What we do is use the sub type of the mime type, like image/png, to find the parser class. Then we instanciate a new parser on a read stream on the actual bytes and invoke the parser with sending #nextImage, which will return a form. The #form method makes it each to invoke all this logic on our current image. 
+What we do is use the sub type of the mime type, like png in image/png, to find the parser class. Then we instanciate a new parser on a read stream on the actual bytes and invoke the parser with sending #nextImage, which will return a form. The #form method makes it easy to invoke all this logic on our current image. 
 
 Now we can have a look at, for example, the default image like this
 
@@ -300,6 +304,8 @@ Obviously you can do this while debugging too. We can also use the image parsing
       ^ ZnResponse redirect: #image
 
 Before making the actual assignment of the new image to our instance variable we added an extra expression. We try parsing the image. We are not interested in the result, but we do want to reply with a bad request when the parsing should fail.
+
+Once we have a form object, the possibilities are almost endless. You can query a form for the its size, depth and other elements. You can manipulate the form in various ways: scaling, resizing, rotating, flipping, cropping, compositing. And you can do all this in an interactive, dynamic environment.
 
 ## Adding Tests
 
@@ -350,7 +356,7 @@ Let's try to write a test for the actual raw image being served.
 
 Note how we can actually test for equality between the served image and the one inside our app object (the delegate). Run the test.
 
-Our final test will actually do an image upload and check if served image did actually change to it.
+Our final test will actually do an image upload and check if the served image did actually change to what we uploaded.
 
     image
       ^ ZnClient new
@@ -373,13 +379,13 @@ Our final test will actually do an image upload and check if served image did ac
         self assert: client entity equals: image.
         client close ]
 
-The ZnClient object is pretty powerful. It can do a correct multi-part form-data POST, just like a browser. Furthermore, once configured, it can be reused, like for the second GET request.
+The HTTP client object is pretty powerful. It can do a correct multi-part form-data POST, just like a browser. Furthermore, once configured, it can be reused, like for the second GET request.
 
 ## Saving code to a repository
 
 If all is well, you now have a package called MyFirstWebApp containing two classes, MyFirstWebApp and MyFirstWebAppTests. The first one should have 9 methods, the second 5. If you are unsure about your code, you can double check with the full listing at the end of this document. Our web app should now work as expected, and we have some tests to prove it.
 
-But our code currently only lives in our development image. Let's change that and move our code to a source code repository. For this we first have to create a Monticello package. Click on the package name in the first column of the browser and select the option 'Create an MC package'.
+But our code currently only lives in our development image. Let's change that and move our code to a source code repository. For this we first have to define a Monticello package. Click on the package name in the first column of the browser and select the option 'Create an MC package'.
 
 ![Creating a Monticello package](create-mc-package.png)
 
@@ -398,19 +404,17 @@ Select Smalltalkhub.com as repository type and overwrite the presented template 
       user: ''
       password: ''
 
-Now before accepting, fill in your user(name) and password (between the single quotes). Open the Monticello Browser to see what we have done. Find your package in the first column and your repository in the second one.
+Now before accepting, fill in your user(name) and password (between the single quotes), the ones you gave during registration on SmalltalkHub. Open the Monticello Browser to see what we have done. Find your package in the first column and your repository in the second one.
 
 ![The Monticello Browser looking at our package and repository](mc-browser.png)
 
-There should be a star (*) in front of your package name, indicating that the package is dirty, that it has uncommitted changes. If not, force a change computation by clicking 'Changes' button. You should get a browser showing all the changes that you made. Since this is the first version, all your changes are additions.
+There should be a asterisk (*) in front of your package name, indicating that the package is dirty, that it has uncommitted changes. If not, force a change computation by clicking 'Changes' button. You should get a browser showing all the changes that you made. Since this is the first version, all your changes are additions.
 
 ![The Changes/Diff Browser for our package](diffs.png)
 
-OK, we're almost done. Go back to the Monticello Browser and click the 'Save' button (with your package and repository selected). Leave the version name, something like MyFirstWebApp-SvenVanCaekenberghe.1 alone, write a nice commit message and press Accept to save your code to SmalltalkHub.
+OK, we're almost done. Go back to the Monticello Browser and click the 'Save' button (with your package and repository selected). Leave the version name, something like MyFirstWebApp-SvenVanCaekenberghe.1 alone, write a nice commit message in the second pane and press Accept to save your code to SmalltalkHub.
 
 ![Committing to SmalltalkHub](commit.png)
-
-If something goes wrong, you probably made a typo in your repository specification. You can edit it by right-clicking on it in the Monticello Browser and selecting 'Edit repository info'.
 
 When all goes well, you will see an upload progress bar and finally a version window that confirms the commit. You can close it later on.
 
@@ -424,11 +428,13 @@ When all goes well, you will see an upload progress bar and finally a version wi
 
 ![Confirmation Version Window](version.png)
 
+If something goes wrong, you probably made a typo in your repository specification. You can edit it by right-clicking on it in the Monticello Browser and selecting 'Edit repository info'. If a save fails, you will get a Version Window after some error message. Don't close the Version Window. Your code now lives in your local package cache. Click the 'Copy' button and select your SmalltalkHub repository to try saving again.
+
 You can now browse back to [Smalltalkhub.com](Smalltalkhub.com) to confirm that your code arrived there.
 
 ![Looking at our commit on SmalltalkHub](sthub-v1.png)
 
-After a successful commit, it is a good idea to save your image. In any case, your package should now no longer be dirty, and there should be no more differences between the local version and the one on SmalltalkHub.com.
+After a successful commit, it is a good idea to save your image. In any case, your package should now no longer be dirty, and there should be no more differences between the local version and the one on SmalltalkHub.
  
 ## Defining a project configuration
 
@@ -436,7 +442,7 @@ Real software consists of several packages and will depend on extra external lib
 
 To solve this problem, Pharo is using Metacello. And although we don't really need it for our small example, we are going to use it anyway. Of course, we will not go into details as this is a complex subject.
 
-To create a Metacello configuration, you define an object (what else ?). First create a new package as well as a Metacello package called 'ConfigurationOfMyFirstWebApp'. Then go find the class MetacelloConfigTemplate. You have to copy this class (right-click on the class name) and name it 'ConfigurationOfMyFirstWebApp' as well. Now move the copy to your new package by dragging it, or by editing the category field of the class definition.
+To create a Metacello configuration, you define an object, what else did you expect ? First create a new package as well as a Metacello package called 'ConfigurationOfMyFirstWebApp'. Then go find the class MetacelloConfigTemplate. You have to copy this class (right-click on the class name) and name it 'ConfigurationOfMyFirstWebApp' as well. Now move the copy to your new package by dragging it, or by editing the category field of the class definition.
 
 We are going to define three methods: one defining a baseline for our configuration, one defining concrete package versions for that baseline, and one declaring that version as the stable released version. Here is the code
 
@@ -463,7 +469,7 @@ You can test your configuration by trying to load it.
 
     ConfigurationOfMyFirstWebApp load.
 
-Of course, not much will happen since you already have the specified version loaded. Make sure the Transcript is open and inspect the above expression, for some feedback.
+Of course, not much will happen since you already have the specified version loaded. For some feedback, make sure the Transcript is open and inspect the above expression.
 
 ![Loading our Metacello configuration](metacello-load.png)
 
@@ -479,7 +485,7 @@ For this guide, we will be using [Digital Ocean](http://www.digitalocean.com). T
 
 ![First part of the Create Droplet form](create-droplet-1.png)
 
-A server instance is called a Droplet. Click the 'Create Droplet ' button and fill in the form. Pick a hostname, select the smallest size, pick a region close to you. As operating system image, we'll be using a 32-bit Ubuntu Linux, version 13.04 x32. You can optionally use an SSH key pair to log in, just skip this option if you are uncomfortable with this. Finally click the 'Create Droplet' button.
+A server instance is called a Droplet. Click the 'Create Droplet ' button and fill in the form. Pick a hostname, select the smallest size, pick a region close to you. As operating system image, we'll be using a 32-bit Ubuntu Linux, Ubuntu version 13.04 x32. You can optionally use an SSH key pair to log in, just skip this option if you are uncomfortable with this. Finally click the 'Create Droplet' button.
 
 ![Second part of the Create Droplet form](create-droplet-2.png)
 
@@ -491,13 +497,14 @@ The important step now is to get SSH command line access to your new server, pre
 
     $ ssh root@82.196.12.54
 
-Your server is freshly installed and includes only the most essential core packages. Now we have to install Pharo on it. One easy way to do this is using the functionality offered by [http://get.pharo.org](http://get.pharo.org). The following command will install the VM and a fresh Pharo 2.0 image together with all other files needed.
+Your server is freshly installed and includes only the most essential core packages. Now we have to install Pharo on it. One easy way to do this is using the functionality offered by [http://get.pharo.org](http://get.pharo.org). The following command will install a fresh Pharo 2.0 image together with all other files needed.
 
     # curl get.pharo.org/20+vm | bash
 
-Make sure the VM+image combination works by asking for the version.
+Make sure the VM+image combination works by asking for the image version.
 
     # ./pharo Pharo.image printVersion
+    [version] 2.0 #20611
 
 Let's quickly test the stock HTTP server that comes with Pharo, like we did in the third section of this guide.
 
@@ -507,17 +514,66 @@ This command will block. Now access your new HTTP server at [http://82.196.12.54
 
 ## Deploying for production
 
-We now have a running server. It can run Pharo too, but it is currently using a generic image. How do we get our code deployed ? By using the Metacello configuration and SmalltalkHub.
+We now have a running server. It can run Pharo too, but it is currently using a generic image. How do we get our code deployed ? To do this we use the Metacello configuration. But first, we are going to make a copy of the stock Pharo.image that we downloaded. We want to keep the original clean while we make changes to the copy.
 
+    # ./pharo Pharo.image save myfirstwebapp
 
+We now have a new image (and changes) file called myfirstwebapp.image (and myfirstwebapp.changes). Through the config command line option we can load our Metacello configuration. Before actually loading anything, we will ask for all available versions to verify that we can access the repository.
+
+    # ./pharo myfirstwebapp.image config http://www.smalltalkhub.com/mc/SvenVanCaekenberghe/MyFirstWebApp/main ConfigurationOfMyFirstWebApp
+    ===============================================================================
+    Notice: Available versions for ConfigurationOfMyFirstWebApp
+    ===============================================================================
+    1
+    1-baseline
+    bleedingEdge
+    last
+    stable
+
+Since we have only one version, all the above are equivalent references to the same version. Now we will load and install the stable version.
+
+    # ./pharo myfirstwebapp.image config http://www.smalltalkhub.com/mc/SvenVanCaekenberghe/MyFirstWebApp/main ConfigurationOfMyFirstWebApp --install=stable
+    ===============================================================================
+    Notice: Installing ConfigurationOfMyFirstWebApp stable
+    ===============================================================================
+
+After loading all necessary code, the config option will also save our image so that it now permanently includes our code. Although we could try to write a (long) one line expression to start our web app in a server and pass it to the eval option, it is better to write a small script. Create a file called 'run.st' with the following contents
+
+    ZnServer defaultOn: 8080.
+    ZnServer default logToStandardOutput.
+    ZnServer default delegate 
+      map: 'image' to: MyFirstWebApp new;
+      map: 'redirect-to-image' to: [ :request | ZnResponse redirect: 'image' ];
+      map: '/' to: 'redirect-to-image'. 
+    ZnServer default start. 
+
+We added a little twist here: we changed the default root (/) handler to redirect to our new /image web app. Test the startup script like this
+
+    # ./pharo myfirstwebapp.image run.st
+    2013-07-10 11:46:58 660707 I Starting ZnManagingMultiThreadedServer HTTP port 8080
+    2013-07-10 11:46:58 670019 D Initializing server socket
+    2013-07-10 11:47:12 909356 D Executing request/response loop
+    2013-07-10 11:47:12 909356 I Read a ZnRequest(GET /)
+    2013-07-10 11:47:12 909356 T GET / 302 16B 0ms
+    2013-07-10 11:47:12 909356 I Wrote a ZnResponse(302 Found text/plain;charset=utf-8 16B)
+    2013-07-10 11:47:12 909356 I Read a ZnRequest(GET /image)
+    2013-07-10 11:47:12 909356 T GET /image 200 282B 0ms
+    2013-07-10 11:47:12 909356 I Wrote a ZnResponse(200 OK text/html;charset=utf-8 282B)
+    2013-07-10 11:47:12 909356 I Read a ZnRequest(GET /image?raw=true)
+    2013-07-10 11:47:12 909356 T GET /image?raw=true 200 18778B 82ms
+    2013-07-10 11:47:12 909356 I Wrote a ZnResponse(200 OK image/png 18778B)
+
+Surf to the correct IP address and port to test you application. Note that /welcome, /help and /image are still available too. Type ctrl-c to kill the server again. Now it is time to put the server in background, running for real.
+
+    # nohup ./pharo myfirstwebapp.image run.st &
 
 ## Conclusion
 
-## References
+Congratulations: you have now built and deployed your first web app with Pharo. Hopefully you are interested in learning more. From [the Pharo website](http://www.pharo.org) you should be able to find all the information you need. Don't forget about the [Pharo by Example](http://pharobyexample.org) book and the mailing lists.
 
 ## Listing
 
-Here is the full code listing of the web app, including the tests. A similar example is also included in Zinc HTTP Components itself, under the name ZnImageExampleDelegate[Tests].
+Here is the full code listing of the web app. You can also find the code, including the tests and the Metacello configuration, checked in to SmalltalkHub in my [MyFirstWebApp](http://www.smalltalkhub.com/#!/~SvenVanCaekenberghe/MyFirstWebApp) project. A similar example is also included in Zinc HTTP Components itself, under the name ZnImageExampleDelegate[Tests].
 
     Object subclass: #MyFirstWebApp
       instanceVariableNames: ''
@@ -593,66 +649,3 @@ Here is the full code listing of the web app, including the tests. A similar exa
     
     form
       ^ self formForImageEntity: self image
-
-
-    TestsCase subclass: #MyFirstWebAppTests
-      instanceVariableNames: ''
-      classVariableNames: ''
-      poolDictionaries: ''
-      category: 'MyFirstWebApp'
-
-    withServerDo: block
-      | server |
-      server := ZnServer on: 1700 + 10 atRandom.
-      [ 
-        server start.
-        self assert: server isRunning & server isListening.
-        server delegate: MyFirstWebApp new.
-        block cull: server
-      ] 
-        ensure: [ server stop ]
-
-    testMainPage
-      self withServerDo: [ :server |
-        | client |
-        client := ZnClient new.
-        client url: server localUrl; addPath: #image.
-        client get.
-        self assert: client isSuccess.
-        self assert: (client entity contentType matches: ZnMimeType textHtml).
-        self assert: (client contents includesSubstring: 'Image').
-        client close ]
-
-    testDefaultImage
-      self withServerDo: [ :server |
-        | client |
-        client := ZnClient new.
-        client url: server localUrl; addPath: #image; queryAt: #raw put: #true.
-        client get.
-        self assert: client isSuccess.
-        self assert: (client entity contentType matches: 'image/*' asZnMimeType).
-        self assert: client entity equals: server delegate image.
-        client close ]
-
-    image
-      ^ ZnClient new
-          beOneShot;
-          get: 'http://zn.stfx.eu/zn/Hot-Air-Balloon.gif';
-          entity
-
-    testUpload
-      self withServerDo: [ :server |
-        | image client |
-        image := self image.
-        client := ZnClient new.
-        client url: server localUrl; addPath: #image.
-        client addPart: (ZnMimePart fieldName: #file entity: image).
-        client post.
-        self assert: client isSuccess.
-        client resetEntity; queryAt: #raw put: #true.
-        client get.
-        self assert: client isSuccess.
-        self assert: client entity equals: image.
-        client close ]
-
-
