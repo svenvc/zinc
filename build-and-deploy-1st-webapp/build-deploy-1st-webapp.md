@@ -7,7 +7,7 @@
 
 There are lots of ways to get something on the Web today. However, it remains important that you understand the actual mechanics of building and deploying a web application. This guide explains how to build and deploy your first web application using [Pharo](http://www.pharo.org).
 
-Of course, there are an infinite number of ways to make a web app. Even in Pharo, there are multiple frameworks approaching this problem. Here, we'll be using the foundational framework called [Zinc HTTP Components](http://zn.stfx.eu). By doing so, we'll be touching the fundamentals of HTTP and web apps.
+Of course, there are an infinite number of ways to make a web app. Even in Pharo, there are multiple frameworks approaching this problem, most notably [Seaside](http://www.seaside.st), [AIDAweb](http://www.aidaweb.si) and [Iliad](http://www.iliadproject.org). Here, we'll be using the foundational framework called [Zinc HTTP Components](http://zn.stfx.eu). By doing so, we'll be touching the fundamentals of HTTP and web apps.
 
 Using nice objects, abstracting each concept in [HTTP](http://en.wikipedia.org/wiki/Http) and related open standards, the actual code will be easier than you might expect.
 
@@ -567,9 +567,111 @@ Surf to the correct IP address and port to test you application. Note that /welc
 
     # nohup ./pharo myfirstwebapp.image run.st &
 
+## One more step
+
+Did you like the example so far ? Would you like to take one more step ? Here is a little extension, as an exercise.
+
+Add an extra section at the bottom of the main page that shows a miniature version of the previous image. Initially, you can show an empty image. Here are a couple of hints. Read only as far as you need, try to figure it out yourself.
+
+### Hint 1
+
+You can scale a form object into another one using just one message taking a single argument. You can use the same classes that we used for parsing as a tool to generate PNG, JPEG or GIF images given a form.
+
+When you are done, save your code as a new version. Then update your configuration with a new, stable version. Finally, go to the server, update your image based on the configuration and restart the running vm+image.
+
+### Hint 2
+
+Change the #html method referring to a new variant, /image?previous=true, for the second image. Adjust #handleGetRequest: to look for that attribute.
+
+Add a helper method #pngImageEntityForForm: and a #previousImage accessor. It is easy to create an empty, blank form as default. Call a #updatePreviousImage at the right spot in #handlePostRequest: and implement the necessary functionality there.
+
+### Hint 3
+
+If you found it difficult to find the right methods, have a look at the following ones:
+
+- Form>>#scaledIntoFormOfSize:
+- Form class>>#extent:depth:
+- PNGReadWriter>>#nextPutImage:
+- ByteArray class>>#streamContents:
+- ZnByteArrayEntity class>>#with:type:
+
+### Solution, part 1, new methods
+
+Here are 3 new methods that are part of the solution.
+
+    pngImageEntityForForm: form      ^ ZnByteArrayEntity          with: (ByteArray streamContents: [ :out |
+                   (PNGReadWriter on: out) nextPutImage: form ])          type: ZnMimeType imagePng
+
+    previousImage
+      ^ previousImage ifNil: [           | emptyForm |          emptyForm:= Form extent: 128 @ 128 depth: 8.          previousImage := self pngImageEntityForForm: emptyForm ]
+
+    updatePreviousImage      | form scaled |      form := self form.      scaled := form scaledIntoFormOfSize: 128.      previousImage := self pngImageEntityForForm: scaled
+
+### Solution, part 2, changed methods
+
+Here are the changes to 3 existing methods for the complete solution.
+
+    html
+      ^ '<html><head><title>Image</title>
+      <body>
+      <h1>Image</h1>
+      <img src="image?raw=true"/>
+      <br/>
+      <form enctype="multipart/form-data" action="image" method="POST">
+       <h3>Change the image:</h3>
+       <input type="file" name="file"/>
+       <input type="submit" value= "Upload"/>
+      </form>
+      <h3>Previous Image</h3>      <img src="image?previous=true"/>
+      </body></html>'
+
+    handleGetRequest: request
+      (request uri queryAt: #raw ifAbsent: [ nil ])        ifNotNil: [ ^ ZnResponse ok: self image ].
+      (request uri queryAt: #previous ifAbsent: [ nil ])        ifNotNil: [ ^ ZnResponse ok: self previousImage ].
+      ^ ZnResponse ok: (ZnEntity html: self html)
+
+    handlePostRequest: request
+      | part newImage badRequest |
+      badRequest := [ ^ ZnResponse badRequest: request ].
+      (request hasEntity 
+          and: [ request contentType matches: ZnMimeType multiPartFormData ])
+        ifFalse: badRequest.
+      part := request entity 
+                partNamed: #file
+                ifNone: badRequest.
+      newImage := part entity.
+      (newImage notNil 
+          and: [ newImage contentType matches: 'image/*' asZnMimeType ])
+        ifFalse: badRequest.
+      [ self formForImageEntity: newImage ]
+        on: Error 
+        do: badRequest.
+      self updatePreviousImage.
+      image := newImage.
+      ^ ZnResponse redirect: #image
+
+### Solution, part 3, updated configuration
+
+To update our configuration, add 1 method and change 1 method.
+
+    version2: spec
+      <version: '2' imports: #('1-baseline')>
+      spec for: #common do: [
+        spec
+          blessing: #release;
+          package: 'MyFirstWebApp' with: 'MyFirstWebApp-SvenVanCaekenberghe.2' ]
+
+    stable: spec
+      <symbolicVersion: #'stable'>
+      spec for: #common version: '2'
+
+Of course, you will have to substitute your name for the concrete version.
+
 ## Conclusion
 
 Congratulations: you have now built and deployed your first web app with Pharo. Hopefully you are interested in learning more. From [the Pharo website](http://www.pharo.org) you should be able to find all the information you need. Don't forget about the [Pharo by Example](http://pharobyexample.org) book and the mailing lists.
+
+This guide was an introduction to writing web applications using Pharo, touching on the fundamentals of HTTP. Like we mentioned in the introduction, there are a couple of high level frameworks that offer more extensive support for writing web applications. The three most important ones are [Seaside](http://www.seaside.st), [AIDAweb](http://www.aidaweb.si) and [Iliad](http://www.iliadproject.org).
 
 ## Listing
 
