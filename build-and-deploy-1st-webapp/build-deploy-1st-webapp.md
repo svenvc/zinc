@@ -7,7 +7,7 @@
 
 There are lots of ways to get something on the Web today. However, it remains important that you understand the actual mechanics of building and deploying a web application. This guide explains how to build and deploy your first web application using [Pharo](http://www.pharo.org).
 
-Of course, there are an infinite number of ways to make a web app. Even in Pharo, there are multiple frameworks approaching this problem, most notably [Seaside](http://www.seaside.st), [AIDAweb](http://www.aidaweb.si) and [Iliad](http://www.iliadproject.org). Here, we'll be using the foundational framework called [Zinc HTTP Components](http://zn.stfx.eu). By doing so, we'll be touching the fundamentals of HTTP and web apps.
+Of course, there are an infinite number of techniques to make a web app. Even in Pharo, there are multiple frameworks approaching this problem, most notably [Seaside](http://www.seaside.st), [AIDAweb](http://www.aidaweb.si) and [Iliad](http://www.iliadproject.org). Here, we'll be using the foundational framework called [Zinc HTTP Components](http://zn.stfx.eu). By doing so, we'll be touching the fundamentals of HTTP and web apps.
 
 Using nice objects, abstracting each concept in [HTTP](http://en.wikipedia.org/wiki/Http) and related open standards, the actual code will be easier than you might expect.
 
@@ -599,13 +599,23 @@ If you found it difficult to find the right methods, have a look at the followin
 
 Here are 3 new methods that are part of the solution.
 
-    pngImageEntityForForm: form      ^ ZnByteArrayEntity          with: (ByteArray streamContents: [ :out |
-                   (PNGReadWriter on: out) nextPutImage: form ])          type: ZnMimeType imagePng
+    pngImageEntityForForm: form
+      ^ ZnByteArrayEntity
+          with: (ByteArray streamContents: [ :out |
+                   (PNGReadWriter on: out) nextPutImage: form ])
+          type: ZnMimeType imagePng
 
     previousImage
-      ^ previousImage ifNil: [           | emptyForm |          emptyForm:= Form extent: 128 @ 128 depth: 8.          previousImage := self pngImageEntityForForm: emptyForm ]
+      ^ previousImage ifNil: [ 
+          | emptyForm |
+          emptyForm:= Form extent: 128 @ 128 depth: 8.
+          previousImage := self pngImageEntityForForm: emptyForm ]
 
-    updatePreviousImage      | form scaled |      form := self form.      scaled := form scaledIntoFormOfSize: 128.      previousImage := self pngImageEntityForForm: scaled
+    updatePreviousImage
+      | form scaled |
+      form := self form.
+      scaled := form scaledIntoFormOfSize: 128.
+      previousImage := self pngImageEntityForForm: scaled
 
 ### Solution, part 2, changed methods
 
@@ -622,12 +632,15 @@ Here are the changes to 3 existing methods for the complete solution.
        <input type="file" name="file"/>
        <input type="submit" value= "Upload"/>
       </form>
-      <h3>Previous Image</h3>      <img src="image?previous=true"/>
+      <h3>Previous Image</h3>
+      <img src="image?previous=true"/>
       </body></html>'
 
     handleGetRequest: request
-      (request uri queryAt: #raw ifAbsent: [ nil ])        ifNotNil: [ ^ ZnResponse ok: self image ].
-      (request uri queryAt: #previous ifAbsent: [ nil ])        ifNotNil: [ ^ ZnResponse ok: self previousImage ].
+      (request uri queryAt: #raw ifAbsent: [ nil ])
+        ifNotNil: [ ^ ZnResponse ok: self image ].
+      (request uri queryAt: #previous ifAbsent: [ nil ])
+        ifNotNil: [ ^ ZnResponse ok: self previousImage ].
       ^ ZnResponse ok: (ZnEntity html: self html)
 
     handlePostRequest: request
