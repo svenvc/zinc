@@ -8,7 +8,11 @@ to deal with the HTTP networking protocol.
 <http://zn.stfx.eu>
 
 
-## Please read the [Zinc HTTP Components](https://github.com/svenvc/zinc/blob/master/zinc-http-components-paper.md) paper
+## Documentation
+
+The [Zinc HTTP Components](zinc-http-components-paper.md) paper.
+
+The [Building and deploying your first web app with Pharo](build-and-deploy-1st-webapp/build-and-deploy-1st-webapp.md) tutorial.
 
 
 *Sven Van Caekenberghe* 
