@@ -29,7 +29,7 @@ Go to [http://www.pharo.org](http://www.pharo.org) and download the whole self-c
 
 ![Pharo in action, running the code in the next section](pharo-in-action.png)
 
-Pharo is an incredible sophisticated and deep environment and toolset. The [Pharo by Example](http://pharobyexample.org) book is probably the best way to get started if all this is totally new to you. In what follows we assume you at least read the first chapter, 'A Quick Tour of Pharo'.
+Pharo is an incredible sophisticated and deep environment and toolset. The [Pharo by Example](http://pharobyexample.org) book is probably the best way to get started if all this is totally new to you. In what follows we assume you at least read the first chapter, 'A Quick Tour of Pharo'. A really short overview is the 2 page [Pharo flyer/cheatsheet](http://files.pharo.org/media/flyer-cheat-sheet.pdf).
 
 ## Running an HTTP server
 
@@ -203,7 +203,7 @@ Now we have to add an implementation of **#handlePostRequest:** to accept the up
     handlePostRequest: request
       | part newImage |
       part := request entity partNamed: #file.
-	    newImage := part entity.
+      newImage := part entity.
       image := newImage.
       ^ ZnResponse redirect: #image
 
@@ -485,7 +485,7 @@ For this guide, we will be using [Digital Ocean](http://www.digitalocean.com). T
 
 ![First part of the Create Droplet form](create-droplet-1.png)
 
-A server instance is called a Droplet. Click the 'Create Droplet ' button and fill in the form. Pick a hostname, select the smallest size, pick a region close to you. As operating system image, we'll be using a 32-bit Ubuntu Linux, Ubuntu version 13.04 x32. You can optionally use an SSH key pair to log in, just skip this option if you are uncomfortable with this. Finally click the 'Create Droplet' button.
+A server instance is called a Droplet. Click the 'Create Droplet ' button and fill in the form. Pick a hostname, select the smallest size, pick a region close to you. As operating system image, we'll be using a 32-bit Ubuntu Linux, version 13.04 x32. You can optionally use an SSH key pair to log in - it is a good idea, see [How to Use SSH Keys with DigitalOcean Droplets](https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-digitalocean-droplets) - just skip this option for now if you are uncomfortable with it, it is not necessary for this tutorial. Finally click the 'Create Droplet' button.
 
 ![Second part of the Create Droplet form](create-droplet-2.png)
 
