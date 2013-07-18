@@ -13,6 +13,26 @@ Using nice objects, abstracting each concept in [HTTP](http://en.wikipedia.org/w
 
 The dynamic, interactive nature of Pharo combined with its rich IDE and library will allow us to do things that are nearly impossible using other technology stacks. By chronologically following the development process, you will see the app growing from something trivial to the final result. Finally, we will save our source code in a repository and deploy for real in the cloud.
 
+### Table Of Contents
+
+- [The web app](#thewebapp)
+- [Downloading Pharo](#downloadingpharo)
+- [Running an HTTP server](#runninganhttpserver)
+- [Saying hello world](#sayinghelloworld)
+- [Serving an HTML page](#servinganhtmlpage)
+- [Serving an image](#servinganimage)
+- [Uploading a new image](#uploadinganewimage)
+- [Live debugging](#livedebugging)
+- [Image magic](#imagemagic)
+- [Adding tests](#addingtests)
+- [Saving code to a repository](#savingcodetoarepository)
+- [Defining a project configuration](#definingaprojectconfiguration)
+- [Running a real cloud server](#runningarealcloudserver)
+- [Deploying for production](#deployingforproduction)
+- [One more step](#onemorestep)
+- [Conclusion](#conclusion)
+- [Listing](#listing)
+
 Let's get started.
 
 ## The web app

@@ -50,6 +50,28 @@ figcaption {
 
 <p>The dynamic, interactive nature of Pharo combined with its rich IDE and library will allow us to do things that are nearly impossible using other technology stacks. By chronologically following the development process, you will see the app growing from something trivial to the final result. Finally, we will save our source code in a repository and deploy for real in the cloud.</p>
 
+<h3 id="tableofcontents">Table Of Contents</h3>
+
+<ul>
+<li><a href="#thewebapp">The web app</a></li>
+<li><a href="#downloadingpharo">Downloading Pharo</a></li>
+<li><a href="#runninganhttpserver">Running an HTTP server</a></li>
+<li><a href="#sayinghelloworld">Saying hello world</a></li>
+<li><a href="#servinganhtmlpage">Serving an HTML page</a></li>
+<li><a href="#servinganimage">Serving an image</a></li>
+<li><a href="#uploadinganewimage">Uploading a new image</a></li>
+<li><a href="#livedebugging">Live debugging</a></li>
+<li><a href="#imagemagic">Image magic</a></li>
+<li><a href="#addingtests">Adding tests</a></li>
+<li><a href="#savingcodetoarepository">Saving code to a repository</a></li>
+<li><a href="#definingaprojectconfiguration">Defining a project configuration</a></li>
+<li><a href="#runningarealcloudserver">Running a real cloud server</a></li>
+<li><a href="#deployingforproduction">Deploying for production</a></li>
+<li><a href="#onemorestep">One more step</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#listing">Listing</a></li>
+</ul>
+
 <p>Let&#8217;s get started.</p>
 
 <h2 id="thewebapp">The web app</h2>
@@ -74,7 +96,7 @@ figcaption {
 
 
 
-<p>Pharo is an incredible sophisticated and deep environment and toolset. The <a href="http://pharobyexample.org">Pharo by Example</a> book is probably the best way to get started if all this is totally new to you. In what follows we assume you at least read the first chapter, &#8216;A Quick Tour of Pharo&#8217;.</p>
+<p>Pharo is an incredible sophisticated and deep environment and toolset. The <a href="http://pharobyexample.org">Pharo by Example</a> book is probably the best way to get started if all this is totally new to you. In what follows we assume you at least read the first chapter, &#8216;A Quick Tour of Pharo&#8217;. A really short overview is the 2 page <a href="http://files.pharo.org/media/flyer-cheat-sheet.pdf">Pharo flyer/cheatsheet</a>.</p>
 
 <h2 id="runninganhttpserver">Running an HTTP server</h2>
 
@@ -277,7 +299,7 @@ handleGetRequest: request
 <pre><code>handlePostRequest: request
   | part newImage |
   part := request entity partNamed: #file.
-    newImage := part entity.
+  newImage := part entity.
   image := newImage.
   ^ ZnResponse redirect: #image
 </code></pre>
@@ -498,7 +520,7 @@ testUpload
 
 
 
-<p>On this page, select and copy the Monticello registration template (make sure to copy the whole contents, including the username and password parts). Now go back to Pharo and add a repository for your package (right-click on the package name, select Open... &gt; Add a repository).</p>
+<p>On this page, select and copy the Monticello registration template (make sure to copy the whole contents, including the username and password parts). Now go back to Pharo and add a repository for your package (right-click on the package name, select Open… &gt; Add a repository).</p>
 
 <figure>
 <img src="add-repo.png" alt="Adding a repository" />
@@ -626,7 +648,7 @@ stable: spec
 
 
 
-<p>A server instance is called a Droplet. Click the &#8216;Create Droplet &#8217; button and fill in the form. Pick a hostname, select the smallest size, pick a region close to you. As operating system image, we&#8217;ll be using a 32-bit Ubuntu Linux, Ubuntu version 13.04 x32. You can optionally use an SSH key pair to log in, just skip this option if you are uncomfortable with this. Finally click the &#8216;Create Droplet&#8217; button.</p>
+<p>A server instance is called a Droplet. Click the &#8216;Create Droplet &#8217; button and fill in the form. Pick a hostname, select the smallest size, pick a region close to you. As operating system image, we&#8217;ll be using a 32-bit Ubuntu Linux, version 13.04 x32. You can optionally use an SSH key pair to log in - it is a good idea, see <a href="https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-digitalocean-droplets">How to Use SSH Keys with DigitalOcean Droplets</a> - just skip this option for now if you are uncomfortable with it, it is not necessary for this tutorial. Finally click the &#8216;Create Droplet&#8217; button.</p>
 
 <figure>
 <img src="create-droplet-2.png" alt="Second part of the Create Droplet form" />
@@ -760,13 +782,23 @@ ZnServer default start.
 
 <p>Here are 3 new methods that are part of the solution.</p>
 
-<pre><code>pngImageEntityForForm: form  ^ ZnByteArrayEntity      with: (ByteArray streamContents: [ :out |
-               (PNGReadWriter on: out) nextPutImage: form ])      type: ZnMimeType imagePng
+<pre><code>pngImageEntityForForm: form
+  ^ ZnByteArrayEntity
+      with: (ByteArray streamContents: [ :out |
+               (PNGReadWriter on: out) nextPutImage: form ])
+      type: ZnMimeType imagePng
 
 previousImage
-  ^ previousImage ifNil: [       | emptyForm |      emptyForm:= Form extent: 128 @ 128 depth: 8.      previousImage := self pngImageEntityForForm: emptyForm ]
+  ^ previousImage ifNil: [ 
+      | emptyForm |
+      emptyForm:= Form extent: 128 @ 128 depth: 8.
+      previousImage := self pngImageEntityForForm: emptyForm ]
 
-updatePreviousImage  | form scaled |  form := self form.  scaled := form scaledIntoFormOfSize: 128.  previousImage := self pngImageEntityForForm: scaled
+updatePreviousImage
+  | form scaled |
+  form := self form.
+  scaled := form scaledIntoFormOfSize: 128.
+  previousImage := self pngImageEntityForForm: scaled
 </code></pre>
 
 <h3 id="solutionpart2changedmethods">Solution, part 2, changed methods</h3>
@@ -784,12 +816,15 @@ updatePreviousImage  | form scaled |  form := self form.  scaled := form scal
    &lt;input type=&quot;file&quot; name=&quot;file&quot;/&gt;
    &lt;input type=&quot;submit&quot; value= &quot;Upload&quot;/&gt;
   &lt;/form&gt;
-  &lt;h3&gt;Previous Image&lt;/h3&gt;  &lt;img src=&quot;image?previous=true&quot;/&gt;
+  &lt;h3&gt;Previous Image&lt;/h3&gt;
+  &lt;img src=&quot;image?previous=true&quot;/&gt;
   &lt;/body&gt;&lt;/html&gt;'
 
 handleGetRequest: request
-  (request uri queryAt: #raw ifAbsent: [ nil ])    ifNotNil: [ ^ ZnResponse ok: self image ].
-  (request uri queryAt: #previous ifAbsent: [ nil ])    ifNotNil: [ ^ ZnResponse ok: self previousImage ].
+  (request uri queryAt: #raw ifAbsent: [ nil ])
+    ifNotNil: [ ^ ZnResponse ok: self image ].
+  (request uri queryAt: #previous ifAbsent: [ nil ])
+    ifNotNil: [ ^ ZnResponse ok: self previousImage ].
   ^ ZnResponse ok: (ZnEntity html: self html)
 
 handlePostRequest: request
