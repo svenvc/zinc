@@ -19,12 +19,6 @@ baseline: spec
             versionString: #'stable';
             repository: 'http://mc.stfx.eu/Neo' ].
       spec
-        package: 'Zodiac-Core'
-        with: [ spec repository: 'http://mc.stfx.eu/Zodiac' ].
-      spec
-        package: 'Zodiac-Tests'
-        with: [ spec repository: 'http://mc.stfx.eu/Zodiac' ].
-      spec
         package: 'Zinc-Character-Encoding-Core';
         package: 'Zinc-Character-Encoding-Tests'
           with: [ spec requires: 'Zinc-Character-Encoding-Core' ];
@@ -38,8 +32,6 @@ baseline: spec
         package: 'Zinc-AWS'
           with: [ spec requires: #('Zinc-HTTP' 'XML Support') ];
         package: 'Zinc-REST' with: [ spec requires: #('Zinc-HTTP' 'Neo JSON') ];
-        package: 'Zinc-Zodiac'
-          with: [ spec requires: #('Zinc-HTTP' 'Zodiac-Core' 'Zodiac-Tests') ];
         package: 'Zinc-WebSocket-Core' with: [ spec requires: 'Zinc-HTTP' ];
         package: 'Zinc-WebSocket-Tests'
           with: [ spec requires: 'Zinc-WebSocket-Core' ];
@@ -74,7 +66,6 @@ baseline: spec
             #('Zinc-Character-Encoding-Core' 'Zinc-Character-Encoding-Tests');
         group: 'Resource-Meta'
           with: #('Zinc-Resource-Meta-Core' 'Zinc-Resource-Meta-Tests');
-        group: 'Zodiac' with: #('Zinc-Zodiac');
         group: 'AWS' with: #('Zinc-AWS');
         group: 'WebDAV' with: #('Zinc-WebDAV');
         group: 'WebSocket'
@@ -94,6 +85,19 @@ baseline: spec
         group: 'REST' with: #('Zinc-REST');
         group: 'Patch-HTTPSocket' with: #('Zinc-Patch-HTTPSocket');
         group: 'Seaside' with: #('Zinc-Seaside') ].
+  spec 
+    for: #pharo
+    do: [
+      spec
+        package: 'Zodiac-Core'
+        with: [ spec repository: 'http://mc.stfx.eu/Zodiac' ].
+      spec
+        package: 'Zodiac-Tests'
+        with: [ spec repository: 'http://mc.stfx.eu/Zodiac' ].
+      spec 
+        package: 'Zinc-Zodiac'
+        with: [ spec requires: #('Zinc-HTTP' 'Zodiac-Core' 'Zodiac-Tests') ].
+      spec group: 'Zodiac' with: #('Zinc-Zodiac')].
   spec
     for: #'pharo1.x'
     do: [ 
