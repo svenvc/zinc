@@ -6,7 +6,7 @@ multiPartFormDataEntity
 
 	request hasEntity
 		ifTrue: [
-			request entity contentType = ZnMimeType multiPartFormData
+			(request entity contentType matches: ZnMimeType multiPartFormData)
 				ifFalse: [ self error: 'An incompatible entity was already set for the request' ] ]
 		ifFalse: [
 			request entity: ZnMultiPartFormDataEntity new ].

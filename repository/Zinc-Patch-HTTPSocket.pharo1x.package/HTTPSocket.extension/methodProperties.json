@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"httpGet:" : "SvenVanCaekenberghe 9/14/2010 11:44",
+		"httpGet:accept:" : "SvenVanCaekenberghe 9/14/2010 11:44",
+		"httpGet:args:accept:" : "SvenVanCaekenberghe 9/14/2010 11:45",
+		"httpGet:args:accept:request:" : "SvenVanCaekenberghe 9/14/2010 11:45",
+		"httpGet:args:user:passwd:" : "SvenVanCaekenberghe 9/14/2010 11:45",
+		"httpGetDocument:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpGetDocument:accept:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpGetDocument:args:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpGetDocument:args:accept:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpGetDocument:args:accept:request:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpGif:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpJpeg:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpPng:" : "SvenVanCaekenberghe 9/14/2010 11:46",
+		"httpPost:args:accept:" : "SvenVanCaekenberghe 9/14/2010 11:47",
+		"httpPost:args:user:passwd:" : "SvenVanCaekenberghe 9/14/2010 11:47",
+		"httpPostDocument:args:" : "SvenVanCaekenberghe 9/14/2010 11:47",
+		"httpPostDocument:args:accept:" : "SvenVanCaekenberghe 9/14/2010 11:47",
+		"httpPostDocument:args:accept:request:" : "SvenVanCaekenberghe 9/14/2010 11:47",
+		"httpPostMultipart:args:accept:request:" : "SvenVanCaekenberghe 9/14/2010 11:47",
+		"httpPut:to:user:passwd:" : "SvenVanCaekenberghe 9/14/2010 11:47" },
+	"instance" : {
+		 } }

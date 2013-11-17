@@ -1,3 +1,3 @@
 accessing
 method
-	^ request method asLowercase asSymbol 
+	^ request method asLowercase asSymbol

@@ -1,16 +1,24 @@
 "Load and run tests to be performed by TravisCI"
-| gitPath |
+| gitCache gitPath |
 Transcript cr; show: 'travis---->travisCI.st'.
-gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
-"Load Tode ... "
+gitCache := 'git_cache'.
+gitPath := (Smalltalk at: #'FileDirectory' ifAbsent: [  ])
+  ifNil: [ ((Smalltalk at: #'FileSystem') workingDirectory / gitCache) pathString ]
+  ifNotNil: [:fileDirectoryClass | (fileDirectoryClass default directoryNamed: gitCache ) fullName].
+
+"Load Zinc... "
+[
 Metacello new
-	baseline: 'Zinc';
+	baseline: 'ZincHTTPComponents';
   repository: 'filetree://', gitPath, '/zinc/repository';
-  load: #('Tests' 'default').
+  load: #('Tests' 'Core').
+] on: Warning do: [:ex | 
+  Transcript cr; show: 'WARNING: ', ex description.
+  ex resume: true ].
 
-"Run the Tode tests"
+"Run the Zinc tests"
 TravisCIHarness
-  value: #( 'BaselineOfZinc' )
+  value: #( 'BaselineOfZincHTTPComponents' )
   value: 'TravisCISuccess.txt' 
   value: 'TravisCIFailure.txt'.

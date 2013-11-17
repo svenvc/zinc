@@ -1,3 +1,3 @@
 accessing
 isAbstract
-	^ self = ZnJSONRestCall 
+	^ self = ZnJSONRestCall

@@ -1,3 +1,3 @@
 convenience
-/ segment
-	^ self withPathSegment: segment
+/ object
+	^ object addedToZnUrl: self

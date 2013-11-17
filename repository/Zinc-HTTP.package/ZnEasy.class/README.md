@@ -5,7 +5,8 @@ My class side implements a number of convenience methods to do common HTTP clien
 	ZnEasy get: 'http://zn.stfx.eu/zn/small.html'.
 
 For most requests, I return a response object. 
-Some return an image Form.
+
+For a couple of message, I return an image Form.
 
 	ZnEasy getPng: 'http://www.pharo-project.org/images/pharo.png'.
 

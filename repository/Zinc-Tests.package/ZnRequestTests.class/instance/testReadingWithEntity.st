@@ -8,9 +8,9 @@ testReadingWithEntity
 		String crlf, 
 		'12345678'.
 	request := ZnRequest readFrom: input asByteArray readStream.
-	self assert: request method = #GET.
+	self assert: request method equals: #GET.
 	self assert: request hasHeaders.
-	self assert: request contentType = ZnMimeType textPlain.
-	self assert: request contentLength = 8.
+	self assert: (request contentType matches: ZnMimeType textPlain).
+	self assert: request contentLength equals: 8.
 	self assert: request hasHeaders.
-	self assert: request entity contents = '12345678'
+	self assert: request entity contents equals: '12345678'

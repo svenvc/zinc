@@ -1,4 +1,4 @@
 accessing-path
 clearPath
-	segments isEmpty 
-		ifFalse: [ segments removeAll ]
+	self hasPath
+		ifTrue: [ segments removeAll ]
