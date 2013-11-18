@@ -37,4 +37,3 @@ to deal with the HTTP networking protocol.
 	  repository: 'github://glassdb/zinc:gemstone2.4/repository';
 	  load: 'Tests'.
     ```
-
