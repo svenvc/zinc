@@ -1,4 +1,4 @@
 initialize-release
-initialize: n
-	super initialize: n.
+initialize
+	super initialize.
 	limit := self defaultLimit

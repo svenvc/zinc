@@ -17,7 +17,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 	(next = 0 or: [ bytesRead < next ]) 
 		ifTrue: [
 			"The whole input is ASCII"
-			self replace: stringBuffer from: offset to: offset + bytesRead - 1 with: byteBuffer startingAt: 1. 
+			self replace: stringBuffer from: offset to: offset + bytesRead - 1 with: byteBuffer asString startingAt: 1. 
 			^ bytesRead ].
 	[	next > last 
 			ifTrue: [
@@ -32,7 +32,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 		count <= bytesLeft
 			ifTrue: [ 
 				char := self nextFromStream: readStream.
-				(char isOctetCharacter not and: [ stringBuffer isWideString not ])
+				(char isOctetCharacter not and: [ stringBuffer isOctetString ])
 					ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
 				stringBuffer at: offset + read put: char ]
 			ifFalse: [ | tmpBuffer extraRead |

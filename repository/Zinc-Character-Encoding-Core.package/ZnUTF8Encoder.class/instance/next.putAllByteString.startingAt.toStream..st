@@ -11,7 +11,7 @@ next: count putAllByteString: string startingAt: offset toStream: stream
 	[	nextIndex > lastIndex 
 			ifTrue: [
 				self next: nextIndex - lastIndex putAllASCII: string startingAt: lastIndex toStream: stream ].
-		stream nextPutAll: (ByteUTF8Encoding at: (string byteAt: nextIndex) + 1).
+		stream nextPutAll: (ByteUTF8Encoding at: (string codePointAt: nextIndex) + 1).
 		lastIndex := nextIndex + 1.
 		nextIndex := self findFirstNonASCIIIn: string startingAt: lastIndex.
 		nextIndex = 0 or: [ offset + count <= nextIndex ] ] whileFalse.

@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"new:" : "JohanBrichau 12/08/2013 13:46" },
 	"instance" : {
 		"add:" : "KenTreis 01/19/2013 10:41",
 		"addAllMulti:" : "SvenVanCaekenberghe 1/7/2013 10:28",
@@ -8,7 +8,7 @@
 		"at:put:" : "KenTreis 01/19/2013 10:41",
 		"checkLimitForKey:" : "KenTreis 01/19/2013 10:42",
 		"defaultLimit" : "SvenVanCaekenberghe 12/8/2012 19:49",
-		"initialize:" : "SvenVanCaekenberghe 5/14/2013 12:50",
+		"initialize" : "JohanBrichau 12/08/2013 13:45",
 		"keysAndValuesDo:" : "SvenVanCaekenberghe 1/12/2011 11:10",
 		"limit" : "SvenVanCaekenberghe 5/14/2013 12:38",
 		"limit:" : "SvenVanCaekenberghe 1/2/2012 19:35",

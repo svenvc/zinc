@@ -1,8 +1,8 @@
 private
 replace: string from: start to: stop with: replacement startingAt: repStart
-	string isByteString
+	string isOctetString
 		ifTrue: [ 
-			string replaceFrom: start to: stop with: replacement startingAt: repStart ]
+			string replaceFrom: start to: stop with: replacement asString startingAt: repStart ]
 		ifFalse: [ 
 			| index repOff |
 			repOff := repStart - start.

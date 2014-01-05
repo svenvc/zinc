@@ -7,5 +7,5 @@ next: count putAllASCII: string startingAt: offset toStream: stream
 	
 	| bytes |
 	bytes := ByteArray new: count.
-	bytes replaceFrom: 1 to: count with: string startingAt: offset.
+	bytes replaceFrom: 1 to: count with: string asByteArray startingAt: offset.
 	stream nextPutAll: bytes

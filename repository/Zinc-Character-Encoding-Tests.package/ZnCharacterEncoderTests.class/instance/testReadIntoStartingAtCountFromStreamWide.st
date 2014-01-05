@@ -2,7 +2,7 @@ testing
 testReadIntoStartingAtCountFromStreamWide
 	| encoder |
 	encoder := ZnUTF8Encoder new.
-	{ 'abc', (WideString withAll: { 300 asCharacter. 400 asCharacter. 500 asCharacter}), 'xyz' } do: [ :each |
+	{ 'abc', (QuadByteString withAll: { 300 asCharacter. 400 asCharacter. 500 asCharacter}), 'xyz' } do: [ :each |
 			| bytes buffer notified |
 			bytes := encoder encodeString: each.
 			buffer := String new: each size.

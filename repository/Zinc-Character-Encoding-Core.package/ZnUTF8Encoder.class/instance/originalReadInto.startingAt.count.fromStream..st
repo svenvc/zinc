@@ -10,7 +10,7 @@ originalReadInto: string startingAt: offset count: requestedCount fromStream: st
 		| char |
 		stream atEnd ifTrue: [ ^ count ].
 		char := self nextFromStream: stream.
-		(char isOctetCharacter not and: [ stringBuffer isWideString not ])
+		(char isOctetCharacter not and: [ stringBuffer isOctetString ])
 			ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
 		stringBuffer at: offset + count put: char ].
 	^ requestedCount

@@ -11,7 +11,7 @@
 		"testNextPutAllStartingAtToStream" : "SvenVanCaekenberghe 5/24/2013 13:24",
 		"testNullEncoder" : "PaulDeBruicker 04/10/2011 10:45",
 		"testReadIntoStartingAtCountFromStream" : "SvenVanCaekenberghe 5/24/2013 16:22",
-		"testReadIntoStartingAtCountFromStreamWide" : "SvenVanCaekenberghe 6/11/2013 16:17",
+		"testReadIntoStartingAtCountFromStreamWide" : "JohanBrichau 11/18/2013 23:31",
 		"testUTF8ByteOrderMark" : "SvenVanCaekenberghe 6/4/2013 17:19",
 		"testUTF8Encoder" : "PaulDeBruicker 04/10/2011 10:44",
 		"testUTF8EncoderAuto" : "SvenVanCaekenberghe 11/30/2010 13:42",
