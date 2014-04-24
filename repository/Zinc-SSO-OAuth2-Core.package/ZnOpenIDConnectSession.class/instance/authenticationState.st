@@ -1,0 +1,4 @@
+accessing
+authenticationState
+
+	^authenticationState

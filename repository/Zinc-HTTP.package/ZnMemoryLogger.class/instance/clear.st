@@ -1,3 +1,3 @@
 initialize-release
 clear
-	logEvents ifNotNil: [ logEvents removeAll ]
+	logEvents ifNotNil: [ logEvents removeAll ]  

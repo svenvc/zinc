@@ -13,4 +13,4 @@ decodeBytes: bytes
 					position := stream position.
 					wideString := WideString from: stream originalContents.
 					stream on: wideString; setFrom: position + 1 to: position ].
-			stream nextPut: char ] ]
+			stream nextPut: char ] ] 

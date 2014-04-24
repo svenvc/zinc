@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	self
 		map: 'welcome' to: #welcome:;
@@ -12,4 +12,5 @@ initialize
 		map: 'unicode' to: #unicode:;
 		map: 'session' to: #sessionRequest:;
 		map: 'error' to: #errorResponse:;
+		map: 'form-test-1' to: #formTest1:;
 		map: '/' to: 'welcome'

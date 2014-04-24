@@ -4,10 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "SvenVanCaekenberghe 2/14/2014 14:06",
 	"instvars" : [
 		"characterEncoder",
-		"safeSet" ],
+		"safeSet",
+		"decodePlusAsSpace" ],
 	"name" : "ZnPercentEncoder",
 	"pools" : [
 		 ],

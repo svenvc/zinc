@@ -7,4 +7,4 @@ generateTestData: size
 			stream << 'Transfer test file of size '; print: size; << ' bytes.'; lf.
 			1 to: size do: [ :each |
 				stream nextPutAll: 'Line '; print: each; lf ] ] 
-		limitedTo: size
+		limitedTo: size 

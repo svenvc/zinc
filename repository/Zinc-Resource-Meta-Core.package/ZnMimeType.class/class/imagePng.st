@@ -1,3 +1,3 @@
 convenience
 imagePng
-	^ self predefinedInstanceAt: #imagePng
+	^ self main: 'image' sub: 'png'

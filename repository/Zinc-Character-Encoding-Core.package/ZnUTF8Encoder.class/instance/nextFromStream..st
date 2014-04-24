@@ -8,7 +8,7 @@ nextFromStream: stream
 			code := byte bitAnd: 2r00011111.
 			((next := stream next ifNil: [ self errorIncomplete ]) bitAnd: 2r11000000) == 2r10000000
 				ifTrue: [ code := (code bitShift: 6) + (next bitAnd: 2r00111111) ]
-				ifFalse: [ ^ self error ].
+				ifFalse: [ ^ self errorIllegalContinuationByte ].
 			code < 128 ifTrue: [ self errorOverlong ].
 			^ Character codePoint: code ].
 	(byte bitAnd: 2r11110000) == 2r11100000
@@ -17,7 +17,7 @@ nextFromStream: stream
 			2 timesRepeat: [ 
 				((next := stream next ifNil: [ self errorIncomplete ]) bitAnd: 2r11000000) == 2r10000000
 					ifTrue: [ code := (code bitShift: 6) + (next bitAnd: 2r00111111) ]
-					ifFalse: [ ^ self error ] ].
+					ifFalse: [ ^ self errorIllegalContinuationByte ] ].
 			code < 2048 ifTrue: [ self errorOverlong ].
 			code = 65279 "Unicode Byte Order Mark" ifTrue: [ 
 				stream atEnd ifTrue: [ self errorIncomplete ].
@@ -29,7 +29,7 @@ nextFromStream: stream
 			3 timesRepeat: [ 
 				((next := stream next ifNil: [ self errorIncomplete ]) bitAnd: 2r11000000) == 2r10000000
 					ifTrue: [ code := (code bitShift: 6) + (next bitAnd: 2r00111111) ]
-					ifFalse: [ ^ self error ] ].
+					ifFalse: [ ^ self errorIllegalContinuationByte ] ].
 			code < 65535 ifTrue: [ self errorOverlong ].
 			^ Character codePoint: code ].
-	self error
+	self errorIllegalLeadingByte

@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"ssoScopes" : "JanVanDeSandt 3/21/2014 13:07" },
+	"instance" : {
+		"authenticationState" : "JanVanDeSandt 3/21/2014 14:49",
+		"authenticationUrl" : "JanVanDeSandt 3/21/2014 14:59",
+		"authenticationUrlWithState:" : "JanVanDeSandt 3/21/2014 14:52",
+		"authorizationEndpoint" : "JanVanDeSandt 3/21/2014 13:10",
+		"extraAuthenticationParameterAt:" : "JanVanDeSandt 3/21/2014 14:35",
+		"extraAuthenticationParameterAt:put:" : "JanVanDeSandt 3/21/2014 14:36",
+		"extraAuthenticationParameters" : "JanVanDeSandt 3/21/2014 13:50",
+		"getUserData" : "JanVanDeSandt 3/21/2014 13:34",
+		"handleAuthenticationCallback:" : "JanVanDeSandt 3/21/2014 14:51",
+		"initializeWith:consumerData:" : "JanVanDeSandt 3/21/2014 13:22",
+		"issuer" : "JanVanDeSandt 3/21/2014 13:55",
+		"secureRandomString" : "JanVanDeSandt 3/21/2014 15:00",
+		"tokenEndpoint" : "JanVanDeSandt 3/21/2014 13:10",
+		"userinfoEndpoint" : "JanVanDeSandt 3/21/2014 13:34",
+		"validateAuthenticationState:" : "JanVanDeSandt 3/21/2014 14:51",
+		"validateIdToken:" : "JanVanDeSandt 3/21/2014 14:43" } }

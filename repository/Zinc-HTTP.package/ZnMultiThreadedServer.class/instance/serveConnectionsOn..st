@@ -11,4 +11,4 @@ serveConnectionsOn: listeningSocket
 		ensure: [ self log debug: 'Closing stream'. self closeSocketStream: stream ] ]
 			ifCurtailed: [ self log debug: 'Destroying socket'. socket destroy ] ]
 				forkAt: Processor lowIOPriority
-				named: self workerProcessName
+				named: self workerProcessName 

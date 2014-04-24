@@ -1,3 +1,5 @@
 conversions
 decodeBase64: string
-	^ string base64Decoded
+	| bytes |
+	bytes := ZnBase64Encoder new decode: string.
+	^ ZnNullEncoder new decodeBytes: bytes

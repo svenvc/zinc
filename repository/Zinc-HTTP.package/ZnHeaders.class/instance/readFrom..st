@@ -7,4 +7,4 @@ readFrom: stream
 		"Continuation header lines start with a space or tab"
 		[ stream atEnd not and: [ #[ 32 9 ] includes: stream peek ] ]
 			whileTrue: [ 
-				self extendHeaderAt: key from: reader nextLine ] ]
+				self extendHeaderAt: key from: reader nextLine ] ] 

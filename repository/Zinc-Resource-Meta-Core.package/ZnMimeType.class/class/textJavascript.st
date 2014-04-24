@@ -1,3 +1,3 @@
 convenience
 textJavascript
-	^ self predefinedInstanceAt: #textJavascript
+	^ self main: 'text' sub: 'javascript'

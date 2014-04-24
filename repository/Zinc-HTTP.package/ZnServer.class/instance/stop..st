@@ -4,4 +4,4 @@ stop: unregister
 	If unregister is true, unregister me from the list of managed instances.
 	Does nothing when I am not running"
 	
-	self subclassResponsibility
+	self subclassResponsibility 

@@ -12,4 +12,4 @@ testParsePathOnly
 	self assert: url hasQuery.
 	self assert: (url queryAt: 'size') = 'large'.
 	self assert: url hasFragment.
-	self assert: url fragment = 'center'
+	self assert: url fragment = 'center'  

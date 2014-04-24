@@ -15,4 +15,4 @@ testReadIntoStartingAtCountFromStreamWide
 					buffer := notification wideString.
 					notification resume ].
 			self assert: notified.
-			self assert: buffer equals: each ]
+			self assert: buffer equals: each ] 

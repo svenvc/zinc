@@ -6,9 +6,9 @@ parseQueryFrom: stream
 		string := stream upTo: $&.
 		index := string indexOf: $=.
 		index > 0
-			ifFalse: [ fields at: (self decodePercent: string) put: nil ]
+			ifFalse: [ fields at: (self decodePercentForQuery: string) put: nil ]
 			ifTrue: [
 				fields
-					at: (self decodePercent: (string copyFrom: 1 to: index - 1))
-					add: (self decodePercent: (string copyFrom: index + 1 to: string size)) ] ].
+					at: (self decodePercentForQuery: (string copyFrom: 1 to: index - 1))
+					add: (self decodePercentForQuery: (string copyFrom: index + 1 to: string size)) ] ].
 	^ fields

@@ -10,5 +10,5 @@ nextFromStream: stream
 				ifNotNil: [ :unicode | unicode ]
 				ifNil: [ 
 					strict
-						ifTrue: [ self error: 'Character outside encoder range' ]
+						ifTrue: [ self errorOutsideRange ]
 						ifFalse: [ Character value: byteValue ] ] ]

@@ -4,4 +4,4 @@ addPathSegment: pathSegment
 	
 	request url 
 		ifNil: [ request url: (ZnUrl new addPathSegment: pathSegment; yourself) ]
-		ifNotNil: [ request url addPathSegment: pathSegment ]
+		ifNotNil: [ request url addPathSegment: pathSegment ]  

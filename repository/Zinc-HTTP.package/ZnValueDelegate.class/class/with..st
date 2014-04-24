@@ -1,3 +1,5 @@
 instance creation
 with: object
-	^ (super basicNew) object: object; yourself
+	^ self new
+		object: object;
+		yourself

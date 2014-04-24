@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"handlerForOperation:with:on:" : "SvenVanCaekenberghe 11/6/2013 13:47",
+		"handlesOperation:with:on:" : "SvenVanCaekenberghe 11/6/2013 13:45",
+		"operation" : "SvenVanCaekenberghe 11/6/2013 13:26",
+		"performOperation:with:on:" : "SvenVanCaekenberghe 11/6/2013 13:47",
+		"schemes" : "SvenVanCaekenberghe 11/6/2013 13:27" },
+	"instance" : {
+		"argument" : "SvenVanCaekenberghe 11/6/2013 13:19",
+		"argument:" : "SvenVanCaekenberghe 11/6/2013 13:19",
+		"performOperation" : "SvenVanCaekenberghe 11/6/2013 13:28",
+		"printOn:" : "SvenVanCaekenberghe 11/6/2013 14:01",
+		"url" : "SvenVanCaekenberghe 11/6/2013 13:19",
+		"url:" : "SvenVanCaekenberghe 11/6/2013 13:27" } }

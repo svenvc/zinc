@@ -1,3 +1,3 @@
 convenience
 imageGif
-	^ self predefinedInstanceAt: #imageGif
+	^ self main: 'image' sub: 'gif'

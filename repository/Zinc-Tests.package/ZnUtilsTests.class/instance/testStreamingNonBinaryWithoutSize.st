@@ -8,4 +8,4 @@ testStreamingNonBinaryWithoutSize
 	out := WriteStream on: (String new: data size).
 	ZnUtils streamFrom: in to: out.
 	self assert: in atEnd.
-	self assert: out contents equals: data
+	self assert: out contents equals: data 

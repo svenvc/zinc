@@ -14,4 +14,4 @@ parseUnicodeOrgSpec: url
 					mapping
 						at: (hexReader value: tokens first)
 						put: (hexReader value: tokens second) ] ] ].
-	^ mapping
+	^ mapping 

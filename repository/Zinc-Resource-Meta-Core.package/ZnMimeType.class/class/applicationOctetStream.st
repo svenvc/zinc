@@ -1,3 +1,3 @@
 convenience
 applicationOctetStream
-	^ self predefinedInstanceAt: #applicationOctetStream
+	^ self main: 'application' sub: 'octet-stream'

@@ -5,7 +5,9 @@ testEchoLocalInterface
 		bindingAddress: NetNameResolver loopBackAddress.
 	[ 
 		server start.
-		self assert: server isRunning & server isListening.
+		self 
+			assert: server isRunning & server isListening
+			description: ('Failed to start server on port {1}. Is there one already?' format: { server port }).
 		response := ZnEasy get: (server localUrl addPathSegments: #('echo' 'foo'); yourself).
 		self assert: (response contentType = ZnMimeType textPlain).
 		self assert: (response statusLine code = 200).

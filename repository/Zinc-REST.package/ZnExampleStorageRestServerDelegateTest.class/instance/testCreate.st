@@ -25,4 +25,4 @@ testCreate
 	self assert: client isSuccess.
 	data keysAndValuesDo: [ :key :value |
 		(client contents at: key) = value ].
-	self assert: (client contents at: #'object-uri') equals: objectUri
+	self assert: (client contents at: #'object-uri') equals: objectUri 

@@ -4,4 +4,4 @@ httpGetDocument: url accept: mimeType
 	
 	self deprecated: 'Use ZnClient' on: ' 2012-10-03T18:02:49Z' in: 'Pharo 2.0'.
 	
-	^ ZnHTTPSocketFacade httpGetDocument: url accept: mimeType
+	^ ZnHTTPSocketFacade httpGetDocument: url accept: mimeType 

@@ -1,7 +1,7 @@
 versions
 version243: spec
 	<version: '2.4.3' imports: #('2.4-baseline')>
-	spec for: #common do: [ 
+	spec for: #pharo do: [ 
 		spec 
 			blessing: #release;
 			description: 'Update to latest package versions';
@@ -37,10 +37,17 @@ version243: spec
 	spec for: #'pharo2.x' do: [ 
 		spec 
 			package: 'Zinc-Patch-HTTPSocket' with: 'Zinc-Patch-HTTPSocket-MarcusDenker.4';
-			package: 'Zinc-FileSystem' with: 'Zinc-FileSystem-SvenVanCaekenberghe.9' ].
-	spec for: #gemstone do: [ 
-		spec blessing: #release.
-		spec
-			package: 'Zinc-GemstonePreliminary' with: 'Zinc-GemstonePreliminary-PaulDeBruicker.2';
-			package: 'Zinc-Gemstone' with: 'Zinc-Gemstone-PaulDeBruicker.14';
-			package: 'SocketStream' with: 'SocketStream-PaulDeBruicker.12' ]
+			package: 'Zinc-FileSystem' with: 'Zinc-FileSystem-SvenVanCaekenberghe.9' ]. 
+		
+		spec 
+		for: #'gs2.4.x' 
+		do: [ 
+			spec
+				baseline:'Zinc' with: [ spec  repository: 'github://glassdb/zinc:gemstone2.4/repository' ];
+				import: 'Zinc' ].
+	spec 
+		for: #'gs3.1.x' 
+		do: [ 
+			spec
+				baseline:'Zinc' with: [ spec  repository: 'github://glassdb/zinc:gemstone3.1/repository' ];
+				import: 'Zinc' ] 

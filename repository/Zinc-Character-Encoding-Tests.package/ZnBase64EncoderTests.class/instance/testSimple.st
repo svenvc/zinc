@@ -7,4 +7,4 @@ testSimple
 		equals: 'TWFu'.
 	self
 		assert: (encoder decode: 'TWFu')
-		equals: 'Man' asByteArray
+		equals: 'Man' asByteArray 

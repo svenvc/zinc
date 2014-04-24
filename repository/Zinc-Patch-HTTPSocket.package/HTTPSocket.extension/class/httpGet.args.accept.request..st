@@ -4,4 +4,4 @@ httpGet: url args: queryArguments accept: mimeType request: extraHeaders
 	
 	self deprecated: 'Use ZnClient' on: ' 2012-10-03T18:02:49Z' in: 'Pharo 2.0'.
 	
-	^ ZnHTTPSocketFacade httpGet: url args: queryArguments accept: mimeType request: extraHeaders
+	^ ZnHTTPSocketFacade httpGet: url args: queryArguments accept: mimeType request: extraHeaders 

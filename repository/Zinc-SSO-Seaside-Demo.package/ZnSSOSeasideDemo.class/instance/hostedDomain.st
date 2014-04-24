@@ -1,0 +1,3 @@
+accessing
+hostedDomain
+	^ hostedDomain

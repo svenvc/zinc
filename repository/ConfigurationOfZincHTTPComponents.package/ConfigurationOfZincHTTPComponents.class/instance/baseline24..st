@@ -1,12 +1,11 @@
 baselines
 baseline24: spec
 	<version: '2.4-baseline'>
-	spec for: #common do: [ 
+	spec for: #pharo do: [ 
 		spec
 			blessing: #baseline;
 			description: 'Baseline for Zinc HTTP Components, a framework to deal with the HTTP networking';
-			author: 'SvenVanCaekenberghe';
-			repository: 'http://mc.stfx.eu/ZincHTTPComponents'.
+			author: 'SvenVanCaekenberghe'.
 		spec project: 'XML Support' with: [
 			spec
 				className: 'ConfigurationOfXMLSupport';
@@ -61,6 +60,7 @@ baseline24: spec
 			group: 'REST' with: #('Zinc-REST');
 			group: 'Patch-HTTPSocket' with: #('Zinc-Patch-HTTPSocket');
 			group: 'Seaside' with: #('Zinc-Seaside') ].
+		spec for: #squeakCommon do:[spec repository: 'http://mc.stfx.eu/ZincHTTPComponents'].
 	spec for: #'pharo1.x' do: [ 
 		spec
 			package: 'Zinc-FileSystem-Legacy';
@@ -70,12 +70,3 @@ baseline24: spec
 		spec
 			package: 'Zinc-FileSystem';
 			package: 'Zinc-HTTP' with: [ spec requires: 'Zinc-FileSystem' ] ].
-	spec for: #gemstone do: [ 
-		spec
-			repository: 'http://seaside.gemstone.com/ss/ZincHTTPComponents';
-			package: 'Zinc-HTTP' with: [ spec includes: #('Zinc-Gemstone') ];
-			package: 'SocketStream' with: [ spec repository: 'http://seaside.gemstone.com/ss/PharoCompat' ];
-			package: 'Zinc-GemstonePreliminary' with: [ spec requires: #('SocketStream') ];
-			package: 'Zinc-HTTP' with: [ spec requires: #('Zinc-GemstonePreliminary') ];
-			package: 'Zinc-Gemstone' with: [ spec requires: #('Zinc-HTTP') ];
-			package: 'Zinc-Tests' with: [ spec requires: 'Zinc-Gemstone' ] ]

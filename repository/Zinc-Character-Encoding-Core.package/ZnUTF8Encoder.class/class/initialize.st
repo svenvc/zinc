@@ -15,4 +15,4 @@ initialize
 				ByteASCIISet at: each + 1 put: 0 ]
 			ifFalse: [  
 				ByteASCIISet at: each + 1 put: 1.
-				ByteUTF8Encoding at: each + 1 put: bytes ] ]
+				ByteUTF8Encoding at: each + 1 put: bytes ] ] 

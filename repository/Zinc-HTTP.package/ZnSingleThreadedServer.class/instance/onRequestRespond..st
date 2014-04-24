@@ -4,4 +4,4 @@ onRequestRespond: block
 	On any incoming request, block will be executed with the request 
 	as argument to produce a valid response."
 	
-	self delegate: (ZnValueDelegate with: block)
+	self delegate: (ZnValueDelegate with: block)  

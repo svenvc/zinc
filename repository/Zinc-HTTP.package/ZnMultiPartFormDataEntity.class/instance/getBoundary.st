@@ -4,4 +4,4 @@ getBoundary
 	This should really be there, set externally or internally.
 	See #initialize and #mimeTypeWithBoundary"
 	
-	^ (self contentType parameterAt: 'boundary') withoutQuoting
+	^ (self contentType parameterAt: 'boundary') withoutQuoting 

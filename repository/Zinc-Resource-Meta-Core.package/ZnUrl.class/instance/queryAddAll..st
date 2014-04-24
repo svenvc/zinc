@@ -1,6 +1,7 @@
 accessing-query
 queryAddAll: keyedCollection
-	"Note that we use #addAllMulti:"
+	"Add all key/value pairs in keyedCollection as query parameters to the receiver.
+	Note that we use #addAllMulti:"
 
 	keyedCollection isEmpty
 		ifFalse: [ 

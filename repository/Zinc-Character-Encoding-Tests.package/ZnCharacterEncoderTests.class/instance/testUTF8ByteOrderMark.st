@@ -8,4 +8,4 @@ testUTF8ByteOrderMark
 	string := 'élève en Français'.
 	bytes := encoder encodeString: string.
 	self assert: (encoder decodeBytes: bom, bytes) equals: string.
-	self should: [ encoder decodeBytes: bom ] raise: ZnInvalidUTF8
+	self should: [ encoder decodeBytes: bom ] raise: ZnInvalidUTF8 

@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"handlesEncoding:" : "SvenVanCaekenberghe 11/8/2013 11:02",
+		"newForEncoding:" : "SvenVanCaekenberghe 11/8/2013 14:43" },
+	"instance" : {
+		"back16BitWordOnStream:" : "SvenVanCaekenberghe 2/24/2014 16:01",
+		"backOnStream:" : "SvenVanCaekenberghe 2/24/2014 16:02",
+		"beBigEndian" : "SvenVanCaekenberghe 11/8/2013 13:32",
+		"beLittleEndian" : "SvenVanCaekenberghe 11/8/2013 13:32",
+		"byteOrderMark" : "SvenVanCaekenberghe 11/8/2013 15:47",
+		"encodeStringWithByteOrderMark:" : "SvenVanCaekenberghe 11/8/2013 16:16",
+		"encodedByteCountFor:" : "SvenVanCaekenberghe 11/8/2013 11:08",
+		"errorIncomplete" : "SvenVanCaekenberghe 11/8/2013 11:40",
+		"initialize" : "SvenVanCaekenberghe 11/8/2013 13:27",
+		"isBigEndian" : "SvenVanCaekenberghe 11/8/2013 13:08",
+		"isLittleEndian" : "SvenVanCaekenberghe 11/8/2013 13:07",
+		"maximumUTF16Code" : "SvenVanCaekenberghe 11/8/2013 11:09",
+		"nextFromStream:" : "SvenVanCaekenberghe 11/8/2013 15:14",
+		"nextPut:toStream:" : "SvenVanCaekenberghe 11/8/2013 14:59",
+		"nextPutByteOrderMarkToStream:" : "SvenVanCaekenberghe 11/8/2013 13:56",
+		"printOn:" : "SvenVanCaekenberghe 11/8/2013 14:57",
+		"processByteOrderMark:" : "SvenVanCaekenberghe 11/8/2013 15:55",
+		"read16BitWordFromStream:" : "SvenVanCaekenberghe 11/8/2013 13:40",
+		"swapEndianness" : "SvenVanCaekenberghe 11/8/2013 14:05",
+		"write16BitWord:toStream:" : "SvenVanCaekenberghe 11/8/2013 13:33" } }

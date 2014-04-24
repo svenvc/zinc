@@ -1,3 +1,3 @@
 accessing
 isAbstract
-	^ self = ZnAutoMatchedRestCall
+	^ self = ZnAutoMatchedRestCall 

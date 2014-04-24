@@ -13,8 +13,7 @@ responseForFile: filename fromRequest: aRequest
 		ifTrue: [ 
 			mimeType := ZnMimeType forFilenameExtension: file extension.
 			fileStream := file readStream.
-			mimeType isBinary
-				ifTrue: [ fileStream binary ].
+			fileStream binary.
 			(entity := ZnStreamingEntity type: mimeType length: size) 
 				stream: fileStream.
 			(response := ZnResponse ok: entity) 

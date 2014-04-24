@@ -3,6 +3,7 @@ testGetPharoVersion
 	| client lastBuildVersion version |
 	self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
+	self runningOnWindowsInriaCI ifTrue: [ ^ self ].
 	lastBuildVersion := (client := ZnClient new)
 		beOneShot;
 		get: 'https://ci.inria.fr/pharo/job/Pharo-2.0/lastSuccessfulBuild/api/xml?xpath=/*/description'.

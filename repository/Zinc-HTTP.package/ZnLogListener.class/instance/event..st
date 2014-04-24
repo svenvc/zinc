@@ -1,3 +1,3 @@
 accessing
 event: logEvent
-	self subclassResponsibility
+	self subclassResponsibility 

@@ -5,4 +5,4 @@ testReading
 	requestLine := ZnRequestLine readFrom: string readStream.
 	self assert: requestLine method = #GET.
 	self assert: requestLine uriPathQueryFragment = '/foo/bar/xyz.txt'.
-	self assert: requestLine version = ZnConstants defaultHTTPVersion
+	self assert: requestLine version = ZnConstants defaultHTTPVersion 

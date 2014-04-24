@@ -6,3 +6,4 @@ request: url
 	self at: 'Host' put: url authority.
 	(ZnNetworkingUtils proxyAuthorizationHeaderValueToUrl: url)
 		ifNotNil: [ :value | self at: 'Proxy-Authorization' put: value ].    
+  

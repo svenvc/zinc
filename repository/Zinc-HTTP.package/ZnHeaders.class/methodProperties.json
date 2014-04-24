@@ -8,7 +8,7 @@
 		"withAll:" : "SvenVanCaekenberghe 9/13/2010 21:45" },
 	"instance" : {
 		"=" : "SvenVanCaekenberghe 5/22/2013 10:34",
-		"acceptEntityDescription:" : "SvenVanCaekenberghe 5/20/2013 14:12",
+		"acceptEntityDescription:" : "SvenVanCaekenberghe 8/29/2013 14:22",
 		"addAll:" : "SvenVanCaekenberghe 1/7/2013 12:20",
 		"at:" : "SvenVanCaekenberghe 9/10/2010 20:25",
 		"at:add:" : "SvenVanCaekenberghe 1/2/2012 17:27",
@@ -19,7 +19,9 @@
 		"clearContentLength" : "SvenVanCaekenberghe 5/20/2013 12:59",
 		"clearContentType" : "SvenVanCaekenberghe 5/20/2013 12:59",
 		"contentLength" : "SvenVanCaekenberghe 9/20/2011 13:48",
+		"contentLength:" : "SvenVanCaekenberghe 8/29/2013 14:21",
 		"contentType" : "SvenVanCaekenberghe 9/10/2010 20:27",
+		"contentType:" : "SvenVanCaekenberghe 8/29/2013 14:21",
 		"extendHeaderAt:from:" : "SvenVanCaekenberghe 6/11/2013 10:03",
 		"hasContentLength" : "SvenVanCaekenberghe 9/21/2010 12:12",
 		"hasContentType" : "SvenVanCaekenberghe 9/21/2010 12:11",

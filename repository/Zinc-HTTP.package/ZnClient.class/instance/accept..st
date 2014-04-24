@@ -4,4 +4,4 @@ accept: mimeTypeObject
 
 	| mimeType |
 	mimeType := mimeTypeObject asZnMimeType.
-	request setAccept: mimeType
+	self request setAccept: mimeType

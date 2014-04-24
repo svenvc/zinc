@@ -8,7 +8,7 @@ nextPut: character toStream: stream
 		^ stream 
 			nextPut: (2r11000000 + (code bitShift: -6)); 
 			nextPut: (2r10000000 + (code bitAnd: 2r111111)) ].
-	code < 65535 ifTrue: [ 
+	code < 65536 ifTrue: [ 
 		^ stream 
 			nextPut: (2r11100000 + (code bitShift: -12));
 			nextPut: (2r10000000 + ((code bitShift: -6) bitAnd: 2r111111)); 

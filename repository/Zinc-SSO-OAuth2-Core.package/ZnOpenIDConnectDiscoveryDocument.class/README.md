@@ -1,0 +1,1 @@
+A ZnOpenIDConnectDiscoveryDocument is an object that contains discovered information about an OpenID Connect Provider.

@@ -4,4 +4,4 @@ proxyAuthorizationHeaderValueToUrl: url
 	
 	^ (self isProxyAuthorizationRequired and: [ self shouldProxyUrl: url ])
 		ifTrue: [ 'Basic ', (ZnUtils encodeBase64: (self httpProxyUser, ':', self httpProxyPassword)) ] 
-		ifFalse: [ nil ]
+		ifFalse: [ nil ]  

@@ -1,7 +1,7 @@
 accessing
 jsonRequest
-	^ self request contentType = ZnMimeType applicationJson
+	^ (self request contentType matches: ZnMimeType applicationJson)
 		ifTrue: [
-			NeoJSONReader fromString: self request contents ]
+			self fromJson: self request contents ]
 		ifFalse: [
 			self error: 'JSON content expected' ]

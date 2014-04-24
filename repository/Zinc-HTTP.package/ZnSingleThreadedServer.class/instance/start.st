@@ -8,4 +8,4 @@ start
 	self class default = self ifTrue: [ self register ].
 	process := [ [ self listenLoop ] repeat ]
 		forkAt: Processor highIOPriority 
-		named: self serverProcessName
+		named: self serverProcessName 

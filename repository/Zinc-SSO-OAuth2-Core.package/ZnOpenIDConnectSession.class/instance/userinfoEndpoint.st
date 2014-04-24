@@ -1,0 +1,4 @@
+accessing
+userinfoEndpoint
+
+	^discoveryDocument userinfoEndpoint

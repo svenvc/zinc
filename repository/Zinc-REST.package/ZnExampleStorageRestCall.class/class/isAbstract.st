@@ -1,3 +1,3 @@
 accessing
 isAbstract
-	^ self = ZnExampleStorageRestCall
+	^ self = ZnExampleStorageRestCall 

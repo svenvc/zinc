@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
+		"hostedDomain",
 		"responsePanel" ],
 	"name" : "ZnSSOSeasideDemo",
 	"pools" : [

@@ -1,13 +1,18 @@
 {
 	"class" : {
-		 },
+		"rfc3986UnreservedCharacters" : "SvenVanCaekenberghe 10/23/2013 18:55" },
 	"instance" : {
 		"characterEncoder" : "SvenVanCaekenberghe 12/15/2012 13:53",
 		"characterEncoder:" : "SvenVanCaekenberghe 12/15/2012 13:53",
-		"decode:" : "SvenVanCaekenberghe 12/15/2012 13:56",
-		"decode:to:" : "SvenVanCaekenberghe 12/16/2012 16:41",
-		"encode:" : "SvenVanCaekenberghe 12/15/2012 13:56",
-		"encode:to:" : "SvenVanCaekenberghe 3/1/2013 21:25",
-		"readHexFrom:" : "SvenVanCaekenberghe 12/16/2012 15:12",
-		"safeSet" : "SvenVanCaekenberghe 12/15/2012 14:02",
-		"safeSet:" : "SvenVanCaekenberghe 12/15/2012 13:58" } }
+		"decode:" : "SvenVanCaekenberghe 2/14/2014 14:23",
+		"decode:to:" : "SvenVanCaekenberghe 2/14/2014 14:20",
+		"decodePlusAsSpace" : "SvenVanCaekenberghe 2/14/2014 14:08",
+		"decodePlusAsSpace:" : "SvenVanCaekenberghe 2/14/2014 14:10",
+		"encode:" : "SvenVanCaekenberghe 2/14/2014 14:24",
+		"encode:to:" : "SvenVanCaekenberghe 10/23/2013 18:57",
+		"errorAsciiCharacterExpected" : "SvenVanCaekenberghe 2/14/2014 14:24",
+		"errorHexDigitExpected" : "SvenVanCaekenberghe 2/14/2014 14:12",
+		"readHexFrom:" : "SvenVanCaekenberghe 2/14/2014 14:12",
+		"safeSet" : "SvenVanCaekenberghe 10/23/2013 18:55",
+		"safeSet:" : "SvenVanCaekenberghe 12/15/2012 13:58",
+		"writeHex:to:" : "SvenVanCaekenberghe 10/23/2013 18:56" } }

@@ -27,4 +27,4 @@ parseHttpDate: string
 	hour := Integer readFrom: (tokens at: map fourth) ifFail: [ 0 ].
 	minute := Integer readFrom: (tokens at: map fifth) ifFail: [ 0 ].
 	second := Integer readFrom: (tokens at: map sixth) ifFail: [ 0 ].
-	^ TimeStamp year: year month: month day: day hour: hour minute: minute second: second offset: Duration zero
+	^ DateAndTime year: year month: month day: day hour: hour minute: minute second: second offset: Duration zero

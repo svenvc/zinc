@@ -1,4 +1,4 @@
 public
 handleAuthenticationCallback: aParameterDictionary 
 
-	self subclassResponsibility
+	self subclassResponsibility 

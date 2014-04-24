@@ -5,7 +5,7 @@
 	"classvars" : [
 		"ByteASCIISet",
 		"ByteUTF8Encoding" ],
-	"commentStamp" : "SvenVanCaekenberghe 12/6/2010 12:55",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
 	"name" : "ZnUTF8Encoder",

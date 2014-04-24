@@ -18,7 +18,7 @@ Note that for text types we default to UTF-8 encoding.
 
 Examples:
 
-	ZnMimeType textPlain = 'text/plain' asZnMimeType.
+	ZnMimeType textPlain = 'text/plain;charset=utf-8' asZnMimeType.
 	ZnMimeType textPlain charSet.
 	ZnMimeType textHtml matches: ZnMimeType text.
 	ZnMimeType default matches: ZnMimeType any.

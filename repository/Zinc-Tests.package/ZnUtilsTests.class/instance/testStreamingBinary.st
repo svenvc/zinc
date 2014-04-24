@@ -8,4 +8,4 @@ testStreamingBinary
 	out := WriteStream on: (ByteArray new: data size).
 	ZnUtils streamFrom: in to: out size: data size.
 	self assert: in atEnd.
-	self assert: out contents = data
+	self assert: out contents = data 

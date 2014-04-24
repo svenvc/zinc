@@ -4,5 +4,5 @@ created: uri
 		statusLine: ZnStatusLine created;
 		headers: ZnHeaders defaultResponseHeaders;
 		setLocation: uri;
-		entity: (ZnEntity with: (NeoJSONWriter toString: uri) , String crlf type: ZnMimeType applicationJson);
+		entity: (ZnEntity with: (self toJson: uri), String crlf type: ZnMimeType applicationJson);
 		yourself

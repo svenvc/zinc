@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"augmentResponse:forRequest:" : "SvenVanCaekenberghe 5/19/2013 20:07",
+		"augmentResponse:forRequest:" : "SvenVanCaekenberghe 11/7/2013 10:52",
 		"closeSocketStream:" : "SvenVanCaekenberghe 9/5/2011 14:15",
 		"exceptionSet:" : "SvenVanCaekenberghe 10/4/2011 09:46",
 		"executeOneRequestResponseOn:" : "SvenVanCaekenberghe 5/19/2013 20:06",

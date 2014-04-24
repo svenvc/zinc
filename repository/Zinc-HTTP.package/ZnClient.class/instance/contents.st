@@ -12,4 +12,4 @@ contents
 				self streaming
 					ifTrue: [  response entity stream ]
 					ifFalse: [ response contents ] ]
-			ifNotNil: [ :reader | reader value: response entity ] ]
+			ifNotNil: [ :reader | reader value: response entity ] ]  

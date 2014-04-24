@@ -8,7 +8,7 @@ I function as a delegate for ZnServer.
 ZnServer startDefaultOn: 1701.
 ZnServer default delegate: ((ZnStaticFileServerDelegate new) 
 									prefixFromString: 'apple/macosx'; 
-									directory: '/Library/WebServer/Documents' asDirectory; 
+									directory: '/Library/WebServer/Documents' asFileReference; 
 									yourself).
 
 Part of Zinc HTTP Components.

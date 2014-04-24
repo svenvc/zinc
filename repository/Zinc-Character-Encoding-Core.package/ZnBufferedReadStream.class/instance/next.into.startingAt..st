@@ -10,4 +10,4 @@ next: requestedCount into: collection startingAt: offset
 		count: requestedCount.
 	^ read = requestedCount 
 		ifTrue: [ collection ]
-		ifFalse: [ collection copyFrom: 1 to: offset + read - 1 ]
+		ifFalse: [ collection copyFrom: 1 to: offset + read - 1 ]     

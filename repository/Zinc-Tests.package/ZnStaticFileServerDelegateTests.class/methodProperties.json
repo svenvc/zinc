@@ -2,11 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"port" : "SvenVanCaekenberghe 5/14/2012 09:52",
-		"setUp" : "SvenVanCaekenberghe 7/3/2012 00:35",
+		"largeHtml" : "SvenVanCaekenberghe 7/15/2013 14:12",
+		"setUp" : "SvenVanCaekenberghe 7/15/2013 14:16",
 		"smallHtml" : "SvenVanCaekenberghe 5/14/2012 10:08",
-		"tearDown" : "SvenVanCaekenberghe 7/3/2012 00:35",
-		"testBasicGet" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testBasicHead" : "SvenVanCaekenberghe 7/3/2012 00:40",
+		"tearDown" : "SvenVanCaekenberghe 7/15/2013 14:17",
+		"testBasicGet" : "SvenVanCaekenberghe 3/2/2014 19:07",
+		"testBasicGetLarge" : "SvenVanCaekenberghe 3/2/2014 19:07",
+		"testBasicGetWide" : "SvenVanCaekenberghe 3/2/2014 19:07",
+		"testBasicHead" : "SvenVanCaekenberghe 3/2/2014 19:08",
 		"testIfModifiedSinceNotModified" : "SvenVanCaekenberghe 8/3/2012 22:47",
-		"withServerDo:" : "SvenVanCaekenberghe 7/3/2012 00:38" } }
+		"wideHtml" : "SvenVanCaekenberghe 7/15/2013 14:16",
+		"withServerDo:" : "SvenVanCaekenberghe 1/22/2014 10:16" } }

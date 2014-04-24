@@ -5,4 +5,4 @@ open
 	fileStream := ZnFileSystemUtils fileStreamFor: self pathName.
 	fileStream setToEnd.
 	self stream: fileStream.
-	self event: (ZnLogEvent info: 'Opening ', self printString)
+	self event: (ZnLogEvent info: 'Opening ', self printString) 

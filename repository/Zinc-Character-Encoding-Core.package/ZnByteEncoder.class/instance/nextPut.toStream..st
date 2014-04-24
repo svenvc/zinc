@@ -9,5 +9,5 @@ nextPut: character toStream: stream
 			| byte |
 			byte := unicodeToByte at: code ifAbsent: [ nil ].
 			(byte isNil and: [ strict or: [ code > 255 ] ])
-				ifTrue: [ self error: 'Character code outside encoder range' ].
+				ifTrue: [ self errorOutsideRange ].
 			stream nextPut: (byte ifNil: [ code ]) ]

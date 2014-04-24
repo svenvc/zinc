@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize 
 	lock := Monitor new.
-	self enabled: true
+	self enabled: true  

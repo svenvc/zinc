@@ -5,7 +5,7 @@ All characters that are not part of a safe set are encoded using a percent (%) f
 
 My #encode: and #decode: messages work from String to String.
 
-My decoder additionally will accept + as an encoding for a space.
+My decoder will accept + as an encoding for a space by default.
 
 See also http://en.wikipedia.org/wiki/Percent-encoding
 

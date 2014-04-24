@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	atEnd := false.
 	chunkCount := 0.

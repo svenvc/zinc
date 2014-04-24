@@ -15,6 +15,7 @@ testGetAfterPost
 								ifFalse: [ ZnResponse badRequest: request ] ]
 		 				ifFalse: [ ZnResponse notFound: request uri ] ] ].
 		(client := ZnClient new) 
+			autoResetEntityMethods: #(HEAD DELETE GET);
 			url: server localUrl;
 			url: 'one';
 			entity: (ZnEntity text: 'One two three');

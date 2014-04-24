@@ -1,3 +1,3 @@
 testing
 isComplete 
-	^ super isComplete & nonce notNil
+	^ super isComplete & nonce notNil 

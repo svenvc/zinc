@@ -7,12 +7,12 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 	
 	| stringBuffer byteBuffer bytesRead read last next count readStream bytesLeft char |
 	stringBuffer := string.
+	read := 0.
 	"Start by reading the minimum amount of bytes for decoding requestedCount characters"
 	byteBuffer := ByteArray new: requestedCount.
 	bytesRead := stream readInto: byteBuffer startingAt: 1 count: requestedCount.
 	readStream := byteBuffer readStream.
-	read := 0.
-	last := offset.
+	last := 1.
 	next := self findFirstNonASCIIIn: byteBuffer startingAt: last.
 	(next = 0 or: [ bytesRead < next ]) 
 		ifTrue: [
@@ -31,19 +31,16 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 		bytesLeft := bytesRead - next + 1.
 		count <= bytesLeft
 			ifTrue: [ 
-				char := self nextFromStream: readStream.
-				(char isOctetCharacter not and: [ stringBuffer isWideString not ])
-					ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
-				stringBuffer at: offset + read put: char ]
+				char := self nextFromStream: readStream ]
 			ifFalse: [ | tmpBuffer extraRead |
 				tmpBuffer := ByteArray new: count.
 				readStream readInto: tmpBuffer startingAt: 1 count: bytesLeft.
 				extraRead := stream readInto: tmpBuffer startingAt: bytesLeft + 1 count: count - bytesLeft.
-				extraRead = (count - bytesLeft) ifFalse: [ self error: 'incomplete utf-8 encoding' ].
-				char := self nextFromStream: tmpBuffer readStream.
-				(char isOctetCharacter not and: [ stringBuffer isWideString not ])
-					ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
-				stringBuffer at: offset + read put: char ].
+				extraRead = (count - bytesLeft) ifFalse: [ self errorIncomplete ].
+				char := self nextFromStream: tmpBuffer readStream ].
+		(char isOctetCharacter not and: [ stringBuffer isWideString not ])
+			ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
+		stringBuffer at: offset + read put: char.
 		last := next + count.
 		read := read + 1.
 		"Iterate"
@@ -56,5 +53,5 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 			self replace: stringBuffer from: offset + read to: offset + read + count - 1 with: byteBuffer startingAt: last.
 			read := read + count ].
 	"Try consuming enough input to reach requestedCount since we probably read too little"
-	count := 	requestedCount - read.
+	count := requestedCount - read.
 	^ read + (self originalReadInto: stringBuffer startingAt: offset + read count: count fromStream: stream)

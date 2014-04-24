@@ -1,0 +1,17 @@
+{
+	"category" : "Zinc-Server-Sent-Events",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"data",
+		"event",
+		"id",
+		"retry" ],
+	"name" : "ZnServerSentEvent",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

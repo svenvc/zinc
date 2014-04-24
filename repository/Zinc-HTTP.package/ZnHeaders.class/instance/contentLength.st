@@ -8,4 +8,4 @@ contentLength
 			value asSet size = 1
 				ifTrue: [ value := value first ]
 				ifFalse: [ self error: 'Multiple, different Content-Length headers are not allowed' ] ].
-	^ Integer readFrom: value ifFail: [ self error: 'Illegal HTTP Content Length' ]
+	^ Integer readFrom: value ifFail: [ self error: 'Illegal HTTP Content Length' ] 

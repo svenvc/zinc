@@ -5,4 +5,4 @@ testUTF8EncoderAuto
 	inputString := String withAll: ((1 to: 3072) collect: [ :each | Character value: each ]).
 	bytes := self encodeString: inputString with: encoder. 
 	outputString := self decodeBytes: bytes with: encoder.
-	self assert: inputString = outputString
+	self assert: inputString = outputString 

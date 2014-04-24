@@ -1,3 +1,3 @@
 private
 shrink
-	(self limit / 10) rounded timesRepeat: [ self logEvents removeFirst ]
+	(self limit / 10) rounded timesRepeat: [ self logEvents removeFirst ]  

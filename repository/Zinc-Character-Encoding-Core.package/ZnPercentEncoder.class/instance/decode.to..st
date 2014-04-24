@@ -1,9 +1,10 @@
 converting
 decode: stringStream to: byteStream
 	| char |
+	self decodePlusAsSpace.
 	[ stringStream atEnd ]
 		whileFalse: [ 
-			(char := stringStream next) == $+
+			((char := stringStream next) == $+ and: [ decodePlusAsSpace ])
 				ifTrue: [ byteStream nextPut: 32 ]
 				ifFalse: [ 
 					char == $%
@@ -11,4 +12,4 @@ decode: stringStream to: byteStream
 						ifFalse: [ 
 							char charCode < 128
 								ifTrue: [ byteStream nextPut: char charCode ]
-								ifFalse: [ ZnCharacterEncodingError signal: 'ASCII character expected' ] ] ] ]
+								ifFalse: [ self errorAsciiCharacterExpected ] ] ] ]

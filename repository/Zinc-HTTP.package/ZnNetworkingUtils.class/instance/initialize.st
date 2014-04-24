@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	self socketStreamClass: (Smalltalk globals at: #ZdcSocketStream ifAbsent: [ SocketStream ]).

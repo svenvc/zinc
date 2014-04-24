@@ -6,4 +6,4 @@ comparing
 		and: [ self main = other main
 			and: [ self sub = other sub 
 				and: [ self hasParameters not & other hasParameters not
-						or: [ self parameters = other parameters ] ] ] ]
+						or: [ self parameters = other parameters ] ] ] ] 

@@ -3,8 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ExtensionsMap",
-		"MimeTypes" ],
+		"ExtensionsMap" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"main",

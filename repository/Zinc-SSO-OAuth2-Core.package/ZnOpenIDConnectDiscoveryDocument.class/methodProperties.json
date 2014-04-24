@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"fromUrl:" : "JanVanDeSandt 3/21/2014 11:32",
+		"google" : "JanVanDeSandt 3/21/2014 11:24",
+		"googleUrl" : "JanVanDeSandt 3/21/2014 11:19" },
+	"instance" : {
+		"authorizationEndpoint" : "JanVanDeSandt 3/21/2014 11:25",
+		"initializeWith:" : "JanVanDeSandt 3/21/2014 11:28",
+		"issuer" : "JanVanDeSandt 3/21/2014 11:25",
+		"tokenEndpoint" : "JanVanDeSandt 3/21/2014 11:26",
+		"userinfoEndpoint" : "JanVanDeSandt 3/21/2014 11:26" } }

@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	
-	scopes := OrderedCollection withAll: self class ssoScopes
+	scopes := OrderedCollection withAll: self class ssoScopes 

@@ -32,6 +32,7 @@
 		"printOn:" : "SvenVanCaekenberghe 12/14/2010 12:54",
 		"readEntityFrom:" : "SvenVanCaekenberghe 6/28/2011 10:36",
 		"readHeaderFrom:" : "SvenVanCaekenberghe 9/21/2010 11:34",
+		"setConnectionCloseFor:" : "SvenVanCaekenberghe 11/7/2013 10:51",
 		"setContentEncodingGzip" : "SvenVanCaekenberghe 5/19/2013 20:24",
 		"setKeepAliveFor:" : "SvenVanCaekenberghe 12/14/2010 14:34",
 		"setLocation:" : "SvenVanCaekenberghe 9/17/2010 15:19",
