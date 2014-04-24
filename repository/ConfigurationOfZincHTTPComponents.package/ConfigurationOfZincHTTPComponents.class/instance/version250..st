@@ -11,7 +11,7 @@ version250: spec
 			package: 'Zinc-Resource-Meta-Core' with: 'Zinc-Resource-Meta-Core-SvenVanCaekenberghe.34';
 			package: 'Zinc-Resource-Meta-Tests' with: 'Zinc-Resource-Meta-Tests-SvenVanCaekenberghe.21';
 			package: 'Zinc-HTTP' with: 'Zinc-HTTP-SvenVanCaekenberghe.395';
-			package: 'Zinc-Tests' with: 'Zinc-Tests-SvenVanCaekenberghe.205';
+			package: 'Zinc-Tests' with: 'Zinc-Tests-SvenVanCaekenberghe.204';
 			package: 'Zinc-AWS' with: 'Zinc-AWS-SvenVanCaekenberghe.17';
 			package: 'Zinc-REST' with: 'Zinc-REST-SvenVanCaekenberghe.13';
 			package: 'Zinc-WebDAV' with: 'Zinc-WebDAV-SvenVanCaekenberghe.3';
