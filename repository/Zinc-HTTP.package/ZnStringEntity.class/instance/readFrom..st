@@ -14,7 +14,7 @@ readFrom: stream
 					buffer := notification wideString.
 					stringStream ifNotNil: [ | wideString position |
 						position := stream position.
-						wideString := WideString from: stringStream originalContents.
+						wideString := QuadByteString from: stringStream originalContents.
 						stringStream on: wideString; setFrom: position + 1 to: position ].
 					notification pass ].
 		totalRead := totalRead + read.
