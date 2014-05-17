@@ -41,7 +41,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 				extraRead := stream readInto: tmpBuffer startingAt: bytesLeft + 1 count: count - bytesLeft.
 				extraRead = (count - bytesLeft) ifFalse: [ self error: 'incomplete utf-8 encoding' ].
 				char := self nextFromStream: tmpBuffer readStream.
-				(char isOctetCharacter not and: [ stringBuffer isWideString not ])
+				(char isOctetCharacter not and: [ (stringBuffer isKindOf: MultiByteString) not])
 					ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
 				stringBuffer at: offset + read put: char ].
 		last := next + count.
