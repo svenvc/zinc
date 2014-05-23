@@ -3,5 +3,8 @@
 		 },
 	"instance" : {
 		"testDecodingErrors" : "SvenVanCaekenberghe 12/16/2012 15:12",
+		"testLeadingZero" : "SvenVanCaekenberghe 3/1/2013 21:29",
 		"testNonAscii" : "SvenVanCaekenberghe 12/13/2012 11:26",
-		"testSimple" : "SvenVanCaekenberghe 12/13/2012 11:58" } }
+		"testSimple" : "SvenVanCaekenberghe 12/13/2012 11:58",
+		"testStringUrlDecoded" : "CamilloBruni 3/26/2013 23:18",
+		"testStringUrlEncoded" : "CamilloBruni 3/26/2013 23:18" } }

@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-Resource-Meta-Core'!
+SystemOrganization addCategory: 'Zinc-Resource-Meta-Core'!

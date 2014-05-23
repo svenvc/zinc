@@ -27,7 +27,7 @@ you can easily <b>publish the contents of any workspace to this website</b>.
 Each time you publish a workspace, you will create a new shared web workspace.
 Each shared web workspace is identified by a unique key.
 Keys look like 6DKGPHMWVMI8. The <b>unique, official URL</b> to the shared workspace
-for that key would be http://ws.stfx.eu/6DKGPHMWVMI8.
+for that key then becomes http://ws.stfx.eu/6DKGPHMWVMI8.
 </p>
 <p>
 To actually <b>share the workspace</b> you can <b>pass the URL around</b> in any message.
@@ -39,7 +39,10 @@ Alternatively, recipients of a shared workspace URL or key can <b>use ZnWorkspac
 to open the contents right in an image</b>, ready to be used.
 </p>
 <p>
-For instructions on how to begin, see the <a href="http://ws.stfx.eu/1WS4U">Getting Started Workspace</a>.
+For instructions on how to begin, see the <a href="1WS4U">Getting Started Workspace</a>.
+</p>
+<p>
+You can also create a shared workspace using <b>a simple web interface</b> where you can directly type or paste text, see <a href="new">New</a>.
 </p>
 <p>
 All information published via this service is public.
@@ -60,7 +63,7 @@ Additionally, adding a query parameter format=html or format=text to the URL wil
 <p>
 Once created, shared workspaces are read-only. They can neither be modified, nor deleted.
 Little used workspaces will eventually be removed after some period of time.
-The maximum size for workspaces is 64Kb. 
+The maximum size for workspaces is limited to 32 Kb. 
 Any line end convention as well as ASCII, Latin1 and UTF-8 encoding are supported for incoming data.
 Workspaces are always served using the Unix line end convention and UTF-8 encoding.
 </p>

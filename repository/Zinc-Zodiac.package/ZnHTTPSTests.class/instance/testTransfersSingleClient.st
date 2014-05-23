@@ -12,7 +12,7 @@ testTransfersSingleClient
 			url: ('/public-stfx-eu/test-', size asString, '.txt');
 			get.
 		self assert: client isSuccess.
-		self assert: client response contentType equals: ZnMimeType textPlain.
+		self assert: (client response contentType matches: ZnMimeType textPlain).
 		self assert: client response contentLength equals: size.
 		self 
 			assert: client contents 

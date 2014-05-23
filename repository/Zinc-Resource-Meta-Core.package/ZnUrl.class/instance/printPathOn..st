@@ -1,6 +1,6 @@
 printing
 printPathOn: stream
-	segments isNil ifTrue: [ ^ stream nextPut: $/ ].
+	self hasPath ifFalse: [ ^ stream nextPut: $/ ].
  	segments do: [ :each | 
 		stream nextPut: $/.
 		each == #/

@@ -1,4 +1,4 @@
 accessing-path
 removeLastPathSegment
-	segments isEmpty 
-		ifFalse: [ segments removeLast ]
+	self hasPath
+		ifTrue: [ segments removeLast ]

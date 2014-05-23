@@ -5,6 +5,6 @@ handleRequest: znRequest
 
 	| response |
 	response := self adaptor process: znRequest.
-	response isError
-		ifFalse: [ ^ response ].
-	^ self staticDelegate handleRequest: znRequest
+	^ (response isError and: [ response isAuthenticationRequired not ])
+			ifTrue: [ self staticDelegate handleRequest: znRequest ]
+			ifFalse: [ response ].

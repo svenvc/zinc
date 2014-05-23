@@ -1,7 +1,4 @@
 private protocol
 prepareRequest
 	self checkIntegrity 
-		ifTrue: [ self addContentHash ].
-	self addAuthorization
-	
-
+		ifTrue: [ self addContentHash ]

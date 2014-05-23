@@ -10,5 +10,5 @@ generateEchoRequestString: request
 		stream crlf; nextPutAll: 'with headers'; crlf.
 		request headersDo: [ :key :value |
 			stream space; nextPutAll: key; nextPutAll: ': '; nextPutAll: value; crlf ].
-		request entity isNil ifFalse: [
+		request hasEntity ifTrue: [
 			stream nextPutAll: ' containing '; print: request entity ] ]

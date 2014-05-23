@@ -2,7 +2,10 @@ private
 parse: bytes boundary: boundary
 	| next start fullBoundary |
 	fullBoundary := '--' asByteArray, boundary.
-	start := fullBoundary size + 1.
+	"Sometimes there is whitespace in front of the first boundary"
+	start := (bytes
+		indexOfSubCollection: fullBoundary
+		startingAt: 1) + 1.
 	next := bytes
 		indexOfSubCollection: fullBoundary
 		startingAt: start 

@@ -8,6 +8,7 @@ getNextChunk
 			self getExtraHeaders ]
 		ifFalse: [
 			totalSize := totalSize + size.
+			chunkCount := chunkCount + 1.
 			self ensureChunkBufferOfSize: size.  
 			stream next: size into: chunk.
 			stream next: 2. "consume CRLF"

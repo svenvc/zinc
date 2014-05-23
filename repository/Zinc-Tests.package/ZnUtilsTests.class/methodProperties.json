@@ -6,6 +6,7 @@
 		"testCapitalizeString" : "SvenVanCaekenberghe 9/10/2010 20:09",
 		"testHttpDate" : "PaulDeBruicker 04/10/2011 10:48",
 		"testIsCapitalizedString" : "SvenVanCaekenberghe 9/10/2010 20:10",
+		"testNextPutAll" : "SvenVanCaekenberghe 5/22/2013 09:42",
 		"testParseHttpDate" : "SeanDeNigris 5/10/2012 11:58",
 		"testParseHttpDateAlternative1" : "SeanDeNigris 5/10/2012 11:58",
 		"testParseHttpDateDashes" : "SeanDeNigris 5/10/2012 11:58",

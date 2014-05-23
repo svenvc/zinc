@@ -1,0 +1,14 @@
+{
+	"category" : "Zinc-GemstoneExtensions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GZipWriteStream",
+	"pools" : [
+		 ],
+	"super" : "ZipWriteStream",
+	"type" : "normal" }

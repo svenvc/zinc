@@ -3,7 +3,7 @@
 Transcript cr; show: 'travis---->travisCI.st'.
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
-"Load Tode ... "
+"Load Zinc ... "
 Metacello new
 	baseline: 'Zinc';
   repository: 'filetree://', gitPath, '/zinc/repository';

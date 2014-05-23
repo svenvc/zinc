@@ -1,9 +1,26 @@
 {
 	"class" : {
 		"handlesEncoding:" : "SvenVanCaekenberghe 1/25/2011 11:11",
+		"initialize" : "SvenVanCaekenberghe 5/25/2013 13:58",
 		"newForEncoding:" : "SvenVanCaekenberghe 1/25/2011 11:19" },
 	"instance" : {
-		"encodedByteCountFor:" : "SvenVanCaekenberghe 11/29/2010 21:23",
+		"decodeBytes:" : "SvenVanCaekenberghe 6/10/2013 20:52",
+		"decodeBytesIntoWideString:" : "JohanBrichau 11/18/2013 23:31",
+		"encodedByteCountFor:" : "SvenVanCaekenberghe 6/3/2013 19:57",
+		"encodingLengthFor:" : "SvenVanCaekenberghe 6/3/2013 19:58",
+		"error" : "SvenVanCaekenberghe 6/3/2013 19:55",
+		"error:" : "SvenVanCaekenberghe 6/3/2013 19:52",
+		"errorIncomplete" : "SvenVanCaekenberghe 6/3/2013 19:59",
+		"errorOutsideRange" : "SvenVanCaekenberghe 6/3/2013 19:58",
+		"errorOverlong" : "SvenVanCaekenberghe 6/4/2013 16:58",
+		"findFirstNonASCIIIn:startingAt:" : "JohanBrichau 11/18/2013 21:12",
 		"maximumUTF8Code" : "SvenVanCaekenberghe 11/29/2010 21:19",
-		"nextFromStream:" : "SvenVanCaekenberghe 12/3/2012 14:25",
-		"nextPut:toStream:" : "SvenVanCaekenberghe 12/16/2012 15:20" } }
+		"next:putAll:startingAt:toStream:" : "JohanBrichau 11/18/2013 21:06",
+		"next:putAllASCII:startingAt:toStream:" : "JohanBrichau 11/23/2013 10:17",
+		"next:putAllByteString:startingAt:toStream:" : "JohanBrichau 11/18/2013 23:30",
+		"nextFromStream:" : "SvenVanCaekenberghe 6/4/2013 17:21",
+		"nextPut:toStream:" : "DataCurator 11/18/2013 20:23",
+		"optimizedReadInto:startingAt:count:fromStream:" : "JohanBrichau 05/17/2014 19:54",
+		"originalReadInto:startingAt:count:fromStream:" : "JohanBrichau 12/08/2013 13:58",
+		"readInto:startingAt:count:fromStream:" : "SvenVanCaekenberghe 6/11/2013 15:18",
+		"replace:from:to:with:startingAt:" : "JohanBrichau 11/23/2013 10:32" } }
