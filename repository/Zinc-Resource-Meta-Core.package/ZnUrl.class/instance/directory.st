@@ -2,4 +2,8 @@ accessing-path
 directory
 	^ self isDirectoryPath
 		ifTrue: [ self path ]
-		ifFalse: [ self joinSegments: segments allButLast ]
+		ifFalse: [ 
+			String streamContents: [ :stream |
+				segments allButLast  
+					do: [ :each | stream nextPutAll: each ]
+					separatedBy: [ stream nextPut: $/ ] ] ]

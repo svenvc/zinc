@@ -5,7 +5,7 @@
 	"classvars" : [
 		"AlwaysRestart",
 		"ManagedServers" ],
-	"commentStamp" : "SvenVanCaekenberghe 12/22/2011 12:01",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"options",
 		"sessionManager" ],

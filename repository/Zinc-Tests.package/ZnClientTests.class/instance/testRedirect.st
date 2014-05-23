@@ -1,14 +1,20 @@
 testing
 testRedirect
-	| client response |
-	client := ZnClient new url: 'http://www.pharo-project.org'.
-	self assert: (client get; isSuccess).
-	client 
+	| client response target |
+	target := 'http://zn.stfx.eu'.
+	client := ZnClient new url: target.
+	client get.
+	self assert: client isSuccess.
+	client
 		close;
 		maxNumberOfRedirects: 0;
-		url: 'http://www.pharo-project.org'.
+		url: target.
 	self should: [ client get ] raise: ZnTooManyRedirects.
 	client close.
-	response := [ ZnClient new beOneShot; maxNumberOfRedirects: 0; get: 'http://www.pharo-project.org'; response ]
-		on: ZnTooManyRedirects do: [ :exception | exception resume ].
+	response := [ 
+		ZnClient new
+			beOneShot;
+			maxNumberOfRedirects: 0;
+			get: target;
+			response ] on: ZnTooManyRedirects do: [ :exception | exception resume ].
 	self assert: response isRedirect

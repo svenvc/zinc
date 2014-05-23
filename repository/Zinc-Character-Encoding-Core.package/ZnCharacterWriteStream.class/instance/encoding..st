@@ -1,3 +1,3 @@
 initialize-release
 encoding: encoding
-	encoder := ZnCharacterEncoder forEncoding: encoding
+	encoder := ZnCharacterEncoder newForEncoding: encoding

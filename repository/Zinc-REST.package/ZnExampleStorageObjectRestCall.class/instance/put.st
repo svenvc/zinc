@@ -6,4 +6,4 @@ put
 	data := self jsonRequest.
 	data at: #'object-uri' put: objectUri.
 	self delegate storage at: objectUri put: data.
-	self emptyOkResponse 
+	self emptyOkResponse

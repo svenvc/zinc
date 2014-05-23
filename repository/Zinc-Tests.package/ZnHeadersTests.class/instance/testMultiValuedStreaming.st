@@ -7,4 +7,6 @@ testMultiValuedStreaming
 	keysAndValues := OrderedCollection streamContents: [ : stream |
 		headers headersDo: [ :key :value |
 			stream nextPut: key; nextPut: value ] ].
-	self assert: keysAndValues  = #('Set-Cookie' 'foo=1' 'Set-Cookie' 'bar=1') asOrderedCollection
+	self assert: keysAndValues equals: #('Set-Cookie' 'foo=1' 'Set-Cookie' 'bar=1') asOrderedCollection 
+	
+	
