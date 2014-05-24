@@ -6,7 +6,7 @@ gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 "Load latest GLASS1 from github"
 Metacello new
   baseline: 'GLASS1';
-  repository: 'github://glassdb/glass:dev/repository';
+  repository: 'github://glassdb/glass:master/repository';
   onWarning: [:ex |
     Transcript cr; show: ex description.
     ex resume ];
