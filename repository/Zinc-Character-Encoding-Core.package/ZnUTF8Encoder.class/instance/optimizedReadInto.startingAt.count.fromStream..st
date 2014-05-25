@@ -5,7 +5,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 	Optimized based on the assumption that most decoded characters will be ASCII.
 	I signal a ZnByteStringBecameWideString notification if necessary."
 
-  | stringBuffer byteBuffer bytesRead read last next count readStream bytesLeft char |
+  | stringBuffer stringBufferIsString byteBuffer bytesRead read last next count readStream bytesLeft char |
   "Start by reading the minimum amount of bytes for decoding requestedCount characters"
   stream isBinary
     ifTrue: [ 
@@ -13,13 +13,15 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
         cr;
         show: 'ZnUTF8Encoder>>optimizedRead... -> BINARY'.
       stringBuffer := string asByteArray.
-      byteBuffer := ByteArray new: requestedCount ]
+      byteBuffer := ByteArray new: requestedCount.
+      stringBufferIsString := false ]
     ifFalse: [ 
       Transcript
         cr;
-        show: 'ZnUTF8Encoder>>optimizedRead... -> BINARY'.
+        show: 'ZnUTF8Encoder>>optimizedRead... -> STRING'.
       stringBuffer := string asString.
-      byteBuffer := String new: requestedCount ].
+      byteBuffer := String new: requestedCount.
+      stringBufferIsString := true ].
   bytesRead := stream readInto: byteBuffer startingAt: 1 count: requestedCount.
   readStream := byteBuffer readStream.
   read := 0.
@@ -55,6 +57,8 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
       char := self nextFromStream: readStream.
       (char isOctetCharacter not and: [ stringBuffer isOctetString ])
         ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
+      stringBufferIsString
+        ifFalse: [ char := char asInteger ].
       stringBuffer at: offset + read put: char ]
     ifFalse: [ 
       | tmpBuffer extraRead |
@@ -70,6 +74,8 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
       (char isOctetCharacter not
         and: [ (stringBuffer isKindOf: MultiByteString) not ])
         ifTrue: [ stringBuffer := ZnByteStringBecameWideString convert: stringBuffer ].
+      stringBufferIsString
+        ifFalse: [ char := char asInteger ].
       stringBuffer at: offset + read put: char ].
   last := next + count.
   read := read + 1.	"Iterate"
