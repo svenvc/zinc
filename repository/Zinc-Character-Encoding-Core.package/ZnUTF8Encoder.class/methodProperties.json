@@ -13,7 +13,7 @@
 		"errorIncomplete" : "SvenVanCaekenberghe 6/3/2013 19:59",
 		"errorOutsideRange" : "SvenVanCaekenberghe 6/3/2013 19:58",
 		"errorOverlong" : "SvenVanCaekenberghe 6/4/2013 16:58",
-		"findFirstNonASCIIIn:startingAt:" : "JohanBrichau 11/18/2013 21:12",
+		"findFirstNonASCIIIn:startingAt:" : "dkh 05/25/2014 10:07",
 		"maximumUTF8Code" : "SvenVanCaekenberghe 11/29/2010 21:19",
 		"next:putAll:startingAt:toStream:" : "JohanBrichau 11/18/2013 21:06",
 		"next:putAllASCII:startingAt:toStream:" : "JohanBrichau 11/23/2013 10:17",
