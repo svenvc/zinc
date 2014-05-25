@@ -17,4 +17,4 @@ replace: string from: start to: stop with: replacement startingAt: repStart
             whileTrue: [ string at: index put: (replacement at: repOff + index) asCharacter ] ]
         ifFalse: [ 
           [ (index := index + 1) <= stop ]
-            whileTrue: [ string at: index put: (replacement at: repOff + index) ] ] ]
+            whileTrue: [ string at: index put: (replacement at: repOff + index) asInteger ] ] ]
