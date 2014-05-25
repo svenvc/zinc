@@ -11,10 +11,10 @@ replace: string from: start to: stop with: replacement startingAt: repStart
       | index repOff |
       repOff := repStart - start.
       index := start - 1.
-      string isByteArray
+      string isString
         ifTrue: [ 
           [ (index := index + 1) <= stop ]
-            whileTrue: [ string at: index put: (replacement at: repOff + index) ] ]
+            whileTrue: [ string at: index put: (replacement at: repOff + index) asCharacter ] ]
         ifFalse: [ 
           [ (index := index + 1) <= stop ]
-            whileTrue: [ string at: index put: (replacement at: repOff + index) asCharacter ] ] ]
+            whileTrue: [ string at: index put: (replacement at: repOff + index) ] ] ]
