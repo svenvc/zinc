@@ -9,9 +9,15 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
   "Start by reading the minimum amount of bytes for decoding requestedCount characters"
   stream isBinary
     ifTrue: [ 
+      Transcript
+        cr;
+        show: 'ZnUTF8Encoder>>optimizedRead... -> BINARY'.
       stringBuffer := string asByteArray.
       byteBuffer := ByteArray new: requestedCount ]
     ifFalse: [ 
+      Transcript
+        cr;
+        show: 'ZnUTF8Encoder>>optimizedRead... -> BINARY'.
       stringBuffer := string asString.
       byteBuffer := String new: requestedCount ].
   bytesRead := stream readInto: byteBuffer startingAt: 1 count: requestedCount.
