@@ -20,7 +20,7 @@
 		"next:putAllByteString:startingAt:toStream:" : "JohanBrichau 11/18/2013 23:30",
 		"nextFromStream:" : "SvenVanCaekenberghe 6/4/2013 17:21",
 		"nextPut:toStream:" : "DataCurator 11/18/2013 20:23",
-		"optimizedReadInto:startingAt:count:fromStream:" : "dkh 05/24/2014 18:05",
+		"optimizedReadInto:startingAt:count:fromStream:" : "dkh 05/24/2014 18:49",
 		"originalReadInto:startingAt:count:fromStream:" : "JohanBrichau 12/08/2013 13:58",
 		"readInto:startingAt:count:fromStream:" : "SvenVanCaekenberghe 6/11/2013 15:18",
 		"replace:from:to:with:startingAt:" : "JohanBrichau 11/23/2013 10:32" } }

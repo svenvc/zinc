@@ -7,15 +7,12 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 
   | stringBuffer byteBuffer bytesRead read last next count readStream bytesLeft char |
   stringBuffer := string.	"Start by reading the minimum amount of bytes for decoding requestedCount characters"
-  byteBuffer := ByteArray new: requestedCount.
-  bytesRead := stream
-    readInto: byteBuffer asString
-    startingAt: 1
-    count: requestedCount.
+  byteBuffer := String new: requestedCount.
+  bytesRead := stream readInto: byteBuffer startingAt: 1 count: requestedCount.
   readStream := byteBuffer readStream.
   read := 0.
   last := offset.
-  next := self findFirstNonASCIIIn: byteBuffer asString startingAt: last.
+  next := self findFirstNonASCIIIn: byteBuffer startingAt: last.
   (next = 0 or: [ bytesRead < next ])
     ifTrue: [ 
       "The whole input is ASCII"
@@ -23,7 +20,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
         replace: stringBuffer
         from: offset
         to: offset + bytesRead - 1
-        with: byteBuffer asString
+        with: byteBuffer
         startingAt: 1.
       ^ bytesRead ].
   [ 
@@ -35,7 +32,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
         replace: stringBuffer
         from: offset + read
         to: offset + read + count - 1
-        with: byteBuffer asString
+        with: byteBuffer
         startingAt: last.
       read := read + count ].	"Read one UTF-8 encoded non ASCII character"
   readStream position: next - 1.
@@ -50,9 +47,9 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
     ifFalse: [ 
       | tmpBuffer extraRead |
       tmpBuffer := ByteArray new: count.
-      readStream readInto: tmpBuffer asString startingAt: 1 count: bytesLeft.
+      readStream readInto: tmpBuffer startingAt: 1 count: bytesLeft.
       extraRead := stream
-        readInto: tmpBuffer asString
+        readInto: tmpBuffer
         startingAt: bytesLeft + 1
         count: count - bytesLeft.
       extraRead = (count - bytesLeft)
@@ -64,7 +61,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
       stringBuffer at: offset + read put: char ].
   last := next + count.
   read := read + 1.	"Iterate"
-  next := self findFirstNonASCIIIn: byteBuffer asString startingAt: last.
+  next := self findFirstNonASCIIIn: byteBuffer startingAt: last.
   next = 0 or: [ bytesRead < next ] ]
     whileFalse.
   bytesRead < last
@@ -75,7 +72,7 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
         replace: stringBuffer
         from: offset + read
         to: offset + read + count - 1
-        with: byteBuffer asString
+        with: byteBuffer
         startingAt: last.
       read := read + count ].	"Try consuming enough input to reach requestedCount since we probably read too little"
   count := requestedCount - read.
