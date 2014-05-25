@@ -50,9 +50,9 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
     ifFalse: [ 
       | tmpBuffer extraRead |
       tmpBuffer := ByteArray new: count.
-      readStream readInto: tmpBuffer startingAt: 1 count: bytesLeft.
+      readStream readInto: tmpBuffer asString startingAt: 1 count: bytesLeft.
       extraRead := stream
-        readInto: tmpBuffer
+        readInto: tmpBuffer asString
         startingAt: bytesLeft + 1
         count: count - bytesLeft.
       extraRead = (count - bytesLeft)
