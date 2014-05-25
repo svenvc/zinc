@@ -6,8 +6,14 @@ optimizedReadInto: string startingAt: offset count: requestedCount fromStream: s
 	I signal a ZnByteStringBecameWideString notification if necessary."
 
   | stringBuffer byteBuffer bytesRead read last next count readStream bytesLeft char |
-  stringBuffer := string.	"Start by reading the minimum amount of bytes for decoding requestedCount characters"
-  byteBuffer := String new: requestedCount.
+  "Start by reading the minimum amount of bytes for decoding requestedCount characters"
+  stream isBinary
+    ifTrue: [ 
+      stringBuffer := string asByteArray.
+      byteBuffer := ByteArray new: requestedCount ]
+    ifFalse: [ 
+      stringBuffer := string asString.
+      byteBuffer := String new: requestedCount ].
   bytesRead := stream readInto: byteBuffer startingAt: 1 count: requestedCount.
   readStream := byteBuffer readStream.
   read := 0.
