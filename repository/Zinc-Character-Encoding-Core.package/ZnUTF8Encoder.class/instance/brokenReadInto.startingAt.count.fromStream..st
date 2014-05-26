@@ -58,7 +58,8 @@ brokenReadInto: string startingAt: offset count: requestedCount fromStream: stre
       (char isOctetCharacter not
         and: [ (stringBuffer isKindOf: MultiByteString) not ])
         ifTrue: [ 
-          stringBuffer := QuadByteString withAll: stringBuffer asString.
+          stringBuffer := stringBuffer := ZnByteStringBecameWideString
+            convert: stringBuffer asString.
           stringBufferIsString := true ].
       stringBufferIsString
         ifFalse: [ char := char asInteger ].
@@ -77,7 +78,8 @@ brokenReadInto: string startingAt: offset count: requestedCount fromStream: stre
       (char isOctetCharacter not
         and: [ (stringBuffer isKindOf: MultiByteString) not ])
         ifTrue: [ 
-          stringBuffer := QuadByteString withAll: stringBuffer asString.
+          stringBuffer := stringBuffer := ZnByteStringBecameWideString
+            convert: stringBuffer asString.
           stringBufferIsString := true ].
       stringBufferIsString
         ifFalse: [ char := char asInteger ].
