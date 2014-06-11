@@ -95,6 +95,7 @@ baseline: spec
                                 version: '0.9.2';
                                 repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
             spec
+		    package: 'Zinc-GemStoneExtensions';
                 package: 'SocketStream'
                     with: [ 
                             spec
@@ -104,6 +105,7 @@ baseline: spec
                 package: 'Zinc-HTTP'
                     with: [ 
                             spec
+					  requires: #('Zinc-GemStoneExtensions');
                                 requires: #('Zinc-FileSystem-Legacy');
                                 includes: #('SocketStream') ];
                 package: 'Zinc-Tests' with: [ spec requires: #('GsPharo') ] ]
