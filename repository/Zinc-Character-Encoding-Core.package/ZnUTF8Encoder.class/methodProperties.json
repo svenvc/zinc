@@ -4,7 +4,7 @@
 		"initialize" : "SvenVanCaekenberghe 5/25/2013 13:58",
 		"newForEncoding:" : "SvenVanCaekenberghe 1/25/2011 11:19" },
 	"instance" : {
-		"brokenReadInto:startingAt:count:fromStream:" : "dkh 05/25/2014 20:15",
+		"brokenReadInto:startingAt:count:fromStream:" : "dkh 06/24/2014 21:11",
 		"decodeBytes:" : "SvenVanCaekenberghe 6/10/2013 20:52",
 		"decodeBytesIntoWideString:" : "JohanBrichau 11/18/2013 23:31",
 		"encodedByteCountFor:" : "SvenVanCaekenberghe 6/3/2013 19:57",

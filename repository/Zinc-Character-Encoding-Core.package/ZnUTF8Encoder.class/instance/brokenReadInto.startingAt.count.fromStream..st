@@ -31,7 +31,7 @@ brokenReadInto: string startingAt: offset count: requestedCount fromStream: stre
     ifTrue: [ 
       "The whole input is ASCII"
       self
-        replace: stringBuffer
+        replace: string
         from: offset
         to: offset + bytesRead - 1
         with: byteBuffer
@@ -43,7 +43,7 @@ brokenReadInto: string startingAt: offset count: requestedCount fromStream: stre
       "Copy the ASCII run from last to next"
       count := next - last.
       self
-        replace: stringBuffer
+        replace: string
         from: offset + read
         to: offset + read + count - 1
         with: byteBuffer
@@ -94,7 +94,7 @@ brokenReadInto: string startingAt: offset count: requestedCount fromStream: stre
       "There is a last ASCII run left"
       count := bytesRead - last + 1.
       self
-        replace: stringBuffer
+        replace: string
         from: offset + read
         to: offset + read + count - 1
         with: byteBuffer
