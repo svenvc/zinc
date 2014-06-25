@@ -1,0 +1,14 @@
+{
+	"category" : "SocketStream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SocketStreamSocket",
+	"pools" : [
+		 ],
+	"super" : "SpSocket",
+	"type" : "normal" }

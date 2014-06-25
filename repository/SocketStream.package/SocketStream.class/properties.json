@@ -1,0 +1,25 @@
+{
+	"category" : "SocketStream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"recentlyRead",
+		"socket",
+		"inBuffer",
+		"outBuffer",
+		"inNextToWrite",
+		"outNextToWrite",
+		"lastRead",
+		"timeout",
+		"autoFlush",
+		"bufferSize",
+		"binary",
+		"shouldSignal" ],
+	"name" : "SocketStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

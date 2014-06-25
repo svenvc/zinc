@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "PaulDeBruicker 03/12/2011 11:56",
+		"tearDown" : "PaulDeBruicker 03/03/2011 13:42",
+		"testNextIntoClose" : "PaulDeBruicker 03/03/2011 13:44",
+		"testNextIntoCloseNonSignaling" : "PaulDeBruicker 03/03/2011 13:44",
+		"testUpTo" : "PaulDeBruicker 03/03/2011 13:44",
+		"testUpToAfterCloseNonSignaling" : "PaulDeBruicker 03/03/2011 13:44",
+		"testUpToAfterCloseSignaling" : "PaulDeBruicker 03/03/2011 13:44",
+		"testUpToAll" : "PaulDeBruicker 03/03/2011 13:44",
+		"testUpToAllAfterCloseNonSignaling" : "PaulDeBruicker 03/03/2011 13:44",
+		"testUpToAllAfterCloseSignaling" : "PaulDeBruicker 03/03/2011 13:44",
+		"testUpToAllLimit" : "PaulDeBruicker 03/03/2011 13:45",
+		"testUpToAllTimeout" : "PaulDeBruicker 03/03/2011 13:45",
+		"testUpToEndClose" : "PaulDeBruicker 03/03/2011 13:45",
+		"testUpToEndCloseNonSignaling" : "PaulDeBruicker 03/03/2011 13:45",
+		"testUpToMax" : "PaulDeBruicker 03/03/2011 13:45",
+		"testUpToTimeout" : "PaulDeBruicker 03/03/2011 13:45" } }

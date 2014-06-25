@@ -1,0 +1,15 @@
+{
+	"category" : "SocketStream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"clientStream",
+		"serverStream" ],
+	"name" : "SocketStreamTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
