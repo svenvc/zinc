@@ -1,7 +1,14 @@
 convenience
 readInto: string startingAt: offset count: requestedCount fromStream: stream
-	"Read requestedCount characters into string starting at offset,
-	returning the number read, there could be less available when stream is atEnd.
-	The clean code is in my superclass"
+  "Read requestedCount characters into string starting at offset,
+	returning the number read, there could be less available when stream is atEnd"
 
-	^ self optimizedReadInto: string startingAt: offset count: requestedCount fromStream: stream
+  | byteBuffer readCount |
+  byteBuffer := ByteArray new: requestedCount.
+  readCount := stream readInto: byteBuffer startingAt: 1 count: requestedCount.
+  string
+    replaceFrom: offset
+    to: offset + readCount - 1
+    with: byteBuffer decodeFromUTF8
+    startingAt: 1.
+  ^ readCount

@@ -1,7 +1,5 @@
 convenience
 next: count putAll: string startingAt: offset toStream: stream
-	"Write count characters from string starting at offset to stream."
-	
-	string isOctetString
-		ifTrue: [ self next: count putAllByteString: string startingAt: offset toStream: stream ]
-		ifFalse: [ super next: count putAll: string startingAt: offset toStream: stream ]
+  "Write count bytes from string starting at offset to stream."
+
+  stream nextPutAll: string encodeAsUTF8
