@@ -4,7 +4,7 @@
 		"initialize" : "SvenVanCaekenberghe 5/25/2013 13:58",
 		"newForEncoding:" : "SvenVanCaekenberghe 1/25/2011 11:19" },
 	"instance" : {
-		"decodeBytes:" : "dkh 06/25/2014 21:49",
+		"decodeBytes:" : "dkh 06/25/2014 21:46",
 		"decodeBytesIntoWideString:" : "dkh 06/25/2014 21:38",
 		"encodeString:" : "dkh 06/25/2014 18:53",
 		"encodedByteCountFor:" : "SvenVanCaekenberghe 6/3/2013 19:57",
@@ -17,4 +17,4 @@
 		"next:putAll:startingAt:toStream:" : "dkh 06/25/2014 18:53",
 		"nextFromStream:" : "SvenVanCaekenberghe 6/4/2013 17:21",
 		"nextPut:toStream:" : "DataCurator 11/18/2013 20:23",
-		"readInto:startingAt:count:fromStream:" : "dkh 06/25/2014 18:53" } }
+		"readInto:startingAt:count:fromStream:" : "dkh 06/25/2014 22:17" } }

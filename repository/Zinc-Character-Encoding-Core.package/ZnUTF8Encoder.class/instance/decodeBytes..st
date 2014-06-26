@@ -1,3 +1,3 @@
 convenience
 decodeBytes: bytes
-  ^ bytes decodeFromUTF8
+  ^ bytes asByteArray decodeFromUTF8
