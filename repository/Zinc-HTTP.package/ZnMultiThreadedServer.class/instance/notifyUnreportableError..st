@@ -3,6 +3,8 @@ notifyUnreportableError: aString
   "unconditional logging to stdout"
 
   | stdout |
+  (ObjectLogEntry error: 'Zinc Server unreportable error' object: aString)
+    addToLog.
   stdout := GsFile stdoutServer.
   stdout
     nextPutAll:
@@ -10,4 +12,8 @@ notifyUnreportableError: aString
   stdout nextPutAll: aString.
   stdout nextPutAll: '-----------'.
   stdout cr.
-  stdout close
+  stdout close.
+  TranscriptProxy proxyTranscript
+    ifNotNil: [ 
+      "interactive session, so bring up a debugger"
+      self error: 'Unreportable error' ]

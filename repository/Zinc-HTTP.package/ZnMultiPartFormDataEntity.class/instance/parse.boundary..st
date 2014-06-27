@@ -10,10 +10,7 @@ parse: bytes boundary: boundary
   [ next < (bytes size - 2) ]
     whileTrue: [ 
       | partReadStream |
-      partReadStream := AnsiReadStream
-        on: bytes asString
-        from: start + 2
-        to: next - 3.
+      partReadStream := AnsiReadStream on: bytes from: start + 2 to: next - 3.
       self addPart: (ZnMimePart readFrom: partReadStream).
       start := next + fullBoundary size.
       next := bytes
