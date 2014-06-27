@@ -4,26 +4,27 @@ readInto: string startingAt: offset count: requestedCount fromStream: stream
 	returning the number read, there could be less available when stream is atEnd"
 
   | byteBuffer readCount decoded |
-  true
-    ifTrue: [ 
-      "https://github.com/glassdb/zinc/issues/51"
-      ^ super
-        readInto: string
-        startingAt: offset
-        count: requestedCount
-        fromStream: stream ].
   byteBuffer := ByteArray new: requestedCount.
   readCount := stream readInto: byteBuffer startingAt: 1 count: requestedCount.
   [ decoded := byteBuffer decodeFromUTF8 ]
-    on: Error
-    do: [ 
-      ^ super
-        readInto: string
-        startingAt: offset
-        count: requestedCount
-        fromStream: stream ].
+    on: ArgumentError
+    do: [ :ignored | 
+      | extra repeat |
+      "byteBuffer boundary has fallen on bad UTF8 encoding boundary. read one byte at 
+       a time until we can decode the byteBuffer cleanly"
+      repeat := true.
+      [ repeat ]
+        whileTrue: [ 
+          extra := stream readInto: byteBuffer startingAt: byteBuffer size + 1 count: 1.
+          readCount := readCount + 1.
+          [ 
+          repeat := false.
+          decoded := byteBuffer decodeFromUTF8 ]
+            on: ArgumentError
+            do: [ :ignored | repeat := true ] ] ].
   decoded size < requestedCount
     ifTrue: [ 
+      "remaining characters decoded one by one from the stream"
       string
         replaceFrom: offset
         to: offset + decoded size - 1

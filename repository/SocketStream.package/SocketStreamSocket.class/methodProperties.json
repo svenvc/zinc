@@ -15,7 +15,7 @@
 		"receiveAvailableDataInto:startingAt:" : "PaulDeBruicker 03/12/2011 11:09",
 		"receiveDataInto:startingAt:" : "PaulDeBruicker 04/12/2011 15:53",
 		"receiveDataSignallingClosedInto:startingAt:" : "PaulDeBruicker 03/12/2011 11:09",
-		"receiveDataSignallingTimeout:into:startingAt:" : "PaulDeBruicker 03/12/2011 11:09",
+		"receiveDataSignallingTimeout:into:startingAt:" : "dkh 06/27/2014 12:29",
 		"receiveDataTimeout:into:startingAt:" : "PaulDeBruicker 03/12/2011 11:09",
 		"receiveSomeDataInto:startingAt:" : "PaulDeBruicker 03/12/2011 11:09",
 		"remoteAddress" : "PaulDeBruicker 04/08/2011 07:58",
@@ -27,5 +27,5 @@
 		"waitForConnectionFor:ifTimedOut:" : "PaulDeBruicker 04/12/2011 16:15",
 		"waitForData" : "PaulDeBruicker 03/12/2011 11:10",
 		"waitForDataFor:" : "PaulDeBruicker 03/12/2011 11:10",
-		"waitForDataFor:ifClosed:ifTimedOut:" : "PaulDeBruicker 04/12/2011 15:34",
+		"waitForDataFor:ifClosed:ifTimedOut:" : "dkh 06/27/2014 12:46",
 		"waitForDataIfClosed:" : "PaulDeBruicker 04/12/2011 15:52" } }

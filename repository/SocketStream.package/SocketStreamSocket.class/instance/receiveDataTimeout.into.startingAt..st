@@ -7,3 +7,4 @@ receiveDataTimeout: timeout into: aStringOrByteArray startingAt: aNumber
 
 	self waitForDataFor: timeout ifClosed: [] ifTimedOut: [].
 	^self readInto: aStringOrByteArray startingAt: aNumber for: (aStringOrByteArray size - aNumber +1)
+	
