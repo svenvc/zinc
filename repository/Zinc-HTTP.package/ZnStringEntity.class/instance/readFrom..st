@@ -13,24 +13,11 @@ readFrom: stream
   self initializeEncoder.
   [ readStream atEnd ]
     whileFalse: [ 
-      [ 
       read := encoder
         readInto: buffer
         startingAt: 1
         count: buffer size
-        fromStream: readStream ]
-        on: ZnByteStringBecameWideString
-        do: [ :notification | 
-          buffer := notification wideString.
-          stringStream
-            ifNotNil: [ 
-              | wideString position |
-              position := stream position.
-              wideString := QuadByteString from: stringStream originalContents.
-              stringStream
-                on: wideString;
-                setFrom: position + 1 to: position ].
-          notification pass ].
+        fromStream: readStream.
       totalRead := totalRead + read.
       totalRead > ZnConstants maximumEntitySize
         ifTrue: [ ZnEntityTooLarge signal ].
