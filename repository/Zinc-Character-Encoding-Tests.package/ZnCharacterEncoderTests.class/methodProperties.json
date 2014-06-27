@@ -8,7 +8,7 @@
 		"testConvencienceMethods" : "SvenVanCaekenberghe 5/22/2013 13:51",
 		"testLatin1Encoder" : "SvenVanCaekenberghe 12/15/2012 19:12",
 		"testLatin2Encoder" : "dkh 08/01/2012 14:37",
-		"testNextPutAllStartingAtToStream" : "SvenVanCaekenberghe 5/24/2013 13:24",
+		"testNextPutAllStartingAtToStream" : "dkh 06/26/2014 21:12",
 		"testNullEncoder" : "PaulDeBruicker 04/10/2011 10:45",
 		"testReadIntoStartingAtCountFromStream" : "SvenVanCaekenberghe 5/24/2013 16:22",
 		"testReadIntoStartingAtCountFromStreamWide" : "JohanBrichau 11/18/2013 23:31",
