@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"nextPutAll:on:chunked:" : "SvenVanCaekenberghe 5/17/2013 15:48",
+		"nextPutAll:on:chunked:" : "dkh 06/27/2014 22:23",
 		"testBinaryWriteRead" : "SvenVanCaekenberghe 5/17/2013 16:26",
 		"testGzipWriteRead" : "SvenVanCaekenberghe 5/18/2013 13:59",
 		"testReading" : "SvenVanCaekenberghe 5/17/2013 23:47",
