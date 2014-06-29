@@ -10,5 +10,5 @@
 	"name" : "ZnServerTests",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "ZnServerBasedTests",
 	"type" : "normal" }

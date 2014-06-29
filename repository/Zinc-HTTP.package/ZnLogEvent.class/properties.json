@@ -9,6 +9,7 @@
 		"timeStamp",
 		"processId",
 		"category",
+		"label",
 		"message" ],
 	"name" : "ZnLogEvent",
 	"pools" : [

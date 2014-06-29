@@ -1,5 +1,5 @@
 {
-	"category" : "Zinc-Tests",
+	"category" : "Zinc-HTTP-Logging",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "ZnDispatcherDelegateTest",
+	"name" : "ZnObjectLogLogger",
 	"pools" : [
 		 ],
-	"super" : "ZnServerBasedTests",
+	"super" : "ZnLogListener",
 	"type" : "normal" }

@@ -1,9 +1,10 @@
 logging
 logServerError: exception
-	(self logServerErrorDetails and: [ self log enabled ])
-		ifTrue: [ | report |
-			report := String streamContents: [ :out | 
-							out print: exception; cr.
-							exception signalerContext printDetails: out.
-							exception signalerContext sender debugStack: 8 on: out ].
-			report linesDo: [ :each | self log debug: each ] ]
+  (self logServerErrorDetails and: [ self log enabled ])
+    ifTrue: [ 
+      "for GemStone, we are typically logging to an object log, so we don't have 
+       to conform to classical `log format`"
+      self log
+        error: 'ERROR: ' , exception description
+        message: (GsProcess stackReportToLevel: 100) ]
+    ifFalse: [ self handleError: exception ]
