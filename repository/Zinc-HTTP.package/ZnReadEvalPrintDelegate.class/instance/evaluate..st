@@ -11,10 +11,14 @@ evaluate: string
         cr ]
         on: Error
         do: [ :exception | 
+          Transcript
+            cr;
+            show: exception description.
           out
+            nextPutAll: 'Error evaluating: ' , string printString;
+            cr;
             print: exception;
-            cr.
-          exception signalerContext printDetails: out.
-          exception signalerContext sender debugStack: 8 on: out ].
+            cr;
+            nextPutAll: (GsProcess stackReportToLevel: 20) ].
       out cr ].
   ^ String lf join: output lines
