@@ -11,9 +11,6 @@ evaluate: string
         cr ]
         on: Error
         do: [ :exception | 
-          Transcript
-            cr;
-            show: exception description.
           out
             nextPutAll: 'Error evaluating: ' , string printString;
             cr;

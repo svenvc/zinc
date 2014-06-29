@@ -2,7 +2,7 @@
 	"class" : {
 		"startInServerOn:" : "dkh 06/27/2014 20:59" },
 	"instance" : {
-		"evaluate:" : "dkh 06/29/2014 15:17",
+		"evaluate:" : "dkh 06/29/2014 15:06",
 		"handleGetRequest:" : "SvenVanCaekenberghe 5/16/2013 09:51",
 		"handlePostRequest:" : "SvenVanCaekenberghe 5/16/2013 09:54",
 		"handleRequest:" : "dkh 06/27/2014 21:04",

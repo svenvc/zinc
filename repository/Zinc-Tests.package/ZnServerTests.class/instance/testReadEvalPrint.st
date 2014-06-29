@@ -15,7 +15,4 @@ testReadEvalPrint
                   {x.
                   y});
         post.
-      Transcript
-        cr;
-        show: 'testReadEvalPrint: ' , result printString.
       self assert: result asInteger equals: x + y ]
