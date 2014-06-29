@@ -13,6 +13,8 @@ testWriting
     do: [ :ex | 
       Transcript
         cr;
+        show: 'ZnBufferedWriteStreamTests>>testWriting';
+        cr;
         show: ex description;
         cr;
         show: (GsProcess stackReportToLevel: 100).
