@@ -120,7 +120,7 @@ baseline: spec
           with: [ 
               spec
                 version: '0.9.2';
-                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
+                repository: 'http://seaside.gemtalksystems.com/ss/PharoCompat' ].
       spec
         package: 'Zinc-GemStoneExtensions';
         package: 'SocketStream';
