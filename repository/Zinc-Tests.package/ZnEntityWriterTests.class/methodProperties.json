@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "dkh 06/29/2014 22:49",
+		"expectedFailures" : "dkh 06/29/2014 23:14",
 		"testChunkedOnly" : "SvenVanCaekenberghe 5/19/2013 11:41",
 		"testGzippedAndChunked" : "dkh 06/29/2014 22:31",
 		"testPlain" : "SvenVanCaekenberghe 5/18/2013 13:10",

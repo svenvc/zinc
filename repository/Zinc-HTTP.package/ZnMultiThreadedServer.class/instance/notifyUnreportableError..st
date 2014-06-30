@@ -13,7 +13,7 @@ notifyUnreportableError: aString
   stdout nextPutAll: '-----------'.
   stdout cr.
   stdout close.
-  TranscriptProxy proxyTranscript
-    ifNotNil: [ 
+  TranscriptProxy proxyTranscript ~~ nil
+    ifTrue: [ 
       "interactive session, so bring up a debugger"
       self error: 'Unreportable error' ]
