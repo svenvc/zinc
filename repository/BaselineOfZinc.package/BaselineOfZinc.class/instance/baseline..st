@@ -109,7 +109,7 @@ baseline: spec
           with: [ 
               spec
                 loads: #('Base' 'Announcements');
-                repository: 'github://glassdb/glass:dev/repository' ];
+                repository: 'github://glassdb/glass:master/repository' ];
         configuration: 'GsPharo'
           with: [ 
               spec
