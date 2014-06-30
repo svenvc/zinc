@@ -3,4 +3,5 @@
 		 },
 	"instance" : {
 		"encodeString:" : "dkh 06/30/2014 00:03",
+		"next:putAll:startingAt:toStream:" : "dkh 06/26/2014 21:11",
 		"readInto:startingAt:count:fromStream:" : "dkh 06/27/2014 18:09" } }
