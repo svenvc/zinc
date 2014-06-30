@@ -105,17 +105,11 @@ baseline: spec
     for: #'gemstone'
     do: [ 
       spec
-        configuration: 'GsCore'
+        baseline: 'GLASS1'
           with: [ 
               spec
-                version: '0.247';
-                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
-        configuration: 'GsMisc'
-          with: [ 
-              spec
-                version: '0.242';
-                loads: #('Announcements');
-                repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ];
+                loads: #('Base' 'Announcements');
+                repository: 'github://glassdb/glass:master/repository' ];
         configuration: 'GsPharo'
           with: [ 
               spec
@@ -124,12 +118,12 @@ baseline: spec
       spec
         package: 'Zinc-GemStoneExtensions';
         package: 'SocketStream';
-        package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GsCore') ];
+        package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GLASS1') ];
         package: 'Zinc-HTTP'
           with: [ 
               spec
-                requires: #('Zinc-GemStoneExtensions');
-                requires: #('Zinc-FileSystem-Legacy');
+                requires:
+                    #('GLASS1' 'Zinc-GemStoneExtensions' 'Zinc-FileSystem-Legacy');
                 includes: #('SocketStream') ];
         package: 'Zinc-Tests' with: [ spec requires: #('GsPharo') ] ].
   spec
