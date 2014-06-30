@@ -1,4 +1,4 @@
-convenience
+*zinc-character-encoding-gs32-core
 readInto: string startingAt: offset count: requestedCount fromStream: stream
   "Read requestedCount decoded characters into string starting at offset,
 	returning the number of characters read, there could be less available when stream is 
