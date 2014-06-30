@@ -116,14 +116,12 @@ baseline: spec
                 version: '0.9.2';
                 repository: 'http://seaside.gemtalksystems.com/ss/PharoCompat' ].
       spec
-        package: 'Zinc-GemStoneExtensions';
         package: 'SocketStream';
         package: 'Zinc-FileSystem-Legacy' with: [ spec requires: #('GLASS1') ];
         package: 'Zinc-HTTP'
           with: [ 
               spec
-                requires:
-                    #('GLASS1' 'Zinc-GemStoneExtensions' 'Zinc-FileSystem-Legacy');
+                requires: #('GLASS1' 'Zinc-FileSystem-Legacy');
                 includes: #('SocketStream') ];
         package: 'Zinc-Tests' with: [ spec requires: #('GsPharo') ] ].
   spec
