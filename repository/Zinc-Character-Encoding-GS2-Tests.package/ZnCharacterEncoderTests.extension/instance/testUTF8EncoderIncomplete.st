@@ -1,4 +1,4 @@
-testing
+*zinc-character-encoding-gs2-tests
 testUTF8EncoderIncomplete
   "The examples are taken from http://en.wikipedia.org/wiki/UTF-8#Description"
 
@@ -12,4 +12,4 @@ testUTF8EncoderIncomplete
       2 to: each size do: [ :count | 
         self
           should: [ encoder decodeBytes: (each allButLast: count - 1) ]
-          raise: ZnInvalidUTF8 , ArgumentError ] ]
+          raise: ZnInvalidUTF8 , Error ] ]

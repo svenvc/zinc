@@ -133,6 +133,24 @@ baseline: spec
                 includes: #('SocketStream') ];
         package: 'Zinc-Tests' with: [ spec requires: #('GsPharo') ] ].
   spec
+    for: #'gs2.x'
+    do: [ 
+      spec
+        package: 'Zinc-Character-Encoding-Tests'
+          with: [ spec includes: 'Zinc-Character-Encoding-GS2-Tests' ];
+        package: 'Zinc-Character-Encoding-GS2-Tests'
+          with: [ spec requires: 'Zinc-Character-Encoding-Tests' ];
+        yourself ].
+  spec
+    for: #'gs3.x'
+    do: [ 
+      spec
+        package: 'Zinc-Character-Encoding-Tests'
+          with: [ spec includes: 'Zinc-Character-Encoding-GS3-Tests' ];
+        package: 'Zinc-Character-Encoding-GS3-Tests'
+          with: [ spec requires: 'Zinc-Character-Encoding-Tests' ];
+        yourself ].
+  spec
     for: #(#'gs2.x' #'gs3.0.x')
     do: [ 
       spec
