@@ -18,10 +18,8 @@ to deal with the HTTP networking protocol.
 
 ## Loading into GemStone
 
-1. [Upgrade to GLASS 1.0-beta.9](http://code.google.com/p/glassdb/wiki/GemToolsUpdate#Update_GLASS)
-
-2. Install Zinc:
-
+1. Upgrade to GLASS 1.0-beta.9.3
+   
     ```Smalltalk
     | glassVersion |
     glassVersion := ConfigurationOfGLASS project currentVersion.
@@ -44,13 +42,15 @@ to deal with the HTTP networking protocol.
         Transcript
           cr;
           show: '-----GLASS already upgraded to 1.0-beta.9.3' ].
+   ```
+2. Install Zinc:
+
+    ```Smalltalk
     Metacello new
       baseline: 'Zinc';
       repository: 'github://GsDevKit/zinc:gs_master/repository';
       load: 'Tests'.
     ```
 
-## Travis Status
-
-**GemStone** [![Build Status](https://travis-ci.org/GsDevKit/zinc.png?branch=gs_master)](https://travis-ci.org/gs_master/zinc)
+## Travis Status [![Build Status](https://travis-ci.org/GsDevKit/zinc.png?branch=gs_master)](https://travis-ci.org/gs_master/zinc)
 
