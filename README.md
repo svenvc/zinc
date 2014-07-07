@@ -43,7 +43,7 @@ to deal with the HTTP networking protocol.
           cr;
           show: '-----GLASS already upgraded to 1.0-beta.9.3' ].
    ```
-2. Install Zinc:
+2. Install Zinc (will install [GLASS](https://github.com/glassdb/glass)):
 
     ```Smalltalk
     Metacello new
