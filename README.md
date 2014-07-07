@@ -14,36 +14,44 @@ to deal with the HTTP networking protocol.
 *Sven Van Caekenberghe* 
 
 
-## Installation
+[MIT Licensed](https://github.com/svenvc/zinc/blob/master/license.txt)
 
-```Smalltalk
-run
-ConfigurationOfGLASS project updateProject.
-GsDeployer deploy: [ 
+## Loading into GemStone
 
-  "Upgrade to GLASS 1.0-beta.9.1"
-  (ConfigurationOfGLASS project version: '1.0-beta.9.1') load].
-%
-commit
+1. Upgrade to GLASS 1.0-beta.9.3
+   
+  ```Smalltalk
+  GsDeployer deploy: [
+    | glassVersion |
+    glassVersion := ConfigurationOfGLASS project currentVersion.
+    glassVersion versionNumber < '1.0-beta.9.3' asMetacelloVersionNumber
+      ifTrue: [
+        Transcript
+          cr;
+          show: '-----Upgrading GLASS to 1.0-beta.9.3'.
+        GsDeployer deploy: [
+          Gofer new
+            package: 'ConfigurationOfGLASS';
+            url: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
+            load.
+          (((System stoneVersionAt: 'gsVersion') beginsWith: '2.') and: [glassVersion versionNumber < '1.0-beta.9.2' asMetacelloVersionNumber])
+            ifTrue: [
+              ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.2') load ].
+          ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.3') load.
+        ] ]
+      ifFalse: [
+        Transcript
+          cr;
+          show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
+  ```
+2. Install Zinc (will install [GLASS](https://github.com/glassdb/glass)):
 
-run
-GsDeployer deploy: [ 
+  ```Smalltalk
+  GsDeployer deploy: [
+    Metacello new
+      baseline: 'Zinc';
+      repository: 'github://GsDevKit/zinc:gs_master/repository';
+      load: 'Tests' ].
+  ```
 
-  "Load latest GLASS1 from github"
-  Metacello new
-    baseline: 'GLASS1';
-    repository: 'github://glassdb/glass:master/repository';
-    load.
-
-  "Load Zinc"
-  Metacello new
-    baseline: 'Zinc';
-    repository: 'github://glassdb/zinc:gemstone2.4/repository';
-    load ].
-%
-commit
-```
-
-## Travis Status
-
-**GemStone2.4.x** [![Build Status](https://travis-ci.org/glassdb/zinc.png?branch=gemstone2.4)](https://travis-ci.org/glassdb/zinc)
+## Travis Status [![Build Status](https://travis-ci.org/GsDevKit/zinc.png?branch=gs_master)](https://travis-ci.org/gs_master/zinc)
