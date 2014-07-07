@@ -23,23 +23,34 @@ to deal with the HTTP networking protocol.
 2. Install Zinc:
 
     ```Smalltalk
-    "GemStone 2.4"
+    | glassVersion |
+    glassVersion := ConfigurationOfGLASS project currentVersion.
+    glassVersion versionNumber < '1.0-beta.9.3' asMetacelloVersionNumber
+      ifTrue: [
+        Transcript
+          cr;
+          show: '-----Upgrading GLASS to 1.0-beta.9.3'.
+        GsDeployer deploy: [
+          Gofer new
+            package: 'ConfigurationOfGLASS';
+            url: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
+            load.
+          (((System stoneVersionAt: 'gsVersion') beginsWith: '2.') and: [glassVersion versionNumber < '1.0-beta.9.2' asMetacelloVersionNumber])
+            ifTrue: [
+              ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.2') load ].
+          ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.3') load.
+        ] ]
+      ifFalse: [
+        Transcript
+          cr;
+          show: '-----GLASS already upgraded to 1.0-beta.9.3' ].
     Metacello new
       baseline: 'Zinc';
-      repository: 'github://glassdb/zinc:gemstone2.4/repository';
-      load: 'Tests'.
-      
-    "GemStone 3.1"
-    Metacello new
-      baseline: 'Zinc';
-      repository: 'github://glassdb/zinc:gemstone3.1/repository';
+      repository: 'github://GsDevKit/zinc:gs_master/repository';
       load: 'Tests'.
     ```
 
-*See the [Releases page](https://github.com/glassdb/zinc/releases/) for instructions for installing specific Zinc releases.*
-
 ## Travis Status
 
-**GemStone2.4.x** [![Build Status](https://travis-ci.org/glassdb/zinc.png?branch=gemstone2.4)](https://travis-ci.org/glassdb/zinc)
+**GemStone** [![Build Status](https://travis-ci.org/GsDevKit/zinc.png?branch=gs_master)](https://travis-ci.org/gs_master/zinc)
 
-**GemStone3.1.x** [![Build Status](https://travis-ci.org/glassdb/zinc.png?branch=gemstone3.1)](https://travis-ci.org/glassdb/zinc)
