@@ -34,20 +34,15 @@ version243: spec
 			package: 'Zinc-Patch-HTTPSocket' with: 'Zinc-Patch-HTTPSocket-SvenVanCaekenberghe.1';
 			package: 'Zinc-FileSystem-Legacy' with: 'Zinc-FileSystem-Legacy-SvenVanCaekenberghe.5';
 			package: 'Zinc-Pharo-Forward-Compatibility' with: 'Zinc-Pharo-Forward-Compatibility-SvenVanCaekenberghe.1' ].
+		
 	spec for: #'pharo2.x' do: [ 
 		spec 
 			package: 'Zinc-Patch-HTTPSocket' with: 'Zinc-Patch-HTTPSocket-MarcusDenker.4';
 			package: 'Zinc-FileSystem' with: 'Zinc-FileSystem-SvenVanCaekenberghe.9' ]. 
 		
-		spec 
-		for: #'gs2.4.x' 
-		do: [ 
-			spec
-				baseline:'Zinc' with: [ spec  repository: 'github://glassdb/zinc:gemstone2.4/repository' ];
-				import: 'Zinc' ].
 	spec 
-		for: #'gs3.1.x' 
+		for: #('gs2.4.x' 'gs3.1.x' 'gs3.2.x')
 		do: [ 
 			spec
-				baseline:'Zinc' with: [ spec  repository: 'github://glassdb/zinc:gemstone3.1/repository' ];
-				import: 'Zinc' ] 
+				baseline:'ZincHTTPComponents ' with: [ spec  repository: 'github://GsDevKit/zinc:gs_master/repository' ];
+				import: 'ZincHTTPComponents' ].
