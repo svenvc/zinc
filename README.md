@@ -24,7 +24,7 @@ to deal with the HTTP networking protocol.
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
-      baseline: 'Zinc';
+      baseline: 'ZincHTTPComponents';
       repository: 'github://GsDevKit/zinc:gs_master/repository';
       load: 'Tests' ].
   ```
