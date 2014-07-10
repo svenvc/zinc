@@ -21,6 +21,7 @@ to deal with the HTTP networking protocol.
 1. [Upgrade to GLASS 1.0-beta.9.3][1]
 2. Install Zinc (will install [GLASS](https://github.com/glassdb/glass)):
 
+Install the master HEAD version:
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
@@ -28,6 +29,16 @@ to deal with the HTTP networking protocol.
       repository: 'github://GsDevKit/zinc:gs_master/repository';
       load: 'Tests' ].
   ```
+
+Install a particular version, e.g. 2.4.3 (see [Releases](https://github.com/GsDevKit/zinc/releases) for a list of possible versions):
+  ```Smalltalk
+  GsDeployer deploy: [
+    Metacello new
+      baseline: 'ZincHTTPComponents';
+      repository: 'github://GsDevKit/zinc:2.4.3/repository';
+      load: 'Tests' ].
+  ```
+
 
 ## Travis Status [![Build Status](https://travis-ci.org/GsDevKit/zinc.png?branch=gs_master)](https://travis-ci.org/gs_master/zinc)
 

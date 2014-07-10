@@ -44,5 +44,5 @@ version243: spec
 		for: #('gs2.4.x' 'gs3.1.x' 'gs3.2.x')
 		do: [ 
 			spec
-				baseline:'ZincHTTPComponents ' with: [ spec  repository: 'github://GsDevKit/zinc:gs_master/repository' ];
+				baseline:'ZincHTTPComponents ' with: [ spec  repository: 'github://GsDevKit/zinc:2.4.3/repository' ];
 				import: 'ZincHTTPComponents' ].
