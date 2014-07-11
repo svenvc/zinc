@@ -28,7 +28,7 @@ GsDeployer deploy: [
 
 "Load Zinc ... "
 Metacello new
-  baseline: 'Zinc';
+  baseline: 'ZincHTTPComponents';
   repository: 'filetree://', gitPath, '/zinc/repository';
   onWarning: [:ex |
     Transcript cr; show: ex description.
@@ -37,6 +37,6 @@ Metacello new
 
 "Run the Tode tests"
 TravisCIHarness
-  value: #( 'BaselineOfZinc' )
+  value: #( 'BaselineOfZincHTTPComponents' )
   value: 'TravisCISuccess.txt' 
   value: 'TravisCIFailure.txt'.
