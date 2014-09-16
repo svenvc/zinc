@@ -18,10 +18,19 @@ to deal with the HTTP networking protocol.
 
 ## Loading into GemStone
 
-1. [Upgrade to GLASS 1.0-beta.9.3][1]
-2. Install Zinc (will install [GLASS](https://github.com/glassdb/glass)):
+1. Upgrade to the latest version of Metacello using [GsUpgrader](https://github.com/GsDevKit/gsUpgrader#gsupgrader-):
 
-Install the master HEAD version:
+```Smalltalk
+Gofer new
+  package: 'GsUpgrader-Core';
+  url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
+  load.
+(Smalltalk at: #GsUpgrader) upgradeMetacello.
+```
+
+2. Install Zinc:
+
+  Install the master HEAD version:
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
@@ -30,7 +39,7 @@ Install the master HEAD version:
       load: 'Tests' ].
   ```
 
-Install a particular version, e.g. 2.4.3 (see [Releases](https://github.com/GsDevKit/zinc/releases) for a list of possible versions):
+  Install a particular version, e.g. 2.4.3 (see [Releases](https://github.com/GsDevKit/zinc/releases) for a list of possible versions):
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
@@ -41,5 +50,3 @@ Install a particular version, e.g. 2.4.3 (see [Releases](https://github.com/GsDe
 
 
 ## Travis Status [![Build Status](https://travis-ci.org/GsDevKit/zinc.png?branch=gs_master)](https://travis-ci.org/gs_master/zinc)
-
-[1]: https://github.com/GsDevKit/gsDevKitHome/blob/master/projects/glass/upgradeTo1.0-beta9.3.md#upgrade-to-glass-10-beta93
