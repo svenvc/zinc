@@ -18,14 +18,14 @@ to deal with the HTTP networking protocol.
 
 ## Loading into GemStone
 
-1. Upgrade to the latest version of Metacello using [GsUpgrader](https://github.com/GsDevKit/gsUpgrader#gsupgrader-):
+1. Upgrade to the latest version of Metacello and Grease using [GsUpgrader](https://github.com/GsDevKit/gsUpgrader#gsupgrader-):
 
 ```Smalltalk
 Gofer new
   package: 'GsUpgrader-Core';
   url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
   load.
-(Smalltalk at: #GsUpgrader) upgradeMetacello.
+(Smalltalk at: #GsUpgrader) upgradeGrease.
 ```
 
 2. Install Zinc:
@@ -36,6 +36,7 @@ Gofer new
     Metacello new
       baseline: 'ZincHTTPComponents';
       repository: 'github://GsDevKit/zinc:gs_master/repository';
+      onLock: [:ex | ex honor ];
       load: 'Tests' ].
   ```
 
@@ -45,6 +46,7 @@ Gofer new
     Metacello new
       baseline: 'ZincHTTPComponents';
       repository: 'github://GsDevKit/zinc:2.4.3/repository';
+      onLock: [:ex | ex honor ];
       load: 'Tests' ].
   ```
 

@@ -7,13 +7,14 @@ Gofer new
   package: 'GsUpgrader-Core';
   url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
   load.
-(Smalltalk at: #GsUpgrader) upgradeMetacello.
+(Smalltalk at: #GsUpgrader) upgradeGrease.
 
 GsDeployer deploy: [
   "Load Zinc ... "
   Metacello new
     baseline: 'ZincHTTPComponents';
     repository: 'filetree://', gitPath, '/zinc/repository';
+    onLock: [:ex | ex honor ];
     load: #('Tests' 'default')
 ].
 
