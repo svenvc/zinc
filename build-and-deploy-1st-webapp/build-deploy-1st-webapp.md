@@ -3,7 +3,7 @@
 
 *Sven Van Caekenberghe*
 
-*July 2013*
+*Written July 2013, updated May 2015*
 
 There are lots of ways to get something on the Web today. However, it remains important that you understand the actual mechanics of building and deploying a web application. This guide explains how to build and deploy your first web application using [Pharo](http://www.pharo.org).
 
@@ -155,7 +155,7 @@ To simplify our app, we will arrange things so that we always start with a defau
     downloadPharoLogo
       ^ ZnClient new 
           beOneShot;
-          get: 'http://www.pharo-project.org/images/pharo.png';
+          get: 'http://www.pharo.org/files/pharo.png';
           entity 
 
 Quickly test the code by selecting the method body (not including the name) and inspecting the result. You should get an image entity back. Now add the accessor **#image**
@@ -768,7 +768,7 @@ Here is the full code listing of the web app. You can also find the code, includ
     downloadPharoLogo
       ^ ZnClient new 
           beOneShot;
-          get: 'http://www.pharo-project.org/images/pharo.png';
+          get: 'http://www.pharo.org/files/pharo.png';
           entity 
 
     image

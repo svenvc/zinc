@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>Building and deploying your first web app with Pharo</title>
+<meta name="creator" content="Marked.app"/>
 <style>
 body {
   font: 24px/1.6 Helvetica;
@@ -40,7 +40,7 @@ figcaption {
 
 <p><em>Sven Van Caekenberghe</em></p>
 
-<p><em>July 2013</em></p>
+<p><em>Written July 2013, updated May 2015</em></p>
 
 <p>There are lots of ways to get something on the Web today. However, it remains important that you understand the actual mechanics of building and deploying a web application. This guide explains how to build and deploy your first web application using <a href="http://www.pharo.org">Pharo</a>.</p>
 
@@ -226,7 +226,7 @@ handleRequest: request
 <pre><code>downloadPharoLogo
   ^ ZnClient new 
       beOneShot;
-      get: 'http://www.pharo-project.org/images/pharo.png';
+      get: 'http://www.pharo.org/files/pharo.png';
       entity 
 </code></pre>
 
@@ -934,7 +934,7 @@ html
 downloadPharoLogo
   ^ ZnClient new 
       beOneShot;
-      get: 'http://www.pharo-project.org/images/pharo.png';
+      get: 'http://www.pharo.org/files/pharo.png';
       entity 
 
 image
