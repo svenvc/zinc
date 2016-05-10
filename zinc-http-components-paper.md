@@ -38,7 +38,7 @@ An HTML resource will have a mime-type like 'text/html;charset=utf-8'.
 
 To specify which resource you want, a URL (Uniform Resource Locator) is used.
 Web addresses are the most common form of URL.
-For example, <http://www.pharo-project.org/images/pharo.png>, is a URL that referes to a PNG image resource on a specific server.
+For example, <http://pharo.org/files/pharo.png>, is a URL that referes to a PNG image resource on a specific server.
 
 The reliable transport connection between an HTTP client and server is used bidirectionally:
 both to send the request as well as to receive the response.
@@ -708,7 +708,7 @@ A nice feature here, more as an example, are some direct ways to ask for image r
 
     ZnEasy getGif: 'http://homepage.mac.com/svc/ADayAtTheBeach/calculator.gif'.
     ZnEasy getJpeg: 'http://caretaker.wolf359.be/sun-fire-x2100.jpg'.
-    ZnEasy getPng: 'http://www.pharo-project.org/images/pharo.png'.
+    ZnEasy getPng: 'http://pharo.org/files/pharo.png'.
 
     (ZnEasy getPng: 'http://chart.googleapis.com/chart?cht=tx&chl=',
       'a^2+b^2=c^2' encodeForHTTP) asMorph openInHand.
