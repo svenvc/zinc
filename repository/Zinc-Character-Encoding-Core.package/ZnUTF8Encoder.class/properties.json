@@ -11,5 +11,5 @@
 	"name" : "ZnUTF8Encoder",
 	"pools" : [
 		 ],
-	"super" : "ZnCharacterEncoder",
+	"super" : "ZnUTFEncoder",
 	"type" : "normal" }

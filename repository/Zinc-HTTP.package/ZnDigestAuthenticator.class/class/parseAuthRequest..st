@@ -4,7 +4,7 @@ parseAuthRequest: headerValue
 	dict := Dictionary new.
 	"Chops off the ' Digest ' scheme name, a bit too brittle."
 	data := headerValue copyFrom: 8 to: headerValue size.
-	(data subStrings: ',') do: [ :fragment | | tokens i key value |
+	(data substrings: ',') do: [ :fragment | | tokens i key value |
 		tokens := fragment trimBoth.
 		i := tokens indexOf: $=.
 		(i > 0) ifTrue: [

@@ -1,12 +1,16 @@
 private
 encode: byte1 and: byte2 and: byte3 to: stream
-	stream
-		nextPut: (alphabet at: (byte1 >> 2) + 1);
-		nextPut: (alphabet at: ((byte1 bitAnd: 2r11) << 4 bitXor: (byte2 ifNil: [ 0 ]) >> 4) + 1).
+	stream nextPut: (self characterForValue: (byte1 bitShift: -2)).
 	byte2
-		ifNil: [ stream nextPutAll: '==' ]
+		ifNil: [ 
+			stream nextPut: (self characterForValue: ((byte1 bitAnd: 2r11) bitShift: 4)).
+			stream nextPutAll: '==' ]
 		ifNotNil: [ 
-			stream nextPut: (alphabet at: ((byte2 bitAnd: 2r1111) << 2 bitXor: (byte3 ifNil: [ 0 ]) >> 6) + 1).
+			stream nextPut: (self characterForValue: (((byte1 bitAnd: 2r11) bitShift: 4) + (byte2 bitShift: -4))).
 			byte3
-				ifNil: [ stream nextPut: $= ]
-				ifNotNil: [ stream nextPut: (alphabet at: (byte3 bitAnd: 2r111111) + 1) ] ]
+				ifNil: [ 
+					stream nextPut: (self characterForValue: ((byte2 bitAnd: 2r1111) bitShift: 2)).
+					stream nextPut: $= ]
+				ifNotNil: [ 
+					stream nextPut: (self characterForValue: (((byte2 bitAnd: 2r1111) bitShift: 2) + (byte3 bitShift: -6))).
+					stream nextPut: (self characterForValue: (byte3 bitAnd: 2r111111)) ] ]

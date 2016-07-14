@@ -8,7 +8,9 @@ testSlashdotGzipChunked
 	response := [ 
   		request writeOn: stream. 
   		stream flush. 
-  		ZnResponse readFrom: stream ] ensure: [ stream close ].
+  		ZnDefaultCharacterEncoder 
+			value: ZnNullEncoder new
+			during: [ ZnResponse readFrom: stream ] ] ensure: [ stream close ].
 	response isRedirect ifTrue: [ ^ self ].
 	self assert: response code = 200.
 	self assert: ((response headers at: 'Content-Type') beginsWith: 'text/html').

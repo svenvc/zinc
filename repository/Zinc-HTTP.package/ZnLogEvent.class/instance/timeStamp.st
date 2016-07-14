@@ -1,3 +1,3 @@
 accessing
-timeStamp
-	^ timeStamp
+timestamp
+	^ timestamp

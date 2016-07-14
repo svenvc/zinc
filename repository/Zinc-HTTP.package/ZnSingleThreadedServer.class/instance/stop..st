@@ -9,4 +9,4 @@ stop: unregister
 	process := nil.
 	unregister ifTrue: [ self unregister ].
 	self closeDelegate.
-	self log info: [ 'Stopped ', self serverProcessName ]
+	self logStopped

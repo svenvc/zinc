@@ -1,4 +1,4 @@
 streams
 oldFileStreamFor: fileName
-	^fileName asFileReference 
-		readStreamIfAbsent: [ self error: fileName asString, ' does not exists' ]
+	^ fileName asFileReference 
+		readStreamIfAbsent: [ FileDoesNotExist signalWith: fileName asFileReference ]

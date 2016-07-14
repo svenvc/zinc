@@ -1,4 +1,4 @@
-initialize-release
+initialization
 alphabet: string
 	"Set the alphabet to use to string, containing 64 characters to represent 64 byte values.
 	I automatically compute the inverse used for fast decoding."

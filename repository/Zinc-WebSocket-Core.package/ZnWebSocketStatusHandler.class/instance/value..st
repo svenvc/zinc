@@ -4,11 +4,11 @@ value: webSocket
 	until ConnectionClosed or no longer isConnected"
 	
 	[ 
-		webSocket log info: 'Started status streaming'.
+		webSocket logGeneric: 'Started status streaming'.
 		[ 
 			webSocket sendMessage: self status.
 			1 second asDelay wait.
 			webSocket isConnected ] whileTrue ] 
 		on: ConnectionClosed 
-		do: [ webSocket log debug: 'Ignoring connection close' ].
-	webSocket log info: 'Stopping status streaming' 
+		do: [ webSocket logGeneric: 'Ignoring connection close' ].
+	webSocket logGeneric: 'Stopping status streaming' 

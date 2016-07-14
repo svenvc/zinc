@@ -7,8 +7,12 @@ I implement searching/matching logic on my class side.
 
   #performOperation:with:on:
 
+which defaults to matching the #operation and #schemes.
+
 I am instanciated to be executed. 
 
   #performOperation
+
+A concrete example is ZnUrl>>#retrieveContents with subclasses ZnHttpRetrieveContents and ZnFileRetrieveContents.
 
 Part of Zinc HTTP Components.

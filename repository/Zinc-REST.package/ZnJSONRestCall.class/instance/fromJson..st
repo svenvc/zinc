@@ -1,3 +1,3 @@
 utils
 fromJson: string
-	^ NeoJSONReader fromString: string
+	^ self delegate fromJson: string

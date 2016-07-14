@@ -2,7 +2,7 @@ converting
 inContextOf: absoluteUrl
 	"Return a copy of the receiver where scheme, host and port
 	are taken from absoluteUrl unless they are already in the receiver.
-	Path merging is not supported."
+	Path merging is not supported. See also #withRelativeReference: "
 	
 	| copy |
 	copy := self copy.

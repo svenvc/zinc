@@ -3,15 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ByteTextConverters" ],
-	"commentStamp" : "<historical>",
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 9/13/2014 22:45",
 	"instvars" : [
-		"identifier",
-		"byteToUnicode",
-		"unicodeToByte",
-		"strict" ],
+		 ],
 	"name" : "ZnByteEncoder",
 	"pools" : [
 		 ],
-	"super" : "ZnCharacterEncoder",
+	"super" : "ZnSimplifiedByteEncoder",
 	"type" : "normal" }

@@ -4,7 +4,7 @@ testProgress
 		bar title: 'Downloading Sources...'.
 		[
 			ZnClient new 
-				url: 'http://files.pharo.org/image/PharoV20.sources'; 
+				url: 'http://files.pharo.org/sources/PharoV30.sources'; 
 				signalProgress: true;	
 				downloadTo: FileLocator temp ]
 			on: HTTPProgress 
@@ -17,5 +17,5 @@ testProgress
 			ZnClient new
 				beOneShot;
 				signalProgress: true;
-				get: 'http://zn.stfx.eu/zn/small.html' ] 
+				get: self smallHtmlUrl ] 
 		raise: HTTPProgress

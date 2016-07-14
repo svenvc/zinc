@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"stream",
-		"encoder",
-		"peekedCharacter" ],
+		 ],
 	"name" : "ZnCharacterReadStream",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ZnEncodedReadStream",
 	"type" : "normal" }

@@ -12,7 +12,7 @@
 		"lastUsed",
 		"options",
 		"session",
-		"log" ],
+		"logLevel" ],
 	"name" : "ZnClient",
 	"pools" : [
 		 ],

@@ -7,8 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"stream",
-		"role",
-		"log" ],
+		"role" ],
 	"name" : "ZnWebSocket",
 	"pools" : [
 		 ],

@@ -8,9 +8,7 @@
 	"instvars" : [
 		"process",
 		"serverSocket",
-		"log",
-		"lastRequest",
-		"lastResponse" ],
+		"logLevel" ],
 	"name" : "ZnSingleThreadedServer",
 	"pools" : [
 		 ],

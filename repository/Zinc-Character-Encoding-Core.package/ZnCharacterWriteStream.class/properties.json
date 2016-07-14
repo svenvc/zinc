@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"stream",
-		"encoder" ],
+		 ],
 	"name" : "ZnCharacterWriteStream",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ZnEncodedWriteStream",
 	"type" : "normal" }

@@ -1,7 +1,7 @@
 initialize-release
 fromString: aString
 	| tokens val data i |
-	tokens := aString subStrings: ';'.
+	tokens := aString substrings: ';'.
 	i := tokens first indexOf: $=.
 	val := tokens first copyFrom: 1 to: i - 1.
 	data := tokens first copyFrom: i + 1 to: tokens first size. 

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"endianness" ],
+		 ],
 	"name" : "ZnUTF16Encoder",
 	"pools" : [
 		 ],
-	"super" : "ZnCharacterEncoder",
+	"super" : "ZnEndianSensitiveUTFEncoder",
 	"type" : "normal" }

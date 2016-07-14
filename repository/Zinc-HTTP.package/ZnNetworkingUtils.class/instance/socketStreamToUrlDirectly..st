@@ -6,6 +6,6 @@ socketStreamToUrlDirectly: url
 		openConnectionToHost: address
 		port: url portOrDefault
 		timeout: self timeout.  
-	self setSocketStreamParameters: stream.  
-	(#(https wss) includes: url scheme) ifTrue: [ stream connect ].  
+	self setSocketStreamParameters: stream. 
+	"note that for TLS/SSL, #connect should be called"
 	^ stream

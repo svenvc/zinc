@@ -8,5 +8,4 @@ sendCookies
 		cookies
 			do: [ :each | each writeNameAndValueOn: stream ]
 			separatedBy: [ stream nextPutAll: '; ' ] ].
-	request setCookie: cookiesString.
-	self log debug: [ 'Cookie set to: ', cookiesString ]
+	request setCookie: cookiesString

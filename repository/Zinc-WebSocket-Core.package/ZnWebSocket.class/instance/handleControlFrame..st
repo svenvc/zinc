@@ -4,13 +4,13 @@ handleControlFrame: frame
 	
 	frame isClose 
 		ifTrue: [ 
-			self log debug: 'Handling close frame'.
+			self logControlFrameHandled: #close.
 			self close. 
 			^ self signalClosed: frame ].
 	frame isPing 
 		ifTrue: [ 
-			self log debug: 'Handling ping frame'.
+			self logControlFrameHandled: #ping.
 			self pong: frame body ].
 	frame isPong 
 		ifTrue: [
-			self log debug: 'Handling pong frame' ]
+			self logControlFrameHandled: #pong ]

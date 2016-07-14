@@ -1,8 +1,8 @@
 {
 	"class" : {
 		"hasMD5Support" : "SvenVanCaekenberghe 8/18/2011 14:19",
-		"md5Hash:" : "SvenVanCaekenberghe 8/18/2011 14:27",
-		"parseAuthRequest:" : "SvenVanCaekenberghe 5/22/2012 10:21" },
+		"md5Hash:" : "SvenVanCaekenberghe 12/12/2014 12:52",
+		"parseAuthRequest:" : "SvenVanCaekenberghe 4/28/2015 18:15" },
 	"instance" : {
 		"a1for:" : "SvenVanCaekenberghe 8/18/2011 14:03",
 		"a2forUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:18",

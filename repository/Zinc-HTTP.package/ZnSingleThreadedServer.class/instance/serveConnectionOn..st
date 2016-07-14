@@ -11,8 +11,7 @@ serveConnectionOn: listeningSocket
 	[ 
 	[ self executeOneRequestResponseOn: stream ]
 		ensure: [ 
-			self log debug: 'Closing stream'.
+			self logConnectionClosed: stream.
 			stream close ] ]
 		ifCurtailed: [ 
-			self log debug: 'Destroying socket'.
 			socket destroy ]

@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ExtensionsMap" ],
+		"ExtensionsMap",
+		"SubTypeBinaryCache" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"main",

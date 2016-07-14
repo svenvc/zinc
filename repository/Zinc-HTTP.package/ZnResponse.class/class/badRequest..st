@@ -1,7 +1,9 @@
 instance creation
 badRequest: request
-	^ self new
-		statusLine: ZnStatusLine badRequest;
-		headers: ZnHeaders defaultResponseHeaders;
-		entity: (ZnEntity textCRLF: 'Bad Request ' , request method , ' ' , request uri pathQueryFragmentPrintString);
-		yourself
+	| message |
+	message := String streamContents: [ :out |
+		out << 'Bad Request '; << request method; space.
+		request uri printPathQueryFragmentOn: out ].
+	^ self 
+		badRequest: request 
+		entity: (ZnEntity textCRLF: message)

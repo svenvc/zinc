@@ -1,5 +1,5 @@
-initialization
-initialize 
-	self timeStamp: DateAndTime now.
-	self category: #info.  
-	self processId: ZnUtils currentProcessID     
+initialize
+initialize
+	super initialize.
+	timestamp := DateAndTime now.
+	id := self nextId

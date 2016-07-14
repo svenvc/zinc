@@ -4,7 +4,7 @@ baseline24: spec
 	spec for: #pharo do: [ 
 		spec
 			blessing: #baseline;
-			description: 'Baseline for Zinc HTTP Components, a framework to deal with the HTTP networking';
+			description: 'Baseline for Zinc HTTP Components, a framework to deal with HTTP networking';
 			author: 'SvenVanCaekenberghe'.
 		spec project: 'XML Support' with: [
 			spec

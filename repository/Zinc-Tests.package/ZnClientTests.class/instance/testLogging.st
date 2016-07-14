@@ -1,10 +1,17 @@
 testing
 testLogging
-	| client memoryLogger |
-	memoryLogger := ZnMemoryLogger new.
+	| client logEventCollection count |
+	logEventCollection := OrderedCollection new.
+	ZnLogEvent announcer 
+		when: ZnLogEvent do: [ :event | logEventCollection add: event ]. 
 	(client := ZnClient new)
+		clientId: #C1;
 		beOneShot.
-	client log addListener: memoryLogger.
-	client	get: 'http://zn.stfx.eu/zn/small.html'.
+	client get: self smallHtmlUrl.
 	client close.
-	self deny: memoryLogger logEvents isEmpty
+	count := ZnLogEvent announcer numberOfSubscriptions.
+	ZnLogEvent announcer 
+		unsubscribe: self.
+	self assert: ZnLogEvent announcer numberOfSubscriptions equals: count -1.
+	self deny: logEventCollection isEmpty.
+	self assert: logEventCollection anyOne clientId equals: #C1

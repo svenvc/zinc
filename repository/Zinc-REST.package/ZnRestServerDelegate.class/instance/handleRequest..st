@@ -6,10 +6,8 @@ handleRequest: request
 	(self authenticate: call)
 		ifFalse: [ ^ self callUnauthorized: request ].
 	^ [ self execute: call ]
-		on: Exception
+		on: Error
 		do: [ :exception | 
-			request server debugMode
-				ifTrue: [ exception pass ]
-				ifFalse: [ 
-					request server logServerError: exception.
-					self serverError: request exception: exception ] ]
+			self 
+				handleException: exception 
+				request: request ]

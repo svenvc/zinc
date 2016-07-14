@@ -2,10 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"smallHtmlUrl" : "SvenVanCaekenberghe 8/13/2014 14:45",
 		"testDelete" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testGetJpeg" : "SvenVanCaekenberghe 9/15/2011 16:34",
-		"testGetSmallHTMLDocument" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testHeadSmallHTMLDocument" : "SvenVanCaekenberghe 7/4/2012 17:33",
+		"testGetGif" : "SvenVanCaekenberghe 5/25/2016 10:19",
+		"testGetJpeg" : "SvenVanCaekenberghe 5/25/2016 10:20",
+		"testGetPng" : "SvenVanCaekenberghe 5/25/2016 10:58",
+		"testGetSmallHTMLDocument" : "SvenVanCaekenberghe 8/13/2014 14:45",
+		"testHeadSmallHTMLDocument" : "SvenVanCaekenberghe 8/13/2014 14:46",
 		"testPost" : "SvenVanCaekenberghe 8/23/2012 14:34",
 		"testPostUnicodeUtf8" : "SvenVanCaekenberghe 8/23/2012 14:34",
 		"testPut" : "SvenVanCaekenberghe 8/23/2012 14:34",

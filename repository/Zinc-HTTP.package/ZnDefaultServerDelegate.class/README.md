@@ -17,4 +17,6 @@ I implement responses to the following prefixes:
 
 Without any matches, I respond with a page not found.
 
+I can be reused without any default handlers mapped using #empty and configured using #map:to: where the second argument can be a block.
+
 Part of Zinc HTTP Components.

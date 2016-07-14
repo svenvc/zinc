@@ -2,7 +2,7 @@ testing
 testGetSmallHTML
 	| client |
 	(client := ZnClient new)
-		url: 'http://zn.stfx.eu/zn/small.html';
+		url: self smallHtmlUrl;
 		get.
 	self assert: client isSuccess.
 	self assert: client isContentTypeAcceptable.

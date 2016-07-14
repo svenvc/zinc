@@ -2,8 +2,11 @@ private
 releaseServerSocket
 	"Release our server socket"
 	
+	| address port |
 	serverSocket ifNil: [ ^ self ].
-	self log debug: 'Releasing server socket'.
+	address := [ serverSocket address ] on: Error do: [ nil ].
+	port := [ serverSocket port ]on: Error do: [ nil ].
 	(Delay forMilliseconds: 10) wait.
 	serverSocket destroy.
-	serverSocket := nil
+	serverSocket := nil.
+	self logServerSocketReleasedAddress: address port: port 

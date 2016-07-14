@@ -6,5 +6,5 @@ readBinaryFrom: stream usingType: mimeType andLength: length
 	| newEntity |
 	newEntity := (self concreteSubclassForType: mimeType binary: true) 
 						type: mimeType length: length.
-	newEntity readFrom: stream.
+	newEntity readBinaryFrom: stream.
 	^ newEntity 

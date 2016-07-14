@@ -1,3 +1,5 @@
 class initialization
 initialize
-	self initializeExtensionsMap
+	self 
+		initializeExtensionsMap;
+		initializeSubTypeBinaryCache

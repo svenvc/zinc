@@ -2,12 +2,12 @@
 	"class" : {
 		"installInDefaultServer" : "SvenVanCaekenberghe 7/6/2013 00:12" },
 	"instance" : {
-		"downloadPharoLogo" : "SvenVanCaekenberghe 7/5/2013 23:34",
+		"downloadPharoLogo" : "SvenVanCaekenberghe 5/26/2014 23:40",
 		"form" : "SvenVanCaekenberghe 7/6/2013 00:01",
 		"formForImageEntity:" : "SvenVanCaekenberghe 7/6/2013 00:10",
 		"handleGetRequest:" : "SvenVanCaekenberghe 7/6/2013 00:07",
 		"handlePostRequest:" : "SvenVanCaekenberghe 7/6/2013 11:42",
 		"handleRequest:" : "SvenVanCaekenberghe 7/6/2013 11:43",
-		"html" : "SvenVanCaekenberghe 7/6/2013 11:43",
+		"html" : "SvenVanCaekenberghe 11/30/2015 13:43",
 		"image" : "SvenVanCaekenberghe 7/6/2013 00:09",
 		"value:" : "SvenVanCaekenberghe 7/5/2013 14:28" } }

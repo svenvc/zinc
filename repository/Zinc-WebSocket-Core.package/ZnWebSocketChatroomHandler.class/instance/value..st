@@ -6,9 +6,9 @@ value: webSocket
 	[
 		self register: webSocket.
 		webSocket runWith: [ :message |
-			webSocket log info: [ 'Received message: ', message printString ].
+			webSocket logGeneric: 'Received message: ', message printString.
 			self distributeMessage: message ] ] 
 		on: ConnectionClosed 
 		do: [
-			webSocket log debug: 'Connection close, cleaning up'.
+			webSocket logGeneric: 'Connection close, cleaning up'.
 			self unregister: webSocket ]

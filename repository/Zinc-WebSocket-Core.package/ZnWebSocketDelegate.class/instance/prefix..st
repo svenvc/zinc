@@ -1,3 +1,5 @@
 private
 prefix: orderedCollection
-	prefix := orderedCollection
+	
+	orderedCollection isEmpty ifFalse: [ 
+		prefix := orderedCollection ]

@@ -3,7 +3,8 @@
 		 },
 	"instance" : {
 		"testApplicationUrlEncodingAddAll" : "SvenVanCaekenberghe 2/24/2013 10:53",
-		"testMultiPartFormDataWriteRead" : "SvenVanCaekenberghe 5/21/2013 22:30",
+		"testMultiPartFormDataWriteRead" : "SvenVanCaekenberghe 10/16/2014 11:28",
+		"testMultiPartFormDataWriteReadBinary" : "SvenVanCaekenberghe 10/16/2014 11:27",
 		"testReading" : "SvenVanCaekenberghe 12/3/2010 15:41",
 		"testReadingApplicationFormUrlEncoding" : "SvenVanCaekenberghe 1/25/2013 14:41",
 		"testReadingApplicationFormUrlEncodingNoLength" : "SvenVanCaekenberghe 1/25/2013 14:41",
@@ -13,6 +14,7 @@
 		"testUTF8ReadingDetermined" : "PaulDeBruicker 04/10/2011 10:46",
 		"testUTF8ReadingUndetermined" : "PaulDeBruicker 04/10/2011 10:46",
 		"testUTF8Writing" : "PaulDeBruicker 04/10/2011 10:46",
+		"testUnspecifiedEncoding" : "SvenVanCaekenberghe 8/24/2015 14:30",
 		"testWritingApplicationUrlEncoding" : "SvenVanCaekenberghe 9/12/2010 10:11",
 		"testWritingApplicationUrlEncodingWithTextEncodingLatin1" : "NorbertHartl 12/6/2011 18:33",
 		"testWritingApplicationUrlEncodingWithTextEncodingUtf8" : "NorbertHartl 12/6/2011 18:33" } }

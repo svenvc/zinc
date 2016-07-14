@@ -6,5 +6,5 @@ testProgressNoIfFail
 				beOneShot;
 				signalProgress: true;
 				ifFail: [ self fail ];
-				get: 'http://zn.stfx.eu/zn/small.html' ] 
+				get: self smallHtmlUrl ] 
 		raise: HTTPProgress

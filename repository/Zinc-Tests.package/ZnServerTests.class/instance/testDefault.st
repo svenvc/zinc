@@ -1,7 +1,10 @@
 testing
 testDefault
-	| port server |
-	ZnServer stopDefault.
+	| port server initialDefaultServer wasRunning |
+	wasRunning := ZnServer default 
+		ifNil: [ false ] 
+		ifNotNil: [ ZnServer default isRunning ].
+	initialDefaultServer := ZnServer stopDefault.
 	self assert: ZnServer default isNil.
 	port := self port.
 	server := ZnServer startDefaultOn: port.
@@ -18,4 +21,7 @@ testDefault
 	"Starting the default again is actually a restart"
 	ZnServer startDefaultOn: port.
 	self assert: ZnServer default == server.
-	ZnServer stopDefault
+	ZnServer stopDefault.
+	ZnServer adoptAsDefault: initialDefaultServer.
+	self assert: initialDefaultServer == ZnServer default.
+	wasRunning ifTrue: [ ZnServer default start ]

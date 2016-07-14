@@ -1,5 +1,6 @@
 testing
 testSpecialPosts
+	self skip.
 	self withServerDo: [ :server |
 		{ ZnEntity with: 'A'. ZnEntity with: #[ 42 ]. ZnEntity with: ''. ZnEntity with: #[ ] } 
 			do: [ :each |

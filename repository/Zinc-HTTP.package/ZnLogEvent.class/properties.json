@@ -3,13 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "SvenVanCaekenberghe 3/29/2011 13:27",
+		"IdCounter",
+		"LogEventAnnouncer" ],
+	"commentStamp" : "SvenVanCaekenberghe 6/11/2014 14:20",
 	"instvars" : [
-		"timeStamp",
-		"processId",
-		"category",
-		"message" ],
+		"timestamp",
+		"id" ],
 	"name" : "ZnLogEvent",
 	"pools" : [
 		 ],

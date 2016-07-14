@@ -1,4 +1,4 @@
-initialize-release
+initialization
 interactivePolicy
 	self 
 		beOneShot;

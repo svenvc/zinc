@@ -9,4 +9,4 @@ distributeMessage: message
 				do: [ :exception |
 					"We can ignore this (instead of #unregister:-ing the offender), 
 					since the listener process (see #value:) will do the right thing" 
-					each log debug: [ exception printString, ' in ditributeMessage, ignoring' ] ] ] ]
+					each logGeneric: exception printString, ' in ditributeMessage, ignoring' ] ] ]

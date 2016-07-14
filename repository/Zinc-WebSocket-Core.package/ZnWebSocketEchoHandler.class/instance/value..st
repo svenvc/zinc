@@ -5,7 +5,7 @@ value: webSocket
 	
 	[ 
 		webSocket runWith: [ :message |
-			webSocket log info: [ 'Received message: ', message printString, ', echoing' ].
+			webSocket logGeneric: 'Received message: ', message printString, ', echoing'.
 			webSocket sendMessage: message ] ] 
 		on: ConnectionClosed 
-		do: [ webSocket log debug: 'Ignoring connection close, done' ]
+		do: [ webSocket logGeneric: 'Ignoring connection close, done' ]

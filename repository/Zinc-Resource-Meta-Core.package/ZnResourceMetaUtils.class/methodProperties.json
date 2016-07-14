@@ -2,14 +2,13 @@
 	"class" : {
 		"decodePercent:" : "SvenVanCaekenberghe 2/14/2014 15:07",
 		"decodePercentForQuery:" : "SvenVanCaekenberghe 2/14/2014 15:07",
-		"encodePercent:encoding:" : "SvenVanCaekenberghe 10/24/2013 09:57",
-		"encodePercent:safeSet:encoding:" : "SvenVanCaekenberghe 10/24/2013 09:57",
+		"encodePercent:safeSet:encoder:" : "KrisGybels 6/11/2014 11:37",
 		"parseQueryFrom:" : "SvenVanCaekenberghe 2/14/2014 15:07",
 		"queryKeyValueSafeSet" : "SvenVanCaekenberghe 2/15/2014 10:21",
 		"querySafeSet" : "SvenVanCaekenberghe 10/24/2013 10:22",
 		"rfc3986SafeSet" : "SvenVanCaekenberghe 10/24/2013 09:39",
 		"urlPathSafeSet" : "SvenVanCaekenberghe 10/24/2013 10:22",
-		"writeQueryFields:on:" : "SvenVanCaekenberghe 12/8/2012 20:47",
-		"writeQueryFields:withTextEncoding:on:" : "SvenVanCaekenberghe 12/12/2013 21:33" },
+		"writeQueryFields:on:" : "KrisGybels 6/11/2014 13:47",
+		"writeQueryFields:withEncoder:on:" : "KrisGybels 6/11/2014 13:40" },
 	"instance" : {
 		 } }

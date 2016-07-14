@@ -1,4 +1,4 @@
-initialize-release
+initialization
 systemPolicy
 	self 
 		enforceHttpSuccess: true;

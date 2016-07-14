@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testExtendUrlWithArgs" : "SvenVanCaekenberghe 4/30/2011 13:59",
-		"testGetSmallHTMLDocument" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testGetSmallHTMLStream" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testPut" : "SvenVanCaekenberghe 8/23/2012 14:34" } }

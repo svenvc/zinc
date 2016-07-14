@@ -1,13 +1,16 @@
 request handling
 handleRequestProtected: request
 	"Handle request and return a response.
-	If a Smalltalk Error is thrown, return a HTTP Server Error response."
+	If a ZnRespond notification is signaled, return its response directly.
+	If an Error is thrown, return a HTTP Server Error response."
 
-	^ [ self authenticateAndDelegateRequest: request ]
+	^ [ [ self authenticateAndDelegateRequest: request ]
+			on: ZnRespond 
+			do: [ :notification | notification response ] ]
 		on: Error
 		do: [ :exception | 
 			self debugMode
 				ifTrue: [ exception pass ]
 				ifFalse: [
-					self logServerError: exception. 
+					self logServerHandlerError: exception.
 					ZnResponse serverError: exception printString ] ]

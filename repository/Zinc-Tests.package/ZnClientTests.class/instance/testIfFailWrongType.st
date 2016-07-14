@@ -5,7 +5,7 @@ testIfFailWrongType
 		beOneShot;
 		accept: ZnMimeType imagePng;
 		enforceAcceptContentType: true;
-		url: 'http://zn.stfx.eu/zn/small.html';
+		url: self smallHtmlUrl;
 		ifFail: [ :exception |
 			^ self assert: (exception isKindOf: ZnUnexpectedContentType) ];
 		get.

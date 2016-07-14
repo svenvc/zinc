@@ -1,6 +1,7 @@
-I am ZnLogEvent, an Announcement sent by an HTTP server or client containing logging information.
+I am ZnLogEvent, the base class of a log events emitted by elements of the Zinc HTTP Components framework.
 
-A log event has a TimeStamp, a Process ID, a category and a message.
-The following categories are used: #info (I), #debug (D) and #transaction (T).  
+I add a timestamp and a simple id attribute. The id can wrap around and should only be used to distinguish between events that have the same timestamp.
 
-Part of Zinc HTTP Components.
+ZnLogEvents are distributed as Announcement through a singleton Announcer that I maintain.
+
+I have a small convenience API to log to the Transcript or open a simple GUI on the emitted log events.

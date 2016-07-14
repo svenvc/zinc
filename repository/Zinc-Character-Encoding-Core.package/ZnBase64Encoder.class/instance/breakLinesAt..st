@@ -1,4 +1,4 @@
-initialize-release
+initialization
 breakLinesAt: length
 	"Configure me to break lines at lenth, a multiple of 4, and insert newlines"
 

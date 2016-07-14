@@ -1,14 +1,17 @@
 {
 	"class" : {
-		"handlesEncoding:" : "SvenVanCaekenberghe 12/17/2012 13:24",
+		"handlesEncoding:" : "SvenVanCaekenberghe 6/9/2015 17:03",
 		"newForEncoding:" : "SvenVanCaekenberghe 1/25/2011 11:19" },
 	"instance" : {
 		"backOnStream:" : "SvenVanCaekenberghe 2/24/2014 15:38",
-		"decodeBytes:" : "SvenVanCaekenberghe 5/3/2012 11:32",
-		"encodeString:" : "SvenVanCaekenberghe 5/3/2012 11:32",
-		"encodedByteCountFor:" : "SvenVanCaekenberghe 11/29/2010 21:17",
-		"encodedByteCountForString:" : "SvenVanCaekenberghe 5/3/2012 11:32",
-		"next:putAll:startingAt:toStream:" : "SvenVanCaekenberghe 5/22/2013 10:03",
-		"nextFromStream:" : "SvenVanCaekenberghe 1/4/2011 20:52",
-		"nextPut:toStream:" : "SvenVanCaekenberghe 1/25/2011 12:36",
-		"readInto:startingAt:count:fromStream:" : "SvenVanCaekenberghe 5/23/2013 11:34" } }
+		"decodeBytes:" : "SvenVanCaekenberghe 1/15/2016 16:07",
+		"encodeString:" : "SvenVanCaekenberghe 1/15/2016 16:07",
+		"encodedByteCountFor:" : "SvenVanCaekenberghe 1/15/2016 16:07",
+		"encodedByteCountForCodePoint:" : "SvenVanCaekenberghe 1/15/2016 16:04",
+		"encodedByteCountForCodePoints:" : "SvenVanCaekenberghe 1/15/2016 16:07",
+		"encodedByteCountForString:" : "SvenVanCaekenberghe 1/15/2016 16:07",
+		"identifier" : "SvenVanCaekenberghe 9/15/2014 09:49",
+		"next:putAll:startingAt:toStream:" : "SvenVanCaekenberghe 1/15/2016 16:07",
+		"nextCodePointFromStream:" : "SvenVanCaekenberghe 1/15/2016 13:11",
+		"nextPutCodePoint:toStream:" : "SvenVanCaekenberghe 1/15/2016 13:10",
+		"readInto:startingAt:count:fromStream:" : "SvenVanCaekenberghe 1/15/2016 16:07" } }

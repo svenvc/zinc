@@ -5,9 +5,9 @@ testChatroom
 	ZnServer default 
 		delegate: (ZnWebSocketDelegate map: 'ws-chatroom' to: ZnWebSocketChatroomHandler new).
 	webSocket1 := ZnWebSocket to: 'ws://localhost:1701/ws-chatroom'.
-	message1 := 'Message 1 @ ', TimeStamp now printString.
+	message1 := 'Message 1 @ ', DateAndTime now printString.
 	webSocket2 := ZnWebSocket to: 'ws://localhost:1701/ws-chatroom'.
-	message2 := 'Message 2 @ ', TimeStamp now printString.
+	message2 := 'Message 2 @ ', DateAndTime now printString.
 	webSocket1 sendMessage: message1.
 	webSocket2 sendMessage: message2.
 	inbox1 := { webSocket1 readMessage. webSocket1 readMessage }.

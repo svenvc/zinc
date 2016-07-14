@@ -4,11 +4,11 @@ serveConnectionsOn: listeningSocket
 	If we get one we wrap it in a SocketStream and #executeRequestResponseLoopOn: on it"
 		 
 	| stream socket |
-	socket := (listeningSocket waitForAcceptFor: self acceptWaitTimeout) ifNil: [
-		^ self noteAcceptWaitTimedOut ].
+	socket := listeningSocket waitForAcceptFor: self acceptWaitTimeout.
+	socket ifNil: [ ^ self noteAcceptWaitTimedOut ].
 	stream := self socketStreamOn: socket.
 	[ [ [ self executeRequestResponseLoopOn: stream ]
-		ensure: [ self log debug: 'Closing stream'. self closeSocketStream: stream ] ]
-			ifCurtailed: [ self log debug: 'Destroying socket'. socket destroy ] ]
+		ensure: [ self logConnectionClosed: stream. self closeSocketStream: stream ] ]
+			ifCurtailed: [ socket destroy ] ]
 				forkAt: Processor lowIOPriority
 				named: self workerProcessName 

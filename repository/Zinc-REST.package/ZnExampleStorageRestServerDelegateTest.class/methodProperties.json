@@ -5,7 +5,10 @@
 		"setUp" : "SvenVanCaekenberghe 12/10/2012 20:03",
 		"tearDown" : "SvenVanCaekenberghe 12/10/2012 19:18",
 		"testCreate" : "SvenVanCaekenberghe 12/12/2012 10:26",
+		"testCreateWithInvalidJson" : "HolgerHansPeterFreyther 10/14/2015 14:09",
 		"testDelete" : "SvenVanCaekenberghe 12/12/2012 10:26",
 		"testEmpty" : "SvenVanCaekenberghe 12/10/2012 21:25",
+		"testExceptionError" : "HolgerHansPeterFreyther 11/11/2015 14:24",
+		"testExceptionNotification" : "HolgerHansPeterFreyther 11/11/2015 14:26",
 		"testQuery" : "SvenVanCaekenberghe 12/12/2012 10:27",
 		"testUpdate" : "SvenVanCaekenberghe 12/12/2012 10:28" } }

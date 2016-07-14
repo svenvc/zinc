@@ -1,25 +1,25 @@
 testing
 testDownloadSmallHTML
 	| client |
-	ZnFileSystemUtils deleteIfExists: 'small.html'.
+	ZnFileSystemUtils deleteIfExists: self smallHtmlUrl pathSegments last.
 	"First download to a directory"
 	(client := ZnClient new)
-		url: 'http://zn.stfx.eu/zn/small.html';
+		url: self smallHtmlUrl;
 		downloadTo: ZnFileSystemUtils defaultDirectoryPath.
 	self assert: client isSuccess.
 	self assert: client response contentType = ZnMimeType textHtml.
 	ZnFileSystemUtils 
-		oldFileNamed: 'small.html' 
+		oldFileNamed: self smallHtmlUrl pathSegments last
 		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].
-	ZnFileSystemUtils deleteIfExists: 'small.html'.
+	ZnFileSystemUtils deleteIfExists: self smallHtmlUrl pathSegments last.
 	"Second download to an explicitly named file"
 	client 
-		url: 'http://zn.stfx.eu/zn/small.html';
-		downloadTo: 'small.html'.
+		url: self smallHtmlUrl;
+		downloadTo: self smallHtmlUrl pathSegments last.
 	self assert: client isSuccess.
 	self assert: client response contentType = ZnMimeType textHtml.
 	ZnFileSystemUtils 
-		oldFileNamed: 'small.html' 
+		oldFileNamed: self smallHtmlUrl pathSegments last
 		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].	
 	client close.
-	ZnFileSystemUtils deleteIfExists: 'small.html'.
+	ZnFileSystemUtils deleteIfExists: self smallHtmlUrl pathSegments last

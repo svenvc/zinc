@@ -1,7 +1,5 @@
 instance creation
 ok: entity
-	^ self new
-		statusLine: ZnStatusLine ok;
-		headers: ZnHeaders defaultResponseHeaders;
+	^ (self statusLine: ZnStatusLine ok)
 		entity: entity;
 		yourself

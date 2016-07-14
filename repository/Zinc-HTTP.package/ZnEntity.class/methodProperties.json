@@ -7,7 +7,7 @@
 		"html:" : "SvenVanCaekenberghe 12/3/2010 14:01",
 		"matches:" : "SvenVanCaekenberghe 6/4/2013 14:43",
 		"new" : "SvenVanCaekenberghe 9/17/2010 17:07",
-		"readBinaryFrom:usingType:andLength:" : "SvenVanCaekenberghe 4/7/2012 17:38",
+		"readBinaryFrom:usingType:andLength:" : "SvenVanCaekenberghe 10/16/2014 10:42",
 		"readFrom:usingType:andLength:" : "SvenVanCaekenberghe 4/7/2012 17:36",
 		"stringEntityClass" : "SvenVanCaekenberghe 12/6/2010 13:48",
 		"text:" : "SvenVanCaekenberghe 12/3/2010 14:01",
@@ -33,5 +33,6 @@
 		"printContentTypeAndLengthOn:" : "SvenVanCaekenberghe 12/14/2010 11:19",
 		"printContentsOn:" : "SvenVanCaekenberghe 12/14/2010 10:56",
 		"printOn:" : "SvenVanCaekenberghe 12/4/2010 12:24",
+		"readBinaryFrom:" : "SvenVanCaekenberghe 10/16/2014 10:53",
 		"readFrom:" : "SvenVanCaekenberghe 9/6/2010 22:02",
 		"writeOn:" : "SvenVanCaekenberghe 9/6/2010 21:30" } }

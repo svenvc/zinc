@@ -2,13 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"someNonBinaryMimeTypes" : "SvenVanCaekenberghe 12/15/2014 16:28",
 		"testAsMimeType" : "SvenVanCaekenberghe 5/21/2013 20:30",
 		"testCharset" : "SvenVanCaekenberghe 3/6/2012 11:05",
 		"testCopying" : "SvenVanCaekenberghe 5/21/2013 20:28",
 		"testDefault" : "SvenVanCaekenberghe 12/6/2011 20:44",
 		"testIdentity" : "SvenVanCaekenberghe 12/6/2011 20:44",
-		"testIsBinary" : "SvenVanCaekenberghe 12/29/2013 11:15",
-		"testLegacy" : "SvenVanCaekenberghe 10/23/2013 19:04",
+		"testIsBinary" : "SvenVanCaekenberghe 12/15/2014 16:21",
 		"testMatches" : "SvenVanCaekenberghe 7/8/2013 14:31",
 		"testParameters" : "SvenVanCaekenberghe 3/6/2012 11:02",
 		"testReading" : "SvenVanCaekenberghe 12/2/2010 11:29",

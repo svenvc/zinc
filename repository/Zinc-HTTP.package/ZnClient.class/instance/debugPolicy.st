@@ -1,4 +1,4 @@
-initialize-release
+initialization
 debugPolicy
 	self 
 		beOneShot

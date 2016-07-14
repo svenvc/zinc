@@ -2,7 +2,7 @@ testing
 testGetSmallHTMLStreaming
 	| client result contents |
 	result := (client := ZnClient new)
-		url: 'http://zn.stfx.eu/zn/small.html';
+		url: self smallHtmlUrl;
 		streaming: true;
 		get.
 	self assert: client isSuccess.

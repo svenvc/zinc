@@ -4,8 +4,8 @@ start
 	If I am running, I will first stop and thus effectively restart"
 	
 	self stop.
-	self log info: [ 'Starting ', self serverProcessName ].
 	self class default = self ifTrue: [ self register ].
 	process := [ [ self listenLoop ] repeat ]
 		forkAt: Processor highIOPriority 
-		named: self serverProcessName 
+		named: self serverProcessName.
+	self logStarted.

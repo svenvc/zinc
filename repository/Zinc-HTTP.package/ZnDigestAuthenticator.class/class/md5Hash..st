@@ -12,5 +12,5 @@ md5Hash: aString
 	hash ifNotNil: [
 		hash := hash hex asLowercase.
 		(hash beginsWith: '16r') ifTrue: [ hash := hash allButFirst: 3 ].
-		hash := hash padded: #left to: 32 with: $0 ].
+		hash := hash padLeftTo: 32 with: $0 ].
 	^ hash

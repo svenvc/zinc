@@ -1,18 +1,19 @@
 {
 	"class" : {
+		"adoptAsDefault:" : "SvenVanCaekenberghe 11/30/2015 17:08",
 		"alwaysRestart" : "SvenVanCaekenberghe 9/18/2012 13:49",
 		"alwaysRestart:" : "SvenVanCaekenberghe 9/18/2012 13:37",
 		"default" : "SvenVanCaekenberghe 12/22/2011 11:27",
 		"defaultOn:" : "SvenVanCaekenberghe 12/22/2011 12:03",
 		"defaultServerClass" : "SvenVanCaekenberghe 3/4/2012 20:05",
-		"initialize" : "SvenVanCaekenberghe 9/18/2012 13:49",
+		"initialize" : "SvenVanCaekenberghe 2/10/2016 23:15",
 		"managedServers" : "SvenVanCaekenberghe 6/19/2011 12:17",
 		"on:" : "SvenVanCaekenberghe 12/22/2011 11:28",
 		"register:" : "SvenVanCaekenberghe 6/19/2011 12:17",
 		"shutDown:" : "SvenVanCaekenberghe 9/18/2012 13:38",
 		"startDefaultOn:" : "SvenVanCaekenberghe 12/22/2011 12:04",
 		"startOn:" : "SvenVanCaekenberghe 12/22/2011 11:30",
-		"startUp:" : "SvenVanCaekenberghe 9/29/2012 20:51",
+		"startUp:" : "SvenVanCaekenberghe 2/10/2016 23:14",
 		"stopDefault" : "SvenVanCaekenberghe 12/22/2011 11:29",
 		"unregister:" : "SvenVanCaekenberghe 8/18/2011 14:10" },
 	"instance" : {

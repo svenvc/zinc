@@ -5,6 +5,6 @@ readFrom: stream
 	lineStream := line readStream.
 	self version: (lineStream upTo: Character space).
 	httpCode := lineStream upTo: Character space.
-	httpCode := Integer readFrom: httpCode ifFail: [ (ZnUnknownHttpStatusCode code: code) signal ].
+	httpCode := Integer readFrom: httpCode ifFail: [ (ZnUnknownHttpStatusCode code: httpCode) signal ].
 	self code: httpCode.
 	self reason: (lineStream upToEnd)

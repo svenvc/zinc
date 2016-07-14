@@ -11,4 +11,4 @@ readFrom: stream
 			self contentLength > ZnConstants maximumEntitySize ifTrue: [ ZnEntityTooLarge signal ].
 			bytes := ByteArray ofSize: contentLength.
 			stream next: contentLength into: bytes ].
-	self parse: bytes boundary: self getBoundary asByteArray
+	self parse: bytes boundary: self getBoundary asByteArray binary: false

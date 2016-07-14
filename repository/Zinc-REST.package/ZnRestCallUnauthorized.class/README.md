@@ -1,1 +1,0 @@
-I am ZnRestCallUnauthorized, an Exception signaling that a REST call was not authorized to be executed.

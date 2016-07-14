@@ -11,13 +11,14 @@ parseFrom: string defaultScheme: defaultScheme
 		ifTrue: [
 			self query: (ZnResourceMetaUtils parseQueryFrom: (ReadStream on: string from: index + 1 to: end)).
 			end := index - 1 ].
-	(index := string indexOfSubCollection: '://') > 0
+	((index := string indexOfSubCollection: '://') > 0 and: [ index <= end ])
 		ifTrue: [
 			self scheme: (string copyFrom: 1 to: index - 1).
 			start := index + 3 ]
 		ifFalse: [ 
 			((index := string indexOf: $:) > 0 
-					and: [ self isSchemeNotUsingDoubleSlash: (string copyFrom: 1 to: index - 1) ])
+					and: [ index <= end 
+						and: [ self isSchemeNotUsingDoubleSlash: (string copyFrom: 1 to: index - 1) ] ])
 				ifTrue: [ 
 					self scheme: (string copyFrom: 1 to: index - 1).
 					start := index + 1 ]

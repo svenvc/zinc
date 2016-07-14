@@ -1,11 +1,11 @@
 testing
 testIfModifiedSinceNotModified
-	| client request response |
-	(client := ZnClient new) host: 'caretaker.wolf359.be'.
+	| client  response |
+	(client := ZnClient new) host: 'stfx.eu'.
 	[
 		response := client 
 			url: '/small.html'; 
-			setIfModifiedSince: (Date year: 2011 month: 1 day: 1);
+			setIfModifiedSince: (Date year: 2012 month: 9 day: 1);
 			get; 
 			response.
 		self assert: response isNotModified.
