@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"handlesEncoding:" : "SvenVanCaekenberghe 1/7/2016 14:57" },
+	"instance" : {
+		"backOnStream:" : "SvenVanCaekenberghe 1/7/2016 11:24",
+		"encodedByteCountForCodePoint:" : "SvenVanCaekenberghe 1/15/2016 16:11",
+		"errorIncomplete" : "SvenVanCaekenberghe 1/7/2016 11:22",
+		"identifier" : "SvenVanCaekenberghe 1/7/2016 11:22",
+		"nextCodePointFromStream:" : "SvenVanCaekenberghe 1/15/2016 15:23",
+		"nextPutCodePoint:toStream:" : "SvenVanCaekenberghe 1/15/2016 15:24",
+		"processByteOrderMark:" : "SvenVanCaekenberghe 1/7/2016 14:10",
+		"readCodePointFrom:" : "SvenVanCaekenberghe 1/7/2016 13:01",
+		"writeCodePoint:to:" : "SvenVanCaekenberghe 1/7/2016 12:55" } }

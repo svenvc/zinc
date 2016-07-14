@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"handlesEncoding:" : "SvenVanCaekenberghe 1/7/2016 11:17",
+		"newForEncoding:" : "SvenVanCaekenberghe 1/7/2016 11:17" },
+	"instance" : {
+		"beBigEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"beLittleEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"byteOrderMark" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"encodeStringWithByteOrderMark:" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"initialize" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"isBigEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"isLittleEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"nextPutByteOrderMarkToStream:" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"printOn:" : "SvenVanCaekenberghe 1/7/2016 11:03",
+		"swapEndianness" : "SvenVanCaekenberghe 1/7/2016 11:03" } }

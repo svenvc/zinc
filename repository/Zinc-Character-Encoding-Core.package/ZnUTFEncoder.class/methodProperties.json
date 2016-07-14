@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"handlesEncoding:" : "SvenVanCaekenberghe 1/7/2016 14:44" },
+	"instance" : {
+		"decodeBytes:" : "SvenVanCaekenberghe 1/7/2016 14:45",
+		"decodeBytesIntoWideString:" : "SvenVanCaekenberghe 1/7/2016 14:46",
+		"isSurrogateCodePoint:" : "SvenVanCaekenberghe 1/15/2016 10:13",
+		"maximumUTFCode" : "SvenVanCaekenberghe 1/7/2016 14:46" } }
