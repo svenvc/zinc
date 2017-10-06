@@ -1,6 +1,7 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"testDispatcherDelegate" : "SvenVanCaekenberghe 3/12/2012 21:13",
-		"withServerDo:" : "SvenVanCaekenberghe 1/22/2014 10:14" } }
+		"withServerDo:" : "SvenVanCaekenberghe 1/22/2014 10:14",
+		"testDispatcherDelegate" : "SvenVanCaekenberghe 3/12/2012 21:13"
+	},
+	"class" : { }
+}

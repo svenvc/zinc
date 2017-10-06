@@ -1,14 +1,15 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"testBinary" : "PaulDeBruicker 04/10/2011 10:47",
-		"testBinaryAll" : "PaulDeBruicker 04/10/2011 10:47",
-		"testMatch" : "SvenVanCaekenberghe 5/2/2012 16:05",
-		"testNext" : "SvenVanCaekenberghe 1/31/2012 20:49",
-		"testNextCount" : "SvenVanCaekenberghe 2/21/2011 23:24",
-		"testNextCountInto" : "SvenVanCaekenberghe 2/21/2011 23:26",
 		"testNextCountIntoShort" : "SvenVanCaekenberghe 1/31/2012 20:41",
+		"testNext" : "SvenVanCaekenberghe 1/31/2012 20:49",
+		"testSimpleEof" : "SvenVanCaekenberghe 1/31/2012 20:45",
+		"testMatch" : "SvenVanCaekenberghe 5/2/2012 16:05",
+		"testNextCount" : "SvenVanCaekenberghe 2/21/2011 23:24",
+		"testBinaryAll" : "PaulDeBruicker 04/10/2011 10:47",
+		"testNextCountInto" : "SvenVanCaekenberghe 2/21/2011 23:26",
+		"testBinary" : "PaulDeBruicker 04/10/2011 10:47",
 		"testNextCountShort" : "SvenVanCaekenberghe 2/21/2011 23:24",
-		"testSimple" : "SvenVanCaekenberghe 9/27/2010 13:04",
-		"testSimpleEof" : "SvenVanCaekenberghe 1/31/2012 20:45" } }
+		"testSimple" : "SvenVanCaekenberghe 9/27/2010 13:04"
+	},
+	"class" : { }
+}

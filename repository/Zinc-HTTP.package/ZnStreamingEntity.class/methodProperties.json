@@ -1,15 +1,18 @@
 {
-	"class" : {
-		"designatedMimeType" : "SvenVanCaekenberghe 9/15/2010 19:23",
-		"matches:" : "SvenVanCaekenberghe 6/4/2013 14:43",
-		"readFrom:usingType:andLength:" : "SvenVanCaekenberghe 9/15/2010 17:13" },
 	"instance" : {
-		"close" : "SvenVanCaekenberghe 8/18/2011 12:51",
-		"consumeContent" : "SvenVanCaekenberghe 9/15/2010 17:10",
-		"contents" : "SvenVanCaekenberghe 1/31/2012 12:59",
-		"isEmpty" : "SvenVanCaekenberghe 5/1/2011 18:25",
-		"readFrom:" : "SvenVanCaekenberghe 7/13/2012 20:27",
+		"contents" : "SvenVanCaekenberghe 5/10/2017 16:17",
+		"writeOn:" : "SvenVanCaekenberghe 1/3/2017 15:35",
 		"readStream" : "SvenVanCaekenberghe 9/25/2010 22:14",
+		"close" : "SvenVanCaekenberghe 8/18/2011 12:51",
 		"stream" : "SvenVanCaekenberghe 9/15/2010 17:04",
+		"readFrom:" : "SvenVanCaekenberghe 7/13/2012 20:27",
+		"isEmpty" : "SvenVanCaekenberghe 5/1/2011 18:25",
 		"stream:" : "SvenVanCaekenberghe 9/15/2010 17:04",
-		"writeOn:" : "SvenVanCaekenberghe 7/20/2012 12:01" } }
+		"consumeContent" : "SvenVanCaekenberghe 9/15/2010 17:10"
+	},
+	"class" : {
+		"matches:" : "SvenVanCaekenberghe 6/4/2013 14:43",
+		"designatedMimeType" : "SvenVanCaekenberghe 9/15/2010 19:23",
+		"readFrom:usingType:andLength:" : "SvenVanCaekenberghe 9/15/2010 17:13"
+	}
+}

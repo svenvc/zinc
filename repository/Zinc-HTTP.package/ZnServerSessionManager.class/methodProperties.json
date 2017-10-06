@@ -1,13 +1,14 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"cleanupInvalidSessions" : "SvenVanCaekenberghe 12/31/2012 16:45",
-		"cookieName" : "SvenVanCaekenberghe 11/10/2012 19:33",
-		"initialize" : "SvenVanCaekenberghe 11/10/2012 19:06",
-		"newSessionForRequest:" : "SvenVanCaekenberghe 12/31/2012 16:34",
-		"newSessionId" : "SvenVanCaekenberghe 12/31/2012 16:46",
 		"removeSessionWithId:" : "SvenVanCaekenberghe 12/31/2012 16:45",
-		"sessionFor:" : "SvenVanCaekenberghe 12/25/2012 21:26",
+		"newSessionForRequest:" : "SvenVanCaekenberghe 12/31/2012 16:34",
+		"initialize" : "SvenVanCaekenberghe 11/10/2012 19:06",
+		"cookieName" : "SvenVanCaekenberghe 11/10/2012 19:33",
 		"sessionIdFromRequest:" : "SvenVanCaekenberghe 12/31/2012 16:40",
-		"setSession:in:" : "SvenVanCaekenberghe 11/10/2012 22:57" } }
+		"sessionFor:" : "SvenVanCaekenberghe 12/25/2012 21:26",
+		"setSession:in:" : "SvenVanCaekenberghe 11/10/2012 22:57",
+		"newSessionId" : "SvenVanCaekenberghe 12/31/2012 16:46",
+		"cleanupInvalidSessions" : "SvenVanCaekenberghe 12/31/2012 16:45"
+	},
+	"class" : { }
+}

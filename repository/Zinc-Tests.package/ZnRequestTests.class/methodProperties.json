@@ -1,11 +1,12 @@
 {
-	"class" : {
-		 },
 	"instance" : {
 		"testBasicAuthenticate" : "SvenVanCaekenberghe 9/12/2010 20:25",
-		"testCookiesParsing" : "SvenVanCaekenberghe 3/4/2012 21:40",
-		"testCookiesWriting" : "SvenVanCaekenberghe 3/4/2012 23:18",
-		"testMergedFields" : "SvenVanCaekenberghe 1/7/2013 11:05",
-		"testReading" : "SvenVanCaekenberghe 12/4/2010 13:34",
 		"testReadingWithEntity" : "SvenVanCaekenberghe 5/21/2013 22:17",
-		"testUrl" : "SvenVanCaekenberghe 1/7/2013 09:09" } }
+		"testUrl" : "SvenVanCaekenberghe 1/7/2013 09:09",
+		"testCookiesParsing" : "SvenVanCaekenberghe 3/4/2012 21:40",
+		"testReading" : "SvenVanCaekenberghe 12/4/2010 13:34",
+		"testMergedFields" : "SvenVanCaekenberghe 1/7/2013 11:05",
+		"testCookiesWriting" : "SvenVanCaekenberghe 3/4/2012 23:18"
+	},
+	"class" : { }
+}

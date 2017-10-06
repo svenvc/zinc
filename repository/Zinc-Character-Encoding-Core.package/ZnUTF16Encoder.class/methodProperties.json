@@ -1,14 +1,18 @@
 {
-	"class" : {
-		"handlesEncoding:" : "SvenVanCaekenberghe 9/13/2014 22:11" },
 	"instance" : {
-		"back16BitWordOnStream:" : "SvenVanCaekenberghe 2/24/2014 16:01",
+		"nextPutCodePoint:toStream:" : "SvenVanCaekenberghe 1/15/2016 15:21",
+		"read16BitWordFromStream:" : "SvenVanCaekenberghe 11/8/2013 13:40",
 		"backOnStream:" : "SvenVanCaekenberghe 2/24/2014 16:02",
-		"encodedByteCountForCodePoint:" : "SvenVanCaekenberghe 1/15/2016 16:10",
-		"errorIncomplete" : "SvenVanCaekenberghe 11/8/2013 11:40",
+		"back16BitWordOnStream:" : "SvenVanCaekenberghe 2/24/2014 16:01",
 		"identifier" : "SvenVanCaekenberghe 9/15/2014 09:49",
 		"nextCodePointFromStream:" : "SvenVanCaekenberghe 1/15/2016 15:18",
-		"nextPutCodePoint:toStream:" : "SvenVanCaekenberghe 1/15/2016 15:21",
+		"encodedByteCountForCodePoint:" : "SvenVanCaekenberghe 1/15/2016 16:10",
+		"write16BitWord:toStream:" : "SvenVanCaekenberghe 11/8/2013 13:33",
 		"processByteOrderMark:" : "SvenVanCaekenberghe 11/8/2013 15:55",
-		"read16BitWordFromStream:" : "SvenVanCaekenberghe 11/8/2013 13:40",
-		"write16BitWord:toStream:" : "SvenVanCaekenberghe 11/8/2013 13:33" } }
+		"errorIncomplete" : "SvenVanCaekenberghe 11/8/2013 11:40"
+	},
+	"class" : {
+		"handlesEncoding:" : "SvenVanCaekenberghe 2/7/2017 10:23",
+		"knownEncodingIdentifiers" : "SvenVanCaekenberghe 2/7/2017 10:16"
+	}
+}

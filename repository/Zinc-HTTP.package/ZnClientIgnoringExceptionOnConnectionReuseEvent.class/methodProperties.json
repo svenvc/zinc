@@ -1,7 +1,8 @@
 {
-	"class" : {
-		 },
 	"instance" : {
 		"exception" : "SvenVanCaekenberghe 6/11/2014 15:47",
 		"exception:" : "SvenVanCaekenberghe 6/11/2014 15:47",
-		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06" } }
+		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06"
+	},
+	"class" : { }
+}

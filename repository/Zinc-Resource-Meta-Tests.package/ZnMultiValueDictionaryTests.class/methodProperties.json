@@ -1,7 +1,8 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"testDynamicLimit" : "SvenVanCaekenberghe 4/23/2015 16:49",
 		"testMultiValues" : "PaulDeBruicker 04/10/2011 10:48",
-		"testTooManyEntries" : "SvenVanCaekenberghe 12/8/2012 19:50" } }
+		"testDynamicLimit" : "SvenVanCaekenberghe 4/23/2015 16:49",
+		"testTooManyEntries" : "SvenVanCaekenberghe 12/8/2012 19:50"
+	},
+	"class" : { }
+}

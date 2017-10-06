@@ -1,6 +1,9 @@
 {
-	"class" : {
-		"signalWith:" : "SvenVanCaekenberghe 7/2/2015 22:50" },
 	"instance" : {
 		"response" : "SvenVanCaekenberghe 7/2/2015 22:47",
-		"response:" : "SvenVanCaekenberghe 7/2/2015 22:47" } }
+		"response:" : "SvenVanCaekenberghe 7/2/2015 22:47"
+	},
+	"class" : {
+		"signalWith:" : "SvenVanCaekenberghe 7/2/2015 22:50"
+	}
+}

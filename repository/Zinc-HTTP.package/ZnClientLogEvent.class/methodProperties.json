@@ -1,7 +1,8 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"clientId" : "SvenVanCaekenberghe 6/11/2014 15:13",
 		"clientId:" : "SvenVanCaekenberghe 6/11/2014 15:13",
-		"printContentsOn:" : "SvenVanCaekenberghe 11/6/2014 15:30" } }
+		"printContentsOn:" : "SvenVanCaekenberghe 11/6/2014 15:30",
+		"clientId" : "SvenVanCaekenberghe 6/11/2014 15:13"
+	},
+	"class" : { }
+}

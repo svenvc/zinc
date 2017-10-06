@@ -1,19 +1,20 @@
 {
+	"instance" : { },
 	"class" : {
-		"client" : "SvenVanCaekenberghe 11/8/2011 22:16",
-		"delete:" : "SvenVanCaekenberghe 9/15/2011 16:24",
-		"delete:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24",
-		"get:" : "SvenVanCaekenberghe 5/25/2016 10:53",
-		"get:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24",
-		"getGif:" : "SvenVanCaekenberghe 5/25/2016 10:22",
-		"getImageOfType:fromUrl:" : "SvenVanCaekenberghe 5/25/2016 10:23",
-		"getJpeg:" : "SvenVanCaekenberghe 5/25/2016 10:22",
+		"put:data:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24",
 		"getPng:" : "SvenVanCaekenberghe 5/25/2016 10:22",
 		"head:" : "SvenVanCaekenberghe 9/15/2011 16:24",
+		"delete:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24",
 		"head:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24",
+		"getImageOfType:fromUrl:" : "SvenVanCaekenberghe 5/25/2016 10:23",
+		"getGif:" : "SvenVanCaekenberghe 5/25/2016 10:22",
+		"delete:" : "SvenVanCaekenberghe 9/15/2011 16:24",
+		"get:" : "SvenVanCaekenberghe 5/25/2016 10:53",
+		"get:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24",
 		"post:data:" : "SvenVanCaekenberghe 9/15/2011 16:24",
 		"post:data:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24",
 		"put:data:" : "SvenVanCaekenberghe 9/15/2011 16:24",
-		"put:data:username:password:" : "SvenVanCaekenberghe 9/15/2011 16:24" },
-	"instance" : {
-		 } }
+		"getJpeg:" : "SvenVanCaekenberghe 5/25/2016 10:22",
+		"client" : "SvenVanCaekenberghe 11/8/2011 22:16"
+	}
+}

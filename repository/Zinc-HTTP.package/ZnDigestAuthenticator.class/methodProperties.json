@@ -1,13 +1,16 @@
 {
-	"class" : {
-		"hasMD5Support" : "SvenVanCaekenberghe 8/18/2011 14:19",
-		"md5Hash:" : "SvenVanCaekenberghe 12/12/2014 12:52",
-		"parseAuthRequest:" : "SvenVanCaekenberghe 4/28/2015 18:15" },
 	"instance" : {
 		"a1for:" : "SvenVanCaekenberghe 8/18/2011 14:03",
-		"a2forUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:18",
-		"authHeader" : "SvenVanCaekenberghe 8/18/2011 14:18",
 		"createNonce" : "SvenVanCaekenberghe 11/10/2013 11:32",
-		"createOpaque" : "SvenVanCaekenberghe 11/10/2013 11:32",
+		"authHeader" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"a2forUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:18",
 		"isRequestAuthenticated:" : "SvenVanCaekenberghe 8/18/2011 14:18",
-		"nonces" : "SvenVanCaekenberghe 8/18/2011 14:18" } }
+		"nonces" : "SvenVanCaekenberghe 8/18/2011 14:18",
+		"createOpaque" : "SvenVanCaekenberghe 11/10/2013 11:32"
+	},
+	"class" : {
+		"md5Hash:" : "SvenVanCaekenberghe 12/12/2014 12:52",
+		"parseAuthRequest:" : "SvenVanCaekenberghe 4/28/2015 18:15",
+		"hasMD5Support" : "SvenVanCaekenberghe 8/18/2011 14:19"
+	}
+}

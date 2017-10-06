@@ -1,22 +1,25 @@
 {
-	"class" : {
-		"empty" : "SvenVanCaekenberghe 7/27/2011 14:58",
-		"method:uri:" : "SvenVanCaekenberghe 9/6/2010 15:18",
-		"readFrom:" : "SvenVanCaekenberghe 9/6/2010 13:50" },
 	"instance" : {
-		"=" : "SvenVanCaekenberghe 5/22/2013 11:19",
-		"hash" : "SvenVanCaekenberghe 5/22/2013 10:33",
+		"version:" : "DamienPollet 8/4/2011 14:04",
+		"readFrom:" : "SvenVanCaekenberghe 9/27/2010 19:25",
 		"isHttp10" : "SvenVanCaekenberghe 12/14/2010 14:30",
+		"method:" : "DamienPollet 8/4/2011 14:04",
+		"uri:" : "SvenVanCaekenberghe 1/30/2013 17:19",
+		"version" : "SvenVanCaekenberghe 9/6/2010 13:45",
+		"=" : "SvenVanCaekenberghe 5/22/2013 11:19",
+		"postCopy" : "SvenVanCaekenberghe 6/12/2014 15:59",
+		"uri" : "SvenVanCaekenberghe 9/6/2010 13:45",
+		"printOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
+		"writeOn:" : "SvenVanCaekenberghe 10/6/2015 21:21",
+		"printMethodAndUriOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
+		"uriPathQueryFragment" : "SvenVanCaekenberghe 1/4/2011 13:56",
 		"isHttp11" : "SvenVanCaekenberghe 12/14/2010 14:31",
 		"method" : "SvenVanCaekenberghe 9/6/2010 13:45",
-		"method:" : "DamienPollet 8/4/2011 14:04",
-		"postCopy" : "SvenVanCaekenberghe 6/12/2014 15:59",
-		"printMethodAndUriOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
-		"printOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
-		"readFrom:" : "SvenVanCaekenberghe 9/27/2010 19:25",
-		"uri" : "SvenVanCaekenberghe 9/6/2010 13:45",
-		"uri:" : "SvenVanCaekenberghe 1/30/2013 17:19",
-		"uriPathQueryFragment" : "SvenVanCaekenberghe 1/4/2011 13:56",
-		"version" : "SvenVanCaekenberghe 9/6/2010 13:45",
-		"version:" : "DamienPollet 8/4/2011 14:04",
-		"writeOn:" : "SvenVanCaekenberghe 10/6/2015 21:21" } }
+		"hash" : "SvenVanCaekenberghe 5/22/2013 10:33"
+	},
+	"class" : {
+		"method:uri:" : "SvenVanCaekenberghe 9/6/2010 15:18",
+		"readFrom:" : "SvenVanCaekenberghe 9/6/2010 13:50",
+		"empty" : "SvenVanCaekenberghe 7/27/2011 14:58"
+	}
+}

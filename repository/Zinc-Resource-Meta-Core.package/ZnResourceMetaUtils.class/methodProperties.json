@@ -1,14 +1,15 @@
 {
+	"instance" : { },
 	"class" : {
+		"rfc3986SafeSet" : "SvenVanCaekenberghe 10/24/2013 09:39",
+		"writeQueryFields:withEncoder:on:" : "KrisGybels 6/11/2014 13:40",
+		"urlPathSafeSet" : "SvenVanCaekenberghe 10/24/2013 10:22",
+		"queryKeyValueSafeSet" : "SvenVanCaekenberghe 2/15/2014 10:21",
+		"writeQueryFields:on:" : "SvenVanCaekenberghe 9/4/2017 14:13",
 		"decodePercent:" : "SvenVanCaekenberghe 2/14/2014 15:07",
-		"decodePercentForQuery:" : "SvenVanCaekenberghe 2/14/2014 15:07",
 		"encodePercent:safeSet:encoder:" : "KrisGybels 6/11/2014 11:37",
 		"parseQueryFrom:" : "SvenVanCaekenberghe 2/14/2014 15:07",
-		"queryKeyValueSafeSet" : "SvenVanCaekenberghe 2/15/2014 10:21",
-		"querySafeSet" : "SvenVanCaekenberghe 10/24/2013 10:22",
-		"rfc3986SafeSet" : "SvenVanCaekenberghe 10/24/2013 09:39",
-		"urlPathSafeSet" : "SvenVanCaekenberghe 10/24/2013 10:22",
-		"writeQueryFields:on:" : "KrisGybels 6/11/2014 13:47",
-		"writeQueryFields:withEncoder:on:" : "KrisGybels 6/11/2014 13:40" },
-	"instance" : {
-		 } }
+		"decodePercentForQuery:" : "SvenVanCaekenberghe 2/14/2014 15:07",
+		"querySafeSet" : "SvenVanCaekenberghe 10/24/2013 10:22"
+	}
+}

@@ -1,15 +1,16 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"duration" : "SvenVanCaekenberghe 6/12/2014 19:38",
-		"initialize" : "SvenVanCaekenberghe 6/12/2014 19:37",
-		"method" : "SvenVanCaekenberghe 6/12/2014 19:38",
-		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06",
 		"request:" : "SvenVanCaekenberghe 6/12/2014 19:40",
 		"requestDuration:" : "SvenVanCaekenberghe 6/12/2014 19:41",
-		"response:" : "SvenVanCaekenberghe 6/12/2014 19:44",
-		"responseCode" : "SvenVanCaekenberghe 6/12/2014 19:39",
-		"responseDuration:" : "SvenVanCaekenberghe 6/12/2014 19:41",
+		"url" : "SvenVanCaekenberghe 6/12/2014 19:38",
+		"duration" : "SvenVanCaekenberghe 6/12/2014 19:38",
+		"initialize" : "SvenVanCaekenberghe 6/12/2014 19:37",
+		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06",
 		"size" : "SvenVanCaekenberghe 6/13/2014 16:06",
-		"url" : "SvenVanCaekenberghe 6/12/2014 19:38" } }
+		"response:" : "SvenVanCaekenberghe 6/12/2014 19:44",
+		"method" : "SvenVanCaekenberghe 6/12/2014 19:38",
+		"responseCode" : "SvenVanCaekenberghe 6/12/2014 19:39",
+		"responseDuration:" : "SvenVanCaekenberghe 6/12/2014 19:41"
+	},
+	"class" : { }
+}

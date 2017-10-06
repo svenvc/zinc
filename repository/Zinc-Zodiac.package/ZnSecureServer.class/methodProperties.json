@@ -1,8 +1,9 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"certificate" : "SvenVanCaekenberghe 12/13/2011 13:08",
 		"certificate:" : "SvenVanCaekenberghe 12/13/2011 13:08",
-		"scheme" : "SvenVanCaekenberghe 1/4/2013 13:14",
-		"socketStreamOn:" : "SvenVanCaekenberghe 6/13/2014 14:05" } }
+		"certificate" : "SvenVanCaekenberghe 12/13/2011 13:08",
+		"socketStreamOn:" : "SvenVanCaekenberghe 6/13/2014 14:05",
+		"scheme" : "SvenVanCaekenberghe 1/4/2013 13:14"
+	},
+	"class" : { }
+}

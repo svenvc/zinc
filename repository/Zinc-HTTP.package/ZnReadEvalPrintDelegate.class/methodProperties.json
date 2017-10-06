@@ -1,10 +1,13 @@
 {
-	"class" : {
-		"startInServerOn:" : "SvenVanCaekenberghe 5/15/2013 22:05" },
 	"instance" : {
-		"evaluate:" : "SvenVanCaekenberghe 10/29/2015 14:48",
 		"handleGetRequest:" : "SvenVanCaekenberghe 5/16/2013 09:51",
-		"handlePostRequest:" : "SvenVanCaekenberghe 5/16/2013 09:54",
-		"handleRequest:" : "SvenVanCaekenberghe 5/16/2013 09:52",
+		"value:" : "SvenVanCaekenberghe 5/15/2013 13:44",
 		"helpText" : "SvenVanCaekenberghe 5/15/2013 21:53",
-		"value:" : "SvenVanCaekenberghe 5/15/2013 13:44" } }
+		"handleRequest:" : "SvenVanCaekenberghe 5/16/2013 09:52",
+		"evaluate:" : "SvenVanCaekenberghe 10/29/2015 14:48",
+		"handlePostRequest:" : "SvenVanCaekenberghe 5/16/2013 09:54"
+	},
+	"class" : {
+		"startInServerOn:" : "SvenVanCaekenberghe 5/15/2013 22:05"
+	}
+}

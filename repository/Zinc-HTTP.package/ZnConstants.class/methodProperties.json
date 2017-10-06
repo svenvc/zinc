@@ -1,24 +1,23 @@
 {
+	"instance" : { },
 	"class" : {
-		"defaultHTTPVersion" : "SvenVanCaekenberghe 9/6/2010 15:18",
-		"defaultMaximumEntitySize" : "SvenVanCaekenberghe 9/5/2012 12:34",
-		"defaultMaximumEntitySize:" : "SvenVanCaekenberghe 9/5/2012 12:35",
-		"defaultServerString" : "SvenVanCaekenberghe 3/31/2011 08:54",
-		"defaultUserAgent" : "SvenVanCaekenberghe 9/14/2010 10:49",
-		"faviconBytes" : "PaulDeBruicker 4/10/2011 11:54",
 		"frameworkLicense" : "SvenVanCaekenberghe 9/14/2010 10:36",
-		"frameworkMCVersion" : "SvenVanCaekenberghe 9/17/2010 17:12",
-		"frameworkName" : "SvenVanCaekenberghe 9/14/2010 10:35",
-		"frameworkNameAndVersion" : "SvenVanCaekenberghe 9/14/2010 10:47",
-		"frameworkVersion" : "SvenVanCaekenberghe 3/31/2011 08:58",
 		"httpStatusCodes" : "SvenVanCaekenberghe 9/6/2010 15:53",
-		"initialize" : "SvenVanCaekenberghe 9/6/2010 15:51",
-		"initializeHTTPStatusCodes" : "KrisGybels 3/27/2014 17:35",
-		"knownHTTPMethods" : "SvenVanCaekenberghe 12/11/2011 18:07",
+		"initializeHTTPStatusCodes" : "SvenVanCaekenberghe 5/10/2017 13:08",
+		"defaultUserAgent" : "SvenVanCaekenberghe 10/16/2016 18:16",
+		"frameworkMCVersion" : "SvenVanCaekenberghe 9/17/2010 17:12",
+		"defaultHTTPVersion" : "SvenVanCaekenberghe 9/6/2010 15:18",
+		"frameworkNameAndVersion" : "SvenVanCaekenberghe 9/14/2010 10:47",
+		"faviconBytes" : "PaulDeBruicker 4/10/2011 11:54",
 		"knownHTTPVersions" : "SvenVanCaekenberghe 9/6/2010 15:22",
-		"maximumEntitySize" : "SvenVanCaekenberghe 9/5/2012 12:36",
-		"maximumEntitySize:" : "SvenVanCaekenberghe 9/5/2012 12:33",
 		"maximumLineLength" : "SvenVanCaekenberghe 1/2/2012 17:45",
-		"remoteAddressHeader" : "SvenVanCaekenberghe 9/9/2010 20:19" },
-	"instance" : {
-		 } }
+		"initialize" : "SvenVanCaekenberghe 5/10/2017 12:04",
+		"defaultServerString" : "SvenVanCaekenberghe 10/16/2016 20:37",
+		"officialHTTPStatusCodesSpec" : "SvenVanCaekenberghe 5/10/2017 13:07",
+		"systemVersion" : "SvenVanCaekenberghe 10/16/2016 18:24",
+		"frameworkName" : "SvenVanCaekenberghe 9/14/2010 10:35",
+		"frameworkVersion" : "SvenVanCaekenberghe 3/31/2011 08:58",
+		"knownHTTPMethods" : "SvenVanCaekenberghe 12/11/2011 18:07",
+		"remoteAddressHeader" : "SvenVanCaekenberghe 9/9/2010 20:19"
+	}
+}

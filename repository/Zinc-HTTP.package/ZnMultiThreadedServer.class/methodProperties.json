@@ -1,18 +1,19 @@
 {
-	"class" : {
-		 },
 	"instance" : {
 		"augmentResponse:forRequest:" : "SvenVanCaekenberghe 11/7/2013 10:52",
-		"closeSocketStream:" : "SvenVanCaekenberghe 6/13/2014 15:19",
-		"exceptionSet:" : "SvenVanCaekenberghe 10/4/2011 09:46",
-		"executeOneRequestResponseOn:" : "SvenVanCaekenberghe 6/13/2014 16:49",
 		"executeRequestResponseLoopOn:" : "SvenVanCaekenberghe 6/13/2014 14:30",
-		"listenLoop" : "SvenVanCaekenberghe 12/10/2010 16:00",
-		"readRequestBadExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:43",
-		"readRequestSafely:timing:" : "SvenVanCaekenberghe 6/13/2014 21:55",
+		"workerProcessName" : "SvenVanCaekenberghe 12/13/2010 16:33",
 		"readRequestTerminationExceptionSet" : "SvenVanCaekenberghe 5/27/2013 14:57",
 		"serveConnectionsOn:" : "SvenVanCaekenberghe 6/13/2014 15:50",
-		"workerProcessName" : "SvenVanCaekenberghe 12/13/2010 16:33",
+		"exceptionSet:" : "SvenVanCaekenberghe 10/4/2011 09:46",
+		"readRequestBadExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:43",
+		"closeSocketStream:" : "SvenVanCaekenberghe 6/13/2014 15:19",
+		"readRequestSafely:timing:" : "SvenVanCaekenberghe 6/13/2014 21:55",
 		"writeResponseBad:on:timing:" : "SvenVanCaekenberghe 6/13/2014 16:50",
+		"writeResponseTerminationExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:39",
+		"listenLoop" : "SvenVanCaekenberghe 12/10/2010 16:00",
 		"writeResponseSafely:on:timing:" : "SvenVanCaekenberghe 6/13/2014 21:56",
-		"writeResponseTerminationExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:39" } }
+		"executeOneRequestResponseOn:" : "SvenVanCaekenberghe 6/13/2014 16:49"
+	},
+	"class" : { }
+}

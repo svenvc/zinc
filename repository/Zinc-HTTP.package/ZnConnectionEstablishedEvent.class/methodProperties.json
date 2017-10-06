@@ -1,15 +1,16 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"address" : "SvenVanCaekenberghe 6/11/2014 15:59",
-		"address:" : "SvenVanCaekenberghe 6/11/2014 15:59",
-		"duration" : "SvenVanCaekenberghe 6/11/2014 15:59",
-		"duration:" : "SvenVanCaekenberghe 6/11/2014 15:59",
-		"hostname" : "SvenVanCaekenberghe 6/11/2014 15:59",
 		"hostname:" : "SvenVanCaekenberghe 6/11/2014 15:59",
-		"port" : "SvenVanCaekenberghe 6/11/2014 15:59",
-		"port:" : "SvenVanCaekenberghe 6/11/2014 15:59",
-		"printContentsOn:" : "SvenVanCaekenberghe 10/23/2015 16:40",
 		"proxy" : "SvenVanCaekenberghe 10/23/2015 16:34",
-		"proxy:" : "SvenVanCaekenberghe 10/23/2015 16:34" } }
+		"port" : "SvenVanCaekenberghe 6/11/2014 15:59",
+		"address:" : "SvenVanCaekenberghe 6/11/2014 15:59",
+		"proxy:" : "SvenVanCaekenberghe 10/23/2015 16:34",
+		"hostname" : "SvenVanCaekenberghe 6/11/2014 15:59",
+		"duration" : "SvenVanCaekenberghe 6/11/2014 15:59",
+		"printContentsOn:" : "SvenVanCaekenberghe 10/23/2015 16:40",
+		"duration:" : "SvenVanCaekenberghe 6/11/2014 15:59",
+		"address" : "SvenVanCaekenberghe 6/11/2014 15:59",
+		"port:" : "SvenVanCaekenberghe 6/11/2014 15:59"
+	},
+	"class" : { }
+}

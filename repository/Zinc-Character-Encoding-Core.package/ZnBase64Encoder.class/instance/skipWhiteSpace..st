@@ -1,4 +1,4 @@
 private
-skipWhiteSpace: stream
-	[ stream atEnd or: [ (self isLegalCharacter: stream peek) ] ] 
-		whileFalse: [ stream next ]
+skipWhitespace: stream
+	[ stream atEnd not and: [ (self isWhitespaceCharacter: stream peek) ] ] 
+		whileTrue: [ stream next ]

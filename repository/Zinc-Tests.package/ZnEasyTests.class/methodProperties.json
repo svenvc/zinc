@@ -1,16 +1,17 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"smallHtmlUrl" : "SvenVanCaekenberghe 8/13/2014 14:45",
-		"testDelete" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testGetGif" : "SvenVanCaekenberghe 5/25/2016 10:19",
-		"testGetJpeg" : "SvenVanCaekenberghe 5/25/2016 10:20",
-		"testGetPng" : "SvenVanCaekenberghe 5/25/2016 10:58",
-		"testGetSmallHTMLDocument" : "SvenVanCaekenberghe 8/13/2014 14:45",
-		"testHeadSmallHTMLDocument" : "SvenVanCaekenberghe 8/13/2014 14:46",
-		"testPost" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testPostUnicodeUtf8" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testPut" : "SvenVanCaekenberghe 8/23/2012 14:34",
 		"testTimeout" : "SvenVanCaekenberghe 3/12/2012 21:07",
-		"withServerDo:" : "SvenVanCaekenberghe 1/22/2014 10:15" } }
+		"testGetSmallHTMLDocument" : "SvenVanCaekenberghe 8/13/2014 14:45",
+		"testGetPng" : "SvenVanCaekenberghe 5/25/2016 10:58",
+		"testHeadSmallHTMLDocument" : "SvenVanCaekenberghe 8/13/2014 14:46",
+		"testDelete" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"smallHtmlUrl" : "SvenVanCaekenberghe 8/13/2014 14:45",
+		"testGetGif" : "SvenVanCaekenberghe 5/25/2016 10:19",
+		"withServerDo:" : "SvenVanCaekenberghe 1/22/2014 10:15",
+		"testPost" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"testGetJpeg" : "SvenVanCaekenberghe 10/28/2015 19:09",
+		"testPut" : "SvenVanCaekenberghe 8/23/2012 14:34",
+		"testPostUnicodeUtf8" : "SvenVanCaekenberghe 8/23/2012 14:34"
+	},
+	"class" : { }
+}

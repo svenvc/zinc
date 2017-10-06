@@ -1,8 +1,9 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"collectionSpecies" : "SvenVanCaekenberghe 5/3/2012 15:09",
 		"nextElement" : "SvenVanCaekenberghe 1/26/2016 11:12",
+		"collectionSpecies" : "SvenVanCaekenberghe 5/3/2012 15:09",
 		"nextLine" : "SvenVanCaekenberghe 1/26/2016 11:14",
-		"readInto:startingAt:count:" : "SvenVanCaekenberghe 1/26/2016 10:52" } }
+		"readInto:startingAt:count:" : "SvenVanCaekenberghe 1/26/2016 10:52"
+	},
+	"class" : { }
+}

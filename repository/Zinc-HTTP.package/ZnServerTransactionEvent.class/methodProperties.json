@@ -1,12 +1,13 @@
 {
-	"class" : {
-		 },
 	"instance" : {
 		"duration" : "SvenVanCaekenberghe 6/13/2014 16:03",
-		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06",
-		"request" : "SvenVanCaekenberghe 6/13/2014 16:02",
-		"request:" : "SvenVanCaekenberghe 6/13/2014 16:02",
-		"response" : "SvenVanCaekenberghe 6/13/2014 16:02",
-		"response:" : "SvenVanCaekenberghe 6/13/2014 16:02",
 		"timing" : "SvenVanCaekenberghe 6/13/2014 16:02",
-		"timing:" : "SvenVanCaekenberghe 6/13/2014 16:02" } }
+		"response:" : "SvenVanCaekenberghe 6/13/2014 16:02",
+		"request:" : "SvenVanCaekenberghe 6/13/2014 16:02",
+		"request" : "SvenVanCaekenberghe 6/13/2014 16:02",
+		"timing:" : "SvenVanCaekenberghe 6/13/2014 16:02",
+		"response" : "SvenVanCaekenberghe 6/13/2014 16:02",
+		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06"
+	},
+	"class" : { }
+}

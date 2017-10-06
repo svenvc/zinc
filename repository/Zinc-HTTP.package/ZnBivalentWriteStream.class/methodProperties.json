@@ -1,13 +1,16 @@
 {
-	"class" : {
-		"on:" : "SvenVanCaekenberghe 8/18/2011 14:44" },
 	"instance" : {
+		"on:" : "SvenVanCaekenberghe 10/4/2010 20:07",
+		"nextPut:" : "SvenVanCaekenberghe 12/3/2010 20:54",
+		"nextPutAll:" : "SvenVanCaekenberghe 12/3/2010 20:54",
 		"close" : "SvenVanCaekenberghe 10/4/2010 20:07",
 		"flush" : "SvenVanCaekenberghe 4/4/2012 16:06",
 		"isBinary" : "SvenVanCaekenberghe 1/4/2011 20:54",
-		"next:putAll:startingAt:" : "SvenVanCaekenberghe 5/22/2013 10:01",
-		"nextPut:" : "SvenVanCaekenberghe 12/3/2010 20:54",
-		"nextPutAll:" : "SvenVanCaekenberghe 12/3/2010 20:54",
-		"on:" : "SvenVanCaekenberghe 10/4/2010 20:07",
 		"printOn:" : "SvenVanCaekenberghe 10/4/2010 20:08",
-		"space" : "SvenVanCaekenberghe 10/4/2010 20:12" } }
+		"space" : "SvenVanCaekenberghe 10/4/2010 20:12",
+		"next:putAll:startingAt:" : "SvenVanCaekenberghe 5/22/2013 10:01"
+	},
+	"class" : {
+		"on:" : "SvenVanCaekenberghe 8/18/2011 14:44"
+	}
+}

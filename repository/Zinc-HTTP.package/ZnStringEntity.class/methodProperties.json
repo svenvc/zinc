@@ -1,27 +1,30 @@
 {
+	"instance" : {
+		"readFrom:" : "SvenVanCaekenberghe 5/10/2017 16:18",
+		"hasEncoder" : "SvenVanCaekenberghe 12/14/2010 12:09",
+		"contents" : "SvenVanCaekenberghe 12/1/2010 20:57",
+		"contentType:" : "SvenVanCaekenberghe 5/14/2014 15:40",
+		"initializeEncoder" : "SvenVanCaekenberghe 5/10/2017 17:11",
+		"readStream" : "SvenVanCaekenberghe 12/1/2010 20:57",
+		"string" : "SvenVanCaekenberghe 12/1/2010 20:57",
+		"invalidateContentLength" : "SvenVanCaekenberghe 12/2/2010 12:20",
+		"string:" : "SvenVanCaekenberghe 12/3/2010 15:11",
+		"encoder:" : "SvenVanCaekenberghe 12/3/2010 15:11",
+		"encoder" : "SvenVanCaekenberghe 12/14/2010 11:59",
+		"contentLength" : "SvenVanCaekenberghe 1/27/2011 10:26",
+		"writeOn:" : "SvenVanCaekenberghe 5/22/2013 10:25",
+		"hash" : "SvenVanCaekenberghe 5/22/2013 10:43",
+		"printContentsOn:" : "SvenVanCaekenberghe 12/14/2010 11:20",
+		"=" : "SvenVanCaekenberghe 5/22/2013 10:44",
+		"isEmpty" : "SvenVanCaekenberghe 5/1/2011 17:54",
+		"computeContentLength" : "SvenVanCaekenberghe 5/23/2013 12:27",
+		"invalidateEncoder" : "SvenVanCaekenberghe 5/14/2014 15:04"
+	},
 	"class" : {
-		"designatedMimeType" : "SvenVanCaekenberghe 12/1/2010 20:58",
 		"html:" : "SvenVanCaekenberghe 12/2/2010 12:22",
 		"matches:" : "SvenVanCaekenberghe 6/4/2013 14:44",
 		"text:" : "SvenVanCaekenberghe 12/2/2010 12:22",
-		"xml:" : "SvenVanCaekenberghe 12/11/2011 18:12" },
-	"instance" : {
-		"=" : "SvenVanCaekenberghe 5/22/2013 10:44",
-		"computeContentLength" : "SvenVanCaekenberghe 5/23/2013 12:27",
-		"contentLength" : "SvenVanCaekenberghe 1/27/2011 10:26",
-		"contentType:" : "SvenVanCaekenberghe 5/14/2014 15:40",
-		"contents" : "SvenVanCaekenberghe 12/1/2010 20:57",
-		"encoder" : "SvenVanCaekenberghe 12/14/2010 11:59",
-		"encoder:" : "SvenVanCaekenberghe 12/3/2010 15:11",
-		"hasEncoder" : "SvenVanCaekenberghe 12/14/2010 12:09",
-		"hash" : "SvenVanCaekenberghe 5/22/2013 10:43",
-		"initializeEncoder" : "SvenVanCaekenberghe 5/2/2015 14:44",
-		"invalidateContentLength" : "SvenVanCaekenberghe 12/2/2010 12:20",
-		"invalidateEncoder" : "SvenVanCaekenberghe 5/14/2014 15:04",
-		"isEmpty" : "SvenVanCaekenberghe 5/1/2011 17:54",
-		"printContentsOn:" : "SvenVanCaekenberghe 12/14/2010 11:20",
-		"readFrom:" : "SvenVanCaekenberghe 11/13/2013 13:53",
-		"readStream" : "SvenVanCaekenberghe 12/1/2010 20:57",
-		"string" : "SvenVanCaekenberghe 12/1/2010 20:57",
-		"string:" : "SvenVanCaekenberghe 12/3/2010 15:11",
-		"writeOn:" : "SvenVanCaekenberghe 5/22/2013 10:25" } }
+		"xml:" : "SvenVanCaekenberghe 12/11/2011 18:12",
+		"designatedMimeType" : "SvenVanCaekenberghe 12/1/2010 20:58"
+	}
+}

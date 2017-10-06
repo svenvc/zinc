@@ -1,26 +1,29 @@
 {
-	"class" : {
-		"designatedMimeType" : "SvenVanCaekenberghe 9/11/2010 20:42",
-		"matches:" : "SvenVanCaekenberghe 6/11/2013 09:25" },
 	"instance" : {
-		"addPart:" : "SvenVanCaekenberghe 1/27/2011 10:29",
-		"computeRepresentation" : "SvenVanCaekenberghe 10/4/2010 20:11",
-		"contentLength" : "SvenVanCaekenberghe 1/27/2011 17:11",
-		"contentType:" : "SvenVanCaekenberghe 6/11/2013 10:43",
-		"contents" : "SvenVanCaekenberghe 10/4/2010 19:14",
-		"generateBoundary" : "SvenVanCaekenberghe 1/31/2011 12:13",
-		"getBoundary" : "SvenVanCaekenberghe 10/5/2010 19:17",
+		"readFrom:" : "SvenVanCaekenberghe 5/10/2017 16:17",
 		"initialize" : "SvenVanCaekenberghe 10/5/2010 17:17",
-		"invalidateRepresentation" : "SvenVanCaekenberghe 10/4/2010 19:15",
-		"isEmpty" : "SvenVanCaekenberghe 12/4/2010 12:43",
-		"mimeTypeWithBoundary" : "SvenVanCaekenberghe 10/5/2010 17:19",
 		"parse:boundary:binary:" : "SvenVanCaekenberghe 10/16/2014 10:44",
 		"partNamed:" : "SvenVanCaekenberghe 10/5/2010 19:12",
-		"partNamed:ifNone:" : "SvenVanCaekenberghe 10/5/2010 19:18",
+		"contents" : "SvenVanCaekenberghe 10/4/2010 19:14",
+		"getBoundary" : "SvenVanCaekenberghe 10/5/2010 19:17",
+		"writeRepresentationOn:" : "SvenVanCaekenberghe 10/5/2010 17:24",
+		"contentType:" : "SvenVanCaekenberghe 6/11/2013 10:43",
 		"parts" : "SvenVanCaekenberghe 9/30/2010 20:07",
-		"partsDo:" : "SvenVanCaekenberghe 2/27/2011 20:13",
-		"printContentsOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
-		"readBinaryFrom:" : "SvenVanCaekenberghe 10/16/2014 10:44",
-		"readFrom:" : "SvenVanCaekenberghe 10/16/2014 10:44",
+		"computeRepresentation" : "SvenVanCaekenberghe 10/4/2010 20:11",
 		"writeOn:" : "SvenVanCaekenberghe 5/18/2013 19:57",
-		"writeRepresentationOn:" : "SvenVanCaekenberghe 10/5/2010 17:24" } }
+		"contentLength" : "SvenVanCaekenberghe 1/27/2011 17:11",
+		"readBinaryFrom:" : "SvenVanCaekenberghe 5/10/2017 16:17",
+		"mimeTypeWithBoundary" : "SvenVanCaekenberghe 10/5/2010 17:19",
+		"generateBoundary" : "SvenVanCaekenberghe 1/31/2011 12:13",
+		"printContentsOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
+		"partNamed:ifNone:" : "SvenVanCaekenberghe 10/5/2010 19:18",
+		"partsDo:" : "SvenVanCaekenberghe 2/27/2011 20:13",
+		"isEmpty" : "SvenVanCaekenberghe 12/4/2010 12:43",
+		"addPart:" : "SvenVanCaekenberghe 1/27/2011 10:29",
+		"invalidateRepresentation" : "SvenVanCaekenberghe 10/4/2010 19:15"
+	},
+	"class" : {
+		"matches:" : "SvenVanCaekenberghe 6/11/2013 09:25",
+		"designatedMimeType" : "SvenVanCaekenberghe 9/11/2010 20:42"
+	}
+}

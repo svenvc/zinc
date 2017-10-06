@@ -1,6 +1,7 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"collectionSpecies" : "SvenVanCaekenberghe 1/26/2016 11:10",
-		"nextElement" : "SvenVanCaekenberghe 1/26/2016 11:28" } }
+		"nextElement" : "SvenVanCaekenberghe 1/26/2016 11:28",
+		"collectionSpecies" : "SvenVanCaekenberghe 1/26/2016 11:10"
+	},
+	"class" : { }
+}

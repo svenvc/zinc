@@ -1,12 +1,13 @@
 {
-	"class" : {
-		 },
 	"instance" : {
 		"handlerDuration" : "SvenVanCaekenberghe 6/13/2014 16:00",
-		"handlerDuration:" : "SvenVanCaekenberghe 6/13/2014 16:00",
-		"initialize" : "SvenVanCaekenberghe 6/13/2014 16:01",
-		"requestDuration" : "SvenVanCaekenberghe 6/13/2014 16:00",
-		"requestDuration:" : "SvenVanCaekenberghe 6/13/2014 16:00",
 		"responseDuration" : "SvenVanCaekenberghe 6/13/2014 16:00",
+		"initialize" : "SvenVanCaekenberghe 6/13/2014 16:01",
+		"requestDuration:" : "SvenVanCaekenberghe 6/13/2014 16:00",
+		"requestDuration" : "SvenVanCaekenberghe 6/13/2014 16:00",
 		"responseDuration:" : "SvenVanCaekenberghe 6/13/2014 16:00",
-		"totalDuration" : "SvenVanCaekenberghe 6/13/2014 21:49" } }
+		"handlerDuration:" : "SvenVanCaekenberghe 6/13/2014 16:00",
+		"totalDuration" : "SvenVanCaekenberghe 6/13/2014 21:49"
+	},
+	"class" : { }
+}

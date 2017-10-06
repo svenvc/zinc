@@ -6,7 +6,7 @@ responseFrom: aRequestContext
 	cookies := seasideResponse cookies.
 	fullHeaders := ZnHeaders defaultResponseHeaders.
 	partialHeaders keysAndValuesDo: [ :key :value |
-		fullHeaders at: key put: value ].
+		fullHeaders at: key put: value greaseString ].
 	cookies do: [ :each |
 		fullHeaders at: 'Set-Cookie' add: each oldNetscapeString.
 		fullHeaders at: 'Set-Cookie2' add: each rfc2965String ].

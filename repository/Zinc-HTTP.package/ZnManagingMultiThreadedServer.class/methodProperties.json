@@ -1,10 +1,11 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"closeConnections" : "SvenVanCaekenberghe 6/13/2014 13:40",
-		"closeSocketStream:" : "SvenVanCaekenberghe 6/13/2014 13:40",
-		"connections" : "SvenVanCaekenberghe 9/5/2011 14:14",
 		"lock" : "SvenVanCaekenberghe 9/5/2011 14:14",
-		"socketStreamOn:" : "SvenVanCaekenberghe 9/5/2011 14:17",
-		"stop:" : "SvenVanCaekenberghe 10/10/2012 10:16" } }
+		"stop:" : "SvenVanCaekenberghe 10/10/2012 10:16",
+		"closeSocketStream:" : "SvenVanCaekenberghe 6/13/2014 13:40",
+		"closeConnections" : "SvenVanCaekenberghe 6/13/2014 13:40",
+		"connections" : "SvenVanCaekenberghe 9/5/2011 14:14",
+		"socketStreamOn:" : "SvenVanCaekenberghe 9/5/2011 14:17"
+	},
+	"class" : { }
+}

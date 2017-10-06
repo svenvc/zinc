@@ -1,10 +1,13 @@
 {
-	"class" : {
-		"authName" : "SvenVanCaekenberghe 8/18/2011 14:21" },
 	"instance" : {
-		"authTokenForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:21",
+		"password:" : "MattKennedy 9/28/2010 14:27",
 		"isComplete" : "SvenVanCaekenberghe 8/18/2011 14:21",
 		"password" : "MattKennedy 9/28/2010 14:27",
-		"password:" : "MattKennedy 9/28/2010 14:27",
-		"username" : "MattKennedy 9/28/2010 14:27",
-		"username:" : "MattKennedy 9/28/2010 14:27" } }
+		"username:" : "MattKennedy 9/28/2010 14:27",
+		"authTokenForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:21",
+		"username" : "MattKennedy 9/28/2010 14:27"
+	},
+	"class" : {
+		"authName" : "SvenVanCaekenberghe 8/18/2011 14:21"
+	}
+}

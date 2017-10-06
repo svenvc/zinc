@@ -1,5 +1,5 @@
 class initialization
 initialize
-	self 
-		initializeExtensionsMap;
-		initializeSubTypeBinaryCache
+	"Last forced update: 20170829"
+	
+	self initializeTextSubTypeFragments

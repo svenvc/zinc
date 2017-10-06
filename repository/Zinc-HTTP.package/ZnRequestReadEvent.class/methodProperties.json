@@ -1,9 +1,10 @@
 {
-	"class" : {
-		 },
 	"instance" : {
 		"duration" : "SvenVanCaekenberghe 6/13/2014 14:55",
 		"duration:" : "SvenVanCaekenberghe 6/13/2014 14:55",
-		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06",
 		"request" : "SvenVanCaekenberghe 6/13/2014 14:55",
-		"request:" : "SvenVanCaekenberghe 6/13/2014 14:55" } }
+		"request:" : "SvenVanCaekenberghe 6/13/2014 14:55",
+		"printContentsOn:" : "SvenVanCaekenberghe 6/30/2014 17:06"
+	},
+	"class" : { }
+}
