@@ -1,10 +1,13 @@
 {
-	"class" : {
-		"isAbstract" : "SvenVanCaekenberghe 12/10/2012 13:18" },
 	"instance" : {
-		"created:" : "SvenVanCaekenberghe 9/11/2014 15:13",
-		"emptyOkResponse" : "SvenVanCaekenberghe 9/11/2014 15:12",
 		"fromJson:" : "SvenVanCaekenberghe 9/11/2014 15:11",
 		"jsonRequest" : "SvenVanCaekenberghe 10/7/2013 16:04",
 		"jsonResponse:" : "SvenVanCaekenberghe 9/3/2013 13:09",
-		"toJson:" : "SvenVanCaekenberghe 9/11/2014 15:10" } }
+		"toJson:" : "SvenVanCaekenberghe 9/11/2014 15:10",
+		"created:" : "SvenVanCaekenberghe 9/11/2014 15:13",
+		"emptyOkResponse" : "SvenVanCaekenberghe 9/11/2014 15:12"
+	},
+	"class" : {
+		"isAbstract" : "SvenVanCaekenberghe 12/10/2012 13:18"
+	}
+}

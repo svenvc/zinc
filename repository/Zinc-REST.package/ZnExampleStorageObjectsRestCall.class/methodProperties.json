@@ -1,6 +1,9 @@
 {
-	"class" : {
-		"pattern" : "SvenVanCaekenberghe 12/10/2012 13:27" },
 	"instance" : {
 		"get" : "SvenVanCaekenberghe 12/10/2012 15:58",
-		"post" : "HolgerHansPeterFreyther 10/14/2015 13:55" } }
+		"post" : "HolgerHansPeterFreyther 10/14/2015 13:55"
+	},
+	"class" : {
+		"pattern" : "SvenVanCaekenberghe 12/10/2012 13:27"
+	}
+}

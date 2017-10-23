@@ -1,6 +1,7 @@
 {
+	"instance" : { },
 	"class" : {
 		"extractBasicAuthorization:" : "SvenVanCaekenberghe 6/15/2011 16:18",
-		"matchPath:pattern:" : "SvenVanCaekenberghe 6/16/2011 14:17" },
-	"instance" : {
-		 } }
+		"matchPath:pattern:" : "SvenVanCaekenberghe 6/16/2011 14:17"
+	}
+}

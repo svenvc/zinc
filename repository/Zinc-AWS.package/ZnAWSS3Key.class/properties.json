@@ -1,19 +1,18 @@
 {
-	"category" : "Zinc-AWS",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "SvenVanCaekenberghe 1/5/2011 16:11",
+	"super" : "Object",
+	"category" : "Zinc-AWS",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"key",
 		"size",
 		"etag",
 		"bucket",
 		"xml",
-		"bucketKeyAssociation" ],
+		"bucketKeyAssociation"
+	],
 	"name" : "ZnAWSS3Key",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

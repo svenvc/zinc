@@ -1,19 +1,19 @@
 {
 	"instance" : {
-		"augmentResponse:forRequest:" : "SvenVanCaekenberghe 11/7/2013 10:52",
-		"executeRequestResponseLoopOn:" : "SvenVanCaekenberghe 6/13/2014 14:30",
-		"workerProcessName" : "SvenVanCaekenberghe 12/13/2010 16:33",
-		"readRequestTerminationExceptionSet" : "SvenVanCaekenberghe 5/27/2013 14:57",
-		"serveConnectionsOn:" : "SvenVanCaekenberghe 6/13/2014 15:50",
-		"exceptionSet:" : "SvenVanCaekenberghe 10/4/2011 09:46",
-		"readRequestBadExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:43",
-		"closeSocketStream:" : "SvenVanCaekenberghe 6/13/2014 15:19",
-		"readRequestSafely:timing:" : "SvenVanCaekenberghe 6/13/2014 21:55",
-		"writeResponseBad:on:timing:" : "SvenVanCaekenberghe 6/13/2014 16:50",
-		"writeResponseTerminationExceptionSet" : "SvenVanCaekenberghe 5/14/2013 10:39",
-		"listenLoop" : "SvenVanCaekenberghe 12/10/2010 16:00",
-		"writeResponseSafely:on:timing:" : "SvenVanCaekenberghe 6/13/2014 21:56",
-		"executeOneRequestResponseOn:" : "SvenVanCaekenberghe 6/13/2014 16:49"
+		"augmentResponse:forRequest:" : " 10/3/2017 13:58:25",
+		"executeRequestResponseLoopOn:" : " 10/3/2017 13:58:25",
+		"workerProcessName" : " 10/3/2017 13:58:25",
+		"readRequestTerminationExceptionSet" : " 10/3/2017 13:58:25",
+		"serveConnectionsOn:" : " 10/3/2017 13:58:25",
+		"exceptionSet:" : " 10/3/2017 13:58:25",
+		"readRequestBadExceptionSet" : " 10/3/2017 13:58:25",
+		"closeSocketStream:" : " 10/3/2017 13:58:25",
+		"readRequestSafely:timing:" : " 10/3/2017 13:58:25",
+		"writeResponseBad:on:timing:" : " 10/3/2017 13:58:25",
+		"writeResponseTerminationExceptionSet" : " 10/3/2017 13:58:25",
+		"listenLoop" : " 10/3/2017 13:58:25",
+		"writeResponseSafely:on:timing:" : " 10/3/2017 13:58:25",
+		"executeOneRequestResponseOn:" : " 10/3/2017 13:58:25"
 	},
 	"class" : { }
 }

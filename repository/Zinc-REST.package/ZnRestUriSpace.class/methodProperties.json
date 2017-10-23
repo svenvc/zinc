@@ -1,5 +1,6 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"match:" : "SvenVanCaekenberghe 6/15/2011 17:30" } }
+		"match:" : "SvenVanCaekenberghe 6/15/2011 17:30"
+	},
+	"class" : { }
+}

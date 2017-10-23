@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"expectedContentType:" : "SvenVanCaekenberghe 12/20/2011 12:39",
-		"expectedContentType" : "SvenVanCaekenberghe 12/20/2011 12:39",
-		"standardMessageText" : "SvenVanCaekenberghe 12/20/2011 12:43",
-		"actualContentType" : "SvenVanCaekenberghe 12/20/2011 12:39",
-		"actualContentType:" : "SvenVanCaekenberghe 12/20/2011 12:39",
-		"messageText" : "SvenVanCaekenberghe 12/20/2011 12:45"
+		"expectedContentType:" : " 10/3/2017 13:58:25",
+		"expectedContentType" : " 10/3/2017 13:58:25",
+		"standardMessageText" : " 10/3/2017 13:58:25",
+		"actualContentType" : " 10/3/2017 13:58:25",
+		"actualContentType:" : " 10/3/2017 13:58:25",
+		"messageText" : " 10/3/2017 13:58:25"
 	},
 	"class" : {
-		"expected:actual:" : "SvenVanCaekenberghe 12/20/2011 12:48"
+		"expected:actual:" : " 10/3/2017 13:58:25"
 	}
 }

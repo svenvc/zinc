@@ -1,5 +1,6 @@
 {
+	"instance" : { },
 	"class" : {
-		"isAbstract" : "SvenVanCaekenberghe 12/10/2012 13:18" },
-	"instance" : {
-		 } }
+		"isAbstract" : "SvenVanCaekenberghe 12/10/2012 13:18"
+	}
+}

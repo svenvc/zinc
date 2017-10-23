@@ -1,19 +1,18 @@
 {
-	"category" : "Zinc-REST-Server",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "SvenVanCaekenberghe 6/15/2011 16:34",
+	"super" : "Object",
+	"category" : "Zinc-REST-Server",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"request",
 		"response",
 		"variables",
 		"delegate",
 		"principal",
-		"credentials" ],
+		"credentials"
+	],
 	"name" : "ZnRestCall",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

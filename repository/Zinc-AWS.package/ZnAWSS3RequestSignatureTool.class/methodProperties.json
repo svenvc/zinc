@@ -1,16 +1,17 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"accessKeyId" : "SvenVanCaekenberghe 2/21/2013 16:05",
-		"accessKeyId:" : "SvenVanCaekenberghe 2/21/2013 16:05",
-		"authorizationFor:" : "SvenVanCaekenberghe 2/21/2013 16:06",
-		"bucketFromEndPoint:" : "SvenVanCaekenberghe 2/21/2013 16:35",
-		"canonicalStringFor:" : "SvenVanCaekenberghe 2/21/2013 16:06",
-		"hmacSha1:" : "SvenVanCaekenberghe 2/21/2013 16:42",
-		"printAmzHeaders:to:" : "SvenVanCaekenberghe 2/21/2013 16:13",
-		"secretAccessKey" : "SvenVanCaekenberghe 2/21/2013 16:05",
-		"secretAccessKey:" : "SvenVanCaekenberghe 2/21/2013 16:05",
 		"signRequest:" : "SvenVanCaekenberghe 2/21/2013 16:41",
+		"accessKeyId" : "SvenVanCaekenberghe 2/21/2013 16:05",
+		"canonicalStringFor:" : "SvenVanCaekenberghe 2/21/2013 16:06",
 		"standardEndPoint" : "SvenVanCaekenberghe 2/21/2013 16:29",
-		"value:" : "SvenVanCaekenberghe 2/21/2013 16:04" } }
+		"printAmzHeaders:to:" : "SvenVanCaekenberghe 2/21/2013 16:13",
+		"accessKeyId:" : "SvenVanCaekenberghe 2/21/2013 16:05",
+		"value:" : "SvenVanCaekenberghe 2/21/2013 16:04",
+		"authorizationFor:" : "SvenVanCaekenberghe 2/21/2013 16:06",
+		"secretAccessKey:" : "SvenVanCaekenberghe 2/21/2013 16:05",
+		"hmacSha1:" : "SvenVanCaekenberghe 2/21/2013 16:42",
+		"bucketFromEndPoint:" : "SvenVanCaekenberghe 2/21/2013 16:35",
+		"secretAccessKey" : "SvenVanCaekenberghe 2/21/2013 16:05"
+	},
+	"class" : { }
+}

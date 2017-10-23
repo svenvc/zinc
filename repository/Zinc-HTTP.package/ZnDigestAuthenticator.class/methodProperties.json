@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"a1for:" : "SvenVanCaekenberghe 8/18/2011 14:03",
-		"createNonce" : "SvenVanCaekenberghe 11/10/2013 11:32",
-		"authHeader" : "SvenVanCaekenberghe 8/18/2011 14:18",
-		"a2forUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:18",
-		"isRequestAuthenticated:" : "SvenVanCaekenberghe 8/18/2011 14:18",
-		"nonces" : "SvenVanCaekenberghe 8/18/2011 14:18",
-		"createOpaque" : "SvenVanCaekenberghe 11/10/2013 11:32"
+		"a1for:" : " 10/3/2017 13:58:25",
+		"createNonce" : " 10/3/2017 13:58:25",
+		"authHeader" : " 10/3/2017 13:58:25",
+		"a2forUrl:method:" : " 10/3/2017 13:58:25",
+		"isRequestAuthenticated:" : " 10/3/2017 13:58:25",
+		"nonces" : " 10/3/2017 13:58:25",
+		"createOpaque" : " 10/3/2017 13:58:25"
 	},
 	"class" : {
-		"md5Hash:" : "SvenVanCaekenberghe 12/12/2014 12:52",
-		"parseAuthRequest:" : "SvenVanCaekenberghe 4/28/2015 18:15",
-		"hasMD5Support" : "SvenVanCaekenberghe 8/18/2011 14:19"
+		"md5Hash:" : " 10/3/2017 13:58:25",
+		"parseAuthRequest:" : " 10/3/2017 13:58:25",
+		"hasMD5Support" : " 10/3/2017 13:58:25"
 	}
 }

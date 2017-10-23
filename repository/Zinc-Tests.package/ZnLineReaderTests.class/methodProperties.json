@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testSimple" : "SvenVanCaekenberghe 9/27/2010 19:02",
-		"testLineTooLong" : "SvenVanCaekenberghe 2/28/2011 14:21",
-		"testBinary" : "SvenVanCaekenberghe 9/27/2010 19:22",
-		"testLineTooLongDefault" : "SvenVanCaekenberghe 1/2/2012 19:18"
+		"testSimple" : " 10/3/2017 12:14:37",
+		"testLineTooLong" : " 10/3/2017 12:14:37",
+		"testBinary" : " 10/3/2017 12:14:37",
+		"testLineTooLongDefault" : " 10/3/2017 12:14:37"
 	},
 	"class" : { }
 }

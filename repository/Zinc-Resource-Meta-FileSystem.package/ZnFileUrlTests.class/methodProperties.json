@@ -1,15 +1,16 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"testAsFileReference" : "SvenVanCaekenberghe 2/6/2013 04:56",
 		"testAsZnUrl" : "SvenVanCaekenberghe 2/6/2013 04:54",
-		"testImage" : "SvenVanCaekenberghe 5/19/2015 11:08",
+		"testWindowsDriveNamesInFileUrl" : "SvenVanCaekenberghe 2/26/2015 09:48",
 		"testRelative" : "SvenVanCaekenberghe 1/14/2013 12:30",
 		"testRetrieveContents" : "SvenVanCaekenberghe 10/24/2014 10:02",
-		"testRoot" : "SvenVanCaekenberghe 2/6/2013 04:51",
+		"testWrongScheme" : "SvenVanCaekenberghe 1/14/2013 12:17",
+		"testAsFileReference" : "SvenVanCaekenberghe 2/6/2013 04:56",
 		"testSlash" : "SvenVanCaekenberghe 1/14/2013 12:10",
-		"testSpaces" : "SvenVanCaekenberghe 2/6/2013 04:53",
 		"testTrailingSlash" : "SvenVanCaekenberghe 1/14/2013 12:23",
-		"testWindowsDriveNamesInFileUrl" : "SvenVanCaekenberghe 2/26/2015 09:48",
-		"testWrongScheme" : "SvenVanCaekenberghe 1/14/2013 12:17" } }
+		"testRoot" : "SvenVanCaekenberghe 2/6/2013 04:51",
+		"testImage" : "SvenVanCaekenberghe 5/19/2015 11:08",
+		"testSpaces" : "SvenVanCaekenberghe 2/6/2013 04:53"
+	},
+	"class" : { }
+}

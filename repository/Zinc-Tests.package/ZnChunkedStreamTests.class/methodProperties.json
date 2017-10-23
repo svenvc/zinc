@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"testReadingGzip" : "SvenVanCaekenberghe 5/17/2013 23:47",
-		"testReadingBuffered" : "SvenVanCaekenberghe 5/17/2013 15:37",
-		"testBinaryWriteRead" : "SvenVanCaekenberghe 5/17/2013 16:26",
-		"testWriting" : "SvenVanCaekenberghe 5/17/2013 15:43",
-		"testReadingNext" : "SvenVanCaekenberghe 5/17/2013 23:48",
-		"testReadingNextInto" : "SvenVanCaekenberghe 5/17/2013 23:48",
-		"nextPutAll:on:chunked:" : "SvenVanCaekenberghe 5/17/2013 15:48",
-		"testReadingGzipStepped" : "SvenVanCaekenberghe 5/17/2013 23:47",
-		"testGzipWriteRead" : "SvenVanCaekenberghe 5/18/2013 13:59",
-		"testReading" : "SvenVanCaekenberghe 5/17/2013 23:47",
-		"testWritingBuffered" : "SvenVanCaekenberghe 5/17/2013 15:57"
+		"testReadingGzip" : " 10/3/2017 12:14:37",
+		"testReadingBuffered" : " 10/3/2017 12:14:37",
+		"testBinaryWriteRead" : " 10/3/2017 12:14:37",
+		"testWriting" : " 10/3/2017 12:14:37",
+		"testReadingNext" : " 10/3/2017 12:14:37",
+		"testReadingNextInto" : " 10/3/2017 12:14:37",
+		"nextPutAll:on:chunked:" : " 10/3/2017 12:14:37",
+		"testReadingGzipStepped" : " 10/3/2017 12:14:37",
+		"testGzipWriteRead" : " 10/3/2017 12:14:37",
+		"testReading" : " 10/3/2017 12:14:37",
+		"testWritingBuffered" : " 10/3/2017 12:14:37"
 	},
 	"class" : { }
 }

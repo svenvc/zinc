@@ -1,24 +1,24 @@
 {
 	"instance" : {
-		"isStream" : "SvenVanCaekenberghe 5/18/2013 00:12",
-		"crlf" : "SvenVanCaekenberghe 5/17/2013 16:22",
-		"close" : "SvenVanCaekenberghe 5/17/2013 15:09",
-		"flush" : "SvenVanCaekenberghe 5/17/2013 15:09",
-		"next:putAll:" : "SvenVanCaekenberghe 5/18/2013 00:23",
-		"on:" : "SvenVanCaekenberghe 5/17/2013 15:08",
-		"binary" : "SvenVanCaekenberghe 5/17/2013 15:10",
-		"finish" : "SvenVanCaekenberghe 5/17/2013 15:31",
-		"initialize" : "SvenVanCaekenberghe 5/18/2013 00:35",
-		"isBinary" : "SvenVanCaekenberghe 5/17/2013 15:25",
-		"next:putAll:startingAt:" : "SvenVanCaekenberghe 5/18/2013 00:35",
-		"nextPut:" : "SvenVanCaekenberghe 5/18/2013 21:02",
-		"nextPutAll:" : "SvenVanCaekenberghe 5/18/2013 00:26",
-		"extraHeaders" : "SvenVanCaekenberghe 3/2/2014 22:21",
-		"position" : "SvenVanCaekenberghe 5/18/2013 00:28",
-		"chunkCount" : "SvenVanCaekenberghe 5/18/2013 00:37",
-		"writeChunkSize:" : "SvenVanCaekenberghe 5/17/2013 15:28"
+		"isStream" : " 10/3/2017 13:58:25",
+		"crlf" : " 10/3/2017 13:58:25",
+		"close" : " 10/3/2017 13:58:25",
+		"flush" : " 10/3/2017 13:58:25",
+		"next:putAll:" : " 10/3/2017 13:58:25",
+		"on:" : " 10/3/2017 13:58:25",
+		"binary" : " 10/3/2017 13:58:25",
+		"finish" : " 10/3/2017 13:58:25",
+		"initialize" : " 10/3/2017 13:58:25",
+		"isBinary" : " 10/3/2017 13:58:25",
+		"next:putAll:startingAt:" : " 10/3/2017 13:58:25",
+		"nextPut:" : " 10/3/2017 13:58:25",
+		"nextPutAll:" : " 10/3/2017 13:58:25",
+		"extraHeaders" : " 10/3/2017 13:58:25",
+		"position" : " 10/3/2017 13:58:25",
+		"chunkCount" : " 10/3/2017 13:58:25",
+		"writeChunkSize:" : " 10/3/2017 13:58:25"
 	},
 	"class" : {
-		"on:" : "SvenVanCaekenberghe 5/17/2013 15:08"
+		"on:" : " 10/3/2017 13:58:25"
 	}
 }

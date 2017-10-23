@@ -1,15 +1,15 @@
 {
 	"instance" : {
-		"combined" : "SvenVanCaekenberghe 7/1/2015 14:22",
-		"formatTimestamp:on:" : "SvenVanCaekenberghe 7/1/2015 15:35",
-		"formatResponse:on:" : "SvenVanCaekenberghe 7/1/2015 16:30",
-		"format:on:" : "SvenVanCaekenberghe 7/1/2015 16:34",
-		"combined:" : "SvenVanCaekenberghe 7/1/2015 16:24",
-		"formatRequest:on:" : "SvenVanCaekenberghe 7/1/2015 16:30",
-		"clientIPAddressFrom:" : "SvenVanCaekenberghe 7/1/2015 16:31",
-		"initialize" : "SvenVanCaekenberghe 7/1/2015 14:22",
-		"formatCombinedFields:on:" : "SvenVanCaekenberghe 7/1/2015 16:09",
-		"userFrom:" : "SvenVanCaekenberghe 7/1/2015 16:31"
+		"combined" : " 10/3/2017 13:58:25",
+		"formatTimestamp:on:" : " 10/3/2017 13:58:25",
+		"formatResponse:on:" : " 10/3/2017 13:58:25",
+		"format:on:" : " 10/3/2017 13:58:25",
+		"combined:" : " 10/3/2017 13:58:25",
+		"formatRequest:on:" : " 10/3/2017 13:58:25",
+		"clientIPAddressFrom:" : " 10/3/2017 13:58:25",
+		"initialize" : " 10/3/2017 13:58:25",
+		"formatCombinedFields:on:" : " 10/3/2017 13:58:25",
+		"userFrom:" : " 10/3/2017 13:58:25"
 	},
 	"class" : { }
 }

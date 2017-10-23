@@ -1,7 +1,10 @@
 {
-	"class" : {
-		"pattern" : "SvenVanCaekenberghe 12/10/2012 16:03" },
 	"instance" : {
-		"delete" : "SvenVanCaekenberghe 12/10/2012 16:41",
+		"put" : "SvenVanCaekenberghe 12/10/2012 16:47",
 		"get" : "SvenVanCaekenberghe 12/10/2012 16:39",
-		"put" : "SvenVanCaekenberghe 12/10/2012 16:47" } }
+		"delete" : "SvenVanCaekenberghe 12/10/2012 16:41"
+	},
+	"class" : {
+		"pattern" : "SvenVanCaekenberghe 12/10/2012 16:03"
+	}
+}

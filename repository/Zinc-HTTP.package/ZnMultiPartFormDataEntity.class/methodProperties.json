@@ -1,29 +1,29 @@
 {
 	"instance" : {
-		"readFrom:" : "SvenVanCaekenberghe 5/10/2017 16:17",
-		"initialize" : "SvenVanCaekenberghe 10/5/2010 17:17",
-		"parse:boundary:binary:" : "SvenVanCaekenberghe 10/16/2014 10:44",
-		"partNamed:" : "SvenVanCaekenberghe 10/5/2010 19:12",
-		"contents" : "SvenVanCaekenberghe 10/4/2010 19:14",
-		"getBoundary" : "SvenVanCaekenberghe 10/5/2010 19:17",
-		"writeRepresentationOn:" : "SvenVanCaekenberghe 10/5/2010 17:24",
-		"contentType:" : "SvenVanCaekenberghe 6/11/2013 10:43",
-		"parts" : "SvenVanCaekenberghe 9/30/2010 20:07",
-		"computeRepresentation" : "SvenVanCaekenberghe 10/4/2010 20:11",
-		"writeOn:" : "SvenVanCaekenberghe 5/18/2013 19:57",
-		"contentLength" : "SvenVanCaekenberghe 1/27/2011 17:11",
-		"readBinaryFrom:" : "SvenVanCaekenberghe 5/10/2017 16:17",
-		"mimeTypeWithBoundary" : "SvenVanCaekenberghe 10/5/2010 17:19",
-		"generateBoundary" : "SvenVanCaekenberghe 1/31/2011 12:13",
-		"printContentsOn:" : "SvenVanCaekenberghe 8/18/2011 14:34",
-		"partNamed:ifNone:" : "SvenVanCaekenberghe 10/5/2010 19:18",
-		"partsDo:" : "SvenVanCaekenberghe 2/27/2011 20:13",
-		"isEmpty" : "SvenVanCaekenberghe 12/4/2010 12:43",
-		"addPart:" : "SvenVanCaekenberghe 1/27/2011 10:29",
-		"invalidateRepresentation" : "SvenVanCaekenberghe 10/4/2010 19:15"
+		"readFrom:" : " 10/3/2017 13:58:25",
+		"initialize" : " 10/3/2017 13:58:25",
+		"parse:boundary:binary:" : " 10/3/2017 13:58:25",
+		"partNamed:" : " 10/3/2017 13:58:25",
+		"contents" : " 10/3/2017 13:58:25",
+		"getBoundary" : " 10/3/2017 13:58:25",
+		"writeRepresentationOn:" : " 10/3/2017 13:58:25",
+		"contentType:" : " 10/3/2017 13:58:25",
+		"parts" : " 10/3/2017 13:58:25",
+		"computeRepresentation" : " 10/3/2017 13:58:25",
+		"writeOn:" : " 10/3/2017 13:58:25",
+		"contentLength" : " 10/3/2017 13:58:25",
+		"readBinaryFrom:" : " 10/3/2017 13:58:25",
+		"mimeTypeWithBoundary" : " 10/3/2017 13:58:25",
+		"generateBoundary" : " 10/3/2017 13:58:25",
+		"printContentsOn:" : " 10/3/2017 13:58:25",
+		"partNamed:ifNone:" : " 10/3/2017 13:58:25",
+		"partsDo:" : " 10/3/2017 13:58:25",
+		"isEmpty" : " 10/3/2017 13:58:25",
+		"addPart:" : " 10/3/2017 13:58:25",
+		"invalidateRepresentation" : " 10/3/2017 13:58:25"
 	},
 	"class" : {
-		"matches:" : "SvenVanCaekenberghe 6/11/2013 09:25",
-		"designatedMimeType" : "SvenVanCaekenberghe 9/11/2010 20:42"
+		"matches:" : " 10/3/2017 13:58:25",
+		"designatedMimeType" : " 10/3/2017 13:58:25"
 	}
 }

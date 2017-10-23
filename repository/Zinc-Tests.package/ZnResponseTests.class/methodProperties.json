@@ -1,17 +1,17 @@
 {
 	"instance" : {
-		"testAbsoluteCreated" : "SvenVanCaekenberghe 1/6/2013 22:42",
-		"testDefaultUTF8Encoding" : "SvenVanCaekenberghe 5/1/2015 20:01",
-		"testCreated" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testCookies" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testIsError" : "PaulDeBruicker 4/19/2012 17:01",
-		"testWritingBinary" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testNotFound" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testAbsoluteRedirect" : "SvenVanCaekenberghe 1/6/2013 22:37",
-		"testWritingCharacter" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testRedirect" : "SvenVanCaekenberghe 1/6/2013 22:38",
-		"testSlashdotGzipChunked" : "SvenVanCaekenberghe 9/15/2015 22:32",
-		"testCookie" : "SvenVanCaekenberghe 8/23/2012 14:34"
+		"testAbsoluteCreated" : " 10/3/2017 12:14:37",
+		"testDefaultUTF8Encoding" : " 10/3/2017 12:14:37",
+		"testCreated" : " 10/3/2017 12:14:37",
+		"testCookies" : " 10/3/2017 12:14:37",
+		"testIsError" : " 10/3/2017 12:14:37",
+		"testWritingBinary" : " 10/3/2017 12:14:37",
+		"testNotFound" : " 10/3/2017 12:14:37",
+		"testAbsoluteRedirect" : " 10/3/2017 12:14:37",
+		"testWritingCharacter" : " 10/3/2017 12:14:37",
+		"testRedirect" : " 10/3/2017 12:14:37",
+		"testSlashdotGzipChunked" : " 10/3/2017 12:14:37",
+		"testCookie" : " 10/3/2017 12:14:37"
 	},
 	"class" : { }
 }

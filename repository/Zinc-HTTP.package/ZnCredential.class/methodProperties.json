@@ -1,18 +1,18 @@
 {
 	"instance" : {
-		"domain:" : "MattKennedy 9/28/2010 14:27",
-		"isComplete" : "SvenVanCaekenberghe 8/18/2011 14:20",
-		"linkToAuthRequest:" : "MattKennedy 9/29/2010 16:10",
-		"realm:" : "MattKennedy 9/28/2010 14:27",
-		"setAuthorizationHeader:for:method:" : "MattKennedy 9/29/2010 13:42",
-		"realm" : "SvenVanCaekenberghe 8/18/2011 14:07",
-		"authTokenForUrl:method:" : "MattKennedy 9/29/2010 13:48",
-		"domain" : "MattKennedy 9/28/2010 14:27",
-		"authToken" : "SvenVanCaekenberghe 8/18/2011 14:20"
+		"domain:" : " 10/3/2017 13:58:25",
+		"isComplete" : " 10/3/2017 13:58:25",
+		"linkToAuthRequest:" : " 10/3/2017 13:58:25",
+		"realm:" : " 10/3/2017 13:58:25",
+		"setAuthorizationHeader:for:method:" : " 10/3/2017 13:58:25",
+		"realm" : " 10/3/2017 13:58:25",
+		"authTokenForUrl:method:" : " 10/3/2017 13:58:25",
+		"domain" : " 10/3/2017 13:58:25",
+		"authToken" : " 10/3/2017 13:58:25"
 	},
 	"class" : {
-		"authName" : "MattKennedy 9/28/2010 17:28",
-		"findRealmFor:" : "SvenVanCaekenberghe 4/28/2015 18:15",
-		"findHandlerFor:" : "SvenVanCaekenberghe 8/18/2011 14:09"
+		"authName" : " 10/3/2017 13:58:25",
+		"findRealmFor:" : " 10/3/2017 13:58:25",
+		"findHandlerFor:" : " 10/3/2017 13:58:25"
 	}
 }

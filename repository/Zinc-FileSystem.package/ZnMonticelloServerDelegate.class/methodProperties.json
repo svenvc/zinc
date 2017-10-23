@@ -1,14 +1,15 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"directory" : "SvenVanCaekenberghe 9/17/2010 10:20",
 		"directory:" : "SvenVanCaekenberghe 1/30/2013 20:21",
-		"handleGetMczEntry:" : "SvenVanCaekenberghe 1/30/2013 21:07",
 		"handleListMczEntries:" : "SvenVanCaekenberghe 8/18/2011 14:25",
-		"handlePutMczEntry:" : "SvenVanCaekenberghe 1/30/2013 21:08",
 		"handleRequest:" : "SvenVanCaekenberghe 1/4/2011 13:42",
+		"handlePutMczEntry:" : "SvenVanCaekenberghe 1/30/2013 21:08",
+		"value:" : "SvenVanCaekenberghe 8/22/2012 14:41",
+		"handleGetMczEntry:" : "SvenVanCaekenberghe 1/30/2013 21:07",
+		"repositoryListing" : "SvenVanCaekenberghe 3/16/2017 10:25",
+		"directory" : "SvenVanCaekenberghe 9/17/2010 10:20",
 		"isValidMczName:" : "SvenVanCaekenberghe 9/17/2010 10:24",
-		"mczEntries" : "SvenVanCaekenberghe 9/17/2010 10:21",
-		"repositoryListing" : "SvenVanCaekenberghe 11/30/2015 16:55",
-		"value:" : "SvenVanCaekenberghe 8/22/2012 14:41" } }
+		"mczEntries" : "SvenVanCaekenberghe 9/17/2010 10:21"
+	},
+	"class" : { }
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "Zinc-REST-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "HolgerHansPeterFreyther 11/11/2015 14:22",
-	"instvars" : [
-		 ],
-	"name" : "ZnExampleStorageAssertionFailureRestCall",
-	"pools" : [
-		 ],
 	"super" : "ZnExampleStorageRestCall",
-	"type" : "normal" }
+	"category" : "Zinc-REST-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnExampleStorageAssertionFailureRestCall",
+	"type" : "normal"
+}

@@ -1,5 +1,8 @@
 {
-	"class" : {
-		"pattern" : "HolgerHansPeterFreyther 11/11/2015 14:22" },
 	"instance" : {
-		"get" : "HolgerHansPeterFreyther 11/11/2015 14:19" } }
+		"get" : "HolgerHansPeterFreyther 11/11/2015 14:19"
+	},
+	"class" : {
+		"pattern" : "HolgerHansPeterFreyther 11/11/2015 14:22"
+	}
+}

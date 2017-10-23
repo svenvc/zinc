@@ -1,14 +1,11 @@
 {
-	"category" : "Zinc-REST-Server",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "SvenVanCaekenberghe 6/15/2011 16:19",
-	"instvars" : [
-		 ],
-	"name" : "ZnRestServerUtils",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "Zinc-REST-Server",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnRestServerUtils",
+	"type" : "normal"
+}

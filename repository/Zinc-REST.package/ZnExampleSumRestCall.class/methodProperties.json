@@ -1,8 +1,11 @@
 {
-	"class" : {
-		"match:" : "SvenVanCaekenberghe 12/9/2012 17:47" },
 	"instance" : {
-		"get" : "SvenVanCaekenberghe 12/9/2012 19:17",
-		"numbersForGet" : "SvenVanCaekenberghe 12/9/2012 19:16",
 		"numbersForPost" : "SvenVanCaekenberghe 12/9/2012 19:18",
-		"post" : "SvenVanCaekenberghe 12/9/2012 19:18" } }
+		"get" : "SvenVanCaekenberghe 12/9/2012 19:17",
+		"post" : "SvenVanCaekenberghe 12/9/2012 19:18",
+		"numbersForGet" : "SvenVanCaekenberghe 12/9/2012 19:16"
+	},
+	"class" : {
+		"match:" : "SvenVanCaekenberghe 12/9/2012 17:47"
+	}
+}

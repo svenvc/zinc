@@ -1,6 +1,9 @@
 {
-	"class" : {
-		"operation" : "SvenVanCaekenberghe 11/6/2013 14:10",
-		"schemes" : "SvenVanCaekenberghe 11/6/2013 14:10" },
 	"instance" : {
-		"performOperation" : "SvenVanCaekenberghe 11/6/2013 14:10" } }
+		"performOperation" : "SvenVanCaekenberghe 11/6/2013 14:10"
+	},
+	"class" : {
+		"schemes" : "SvenVanCaekenberghe 11/6/2013 14:10",
+		"operation" : "SvenVanCaekenberghe 11/6/2013 14:10"
+	}
+}

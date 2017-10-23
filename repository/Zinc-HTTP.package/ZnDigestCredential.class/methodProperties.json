@@ -1,20 +1,20 @@
 {
 	"instance" : {
-		"authTokenForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:37",
-		"responseForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:21",
-		"isComplete" : "SvenVanCaekenberghe 8/18/2011 14:21",
-		"nonce" : "MattKennedy 9/28/2010 14:48",
-		"nonce:" : "MattKennedy 9/28/2010 14:48",
-		"a1" : "SvenVanCaekenberghe 8/18/2011 14:21",
-		"opaque" : "MattKennedy 9/28/2010 14:48",
-		"opaque:" : "MattKennedy 9/28/2010 14:48",
-		"a2ForUrl:method:" : "SvenVanCaekenberghe 8/18/2011 14:21",
-		"linkToAuthRequest:" : "SvenVanCaekenberghe 8/18/2011 14:08",
-		"uriPathFrom:" : "SvenVanCaekenberghe 8/18/2011 14:08",
-		"setAuthorizationHeader:for:method:" : "MattKennedy 9/29/2010 16:28",
-		"parseAuthRequest:" : "SvenVanCaekenberghe 8/18/2011 14:21"
+		"authTokenForUrl:method:" : " 10/3/2017 13:58:25",
+		"responseForUrl:method:" : " 10/3/2017 13:58:25",
+		"isComplete" : " 10/3/2017 13:58:25",
+		"nonce" : " 10/3/2017 13:58:25",
+		"nonce:" : " 10/3/2017 13:58:25",
+		"a1" : " 10/3/2017 13:58:25",
+		"opaque" : " 10/3/2017 13:58:25",
+		"opaque:" : " 10/3/2017 13:58:25",
+		"a2ForUrl:method:" : " 10/3/2017 13:58:25",
+		"linkToAuthRequest:" : " 10/3/2017 13:58:25",
+		"uriPathFrom:" : " 10/3/2017 13:58:25",
+		"setAuthorizationHeader:for:method:" : " 10/3/2017 13:58:25",
+		"parseAuthRequest:" : " 10/3/2017 13:58:25"
 	},
 	"class" : {
-		"authName" : "SvenVanCaekenberghe 8/18/2011 14:21"
+		"authName" : " 10/3/2017 13:58:25"
 	}
 }

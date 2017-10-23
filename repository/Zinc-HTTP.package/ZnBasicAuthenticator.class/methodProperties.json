@@ -1,19 +1,19 @@
 {
 	"instance" : {
-		"atUsername:putPassword:" : "MattKennedy 9/30/2010 17:19",
-		"initialize" : "SvenVanCaekenberghe 9/30/2010 15:37",
-		"isRequestAuthenticated:" : "SvenVanCaekenberghe 2/23/2012 22:13",
-		"authHeader" : "SvenVanCaekenberghe 8/18/2011 14:18",
-		"realm" : "SvenVanCaekenberghe 8/18/2011 14:02",
-		"authenticateRequest:do:" : "MattKennedy 9/30/2010 15:56",
-		"realm:" : "MattKennedy 9/30/2010 15:51",
-		"removeAll" : "SvenVanCaekenberghe 9/30/2010 15:41",
-		"removeUsername:" : "SvenVanCaekenberghe 9/30/2010 15:41"
+		"atUsername:putPassword:" : " 10/3/2017 13:58:25",
+		"initialize" : " 10/3/2017 13:58:25",
+		"isRequestAuthenticated:" : " 10/3/2017 13:58:25",
+		"authHeader" : " 10/3/2017 13:58:25",
+		"realm" : " 10/3/2017 13:58:25",
+		"authenticateRequest:do:" : " 10/3/2017 13:58:25",
+		"realm:" : " 10/3/2017 13:58:25",
+		"removeAll" : " 10/3/2017 13:58:25",
+		"removeUsername:" : " 10/3/2017 13:58:25"
 	},
 	"class" : {
-		"defaultRealm" : "SvenVanCaekenberghe 8/18/2011 14:19",
-		"new" : "SvenVanCaekenberghe 9/30/2010 15:36",
-		"username:password:realm:" : "MattKennedy 9/30/2010 15:55",
-		"username:password:" : "SvenVanCaekenberghe 9/30/2010 15:36"
+		"defaultRealm" : " 10/3/2017 13:58:25",
+		"new" : " 10/3/2017 13:58:25",
+		"username:password:realm:" : " 10/3/2017 13:58:25",
+		"username:password:" : " 10/3/2017 13:58:25"
 	}
 }

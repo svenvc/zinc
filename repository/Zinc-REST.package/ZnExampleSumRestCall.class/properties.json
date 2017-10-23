@@ -1,14 +1,11 @@
 {
-	"category" : "Zinc-REST-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "ZnExampleSumRestCall",
-	"pools" : [
-		 ],
 	"super" : "ZnAutoMatchedRestCall",
-	"type" : "normal" }
+	"category" : "Zinc-REST-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnExampleSumRestCall",
+	"type" : "normal"
+}

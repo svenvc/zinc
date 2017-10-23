@@ -1,21 +1,21 @@
 {
 	"instance" : { },
 	"class" : {
-		"streamFrom:to:" : "SvenVanCaekenberghe 9/17/2012 14:47",
-		"streamFrom:to:size:" : "SvenVanCaekenberghe 9/17/2012 14:47",
-		"signalProgress:total:" : "SvenVanCaekenberghe 9/28/2013 18:00",
-		"parseHttpDate:" : "SvenVanCaekenberghe 11/10/2013 11:28",
-		"trimString:" : "SvenVanCaekenberghe 10/5/2010 21:24",
-		"capitalizeString:" : "SvenVanCaekenberghe 9/10/2010 20:14",
-		"isCapitalizedString:" : "SvenVanCaekenberghe 8/18/2011 14:15",
-		"decodeBase64:" : "SvenVanCaekenberghe 2/24/2014 17:08",
-		"currentProcessID" : "SvenVanCaekenberghe 12/14/2010 13:10",
-		"httpDate:" : "SvenVanCaekenberghe 3/2/2014 19:02",
-		"encodeBase64:" : "SvenVanCaekenberghe 2/24/2014 17:07",
-		"nextPutAll:on:" : "SvenVanCaekenberghe 5/28/2013 13:04",
-		"bufferedWriteStreamOn:" : "SvenVanCaekenberghe 5/18/2013 18:58",
-		"httpDate" : "SvenVanCaekenberghe 9/16/2010 15:52",
-		"readUpToEnd:limit:" : "SvenVanCaekenberghe 6/11/2013 14:04",
-		"streamingBufferSize" : "SvenVanCaekenberghe 9/17/2012 14:27"
+		"streamFrom:to:" : " 10/3/2017 13:58:25",
+		"streamFrom:to:size:" : " 10/3/2017 13:58:25",
+		"signalProgress:total:" : " 10/3/2017 13:58:25",
+		"parseHttpDate:" : " 10/3/2017 13:58:25",
+		"trimString:" : " 10/3/2017 13:58:25",
+		"capitalizeString:" : " 10/3/2017 13:58:25",
+		"isCapitalizedString:" : " 10/3/2017 13:58:25",
+		"decodeBase64:" : " 10/3/2017 13:58:25",
+		"currentProcessID" : " 10/3/2017 13:58:25",
+		"httpDate:" : " 10/3/2017 13:58:25",
+		"encodeBase64:" : " 10/3/2017 13:58:25",
+		"nextPutAll:on:" : " 10/3/2017 13:58:25",
+		"bufferedWriteStreamOn:" : " 10/3/2017 13:58:25",
+		"httpDate" : " 10/3/2017 13:58:25",
+		"readUpToEnd:limit:" : " 10/3/2017 13:58:25",
+		"streamingBufferSize" : " 10/3/2017 13:58:25"
 	}
 }

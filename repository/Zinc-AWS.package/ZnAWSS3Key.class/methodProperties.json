@@ -1,22 +1,25 @@
 {
-	"class" : {
-		"bucket:key:" : "SvenVanCaekenberghe 1/8/2011 17:16",
-		"fromAssociation:" : "SvenVanCaekenberghe 1/8/2011 17:20",
-		"fromXml:" : "SvenVanCaekenberghe 1/5/2011 15:21" },
 	"instance" : {
-		"asResource" : "SvenVanCaekenberghe 1/8/2011 17:14",
-		"asUrl" : "SvenVanCaekenberghe 1/8/2011 17:19",
-		"bucket" : "SvenVanCaekenberghe 1/5/2011 15:20",
-		"bucket:" : "SvenVanCaekenberghe 1/5/2011 15:20",
-		"bucketKeyAssociation" : "SvenVanCaekenberghe 1/5/2011 15:37",
-		"etag" : "SvenVanCaekenberghe 1/5/2011 15:20",
-		"etag:" : "SvenVanCaekenberghe 1/5/2011 15:20",
 		"fromXml:" : "SvenVanCaekenberghe 1/5/2011 15:31",
-		"key" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"asResource" : "SvenVanCaekenberghe 1/8/2011 17:14",
+		"bucket:" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"bucket" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"xml:" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"bucketKeyAssociation" : "SvenVanCaekenberghe 1/5/2011 15:37",
 		"key:" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"key" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"etag" : "SvenVanCaekenberghe 1/5/2011 15:20",
 		"printOn:" : "SvenVanCaekenberghe 1/5/2011 15:37",
 		"size" : "SvenVanCaekenberghe 1/5/2011 15:25",
-		"size:" : "SvenVanCaekenberghe 1/5/2011 15:20",
 		"value" : "SvenVanCaekenberghe 1/5/2011 15:43",
-		"xml" : "SvenVanCaekenberghe 1/5/2011 15:20",
-		"xml:" : "SvenVanCaekenberghe 1/5/2011 15:20" } }
+		"size:" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"etag:" : "SvenVanCaekenberghe 1/5/2011 15:20",
+		"asUrl" : "SvenVanCaekenberghe 1/8/2011 17:19",
+		"xml" : "SvenVanCaekenberghe 1/5/2011 15:20"
+	},
+	"class" : {
+		"fromAssociation:" : "SvenVanCaekenberghe 1/8/2011 17:20",
+		"fromXml:" : "SvenVanCaekenberghe 1/5/2011 15:21",
+		"bucket:key:" : "SvenVanCaekenberghe 1/8/2011 17:16"
+	}
+}
