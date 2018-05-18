@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "ZnServer",
 	"category" : "Zinc-HTTP-Client-Server",
 	"classinstvars" : [

@@ -1,0 +1,4 @@
+accessing
+setToEnd
+
+	writeStream setToEnd

@@ -1,12 +1,12 @@
 {
 	"instance" : {
-		"testInitialization" : " 10/3/2017 12:14:37",
-		"testReadingWrongVersion" : " 10/3/2017 12:14:37",
-		"testWriting" : " 10/3/2017 12:14:37",
-		"testReadingNonStandardCode" : "SvenVanCaekenberghe 8/18/2017 13:48",
-		"testReadingWrongCode" : " 10/3/2017 12:14:37",
-		"testReading" : " 10/3/2017 12:14:37",
-		"testReadingWrongVersion2" : " 10/3/2017 12:14:37"
+		"testInitialization" : "",
+		"testReadingWrongVersion" : "",
+		"testWriting" : "",
+		"testReadingNonStandardCode" : "",
+		"testReadingWrongCode" : "",
+		"testReading" : "",
+		"testReadingWrongVersion2" : ""
 	},
 	"class" : { }
 }

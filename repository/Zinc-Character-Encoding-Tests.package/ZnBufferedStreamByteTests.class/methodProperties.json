@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"testInt8" : "SvenVanCaekenberghe 4/19/2018 16:05",
+		"testNextIntegerOfSizeSignedBigEndian" : "SvenVanCaekenberghe 4/19/2018 12:45",
+		"testInt16Aliases" : "SvenVanCaekenberghe 4/19/2018 14:17",
+		"integerEncodingSpec" : "SvenVanCaekenberghe 4/19/2018 12:42",
+		"testNextIntegerOfSizeSignedBigEndianPut" : "SvenVanCaekenberghe 4/19/2018 14:19",
+		"testInt32Aliases" : "SvenVanCaekenberghe 4/19/2018 14:11"
+	},
+	"class" : { }
+}

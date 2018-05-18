@@ -1,21 +1,21 @@
 {
 	"instance" : {
-		"attributeAt:ifAbsent:" : " 10/3/2017 13:58:25",
-		"inactivity" : " 10/3/2017 13:58:25",
-		"age" : " 10/3/2017 13:58:25",
-		"attributeAt:put:" : " 10/3/2017 13:58:25",
-		"attributeAt:ifAbsentPut:" : " 10/3/2017 13:58:25",
-		"attributeKeys" : " 10/3/2017 13:58:25",
-		"id" : " 10/3/2017 13:58:25",
-		"created" : " 10/3/2017 13:58:25",
-		"removeAttribute:" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"printOn:" : " 10/3/2017 13:58:25",
-		"id:" : " 10/3/2017 13:58:25",
-		"isValid" : " 10/3/2017 13:58:25",
-		"modified" : " 10/3/2017 13:58:25",
-		"touch" : " 10/3/2017 13:58:25",
-		"attributeAt:" : " 10/3/2017 13:58:25"
+		"attributeAt:ifAbsent:" : "",
+		"inactivity" : "",
+		"age" : "",
+		"attributeAt:put:" : "",
+		"attributeAt:ifAbsentPut:" : "",
+		"attributeKeys" : "",
+		"id" : "",
+		"created" : "",
+		"removeAttribute:" : "",
+		"initialize" : "",
+		"printOn:" : "",
+		"id:" : "",
+		"isValid" : "",
+		"modified" : "",
+		"touch" : "",
+		"attributeAt:" : ""
 	},
 	"class" : { }
 }

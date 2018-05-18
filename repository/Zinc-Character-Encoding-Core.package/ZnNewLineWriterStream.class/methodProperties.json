@@ -1,0 +1,15 @@
+{
+	"instance" : {
+		"nextPut:" : "",
+		"initialize" : "",
+		"forCr" : "",
+		"forPlatformLineEnding" : "",
+		"forCrLf" : "",
+		"newLine" : "",
+		"stream:" : "",
+		"forLf" : ""
+	},
+	"class" : {
+		"on:" : ""
+	}
+}

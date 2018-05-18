@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testSimple" : " 10/3/2017 12:14:37",
-		"testLineTooLong" : " 10/3/2017 12:14:37",
-		"testBinary" : " 10/3/2017 12:14:37",
-		"testLineTooLongDefault" : " 10/3/2017 12:14:37"
+		"testSimple" : "",
+		"testLineTooLong" : "",
+		"testBinary" : "",
+		"testLineTooLongDefault" : ""
 	},
 	"class" : { }
 }

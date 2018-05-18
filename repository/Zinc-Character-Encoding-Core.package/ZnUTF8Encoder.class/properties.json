@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "ZnUTFEncoder",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [ ],

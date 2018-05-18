@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 1/26/2018 17:07",
+	"super" : "Object",
+	"category" : "Zinc-Character-Encoding-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream",
+		"buffer",
+		"count",
+		"index",
+		"delta"
+	],
+	"name" : "ZnPositionableReadStream",
+	"type" : "normal"
+}

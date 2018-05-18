@@ -1,0 +1,4 @@
+accessing
+wrappedStream
+
+	^ readStream wrappedStream

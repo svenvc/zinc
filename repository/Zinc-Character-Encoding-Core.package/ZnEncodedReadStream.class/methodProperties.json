@@ -1,19 +1,23 @@
 {
 	"instance" : {
-		"readInto:startingAt:count:" : "SvenVanCaekenberghe 1/26/2016 11:00",
-		"next" : "SvenVanCaekenberghe 1/26/2016 11:13",
-		"next:into:startingAt:" : "SvenVanCaekenberghe 1/26/2016 10:50",
-		"upTo:" : "SvenVanCaekenberghe 1/26/2016 10:50",
-		"peekFor:" : "SvenVanCaekenberghe 1/26/2016 10:50",
-		"upToEnd" : "SvenVanCaekenberghe 1/26/2016 10:51",
-		"peek" : "SvenVanCaekenberghe 1/26/2016 11:13",
-		"atEnd" : "SvenVanCaekenberghe 1/26/2016 10:52",
-		"skip:" : "SvenVanCaekenberghe 1/26/2016 10:50",
-		"isBinary" : "SvenVanCaekenberghe 1/26/2016 10:49",
-		"nextElement" : "SvenVanCaekenberghe 1/26/2016 11:12",
-		"contents" : "SvenVanCaekenberghe 1/26/2016 10:49",
-		"next:" : "SvenVanCaekenberghe 1/26/2016 10:50",
-		"next:into:" : "SvenVanCaekenberghe 1/26/2016 10:50"
+		"readInto:startingAt:count:" : "",
+		"next" : "",
+		"next:into:startingAt:" : "",
+		"upTo:" : "",
+		"peekFor:" : "",
+		"upToEnd" : "",
+		"peek" : "",
+		"atEnd" : "",
+		"skip:" : "",
+		"position:" : "",
+		"isBinary" : "",
+		"isReadOnly" : "",
+		"nextInto:" : "",
+		"nextElement" : "",
+		"position" : "",
+		"contents" : "",
+		"next:" : "",
+		"next:into:" : ""
 	},
 	"class" : { }
 }

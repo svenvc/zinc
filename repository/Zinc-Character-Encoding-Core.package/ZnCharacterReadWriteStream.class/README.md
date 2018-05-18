@@ -1,0 +1,1 @@
+I am a read-write character stream. I am mainly used to open the Pharo source and changes files.

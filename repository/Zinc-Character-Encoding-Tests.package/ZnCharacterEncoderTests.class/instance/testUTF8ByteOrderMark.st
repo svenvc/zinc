@@ -16,4 +16,4 @@ testUTF8ByteOrderMark
 	self assert: decodedString equals: string.
 	
 	bom := encoder encodeStringWithByteOrderMark: ''.
-	self should: [ encoder decodeBytes: bom ] raise: ZnInvalidUTF8
+	self should: [ encoder decodeBytes: bom ] raise: ZnIncomplete

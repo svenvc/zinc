@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "DynamicVariable",
 	"category" : "Zinc-HTTP-Variables",
 	"classinstvars" : [ ],

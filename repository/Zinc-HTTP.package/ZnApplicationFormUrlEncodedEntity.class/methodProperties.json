@@ -1,27 +1,27 @@
 {
 	"instance" : {
-		"readFrom:" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"contents" : " 10/3/2017 13:58:25",
-		"at:add:" : " 10/3/2017 13:58:25",
-		"fieldsDo:" : " 10/3/2017 13:58:25",
-		"writeRepresentationOn:" : " 10/3/2017 13:58:25",
-		"computeRepresentation" : " 10/3/2017 13:58:25",
-		"add:" : " 10/3/2017 13:58:25",
-		"writeOn:" : " 10/3/2017 13:58:25",
-		"contentLength" : " 10/3/2017 13:58:25",
-		"at:" : " 10/3/2017 13:58:25",
-		"fields" : " 10/3/2017 13:58:25",
-		"includesField:" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"at:put:" : " 10/3/2017 13:58:25",
-		"at:ifAbsent:" : " 10/3/2017 13:58:25",
-		"addAll:" : " 10/3/2017 13:58:25",
-		"isEmpty" : " 10/3/2017 13:58:25",
-		"invalidateRepresentation" : " 10/3/2017 13:58:25"
+		"readFrom:" : "",
+		"initialize" : "",
+		"contents" : "",
+		"at:add:" : "",
+		"fieldsDo:" : "",
+		"writeRepresentationOn:" : "",
+		"computeRepresentation" : "",
+		"add:" : "",
+		"writeOn:" : "",
+		"contentLength" : "",
+		"at:" : "",
+		"fields" : "",
+		"includesField:" : "",
+		"printContentsOn:" : "",
+		"at:put:" : "",
+		"at:ifAbsent:" : "",
+		"addAll:" : "",
+		"isEmpty" : "",
+		"invalidateRepresentation" : ""
 	},
 	"class" : {
-		"designatedMimeType" : " 10/3/2017 13:58:25",
-		"withAll:" : " 10/3/2017 13:58:25"
+		"designatedMimeType" : "",
+		"withAll:" : ""
 	}
 }

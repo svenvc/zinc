@@ -1,0 +1,4 @@
+testing
+isReadOnly
+
+	^ true

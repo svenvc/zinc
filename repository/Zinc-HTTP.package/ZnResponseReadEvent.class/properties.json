@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 6/16/2014 14:06",
+	"commentStamp" : "",
 	"super" : "ZnClientLogEvent",
 	"category" : "Zinc-HTTP-Logging",
 	"classinstvars" : [ ],

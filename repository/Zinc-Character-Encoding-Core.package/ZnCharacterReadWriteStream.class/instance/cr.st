@@ -1,0 +1,4 @@
+accessing
+cr
+	
+	writeStream cr

@@ -1,18 +1,18 @@
 {
 	"instance" : {
-		"domain:" : " 10/3/2017 13:58:25",
-		"isComplete" : " 10/3/2017 13:58:25",
-		"linkToAuthRequest:" : " 10/3/2017 13:58:25",
-		"realm:" : " 10/3/2017 13:58:25",
-		"setAuthorizationHeader:for:method:" : " 10/3/2017 13:58:25",
-		"realm" : " 10/3/2017 13:58:25",
-		"authTokenForUrl:method:" : " 10/3/2017 13:58:25",
-		"domain" : " 10/3/2017 13:58:25",
-		"authToken" : " 10/3/2017 13:58:25"
+		"domain:" : "",
+		"isComplete" : "",
+		"linkToAuthRequest:" : "",
+		"realm:" : "",
+		"setAuthorizationHeader:for:method:" : "",
+		"realm" : "",
+		"authTokenForUrl:method:" : "",
+		"domain" : "",
+		"authToken" : ""
 	},
 	"class" : {
-		"authName" : " 10/3/2017 13:58:25",
-		"findRealmFor:" : " 10/3/2017 13:58:25",
-		"findHandlerFor:" : " 10/3/2017 13:58:25"
+		"authName" : "",
+		"findRealmFor:" : "",
+		"findHandlerFor:" : ""
 	}
 }

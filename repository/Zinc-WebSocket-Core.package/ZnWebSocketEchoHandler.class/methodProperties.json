@@ -1,6 +1,9 @@
 {
-	"class" : {
-		"clientHtml" : "SvenVanCaekenberghe 1/8/2013 13:44",
-		"clientHtmlRemote" : "SvenVanCaekenberghe 10/13/2012 20:50" },
 	"instance" : {
-		"value:" : "SvenVanCaekenberghe 6/16/2014 13:28" } }
+		"value:" : "SvenVanCaekenberghe 6/16/2014 13:28"
+	},
+	"class" : {
+		"clientHtmlRemote" : "SvenVanCaekenberghe 10/13/2012 20:50",
+		"clientHtml" : "SvenVanCaekenberghe 1/8/2013 13:44"
+	}
+}

@@ -1,21 +1,21 @@
 {
 	"instance" : { },
 	"class" : {
-		"streamFrom:to:" : " 10/3/2017 13:58:25",
-		"streamFrom:to:size:" : " 10/3/2017 13:58:25",
-		"signalProgress:total:" : " 10/3/2017 13:58:25",
-		"parseHttpDate:" : " 10/3/2017 13:58:25",
-		"trimString:" : " 10/3/2017 13:58:25",
-		"capitalizeString:" : " 10/3/2017 13:58:25",
-		"isCapitalizedString:" : " 10/3/2017 13:58:25",
-		"decodeBase64:" : " 10/3/2017 13:58:25",
-		"currentProcessID" : " 10/3/2017 13:58:25",
-		"httpDate:" : " 10/3/2017 13:58:25",
-		"encodeBase64:" : " 10/3/2017 13:58:25",
-		"nextPutAll:on:" : " 10/3/2017 13:58:25",
-		"bufferedWriteStreamOn:" : " 10/3/2017 13:58:25",
-		"httpDate" : " 10/3/2017 13:58:25",
-		"readUpToEnd:limit:" : " 10/3/2017 13:58:25",
-		"streamingBufferSize" : " 10/3/2017 13:58:25"
+		"streamFrom:to:" : "",
+		"streamFrom:to:size:" : "",
+		"signalProgress:total:" : "",
+		"parseHttpDate:" : "",
+		"trimString:" : "",
+		"capitalizeString:" : "",
+		"isCapitalizedString:" : "",
+		"decodeBase64:" : "",
+		"currentProcessID" : "",
+		"httpDate:" : "",
+		"encodeBase64:" : "",
+		"nextPutAll:on:" : "",
+		"bufferedWriteStreamOn:" : "",
+		"httpDate" : "",
+		"readUpToEnd:limit:" : "",
+		"streamingBufferSize" : ""
 	}
 }

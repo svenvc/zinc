@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"port:" : " 10/3/2017 13:58:25",
-		"port" : " 10/3/2017 13:58:25",
-		"address" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"address:" : " 10/3/2017 13:58:25"
+		"port:" : "",
+		"port" : "",
+		"address" : "",
+		"printContentsOn:" : "",
+		"address:" : ""
 	},
 	"class" : { }
 }

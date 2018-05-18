@@ -1,15 +1,15 @@
 {
 	"instance" : {
-		"combined" : " 10/3/2017 13:58:25",
-		"formatTimestamp:on:" : " 10/3/2017 13:58:25",
-		"formatResponse:on:" : " 10/3/2017 13:58:25",
-		"format:on:" : " 10/3/2017 13:58:25",
-		"combined:" : " 10/3/2017 13:58:25",
-		"formatRequest:on:" : " 10/3/2017 13:58:25",
-		"clientIPAddressFrom:" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"formatCombinedFields:on:" : " 10/3/2017 13:58:25",
-		"userFrom:" : " 10/3/2017 13:58:25"
+		"combined" : "",
+		"formatTimestamp:on:" : "",
+		"formatResponse:on:" : "",
+		"format:on:" : "",
+		"combined:" : "",
+		"formatRequest:on:" : "",
+		"clientIPAddressFrom:" : "",
+		"initialize" : "",
+		"formatCombinedFields:on:" : "",
+		"userFrom:" : ""
 	},
 	"class" : { }
 }

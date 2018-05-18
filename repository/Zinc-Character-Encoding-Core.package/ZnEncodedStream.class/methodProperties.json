@@ -1,15 +1,24 @@
 {
 	"instance" : {
-		"on:" : "SvenVanCaekenberghe 1/26/2016 10:22",
-		"encoder" : "SvenVanCaekenberghe 1/26/2016 10:22",
-		"encoder:" : "SvenVanCaekenberghe 1/26/2016 10:22",
-		"close" : "SvenVanCaekenberghe 1/26/2016 10:22",
-		"wrappedStream" : "SvenVanCaekenberghe 1/26/2016 10:22",
-		"encoding:" : "SvenVanCaekenberghe 1/26/2016 10:22"
+		"isStream" : "",
+		"encoding:" : "",
+		"close" : "",
+		"flush" : "SvenVanCaekenberghe 3/13/2018 19:58",
+		"truncate" : "SvenVanCaekenberghe 3/13/2018 19:59",
+		"on:" : "",
+		"wrappedStream" : "",
+		"position:" : "SvenVanCaekenberghe 3/13/2018 19:58",
+		"encoder:" : "",
+		"closed" : "",
+		"encoder" : "",
+		"setToEnd" : "",
+		"size" : "SvenVanCaekenberghe 3/13/2018 19:58",
+		"position" : "",
+		"truncate:" : "SvenVanCaekenberghe 3/13/2018 19:59"
 	},
 	"class" : {
-		"defaultEncoder" : "SvenVanCaekenberghe 9/4/2017 14:13",
-		"on:encoding:" : "SvenVanCaekenberghe 1/26/2016 10:24",
-		"on:" : "SvenVanCaekenberghe 1/26/2016 10:24"
+		"defaultEncoder" : "",
+		"on:encoding:" : "",
+		"on:" : ""
 	}
 }

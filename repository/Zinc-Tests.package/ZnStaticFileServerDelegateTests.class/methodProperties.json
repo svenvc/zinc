@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"tearDown" : " 10/3/2017 12:14:37",
-		"testBasicHead" : " 10/3/2017 12:14:37",
-		"testIfModifiedSinceNotModified" : " 10/3/2017 12:14:37",
-		"testBasicGetWide" : " 10/3/2017 12:14:37",
-		"largeHtml" : " 10/3/2017 12:14:37",
-		"smallHtml" : " 10/3/2017 12:14:37",
-		"withServerDo:" : " 10/3/2017 12:14:37",
-		"testBasicGet" : " 10/3/2017 12:14:37",
-		"testBasicGetLarge" : " 10/3/2017 12:14:37",
-		"wideHtml" : " 10/3/2017 12:14:37",
-		"setUp" : " 10/3/2017 12:14:37"
+		"tearDown" : "",
+		"testBasicHead" : "",
+		"testIfModifiedSinceNotModified" : "",
+		"testBasicGetWide" : "",
+		"largeHtml" : "",
+		"smallHtml" : "",
+		"withServerDo:" : "",
+		"testBasicGet" : "",
+		"testBasicGetLarge" : "",
+		"wideHtml" : "",
+		"setUp" : ""
 	},
 	"class" : { }
 }

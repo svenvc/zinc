@@ -1,0 +1,29 @@
+{
+	"instance" : {
+		"close" : "",
+		"on:encoding:" : "",
+		"nextPutAll:" : "",
+		"readOnlyCopy" : "",
+		"cr" : "",
+		"upToAll:" : "",
+		"next:" : "",
+		"next" : "",
+		"setToEnd" : "",
+		"skip:" : "",
+		"size" : "",
+		"position" : "",
+		"isReadOnly" : "",
+		"upToEnd" : "",
+		"position:" : "",
+		"atEnd" : "",
+		"peek" : "",
+		"collectionSpecies" : "",
+		"nextPut:" : "",
+		"flush" : "",
+		"closed" : "",
+		"space" : ""
+	},
+	"class" : {
+		"on:encoding:" : ""
+	}
+}

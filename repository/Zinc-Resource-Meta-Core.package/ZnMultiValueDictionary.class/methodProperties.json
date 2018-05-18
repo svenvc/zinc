@@ -1,17 +1,17 @@
 {
 	"instance" : {
-		"keysAndValuesDo:" : "SvenVanCaekenberghe 1/12/2011 11:10",
-		"addAllMulti:" : "SvenVanCaekenberghe 1/7/2013 10:28",
-		"checkLimitForKey:" : "KenTreis 01/19/2013 10:42",
-		"at:add:" : "SvenVanCaekenberghe 1/12/2011 11:19",
-		"add:" : "KenTreis 01/19/2013 10:41",
-		"at:put:" : "KenTreis 01/19/2013 10:41",
-		"limit" : "SvenVanCaekenberghe 5/14/2013 12:38",
-		"limit:" : "SvenVanCaekenberghe 1/2/2012 19:35",
-		"initialize:" : "SvenVanCaekenberghe 4/23/2015 16:39",
-		"unlimited" : "SvenVanCaekenberghe 1/2/2012 19:36"
+		"keysAndValuesDo:" : "nil",
+		"addAllMulti:" : "nil",
+		"checkLimitForKey:" : "nil",
+		"at:add:" : "SvenVanCaekenberghe 4/27/2018 14:23",
+		"add:" : "nil",
+		"at:put:" : "nil",
+		"limit" : "nil",
+		"limit:" : "nil",
+		"initialize:" : "nil",
+		"unlimited" : "nil"
 	},
 	"class" : {
-		"defaultLimit" : "SvenVanCaekenberghe 5/10/2017 16:46"
+		"defaultLimit" : "nil"
 	}
 }

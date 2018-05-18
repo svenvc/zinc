@@ -1,19 +1,22 @@
 {
-	"class" : {
-		"demoHtml" : "SvenVanCaekenberghe 1/8/2013 13:47",
-		"handler:" : "SvenVanCaekenberghe 9/11/2012 10:41",
-		"installExamplesInDefaultServer" : "SvenVanCaekenberghe 10/13/2012 15:07",
-		"installExamplesInServer:" : "SvenVanCaekenberghe 1/10/2013 14:35",
-		"map:to:" : "SvenVanCaekenberghe 8/27/2012 20:59" },
 	"instance" : {
 		"continuation" : "SvenVanCaekenberghe 6/16/2014 13:16",
-		"handleRequest:" : "SvenVanCaekenberghe 8/22/2012 13:09",
 		"handler" : "SvenVanCaekenberghe 8/22/2012 13:06",
+		"responseHeadersForKey:" : "SvenVanCaekenberghe 9/2/2012 20:40",
+		"handleRequest:" : "SvenVanCaekenberghe 8/22/2012 13:09",
+		"value:" : "SvenVanCaekenberghe 8/22/2012 14:40",
+		"webSocketResponseForRequest:" : "SvenVanCaekenberghe 10/13/2012 17:37",
+		"prefixFromString:" : "SvenVanCaekenberghe 8/22/2012 13:07",
 		"handler:" : "SvenVanCaekenberghe 8/22/2012 13:33",
-		"isValidWebSocketRequest:" : "SvenVanCaekenberghe 9/7/2012 14:15",
 		"prefix" : "SvenVanCaekenberghe 8/22/2012 13:06",
 		"prefix:" : "LucFabresse 6/18/2015 18:21",
-		"prefixFromString:" : "SvenVanCaekenberghe 8/22/2012 13:07",
-		"responseHeadersForKey:" : "SvenVanCaekenberghe 9/2/2012 20:40",
-		"value:" : "SvenVanCaekenberghe 8/22/2012 14:40",
-		"webSocketResponseForRequest:" : "SvenVanCaekenberghe 10/13/2012 17:37" } }
+		"isValidWebSocketRequest:" : "SvenVanCaekenberghe 9/7/2012 14:15"
+	},
+	"class" : {
+		"installExamplesInServer:" : "SvenVanCaekenberghe 1/10/2013 14:35",
+		"installExamplesInDefaultServer" : "SvenVanCaekenberghe 10/13/2012 15:07",
+		"demoHtml" : "SvenVanCaekenberghe 1/8/2013 13:47",
+		"map:to:" : "SvenVanCaekenberghe 8/27/2012 20:59",
+		"handler:" : "SvenVanCaekenberghe 9/11/2012 10:41"
+	}
+}

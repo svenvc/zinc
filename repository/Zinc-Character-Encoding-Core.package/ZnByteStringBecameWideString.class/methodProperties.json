@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"isResumable" : "SvenVanCaekenberghe 11/13/2013 13:26",
-		"wideString" : "SvenVanCaekenberghe 6/11/2013 14:44",
-		"becomeForward" : "SvenVanCaekenberghe 11/13/2013 14:28",
-		"wideString:" : "SvenVanCaekenberghe 6/11/2013 14:44",
-		"byteString" : "SvenVanCaekenberghe 6/11/2013 14:44",
-		"byteString:" : "SvenVanCaekenberghe 6/11/2013 14:44"
+		"isResumable" : "",
+		"wideString" : "",
+		"becomeForward" : "",
+		"wideString:" : "",
+		"byteString" : "",
+		"byteString:" : ""
 	},
 	"class" : {
-		"convert:" : "SvenVanCaekenberghe 11/13/2013 13:49"
+		"convert:" : ""
 	}
 }

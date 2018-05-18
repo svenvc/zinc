@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 8/18/2011 14:48",
+	"commentStamp" : "",
 	"super" : "ZnEntity",
 	"category" : "Zinc-HTTP-Core",
 	"classinstvars" : [ ],

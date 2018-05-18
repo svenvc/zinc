@@ -1,12 +1,12 @@
 {
 	"instance" : {
-		"removeIfExpired:" : " 10/3/2017 13:58:25",
-		"cookiesForUrl:" : " 10/3/2017 13:58:25",
-		"add:" : " 10/3/2017 13:58:25",
-		"cookieAt:forUrl:" : " 10/3/2017 13:58:25",
-		"cookies" : " 10/3/2017 13:58:25",
-		"removeAll" : " 10/3/2017 13:58:25",
-		"remove:" : " 10/3/2017 13:58:25"
+		"removeIfExpired:" : "",
+		"cookiesForUrl:" : "",
+		"add:" : "",
+		"cookieAt:forUrl:" : "",
+		"cookies" : "",
+		"removeAll" : "",
+		"remove:" : ""
 	},
 	"class" : { }
 }

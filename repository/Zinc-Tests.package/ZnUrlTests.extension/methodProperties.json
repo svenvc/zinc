@@ -1,7 +1,7 @@
 {
 	"instance" : {
-		"testSaveContentsToFile" : " 10/3/2017 12:14:37",
-		"testRetrieveContents" : " 10/3/2017 12:14:37"
+		"testSaveContentsToFile" : "",
+		"testRetrieveContents" : ""
 	},
 	"class" : { }
 }

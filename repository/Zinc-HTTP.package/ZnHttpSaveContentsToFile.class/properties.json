@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 6/25/2014 17:36",
+	"commentStamp" : "",
 	"super" : "ZnUrlOperation",
 	"category" : "Zinc-HTTP-Client-Server",
 	"classinstvars" : [ ],

@@ -4,7 +4,7 @@ nextFromStream: stream
 	Overwritten for performance reasons"
 
 	| byteValue |
-	^ (byteValue := stream next) < 128
+	^ (byteValue := stream next ifNil: [ ^ self errorIncomplete asCharacter ]) < 128
 		ifTrue: [ Character value: byteValue ]
 		ifFalse: [ 
 			(byteToUnicode at: byteValue - 127 ifAbsent: [ nil ])

@@ -1,0 +1,4 @@
+accessing
+setToEnd
+	
+	stream setToEnd

@@ -1,20 +1,20 @@
 {
 	"instance" : { },
 	"class" : {
-		"put:data:username:password:" : " 10/3/2017 13:58:25",
-		"getPng:" : " 10/3/2017 13:58:25",
-		"head:" : " 10/3/2017 13:58:25",
-		"delete:username:password:" : " 10/3/2017 13:58:25",
-		"head:username:password:" : " 10/3/2017 13:58:25",
-		"getImageOfType:fromUrl:" : " 10/3/2017 13:58:25",
-		"getGif:" : " 10/3/2017 13:58:25",
-		"delete:" : " 10/3/2017 13:58:25",
-		"get:" : " 10/3/2017 13:58:25",
-		"get:username:password:" : " 10/3/2017 13:58:25",
-		"post:data:" : " 10/3/2017 13:58:25",
-		"post:data:username:password:" : " 10/3/2017 13:58:25",
-		"put:data:" : " 10/3/2017 13:58:25",
-		"getJpeg:" : " 10/3/2017 13:58:25",
-		"client" : " 10/3/2017 13:58:25"
+		"put:data:username:password:" : "",
+		"getPng:" : "",
+		"head:" : "",
+		"delete:username:password:" : "",
+		"head:username:password:" : "",
+		"getImageOfType:fromUrl:" : "",
+		"getGif:" : "",
+		"delete:" : "",
+		"get:" : "",
+		"get:username:password:" : "",
+		"post:data:" : "",
+		"post:data:username:password:" : "",
+		"put:data:" : "",
+		"getJpeg:" : "",
+		"client" : ""
 	}
 }

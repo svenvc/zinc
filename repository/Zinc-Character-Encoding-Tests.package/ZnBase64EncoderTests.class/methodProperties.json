@@ -1,20 +1,20 @@
 {
 	"instance" : {
-		"testPadding" : "SvenVanCaekenberghe 12/15/2012 13:39",
-		"testQuote" : "KenTreis 01/19/2013 09:28",
-		"testWhitespaceAtEnd" : "SvenVanCaekenberghe 4/27/2017 10:33",
-		"testEmpty" : "SvenVanCaekenberghe 12/15/2012 13:44",
-		"testSimple" : "SvenVanCaekenberghe 12/15/2012 00:07",
-		"testFullSpectrum" : "SvenVanCaekenberghe 12/15/2012 10:16",
-		"testFullAlphabet" : "SvenVanCaekenberghe 10/30/2015 15:10",
-		"testDecodingErrors" : "SvenVanCaekenberghe 4/27/2017 10:30",
-		"testCustomLineBreaking" : "SvenVanCaekenberghe 10/30/2015 15:24"
+		"testPadding" : "",
+		"testQuote" : "",
+		"testWhitespaceAtEnd" : "",
+		"testEmpty" : "",
+		"testSimple" : "",
+		"testFullSpectrum" : "",
+		"testFullAlphabet" : "",
+		"testDecodingErrors" : "",
+		"testCustomLineBreaking" : ""
 	},
 	"class" : {
-		"benchmarks" : "SvenVanCaekenberghe 10/30/2015 11:32",
-		"bench1kEncode" : "SvenVanCaekenberghe 10/30/2015 11:22",
-		"bench10kEncode" : "SvenVanCaekenberghe 10/30/2015 11:22",
-		"bench1kDecode" : "SvenVanCaekenberghe 10/30/2015 11:24",
-		"bench10kDecode" : "SvenVanCaekenberghe 10/30/2015 11:25"
+		"benchmarks" : "",
+		"bench1kEncode" : "",
+		"bench10kEncode" : "",
+		"bench1kDecode" : "",
+		"bench10kDecode" : ""
 	}
 }

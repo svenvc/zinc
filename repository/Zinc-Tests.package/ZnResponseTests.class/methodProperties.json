@@ -1,17 +1,17 @@
 {
 	"instance" : {
-		"testAbsoluteCreated" : " 10/3/2017 12:14:37",
-		"testDefaultUTF8Encoding" : " 10/3/2017 12:14:37",
-		"testCreated" : " 10/3/2017 12:14:37",
-		"testCookies" : " 10/3/2017 12:14:37",
-		"testIsError" : " 10/3/2017 12:14:37",
-		"testWritingBinary" : " 10/3/2017 12:14:37",
-		"testNotFound" : " 10/3/2017 12:14:37",
-		"testAbsoluteRedirect" : " 10/3/2017 12:14:37",
-		"testWritingCharacter" : " 10/3/2017 12:14:37",
-		"testRedirect" : " 10/3/2017 12:14:37",
-		"testSlashdotGzipChunked" : " 10/3/2017 12:14:37",
-		"testCookie" : " 10/3/2017 12:14:37"
+		"testAbsoluteCreated" : "",
+		"testDefaultUTF8Encoding" : "",
+		"testCreated" : "",
+		"testCookies" : "",
+		"testIsError" : "",
+		"testWritingBinary" : "",
+		"testNotFound" : "",
+		"testAbsoluteRedirect" : "",
+		"testWritingCharacter" : "",
+		"testRedirect" : "",
+		"testSlashdotGzipChunked" : "",
+		"testCookie" : ""
 	},
 	"class" : { }
 }

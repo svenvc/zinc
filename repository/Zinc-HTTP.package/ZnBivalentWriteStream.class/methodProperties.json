@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"on:" : " 10/3/2017 13:58:25",
-		"nextPut:" : " 10/3/2017 13:58:25",
-		"nextPutAll:" : " 10/3/2017 13:58:25",
-		"close" : " 10/3/2017 13:58:25",
-		"flush" : " 10/3/2017 13:58:25",
-		"isBinary" : " 10/3/2017 13:58:25",
-		"printOn:" : " 10/3/2017 13:58:25",
-		"space" : " 10/3/2017 13:58:25",
-		"next:putAll:startingAt:" : " 10/3/2017 13:58:25"
+		"on:" : "",
+		"nextPut:" : "",
+		"nextPutAll:" : "",
+		"close" : "",
+		"flush" : "",
+		"isBinary" : "",
+		"printOn:" : "",
+		"space" : "",
+		"next:putAll:startingAt:" : ""
 	},
 	"class" : {
-		"on:" : " 10/3/2017 13:58:25"
+		"on:" : ""
 	}
 }

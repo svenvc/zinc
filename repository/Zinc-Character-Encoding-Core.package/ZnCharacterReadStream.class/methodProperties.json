@@ -1,9 +1,11 @@
 {
 	"instance" : {
-		"nextElement" : "SvenVanCaekenberghe 1/26/2016 11:12",
-		"collectionSpecies" : "SvenVanCaekenberghe 5/3/2012 15:09",
-		"nextLine" : "SvenVanCaekenberghe 1/26/2016 11:14",
-		"readInto:startingAt:count:" : "SvenVanCaekenberghe 1/26/2016 10:52"
+		"nextElement" : "",
+		"collectionSpecies" : "",
+		"nextLine" : "",
+		"upToAll:" : "SvenVanCaekenberghe 4/20/2018 10:26",
+		"readInto:startingAt:count:" : "",
+		"match:" : ""
 	},
 	"class" : { }
 }

@@ -1,9 +1,12 @@
 {
-	"class" : {
-		"clientHtml" : "SvenVanCaekenberghe 10/13/2012 20:54" },
 	"instance" : {
-		"distributeMessage:" : "SvenVanCaekenberghe 6/16/2014 13:27",
-		"initialize" : "SvenVanCaekenberghe 9/10/2012 11:33",
+		"value:" : "SvenVanCaekenberghe 6/16/2014 13:27",
 		"register:" : "SvenVanCaekenberghe 9/10/2012 11:35",
+		"initialize" : "SvenVanCaekenberghe 9/10/2012 11:33",
 		"unregister:" : "SvenVanCaekenberghe 9/10/2012 11:36",
-		"value:" : "SvenVanCaekenberghe 6/16/2014 13:27" } }
+		"distributeMessage:" : "SvenVanCaekenberghe 6/16/2014 13:27"
+	},
+	"class" : {
+		"clientHtml" : "SvenVanCaekenberghe 10/13/2012 20:54"
+	}
+}

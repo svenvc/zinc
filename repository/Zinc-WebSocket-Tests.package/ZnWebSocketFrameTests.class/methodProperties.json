@@ -1,15 +1,16 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"testReading256ByteSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 10:46",
-		"testReading256KiBSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 10:46",
-		"testReadingFragmentedUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 10:29",
-		"testReadingPing" : "SvenVanCaekenberghe 8/22/2012 10:32",
-		"testReadingPong" : "SvenVanCaekenberghe 8/22/2012 10:32",
 		"testReadingSingleFrameMaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 10:12",
+		"testReading256ByteSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 10:46",
 		"testReadingSingleFrameUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 10:12",
+		"testWritingPing" : "SvenVanCaekenberghe 8/22/2012 12:11",
+		"testReadingPong" : "SvenVanCaekenberghe 8/22/2012 10:32",
+		"testReadingFragmentedUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 10:29",
+		"testWritingSingleFrameUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 12:05",
+		"testReadingPing" : "SvenVanCaekenberghe 8/22/2012 10:32",
 		"testWriting256ByteSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 12:15",
 		"testWriting256KiBSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 12:18",
-		"testWritingPing" : "SvenVanCaekenberghe 8/22/2012 12:11",
-		"testWritingSingleFrameUnmaskedTextMessage" : "SvenVanCaekenberghe 8/22/2012 12:05" } }
+		"testReading256KiBSingleFrameUnmaskedBinaryMessage" : "SvenVanCaekenberghe 8/22/2012 10:46"
+	},
+	"class" : { }
+}

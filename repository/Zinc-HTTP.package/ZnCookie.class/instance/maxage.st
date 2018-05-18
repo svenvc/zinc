@@ -1,3 +1,3 @@
 accessing
 maxage
-	^ self expires
+	^ attributes at: 'max-age' ifAbsent: [ nil ]

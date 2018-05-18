@@ -7,6 +7,7 @@ Here are some ways to load this project:
 	ConfigurationOfZincHTTPComponents load.
 	ConfigurationOfZincHTTPComponents project latestVersion load.
 	ConfigurationOfZincHTTPComponents project latestVersion load: 'Tests'.
+	(ConfigurationOfZincHTTPComponents project version: '2.9.1') load.
 	ConfigurationOfZincHTTPComponents project bleedingEdge load.
 
 Here is a list of available groups:

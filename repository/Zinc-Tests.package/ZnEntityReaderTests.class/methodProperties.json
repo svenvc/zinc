@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testChunkedWithExtraHeaders" : " 10/3/2017 12:14:37",
-		"testReadStreaming" : " 10/3/2017 12:14:37",
-		"testReadStreamingWriting" : " 10/3/2017 12:14:37",
-		"testChunked" : " 10/3/2017 12:14:37"
+		"testChunkedWithExtraHeaders" : "",
+		"testReadStreaming" : "",
+		"testReadStreamingWriting" : "",
+		"testChunked" : ""
 	},
 	"class" : { }
 }

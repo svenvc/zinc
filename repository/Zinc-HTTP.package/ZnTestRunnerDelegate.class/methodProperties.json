@@ -1,11 +1,11 @@
 {
 	"instance" : {
-		"handleGetRequest:" : " 10/3/2017 13:58:25",
-		"handleRequest:" : " 10/3/2017 13:58:25",
-		"notFoundResponse:" : " 10/3/2017 13:58:25",
-		"value:" : " 10/3/2017 13:58:25"
+		"handleGetRequest:" : "",
+		"handleRequest:" : "",
+		"notFoundResponse:" : "",
+		"value:" : ""
 	},
 	"class" : {
-		"startInServerOn:" : " 10/3/2017 13:58:25"
+		"startInServerOn:" : ""
 	}
 }

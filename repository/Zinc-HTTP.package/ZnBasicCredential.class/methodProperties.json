@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"password:" : " 10/3/2017 13:58:25",
-		"isComplete" : " 10/3/2017 13:58:25",
-		"password" : " 10/3/2017 13:58:25",
-		"username:" : " 10/3/2017 13:58:25",
-		"authTokenForUrl:method:" : " 10/3/2017 13:58:25",
-		"username" : " 10/3/2017 13:58:25"
+		"password:" : "",
+		"isComplete" : "",
+		"password" : "",
+		"username:" : "",
+		"authTokenForUrl:method:" : "",
+		"username" : ""
 	},
 	"class" : {
-		"authName" : " 10/3/2017 13:58:25"
+		"authName" : ""
 	}
 }

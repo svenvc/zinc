@@ -1,14 +1,11 @@
 {
-	"category" : "Zinc-WebSocket-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "SvenVanCaekenberghe 8/2/2014 18:53",
-	"instvars" : [
-		 ],
-	"name" : "ZnWebSocketLogEvent",
-	"pools" : [
-		 ],
 	"super" : "ZnLogEvent",
-	"type" : "normal" }
+	"category" : "Zinc-WebSocket-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnWebSocketLogEvent",
+	"type" : "normal"
+}

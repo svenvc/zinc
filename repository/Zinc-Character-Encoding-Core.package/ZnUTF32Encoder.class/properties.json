@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 1/7/2016 14:57",
+	"commentStamp" : "",
 	"super" : "ZnEndianSensitiveUTFEncoder",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [ ],

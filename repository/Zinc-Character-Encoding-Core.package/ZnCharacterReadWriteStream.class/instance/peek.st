@@ -1,0 +1,4 @@
+accessing
+peek
+	
+	^ readStream peek

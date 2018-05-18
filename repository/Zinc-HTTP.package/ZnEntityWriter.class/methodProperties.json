@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"headers:" : " 10/3/2017 13:58:25",
-		"contentType" : " 10/3/2017 13:58:25",
-		"isGzipped" : " 10/3/2017 13:58:25",
-		"isChunked" : " 10/3/2017 13:58:25",
-		"stream" : " 10/3/2017 13:58:25",
-		"writeEntity:" : " 10/3/2017 13:58:25",
-		"headers" : " 10/3/2017 13:58:25",
-		"stream:" : " 10/3/2017 13:58:25"
+		"headers:" : "",
+		"contentType" : "",
+		"isGzipped" : "",
+		"isChunked" : "",
+		"stream" : "",
+		"writeEntity:" : "",
+		"headers" : "",
+		"stream:" : ""
 	},
 	"class" : { }
 }

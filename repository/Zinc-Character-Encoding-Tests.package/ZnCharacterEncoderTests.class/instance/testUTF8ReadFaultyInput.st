@@ -24,7 +24,7 @@ testUTF8ReadFaultyInput
 	"incomplete input"
 	self 
 		should: [ #[102 111 111 195 ] utf8Decoded ] 
-		raise: ZnInvalidUTF8.
+		raise: ZnIncomplete.
 	self 
-		assert: ([ #[102 111 111 195 ] utf8Decoded ] on: ZnInvalidUTF8 do: [ :exception | exception resume ]) 
+		assert: ([ #[102 111 111 195 ] utf8Decoded ] on: ZnInvalidUTF8 , ZnIncomplete do: [ :exception | exception resume ]) 
 		equals: 'foo?'

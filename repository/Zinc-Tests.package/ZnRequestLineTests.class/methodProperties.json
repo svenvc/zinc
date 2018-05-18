@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testReading" : " 10/3/2017 12:14:37",
-		"testReadingWrongVersion" : " 10/3/2017 12:14:37",
-		"testWriting" : " 10/3/2017 12:14:37",
-		"testReadingWrongMethod" : " 10/3/2017 12:14:37"
+		"testReading" : "",
+		"testReadingWrongVersion" : "",
+		"testWriting" : "",
+		"testReadingWrongMethod" : ""
 	},
 	"class" : { }
 }

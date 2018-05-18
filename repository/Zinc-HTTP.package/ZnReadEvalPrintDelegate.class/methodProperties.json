@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"handleGetRequest:" : " 10/3/2017 13:58:25",
-		"value:" : " 10/3/2017 13:58:25",
-		"helpText" : " 10/3/2017 13:58:25",
-		"handleRequest:" : " 10/3/2017 13:58:25",
-		"evaluate:" : " 10/3/2017 13:58:25",
-		"handlePostRequest:" : " 10/3/2017 13:58:25"
+		"handleGetRequest:" : "",
+		"value:" : "",
+		"helpText" : "",
+		"handleRequest:" : "",
+		"evaluate:" : "",
+		"handlePostRequest:" : ""
 	},
 	"class" : {
-		"startInServerOn:" : " 10/3/2017 13:58:25"
+		"startInServerOn:" : ""
 	}
 }

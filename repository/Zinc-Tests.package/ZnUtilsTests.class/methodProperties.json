@@ -1,20 +1,20 @@
 {
 	"instance" : {
-		"testReadUpToEndBinary" : " 10/3/2017 12:14:37",
-		"testReadUpToEndNonBinary" : " 10/3/2017 12:14:37",
-		"testStreamingBinary" : " 10/3/2017 12:14:37",
-		"testParseHttpDateDashesAlternative1" : " 10/3/2017 12:14:37",
-		"testBase64" : " 10/3/2017 12:14:37",
-		"testParseHttpDateAlternative1" : " 10/3/2017 12:14:37",
-		"testCapitalizeString" : " 10/3/2017 12:14:37",
-		"testNextPutAll" : " 10/3/2017 12:14:37",
-		"testStreamingBinaryWithoutSize" : " 10/3/2017 12:14:37",
-		"testHttpDate" : " 10/3/2017 12:14:37",
-		"testStreamingNonBinary" : " 10/3/2017 12:14:37",
-		"testParseHttpDateDashes" : " 10/3/2017 12:14:37",
-		"testIsCapitalizedString" : " 10/3/2017 12:14:37",
-		"testStreamingNonBinaryWithoutSize" : " 10/3/2017 12:14:37",
-		"testParseHttpDate" : " 10/3/2017 12:14:37"
+		"testReadUpToEndBinary" : "",
+		"testReadUpToEndNonBinary" : "",
+		"testStreamingBinary" : "",
+		"testParseHttpDateDashesAlternative1" : "",
+		"testBase64" : "",
+		"testParseHttpDateAlternative1" : "",
+		"testCapitalizeString" : "",
+		"testNextPutAll" : "",
+		"testStreamingBinaryWithoutSize" : "",
+		"testHttpDate" : "",
+		"testStreamingNonBinary" : "",
+		"testParseHttpDateDashes" : "",
+		"testIsCapitalizedString" : "",
+		"testStreamingNonBinaryWithoutSize" : "",
+		"testParseHttpDate" : ""
 	},
 	"class" : { }
 }

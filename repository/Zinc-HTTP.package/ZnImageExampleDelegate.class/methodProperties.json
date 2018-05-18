@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"handleGetRequest:" : " 10/3/2017 13:58:25",
-		"formForImageEntity:" : " 10/3/2017 13:58:25",
-		"downloadPharoLogo" : " 10/3/2017 13:58:25",
-		"image" : " 10/3/2017 13:58:25",
-		"value:" : " 10/3/2017 13:58:25",
-		"handleRequest:" : " 10/3/2017 13:58:25",
-		"html" : "SvenVanCaekenberghe 6/26/2017 14:18",
-		"handlePostRequest:" : " 10/3/2017 13:58:25",
-		"form" : " 10/3/2017 13:58:25"
+		"handleGetRequest:" : "",
+		"formForImageEntity:" : "",
+		"downloadPharoLogo" : "",
+		"image" : "",
+		"value:" : "",
+		"handleRequest:" : "",
+		"html" : "",
+		"handlePostRequest:" : "",
+		"form" : ""
 	},
 	"class" : {
-		"installInDefaultServer" : " 10/3/2017 13:58:25"
+		"installInDefaultServer" : ""
 	}
 }

@@ -1,0 +1,4 @@
+testing
+isBinary
+	
+	^ readStream isBinary

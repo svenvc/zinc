@@ -1,0 +1,4 @@
+accessing
+upToEnd
+	
+	^ readStream upToEnd

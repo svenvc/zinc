@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"handlerDuration" : " 10/3/2017 13:58:25",
-		"responseDuration" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"requestDuration:" : " 10/3/2017 13:58:25",
-		"requestDuration" : " 10/3/2017 13:58:25",
-		"responseDuration:" : " 10/3/2017 13:58:25",
-		"handlerDuration:" : " 10/3/2017 13:58:25",
-		"totalDuration" : " 10/3/2017 13:58:25"
+		"handlerDuration" : "",
+		"responseDuration" : "",
+		"initialize" : "",
+		"requestDuration:" : "",
+		"requestDuration" : "",
+		"responseDuration:" : "",
+		"handlerDuration:" : "",
+		"totalDuration" : ""
 	},
 	"class" : { }
 }

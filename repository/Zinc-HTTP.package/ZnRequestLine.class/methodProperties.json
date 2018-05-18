@@ -1,25 +1,25 @@
 {
 	"instance" : {
-		"version:" : " 10/3/2017 13:58:25",
-		"readFrom:" : " 10/3/2017 13:58:25",
-		"isHttp10" : " 10/3/2017 13:58:25",
-		"method:" : " 10/3/2017 13:58:25",
-		"uri:" : " 10/3/2017 13:58:25",
-		"version" : " 10/3/2017 13:58:25",
-		"=" : " 10/3/2017 13:58:25",
-		"postCopy" : " 10/3/2017 13:58:25",
-		"uri" : " 10/3/2017 13:58:25",
-		"printOn:" : " 10/3/2017 13:58:25",
-		"writeOn:" : " 10/3/2017 13:58:25",
-		"printMethodAndUriOn:" : " 10/3/2017 13:58:25",
-		"uriPathQueryFragment" : " 10/3/2017 13:58:25",
-		"isHttp11" : " 10/3/2017 13:58:25",
-		"method" : " 10/3/2017 13:58:25",
-		"hash" : " 10/3/2017 13:58:25"
+		"version:" : "",
+		"readFrom:" : "",
+		"isHttp10" : "",
+		"method:" : "",
+		"uri:" : "",
+		"version" : "",
+		"=" : "",
+		"postCopy" : "",
+		"uri" : "",
+		"printOn:" : "",
+		"writeOn:" : "",
+		"printMethodAndUriOn:" : "",
+		"uriPathQueryFragment" : "",
+		"isHttp11" : "",
+		"method" : "",
+		"hash" : ""
 	},
 	"class" : {
-		"method:uri:" : " 10/3/2017 13:58:25",
-		"readFrom:" : " 10/3/2017 13:58:25",
-		"empty" : " 10/3/2017 13:58:25"
+		"method:uri:" : "",
+		"readFrom:" : "",
+		"empty" : ""
 	}
 }

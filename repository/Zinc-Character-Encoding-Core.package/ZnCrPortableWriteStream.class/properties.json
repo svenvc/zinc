@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "WriteStream",
+	"category" : "Zinc-Character-Encoding-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream",
+		"cr",
+		"lf",
+		"previous"
+	],
+	"name" : "ZnCrPortableWriteStream",
+	"type" : "normal"
+}

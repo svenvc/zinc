@@ -1,17 +1,17 @@
 {
 	"instance" : {
-		"testTimeout" : " 10/3/2017 12:14:37",
-		"testGetSmallHTMLDocument" : " 10/3/2017 12:14:37",
-		"testGetPng" : " 10/3/2017 12:14:37",
-		"testHeadSmallHTMLDocument" : " 10/3/2017 12:14:37",
-		"testDelete" : " 10/3/2017 12:14:37",
-		"smallHtmlUrl" : " 10/3/2017 12:14:37",
-		"testGetGif" : " 10/3/2017 12:14:37",
-		"withServerDo:" : " 10/3/2017 12:14:37",
-		"testPost" : " 10/3/2017 12:14:37",
-		"testGetJpeg" : " 10/3/2017 12:14:37",
-		"testPut" : " 10/3/2017 12:14:37",
-		"testPostUnicodeUtf8" : " 10/3/2017 12:14:37"
+		"testTimeout" : "",
+		"testGetSmallHTMLDocument" : "",
+		"testGetPng" : "",
+		"testHeadSmallHTMLDocument" : "",
+		"testDelete" : "",
+		"smallHtmlUrl" : "",
+		"testGetGif" : "",
+		"withServerDo:" : "",
+		"testPost" : "",
+		"testGetJpeg" : "",
+		"testPut" : "",
+		"testPostUnicodeUtf8" : ""
 	},
 	"class" : { }
 }

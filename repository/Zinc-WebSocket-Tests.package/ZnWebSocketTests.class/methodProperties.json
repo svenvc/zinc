@@ -1,12 +1,13 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"assertWebSocketClientReceivesEchoedStringWithPrefix:" : "LucFabresse 6/18/2015 18:18",
-		"testChatroom" : "SvenVanCaekenberghe 6/15/2015 22:18",
 		"testEcho" : "SvenVanCaekenberghe 6/15/2015 22:18",
+		"testWebSocketServerWithEmptyStringPrefix" : "LucFabresse 6/18/2015 18:22",
+		"testChatroom" : "SvenVanCaekenberghe 6/15/2015 22:18",
+		"testWebSocketServerWithRootStringPrefix" : "LucFabresse 6/18/2015 18:18",
+		"assertWebSocketClientReceivesEchoedStringWithPrefix:" : "LucFabresse 6/18/2015 18:18",
 		"testEchoSecureWebSocketsDotOrg" : "SvenVanCaekenberghe 6/15/2015 22:18",
 		"testEchoWebSocketsDotOrg" : "SvenVanCaekenberghe 6/15/2015 22:18",
-		"testStatus" : "SvenVanCaekenberghe 9/7/2012 20:29",
-		"testWebSocketServerWithEmptyStringPrefix" : "LucFabresse 6/18/2015 18:22",
-		"testWebSocketServerWithRootStringPrefix" : "LucFabresse 6/18/2015 18:18" } }
+		"testStatus" : "SvenVanCaekenberghe 9/7/2012 20:29"
+	},
+	"class" : { }
+}

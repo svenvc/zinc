@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"expectedContentType:" : " 10/3/2017 13:58:25",
-		"expectedContentType" : " 10/3/2017 13:58:25",
-		"standardMessageText" : " 10/3/2017 13:58:25",
-		"actualContentType" : " 10/3/2017 13:58:25",
-		"actualContentType:" : " 10/3/2017 13:58:25",
-		"messageText" : " 10/3/2017 13:58:25"
+		"expectedContentType:" : "",
+		"expectedContentType" : "",
+		"standardMessageText" : "",
+		"actualContentType" : "",
+		"actualContentType:" : "",
+		"messageText" : ""
 	},
 	"class" : {
-		"expected:actual:" : " 10/3/2017 13:58:25"
+		"expected:actual:" : ""
 	}
 }

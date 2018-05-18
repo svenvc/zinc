@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"testReadingGzip" : " 10/3/2017 12:14:37",
-		"testReadingBuffered" : " 10/3/2017 12:14:37",
-		"testBinaryWriteRead" : " 10/3/2017 12:14:37",
-		"testWriting" : " 10/3/2017 12:14:37",
-		"testReadingNext" : " 10/3/2017 12:14:37",
-		"testReadingNextInto" : " 10/3/2017 12:14:37",
-		"nextPutAll:on:chunked:" : " 10/3/2017 12:14:37",
-		"testReadingGzipStepped" : " 10/3/2017 12:14:37",
-		"testGzipWriteRead" : " 10/3/2017 12:14:37",
-		"testReading" : " 10/3/2017 12:14:37",
-		"testWritingBuffered" : " 10/3/2017 12:14:37"
+		"testReadingGzip" : "",
+		"testReadingBuffered" : "",
+		"testBinaryWriteRead" : "",
+		"testWriting" : "",
+		"testReadingNext" : "",
+		"testReadingNextInto" : "",
+		"nextPutAll:on:chunked:" : "",
+		"testReadingGzipStepped" : "",
+		"testGzipWriteRead" : "",
+		"testReading" : "",
+		"testWritingBuffered" : ""
 	},
 	"class" : { }
 }

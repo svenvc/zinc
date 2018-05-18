@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"image" : " 10/3/2017 12:14:37",
-		"testUpload" : " 10/3/2017 12:14:37",
-		"testDefaultImage" : " 10/3/2017 12:14:37",
-		"testMainPage" : " 10/3/2017 12:14:37",
-		"withServerDo:" : " 10/3/2017 12:14:37"
+		"image" : "",
+		"testUpload" : "",
+		"testDefaultImage" : "",
+		"testMainPage" : "",
+		"withServerDo:" : ""
 	},
 	"class" : { }
 }

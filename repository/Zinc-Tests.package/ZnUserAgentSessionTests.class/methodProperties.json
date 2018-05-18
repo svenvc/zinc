@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testAddCredential" : " 10/3/2017 12:14:37",
-		"testAccessors" : " 10/3/2017 12:14:37",
-		"testWithCookieJar" : " 10/3/2017 12:14:37",
-		"dummyCredential" : " 10/3/2017 12:14:37"
+		"testAddCredential" : "",
+		"testAccessors" : "",
+		"testWithCookieJar" : "",
+		"dummyCredential" : ""
 	},
 	"class" : { }
 }

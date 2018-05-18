@@ -1,13 +1,13 @@
 {
 	"instance" : {
-		"next:putAll:startingAt:" : "SvenVanCaekenberghe 11/4/2013 15:25",
-		"nextPut:" : "SvenVanCaekenberghe 5/3/2012 15:56",
-		"cr" : "SvenVanCaekenberghe 3/16/2017 10:33",
-		"print:" : "SvenVanCaekenberghe 10/3/2014 10:11",
-		"space" : "SvenVanCaekenberghe 5/3/2012 15:52",
-		"tab" : "SvenVanCaekenberghe 10/3/2014 10:03",
-		"lf" : "SvenVanCaekenberghe 9/19/2014 13:13",
-		"crlf" : "SvenVanCaekenberghe 9/19/2014 13:13"
+		"next:putAll:startingAt:" : "",
+		"nextPut:" : "",
+		"cr" : "",
+		"print:" : "",
+		"space" : "",
+		"tab" : "",
+		"lf" : "",
+		"crlf" : ""
 	},
 	"class" : { }
 }

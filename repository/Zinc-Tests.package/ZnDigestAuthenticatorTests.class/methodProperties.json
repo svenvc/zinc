@@ -1,7 +1,7 @@
 {
 	"instance" : {
-		"testParseEmpty" : " 10/3/2017 12:14:37",
-		"testParseOK" : " 10/3/2017 12:14:37"
+		"testParseEmpty" : "",
+		"testParseOK" : ""
 	},
 	"class" : { }
 }

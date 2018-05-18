@@ -1,11 +1,15 @@
 {
 	"instance" : {
-		"testNextLine" : "SvenVanCaekenberghe 9/19/2014 14:20",
-		"testSimpleUTF8ReadStream" : "SvenVanCaekenberghe 5/3/2012 21:26",
-		"testUTF8ReadStreamReadInto" : "SvenVanCaekenberghe 11/13/2013 14:11",
-		"testSimpleUTF8WriteStream" : "KenTreis 01/18/2013 16:24",
-		"testPeek" : "SvenVanCaekenberghe 11/5/2013 22:44",
-		"testReadStream" : "SvenVanCaekenberghe 5/3/2012 21:35"
+		"testReadStream" : "",
+		"testSimpleUTF8ReadStream" : "",
+		"testPeek" : "",
+		"assertUpToAll:" : "",
+		"testNextLine" : "",
+		"testUpToAll" : "",
+		"utf8ReadStreamOn:" : "SvenVanCaekenberghe 2/9/2018 16:43",
+		"testSimpleUTF8WriteStream" : "",
+		"testUTF8ReadStreamReadInto" : "",
+		"testUpToAllTwice" : ""
 	},
 	"class" : { }
 }

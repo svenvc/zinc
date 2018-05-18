@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"initialize" : "",
+		"stream:" : "",
+		"newLine" : "",
+		"nextPut:" : ""
+	},
+	"class" : {
+		"on:" : ""
+	}
+}

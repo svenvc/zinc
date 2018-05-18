@@ -1,0 +1,19 @@
+{
+	"instance" : {
+		"testBulkReading" : "SvenVanCaekenberghe 1/26/2018 14:08",
+		"testNew" : "SvenVanCaekenberghe 1/26/2018 13:47",
+		"testPlainExcursion" : "SvenVanCaekenberghe 1/26/2018 10:57",
+		"testPositionErrors" : "SvenVanCaekenberghe 1/26/2018 16:47",
+		"testPlainNext" : "SvenVanCaekenberghe 1/25/2018 20:46",
+		"testNestedExcursion" : "SvenVanCaekenberghe 1/26/2018 13:47",
+		"testReadAllLargerBuffer" : "SvenVanCaekenberghe 1/26/2018 10:55",
+		"testSearchBinary" : "SvenVanCaekenberghe 1/26/2018 13:33",
+		"testSkipAndBack" : "SvenVanCaekenberghe 1/26/2018 13:28",
+		"testEmpty" : "SvenVanCaekenberghe 1/26/2018 09:51",
+		"testPlainPeek" : "SvenVanCaekenberghe 1/25/2018 20:48",
+		"testUTF8" : "SvenVanCaekenberghe 1/26/2018 15:45",
+		"testReadAll" : "SvenVanCaekenberghe 1/26/2018 10:55",
+		"testSearch" : "SvenVanCaekenberghe 1/26/2018 10:43"
+	},
+	"class" : { }
+}

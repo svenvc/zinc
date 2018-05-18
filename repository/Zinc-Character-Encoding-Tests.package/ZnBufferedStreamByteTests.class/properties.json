@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 4/19/2018 14:14",
+	"super" : "TestCase",
+	"category" : "Zinc-Character-Encoding-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnBufferedStreamByteTests",
+	"type" : "normal"
+}

@@ -1,17 +1,17 @@
 {
 	"instance" : {
-		"argument:" : "SvenVanCaekenberghe 11/6/2013 13:19",
-		"url:" : "SvenVanCaekenberghe 11/6/2013 13:27",
-		"printOn:" : "SvenVanCaekenberghe 11/6/2013 14:01",
-		"url" : "SvenVanCaekenberghe 11/6/2013 13:19",
-		"performOperation" : "SvenVanCaekenberghe 11/6/2013 13:28",
-		"argument" : "SvenVanCaekenberghe 11/6/2013 13:19"
+		"argument:" : "nil",
+		"url:" : "nil",
+		"printOn:" : "nil",
+		"url" : "nil",
+		"performOperation" : "nil",
+		"argument" : "nil"
 	},
 	"class" : {
-		"operation" : "SvenVanCaekenberghe 11/6/2013 13:26",
-		"handlesOperation:with:on:" : "SvenVanCaekenberghe 11/6/2013 13:45",
-		"performOperation:with:on:" : "SvenVanCaekenberghe 11/6/2013 13:47",
-		"schemes" : "SvenVanCaekenberghe 11/6/2013 13:27",
-		"handlerForOperation:with:on:" : "SvenVanCaekenberghe 10/24/2014 15:49"
+		"operation" : "nil",
+		"handlesOperation:with:on:" : "nil",
+		"performOperation:with:on:" : "nil",
+		"schemes" : "nil",
+		"handlerForOperation:with:on:" : "nil"
 	}
 }

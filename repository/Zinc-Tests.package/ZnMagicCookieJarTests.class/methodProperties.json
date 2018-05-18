@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"testAdd" : " 10/3/2017 12:14:37",
-		"cookieStringAlt" : " 10/3/2017 12:14:37",
-		"testCookieAtForUrl" : " 10/3/2017 12:14:37",
-		"testCookiesForUrl" : " 10/3/2017 12:14:37",
-		"cookieString" : " 10/3/2017 12:14:37"
+		"testAdd" : "",
+		"cookieStringAlt" : "",
+		"testCookieAtForUrl" : "",
+		"testCookiesForUrl" : "",
+		"cookieString" : ""
 	},
 	"class" : { }
 }

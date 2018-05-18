@@ -1,0 +1,4 @@
+accessing
+atEnd
+	
+	^ readStream atEnd

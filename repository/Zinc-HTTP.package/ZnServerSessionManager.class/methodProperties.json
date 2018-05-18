@@ -1,14 +1,14 @@
 {
 	"instance" : {
-		"removeSessionWithId:" : " 10/3/2017 13:58:25",
-		"newSessionForRequest:" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"cookieName" : " 10/3/2017 13:58:25",
-		"sessionIdFromRequest:" : " 10/3/2017 13:58:25",
-		"sessionFor:" : " 10/3/2017 13:58:25",
-		"setSession:in:" : " 10/3/2017 13:58:25",
-		"newSessionId" : " 10/3/2017 13:58:25",
-		"cleanupInvalidSessions" : " 10/3/2017 13:58:25"
+		"removeSessionWithId:" : "",
+		"newSessionForRequest:" : "",
+		"initialize" : "",
+		"cookieName" : "",
+		"sessionIdFromRequest:" : "",
+		"sessionFor:" : "",
+		"setSession:in:" : "",
+		"newSessionId" : "",
+		"cleanupInvalidSessions" : ""
 	},
 	"class" : { }
 }

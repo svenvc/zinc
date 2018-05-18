@@ -1,24 +1,26 @@
 {
 	"instance" : {
-		"testSNIPage" : "SvenVanCaekenberghe 6/8/2017 11:37",
-		"isNativeSSLPluginPresent" : "SvenVanCaekenberghe 7/4/2012 11:32",
-		"disabledTestPayPal" : "SvenVanCaekenberghe 10/2/2012 14:55",
-		"testGmailEncrypted" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"ensureSocketStreamFactory" : "SvenVanCaekenberghe 7/4/2012 11:32",
-		"testGoogleEncrypted" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"runningOnWindowsInriaCI" : "SvenVanCaekenberghe 5/2/2016 14:52",
-		"testRequestResponse" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"runningOnWindows" : "SvenVanCaekenberghe 1/21/2014 20:48",
-		"testTransfersSingleClient" : "SvenVanCaekenberghe 5/21/2013 22:24",
-		"testAmazonAWS" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"doesNativeSSLPluginSupportSNI" : "SvenVanCaekenberghe 6/8/2017 11:38",
-		"testWikimedia" : "SvenVanCaekenberghe 8/23/2012 14:34",
-		"testGForceInria" : "SvenVanCaekenberghe 5/26/2014 23:36",
-		"testGetPharoVersion" : "SvenVanCaekenberghe 6/14/2017 10:50",
-		"testTransfers" : "SvenVanCaekenberghe 5/21/2013 22:21"
+		"testSNIPage" : "",
+		"isNativeSSLPluginPresent" : "",
+		"disabledTestPayPal" : "",
+		"testGmailEncrypted" : "",
+		"ensureSocketStreamFactory" : "",
+		"testGoogleEncrypted" : "",
+		"runningOnWindowsInriaCI" : "",
+		"testRequestResponse" : "SvenVanCaekenberghe 5/4/2018 09:16",
+		"runningOnWindows" : "",
+		"testTransfersSingleClient" : "",
+		"testAmazonAWS" : "",
+		"timeLimit:" : "SvenVanCaekenberghe 3/14/2018 20:53",
+		"doesNativeSSLPluginSupportSNI" : "",
+		"testWikimedia" : "",
+		"testGForceInria" : "",
+		"testGetPharoVersion" : "",
+		"testTransfers" : "SvenVanCaekenberghe 3/14/2018 14:53"
 	},
 	"class" : {
-		"generateTestData:" : "SvenVanCaekenberghe 6/27/2012 13:26",
-		"generateTestFiles" : "SvenVanCaekenberghe 6/27/2012 13:27"
+		"generateTestData:" : "",
+		"generateTestFiles" : "",
+		"defaultTimeLimit" : ""
 	}
 }

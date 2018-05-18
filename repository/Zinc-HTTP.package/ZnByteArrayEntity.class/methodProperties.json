@@ -1,19 +1,19 @@
 {
 	"instance" : {
-		"bytes" : " 10/3/2017 13:58:25",
-		"readStream" : " 10/3/2017 13:58:25",
-		"readFrom:" : " 10/3/2017 13:58:25",
-		"isEmpty" : " 10/3/2017 13:58:25",
-		"=" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"writeOn:" : " 10/3/2017 13:58:25",
-		"hash" : " 10/3/2017 13:58:25",
-		"contents" : " 10/3/2017 13:58:25",
-		"bytes:" : " 10/3/2017 13:58:25"
+		"bytes" : "",
+		"readStream" : "",
+		"readFrom:" : "",
+		"isEmpty" : "",
+		"=" : "",
+		"printContentsOn:" : "",
+		"writeOn:" : "",
+		"hash" : "",
+		"contents" : "",
+		"bytes:" : ""
 	},
 	"class" : {
-		"matches:" : " 10/3/2017 13:58:25",
-		"bytes:" : " 10/3/2017 13:58:25",
-		"designatedMimeType" : " 10/3/2017 13:58:25"
+		"matches:" : "",
+		"bytes:" : "",
+		"designatedMimeType" : ""
 	}
 }

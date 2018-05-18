@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"duration" : " 10/3/2017 13:58:25",
-		"duration:" : " 10/3/2017 13:58:25",
-		"request" : " 10/3/2017 13:58:25",
-		"request:" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25"
+		"duration" : "",
+		"duration:" : "",
+		"request" : "",
+		"request:" : "",
+		"printContentsOn:" : ""
 	},
 	"class" : { }
 }

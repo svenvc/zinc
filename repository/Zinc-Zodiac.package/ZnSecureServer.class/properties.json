@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 12/13/2011 13:26",
+	"commentStamp" : "",
 	"super" : "ZnMultiThreadedServer",
 	"category" : "Zinc-Zodiac",
 	"classinstvars" : [ ],

@@ -1,23 +1,23 @@
 {
 	"instance" : {
-		"printOneLineOn:" : " 10/3/2017 13:58:25",
-		"printOneLineContentsOn:" : " 10/3/2017 13:58:25",
-		"nextId" : " 10/3/2017 13:58:25",
-		"id" : " 10/3/2017 13:58:25",
-		"timestamp" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"printOn:" : " 10/3/2017 13:58:25",
-		"emit" : " 10/3/2017 13:58:25",
-		"announcer" : " 10/3/2017 13:58:25"
+		"printOneLineOn:" : "",
+		"printOneLineContentsOn:" : "",
+		"nextId" : "",
+		"id" : "",
+		"timestamp" : "",
+		"printContentsOn:" : "",
+		"initialize" : "",
+		"printOn:" : "",
+		"emit" : "",
+		"announcer" : ""
 	},
 	"class" : {
-		"logToTranscript" : " 10/3/2017 13:58:25",
-		"announcer" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"open" : " 10/3/2017 13:58:25",
-		"nextId" : " 10/3/2017 13:58:25",
-		"stopLoggingToTranscript" : " 10/3/2017 13:58:25",
-		"startUp" : " 10/3/2017 13:58:25"
+		"logToTranscript" : "",
+		"announcer" : "",
+		"initialize" : "",
+		"open" : "",
+		"nextId" : "",
+		"stopLoggingToTranscript" : "",
+		"startUp" : ""
 	}
 }

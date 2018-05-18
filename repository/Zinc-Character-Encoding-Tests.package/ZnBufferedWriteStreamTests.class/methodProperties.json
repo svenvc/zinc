@@ -1,8 +1,8 @@
 {
 	"instance" : {
-		"testWritingOverflow" : "SvenVanCaekenberghe 12/8/2010 09:53",
-		"testNextPutAllStartingAt" : "SvenVanCaekenberghe 11/30/2012 21:08",
-		"testWriting" : "SvenVanCaekenberghe 12/8/2010 09:54"
+		"testWritingOverflow" : "",
+		"testNextPutAllStartingAt" : "",
+		"testWriting" : ""
 	},
 	"class" : { }
 }

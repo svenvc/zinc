@@ -1,19 +1,19 @@
 {
 	"instance" : {
-		"augmentResponse:forRequest:" : " 10/3/2017 13:58:25",
-		"executeRequestResponseLoopOn:" : " 10/3/2017 13:58:25",
-		"workerProcessName" : " 10/3/2017 13:58:25",
-		"readRequestTerminationExceptionSet" : " 10/3/2017 13:58:25",
-		"serveConnectionsOn:" : " 10/3/2017 13:58:25",
-		"exceptionSet:" : " 10/3/2017 13:58:25",
-		"readRequestBadExceptionSet" : " 10/3/2017 13:58:25",
-		"closeSocketStream:" : " 10/3/2017 13:58:25",
-		"readRequestSafely:timing:" : " 10/3/2017 13:58:25",
-		"writeResponseBad:on:timing:" : " 10/3/2017 13:58:25",
-		"writeResponseTerminationExceptionSet" : " 10/3/2017 13:58:25",
-		"listenLoop" : " 10/3/2017 13:58:25",
-		"writeResponseSafely:on:timing:" : " 10/3/2017 13:58:25",
-		"executeOneRequestResponseOn:" : " 10/3/2017 13:58:25"
+		"augmentResponse:forRequest:" : "",
+		"executeRequestResponseLoopOn:" : "",
+		"workerProcessName" : "",
+		"readRequestTerminationExceptionSet" : "",
+		"serveConnectionsOn:" : "",
+		"exceptionSet:" : "",
+		"readRequestBadExceptionSet" : "",
+		"closeSocketStream:" : "",
+		"readRequestSafely:timing:" : "",
+		"writeResponseBad:on:timing:" : "",
+		"writeResponseTerminationExceptionSet" : "",
+		"listenLoop" : "",
+		"writeResponseSafely:on:timing:" : "",
+		"executeOneRequestResponseOn:" : ""
 	},
 	"class" : { }
 }

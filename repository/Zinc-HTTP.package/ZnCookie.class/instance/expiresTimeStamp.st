@@ -1,4 +1,7 @@
 accessing
 expiresTimeStamp
-	self expires ifNil: [ ^ DateAndTime now + 1 day ].
+	"Return the DateAndTime when I will expire.
+	Throw an exception when no expiration is set or the expiration cannot be parsed.
+	See #isExpired"
+	
 	^ ZnUtils parseHttpDate: self expires

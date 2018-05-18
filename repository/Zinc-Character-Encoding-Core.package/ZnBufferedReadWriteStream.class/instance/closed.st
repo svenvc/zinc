@@ -1,0 +1,3 @@
+testing
+closed
+	^ readStream closed

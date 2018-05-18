@@ -1,21 +1,21 @@
 {
 	"instance" : {
-		"testReadingApplicationFormUrlEncodingNoLength" : " 10/3/2017 12:14:37",
-		"testUTF8Writing" : " 10/3/2017 12:14:37",
-		"testWritingApplicationUrlEncodingWithTextEncodingLatin1" : " 10/3/2017 12:14:37",
-		"testWritingApplicationUrlEncodingWithTextEncodingUtf8" : " 10/3/2017 12:14:37",
-		"testStringEntityEncoderInitialization" : " 10/3/2017 12:14:37",
-		"testWritingApplicationUrlEncoding" : " 10/3/2017 12:14:37",
-		"testReading" : " 10/3/2017 12:14:37",
-		"testUTF8ReadingUndetermined" : " 10/3/2017 12:14:37",
-		"testMultiPartFormDataWriteRead" : " 10/3/2017 12:14:37",
-		"testReadingApplicationFormUrlEncoding" : " 10/3/2017 12:14:37",
-		"testApplicationUrlEncodingAddAll" : " 10/3/2017 12:14:37",
-		"testMultiPartFormDataWriteReadBinary" : " 10/3/2017 12:14:37",
-		"testReadingLimited" : " 10/3/2017 12:14:37",
-		"testReadingBinary" : " 10/3/2017 12:14:37",
-		"testUnspecifiedEncoding" : " 10/3/2017 12:14:37",
-		"testUTF8ReadingDetermined" : " 10/3/2017 12:14:37"
+		"testReadingApplicationFormUrlEncodingNoLength" : "",
+		"testUTF8Writing" : "",
+		"testWritingApplicationUrlEncodingWithTextEncodingLatin1" : "",
+		"testWritingApplicationUrlEncodingWithTextEncodingUtf8" : "",
+		"testStringEntityEncoderInitialization" : "",
+		"testWritingApplicationUrlEncoding" : "",
+		"testReading" : "",
+		"testUTF8ReadingUndetermined" : "",
+		"testMultiPartFormDataWriteRead" : "",
+		"testReadingApplicationFormUrlEncoding" : "",
+		"testApplicationUrlEncodingAddAll" : "",
+		"testMultiPartFormDataWriteReadBinary" : "",
+		"testReadingLimited" : "",
+		"testReadingBinary" : "",
+		"testUnspecifiedEncoding" : "",
+		"testUTF8ReadingDetermined" : ""
 	},
 	"class" : { }
 }

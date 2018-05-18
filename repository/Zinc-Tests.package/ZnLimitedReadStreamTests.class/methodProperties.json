@@ -1,15 +1,15 @@
 {
 	"instance" : {
-		"testNextCountIntoShort" : " 10/3/2017 12:14:37",
-		"testNext" : " 10/3/2017 12:14:37",
-		"testSimpleEof" : " 10/3/2017 12:14:37",
-		"testMatch" : " 10/3/2017 12:14:37",
-		"testNextCount" : " 10/3/2017 12:14:37",
-		"testBinaryAll" : " 10/3/2017 12:14:37",
-		"testNextCountInto" : " 10/3/2017 12:14:37",
-		"testBinary" : " 10/3/2017 12:14:37",
-		"testNextCountShort" : " 10/3/2017 12:14:37",
-		"testSimple" : " 10/3/2017 12:14:37"
+		"testNextCountIntoShort" : "",
+		"testNext" : "",
+		"testSimpleEof" : "",
+		"testMatch" : "",
+		"testNextCount" : "",
+		"testBinaryAll" : "",
+		"testNextCountInto" : "",
+		"testBinary" : "",
+		"testNextCountShort" : "",
+		"testSimple" : ""
 	},
 	"class" : { }
 }

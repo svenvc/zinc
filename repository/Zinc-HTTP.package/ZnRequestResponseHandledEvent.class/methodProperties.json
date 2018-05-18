@@ -1,12 +1,12 @@
 {
 	"instance" : {
-		"duration" : " 10/3/2017 13:58:25",
-		"response:" : " 10/3/2017 13:58:25",
-		"duration:" : " 10/3/2017 13:58:25",
-		"request" : " 10/3/2017 13:58:25",
-		"request:" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"response" : " 10/3/2017 13:58:25"
+		"duration" : "",
+		"response:" : "",
+		"duration:" : "",
+		"request" : "",
+		"request:" : "",
+		"printContentsOn:" : "",
+		"response" : ""
 	},
 	"class" : { }
 }

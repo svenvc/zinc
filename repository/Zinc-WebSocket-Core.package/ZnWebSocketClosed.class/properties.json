@@ -1,15 +1,14 @@
 {
-	"category" : "Zinc-WebSocket-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "ConnectionClosed",
+	"category" : "Zinc-WebSocket-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"code",
-		"reason" ],
+		"reason"
+	],
 	"name" : "ZnWebSocketClosed",
-	"pools" : [
-		 ],
-	"super" : "ConnectionClosed",
-	"type" : "normal" }
+	"type" : "normal"
+}

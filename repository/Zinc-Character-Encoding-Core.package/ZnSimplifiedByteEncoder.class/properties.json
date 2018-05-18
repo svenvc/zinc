@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 6/9/2015 17:10",
+	"commentStamp" : "",
 	"super" : "ZnCharacterEncoder",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [

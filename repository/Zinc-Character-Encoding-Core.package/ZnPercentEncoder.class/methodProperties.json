@@ -1,21 +1,21 @@
 {
 	"instance" : {
-		"encode:to:" : "SvenVanCaekenberghe 10/23/2013 18:57",
-		"characterEncoder" : "SvenVanCaekenberghe 5/10/2017 17:14",
-		"decode:to:" : "SvenVanCaekenberghe 2/14/2014 14:20",
-		"errorHexDigitExpected" : "SvenVanCaekenberghe 2/14/2014 14:12",
-		"decodePlusAsSpace:" : "SvenVanCaekenberghe 2/14/2014 14:10",
-		"safeSet" : "SvenVanCaekenberghe 10/23/2013 18:55",
-		"writeHex:to:" : "SvenVanCaekenberghe 10/23/2013 18:56",
-		"characterEncoder:" : "SvenVanCaekenberghe 12/15/2012 13:53",
-		"safeSet:" : "SvenVanCaekenberghe 12/15/2012 13:58",
-		"decode:" : "SvenVanCaekenberghe 2/14/2014 14:23",
-		"decodePlusAsSpace" : "SvenVanCaekenberghe 2/14/2014 14:08",
-		"encode:" : "SvenVanCaekenberghe 2/14/2014 14:24",
-		"errorAsciiCharacterExpected" : "SvenVanCaekenberghe 2/14/2014 14:24",
-		"readHexFrom:" : "SvenVanCaekenberghe 2/14/2014 14:12"
+		"encode:to:" : "",
+		"characterEncoder" : "",
+		"decode:to:" : "",
+		"errorHexDigitExpected" : "",
+		"decodePlusAsSpace:" : "",
+		"safeSet" : "",
+		"writeHex:to:" : "",
+		"characterEncoder:" : "",
+		"safeSet:" : "",
+		"decode:" : "",
+		"decodePlusAsSpace" : "",
+		"encode:" : "",
+		"errorAsciiCharacterExpected" : "",
+		"readHexFrom:" : ""
 	},
 	"class" : {
-		"rfc3986UnreservedCharacters" : "SvenVanCaekenberghe 10/23/2013 18:55"
+		"rfc3986UnreservedCharacters" : ""
 	}
 }

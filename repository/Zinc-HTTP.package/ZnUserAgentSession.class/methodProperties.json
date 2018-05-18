@@ -1,17 +1,17 @@
 {
 	"instance" : {
-		"credentialsForUrl:" : " 10/3/2017 13:58:25",
-		"cookiejar:" : " 10/3/2017 13:58:25",
-		"credentials:" : " 10/3/2017 13:58:25",
-		"credentials" : " 10/3/2017 13:58:25",
-		"currentRealm:" : " 10/3/2017 13:58:25",
-		"addCredential:" : " 10/3/2017 13:58:25",
-		"credentialAt:forUrl:" : " 10/3/2017 13:58:25",
-		"resetCookies" : " 10/3/2017 13:58:25",
-		"cookieJar" : " 10/3/2017 13:58:25",
-		"currentRealm" : " 10/3/2017 13:58:25"
+		"credentialsForUrl:" : "",
+		"cookiejar:" : "",
+		"credentials:" : "",
+		"credentials" : "",
+		"currentRealm:" : "",
+		"addCredential:" : "",
+		"credentialAt:forUrl:" : "",
+		"resetCookies" : "",
+		"cookieJar" : "",
+		"currentRealm" : ""
 	},
 	"class" : {
-		"withCookieJar:" : " 10/3/2017 13:58:25"
+		"withCookieJar:" : ""
 	}
 }

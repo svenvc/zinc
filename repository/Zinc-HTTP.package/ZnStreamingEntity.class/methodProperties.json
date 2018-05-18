@@ -1,18 +1,18 @@
 {
 	"instance" : {
-		"contents" : " 10/3/2017 13:58:25",
-		"writeOn:" : " 10/3/2017 13:58:25",
-		"readStream" : " 10/3/2017 13:58:25",
-		"close" : " 10/3/2017 13:58:25",
-		"stream" : " 10/3/2017 13:58:25",
-		"readFrom:" : " 10/3/2017 13:58:25",
-		"isEmpty" : " 10/3/2017 13:58:25",
-		"stream:" : " 10/3/2017 13:58:25",
-		"consumeContent" : " 10/3/2017 13:58:25"
+		"contents" : "",
+		"writeOn:" : "",
+		"readStream" : "",
+		"close" : "",
+		"stream" : "",
+		"readFrom:" : "",
+		"isEmpty" : "",
+		"stream:" : "",
+		"consumeContent" : ""
 	},
 	"class" : {
-		"matches:" : " 10/3/2017 13:58:25",
-		"designatedMimeType" : " 10/3/2017 13:58:25",
-		"readFrom:usingType:andLength:" : " 10/3/2017 13:58:25"
+		"matches:" : "",
+		"designatedMimeType" : "",
+		"readFrom:usingType:andLength:" : ""
 	}
 }

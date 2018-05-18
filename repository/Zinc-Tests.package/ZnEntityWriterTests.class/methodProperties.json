@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testPlain" : " 10/3/2017 12:14:37",
-		"testPlainUsingReader" : " 10/3/2017 12:14:37",
-		"testGzippedAndChunked" : " 10/3/2017 12:14:37",
-		"testChunkedOnly" : " 10/3/2017 12:14:37"
+		"testPlain" : "",
+		"testPlainUsingReader" : "",
+		"testGzippedAndChunked" : "",
+		"testChunkedOnly" : ""
 	},
 	"class" : { }
 }

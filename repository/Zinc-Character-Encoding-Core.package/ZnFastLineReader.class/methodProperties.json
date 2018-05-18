@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"on:" : "SvenVanCaekenberghe 12/11/2014 13:31",
-		"streamContents:" : "SvenVanCaekenberghe 12/11/2014 14:07",
-		"close" : "SvenVanCaekenberghe 12/11/2014 13:31",
-		"initialize" : "SvenVanCaekenberghe 12/11/2014 13:47",
-		"beWide" : "SvenVanCaekenberghe 12/11/2014 14:09",
-		"linesDo:" : "SvenVanCaekenberghe 12/11/2014 13:50",
-		"nextLine" : "SvenVanCaekenberghe 12/11/2014 13:55",
-		"bufferStream:" : "SvenVanCaekenberghe 12/11/2014 14:09",
-		"atEnd" : "SvenVanCaekenberghe 12/11/2014 13:31"
+		"on:" : "",
+		"streamContents:" : "",
+		"close" : "",
+		"initialize" : "",
+		"beWide" : "",
+		"linesDo:" : "",
+		"nextLine" : "",
+		"bufferStream:" : "",
+		"atEnd" : ""
 	},
 	"class" : {
-		"on:" : "SvenVanCaekenberghe 12/11/2014 13:37"
+		"on:" : ""
 	}
 }

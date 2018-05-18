@@ -1,0 +1,3 @@
+accessing
+truncate
+	stream truncate

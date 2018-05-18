@@ -1,14 +1,13 @@
 {
-	"category" : "Zinc-WebSocket-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"continuation" ],
-	"name" : "ZnWebSocketResponse",
-	"pools" : [
-		 ],
 	"super" : "ZnResponse",
-	"type" : "normal" }
+	"category" : "Zinc-WebSocket-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"continuation"
+	],
+	"name" : "ZnWebSocketResponse",
+	"type" : "normal"
+}

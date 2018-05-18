@@ -1,27 +1,27 @@
 {
 	"instance" : {
-		"breakLines" : "SvenVanCaekenberghe 12/15/2012 14:06",
-		"skipWhitespace:" : "SvenVanCaekenberghe 4/27/2017 10:22",
-		"encode:and:and:to:" : "SvenVanCaekenberghe 10/30/2015 16:25",
-		"characterCountFor:" : "SvenVanCaekenberghe 10/30/2015 13:25",
-		"initialize" : "SvenVanCaekenberghe 4/27/2017 10:13",
-		"isWhitespaceCharacter:" : "SvenVanCaekenberghe 4/27/2017 10:21",
-		"decode:to:" : "SvenVanCaekenberghe 4/27/2017 10:12",
-		"valueForCharacter:" : "SvenVanCaekenberghe 10/30/2015 16:59",
-		"decode:" : "SvenVanCaekenberghe 10/30/2015 13:18",
-		"alphabet:" : "SvenVanCaekenberghe 12/16/2012 15:15",
-		"encode:to:" : "SvenVanCaekenberghe 10/30/2015 14:42",
-		"characterForValue:" : "SvenVanCaekenberghe 10/30/2015 13:30",
-		"lineEndConvention:" : "SvenVanCaekenberghe 12/15/2012 00:50",
-		"encode:" : "SvenVanCaekenberghe 10/30/2015 13:18",
-		"decode:and:and:and:to:" : "SvenVanCaekenberghe 10/30/2015 16:10",
-		"whitespace:" : "SvenVanCaekenberghe 4/27/2017 10:17",
-		"breakLinesAt:" : "SvenVanCaekenberghe 12/16/2012 15:13",
-		"alphabet" : "SvenVanCaekenberghe 10/30/2015 14:58",
-		"isLegalCharacter:" : "SvenVanCaekenberghe 10/30/2015 16:52",
-		"byteCountFor:" : "SvenVanCaekenberghe 10/30/2015 13:25"
+		"breakLines" : "",
+		"skipWhitespace:" : "",
+		"encode:and:and:to:" : "",
+		"characterCountFor:" : "",
+		"initialize" : "",
+		"isWhitespaceCharacter:" : "",
+		"decode:to:" : "",
+		"valueForCharacter:" : "",
+		"decode:" : "",
+		"alphabet:" : "",
+		"encode:to:" : "",
+		"characterForValue:" : "",
+		"lineEndConvention:" : "",
+		"encode:" : "",
+		"decode:and:and:and:to:" : "",
+		"whitespace:" : "",
+		"breakLinesAt:" : "",
+		"alphabet" : "",
+		"isLegalCharacter:" : "",
+		"byteCountFor:" : ""
 	},
 	"class" : {
-		"initialize" : "SvenVanCaekenberghe 12/16/2012 12:54"
+		"initialize" : ""
 	}
 }

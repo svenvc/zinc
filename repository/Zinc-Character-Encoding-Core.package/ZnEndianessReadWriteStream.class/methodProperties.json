@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"nextLittleEndianNumber:" : "",
+		"nextLittleEndianNumber:put:" : "",
+		"on:" : ""
+	},
+	"class" : {
+		"on:" : "",
+		"on:do:" : ""
+	}
+}

@@ -1,24 +1,24 @@
 {
 	"instance" : {
-		"isStream" : " 10/3/2017 13:58:25",
-		"crlf" : " 10/3/2017 13:58:25",
-		"close" : " 10/3/2017 13:58:25",
-		"flush" : " 10/3/2017 13:58:25",
-		"next:putAll:" : " 10/3/2017 13:58:25",
-		"on:" : " 10/3/2017 13:58:25",
-		"binary" : " 10/3/2017 13:58:25",
-		"finish" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"isBinary" : " 10/3/2017 13:58:25",
-		"next:putAll:startingAt:" : " 10/3/2017 13:58:25",
-		"nextPut:" : " 10/3/2017 13:58:25",
-		"nextPutAll:" : " 10/3/2017 13:58:25",
-		"extraHeaders" : " 10/3/2017 13:58:25",
-		"position" : " 10/3/2017 13:58:25",
-		"chunkCount" : " 10/3/2017 13:58:25",
-		"writeChunkSize:" : " 10/3/2017 13:58:25"
+		"isStream" : "",
+		"crlf" : "",
+		"close" : "",
+		"flush" : "",
+		"next:putAll:" : "",
+		"on:" : "",
+		"binary" : "",
+		"finish" : "",
+		"initialize" : "",
+		"isBinary" : "",
+		"next:putAll:startingAt:" : "",
+		"nextPut:" : "",
+		"nextPutAll:" : "",
+		"extraHeaders" : "",
+		"position" : "",
+		"chunkCount" : "",
+		"writeChunkSize:" : ""
 	},
 	"class" : {
-		"on:" : " 10/3/2017 13:58:25"
+		"on:" : ""
 	}
 }

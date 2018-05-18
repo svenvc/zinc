@@ -3,7 +3,7 @@ nextCodePointFromStream: stream
 	"Read and return the next integer code point from stream"
 
 	| code byte next |
-	(byte := stream next) < 128
+	(byte := stream next ifNil: [ ^ self errorIncomplete ]) < 128
 		ifTrue: [ ^ byte ].
 	(byte bitAnd: 2r11100000) == 2r11000000
 		ifTrue: [ 

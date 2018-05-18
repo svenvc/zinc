@@ -8,4 +8,4 @@ testUTF8EncoderIncomplete
 		2 to: each size do: [ :count |
 			self 
 				should: [ encoder decodeBytes: (each allButLast: count - 1) ] 
-				raise: ZnInvalidUTF8 ] ]
+				raise: ZnIncomplete ] ]

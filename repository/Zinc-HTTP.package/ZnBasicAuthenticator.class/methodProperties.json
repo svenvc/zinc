@@ -1,19 +1,18 @@
 {
 	"instance" : {
-		"atUsername:putPassword:" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"isRequestAuthenticated:" : " 10/3/2017 13:58:25",
-		"authHeader" : " 10/3/2017 13:58:25",
-		"realm" : " 10/3/2017 13:58:25",
-		"authenticateRequest:do:" : " 10/3/2017 13:58:25",
-		"realm:" : " 10/3/2017 13:58:25",
-		"removeAll" : " 10/3/2017 13:58:25",
-		"removeUsername:" : " 10/3/2017 13:58:25"
+		"atUsername:putPassword:" : "",
+		"initialize" : "",
+		"isRequestAuthenticated:" : "",
+		"authHeader" : "",
+		"realm" : "",
+		"authenticateRequest:do:" : "",
+		"realm:" : "",
+		"removeAll" : "",
+		"removeUsername:" : ""
 	},
 	"class" : {
-		"defaultRealm" : " 10/3/2017 13:58:25",
-		"new" : " 10/3/2017 13:58:25",
-		"username:password:realm:" : " 10/3/2017 13:58:25",
-		"username:password:" : " 10/3/2017 13:58:25"
+		"defaultRealm" : "",
+		"username:password:realm:" : "",
+		"username:password:" : ""
 	}
 }

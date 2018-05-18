@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"testFromString" : " 10/3/2017 12:14:37",
-		"testInPath" : " 10/3/2017 12:14:37",
-		"testInDomain" : " 10/3/2017 12:14:37",
-		"cookieString" : " 10/3/2017 12:14:37",
-		"cookieStringSubpath" : " 10/3/2017 12:14:37"
+		"testFromString" : "",
+		"testInPath" : "",
+		"testInDomain" : "",
+		"cookieString" : "",
+		"cookieStringSubpath" : ""
 	},
 	"class" : { }
 }

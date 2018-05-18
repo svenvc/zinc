@@ -1,6 +1,6 @@
 running
 setUp
-	self tearDown.
+	super setUp.
 	ZnFileSystemUtils
 		newFileNamed: 'small.html' 
 		do: [ :stream |

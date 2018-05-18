@@ -1,14 +1,14 @@
 {
 	"instance" : {
-		"duration" : " 10/3/2017 13:58:25",
-		"response:" : " 10/3/2017 13:58:25",
-		"request:" : " 10/3/2017 13:58:25",
-		"method" : " 10/3/2017 13:58:25",
-		"responseCode" : " 10/3/2017 13:58:25",
-		"timing:" : " 10/3/2017 13:58:25",
-		"url" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"size" : " 10/3/2017 13:58:25"
+		"duration" : "",
+		"response:" : "",
+		"request:" : "",
+		"method" : "",
+		"responseCode" : "",
+		"timing:" : "",
+		"url" : "",
+		"printContentsOn:" : "",
+		"size" : ""
 	},
 	"class" : { }
 }

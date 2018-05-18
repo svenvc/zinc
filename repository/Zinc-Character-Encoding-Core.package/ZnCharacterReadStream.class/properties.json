@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "ZnEncodedReadStream",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [ ],

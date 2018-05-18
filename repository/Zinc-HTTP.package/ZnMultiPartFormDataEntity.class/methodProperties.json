@@ -1,29 +1,29 @@
 {
 	"instance" : {
-		"readFrom:" : " 10/3/2017 13:58:25",
-		"initialize" : " 10/3/2017 13:58:25",
-		"parse:boundary:binary:" : " 10/3/2017 13:58:25",
-		"partNamed:" : " 10/3/2017 13:58:25",
-		"contents" : " 10/3/2017 13:58:25",
-		"getBoundary" : " 10/3/2017 13:58:25",
-		"writeRepresentationOn:" : " 10/3/2017 13:58:25",
-		"contentType:" : " 10/3/2017 13:58:25",
-		"parts" : " 10/3/2017 13:58:25",
-		"computeRepresentation" : " 10/3/2017 13:58:25",
-		"writeOn:" : " 10/3/2017 13:58:25",
-		"contentLength" : " 10/3/2017 13:58:25",
-		"readBinaryFrom:" : " 10/3/2017 13:58:25",
-		"mimeTypeWithBoundary" : " 10/3/2017 13:58:25",
-		"generateBoundary" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"partNamed:ifNone:" : " 10/3/2017 13:58:25",
-		"partsDo:" : " 10/3/2017 13:58:25",
-		"isEmpty" : " 10/3/2017 13:58:25",
-		"addPart:" : " 10/3/2017 13:58:25",
-		"invalidateRepresentation" : " 10/3/2017 13:58:25"
+		"readFrom:" : "",
+		"initialize" : "",
+		"parse:boundary:binary:" : "",
+		"partNamed:" : "",
+		"contents" : "",
+		"getBoundary" : "",
+		"writeRepresentationOn:" : "",
+		"contentType:" : "",
+		"parts" : "",
+		"computeRepresentation" : "",
+		"writeOn:" : "",
+		"contentLength" : "",
+		"readBinaryFrom:" : "",
+		"mimeTypeWithBoundary" : "",
+		"generateBoundary" : "",
+		"printContentsOn:" : "",
+		"partNamed:ifNone:" : "",
+		"partsDo:" : "",
+		"isEmpty" : "",
+		"addPart:" : "",
+		"invalidateRepresentation" : ""
 	},
 	"class" : {
-		"matches:" : " 10/3/2017 13:58:25",
-		"designatedMimeType" : " 10/3/2017 13:58:25"
+		"matches:" : "",
+		"designatedMimeType" : ""
 	}
 }

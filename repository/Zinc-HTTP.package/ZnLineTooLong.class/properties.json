@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 2/28/2011 14:15",
+	"commentStamp" : "",
 	"super" : "ZnParseError",
 	"category" : "Zinc-HTTP-Exceptions",
 	"classinstvars" : [ ],

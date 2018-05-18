@@ -1,11 +1,12 @@
 {
+	"instance" : { },
 	"class" : {
-		"containsConnectionUpgrade:" : "SvenVanCaekenberghe 9/7/2012 14:15",
-		"handshake:" : "SvenVanCaekenberghe 7/19/2012 15:07",
 		"newClientKey" : "SvenVanCaekenberghe 7/20/2012 15:06",
-		"newMask" : "SvenVanCaekenberghe 7/20/2012 15:06",
 		"newPingPayload" : "SvenVanCaekenberghe 8/21/2012 20:23",
 		"randomByteArrayOfSize:" : "SvenVanCaekenberghe 7/20/2012 15:06",
-		"serverGUID" : "SvenVanCaekenberghe 7/19/2012 14:54" },
-	"instance" : {
-		 } }
+		"newMask" : "SvenVanCaekenberghe 7/20/2012 15:06",
+		"handshake:" : "SvenVanCaekenberghe 7/19/2012 15:07",
+		"containsConnectionUpgrade:" : "SvenVanCaekenberghe 9/7/2012 14:15",
+		"serverGUID" : "SvenVanCaekenberghe 7/19/2012 14:54"
+	}
+}

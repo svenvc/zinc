@@ -1,18 +1,18 @@
 {
 	"instance" : {
-		"beBigEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
-		"isLittleEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
-		"=" : "SvenVanCaekenberghe 5/3/2017 14:12",
-		"initialize" : "SvenVanCaekenberghe 1/7/2016 11:03",
-		"printOn:" : "SvenVanCaekenberghe 1/7/2016 11:03",
-		"swapEndianness" : "SvenVanCaekenberghe 1/7/2016 11:03",
-		"isBigEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
-		"hash" : "SvenVanCaekenberghe 5/3/2017 14:13",
-		"beLittleEndian" : "SvenVanCaekenberghe 1/7/2016 11:03",
-		"endianness" : "SvenVanCaekenberghe 5/3/2017 14:12"
+		"beBigEndian" : "",
+		"isLittleEndian" : "",
+		"=" : "",
+		"initialize" : "",
+		"printOn:" : "",
+		"swapEndianness" : "",
+		"isBigEndian" : "",
+		"hash" : "",
+		"beLittleEndian" : "",
+		"endianness" : ""
 	},
 	"class" : {
-		"newForEncoding:" : "SvenVanCaekenberghe 1/7/2016 11:17",
-		"handlesEncoding:" : "SvenVanCaekenberghe 1/7/2016 11:17"
+		"newForEncoding:" : "",
+		"handlesEncoding:" : ""
 	}
 }

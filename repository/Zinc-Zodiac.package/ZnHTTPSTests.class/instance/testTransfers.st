@@ -1,7 +1,9 @@
 testing
 testTransfers
+	self timeLimit: 300 seconds.
 	self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
+	
 	(Integer primesUpTo: 100) do: [ :each | | size client |
 		size := 1024 * each + each.
 		(client := ZnClient new)

@@ -8,7 +8,11 @@ at: key add: value
 		ifTrue: [ value ] 
 		ifFalse: [
 			existingValue isArray 
-				ifTrue: [ existingValue copyWith: value ]
-				ifFalse: [ Array with: existingValue with: value ] ].
+				ifTrue: [ 
+					(existingValue includes: value) ifTrue: [ ^ value ].
+					existingValue copyWith: value ]
+				ifFalse: [
+					existingValue = value ifTrue: [ ^ value ].
+					Array with: existingValue with: value ] ].
 	^ self at: key put: newValue 
 

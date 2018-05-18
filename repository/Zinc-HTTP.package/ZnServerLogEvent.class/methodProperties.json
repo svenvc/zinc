@@ -1,11 +1,11 @@
 {
 	"instance" : {
-		"initialize" : " 10/3/2017 13:58:25",
-		"processId" : " 10/3/2017 13:58:25",
-		"serverId:" : " 10/3/2017 13:58:25",
-		"processId:" : " 10/3/2017 13:58:25",
-		"printContentsOn:" : " 10/3/2017 13:58:25",
-		"serverId" : " 10/3/2017 13:58:25"
+		"initialize" : "",
+		"processId" : "",
+		"serverId:" : "",
+		"processId:" : "",
+		"printContentsOn:" : "",
+		"serverId" : ""
 	},
 	"class" : { }
 }

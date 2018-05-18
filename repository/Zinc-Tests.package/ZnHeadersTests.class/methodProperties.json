@@ -1,14 +1,14 @@
 {
 	"instance" : {
-		"testReadingMultilineNonBinary" : " 10/3/2017 12:14:37",
-		"testMultiValued" : " 10/3/2017 12:14:37",
-		"testNormalization" : " 10/3/2017 12:14:37",
-		"testWriting" : " 10/3/2017 12:14:37",
-		"testReadingMultilineMultiValue" : " 10/3/2017 12:14:37",
-		"testMultiValuedStreaming" : " 10/3/2017 12:14:37",
-		"testMergeValued" : " 10/3/2017 12:14:37",
-		"testReading" : " 10/3/2017 12:14:37",
-		"testReadingMultiline" : " 10/3/2017 12:14:37"
+		"testReadingMultilineNonBinary" : "",
+		"testMultiValued" : "",
+		"testNormalization" : "",
+		"testWriting" : "",
+		"testReadingMultilineMultiValue" : "",
+		"testMultiValuedStreaming" : "",
+		"testMergeValued" : "",
+		"testReading" : "",
+		"testReadingMultiline" : ""
 	},
 	"class" : { }
 }
