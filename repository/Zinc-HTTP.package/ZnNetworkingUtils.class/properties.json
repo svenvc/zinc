@@ -10,7 +10,8 @@
 	],
 	"instvars" : [
 		"socketStreamClass",
-		"secureSocketStreamClass"
+		"secureSocketStreamClass",
+		"sslSessionClass"
 	],
 	"name" : "ZnNetworkingUtils",
 	"type" : "normal"
