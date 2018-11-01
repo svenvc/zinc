@@ -1,0 +1,3 @@
+testing
+closed
+	^ stream closed

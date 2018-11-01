@@ -2,11 +2,11 @@ instance creation
 fieldName: fieldName fileNamed: fileName
 	| mimeType size fileStream entity baseName |
 	mimeType := ZnMimeType forFilenameExtension: (ZnFileSystemUtils extensionFor: fileName).
-	fileStream := ZnFileSystemUtils oldFileStreamFor: fileName.
-	mimeType isBinary ifTrue: [ fileStream binary ].
+	fileStream := mimeType isBinary 
+		ifTrue: [ ZnFileSystemUtils binaryReadStreamFor: fileName ] 
+		ifFalse: [ ZnFileSystemUtils readStreamFor: fileName ].
 	size := ZnFileSystemUtils fileSizeFor: fileName.
 	(entity := ZnStreamingEntity type: mimeType length: size)
 		stream: fileStream.
 	baseName := ZnFileSystemUtils baseNameFor: fileName.
 	^ self fieldName: fieldName fileName: baseName entity: entity
-	

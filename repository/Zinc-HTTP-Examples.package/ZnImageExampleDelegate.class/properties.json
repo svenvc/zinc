@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Zinc-HTTP-Client-Server",
+	"category" : "Zinc-HTTP-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ZnTestRunnerDelegate",
+	"instvars" : [
+		"image"
+	],
+	"name" : "ZnImageExampleDelegate",
 	"type" : "normal"
 }

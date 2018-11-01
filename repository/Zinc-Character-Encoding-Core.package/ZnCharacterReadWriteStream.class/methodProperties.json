@@ -1,5 +1,6 @@
 {
 	"instance" : {
+		"print:" : "SvenVanCaekenberghe 11/1/2018 22:23",
 		"close" : "",
 		"on:encoding:" : "",
 		"nextPutAll:" : "",
@@ -10,8 +11,8 @@
 		"next" : "",
 		"setToEnd" : "",
 		"skip:" : "",
-		"size" : "",
 		"position" : "",
+		"size" : "",
 		"isReadOnly" : "",
 		"upToEnd" : "",
 		"position:" : "",
@@ -21,6 +22,7 @@
 		"nextPut:" : "",
 		"flush" : "",
 		"closed" : "",
+		"tab" : "SvenVanCaekenberghe 11/1/2018 22:23",
 		"space" : ""
 	},
 	"class" : {

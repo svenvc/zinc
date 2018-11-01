@@ -1,10 +1,11 @@
 {
 	"instance" : {
 		"nextPut:" : "",
-		"initialize" : "",
+		"flush" : "SvenVanCaekenberghe 11/1/2018 22:24",
 		"forCr" : "",
 		"forPlatformLineEnding" : "",
 		"forCrLf" : "",
+		"initialize" : "",
 		"newLine" : "",
 		"stream:" : "",
 		"forLf" : ""

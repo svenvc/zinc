@@ -1,0 +1,1 @@
+(name 'Zinc-HTTP-Examples-SvenVanCaekenberghe.1' message 'move ZnImageExampleDelegate, ZnReadEvalPrintDelegate and ZnTestRunnerDelegate from Zinc-HTTP-Client-Server to a new separate package Zinc-HTTP-Examples' id '7e8e3ffb-0236-0d00-9e9f-591000aa183a' date '1 November 2018' time '10:38:50.319742 pm' author 'SvenVanCaekenberghe' ancestors () stepChildren ())
