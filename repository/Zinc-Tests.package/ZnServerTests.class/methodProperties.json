@@ -12,7 +12,6 @@
 		"testSmall" : "",
 		"testSession" : "",
 		"assertHeaderLineTooLong:" : "",
-		"testReadEvalPrint" : "",
 		"testRequestLineTooLong" : "",
 		"assertRequestLineTooLong:" : "",
 		"testError" : "",

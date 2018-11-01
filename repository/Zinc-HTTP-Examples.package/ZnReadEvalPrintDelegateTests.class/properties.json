@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Zinc-Tests",
+	"category" : "Zinc-HTTP-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnImageExampleDelegateTests",
+	"name" : "ZnReadEvalPrintDelegateTests",
 	"type" : "normal"
 }
