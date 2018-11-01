@@ -1,5 +1,5 @@
 streams
-newBinaryFileNamed: fileName do: block
+binaryWriteStreamFor: fileName do: block
 	| fileReference |
 	fileReference := fileName asFileReference.
 	^ (fileReference respondsTo: #binaryWriteStreamDo:ifPresent:)
@@ -10,4 +10,6 @@ newBinaryFileNamed: fileName do: block
 		ifFalse: [ 
 			fileReference isFile 
 				ifTrue: [ FileExists signalWith: fileReference ] 
-				ifFalse: [ block value: (self binaryFileStreamFor: fileName) ] ]
+				ifFalse: [ | binaryStream |
+					binaryStream := self binaryWriteStreamFor: fileName.
+					[ block value: binaryStream ] ensure: [ binaryStream close ] ] ]

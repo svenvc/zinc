@@ -2,14 +2,14 @@ running
 setUp
 	super setUp.
 	ZnFileSystemUtils
-		newFileNamed: 'small.html' 
+		writeStreamFor: 'small.html' 
 		do: [ :stream |
 			stream nextPutAll: self smallHtml ].
 	ZnFileSystemUtils
-		newFileNamed: 'large.html' 
+		writeStreamFor: 'large.html' 
 		do: [ :stream |
 			stream nextPutAll: self largeHtml ].
 	ZnFileSystemUtils
-		newFileNamed: 'wide.html' 
+		writeStreamFor: 'wide.html' 
 		do: [ :stream |
 			stream nextPutAll: self wideHtml ].

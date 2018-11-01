@@ -1,5 +1,5 @@
 streams
-binaryFileStreamFor: fileName
+binaryWriteStreamFor: fileName
 	| fileReference |
 	fileReference := fileName asFileReference.
 	^ (fileReference respondsTo: #binaryWriteStream)

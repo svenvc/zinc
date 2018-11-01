@@ -5,7 +5,7 @@ testUploadSmallDocument
 		contents := String streamContents: [ :stream |
 			stream print: DateAndTime now; space; print: 9999 atRandom ].
 		ZnFileSystemUtils deleteIfExists: 'small.txt'.
-		ZnFileSystemUtils newFileNamed: path do: [ :stream | stream nextPutAll: contents ].
+		ZnFileSystemUtils writeStreamFor: path do: [ :stream | stream nextPutAll: contents ].
 		(client := ZnClient new)
 			url: server localUrl;
 			addPath: 'echo';

@@ -9,6 +9,6 @@ downloadEntityTo: path
 	self entity ifNil: [ ^ self ].
 	target := ZnFileSystemUtils downloadPathTo: path for: self request uri lastPathSegment.
 	ZnFileSystemUtils
-		newBinaryFileNamed: target
+		binaryWriteStreamFor: target
 		do: [ :fileStream |
 			self withProgressDo: [ self entity writeOn: fileStream ] ]

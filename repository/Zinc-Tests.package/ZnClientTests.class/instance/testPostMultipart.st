@@ -3,7 +3,7 @@ testPostMultipart
 	| client filename |
 	ZnFileSystemUtils deleteIfExists: 'testPostMultiPart.txt'.
 	filename := ZnFileSystemUtils fullNameFor: 'testPostMultiPart.txt'.
-	ZnFileSystemUtils newFileNamed: filename do: [ :stream | stream nextPutAll: '0123456789' ].
+	ZnFileSystemUtils writeStreamFor: filename do: [ :stream | stream nextPutAll: '0123456789' ].
 	self withServerDo: [ :server |
 		(client := ZnClient new)
 			url: server localUrl;
