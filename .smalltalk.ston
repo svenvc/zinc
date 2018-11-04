@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'ZincHTTPComponents',
+      #directory: 'repository';
+      #platforms : [ #pharo ]
+    }
+  ]
+}
