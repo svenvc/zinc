@@ -8,6 +8,9 @@ to deal with the HTTP networking protocol.
 <http://zn.stfx.eu>
 
 
+[![Build Status](https://travis-ci.org/svenvc/zinc.svg?branch=master)](https://travis-ci.org/svenvc/zinc)
+
+
 ## Documentation
 
 The [Zinc HTTP Components](zinc-http-components-paper.md) paper.
