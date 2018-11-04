@@ -5,7 +5,8 @@ testWriteThenRead
 	((SystemVersion current major < 7) or: [ SystemVersion current build < 690 ])
 		ifTrue: [ ^ self skip ].
 
-	stringStream := ReadWriteStream on: '0123456789'.
+	stringStream := ReadWriteStream with: '0123456789'.
+	stringStream reset.
 	stream := ZnBufferedReadWriteStream on: stringStream.
 	stream sizeBuffer: 8.
 	

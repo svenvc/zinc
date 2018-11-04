@@ -3,14 +3,14 @@
 		"testWriting" : "",
 		"testReadInto" : "",
 		"testPeek" : "",
-		"testReadThenWrite" : "SvenVanCaekenberghe 3/14/2018 15:47",
+		"testReadThenWrite" : "SvenVanCaekenberghe 9/17/2018 15:31",
 		"testNextPutAllStartingAt" : "",
 		"testBuffering" : "",
 		"testReadIntoLarger" : "",
 		"testReadUpTo" : "",
 		"testReadUpToEnd" : "",
 		"testWritingOverflow" : "",
-		"testWriteThenRead" : "SvenVanCaekenberghe 3/14/2018 15:47"
+		"testWriteThenRead" : "SvenVanCaekenberghe 9/17/2018 15:31"
 	},
 	"class" : { }
 }
