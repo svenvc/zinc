@@ -2,7 +2,7 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'ZincHTTPComponents',
-      #directory: 'repository';
+      #directory: 'repository',
       #platforms : [ #pharo ]
     }
   ]
