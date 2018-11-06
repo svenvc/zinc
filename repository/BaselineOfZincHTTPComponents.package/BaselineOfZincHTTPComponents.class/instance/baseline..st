@@ -2,7 +2,7 @@ baseline
 baseline: spec
 	<baseline>
 	spec for: #common do: [ 
-		spec baseline: 'Neo JSON' with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ].
+		spec baseline: 'NeoJSON' with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ].
 		spec project: 'XML Support' with: [ spec className: 'ConfigurationOfXMLSupport'; repository: 'http://www.squeaksource.com/MetacelloRepository' ].
 		spec package: 'Zodiac-Core' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
 		spec package: 'Zodiac-Tests' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
@@ -19,11 +19,11 @@ baseline: spec
 		spec
 				package: 'Zinc-Seaside';	"For now, no dependence on Seaside itself"
 				package: 'Zinc-AWS' with: [ spec requires: #('Zinc-HTTP' 'XML Support') ];
-				package: 'Zinc-REST' with: [ spec requires: #('Zinc-HTTP' 'Neo JSON') ];
+				package: 'Zinc-REST' with: [ spec requires: #('Zinc-HTTP' 'NeoJSON') ];
 				package: 'Zinc-WebSocket-Core' with: [ spec requires: 'Zinc-HTTP' ];
 				package: 'Zinc-WebSocket-Tests' with: [ spec requires: 'Zinc-WebSocket-Core' ];
-				package: 'Zinc-SSO-OAuth1-Core' with: [ spec requires: #('Zinc-HTTP' 'Neo JSON') ];
-				package: 'Zinc-SSO-OAuth2-Core' with: [ spec requires: #('Zinc-HTTP' 'Neo JSON') ];
+				package: 'Zinc-SSO-OAuth1-Core' with: [ spec requires: #('Zinc-HTTP' 'NeoJSON') ];
+				package: 'Zinc-SSO-OAuth2-Core' with: [ spec requires: #('Zinc-HTTP' 'NeoJSON') ];
 				package: 'Zinc-SSO-OpenID-Core' with: [ spec requires: #('Zinc-HTTP' 'XML Support') ];
 				package: 'Zinc-SSO-Demo' with: [ spec requires: #('Zinc-SSO-OAuth1-Core' 'Zinc-SSO-OAuth2-Core' 'Zinc-SSO-OpenID-Core') ];
 				package: 'Zinc-SSO-OAuth1-Tests' with: [ spec requires: #('Zinc-SSO-OAuth1-Core') ];
