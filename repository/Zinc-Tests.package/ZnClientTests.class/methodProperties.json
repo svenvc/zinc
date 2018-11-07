@@ -15,8 +15,8 @@
 		"testSpecialPosts" : "",
 		"testDownloadSmallHTML" : "SvenVanCaekenberghe 11/1/2018 23:49",
 		"testUsernamePasswordInUserInfo" : "",
-		"testRedirectWithCustomHeader" : "",
 		"testGetSmallHTMLStreaming" : "",
+		"testRedirectWithCustomHeader" : "",
 		"testConstruction" : "",
 		"testIfModifiedSinceNotModified" : "",
 		"testPostTwice" : "",
@@ -45,7 +45,9 @@
 		"t3EasyGeoIPUrl" : "",
 		"testLogging" : "",
 		"testConnectionCloseOnReuseTimeout" : "",
-		"testGetForm" : ""
+		"testJsonRESTPost" : "SvenVanCaekenberghe 11/7/2018 15:18",
+		"testGetForm" : "",
+		"testJsonRESTGet" : "SvenVanCaekenberghe 11/7/2018 15:15"
 	},
 	"class" : { }
 }
