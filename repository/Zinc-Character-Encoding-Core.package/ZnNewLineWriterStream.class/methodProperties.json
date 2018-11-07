@@ -1,14 +1,15 @@
 {
 	"instance" : {
-		"nextPut:" : "",
-		"flush" : "SvenVanCaekenberghe 11/1/2018 22:24",
-		"forCr" : "",
-		"forPlatformLineEnding" : "",
-		"forCrLf" : "",
-		"initialize" : "",
 		"newLine" : "",
+		"close" : "SvenVanCaekenberghe 11/7/2018 13:47",
+		"forCr" : "",
+		"flush" : "SvenVanCaekenberghe 11/1/2018 22:24",
+		"initialize" : "",
+		"forLf" : "",
+		"forPlatformLineEnding" : "",
+		"nextPut:" : "",
 		"stream:" : "",
-		"forLf" : ""
+		"forCrLf" : ""
 	},
 	"class" : {
 		"on:" : ""
