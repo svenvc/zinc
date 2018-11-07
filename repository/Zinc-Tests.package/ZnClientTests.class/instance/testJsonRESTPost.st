@@ -1,6 +1,7 @@
 testing
 testJsonRESTPost
 	| client |
+	self class environment at: #STONJSON ifAbsent: [ ^ self skip ].
 	self withServerDo: [ :server |
 		server onRequestRespond: [ :request | 
 			request method = #POST

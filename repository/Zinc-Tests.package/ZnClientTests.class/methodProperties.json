@@ -45,9 +45,9 @@
 		"t3EasyGeoIPUrl" : "",
 		"testLogging" : "",
 		"testConnectionCloseOnReuseTimeout" : "",
-		"testJsonRESTPost" : "SvenVanCaekenberghe 11/7/2018 15:18",
+		"testJsonRESTPost" : "SvenVanCaekenberghe 11/7/2018 17:03",
 		"testGetForm" : "",
-		"testJsonRESTGet" : "SvenVanCaekenberghe 11/7/2018 15:15"
+		"testJsonRESTGet" : "SvenVanCaekenberghe 11/7/2018 17:03"
 	},
 	"class" : { }
 }
