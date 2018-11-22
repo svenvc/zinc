@@ -1,4 +1,4 @@
-*zinc-resource-meta-filesystem
+*zinc-resource-meta-core
 asFileReference
 	"Convert the receiver into a new FileReference object.
 	Note that for a FileReference a trailing slash is not relevant"

@@ -1,16 +1,16 @@
 {
 	"instance" : {
-		"testIdentity" : "SvenVanCaekenberghe 12/6/2011 20:44",
-		"testParameters" : "SvenVanCaekenberghe 3/6/2012 11:02",
-		"testMatches" : "SvenVanCaekenberghe 7/8/2013 14:31",
-		"testWriting" : "SvenVanCaekenberghe 12/2/2010 11:29",
-		"testReading" : "SvenVanCaekenberghe 12/2/2010 11:29",
-		"testCopying" : "SvenVanCaekenberghe 5/21/2013 20:28",
-		"testCharset" : "SvenVanCaekenberghe 3/6/2012 11:05",
-		"testIsBinary" : "SvenVanCaekenberghe 12/15/2014 16:21",
-		"testAsMimeType" : "SvenVanCaekenberghe 5/21/2013 20:30",
-		"testDefault" : "SvenVanCaekenberghe 12/6/2011 20:44",
-		"someNonBinaryMimeTypes" : "SvenVanCaekenberghe 10/16/2016 18:25"
+		"testIdentity" : "",
+		"testParameters" : "",
+		"testMatches" : "",
+		"testWriting" : "",
+		"testReading" : "",
+		"testCopying" : "",
+		"testCharset" : "",
+		"testIsBinary" : "",
+		"testAsMimeType" : "",
+		"testDefault" : "",
+		"someNonBinaryMimeTypes" : ""
 	},
 	"class" : { }
 }

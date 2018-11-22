@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Zinc-Resource-Meta-FileSystem",
+	"category" : "Zinc-Resource-Meta-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

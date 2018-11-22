@@ -1,4 +1,4 @@
-*zinc-resource-meta-filesystem
+*zinc-resource-meta-core
 asZnUrl
 	"Convert the receiver in a file:// ZnUrl"
 

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ZnUrlOperation",
-	"category" : "Zinc-Resource-Meta-FileSystem",
+	"category" : "Zinc-Resource-Meta-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

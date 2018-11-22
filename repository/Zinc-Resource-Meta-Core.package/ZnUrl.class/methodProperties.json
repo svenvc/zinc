@@ -19,6 +19,7 @@
 		"printPathOn:" : "nil",
 		"parseUserInfo:" : "nil",
 		"host:" : "nil",
+		"asFileReference" : "",
 		"parsePath:" : "nil",
 		"encodePath:on:" : "nil",
 		"port:" : "nil",
