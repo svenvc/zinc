@@ -2,10 +2,15 @@ baselines
 baseline30: spec
 	<version: '3.0-baseline'>
 	spec for: #common do: [ 
+		spec
+			blessing: #baseline;
+			description: 'Baseline for Zinc HTTP Components, a framework to deal with HTTP networking';
+			author: 'SvenVanCaekenberghe';
+			repository: 'http://mc.stfx.eu/ZincHTTPComponents'.
 		spec baseline: 'NeoJSON' with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ].
 		spec project: 'XML Support' with: [ spec className: 'ConfigurationOfXMLSupport'; repository: 'http://www.squeaksource.com/MetacelloRepository' ].
-		spec package: 'Zodiac-Core' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
-		spec package: 'Zodiac-Tests' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
+		spec package: 'Zodiac-Core' with: [ spec repository: 'http://mc.stfx.eu/Zodiac' ].
+		spec package: 'Zodiac-Tests' with: [ spec repository: 'http://mc.stfx.eu/Zodiac' ].
 		spec
 			package: 'Zinc-Character-Encoding-Core';
 			package: 'Zinc-Character-Encoding-Tests' with: [ spec requires: 'Zinc-Character-Encoding-Core' ];
