@@ -14,13 +14,13 @@ Based on core classes modelling all main HTTP concepts, a full featured HTTP cli
 
 
 Here are a couple of simple examples to give an impression of the API.
-You start a default (easy to reference) HTTP server like this.
+You start a default (easy to reference) HTTP server with just one line of code.
 
 ```Smalltalk
 ZnServer startDefaultOn: 1701.
 ```
 
-Now you can browse locally to http://localhost:1701 - in particular have a look at the /help section and /echo - these are part of a demonstration set of handlers.
+Now you can browse locally to http://localhost:1701 - in particular have a look at the /help section and /echo - these are part of a set of demonstration handlers.
 
 Accessing the server that we just started from code is easy too.
 
@@ -32,9 +32,9 @@ ZnClient new
   post.
 ```
 
-This does an HTTP POST to our server's /echo handler with a simple text as resource. The server will echo information about the request it received, including the text resource that you posted.
+This builds an HTTP POST to our server's /echo handler with a simple text as resource. The server will echo information about the request it received, including the text resource that you posted.
 
-By default, the demonstration server has a couple of handlers, mostly for testing. You can add your own to do additions, for example.
+By default, the demonstration server has a couple of handlers, mostly for testing. You can add your own, to do additions (sum two numbers), for example.
 
 ```Smalltalk
 ZnServer default delegate 
@@ -58,8 +58,8 @@ ZnClient new
   get.
 ```
 
-This builds an appropriate request to our /added and executes it.
-Entering the proper URL directly, this becomes a one liner.
+This builds an appropriate request to our /adder and executes it.
+By entering the proper URL directly, this becomes a one liner.
 
 ```Smalltalk
 'http://localhost:1701/adder?x=1&y=2' asUrl retrieveContents.
@@ -91,6 +91,7 @@ The original [Zinc HTTP Components](zinc-http-components-paper.md) paper.
 
 The [Building and deploying your first web app with Pharo](build-and-deploy-1st-webapp/build-deploy-1st-webapp.md) tutorial.
 
+There is a separate [GemStone README](README-Gemstone.md].
 
 ## Loading
 
