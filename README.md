@@ -10,6 +10,62 @@ to deal with the HTTP networking protocol.
 Based on core classes modelling all main HTTP concepts, a full featured HTTP client and server are provided.
 
 
+## API
+
+
+Here are a couple of simple examples to give an impression of the API.
+You start a default (easy to reference) HTTP server like this.
+
+```Smalltalk
+ZnServer startDefaultOn: 1701.
+```
+
+Now you can browse locally to http://localhost:1701 - in particular have a look at the /help section and /echo - these are part of a demonstration set of handlers.
+
+Accessing the server that we just started from code is easy too.
+
+```Smalltalk
+ZnClient new 
+  url: ZnServer default localUrl; 
+  addPathSegment: #echo; 
+  entity: (ZnEntity text: 'Hello'); 
+  post.
+```
+
+This does an HTTP POST to our server's /echo handler with a simple text as resource. The server will echo information about the request it received, including the text resource that you posted.
+
+By default, the demonstration server has a couple of handlers, mostly for testing. You can add your own to do additions, for example.
+
+```Smalltalk
+ZnServer default delegate 
+  map: #adder to: [ :request | | x y sum |
+    x := (request uri queryAt: #x) asNumber.
+    y := (request uri queryAt: #y) asNumber.
+    sum := x + y.
+    ZnResponse ok: (ZnEntity text: sum asString) ].
+```
+
+This creates a new handler /adder that will take 2 query arguments, converts them to numbers and returns the result of adding them together.
+
+Using the full client, we can test our new functionality.
+
+```Smalltalk
+ZnClient new 
+  url: ZnServer default localUrl; 
+  addPathSegment: #adder;
+  queryAt: #x put: 1;
+  queryAt: #y put: 2;
+  get.
+```
+
+This builds an appropriate request to our /added and executes it.
+Entering the proper URL directly, this becomes a one liner.
+
+```Smalltalk
+'http://localhost:1701/adder?x=1&y=2' asUrl retrieveContents.
+```
+
+
 ## Documentation
 
 
