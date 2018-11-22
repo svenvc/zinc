@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ZnMultiThreadedServer",
-	"category" : "Zinc-Zodiac",
+	"category" : "Zinc-Zodiac-Core-Zinc-Zodiac-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
