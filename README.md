@@ -4,49 +4,47 @@
 Zinc HTTP Components is an open-source Smalltalk framework 
 to deal with the HTTP networking protocol.
 
-
-<http://zn.stfx.eu>
-
-
 [![Build Status](https://travis-ci.org/svenvc/zinc.svg?branch=master)](https://travis-ci.org/svenvc/zinc)
+
+
+Based on core classes modelling all main HTTP concepts, a full featured HTTP client and server are provided.
 
 
 ## Documentation
 
-The [Zinc HTTP Components](zinc-http-components-paper.md) paper.
+
+Over the years, various documentation has been written about Zinc HTTP Components. 
+Some of it is somewhat outdated. We list the most recent first.
+
+The code base has decent class and method comments, as well as unit tests and examples.
+
+The best starter documentation can be found in the 
+[Pharo Enterprise](http://books.pharo.org/enterprise-pharo/) book.
+
+In particular, in the following chapters:
+- [Client](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-HTTP-Client/Zinc-HTTP-Client.html)
+- [Server](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-HTTP-Server/Zinc-HTTP-Server.html)
+- [WebApp](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/WebApp/WebApp.html)
+- [TeaPot](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Teapot/Teapot.html)
+- [Encoding](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-Encoding-Meta/Zinc-Encoding-Meta.html)
+
+A live website can be found at [http://zn.stfx.eu](http://zn.stfx.eu). You can run part of this website locally.
+
+The original [Zinc HTTP Components](zinc-http-components-paper.md) paper.
 
 The [Building and deploying your first web app with Pharo](build-and-deploy-1st-webapp/build-deploy-1st-webapp.md) tutorial.
 
 
+## Loading
+
+```Smalltalk
+Metacello new
+  repository: 'github://svenvc/zinc/repository';
+  baseline: 'ZincHTTPComponents';
+  load.
+```
+
+
 *Sven Van Caekenberghe* 
 
-
 [MIT Licensed](https://github.com/svenvc/zinc/blob/master/license.txt)
-
-## Loading into GemStone
-
-1. [Upgrade to GLASS 1.0-beta.9](http://code.google.com/p/glassdb/wiki/GemToolsUpdate#Update_GLASS)
-
-2. Install Zinc:
-
-    ```Smalltalk
-    "GemStone 2.4"
-    Metacello new
-      baseline: 'Zinc';
-      repository: 'github://glassdb/zinc:gemstone2.4/repository';
-      load: 'Tests'.
-      
-    "GemStone 3.1"
-    Metacello new
-      baseline: 'Zinc';
-      repository: 'github://glassdb/zinc:gemstone3.1/repository';
-      load: 'Tests'.
-    ```
-
-*See the [Releases page](https://github.com/glassdb/zinc/releases/) for instructions for installing specific Zinc releases.*
-
-## Travis Status
-
-**GemStone2.4.x** [![Build Status](https://travis-ci.org/glassdb/zinc.png?branch=gemstone2.4)](https://travis-ci.org/glassdb/zinc)
-
-**GemStone3.1.x** [![Build Status](https://travis-ci.org/glassdb/zinc.png?branch=gemstone3.1)](https://travis-ci.org/glassdb/zinc)
