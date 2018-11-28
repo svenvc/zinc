@@ -91,7 +91,7 @@ The original [Zinc HTTP Components](zinc-http-components-paper.md) paper.
 
 The [Building and deploying your first web app with Pharo](build-and-deploy-1st-webapp/build-deploy-1st-webapp.md) tutorial.
 
-There is a separate [GemStone README](README-Gemstone.md].
+There is a separate [GemStone README](README-Gemstone.md).
 
 ## Loading
 
