@@ -4,8 +4,8 @@ standardPageFooter
 <a href="http://ws.stfx.eu">Shared Smalltalk Workspaces</a>
  is a free web service offered by
 <a href="http://stfx.eu">http://stfx.eu</a>. 
-Copyright &copy; 2012,2013 Sven Van Caekenberghe.
-Built and served using <a href="http://www.pharo.st">Pharo Smalltalk</a> 2.0.
+Copyright &copy; 2012-2019 Sven Van Caekenberghe.
+Built and served using <a href="http://www.pharo.org">Pharo Smalltalk</a> 7.0.
 </div>
 <div class="disclaimer">
 THIS SOFTWARE SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR

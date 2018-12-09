@@ -20,8 +20,8 @@ This website offers a web service to easily <b>share Smalltalk workspaces</b>.
 It is a <a href="http://en.wikipedia.org/wiki/Pastebin">pastebin</a> for Smalltalk.
 </p>
 <p>
-Using a subclass of the standard Workspace <b>tool</b> called <b>ZnWorkspace</b>,
-you can easily <b>publish the contents of any workspace to this website</b>.
+Using the standard Workspace <b>GTPlayground</b>,
+you can easily <b>publish the contents of any workspace to this website/webservice</b>.
 </p>
 <p>
 Each time you publish a workspace, you will create a new shared web workspace.
@@ -35,7 +35,7 @@ Recepients will then be able to <b>open the shared workspace using a web browser
 The HTML page generated will apply Smalltalk aware syntax highlighting to the contents.
 </p>
 <p>
-Alternatively, recipients of a shared workspace URL or key can <b>use ZnWorkspace
+Alternatively, recipients of a shared workspace URL or key can <b>use Spotter or GTPlayground
 to open the contents right in an image</b>, ready to be used.
 </p>
 <p>
@@ -63,7 +63,7 @@ Additionally, adding a query parameter format=html or format=text to the URL wil
 <p>
 Once created, shared workspaces are read-only. They can neither be modified, nor deleted.
 Little used workspaces will eventually be removed after some period of time.
-The maximum size for workspaces is limited to 32 Kb. 
+The maximum size for workspaces is limited to 2Kb. 
 Any line end convention as well as ASCII, Latin1 and UTF-8 encoding are supported for incoming data.
 Workspaces are always served using the Unix line end convention and UTF-8 encoding.
 </p>

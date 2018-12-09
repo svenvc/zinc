@@ -1,15 +1,14 @@
 {
+	"commentStamp" : "SvenVanCaekenberghe 12/9/2018 19:05",
+	"super" : "Object",
 	"category" : "Zinc-WWS-Server",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "SvenVanCaekenberghe 1/28/2012 18:53",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"workspaces",
-		"endpoint" ],
+		"endpoint"
+	],
 	"name" : "ZnWebWorkspaceDelegate",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

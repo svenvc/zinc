@@ -1,7 +1,7 @@
 private html generation
 generateNewPage
 	^ String streamContents: [ :stream |
-		stream << ZnConstants standardHtmlDocType.
+		stream << '<!DOCTYPE html>'.
 		stream << '<html>'.
 		stream << self newPageData.
 		stream << self standardPageFooter.
