@@ -1,9 +1,0 @@
-{
-	"instance" : {
-		"testChunkedWithExtraHeaders" : "",
-		"testReadStreaming" : "",
-		"testReadStreamingWriting" : "",
-		"testChunked" : ""
-	},
-	"class" : { }
-}

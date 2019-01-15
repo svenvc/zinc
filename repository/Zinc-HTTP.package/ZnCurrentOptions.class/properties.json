@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 1/13/2019 19:34",
+	"super" : "DynamicVariable",
+	"category" : "Zinc-HTTP-Variables",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnCurrentOptions",
+	"type" : "normal"
+}

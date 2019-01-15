@@ -1,9 +1,0 @@
-{
-	"instance" : {
-		"testAddCredential" : "",
-		"testAccessors" : "",
-		"testWithCookieJar" : "",
-		"dummyCredential" : ""
-	},
-	"class" : { }
-}
