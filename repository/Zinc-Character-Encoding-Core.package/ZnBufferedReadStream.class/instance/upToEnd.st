@@ -2,10 +2,22 @@ accessing
 upToEnd
 	"Read elements until the stream is atEnd and return them as a collection."
 
-	^ self collectionSpecies
-		streamContents: [ :out | 
+	| streamSize result |
+
+	"If the stream knows its size we can reduce overhead by allocating a buffer of the correct size.
+	If the size is an over-estimate, #next: will copy the results in to a buffer of the correct size."
+	streamSize := [ self size ]
+		on: Error
+		do: [ 0 ].
+	streamSize > 0 ifTrue:
+		[ result := self next: (streamSize - self position) ].
+	"If the size is an under-estimate we're not at the end, get the rest"
+	self atEnd ifFalse:
+		[ result := self collectionSpecies streamContents: [ :out | 
+			result ifNotNil: [ out nextPutAll: result ].
 			[ self atEnd ] whileFalse: [ 
 				position > limit
 					ifTrue: [ self nextBuffer ].	
 				out next: limit - position + 1 putAll: buffer startingAt: position.
-				position := limit + 1 ] ]
+				position := limit + 1 ] ] ].
+	^result
