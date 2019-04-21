@@ -1,9 +1,0 @@
-{
-	"instance" : {
-		"testReading" : "",
-		"testReadingWrongVersion" : "",
-		"testWriting" : "",
-		"testReadingWrongMethod" : ""
-	},
-	"class" : { }
-}

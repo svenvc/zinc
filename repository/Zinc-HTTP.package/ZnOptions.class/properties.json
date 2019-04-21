@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 1/11/2019 23:48",
+	"super" : "Object",
+	"category" : "Zinc-HTTP-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"globalDefault"
+	],
+	"instvars" : [
+		"options",
+		"parent",
+		"writable"
+	],
+	"name" : "ZnOptions",
+	"type" : "normal"
+}

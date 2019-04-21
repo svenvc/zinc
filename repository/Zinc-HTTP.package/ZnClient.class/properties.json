@@ -12,7 +12,8 @@
 		"lastUsed",
 		"options",
 		"session",
-		"logLevel"
+		"logLevel",
+		"newOptions"
 	],
 	"name" : "ZnClient",
 	"type" : "normal"

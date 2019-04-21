@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "SvenVanCaekenberghe 2/25/2019 15:18",
 	"super" : "Object",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [ ],
@@ -13,7 +13,9 @@
 		"inverse",
 		"lineLength",
 		"lineEnd",
-		"whitespace"
+		"whitespace",
+		"padding",
+		"strict"
 	],
 	"name" : "ZnBase64Encoder",
 	"type" : "normal"

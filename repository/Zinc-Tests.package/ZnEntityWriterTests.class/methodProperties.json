@@ -1,9 +1,0 @@
-{
-	"instance" : {
-		"testPlain" : "",
-		"testPlainUsingReader" : "",
-		"testGzippedAndChunked" : "",
-		"testChunkedOnly" : ""
-	},
-	"class" : { }
-}

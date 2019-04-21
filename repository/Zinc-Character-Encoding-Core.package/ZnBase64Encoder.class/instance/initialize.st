@@ -3,4 +3,6 @@ initialize
 	super initialize.
 	alphabet := DefaultAlphabet.
 	inverse := DefaultInverse.
-	self whitespace: #any
+	self padding: $=.
+	self whitespace: #any.
+	self beStrict

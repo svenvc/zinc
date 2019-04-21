@@ -8,8 +8,7 @@ responseFrom: aRequestContext
 	partialHeaders keysAndValuesDo: [ :key :value |
 		fullHeaders at: key put: value greaseString ].
 	cookies do: [ :each |
-		fullHeaders at: 'Set-Cookie' add: each oldNetscapeString.
-		fullHeaders at: 'Set-Cookie2' add: each rfc2965String ].
+		fullHeaders at: 'Set-Cookie' add: each rfc6265String ].
 	contentType := seasideResponse contentType greaseString.
 	contents := seasideResponse contents.
 	entity := (ZnEntity bytes: contents) contentType: contentType; yourself.

@@ -11,4 +11,4 @@ downloadEntityTo: path
 	ZnFileSystemUtils
 		binaryWriteStreamFor: target
 		do: [ :fileStream |
-			self withProgressDo: [ self entity writeOn: fileStream ] ]
+			self withDynamicVariablesDo: [ self entity writeOn: fileStream ] ]

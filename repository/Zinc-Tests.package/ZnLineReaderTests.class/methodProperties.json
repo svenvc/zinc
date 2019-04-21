@@ -1,9 +1,0 @@
-{
-	"instance" : {
-		"testSimple" : "",
-		"testLineTooLong" : "",
-		"testBinary" : "",
-		"testLineTooLongDefault" : ""
-	},
-	"class" : { }
-}

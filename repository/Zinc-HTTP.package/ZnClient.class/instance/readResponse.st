@@ -9,5 +9,5 @@ readResponse
 					self streaming
 						ifTrue: [ ZnResponse readStreamingFrom: connection ]
 						ifFalse: [ 
-							self withMaximumEntitySizeDo: [ self reader value: connection ] ] ] ] ].
+							self reader value: connection ] ] ] ].
 	lastUsed := Time totalSeconds

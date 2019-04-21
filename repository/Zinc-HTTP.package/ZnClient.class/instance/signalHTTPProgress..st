@@ -1,4 +1,4 @@
 private
 signalHTTPProgress: message
-	self signalProgress
+	(ZnCurrentOptions at: #signalProgress)
 		ifTrue: [ HTTPProgress signal: message ]

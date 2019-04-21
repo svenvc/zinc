@@ -1,0 +1,1 @@
+I am ZnOptions, a object that holds key/value options for configuration, parametrization and settings.

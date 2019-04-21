@@ -9,7 +9,7 @@ serveConnectionOn: listeningSocket
 	socket ifNil: [ ^ self noteAcceptWaitTimedOut ].
 	stream := self socketStreamOn: socket.
 	[ 
-	[ self executeOneRequestResponseOn: stream ]
+	[ self withDynamicVariablesDo: [ self executeOneRequestResponseOn: stream ] ]
 		ensure: [ 
 			self logConnectionClosed: stream.
 			stream close ] ]

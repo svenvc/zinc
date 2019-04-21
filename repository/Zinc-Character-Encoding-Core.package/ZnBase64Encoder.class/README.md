@@ -17,4 +17,13 @@ Note that to encode a String as Base64, you first have to encode the characters 
 
 See also http://en.wikipedia.org/wiki/Base64
 
+I can be configured with 
+
+- a custom alphabet (#alphabet: #standardAlphabetWith:and:)
+- optional line breaking (#breakLines #breakLinesAt:)
+- the line end convention to use when breaking lines (#lineEndConvention:)
+- custom padding character or no padding (#padding: #noPadding)
+- optional enforcing of padding on input (#beStrict #beLenient) 
+- what kind of whitespace I accept (#whitespace:)
+
 Part of Zinc HTTP Components.
