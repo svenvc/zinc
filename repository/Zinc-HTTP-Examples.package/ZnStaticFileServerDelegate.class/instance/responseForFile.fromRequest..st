@@ -1,7 +1,7 @@
 private
 responseForFile: filename fromRequest: aRequest
 	| file entry size time mimeType fileStream entity response modified |
-	file := filename asFileReference.
+	file := directory fileSystem referenceTo: filename  "filename asFileReference".
 	entry := file entry.
 	size := entry size.
 	time := entry modificationTime.
