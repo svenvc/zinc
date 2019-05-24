@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'Zinc-Character-Encoding-Core'!
+SystemOrganization addCategory: #'Zinc-Character-Encoding-Core'!
