@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "PierceNg 5/23/2019 17:51",
+	"super" : "ZnBase64Encoder",
+	"category" : "Zinc-Character-Encoding-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DefaultAlphabet2",
+		"DefaultInverse2"
+	],
+	"instvars" : [ ],
+	"name" : "ZnBase64UrlEncoder",
+	"type" : "normal"
+}

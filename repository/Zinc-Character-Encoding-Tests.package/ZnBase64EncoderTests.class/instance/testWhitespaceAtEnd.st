@@ -1,7 +1,7 @@
 testing
 testWhitespaceAtEnd
 	| encoder |
-	encoder := ZnBase64Encoder new.
+	encoder := self encoderClass new.
 	"whitespace is #any non-alphabet character"
 	self assert: (encoder decode: 'TQ==' , String lf) equals: 'M' asByteArray.
 	encoder whitespace: #separator.

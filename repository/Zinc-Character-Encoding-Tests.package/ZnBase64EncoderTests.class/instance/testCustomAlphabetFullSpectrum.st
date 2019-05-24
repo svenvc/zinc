@@ -1,7 +1,7 @@
 testing
 testCustomAlphabetFullSpectrum
 	| encoder input output |
-	encoder := ZnBase64Encoder new.
+	encoder := self encoderClass new.
 	encoder standardAlphabetWith: $- and: $_.
 	encoder noPadding; beLenient. 
 	input := (0 to: 255) asByteArray , (255 to: 0) asByteArray.

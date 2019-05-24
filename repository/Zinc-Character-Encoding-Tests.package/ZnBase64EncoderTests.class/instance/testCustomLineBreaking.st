@@ -1,7 +1,7 @@
 testing
 testCustomLineBreaking
 	| encoder input output charCount |
-	encoder := ZnBase64Encoder new.
+	encoder := self encoderClass new.
 	encoder breakLinesAt: 16.
 	input := (0 to: 255) asByteArray.
 	output := encoder encode: input.

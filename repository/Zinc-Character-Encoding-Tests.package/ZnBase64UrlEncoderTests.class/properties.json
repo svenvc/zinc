@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ZnBase64EncoderTests",
+	"category" : "Zinc-Character-Encoding-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnBase64UrlEncoderTests",
+	"type" : "normal"
+}

@@ -1,7 +1,7 @@
 testing
 testFullAlphabet
 	| encoder input output |
-	encoder := ZnBase64Encoder new.
+	encoder := self encoderClass new.
 	input := encoder alphabet.
 	output := encoder decode: input.
 	self assert: (encoder encode: output) equals: input.

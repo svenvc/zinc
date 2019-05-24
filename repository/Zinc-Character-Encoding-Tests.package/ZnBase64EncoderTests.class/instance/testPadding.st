@@ -1,7 +1,7 @@
 testing
 testPadding
 	| encoder |
-	encoder := ZnBase64Encoder new.
+	encoder := self encoderClass new.
 	self assert: (encoder encode: 'M' asByteArray) equals: 'TQ=='.
 	self assert: (encoder decode: 'TQ==') equals: 'M' asByteArray.
 	self assert: (encoder encode: 'Ma' asByteArray) equals: 'TWE='.

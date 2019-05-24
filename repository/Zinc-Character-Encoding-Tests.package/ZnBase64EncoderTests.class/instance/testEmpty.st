@@ -1,7 +1,7 @@
 testing
 testEmpty
 	| encoder |
-	encoder := ZnBase64Encoder new.
+	encoder := self encoderClass new.
 	self 
 		assert: (encoder encode: #[])
 		equals: ''.
