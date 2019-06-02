@@ -18,8 +18,11 @@ handleAuthenticationCallback: aParameterDictionary
 	tokenResponse := ZnClient new 
 		request: tokenRequest ;
 		post.
+
 	tokenData := NeoJSONReader fromString: tokenResponse.
-		
+	(tokenData includesKey: 'error')
+		ifTrue: [ Error signal: (tokenData at: 'error') asString ].
+
 	accessToken := tokenData at: 'access_token'.
 	tokenType := tokenData at: 'token_type'.
 	(tokenData includesKey: 'refresh_token')
