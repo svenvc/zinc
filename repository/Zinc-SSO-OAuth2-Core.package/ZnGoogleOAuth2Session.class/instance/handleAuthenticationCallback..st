@@ -5,7 +5,7 @@ handleAuthenticationCallback: aParameterDictionary
 	
 	code := aParameterDictionary at: 'code' ifAbsent: [ ^nil ].
 
-	tokenRequest  := (ZnRequest post: (ZnUrl fromString: 'https://accounts.google.com/o/oauth2/token'))
+	tokenRequest  := (ZnRequest post: (ZnUrl fromString: self tokenEndpoint))
 		entity: (ZnApplicationFormUrlEncodedEntity new
 			at: 'code' put: code ;
 			at: 'client_id' put: self consumerData key ;

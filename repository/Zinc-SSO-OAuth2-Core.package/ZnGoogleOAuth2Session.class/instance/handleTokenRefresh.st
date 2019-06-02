@@ -2,7 +2,7 @@ public
 handleTokenRefresh
 	| tokenRequest tokenResponse tokenData |
 	
-	tokenRequest  := (ZnRequest post: (ZnUrl fromString: 'https://accounts.google.com/o/oauth2/token'))
+	tokenRequest  := (ZnRequest post: (ZnUrl fromString: self tokenEndpoint))
 		entity: (ZnApplicationFormUrlEncodedEntity new
 			at: 'client_id' put: self consumerData key ;
 			at: 'client_secret' put: self consumerData secret ;

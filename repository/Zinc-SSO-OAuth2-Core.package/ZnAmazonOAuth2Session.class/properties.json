@@ -1,14 +1,11 @@
 {
-	"category" : "Zinc-SSO-OAuth2-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "ZnAmazonOAuth2Session",
-	"pools" : [
-		 ],
 	"super" : "ZnOAuth2Session",
-	"type" : "normal" }
+	"category" : "Zinc-SSO-OAuth2-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnAmazonOAuth2Session",
+	"type" : "normal"
+}

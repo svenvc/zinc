@@ -1,3 +1,3 @@
 accessing
-accessType: anObject
-	accessType := anObject
+accessType: aString
+	accessType := aString
