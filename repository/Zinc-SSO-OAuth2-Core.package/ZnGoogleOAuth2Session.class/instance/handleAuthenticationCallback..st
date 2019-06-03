@@ -5,7 +5,7 @@ handleAuthenticationCallback: aParameterDictionary
 	
 	code := aParameterDictionary at: 'code' ifAbsent: [ ^nil ].
 
-	tokenRequest  := (ZnRequest post: (ZnUrl fromString: 'https://accounts.google.com/o/oauth2/token'))
+	tokenRequest  := (ZnRequest post: (ZnUrl fromString: self tokenEndpoint))
 		entity: (ZnApplicationFormUrlEncodedEntity new
 			at: 'code' put: code ;
 			at: 'client_id' put: self consumerData key ;
@@ -18,8 +18,11 @@ handleAuthenticationCallback: aParameterDictionary
 	tokenResponse := ZnClient new 
 		request: tokenRequest ;
 		post.
+
 	tokenData := NeoJSONReader fromString: tokenResponse.
-		
+	(tokenData includesKey: 'error')
+		ifTrue: [ Error signal: (tokenData at: 'error') asString ].
+
 	accessToken := tokenData at: 'access_token'.
 	tokenType := tokenData at: 'token_type'.
 	(tokenData includesKey: 'refresh_token')
