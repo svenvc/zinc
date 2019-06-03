@@ -17,7 +17,6 @@ baseline: spec
 			package: 'Zinc-Zodiac-Core' with: [ spec requires: #('Zinc-HTTP' 'Zodiac-Core') ];
 			package: 'Zinc-Zodiac-Tests' with: [ spec requires:  #('Zinc-Zodiac-Core') ].
 		spec
-			package: 'Zinc-Seaside';	"For now, no dependence on Seaside itself"
 			package: 'Zinc-AWS' with: [ spec requires: #('Zinc-HTTP' 'XML Support') ];
 			package: 'Zinc-REST' with: [ spec requires: #('Zinc-HTTP' 'NeoJSON') ];
 			package: 'Zinc-WebSocket-Core' with: [ spec requires: 'Zinc-HTTP' ];
@@ -47,5 +46,4 @@ baseline: spec
 			group: 'SSO-Demo' with: #('Zinc-SSO-OAuth1-Core' 'Zinc-SSO-OAuth2-Core' 'Zinc-SSO-OpenID-Core');
 			group: 'SSO' with: #('SSO-OAuth1' 'SSO-OAuth2' 'SSO-OpenID' 'SSO-Demo' 'Zinc-SSO-Demo');
 			group: 'WWS' with: #('Zinc-WWS-Server' 'Zinc-WWS-Client');
-			group: 'REST' with: #('Zinc-REST');
-			group: 'Seaside' with: #('Zinc-Seaside') ]
+			group: 'REST' with: #('Zinc-REST') ]
