@@ -11,7 +11,8 @@
 		"scopes",
 		"accessToken",
 		"tokenType",
-		"refreshToken"
+		"refreshToken",
+		"expiresOn"
 	],
 	"name" : "ZnOAuth2Session",
 	"type" : "normal"
