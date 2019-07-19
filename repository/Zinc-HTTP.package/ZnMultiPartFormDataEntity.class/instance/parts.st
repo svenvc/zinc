@@ -1,4 +1,5 @@
 accessing
 parts
-	parts isNil ifTrue: [ parts := OrderedCollection new ].
+
+	parts ifNil: [ parts := OrderedCollection new ].
 	^ parts
