@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnPrefixMappingDelegateTests",
+	"name" : "ZnImageExampleDelegateTest",
 	"type" : "normal"
 }

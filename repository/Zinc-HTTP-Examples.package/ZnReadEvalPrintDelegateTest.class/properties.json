@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnStaticFileDecoratorDelegateTests",
+	"name" : "ZnReadEvalPrintDelegateTest",
 	"type" : "normal"
 }
