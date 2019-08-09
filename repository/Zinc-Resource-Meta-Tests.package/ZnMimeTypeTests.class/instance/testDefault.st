@@ -1,3 +1,3 @@
 testing
 testDefault
-	self assert: ZnMimeType default = ZnMimeType applicationOctetStream
+	self assert: ZnMimeType default equals: ZnMimeType applicationOctetStream
