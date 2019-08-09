@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnNewLineWriterStreamTests",
+	"name" : "ZnCharacterStreamTest",
 	"type" : "normal"
 }

@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 4/19/2018 14:14",
+	"commentStamp" : "",
 	"super" : "TestCase",
 	"category" : "Zinc-Character-Encoding-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnBufferedStreamByteTests",
+	"name" : "ZnPositionableReadStreamTest",
 	"type" : "normal"
 }

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnPercentEncoderTests",
+	"name" : "ZnPercentEncoderTest",
 	"type" : "normal"
 }

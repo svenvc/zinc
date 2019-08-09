@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnBase64EncoderTests",
+	"name" : "ZnFastLineReaderTest",
 	"type" : "normal"
 }
