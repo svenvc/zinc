@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnResourceMetaUtilsTests",
+	"name" : "ZnMimeTypeTest",
 	"type" : "normal"
 }
