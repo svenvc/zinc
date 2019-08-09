@@ -1,3 +1,3 @@
 testing
 testIdentity
-	self assert: ZnMimeType textPlain = ZnMimeType textPlain
+	self assert: ZnMimeType textPlain equals: ZnMimeType textPlain
