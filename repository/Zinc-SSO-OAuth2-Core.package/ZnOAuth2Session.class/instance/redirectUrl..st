@@ -1,3 +1,3 @@
 accessing
-redirectUrl: anObject
-	redirectUrl := anObject
+redirectUrl: aString
+	redirectUrl := aString

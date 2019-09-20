@@ -1,3 +1,3 @@
 accessing
-accessToken: anObject
-	accessToken := anObject
+accessToken: aString
+	accessToken := aString

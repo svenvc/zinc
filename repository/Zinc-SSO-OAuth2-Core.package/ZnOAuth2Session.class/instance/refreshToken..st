@@ -1,3 +1,3 @@
 accessing
-refreshToken: anObject
-	refreshToken := anObject
+refreshToken: aString
+	refreshToken := aString
