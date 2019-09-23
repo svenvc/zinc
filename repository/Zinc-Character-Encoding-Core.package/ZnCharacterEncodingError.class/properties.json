@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "AlistairGrant 9/23/2019 08:49",
 	"super" : "Error",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"buffer"
+	],
 	"name" : "ZnCharacterEncodingError",
 	"type" : "normal"
 }

@@ -4,6 +4,8 @@ decodeBytesIntoWideString: bytes
 
 	| byteStream |
 	byteStream := bytes readStream.
-	^ WideString streamContents: [ :stream |
+	^ [ WideString streamContents: [ :stream |
 		[ byteStream atEnd ] whileFalse: [
-			stream nextPut: (self nextFromStream: byteStream) ] ] 
+			stream nextPut: (self nextFromStream: byteStream) ] ] ]
+				on: ZnCharacterEncodingError 
+				do: [ :ex | ex buffer: bytes. ex pass ]

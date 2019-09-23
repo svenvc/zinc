@@ -4,6 +4,8 @@ decodeBytes: bytes
 	
 	| byteStream |
 	byteStream := bytes readStream.
-	^ String streamContents: [ :stream |
+	^ [ String streamContents: [ :stream |
 		[ byteStream atEnd ] whileFalse: [
-			stream nextPut: (self nextFromStream: byteStream) ] ] 
+			stream nextPut: (self nextFromStream: byteStream) ] ] ]
+				on: ZnCharacterEncodingError 
+				do: [ :ex | ex buffer: bytes. ex pass ]
