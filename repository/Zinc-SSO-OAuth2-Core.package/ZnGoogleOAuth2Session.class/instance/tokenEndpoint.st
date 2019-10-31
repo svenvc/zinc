@@ -1,3 +1,3 @@
 private
 tokenEndpoint
-	^ 'https://www.googleapis.com/oauth2/v4/token'
+	^ 'https://oauth2.googleapis.com/token'

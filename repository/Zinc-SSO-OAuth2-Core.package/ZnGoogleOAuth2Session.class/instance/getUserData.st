@@ -3,7 +3,7 @@ getUserData
 
 	| url response |
 	
-	url := (ZnUrl fromString: 'https://www.googleapis.com/oauth2/v1/userinfo')
+	url := (ZnUrl fromString: 'https://www.googleapis.com/oauth2/v3/userinfo')
 		queryAt: 'access_token' put: self accessToken;
 		yourself.
 
