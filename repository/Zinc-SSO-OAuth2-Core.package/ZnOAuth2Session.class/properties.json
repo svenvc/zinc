@@ -12,7 +12,9 @@
 		"accessToken",
 		"tokenType",
 		"refreshToken",
-		"expiresOn"
+		"expiresOn",
+		"authorizationEndpoint",
+		"tokenEndpoint"
 	],
 	"name" : "ZnOAuth2Session",
 	"type" : "normal"

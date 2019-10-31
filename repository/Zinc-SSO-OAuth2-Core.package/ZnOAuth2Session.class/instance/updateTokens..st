@@ -5,7 +5,7 @@ updateTokens: tokenData
 	(tokenData includesKey: 'error')
 		ifTrue: [ ZnAuthError signal: (tokenData at: 'error') asString ].
 
-    accessToken := tokenData at: 'access_token'.
+	accessToken := tokenData at: 'access_token'.
 	tokenType := tokenData at: 'token_type'.
 	(tokenData includesKey: 'expires_in')
 		ifTrue: [ self updateExpiration: (tokenData at: 'expires_in') ].
