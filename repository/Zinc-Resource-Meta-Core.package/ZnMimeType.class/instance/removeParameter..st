@@ -1,4 +1,5 @@
 parameters
 removeParameter: key
-	parameters isNil ifTrue: [ ^ self ].
+
+	parameters ifNil: [ ^ self ].
 	^ self parameters removeKey: key ifAbsent: [ nil ]

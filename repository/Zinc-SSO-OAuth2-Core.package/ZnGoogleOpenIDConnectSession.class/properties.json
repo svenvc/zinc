@@ -1,14 +1,11 @@
 {
-	"category" : "Zinc-SSO-OAuth2-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JanVanDeSandt 3/21/2014 14:33",
-	"instvars" : [
-		 ],
-	"name" : "ZnGoogleOpenIDConnectSession",
-	"pools" : [
-		 ],
 	"super" : "ZnOpenIDConnectSession",
-	"type" : "normal" }
+	"category" : "Zinc-SSO-OAuth2-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnGoogleOpenIDConnectSession",
+	"type" : "normal"
+}

@@ -1,15 +1,14 @@
 {
+	"commentStamp" : "JonathanVanAlteren 6/2/2019 16:38",
+	"super" : "ZnOAuth2Session",
 	"category" : "Zinc-SSO-OAuth2-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "<historical>",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"accessType",
-		"approvalPrompt" ],
+		"prompt"
+	],
 	"name" : "ZnGoogleOAuth2Session",
-	"pools" : [
-		 ],
-	"super" : "ZnOAuth2Session",
-	"type" : "normal" }
+	"type" : "normal"
+}

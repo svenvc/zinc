@@ -1,18 +1,8 @@
 public
-authenticationUrlWithState: aStateString
+authenticationUrlWithState: stateString
+	"Add access_type and prompt parameters for Google OAuth 2.0."
 
-	| authUrl |
-
-	authUrl := (ZnUrl fromString: 'https://accounts.google.com/o/oauth2/auth')
-		queryAt: 'response_type' put: 'code' ;
-		queryAt: 'client_id' put: self consumerData key ;
-		queryAt: 'redirect_uri' put: self redirectUrl ;
-		queryAt: 'scope' put: self scopeParameter ;
-		queryAt: 'state' put: aStateString ;
-		queryAt: 'access_type' put: self accessType ;
-		yourself.
-
-	self isForceApprovalPrompt
-		ifTrue: [ authUrl queryAt: 'approval_prompt' put: 'force' ].
-		
-	^authUrl
+	^ (super authenticationUrlWithState: stateString)
+		queryAt: 'access_type' put: self accessType;
+		queryAt: 'prompt' put: self prompt;
+		yourself

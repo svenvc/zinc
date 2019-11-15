@@ -1,4 +1,4 @@
 accessing-path
 closePath
 	self isDirectoryPath
-		ifFalse: [ self addPathSegment: #/ ]
+		ifFalse: [ self addPathSegment: $/ ]

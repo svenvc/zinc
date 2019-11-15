@@ -1,16 +1,15 @@
 {
-	"category" : "Zinc-SSO-OAuth2-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "JanVanDeSandt 3/21/2014 14:34",
+	"super" : "ZnOAuth2Session",
+	"category" : "Zinc-SSO-OAuth2-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"discoveryDocument",
 		"authenticationState",
-		"extraAuthenticationParameters" ],
+		"extraAuthenticationParameters"
+	],
 	"name" : "ZnOpenIDConnectSession",
-	"pools" : [
-		 ],
-	"super" : "ZnOAuth2Session",
-	"type" : "normal" }
+	"type" : "normal"
+}

@@ -1,13 +1,16 @@
 public
 handleRequest: request
-	| prefix prefixHandler |
+
+	| prefix |
+
 	prefix := request uri isSlash
 		ifTrue: [ prefixMap at: '/' ifAbsent: [ nil ] ]
 		ifFalse: [ request uri firstPathSegment ].
-	prefixHandler := prefixMap at: prefix ifAbsent: [ nil ].
-	prefixHandler isNil
-		ifFalse: [ 
-			^ prefixHandler isSymbol
+	^ prefixMap
+		at: prefix
+		ifPresent: [ :prefixHandler | 
+			prefixHandler isSymbol
 				ifTrue: [ self perform: prefixHandler with: request ]
-				ifFalse: [ prefixHandler value: request ] ].
-	^ ZnResponse notFound: request uri
+				ifFalse: [ prefixHandler value: request ]
+			]
+		ifAbsent: [ ZnResponse notFound: request uri ]
