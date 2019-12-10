@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 12/8/2019 14:05",
+	"commentStamp" : "SvenVanCaekenberghe 12/8/2019 12:29",
 	"super" : "TestCase",
 	"category" : "Zinc-HTTP-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ZnImageExampleDelegateTest",
+	"instvars" : [
+		"client",
+		"server"
+	],
+	"name" : "ZnKeyValueStoreTest",
 	"type" : "normal"
 }
