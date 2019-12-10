@@ -4,6 +4,6 @@ useConnection: connection
 	keep using connection in the current thread/process after the server wrote the response.
 	We start a conversation by instanciating a WebSocket and passing it to our continuation."
 	
-	| webSocket message |
+	| webSocket |
 	webSocket := ZnWebSocket onStream: connection.
 	self continuation value: webSocket

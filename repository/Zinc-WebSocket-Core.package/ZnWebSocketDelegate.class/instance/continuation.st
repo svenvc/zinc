@@ -4,4 +4,4 @@ continuation
 	We will receive a ready-to-use instanciated WebSocket.
 	We delegate processing to our handler."
 
-	^ [ :webSocket |self handler value: webSocket ]
+	^ [ :webSocket | self handler value: webSocket ]
