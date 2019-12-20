@@ -1,8 +1,8 @@
 testing
 testWritingApplicationUrlEncoding
-	| entity string |
+	| entity bytes |
 	entity := ZnApplicationFormUrlEncodedEntity new.
 	entity at: 'foo' put: 'bar'.
-	string := String streamContents: [ :stream | entity writeOn: stream ].
-	self assert: string = 'foo=bar'.
-	self assert: entity contentLength = 7
+	bytes := ByteArray streamContents: [ :stream | entity writeOn: stream ].
+	self assert: bytes equals: (ZnNullEncoder new encodeString: 'foo=bar').
+	self assert: entity contentLength equals: 7
