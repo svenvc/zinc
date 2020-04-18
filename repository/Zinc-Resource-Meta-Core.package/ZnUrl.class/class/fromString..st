@@ -1,5 +1,5 @@
 instance creation
 fromString: string
-	^ (self new)
+	^ self new
 		parseFrom: string; 
 		yourself 
