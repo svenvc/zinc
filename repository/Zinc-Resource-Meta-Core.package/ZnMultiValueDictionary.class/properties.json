@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Dictionary",
+	"super" : "OrderedDictionary",
 	"category" : "Zinc-Resource-Meta-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
