@@ -1,14 +1,10 @@
 public
 getUserData
-
-	| url client response |
-	
-	url := (ZnUrl fromString: 'https://www.googleapis.com/oauth2/v3/userinfo')
-		queryAt: 'access_token' put: self accessToken;
-		yourself.
-
-	client := ZnClient new.
-	response := [ client get: url ] 
-		ensure: [ client close ].
-	
-	^ NeoJSONReader fromString: response
+	| response |
+	response := ZnClient new 
+		systemPolicy;
+		beOneShot;
+		url: 'https://www.googleapis.com/oauth2/v3/userinfo';
+		queryAt: 'access_token' put: self liveAccessToken;
+		get.
+	^ NeoJSONObject fromString: response

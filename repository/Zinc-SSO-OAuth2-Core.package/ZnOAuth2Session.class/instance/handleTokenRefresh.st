@@ -3,7 +3,7 @@ handleTokenRefresh
 	"Refresh my access token.
 	
 	See for details: https://tools.ietf.org/html/rfc6749#section-6"
-	| tokenRequest client tokenResponse |
+	| tokenRequest tokenResponse |
 	
 	tokenRequest  := (ZnRequest post: (ZnUrl fromString: self tokenEndpoint))
 		entity: (ZnApplicationFormUrlEncodedEntity new
@@ -14,9 +14,10 @@ handleTokenRefresh
 			yourself);
 		yourself.
 
-	client := ZnClient new.
-	tokenResponse := [ 
-		client request: tokenRequest;
-			post ] ensure: [ client close ].
+	tokenResponse := ZnClient new
+		systemPolicy;
+		beOneShot;
+		request: tokenRequest;
+		post.
 
 	self updateTokens: (NeoJSONReader fromString: tokenResponse).
