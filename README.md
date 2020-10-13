@@ -87,9 +87,9 @@ In particular, in the following chapters:
 
 A live website can be found at [http://zn.stfx.eu](http://zn.stfx.eu). You can run part of this website locally.
 
-The original [Zinc HTTP Components](zinc-http-components-paper.md) paper.
+The original [Zinc HTTP Components](doc/zinc-http-components-paper.md) paper.
 
-The [Building and deploying your first web app with Pharo](build-and-deploy-1st-webapp/build-deploy-1st-webapp.md) tutorial.
+The [Building and deploying your first web app with Pharo](doc/build-and-deploy-1st-webapp/build-deploy-1st-webapp.md) tutorial.
 
 There is a separate [GemStone README](README-gemstone.md).
 

@@ -5,5 +5,5 @@ handleRequest: request
 	(prefix isNil or: [ prefix = request uri pathSegments ])
 		ifFalse: [ ^ ZnResponse notFound: request uri ].
 	^ (self isValidWebSocketRequest: request)
-		ifTrue: [ self webSocketResponseForRequest: request ]
-		ifFalse: [ ZnResponse badRequest: request ]
+			ifTrue: [ self webSocketResponseForRequest: request ]
+			ifFalse: [ ZnResponse badRequest: request ]

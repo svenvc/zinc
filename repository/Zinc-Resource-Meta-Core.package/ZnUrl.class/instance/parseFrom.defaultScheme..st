@@ -9,7 +9,7 @@ parseFrom: string defaultScheme: defaultScheme
 			end := index - 1 ].
 	(index := string indexOf: $?) > 0
 		ifTrue: [
-			self query: (ZnResourceMetaUtils parseQueryFrom: (ReadStream on: string from: index + 1 to: end)).
+			self query: (self parseQueryFrom: (ReadStream on: string from: index + 1 to: end)).
 			end := index - 1 ].
 	((index := string indexOfSubCollection: '://') > 0 and: [ index <= end ])
 		ifTrue: [

@@ -9,6 +9,6 @@ value: webSocket
 			webSocket sendMessage: self status.
 			1 second asDelay wait.
 			webSocket isConnected ] whileTrue ] 
-		on: ConnectionClosed 
-		do: [ webSocket logGeneric: 'Ignoring connection close' ].
+		on: NetworkError  
+		do: [ webSocket logGeneric: 'Ignoring network error' ].
 	webSocket logGeneric: 'Stopping status streaming' 

@@ -1,6 +1,5 @@
 initialize-release
 setConsumerData: aConsumerData
 
-	(consumerData := aConsumerData)
-		ifNotNil: [ 
-			redirectUrl := aConsumerData redirectUrl ]
+	consumerData := aConsumerData.
+	redirectUrl := aConsumerData ifNotNil: [ aConsumerData redirectUrl ]

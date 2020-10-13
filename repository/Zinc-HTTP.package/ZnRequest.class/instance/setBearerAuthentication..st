@@ -1,7 +1,6 @@
 accessing
 setBearerAuthentication: token
-	token isNil
-		ifTrue: [
-			self headers removeKey: 'Authorization' ifAbsent: []]
-		ifFalse: [
-			self setAuthorization: 'Bearer ', token ]
+
+	token
+		ifNil: [ self headers removeKey: 'Authorization' ifAbsent: [  ] ]
+		ifNotNil: [ self setAuthorization: 'Bearer ' , token ]

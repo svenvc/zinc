@@ -8,7 +8,7 @@ value: webSocket
 		webSocket runWith: [ :message |
 			webSocket logGeneric: 'Received message: ', message printString.
 			self distributeMessage: message ] ] 
-		on: ConnectionClosed 
+		on: NetworkError 
 		do: [
-			webSocket logGeneric: 'Connection close, cleaning up'.
+			webSocket logGeneric: 'Network error, cleaning up'.
 			self unregister: webSocket ]

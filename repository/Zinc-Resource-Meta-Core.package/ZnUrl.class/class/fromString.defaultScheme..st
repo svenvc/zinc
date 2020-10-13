@@ -1,5 +1,5 @@
 instance creation
 fromString: string defaultScheme: defaultScheme
-	^ (self new)
+	^ self new
 		parseFrom: string defaultScheme: defaultScheme; 
 		yourself 
