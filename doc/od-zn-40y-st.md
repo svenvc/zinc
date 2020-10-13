@@ -10,7 +10,9 @@ Sven Van Caekenberghe - August 2020
 
 HTTP is one of the most important underlying technologies of the internet. Any modern system needs a good implementation of HTTP. But a Smalltalk system requires more than that: its implementation of HTTP should be written in itself so that it can be fully understood by its users.
 
-Zinc HTTP Components is a fundamental part of Pharo Smalltalk providing an implementation of the HTTP protocol including a high level client and server. This article shows a number of cases of real world object design from the Zinc HTTP Components framework.  
+Zinc HTTP Components is a fundamental part of Pharo Smalltalk providing an implementation of the HTTP protocol including a high level client and server. It is used as the foundation for many applications, including those consuming or offering Web Services and those built with the Seaside Web Application Framework.
+
+This article shows a number of cases of real world object design from the Zinc HTTP Components framework.  
 
 
 ## Modelling the protocol
@@ -40,7 +42,9 @@ First we define a URL object. Second we use this URL to create a request object.
 
 Next we open a network connection (TCP socket stream) to the host part of the URL. We are now ready to send off our request by writing it on the wire. Finally we flush the stream to make sure the data is fully transferred.
 
-If all goes well, we can now use the same connection to read the response from the server.
+If all goes well, we can now use the connection to read the response from the server.
+
+![A response being inspected](zn-response.png)
 
 In the above script, you can inspect any of the objects involved to figure out what they represent. The standard print representations of the request and response are already helpful.
 
@@ -194,7 +198,11 @@ In Pharo you can inspect the following expression to get started.
 
     ZnLogEvent announcer.
     
-In one of the inspector tabs you will see LogEvents arrive while Zinc HTTP Components executes client or server side code. LogEvents are created, filled with useful data, and then emitted.
+In one of the inspector tabs you will see LogEvents arrive while Zinc HTTP Components executes client or server side code. 
+
+![Log events being inspected](zn-log-events.png)
+
+LogEvents are created, filled with useful data, and then emitted.
 
     ZnLogEvent>>#emit
       self announcer announce: self 
@@ -240,5 +248,7 @@ I hope this article piqued your interest enough to download Pharo Smalltalk and 
 
 
 ## Author Bio
+
+![Sven Van Caekenberghe](svc.png)
 
 Sven Van Caekenberghe loves software development for cloud and web based systems using high-level, dynamic and interactive environments such as Smalltalk and Lisp. He is the founder and co-owner of Beta Nine, a software engineering company in Hasselt, Belgium. He is a proud supporter of the Pharo Association and Consortium as well as a member of the Board. He actively develops and maintains several key open source libraries for Pharo.
