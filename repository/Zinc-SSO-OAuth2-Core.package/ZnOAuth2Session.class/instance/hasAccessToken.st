@@ -1,3 +1,3 @@
 testing
 hasAccessToken
-	^ self accessToken isNotNil
+	^ self accessToken isEmptyOrNil not

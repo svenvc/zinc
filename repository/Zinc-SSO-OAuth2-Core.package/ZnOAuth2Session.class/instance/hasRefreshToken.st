@@ -1,3 +1,3 @@
 testing
 hasRefreshToken
-	^ self refreshToken isNotNil
+	^ self refreshToken isEmptyOrNil not
