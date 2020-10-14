@@ -1,10 +1,8 @@
 public
 getUserData
-	| response |
-	response := ZnClient new 
-		systemPolicy;
-		beOneShot;
-		url: 'https://www.googleapis.com/oauth2/v3/userinfo';
-		queryAt: 'access_token' put: self liveAccessToken;
-		get.
-	^ NeoJSONObject fromString: response
+	self 
+		deprecated: 'Rename to #getUserinfo to match the name of the Google REST resource' 
+		on: '2020/10/14'
+		in: #Pharo7 
+		transformWith: '`@receiver getUserData' -> '`@receiver getUserinfo'.
+	^ self getUserinfo
