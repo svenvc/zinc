@@ -1,8 +1,8 @@
 utils
 extractBasicAuthorization: request
-	| authorization |
+	| authorization decodedCredentials indexOfColon |
 	authorization := (request headers at: 'Authorization' ifAbsent: [ ^ nil ]) findTokens: ' '.
 	(authorization size = 2 and: [ authorization first = 'Basic' ]) ifFalse: [ ^ nil ].
-	authorization :=  (ZnUtils decodeBase64: authorization second) findTokens: ':'.
-	authorization size = 2 ifFalse: [ ^ nil ].
-	^ authorization first -> authorization second
+	decodedCredentials := ZnUtils decodeBase64: authorization second.
+	indexOfColon := decodedCredentials indexOf: $: ifAbsent: [ ^ nil ].
+	^ (decodedCredentials first: indexOfColon - 1) -> (decodedCredentials allButFirst: indexOfColon)
