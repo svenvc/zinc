@@ -1,7 +1,7 @@
 testing
-testFileUrl
+testFileUrlNoSpecifiedHost
 	| url |
-	url := 'file://localhost/users/Sven/Desktop/foo.txt' asZnUrl.
+	url := 'file:/users/Sven/Desktop/foo.txt' asZnUrl.
 	self assert: url isFile.
-	self assert: url host equals: 'localhost'.
+	self assert: url host isNil.
 	self assert: url pathSegments equals: #( 'users' 'Sven' 'Desktop' 'foo.txt' ) asOrderedCollection 
