@@ -8,4 +8,4 @@ writeOn: stream
 				encoder << field; nextPut: $: ; << value; << String crlf ] ].
 	encoder << String crlf; flush.
 	ZnCurrentServer value 
-		ifNotNil: [ :server | server log info: [ 'Wrote ', self printString ] ]
+		ifNotNil: [ :server | server logServerGeneric: 'Wrote ', self printString ]
