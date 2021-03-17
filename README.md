@@ -4,8 +4,7 @@
 Zinc HTTP Components is an open-source Smalltalk framework 
 to deal with the HTTP networking protocol.
 
-[![Build Status](https://travis-ci.org/svenvc/zinc.svg?branch=master)](https://travis-ci.org/svenvc/zinc)
-
+[![CI](https://github.com/svenvc/zinc/actions/workflows/CI.yml/badge.svg)](https://github.com/svenvc/zinc/actions/workflows/CI.yml)
 
 Based on core classes modelling all main HTTP concepts, a full featured HTTP client and server are provided.
 
