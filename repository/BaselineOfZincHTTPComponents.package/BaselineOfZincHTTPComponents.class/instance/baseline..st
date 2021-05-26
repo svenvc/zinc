@@ -29,7 +29,8 @@ baseline: spec
 			package: 'Zinc-SSO-OpenID-Tests' with: [ spec requires: #('Zinc-SSO-OpenID-Core') ];
 			package: 'Zinc-WebDAV' with: [ spec requires: 'Zinc-HTTP' ];
 			package: 'Zinc-WWS-Server' with: [ spec requires: 'Zinc-HTTP' ];
-			package: 'Zinc-WWS-Client' with: [ spec requires: 'Zinc-HTTP' ].
+			package: 'Zinc-WWS-Client' with: [ spec requires: 'Zinc-HTTP' ];
+			package: 'Zinc-Server-Sent-Events' with: [ spec requires: 'Zinc-HTTP' ].
 		spec
 			group: 'default' with: #('Core' 'Tests');
 			group: 'Core' with: #('Zinc-HTTP' 'Zinc-HTTP-Examples' 'Zinc-Zodiac-Core');
@@ -46,4 +47,5 @@ baseline: spec
 			group: 'SSO-Demo' with: #('Zinc-SSO-OAuth1-Core' 'Zinc-SSO-OAuth2-Core' 'Zinc-SSO-OpenID-Core');
 			group: 'SSO' with: #('SSO-OAuth1' 'SSO-OAuth2' 'SSO-OpenID' 'SSO-Demo' 'Zinc-SSO-Demo');
 			group: 'WWS' with: #('Zinc-WWS-Server' 'Zinc-WWS-Client');
-			group: 'REST' with: #('Zinc-REST') ]
+			group: 'REST' with: #('Zinc-REST');
+			group: 'Server-Sent-Events' with: #('Zinc-Server-Sent-Events') ]

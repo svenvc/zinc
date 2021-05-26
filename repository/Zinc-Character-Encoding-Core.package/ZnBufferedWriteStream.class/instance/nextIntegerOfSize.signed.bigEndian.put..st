@@ -15,8 +15,8 @@ nextIntegerOfSize: numberOfBytes signed: signed bigEndian: bigEndian put: value
 	bigEndian
 		ifTrue: [ 
 			numberOfBytes to: 1 by: -1 do: [ :index |
-				self nextPut: (unsignedValue digitAt: index) ] ]
+				self nextPut: (unsignedValue byteAt: index) ] ]
 		ifFalse: [ 
 			1 to: numberOfBytes do: [ :index |
-				self nextPut: (unsignedValue digitAt: index) ] ].
+				self nextPut: (unsignedValue byteAt: index) ] ].
 	^ value

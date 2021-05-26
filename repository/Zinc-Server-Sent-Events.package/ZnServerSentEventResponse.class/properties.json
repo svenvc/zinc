@@ -1,14 +1,13 @@
 {
-	"category" : "Zinc-Server-Sent-Events",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"handler" ],
-	"name" : "ZnServerSentEventResponse",
-	"pools" : [
-		 ],
 	"super" : "ZnResponse",
-	"type" : "normal" }
+	"category" : "Zinc-Server-Sent-Events",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"handler"
+	],
+	"name" : "ZnServerSentEventResponse",
+	"type" : "normal"
+}
