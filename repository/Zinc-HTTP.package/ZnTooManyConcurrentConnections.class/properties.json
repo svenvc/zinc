@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 10/9/2021 14:30",
+	"super" : "Error",
+	"category" : "Zinc-HTTP-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnTooManyConcurrentConnections",
+	"type" : "normal"
+}
