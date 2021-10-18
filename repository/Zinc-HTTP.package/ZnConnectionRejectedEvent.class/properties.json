@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 10/9/2021 14:51",
+	"super" : "ZnServerLogEvent",
+	"category" : "Zinc-HTTP-Logging",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"address"
+	],
+	"name" : "ZnConnectionRejectedEvent",
+	"type" : "normal"
+}

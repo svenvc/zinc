@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "SvenVanCaekenberghe 7/15/2021 11:57",
 	"super" : "Object",
 	"category" : "Zinc-HTTP-Streaming",
 	"classinstvars" : [ ],
@@ -8,8 +8,7 @@
 	"instvars" : [
 		"stream",
 		"position",
-		"limit",
-		"binary"
+		"limit"
 	],
 	"name" : "ZnLimitedReadStream",
 	"type" : "normal"

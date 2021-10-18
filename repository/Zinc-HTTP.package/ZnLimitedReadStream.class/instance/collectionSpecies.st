@@ -1,12 +1,7 @@
 accessing
 collectionSpecies
-	"I can be set to binary or ascii explicitely.
-	If not set, delegate to our wrapped stream."
+	"Delegate to our wrapped stream if possible."
 	
-	^ binary notNil
-		ifTrue: [ 
-			binary ifTrue: [ ByteArray ] ifFalse: [ ByteString ] ]
-		ifFalse: [
-			(stream respondsTo: #collectionSpecies)
-				ifTrue: [ stream collectionSpecies ]  
-				ifFalse: [ stream isBinary ifTrue: [ ByteArray ] ifFalse: [ ByteString ] ] ]
+	^ (stream respondsTo: #collectionSpecies)
+			ifTrue: [ stream collectionSpecies ]  
+			ifFalse: [ stream isBinary ifTrue: [ ByteArray ] ifFalse: [ ByteString ] ]
