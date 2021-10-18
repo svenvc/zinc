@@ -4,7 +4,7 @@ baseline: spec
 	spec for: #common do: [ 	
 		spec baseline: 'ZodiacCore' with: [ 
 			spec 
-				repository: 'github://feenkcom/zodiac:v1.0.0-gt/repository' ]. 
+				repository: 'github://feenkcom/zodiac/repository' ]. 
 		
 		spec
 			package: 'Zinc-Character-Encoding-Core';
