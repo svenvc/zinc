@@ -2,6 +2,7 @@ baseline
 baseline: spec
 	<baseline>
 	spec for: #common do: [ 	
+		spec postLoadDoIt: #postLoadCore:.
 		spec baseline: 'ZodiacCore' with: [ 
 			spec 
 				repository: 'github://feenkcom/zodiac/repository' ]. 
