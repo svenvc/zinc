@@ -1,3 +1,4 @@
 private
 isSchemeNotUsingDoubleSlash: schemeString
-	^ self class schemesNotUsingDoubleSlash includes: schemeString asLowercase
+	^ self class schemesNotUsingDoubleSlash , self class schemesOptionallyNotUsingDoubleSlash 
+		includes: schemeString asLowercase
