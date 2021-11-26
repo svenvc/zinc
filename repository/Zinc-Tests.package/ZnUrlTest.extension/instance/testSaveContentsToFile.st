@@ -1,4 +1,4 @@
-*zinc-tests
+*Zinc-Tests
 testSaveContentsToFile
 	| url target result numbers |
 	url := 'http://zn.stfx.eu/zn/numbers.txt' asZnUrl.
