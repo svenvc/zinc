@@ -7,4 +7,4 @@ printPathQueryFragmentOn: stream
 	self hasFragment
 		ifFalse: [ ^ self ].
 	stream nextPut: $#.
-	self encodeQuery: self fragment on: stream
+	self encodeFragment: self fragment on: stream
