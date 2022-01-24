@@ -9,7 +9,7 @@ use to read from.
 When the client is done, either all data must be read or #consumeContent must be called.
 A client should normally not close the stream.
 
-A ZnStreamingEntity can also be instanciated with an existing read stream.
+A ZnStreamingEntity can also be instanciated with an existing binary read stream.
 During #writeOn: this stream is copied to the output stream.
 
 Part of Zinc HTTP Components.
