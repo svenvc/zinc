@@ -10,5 +10,5 @@ testCopying
 	mimeType2 charSet: 'latin1'.
 	self assert: mimeType2 charSet equals: 'latin1'.
 	self assert: (mimeType1 matches: mimeType2).
-	self deny: mimeType1 parameters = mimeType2 parameters.
-	self deny: mimeType1 charSet = mimeType2 charSet
+	self deny: mimeType1 parameters equals: mimeType2 parameters.
+	self deny: mimeType1 charSet equals: mimeType2 charSet

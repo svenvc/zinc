@@ -1,4 +1,4 @@
-private logging
+private - logging
 newLogEvent: logEventClass
 	^ logEventClass new
 		clientId: self clientId;

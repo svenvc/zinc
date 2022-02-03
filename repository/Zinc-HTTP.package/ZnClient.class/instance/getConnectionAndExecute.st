@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 getConnectionAndExecute
 	self canReuseConnection 
 		ifTrue: [ 

@@ -1,4 +1,4 @@
-accessing request
+accessing - request
 addPath: object
 	"Extend the path of the current request with object.
 	Either a string or a collection of strings is allowed as argument."

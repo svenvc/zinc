@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 readResponse
 	self signalHTTPProgress: 'Reading response'.
 	self withMaximumNumberOfDictionaryEntriesDo: [
@@ -9,5 +9,5 @@ readResponse
 					self streaming
 						ifTrue: [ ZnResponse readStreamingFrom: connection ]
 						ifFalse: [ 
-							self reader value: connection ] ] ] ].
+							self withMaximumEntitySizeDo: [ self reader value: connection ] ] ] ] ].
 	lastUsed := Time totalSeconds

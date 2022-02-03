@@ -1,4 +1,4 @@
-conversions
+converting
 writeQueryFields: dictionary withEncoder: encoder on: stream
 	| first |
 	first := true.

@@ -1,4 +1,4 @@
-accessing request
+accessing - request
 setIfModifiedSince: reference
 	"Tell the server that we are only interested in the currently requested URI
 	if it was modified since reference, a DateAndTime.

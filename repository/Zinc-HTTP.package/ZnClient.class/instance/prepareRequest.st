@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 prepareRequest
 	self isOneShot 
 		ifTrue: [ request setConnectionClose ].

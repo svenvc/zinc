@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "AbstractEnvironmentTestCase",
 	"category" : "Zinc-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],

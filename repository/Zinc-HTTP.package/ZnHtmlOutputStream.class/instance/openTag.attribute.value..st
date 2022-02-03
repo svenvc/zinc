@@ -1,4 +1,4 @@
-private html
+private - html
 openTag: tag attribute: name value: value
 	stream
 		nextPut: $<;

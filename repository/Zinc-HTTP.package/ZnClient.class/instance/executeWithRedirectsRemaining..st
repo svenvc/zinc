@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 executeWithRedirectsRemaining: redirectCount
 	self getConnectionAndExecute.
 	response isRedirect 
