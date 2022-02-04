@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 handleResponse
 	self receiveCookies.
 	(self enforceHttpSuccess and: [ response isSuccess not ])

@@ -1,4 +1,4 @@
-accessing-query
+accessing - query
 queryKeys
 	"Return the collection of all query keys in the receiver"
 	

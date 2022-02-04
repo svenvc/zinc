@@ -1,4 +1,4 @@
-private logging
+private - logging
 logConnectionClosed: socketStream
 	logLevel < 3 ifTrue: [ ^ nil ].
 	socketStream socket ifNil: [ ^ nil ].

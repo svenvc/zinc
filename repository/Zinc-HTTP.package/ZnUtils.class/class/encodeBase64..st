@@ -1,4 +1,4 @@
-conversions
+converting
 encodeBase64: string
 	| bytes |
 	bytes := ZnNullEncoder new encodeString: string.

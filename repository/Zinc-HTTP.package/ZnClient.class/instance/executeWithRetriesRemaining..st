@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 executeWithRetriesRemaining: retryCount
 	^ [ self executeWithRedirectsRemaining: self maxNumberOfRedirects ]
 		on: self retryExceptionSet

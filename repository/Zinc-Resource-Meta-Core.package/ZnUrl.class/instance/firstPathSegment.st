@@ -1,4 +1,4 @@
-accessing-path
+accessing - path
 firstPathSegment
 	^ self isSlash
 		ifTrue: [ nil ]

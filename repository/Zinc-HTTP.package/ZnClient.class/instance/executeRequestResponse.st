@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 executeRequestResponse
 	| initialMilliseconds requestDuration responseDuration |
 	initialMilliseconds := Time millisecondClockValue.

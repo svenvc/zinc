@@ -1,4 +1,4 @@
-conversions
+converting
 trimString: string
 	"Until String>>#trimBoth is available everywhere"
 	

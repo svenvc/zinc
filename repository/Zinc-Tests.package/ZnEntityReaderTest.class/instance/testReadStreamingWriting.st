@@ -10,7 +10,7 @@ testReadStreamingWriting
 		stream: data readStream;
 		streaming.
 	entity := reader readEntity.
-	self assert: entity contentType = ZnMimeType applicationOctetStream.
-	self assert: entity contentLength = data size.
+	self assert: entity contentType equals: ZnMimeType applicationOctetStream.
+	self assert: entity contentLength equals: data size.
 	output := ByteArray streamContents: [ :stream | entity writeOn: stream ].
-	self assert: output = data
+	self assert: output equals: data

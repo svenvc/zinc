@@ -1,4 +1,4 @@
-private logging
+private - logging
 logClientTransactionRequestDuration: requestDuration responseDuration: responseDuration
 	| logEventClass |
 	logLevel < 1 ifTrue: [ ^ nil ].

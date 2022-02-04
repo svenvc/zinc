@@ -1,4 +1,4 @@
-accessing-query
+accessing - query
 queryDo: block
 	"Execute block for each query key/value pair in the receiver"
 	
