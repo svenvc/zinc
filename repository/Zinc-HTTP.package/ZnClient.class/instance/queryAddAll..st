@@ -1,4 +1,4 @@
-accessing request
+accessing - request
 queryAddAll: keyedCollection
 	"Add all key -> value elements of keyedCollection 
 	as HTTP query parameters to the current request.

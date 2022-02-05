@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 executeWithTimeout
 	^ self withTimeoutDo: [ 
 		[ self executeWithRetriesRemaining: self numberOfRetries ]

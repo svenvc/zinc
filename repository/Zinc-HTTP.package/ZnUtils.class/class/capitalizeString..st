@@ -1,4 +1,4 @@
-conversions
+converting
 capitalizeString: string
 	| capitalExpected |
 	capitalExpected := true.

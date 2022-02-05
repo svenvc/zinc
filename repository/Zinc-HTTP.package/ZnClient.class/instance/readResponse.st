@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 readResponse
 	self signalHTTPProgress: 'Reading response'.
 	self withMaximumNumberOfDictionaryEntriesDo: [

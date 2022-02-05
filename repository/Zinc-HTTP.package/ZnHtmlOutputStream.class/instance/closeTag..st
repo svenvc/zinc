@@ -1,4 +1,4 @@
-private html
+private - html
 closeTag: tag
 	stream
 		nextPut: $<;

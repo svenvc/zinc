@@ -1,4 +1,4 @@
-conversions
+converting
 encodePercent: string safeSet: safeSet encoder: encoder
 	^ ZnPercentEncoder new
 		characterEncoder: encoder;

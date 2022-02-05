@@ -6,6 +6,5 @@ testDefaultSchemeAndPort
 	self assert: url hasPort not.
 	self assert: url port isNil.
 	self assert: url scheme isNil.
-	self assert: url schemeOrDefault = #http.
-	self assert: url portOrDefault = 80
-	
+	self assert: url schemeOrDefault equals: #http.
+	self assert: url portOrDefault equals: 80

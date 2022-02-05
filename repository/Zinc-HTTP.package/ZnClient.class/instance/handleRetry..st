@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 handleRetry: exception
 	self logRetrying: exception.
 	self close.

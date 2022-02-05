@@ -1,6 +1,8 @@
 testing
 testCharset
+
 	| mimeType |
+
 	mimeType := ZnMimeType textPlain.
 	self assert: mimeType charSet equals: 'utf-8'.
 	mimeType charSet: 'ascii'.

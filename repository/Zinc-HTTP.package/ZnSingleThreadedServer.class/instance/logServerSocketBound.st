@@ -1,4 +1,4 @@
-private logging
+private - logging
 logServerSocketBound
 	logLevel < 1 ifTrue: [ ^ nil ].
 	^ (self newLogEvent: ZnServerSocketBoundEvent)

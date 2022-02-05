@@ -1,4 +1,4 @@
-conversions
+converting
 parseQueryFrom: stream
 	| string index fields |
 	fields := ZnMultiValueDictionary new.

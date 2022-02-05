@@ -1,4 +1,4 @@
-accessing-path
+accessing - path
 addPathSegments: pathSegments
 	"Modify the receiver's path by adding the elements of pathSegments at the end"
 

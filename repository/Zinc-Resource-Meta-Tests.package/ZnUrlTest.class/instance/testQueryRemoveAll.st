@@ -4,8 +4,8 @@ testQueryRemoveAll
 		do: [ :each | 
 			| url |
 			url := 'http://foo.com/test?name=value' asZnUrl.
-			self deny: url = each asZnUrl.
+			self deny: url equals: each asZnUrl.
 			url queryRemoveAll.
 			self
 				assert: url query isEmpty;
-				assert: url = each asZnUrl ]
+				assert: url equals: each asZnUrl ]

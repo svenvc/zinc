@@ -1,4 +1,4 @@
-accessing-query
+accessing - query
 queryRemoveAll
 	"Modify the receiver by removing all query parameters"
 	
