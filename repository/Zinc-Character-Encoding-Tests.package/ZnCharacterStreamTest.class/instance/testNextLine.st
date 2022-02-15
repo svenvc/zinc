@@ -9,7 +9,7 @@ testNextLine
 	stream := ZnCharacterReadStream on: ({ 
 		$a. Character cr. 
 		$b. Character lf. 
-		$c } collect: #charCode) readStream.
+		$c } collect: [:each | each charCode]) readStream.
 	self assert: stream nextLine equals: 'a'.
 	self assert: stream nextLine equals: 'b'.
 	self assert: stream nextLine equals: 'c'.
