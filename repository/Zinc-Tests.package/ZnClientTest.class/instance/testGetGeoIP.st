@@ -7,7 +7,7 @@ testGetGeoIP
 		queryAt: 'address' put: '81.83.7.35';
 		accept: ZnMimeType applicationJson;
 		contentReader: [ :entity | 
-					Smalltalk globals
+					self class environment
 						at: #NeoJSONReader
 						ifPresent: [ :parserClass | parserClass fromString: entity contents ]
 						ifAbsent: [ ^ self ] ];
