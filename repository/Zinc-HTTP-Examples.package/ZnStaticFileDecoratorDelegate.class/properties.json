@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"delegate",
-		"path",
 		"staticDelegate"
 	],
 	"name" : "ZnStaticFileDecoratorDelegate",
