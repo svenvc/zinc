@@ -1,3 +1,3 @@
-accessing
+flushing
 flush
 	^ stream flush
