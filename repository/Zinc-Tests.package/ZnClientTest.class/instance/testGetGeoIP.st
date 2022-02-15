@@ -14,5 +14,5 @@ testGetGeoIP
 		ifFail: [ ^ self fail ];
 		get.
 	self assert: result isDictionary.
-	self assert: (result at: #country) = 'BE'.
+	self assert: (result at: #country) equals: 'BE'.
 	client close

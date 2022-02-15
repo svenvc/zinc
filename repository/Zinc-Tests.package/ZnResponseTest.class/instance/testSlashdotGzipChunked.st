@@ -12,9 +12,9 @@ testSlashdotGzipChunked
 			value: ZnNullEncoder new
 			during: [ ZnResponse readFrom: stream ] ] ensure: [ stream close ].
 	response isRedirect ifTrue: [ ^ self ].
-	self assert: response code = 200.
+	self assert: response code equals: 200.
 	self assert: ((response headers at: 'Content-Type') beginsWith: 'text/html').
-	self assert: (response headers at: 'Content-Encoding' ifAbsent: [ 'gzip' ]) = 'gzip'.
-	self assert: (response headers at: 'Transfer-Encoding' ifAbsent: [ 'chunked' ]) = 'chunked'.
+	self assert: (response headers at: 'Content-Encoding' ifAbsent: [ 'gzip' ]) equals: 'gzip'.
+	self assert: (response headers at: 'Transfer-Encoding' ifAbsent: [ 'chunked' ]) equals: 'chunked'.
 	contents := response entity contents.
 	self assert: ((contents includesSubstring: 'Slashdot') or: [ contents includesSubstring: 'refresh' ])
