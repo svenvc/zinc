@@ -10,12 +10,12 @@ testUploadSmallDocument
 			url: server localUrl;
 			addPath: 'echo';
 			uploadEntityFrom: path.
-		self assert: client request entity contentType = ZnMimeType textPlain.
+		self assert: client request entity contentType equals: ZnMimeType textPlain.
 		client contentType: ZnMimeType textPlain. "Not needed, just test the code path"
-		self assert: client request entity contentType = ZnMimeType textPlain.
+		self assert: client request entity contentType equals: ZnMimeType textPlain.
 		client post.
 		self assert: client isSuccess.
-		self assert: client entity contentType = ZnMimeType textPlain.
+		self assert: client entity contentType equals: ZnMimeType textPlain.
 		self assert: (client contents includesSubstring: contents).
 		client close.
 		ZnFileSystemUtils deleteIfExists: 'small.txt' ]

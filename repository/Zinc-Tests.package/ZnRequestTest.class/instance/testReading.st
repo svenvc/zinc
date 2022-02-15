@@ -6,7 +6,7 @@ testReading
 		'Agent: SUnit', String crlf, 
 		String crlf.
 	request := ZnRequest readFrom: input readStream.
-	self assert: request method = #GET.
+	self assert: request method equals: #GET.
 	self assert: request hasHeaders.
-	self assert: (request headers at: 'Host') = 'foo.com'.
+	self assert: (request headers at: 'Host') equals: 'foo.com'.
 	self assert: request hasEntity not

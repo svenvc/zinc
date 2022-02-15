@@ -9,6 +9,6 @@ testInt8
 	self assert: readStream int8 equals: 123.
 	self assert: readStream peek equals: 123.
 	self assert: readStream uint8 equals: 123.
-	self deny: readStream peek = 123.
-	self deny: readStream peek = -123.
+	self deny: readStream peek equals: 123.
+	self deny: readStream peek equals: -123.
 	self assert: readStream int8 equals: -123

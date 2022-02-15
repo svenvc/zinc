@@ -21,10 +21,10 @@ testGetAfterPost
 			entity: (ZnEntity text: 'One two three');
 			post.
 		self assert: client isSuccess.
-		self assert: client contents = 'OK for one'.
+		self assert: client contents equals: 'OK for one'.
 		client
 			url: 'two';
 			get.
 		self assert: client isSuccess.
-		self assert: client contents = 'OK for two'.
+		self assert: client contents equals: 'OK for two'.
 		client close ]

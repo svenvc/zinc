@@ -1,6 +1,6 @@
 testing
 testRedirectWithCustomHeader
-	self withServerDo: [ :server | | client cookie |
+	self withServerDo: [ :server | | client |
 		server onRequestRespond: [ :request | 
 			(request headers at: 'X-Custom' ifAbsent: [ nil ]) = 'The Secret'
 				ifFalse: [ ZnResponse badRequest: request ]
@@ -17,5 +17,5 @@ testRedirectWithCustomHeader
 			headerAt: 'X-Custom' put: 'The Secret'; 
 			get.
 		self assert: client isSuccess.
-		self assert: client contents = 'OK!'.
+		self assert: client contents equals: 'OK!'.
 		client close ]

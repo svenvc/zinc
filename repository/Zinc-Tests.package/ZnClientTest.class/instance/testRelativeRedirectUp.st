@@ -12,5 +12,5 @@ testRelativeRedirectUp
 			url: server localUrl; addPath: #('a' 'b' 'c.txt'); 
 			post.
 		self assert: client isSuccess.
-		self assert: client contents = 'OK!'.
+		self assert: client contents equals: 'OK!'.
 		client close ]

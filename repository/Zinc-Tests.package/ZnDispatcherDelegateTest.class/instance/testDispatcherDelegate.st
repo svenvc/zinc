@@ -8,15 +8,15 @@ testDispatcherDelegate
 		client := ZnClient new.
 		
 		client get: (server localUrl addPathSegment: 'missing'; yourself).
-		self assert: (client response contentType = ZnMimeType textPlain).
-		self assert: (client response status = 404).
+		self assert: client response contentType equals: ZnMimeType textPlain.
+		self assert: client response status equals: 404.
 		
 		client get: server localUrl.
-		self assert: (client response contentType = ZnMimeType textHtml).
-		self assert: (client response status = 200).
+		self assert: client response contentType equals: ZnMimeType textHtml.
+		self assert: client response status equals: 200.
 		
 		client get: (server localUrl addPathSegment: 'hello'; yourself).
-		self assert: (client response contentType = ZnMimeType textHtml).
-		self assert: (client response status = 200).
+		self assert: client response contentType equals: ZnMimeType textHtml.
+		self assert: client response status equals: 200.
 		
 		client close ]
