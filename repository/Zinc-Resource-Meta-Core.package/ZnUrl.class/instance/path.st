@@ -1,4 +1,4 @@
-accessing-path
+accessing - path
 path
 	self hasPath 
 		ifFalse: [ ^ String new ].
