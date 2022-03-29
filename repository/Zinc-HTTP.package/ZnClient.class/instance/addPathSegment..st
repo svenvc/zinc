@@ -1,4 +1,4 @@
-accessing request
+accessing - request
 addPathSegment: pathSegment
 	"Extend the path of the current request with a single pathSegment."
 	

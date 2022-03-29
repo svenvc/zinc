@@ -1,4 +1,4 @@
-conversions
+converting
 httpDate: object
 	"Answers a string formatting object as time stamp for HTTP1.1 (RFC 1123). 
 	Eg. Sun, 06 Nov 1994 08:49:37 GMT"

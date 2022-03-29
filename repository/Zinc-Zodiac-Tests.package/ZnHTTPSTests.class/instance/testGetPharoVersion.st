@@ -4,7 +4,7 @@ testGetPharoVersion
 	self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
 	self runningOnWindowsInriaCI ifTrue: [ ^ self ].
-	imageVersion := SystemVersion current type , SystemVersion current dottedMajorMinor.
+	imageVersion := SystemVersion current type , (SystemVersion current major = 10 ifTrue: [ '10' ] ifFalse: [ SystemVersion current dottedMajorMinor ]). "Something weird in the CI"
 	url := ZnUrl new 
 		scheme: #https;
 		host: 'ci.inria.fr';

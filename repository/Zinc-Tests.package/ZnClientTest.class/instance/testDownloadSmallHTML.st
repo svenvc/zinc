@@ -7,7 +7,7 @@ testDownloadSmallHTML
 		url: self smallHtmlUrl;
 		downloadTo: ZnFileSystemUtils defaultDirectoryPath.
 	self assert: client isSuccess.
-	self assert: client response contentType = ZnMimeType textHtml.
+	self assert: client response contentType equals: ZnMimeType textHtml.
 	ZnFileSystemUtils 
 		readStreamFor: self smallHtmlUrl pathSegments last
 		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].
@@ -17,7 +17,7 @@ testDownloadSmallHTML
 		url: self smallHtmlUrl;
 		downloadTo: self smallHtmlUrl pathSegments last.
 	self assert: client isSuccess.
-	self assert: client response contentType = ZnMimeType textHtml.
+	self assert: client response contentType equals: ZnMimeType textHtml.
 	ZnFileSystemUtils 
 		readStreamFor: self smallHtmlUrl pathSegments last
 		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].	

@@ -1,4 +1,4 @@
-accessing-path
+accessing - path
 directory
 	^ self isDirectoryPath
 		ifTrue: [ self path ]

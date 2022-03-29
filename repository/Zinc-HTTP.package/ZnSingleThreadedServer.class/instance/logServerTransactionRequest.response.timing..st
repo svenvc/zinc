@@ -1,4 +1,4 @@
-private logging
+private - logging
 logServerTransactionRequest: request response: response timing: timing
 	| logEventClass |
 	logLevel < 1 ifTrue: [ ^ nil ].

@@ -1,4 +1,4 @@
-*zinc-tests
+*Zinc-Tests
 testRetrieveContents
 	| numbers |
 	numbers := 'http://zn.stfx.eu/zn/numbers.txt' asZnUrl retrieveContents.

@@ -1,4 +1,4 @@
-private logging
+private - logging
 logResponseReadStarted: initialMilliseconds
 	^ logLevel < 3
 		ifTrue: [ Time millisecondsSince: initialMilliseconds ]

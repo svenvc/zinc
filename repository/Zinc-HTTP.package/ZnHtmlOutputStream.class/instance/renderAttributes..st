@@ -1,4 +1,4 @@
-private html
+private - html
 renderAttributes: attributes
 	attributes pairsDo: [ :name :value | 
 		stream space; nextPutAll: name.

@@ -1,4 +1,4 @@
-private logging
+private - logging
 logConnectionEstablishedTo: url started: initialMilliseconds
 	| event |
 	logLevel < 3 ifTrue: [ ^ nil ].

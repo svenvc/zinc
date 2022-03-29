@@ -1,4 +1,4 @@
-*zinc-resource-meta-core
+*Zinc-Resource-Meta-Core
 addedToZnUrl: url
 	| segments |
 	segments := self findTokens: '/'.

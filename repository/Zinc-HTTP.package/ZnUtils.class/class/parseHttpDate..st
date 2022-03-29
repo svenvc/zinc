@@ -1,4 +1,4 @@
-conversions
+converting
 parseHttpDate: string
 	"self parseHttpDate: 'Tue, 13 Sep 2011 08:04:49 GMT'."
 	"self parseHttpDate: 'Tue, 13-Sep-2011 08:04:51 GMT'."

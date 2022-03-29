@@ -7,6 +7,6 @@ testReading
 				usingType: ZnMimeType textPlain 
 				andLength: contents size.
 	self assert: entity contents isString.
-	self assert: entity string = contents.
-	self assert: entity contentLength = contents size.
-	self assert: entity contentType = ZnMimeType textPlain 
+	self assert: entity string equals: contents.
+	self assert: entity contentLength equals: contents size.
+	self assert: entity contentType equals: ZnMimeType textPlain 

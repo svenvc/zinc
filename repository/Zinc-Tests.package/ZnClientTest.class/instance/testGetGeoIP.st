@@ -7,12 +7,12 @@ testGetGeoIP
 		queryAt: 'address' put: '81.83.7.35';
 		accept: ZnMimeType applicationJson;
 		contentReader: [ :entity | 
-					Smalltalk globals
+					self class environment
 						at: #NeoJSONReader
 						ifPresent: [ :parserClass | parserClass fromString: entity contents ]
 						ifAbsent: [ ^ self ] ];
 		ifFail: [ ^ self fail ];
 		get.
 	self assert: result isDictionary.
-	self assert: (result at: #country) = 'BE'.
+	self assert: (result at: #country) equals: 'BE'.
 	client close

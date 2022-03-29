@@ -1,4 +1,4 @@
-accessing-bytes
+accessing - bytes
 nextIntegerOfSize: numberOfBytes signed: signed bigEndian: bigEndian
 	"Assuming the receiver is a stream of bytes, read the next integer of size numberOfBytes.
 	If bigEndian is true, use network byte order, most significant byte first, 

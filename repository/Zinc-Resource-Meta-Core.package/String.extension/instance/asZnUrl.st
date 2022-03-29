@@ -1,3 +1,3 @@
-*zinc-resource-meta-core
+*Zinc-Resource-Meta-Core
 asZnUrl
 	^ ZnUrl fromString: self

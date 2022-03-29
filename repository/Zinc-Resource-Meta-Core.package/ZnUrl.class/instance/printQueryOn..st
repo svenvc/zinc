@@ -1,4 +1,4 @@
 printing
 printQueryOn: stream
 	stream nextPut: $?. 
-	ZnResourceMetaUtils writeQueryFields: self query on: 	stream
+	self encodeQueryFields: self query on: stream

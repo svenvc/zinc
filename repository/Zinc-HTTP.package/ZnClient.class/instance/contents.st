@@ -1,4 +1,4 @@
-accessing response
+accessing - response
 contents 
 	"Answer the contents or HTTP payload of the last response, 
 	assuming the current request was executed.
