@@ -13,3 +13,7 @@ setUp
 		writeStreamFor: 'wide.html' 
 		do: [ :stream |
 			stream nextPutAll: self wideHtml ].
+	ZnFileSystemUtils
+		writeStreamFor: 'index.html' 
+		do: [ :stream |
+			stream nextPutAll: self indexHtml ].
