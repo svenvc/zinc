@@ -1,4 +1,4 @@
-as yet unclassified
+public
 decorate: aDelegate servingFilesFrom: aPathString
 	^ self new
 		delegate: aDelegate;
