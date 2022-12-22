@@ -4,10 +4,12 @@ actualFilenameFor: uri
 	(uri isEmpty and: [ self prefix isEmpty ]) ifTrue: [ ^ self indexFileIn: self directory ].
 	(self prefix isEmpty or: [ uri isEmpty not and: [ uri pathSegments beginsWith: self prefix ] ]) ifFalse: [ ^ nil ].
 	subElements := (uri pathSegments allButFirst: self prefix size) reject: [ :each | each = $/ ].
-	subDir := subElements allButLast inject: self directory into: [ :parent :sub | | file |
-		(file := parent / sub) exists
-			ifTrue: [ file ]
-			ifFalse: [ ^ nil ] ]. 
+	subDir := (subElements ifNotEmpty: #allButLast ifEmpty: [ #() ]) 
+		inject: self directory 
+		into: [ :parent :sub | | file |
+			(file := parent / sub) exists
+				ifTrue: [ file ]
+				ifFalse: [ ^ nil ] ]. 
 	subElements isEmpty
 		ifTrue: [ entry := subDir entry ] 
 		ifFalse: [ | file |
