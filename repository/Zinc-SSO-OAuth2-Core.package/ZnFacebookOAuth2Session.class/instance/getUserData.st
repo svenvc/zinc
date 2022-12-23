@@ -9,4 +9,4 @@ getUserData
 
 	response := ZnClient new get: url.
 	
-	^ NeoJSONReader fromString: response
+	^ ZnUtils defaultJSONReader fromString: response
