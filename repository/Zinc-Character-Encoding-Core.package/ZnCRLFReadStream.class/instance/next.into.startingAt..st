@@ -6,5 +6,5 @@ next: requestedCount into: aCollection startingAt: startIndex
 	| readCount |
 	readCount := self readInto: aCollection startingAt: startIndex count: requestedCount.
 	^ readCount = requestedCount
-		ifTrue: [ ^ aCollection ]
-		ifFalse: [ ^ aCollection copyFrom: 1 to: startIndex + readCount - 1 ]
+		ifTrue: [ aCollection ]
+		ifFalse: [ aCollection copyFrom: 1 to: startIndex + readCount - 1 ]
