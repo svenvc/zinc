@@ -2,8 +2,8 @@ public
 handleRequest: request
 	"Dispatch on the different REST calls that I implement"
 	
-	request uri pathSegments size = 1
-		ifTrue: [ ^ self handleStoreContents ]
+	^ request uri pathSegments size = 1
+		ifTrue: [ self handleStoreContents ]
 		ifFalse: [ 
 			request uri pathSegments size = 2
 				ifTrue: [
@@ -14,4 +14,4 @@ handleRequest: request
 					(request method = #PUT
 							and: [ request entity contentType matches: ZnMimeType textPlain ])
 						ifTrue: [ ^ self handlePutKey: request ] ].
-			^ ZnResponse badRequest: request ]
+			ZnResponse badRequest: request ]
