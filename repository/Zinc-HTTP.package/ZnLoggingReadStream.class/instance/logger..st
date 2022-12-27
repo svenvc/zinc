@@ -1,3 +1,3 @@
-initialize-release
+initialization
 logger: oneArgumentBlock
 	logger := oneArgumentBlock 

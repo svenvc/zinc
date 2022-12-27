@@ -1,3 +1,3 @@
-initialize
+initialization
 close
 	readStream close

@@ -1,3 +1,3 @@
-initialize
+initialization
 on: characterReadStream
 	readStream := characterReadStream 

@@ -1,3 +1,3 @@
-initialize
+initialization
 serverId: anObject
 	serverId := anObject

@@ -1,3 +1,3 @@
-initialize
+initialization
 processId: anObject
 	processId := anObject

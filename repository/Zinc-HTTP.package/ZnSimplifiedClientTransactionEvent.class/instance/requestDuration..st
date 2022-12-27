@@ -1,3 +1,3 @@
-initialize
+initialization
 requestDuration: requestDuration
 	duration := duration + requestDuration 

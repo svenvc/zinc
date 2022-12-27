@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
 	logger := [ :string | Transcript crShow: string ].

@@ -1,4 +1,4 @@
-initialize
+initialization
 response: aZnResponse
 	response := aZnResponse code.
 	aZnResponse hasEntity
