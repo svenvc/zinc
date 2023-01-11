@@ -11,4 +11,4 @@ getUserData
 	response := [ client get: url ] 
 		ensure: [ client close ].
 	
-	^ NeoJSONReader fromString: response
+	^ ZnUtils defaultJSONReader fromString: response
