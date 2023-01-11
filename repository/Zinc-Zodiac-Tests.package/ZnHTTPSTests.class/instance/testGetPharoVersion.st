@@ -1,10 +1,11 @@
 testing
 testGetPharoVersion
 	| imageVersion url client lastBuildVersion |
-	self ensureSocketStreamFactory.
+	self skip. "this test it too high maintenance with changing infrastructure"
+	"self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
 	self runningOnWindowsInriaCI ifTrue: [ ^ self ].
-	imageVersion := SystemVersion current type , (SystemVersion current major = 10 ifTrue: [ '10' ] ifFalse: [ SystemVersion current dottedMajorMinor ]). "Something weird in the CI"
+	imageVersion := SystemVersion current type , (SystemVersion current major = 10 ifTrue: [ '10' ] ifFalse: [ SystemVersion current dottedMajorMinor ]). ""Something weird in the CI""
 	url := ZnUrl new 
 		scheme: #https;
 		host: 'ci.inria.fr';
@@ -22,4 +23,4 @@ testGetPharoVersion
 	self assert: lastBuildVersion notNil.
 	self assert: lastBuildVersion isString.
 	self deny: lastBuildVersion isEmpty.
-	self assert: (lastBuildVersion includesSubstring: imageVersion).
+	self assert: (lastBuildVersion includesSubstring: imageVersion)."
