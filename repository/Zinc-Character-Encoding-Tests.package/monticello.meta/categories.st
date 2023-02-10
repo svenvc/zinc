@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-Character-Encoding-Tests'!
+SystemOrganization addCategory: 'Zinc-Character-Encoding-Tests'!

@@ -1,4 +1,4 @@
-initialization
+initialize
 initialize
 	super initialize.
 	cr := Character cr.
