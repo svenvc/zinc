@@ -2,7 +2,7 @@ private - logging
 logRequest: request response: response handledStarted: initialMilliseconds
 	^ logLevel < 3
 		ifTrue: [ Time millisecondsSince: initialMilliseconds ]
-		ifFalse: [ 
+		ifFalse: [
 			(self newLogEvent: ZnRequestResponseHandledEvent)
 				request: request;
 				response: response;

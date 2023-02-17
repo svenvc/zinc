@@ -1,5 +1,5 @@
 accessing
 setToEnd
-	
-	^ self writingActionDo: [ 
+
+	^ self writingActionDo: [
 		writeStream setToEnd ]

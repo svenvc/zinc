@@ -1,4 +1,4 @@
 accessing
 uriPathQueryFragment
-	^ String streamContents: [ :stream | 
+	^ String streamContents: [ :stream |
 			self uri printPathQueryFragmentOn: stream ]

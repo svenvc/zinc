@@ -1,8 +1,8 @@
 convenience
 decodeBytes: bytes
-	"Overridden to prevent the automagic switch from ByteString to WideString 
+	"Overridden to prevent the automagic switch from ByteString to WideString
 	and the slow #becomeForward: in there. See also #decodeBytesIntoWideString:"
-	
+
 	| byteStream |
 	byteStream := bytes readStream.
 	^ String streamContents: [ :stream |
@@ -13,4 +13,4 @@ decodeBytes: bytes
 					position := stream position.
 					wideString := WideString from: stream originalContents.
 					stream on: wideString; setFrom: position + 1 to: position ].
-			stream nextPut: (Character value: codePoint) ] ] 
+			stream nextPut: (Character value: codePoint) ] ]

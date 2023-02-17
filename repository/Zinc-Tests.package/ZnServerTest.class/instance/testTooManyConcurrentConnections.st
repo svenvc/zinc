@@ -4,15 +4,15 @@ testTooManyConcurrentConnections
 		self withServerDo: [ :server | | client clients |
 			self deny: server debugMode.
 			server maximumNumberOfConcurrentConnections: 4.
-			clients := (1 to: 4) collect: [ :each | 
-				ZnClient new 
+			clients := (1 to: 4) collect: [ :each |
+				ZnClient new
 					url: server localUrl;
 					addPathSegment: #random;
 					clientId: ('client-{1}' format: { each });
 					enforceHttpSuccess;
 					get;
 					yourself ].
-			client := ZnClient new 
+			client := ZnClient new
 					url: server localUrl;
 					addPathSegment: #random;
 					clientId: 'client-5';

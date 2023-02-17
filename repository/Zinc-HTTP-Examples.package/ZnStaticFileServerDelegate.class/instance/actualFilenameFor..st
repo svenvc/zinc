@@ -7,13 +7,13 @@ actualFilenameFor: uri
 	subDir := subElements allButLast inject: self directory into: [ :parent :sub | | file |
 		(file := parent / sub) exists
 			ifTrue: [ file ]
-			ifFalse: [ ^ nil ] ]. 
+			ifFalse: [ ^ nil ] ].
 	subElements isEmpty
-		ifTrue: [ entry := subDir entry ] 
+		ifTrue: [ entry := subDir entry ]
 		ifFalse: [ | file |
-			 (file := subDir / subElements last) exists 
-				ifTrue: [ entry := file entry ] 
+			 (file := subDir / subElements last) exists
+				ifTrue: [ entry := file entry ]
 				ifFalse: [ ^ nil ] ].
-	^ entry isDirectory 
+	^ entry isDirectory
 		ifTrue: [ self indexFileIn: entry reference ]
 		ifFalse: [ entry reference fullName ]

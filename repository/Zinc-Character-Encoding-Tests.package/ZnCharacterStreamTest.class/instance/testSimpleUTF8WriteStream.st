@@ -5,6 +5,6 @@ testSimpleUTF8WriteStream
 	bytes := ZnUTF8Encoder new encodeString: string.
 	stream := (ZnCharacterWriteStream on: ByteArray new writeStream).
 	stream nextPutAll: string.
-	self 
+	self
 		assert: stream wrappedStream contents
 		equals: bytes

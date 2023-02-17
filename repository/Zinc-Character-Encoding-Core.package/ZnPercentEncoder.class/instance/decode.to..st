@@ -3,13 +3,13 @@ decode: stringStream to: byteStream
 	| char |
 	self decodePlusAsSpace.
 	[ stringStream atEnd ]
-		whileFalse: [ 
+		whileFalse: [
 			((char := stringStream next) == $+ and: [ decodePlusAsSpace ])
 				ifTrue: [ byteStream nextPut: 32 ]
-				ifFalse: [ 
+				ifFalse: [
 					char == $%
 						ifTrue: [ byteStream nextPut: (self readHexFrom: stringStream) ]
-						ifFalse: [ 
+						ifFalse: [
 							char charCode < 128
 								ifTrue: [ byteStream nextPut: char charCode ]
 								ifFalse: [ self errorAsciiCharacterExpected ] ] ] ]

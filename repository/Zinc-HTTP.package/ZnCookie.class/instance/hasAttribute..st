@@ -1,3 +1,3 @@
 testing
 hasAttribute: attributeName
-	^ attributes includesKey: attributeName asLowercase 
+	^ attributes includesKey: attributeName asLowercase

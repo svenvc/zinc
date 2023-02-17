@@ -1,3 +1,3 @@
 accessing
 httpStatusCodes
-	^ HTTPStatusCodes 
+	^ HTTPStatusCodes

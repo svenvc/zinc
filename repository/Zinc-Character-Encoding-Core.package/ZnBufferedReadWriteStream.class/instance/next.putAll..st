@@ -1,5 +1,5 @@
 accessing
 next: count putAll: collection
 
-	self writingActionDo: [ 
+	self writingActionDo: [
 		writeStream next: count putAll: collection ]

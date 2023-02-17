@@ -4,6 +4,6 @@ methodNotAllowed: request
 	message := String streamContents: [ :out |
 		out << 'Method Not Allowed '; << request method; space.
 		request uri printPathQueryFragmentOn: out ].
-	^ self 
+	^ self
 		methodNotAllowed: request
 		entity: (ZnEntity textCRLF: message)

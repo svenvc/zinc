@@ -1,5 +1,5 @@
 accessing
-readInto: collection startingAt: offset count: count 
+readInto: collection startingAt: offset count: count
 	"Read count elements and place them in collection starting at offset.
 	Return the number of elements actually read."
 
@@ -10,9 +10,9 @@ readInto: collection startingAt: offset count: count
 		ifFalse: [
 			String streamContents: [ :out |
 				out nextPutAll: identifier; space.
-				out nextPutAll: 'read '; print: bytesRead; 
+				out nextPutAll: 'read '; print: bytesRead;
 				nextPutAll: (bytesRead = 1 ifTrue: [ ' byte: ' ] ifFalse: [ ' bytes: ']).
 			offset to: offset + bytesRead - 1 do: [ :index |
 				(collection at: index) printOn: out base: 16 length: 2 padded: true ] ] ].
 	logger value: message.
-	^ bytesRead 
+	^ bytesRead

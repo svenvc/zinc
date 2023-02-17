@@ -1,3 +1,3 @@
 testing
 testStringUrlDecoded
-	self assert: ('foo%20bar' urlDecoded) equals: 'foo bar' 
+	self assert: ('foo%20bar' urlDecoded) equals: 'foo bar'

@@ -2,7 +2,7 @@ testing
 testPatch
 	| client |
 	self withServerDo: [ :server |
-		server onRequestRespond: [ :request | 
+		server onRequestRespond: [ :request |
 			request method = #PATCH
 				ifTrue: [| response |
 					response := ZnResponse noContent.

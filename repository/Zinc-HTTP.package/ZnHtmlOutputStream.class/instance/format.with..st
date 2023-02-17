@@ -6,7 +6,7 @@ format: string with: args
 	input := string readStream.
 	[ input atEnd ] whileFalse: [
 		(currentChar := input next) == ${
-			ifTrue: [ | expression index | 
+			ifTrue: [ | expression index |
 				expression := input upTo: $}.
 				index := Integer readFrom: expression ifFail: [ expression ].
 				self escape: (args at: index) asString ]

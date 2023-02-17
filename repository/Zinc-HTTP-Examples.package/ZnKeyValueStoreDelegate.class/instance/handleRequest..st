@@ -1,10 +1,10 @@
 public
 handleRequest: request
 	"Dispatch on the different REST calls that I implement"
-	
+
 	^ request uri pathSegments size = 1
 		ifTrue: [ self handleStoreContents ]
-		ifFalse: [ 
+		ifFalse: [
 			request uri pathSegments size = 2
 				ifTrue: [
 					request method = #GET

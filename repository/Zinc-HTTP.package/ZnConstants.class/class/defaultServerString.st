@@ -1,3 +1,3 @@
 accessing
-defaultServerString 
+defaultServerString
 	^ self frameworkNameAndVersion , ' (' , self systemVersion , ')'

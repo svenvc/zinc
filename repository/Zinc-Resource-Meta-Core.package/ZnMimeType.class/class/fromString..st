@@ -1,20 +1,20 @@
 instance creation
-fromString: aString 
+fromString: aString
 	| main endOfSub sub parts parameters |
 	main := aString copyUpTo: $/.
 	endOfSub := aString indexOf: $;.
-	endOfSub := endOfSub = 0 
+	endOfSub := endOfSub = 0
 		ifTrue: [ aString size ]
 		ifFalse: [ endOfSub - 1 ].
 	sub := aString copyFrom: main size + 2 to: endOfSub.
 	endOfSub = aString size ifTrue: [ ^ self main: main sub: sub ].
 	parts := (aString copyFrom: endOfSub + 1 to: aString size) substrings: ';'.
 	parameters := SmallDictionary new.
-	parts do: [ :each | 
+	parts do: [ :each |
 		parameters
 			at: (each copyUpTo: $=) trimBoth asLowercase
 			put: (each copyAfter: $=) trimBoth ].
-	^ self 
+	^ self
 		main: main
 		sub: sub
 		parameters: parameters

@@ -1,7 +1,7 @@
 testing
 testSessionRoute
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| client sessionId |
 			server route: 'r1'.
 			self assert: server route equals: 'r1'.

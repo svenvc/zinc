@@ -1,3 +1,3 @@
 accessing
 clearContentType
-	self removeKey: 'Content-Type' ifAbsent: [] 
+	self removeKey: 'Content-Type' ifAbsent: []

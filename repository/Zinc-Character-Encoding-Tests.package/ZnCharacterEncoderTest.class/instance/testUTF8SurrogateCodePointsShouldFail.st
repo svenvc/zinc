@@ -4,9 +4,9 @@ testUTF8SurrogateCodePointsShouldFail
 	encoder := #utf8 asZnCharacterEncoder.
 	surrogateCodePoint := 16rD801.
 	self assert: (encoder isSurrogateCodePoint: surrogateCodePoint).
-	self 
+	self
 		should: [ encoder encodeString: surrogateCodePoint asCharacter asString ]
 		raise: ZnInvalidUTF8.
-	self 
+	self
 		should: [ encoder decodeBytes: #[237 160 129] ]
 		raise: ZnInvalidUTF8

@@ -26,6 +26,6 @@ testDoubleEnding
 			<< lines third;
 			<< String crlf;
 			<< String crlf ].
-	self 
-		assert: (ZnCRLFReadStream on: input asByteArray readStream) upToEnd 
-		equals: output asByteArray.
+	self
+		assert: (ZnCRLFReadStream on: input asByteArray readStream) upToEnd
+		equals: output asByteArray

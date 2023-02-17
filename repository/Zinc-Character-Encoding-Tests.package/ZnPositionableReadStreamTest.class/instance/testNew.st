@@ -5,4 +5,3 @@ testNew
 	self assert: stream position isZero.
 	self assert: stream bufferSize equals: stream defaultBufferSize.
 	self deny: stream atEnd
-

@@ -7,4 +7,3 @@ testWritingApplicationUrlEncodingWithTextEncodingLatin1
 	bytes := ByteArray streamContents: [ :stream | entity writeOn: stream ].
 	self assert: bytes equals: (ZnNullEncoder new encodeString: 'foo=%F6').
 	self assert: entity contentLength equals: 7
-	

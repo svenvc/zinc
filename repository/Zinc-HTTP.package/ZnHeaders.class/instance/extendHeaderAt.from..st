@@ -1,6 +1,6 @@
 private
 extendHeaderAt: key from: line
-	"The value of a continuation header line is concatenated, 
+	"The value of a continuation header line is concatenated,
 	keeping the whitespace, but without the CRLF"
 
 	| existingValue newValue |

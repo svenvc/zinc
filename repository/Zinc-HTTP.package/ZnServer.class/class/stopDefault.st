@@ -4,4 +4,4 @@ stopDefault
 	Return the stopped instance, if any.
 	Delegate to the default server class."
 
-	^ self defaultServerClass stopDefault 
+	^ self defaultServerClass stopDefault

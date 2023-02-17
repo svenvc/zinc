@@ -2,7 +2,7 @@ testing
 testCharacterWriting
 	| bytes |
 	bytes := ByteArray
-		streamContents: [ :stream | 
+		streamContents: [ :stream |
 			| writeStream |
 			writeStream := ZnBivalentWriteStream on: stream.
 			writeStream

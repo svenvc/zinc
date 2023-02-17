@@ -1,5 +1,5 @@
 accessing
 next
-	
-	^ self readingActionDo: [ 
+
+	^ self readingActionDo: [
 		readStream next ]

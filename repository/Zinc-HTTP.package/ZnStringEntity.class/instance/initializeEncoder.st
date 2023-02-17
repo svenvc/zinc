@@ -9,7 +9,7 @@ initializeEncoder
 		ifTrue: [ ^ self ].
 	newEncoder := ( charSet := contentType charSet )
 		ifNil: [ ZnDefaultCharacterEncoder value ]
-		ifNotNil: [ 
+		ifNotNil: [
 			( ZnCharacterEncoder newForEncoding: charSet )
 				beLenient;
 				yourself ].

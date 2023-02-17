@@ -5,5 +5,5 @@ logLevel: integer
 	1 - simplified transaction logging
 	2 - detailed transaction logging
 	3 - log everything"
-	
+
 	logLevel := integer

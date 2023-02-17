@@ -1,7 +1,7 @@
 testing
 testPostUnicodeUtf8
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| response data |
 			data := String streamContents: [ :stream | 0 to: 16r024F do: [ :each | stream nextPut: each asCharacter ] ].
 			response := ZnEasy

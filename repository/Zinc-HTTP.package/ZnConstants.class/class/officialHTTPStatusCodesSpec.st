@@ -1,5 +1,5 @@
 accessing
-officialHTTPStatusCodesSpec 
+officialHTTPStatusCodesSpec
 	"This is the official list from http://www.iana.org/assignments/http-status-codes (version 2018-09-21)"
 
 	^ #(

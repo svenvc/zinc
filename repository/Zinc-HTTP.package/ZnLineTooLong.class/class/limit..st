@@ -1,5 +1,5 @@
 instance creation
 limit: limit
-	^ self new 
-		limit: limit; 
+	^ self new
+		limit: limit;
 		yourself

@@ -6,7 +6,7 @@ testGetGeoIP
 		url: self t3EasyGeoIPUrl;
 		queryAt: 'address' put: '81.83.7.35';
 		accept: ZnMimeType applicationJson;
-		contentReader: [ :entity | 
+		contentReader: [ :entity |
 					self class environment
 						at: #NeoJSONReader
 						ifPresent: [ :parserClass | parserClass fromString: entity contents ]

@@ -1,5 +1,5 @@
 private
 clientIPAddressFrom: event
-	^ event request headers 
-		at: ZnConstants remoteAddressHeader 
+	^ event request headers
+		at: ZnConstants remoteAddressHeader
 		ifAbsent: [ '-' ]

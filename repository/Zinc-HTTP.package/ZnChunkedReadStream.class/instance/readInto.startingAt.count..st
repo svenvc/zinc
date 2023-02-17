@@ -7,10 +7,10 @@ readInto: collection startingAt: offset count: requestedCount
 	read := 0.
 	[ read < requestedCount and: [ self atEnd not] ] whileTrue: [
 		toRead := (limit - position) min: (requestedCount - read).
-		collection 
-			replaceFrom: offset + read 
-			to: offset + read + toRead - 1 
-			with: chunk 
+		collection
+			replaceFrom: offset + read
+			to: offset + read + toRead - 1
+			with: chunk
 			startingAt: position + 1.
 		read := read + toRead.
 		position := position + toRead ].

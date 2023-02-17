@@ -4,5 +4,5 @@ utf8Decoded
 	the recommended encoding for Strings, unless you know what you are doing."
 
 	"#[76 101 115 32 195 169 108 195 168 118 101 115 32 102 114 97 110 195 167 97 105 115] utf8Decoded"
-	
+
 	^ self decodeWith: ZnCharacterEncoder utf8

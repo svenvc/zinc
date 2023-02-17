@@ -4,5 +4,5 @@ comparing
 
 	^ (self class == other class)
 		and: [ self main = other main
-			and: [ self sub = other sub 
+			and: [ self sub = other sub
 				and: [ self hasSameParametersAs: other ] ] ]

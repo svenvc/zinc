@@ -1,4 +1,4 @@
 streams
 fileNamed: fileName do: block
-	^ fileName asFileReference 
+	^ fileName asFileReference
 		writeStreamDo: block

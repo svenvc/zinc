@@ -8,7 +8,7 @@ logClientTransactionRequestDuration: requestDuration responseDuration: responseD
 	^ (self newLogEvent: logEventClass)
 		request: request;
 		requestDuration: requestDuration;
-		response: response; 
+		response: response;
 		responseDuration: responseDuration;
 		emit;
 		yourself

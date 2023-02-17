@@ -14,4 +14,4 @@ testDecodingErrors
 	self should: [ encoder decode: '*' ] raise: ZnCharacterEncodingError.
 	self should: [ encoder decode: '**' ] raise: ZnCharacterEncodingError.
 	self should: [ encoder decode: '***' ] raise: ZnCharacterEncodingError.
-	self should: [ encoder decode: '****' ] raise: ZnCharacterEncodingError.
+	self should: [ encoder decode: '****' ] raise: ZnCharacterEncodingError

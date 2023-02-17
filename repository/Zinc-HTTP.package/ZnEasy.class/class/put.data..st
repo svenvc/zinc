@@ -4,4 +4,4 @@ put: urlObject data: entity
 		url: urlObject;
 		entity: entity;
 		put;
-		response	
+		response

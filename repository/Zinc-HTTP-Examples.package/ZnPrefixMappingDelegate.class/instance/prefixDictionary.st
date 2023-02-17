@@ -1,4 +1,4 @@
 accessing
 prefixDictionary
-	^ prefixDictionary ifNil: [ 
+	^ prefixDictionary ifNil: [
 		prefixDictionary := Dictionary new ]

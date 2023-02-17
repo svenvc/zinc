@@ -6,4 +6,4 @@ testAsFileReferenceNoDoubleSlash
 	fileReference := fileUrl asFileReference.
 	self assert: fileReference basename equals: 'test.txt'.
 	self assert: fileReference pathSegments asArray equals: #( 'foo' 'bar' 'test.txt' ).
-	self assert: fileReference isAbsolute.
+	self assert: fileReference isAbsolute

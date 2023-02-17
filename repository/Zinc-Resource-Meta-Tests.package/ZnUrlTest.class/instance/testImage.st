@@ -1,4 +1,4 @@
 testing
 testImage
 	self assert: ZnUrl image isFile.
-	self assert: ZnUrl image isFilePath.
+	self assert: ZnUrl image isFilePath

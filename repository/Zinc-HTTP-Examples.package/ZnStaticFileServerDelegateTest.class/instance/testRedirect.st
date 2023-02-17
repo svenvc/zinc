@@ -1,7 +1,7 @@
 tests
 testRedirect
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| client |
 			(client := ZnClient new)
 				beOneShot;

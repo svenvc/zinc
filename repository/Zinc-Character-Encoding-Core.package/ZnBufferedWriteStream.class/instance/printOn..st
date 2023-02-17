@@ -1,5 +1,5 @@
 printing
 printOn: aStream
-	aStream 
-		nextPutAll: 'a '; 
+	aStream
+		nextPutAll: 'a ';
 		nextPutAll: self class name

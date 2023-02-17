@@ -1,5 +1,5 @@
 accessing
 setTransferEncodingChunked
-	self headers 
+	self headers
 		at: 'Transfer-Encoding' put: 'chunked';
 		clearContentLength

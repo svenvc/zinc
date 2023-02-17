@@ -1,7 +1,7 @@
 tests
 testIfModifiedSinceNotModified
 	self withServerDo: [ :server | | client |
-		(client := ZnClient new) 
+		(client := ZnClient new)
 			beOneShot;
 			url: server localUrl;
 			addPath: #('local-files' 'small.html');

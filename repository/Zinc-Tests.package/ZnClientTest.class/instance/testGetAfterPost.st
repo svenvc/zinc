@@ -1,7 +1,7 @@
 testing
 testGetAfterPost
 	self withServerDo: [ :server | | client |
-		server onRequestRespond: [ :request | 
+		server onRequestRespond: [ :request |
 			request uri firstPathSegment = 'one'
 				ifTrue: [
 					(request method = #POST and: [ request hasEntity ])
@@ -9,12 +9,12 @@ testGetAfterPost
 						ifFalse: [ ZnResponse badRequest: request ] ]
 				ifFalse: [
 					request uri firstPathSegment = 'two'
-						ifTrue: [ 
+						ifTrue: [
 							(request method = #GET and: [ request hasEntity not ])
 								ifTrue: [ ZnResponse ok: (ZnEntity text: 'OK for two') ]
 								ifFalse: [ ZnResponse badRequest: request ] ]
 		 				ifFalse: [ ZnResponse notFound: request uri ] ] ].
-		(client := ZnClient new) 
+		(client := ZnClient new)
 			autoResetEntityMethods: #(HEAD DELETE GET);
 			url: server localUrl;
 			url: 'one';

@@ -1,3 +1,3 @@
 operations
-resetCredentials 
+resetCredentials
 	credentials ifNotNil: [ credentials removeAll ]

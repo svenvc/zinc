@@ -8,7 +8,7 @@ parse: bytes boundary: boundary binary: binary
 		startingAt: 1) + 1.
 	next := bytes
 		indexOfSubCollection: fullBoundary
-		startingAt: start 
+		startingAt: start
 		ifAbsent: [ bytes size ].
 	[ next < (bytes size - 2) ] whileTrue: [ | partReadStream |
 		partReadStream := ReadStream on: bytes from: start + 2 to: next - 3.

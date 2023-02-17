@@ -16,5 +16,4 @@ testParseEmpty
 	self assert: (keys at: 'qop') equals: ''.
 	self assert: (keys at: 'nc') equals: ''.
 	self assert: (keys at: 'cnonce') equals: '0a4f113b'.
-	self assert: (keys at: 'response') equals: '6629fae49393a05397450978507c4ef1'.
-	
+	self assert: (keys at: 'response') equals: '6629fae49393a05397450978507c4ef1'

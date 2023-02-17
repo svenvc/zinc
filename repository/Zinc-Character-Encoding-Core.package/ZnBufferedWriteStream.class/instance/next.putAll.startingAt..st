@@ -1,7 +1,7 @@
 accessing
 next: count putAll: collection startingAt: offset
 	"Write count elements from collection starting at offset."
-	
+
 	self flushBufferIfFull.
 	count <= self bufferFreeSize
 		ifTrue: [

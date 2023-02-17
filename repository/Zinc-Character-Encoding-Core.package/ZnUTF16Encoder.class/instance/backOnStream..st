@@ -5,5 +5,5 @@ backOnStream: stream
 	| word |
 	word := self back16BitWordOnStream: stream.
 	(word < 16rD800 or: [ word > 16rDBFF ])
-		ifFalse: [ 
+		ifFalse: [
 			self back16BitWordOnStream: stream ]

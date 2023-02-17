@@ -1,3 +1,3 @@
 accessing
-readStream 
+readStream
 	^ self stream

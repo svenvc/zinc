@@ -9,4 +9,3 @@ testPlainPeek
 	self assert: stream peek equals: $c.
 	self assert: stream next equals: $c.
 	self assert: stream atEnd
-

@@ -1,3 +1,3 @@
 accessing
-cookies 
+cookies
 	^ cookies ifNil: [ cookies := Bag new ]

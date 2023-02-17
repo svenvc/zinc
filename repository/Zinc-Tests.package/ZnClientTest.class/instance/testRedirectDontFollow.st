@@ -2,7 +2,7 @@ testing
 testRedirectDontFollow
 	| client target |
 	target := 'http://zn.stfx.eu'.
-	(client := ZnClient new) 
+	(client := ZnClient new)
 		dontFollowRedirects;
 		get: target.
 	self assert: client response isRedirect.

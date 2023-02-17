@@ -10,4 +10,4 @@ testParameters
 	mimeType removeParameter: 'foo'.
 	mimeType removeParameter: 'bar'.
 	self should: [ mimeType parameterAt: 'foo' ] raise: KeyNotFound.
-	self assert: (mimeType parameterAt: 'foo' ifAbsent: [ #none ]) equals: #none	
+	self assert: (mimeType parameterAt: 'foo' ifAbsent: [ #none ]) equals: #none

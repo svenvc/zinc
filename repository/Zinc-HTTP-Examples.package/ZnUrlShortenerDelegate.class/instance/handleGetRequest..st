@@ -1,7 +1,7 @@
 request handling
 handleGetRequest: request
 	^ request uri lastPathSegment
-			ifNotNil: [ :key | 
+			ifNotNil: [ :key |
 				self class database
 					at: key
 					ifPresent: [ :url | ZnResponse redirect: url ]

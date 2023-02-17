@@ -1,7 +1,7 @@
 accessing - request
 multiPartFormDataEntity
 	"Initialize the current request to have an multipart/form-data entity.
-	Return the existing entity if there is one. 
+	Return the existing entity if there is one.
 	Fail if another type was already set."
 
 	request hasEntity

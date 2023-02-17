@@ -3,7 +3,7 @@ handleGetMczEntry: request
 	| name file stream entity |
 	name := request uri firstPathSegment.
 	file := self directory / name.
-	^ ((self isValidMczName: name) and: [ file exists ]) 
+	^ ((self isValidMczName: name) and: [ file exists ])
 		ifTrue: [ |  |
 			(stream := file readStream)
 				binary.
