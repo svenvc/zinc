@@ -9,6 +9,6 @@ parseAuthRequest: headerValue
 		i := tokens indexOf: $=.
 		(i > 0) ifTrue: [
 			key := tokens copyFrom: 1 to: i - 1.
-			value := tokens copyFrom: i + 1 to: tokens size.  
+			value := tokens copyFrom: i + 1 to: tokens size.
 			dict at: key put: (value trimBoth: [ :char | char = $" ]) ] ].
 	^ dict

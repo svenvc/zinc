@@ -1,3 +1,3 @@
 initialization
-initialize 
-	attributes := Dictionary new.
+initialize
+	attributes := Dictionary new

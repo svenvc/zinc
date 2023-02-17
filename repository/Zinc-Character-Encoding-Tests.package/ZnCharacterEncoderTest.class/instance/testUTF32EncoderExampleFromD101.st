@@ -13,4 +13,4 @@ testUTF32EncoderExampleFromD101
 	bytesLittleEndianWithBom := ByteArray readHexFrom: 'FFFE00004D000000300400008C4E000002030100'.
 	"the correct endianness (LE) should be detected"
 	self assert: (encoder decodeBytes: bytesLittleEndianWithBom) equals: string.
-	self assert: encoder isLittleEndian.
+	self assert: encoder isLittleEndian

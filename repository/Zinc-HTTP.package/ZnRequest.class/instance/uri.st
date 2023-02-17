@@ -1,3 +1,3 @@
 accessing
 uri
-	^ self requestLine uri 
+	^ self requestLine uri

@@ -1,7 +1,7 @@
 testing
 testAuthorizationSuccessful
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| response |
 			server authenticator: (ZnBasicAuthenticator username: 'foo' password: 'secret').
 			response := ZnEasy

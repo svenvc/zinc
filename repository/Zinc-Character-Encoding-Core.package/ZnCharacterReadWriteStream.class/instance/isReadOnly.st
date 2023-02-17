@@ -1,4 +1,4 @@
 testing
 isReadOnly
-	
+
 	^ false

@@ -2,6 +2,6 @@ private
 indexFileIn: fileDirectory
 	#( 'index.html' 'index.htm' ) do: [ :each | | file |
 			(file := fileDirectory / each) exists
-				ifTrue: [ 
+				ifTrue: [
 					^ file fullName ] ].
 	^ nil

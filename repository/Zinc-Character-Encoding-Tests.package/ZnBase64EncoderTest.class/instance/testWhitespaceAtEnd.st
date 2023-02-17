@@ -7,4 +7,4 @@ testWhitespaceAtEnd
 	encoder whitespace: #separator.
 	self assert: (encoder decode: 'TQ==' , String lf) equals: 'M' asByteArray.
 	encoder whitespace: nil.
-	self should: [ encoder decode: 'TQ==' , String lf ] raise: ZnCharacterEncodingError 
+	self should: [ encoder decode: 'TQ==' , String lf ] raise: ZnCharacterEncodingError

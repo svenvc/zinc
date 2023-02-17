@@ -4,7 +4,7 @@ resetEntity: object
 	even if I am already describing an entity using my content type and length.
 	See also: #clearEntity"
 
-	(entity ~= object and: [ entity notNil ]) 
+	(entity ~= object and: [ entity notNil ])
 		ifTrue: [ entity close ].
 	entity := object.
 	self headers acceptEntityDescription: object

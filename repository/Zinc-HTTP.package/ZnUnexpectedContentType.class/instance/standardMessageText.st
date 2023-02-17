@@ -1,7 +1,7 @@
 accessing
 standardMessageText
 	"Generate a standard textual description"
-	
+
 	^ String streamContents: [ :stream |
 		self expectedContentType ifNotNil: [ :contentType |
 			stream << 'expected '; print: contentType ].

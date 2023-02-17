@@ -1,6 +1,6 @@
 testing
 testGetStreamingConnectionClose
-	self withServerDo: [ :server | 
+	self withServerDo: [ :server |
 		| client result contents |
 		server onRequestRespond: [ :request |
 			(ZnResponse ok: (ZnEntity textCRLF: 'OK'))

@@ -1,3 +1,3 @@
 initialize-release
 logger: oneArgumentBlock
-	logger := oneArgumentBlock 
+	logger := oneArgumentBlock

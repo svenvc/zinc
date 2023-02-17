@@ -4,6 +4,6 @@ options: dictionary
 		ifNotNil: [ (ModificationForbidden
 				for: self
 				at: nil
-				with: dictionary 
+				with: dictionary
 				retrySelector: #options:) signal ].
-	options := dictionary 
+	options := dictionary

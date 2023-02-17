@@ -6,4 +6,4 @@ testReading
 	self assert: (headers includesKey: 'Content-Type').
 	self assert: (headers includesKey: 'Content-Length').
 	self assert: (headers at: 'Content-Type') equals: 'text/plain'.
-	self assert: (headers at: 'Content-Length') equals: '128'.
+	self assert: (headers at: 'Content-Length') equals: '128'

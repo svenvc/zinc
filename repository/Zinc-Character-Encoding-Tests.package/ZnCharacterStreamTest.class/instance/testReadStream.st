@@ -15,4 +15,4 @@ testReadStream
 	self assert: stream next equals: $C.
 	self assert: stream atEnd.
 	self assert: stream next isNil.
-	self assert: stream peek isNil		
+	self assert: stream peek isNil

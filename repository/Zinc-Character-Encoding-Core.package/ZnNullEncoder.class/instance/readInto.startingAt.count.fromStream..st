@@ -5,6 +5,6 @@ readInto: string startingAt: offset count: requestedCount fromStream: stream
 	"Overwritten for performance reasons"
 
 	offset to: offset + requestedCount - 1 do: [ :index |
-		stream atEnd ifTrue: [ ^ index - offset ].  
+		stream atEnd ifTrue: [ ^ index - offset ].
 		string byteAt: index put: stream next ].
 	^ requestedCount

@@ -1,3 +1,3 @@
 accessing
-truncate: anInteger 
+truncate: anInteger
 	stream truncate: anInteger

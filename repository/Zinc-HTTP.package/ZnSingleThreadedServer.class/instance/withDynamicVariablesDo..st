@@ -2,5 +2,5 @@ private
 withDynamicVariablesDo: block
 	^ ZnCurrentServer
 		value: self
-		during: [ 
+		during: [
 			self localOptions conditionallyDuring: block ]

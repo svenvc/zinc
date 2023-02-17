@@ -1,7 +1,7 @@
 initialization
 interactivePolicy
-	self 
+	self
 		beOneShot;
-		ifFail: [ :exception | 
+		ifFail: [ :exception |
 			self inform: 'HTTP call failed with ', exception printString.
 			nil ]

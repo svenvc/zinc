@@ -2,7 +2,7 @@ testing
 testQueryEncodingExtended
 	| url |
 	url := 'http://server.com/foo' asZnUrl.
-	url 
+	url
 		queryAt: 'one' put: '1';
 		queryAt: 'equalSign' put: 'a=0';
 		queryAt: 'ampersand' put: 'm&m';

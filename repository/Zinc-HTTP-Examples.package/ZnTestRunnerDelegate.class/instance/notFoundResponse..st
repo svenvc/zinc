@@ -4,4 +4,4 @@ notFoundResponse: message
 		statusLine: ZnStatusLine notFound;
 		headers: ZnHeaders defaultResponseHeaders;
 		entity: (ZnEntity textCRLF: 'Not Found: ', message);
-		yourself.
+		yourself

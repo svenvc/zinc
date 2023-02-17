@@ -1,5 +1,5 @@
 converting
 asZnUrlWithDefaults
-	^ self copy 
-		setDefaults; 
+	^ self copy
+		setDefaults;
 		yourself

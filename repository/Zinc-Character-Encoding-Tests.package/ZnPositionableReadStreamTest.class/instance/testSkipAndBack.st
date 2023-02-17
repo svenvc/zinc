@@ -10,4 +10,4 @@ testSkipAndBack
 	stream skip: -2.
 	self assert: stream next equals: $a.
 	stream back.
-	self assert: stream upToEnd equals: 'abcdef'. 
+	self assert: stream upToEnd equals: 'abcdef'.

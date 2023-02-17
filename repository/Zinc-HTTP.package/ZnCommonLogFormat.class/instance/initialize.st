@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	combined := true.
+	combined := true

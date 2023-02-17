@@ -1,5 +1,5 @@
 accessing
-skip: anInteger 
-	
-	self readingActionDo: [ 
+skip: anInteger
+
+	self readingActionDo: [
 		readStream skip: anInteger ]

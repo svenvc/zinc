@@ -1,4 +1,4 @@
 converting
 fullString
-	^ String streamContents: [ :stream | 
+	^ String streamContents: [ :stream |
 		self writeOn: stream ]

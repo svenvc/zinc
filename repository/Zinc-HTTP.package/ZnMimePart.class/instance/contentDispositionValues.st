@@ -5,7 +5,7 @@ contentDispositionValues
 	values := OrderedCollection new: 3.
 	start := 1.
 	semiColonIndex := contentDisposition indexOf: $; startingAt: start ifAbsent: [ 0 ].
-	[ semiColonIndex isZero ] whileFalse: [ 
+	[ semiColonIndex isZero ] whileFalse: [
 		| value |
 		value := contentDisposition copyFrom: start to: semiColonIndex - 1.
 		values add: (ZnUtils trimString: value).

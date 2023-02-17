@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 11/7/2018 13:56",
+	"commentStamp" : "",
 	"super" : "WriteStream",
 	"category" : "Zinc-Character-Encoding-Core",
 	"classinstvars" : [ ],

@@ -1,7 +1,7 @@
 testing
 testEchoBinary
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| response entityIn entityOut |
 			server reader: [ :stream | ZnRequest readBinaryFrom: stream ].
 			entityIn := ZnEntity with: 'ABC' type: 'text/plain'.

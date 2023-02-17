@@ -5,10 +5,10 @@ nextCodePointFromStream: stream
 	| byteValue |
 	^ (byteValue := stream next) < 128
 		ifTrue: [ byteValue ]
-		ifFalse: [ 
+		ifFalse: [
 			(byteToUnicode at: byteValue - 127 ifAbsent: [ nil ])
 				ifNotNil: [ :unicode | unicode asInteger ]
-				ifNil: [ 
+				ifNil: [
 					strict
 						ifTrue: [ self errorOutsideRange ]
 						ifFalse: [ byteValue ] ] ]

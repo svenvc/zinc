@@ -1,3 +1,3 @@
 private
-initializeHTTPStatusCodes 
-	HTTPStatusCodes := Dictionary newFromPairs: self officialHTTPStatusCodesSpec 
+initializeHTTPStatusCodes
+	HTTPStatusCodes := Dictionary newFromPairs: self officialHTTPStatusCodesSpec

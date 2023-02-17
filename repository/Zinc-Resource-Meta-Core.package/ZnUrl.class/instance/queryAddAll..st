@@ -4,7 +4,7 @@ queryAddAll: keyedCollection
 	Note that we use #addAllMulti:"
 
 	keyedCollection isEmpty
-		ifFalse: [ 
+		ifFalse: [
 			query ifNil: [ query := ZnMultiValueDictionary new ].
 			query addAllMulti: keyedCollection ].
 	^ keyedCollection

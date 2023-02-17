@@ -1,3 +1,3 @@
 accessing
 url
-	^ self uri 
+	^ self uri

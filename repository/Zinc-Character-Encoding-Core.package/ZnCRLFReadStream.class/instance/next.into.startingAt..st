@@ -1,6 +1,6 @@
 accessing
 next: requestedCount into: aCollection startingAt: startIndex
-	"Read requestedCount objects into the given collection. 
+	"Read requestedCount objects into the given collection.
 	Return aCollection or a partial copy if less elements have been read."
 
 	| readCount |

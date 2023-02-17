@@ -1,3 +1,3 @@
 *Zinc-Resource-Meta-Core
-addedToZnUrl: url 
+addedToZnUrl: url
 	^ url withPathSegments: self

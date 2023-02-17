@@ -8,4 +8,4 @@ testReadUpToEnd
 	self assert: stream atEnd.
 	stream := ZnBufferedReadStream on: #[] readStream.
 	self assert: stream upToEnd equals: #[].
-	self assert: stream atEnd.
+	self assert: stream atEnd

@@ -4,8 +4,8 @@ next: count putAll: string startingAt: offset toStream: stream
 	"Overwritten for performance reasons"
 
 	string isByteString
-		ifTrue: [ 
-			offset to: offset + count - 1 do: [ :index | 
+		ifTrue: [
+			offset to: offset + count - 1 do: [ :index |
 				stream nextPut: (string byteAt: index) ] ]
-		ifFalse: [ 
+		ifFalse: [
 			super next: count putAll: string startingAt: offset toStream: stream ]

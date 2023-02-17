@@ -8,7 +8,7 @@ testReadIntoStartingAtCountFromStreamWide
 			buffer := String new: each size.
 			notified := false.
 			[ read := encoder readInto: buffer startingAt: 1 count: each size fromStream: bytes readStream ]
-				on: ZnByteStringBecameWideString 
+				on: ZnByteStringBecameWideString
 				do: [ :notification |
 					self deny: notified.
 					notified := true.
@@ -16,4 +16,4 @@ testReadIntoStartingAtCountFromStreamWide
 					notification resume ].
 			self assert: notified.
 			self assert: buffer equals: each.
-			self assert: read equals: each size ] 
+			self assert: read equals: each size ]

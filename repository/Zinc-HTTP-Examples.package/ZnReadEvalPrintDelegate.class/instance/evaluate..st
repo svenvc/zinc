@@ -1,12 +1,12 @@
 private
 evaluate: string
 	| output |
-	output := String streamContents: [ :out | 
+	output := String streamContents: [ :out |
 		[ 	| compiler result |
-			compiler := [ self class compiler ] 
-								on: MessageNotUnderstood 
-								do: [ Smalltalk at: #Compiler "for Pharo 2.0" ].		
-			result := compiler evaluate: string. 
+			compiler := [ self class compiler ]
+								on: MessageNotUnderstood
+								do: [ Smalltalk at: #Compiler "for Pharo 2.0" ].
+			result := compiler evaluate: string.
 			out print: result; cr ]
 			on: Error
 			do: [ :exception |

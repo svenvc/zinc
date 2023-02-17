@@ -2,8 +2,8 @@ private
 withTimeoutDo: block
 	^ ZnConnectionTimeout value
 		ifNil: [
-			ZnConnectionTimeout 
-				value: self timeout 
+			ZnConnectionTimeout
+				value: self timeout
 				during: [ ^ block value ] ]
-		ifNotNil: [ 
+		ifNotNil: [
 			block value ]

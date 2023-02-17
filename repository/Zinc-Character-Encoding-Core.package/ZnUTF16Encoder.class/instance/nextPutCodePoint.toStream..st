@@ -5,7 +5,7 @@ nextPutCodePoint: codePoint toStream: stream
 	| leadSurrogate trailSurrogate shifted |
 	(self isSurrogateCodePoint: codePoint) ifTrue: [ self errorOutsideRange ].
 	codePoint <= 65535
-		ifTrue: [ 
+		ifTrue: [
 			^ self write16BitWord: codePoint toStream: stream ].
 	codePoint <= self maximumUTFCode
 		ifTrue: [

@@ -2,7 +2,7 @@ printing
 printOn: stream
 	super printOn: stream.
 	id
-		ifNotNil: [ 
+		ifNotNil: [
 			stream
 				nextPut: $(;
 				print: id;

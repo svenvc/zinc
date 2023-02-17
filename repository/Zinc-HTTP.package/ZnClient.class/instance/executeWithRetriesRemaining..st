@@ -5,7 +5,7 @@ executeWithRetriesRemaining: retryCount
 		do: [ :exception |
 			retryCount > 0
 				ifTrue: [
-					self 
+					self
 						handleRetry: exception;
 						executeWithRetriesRemaining: retryCount - 1 ]
 				ifFalse: [

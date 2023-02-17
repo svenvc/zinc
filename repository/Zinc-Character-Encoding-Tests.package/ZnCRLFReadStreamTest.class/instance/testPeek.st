@@ -12,14 +12,14 @@ testPeek
 			<< 'c';
 			<< String crlf ].
 	stream := ZnCRLFReadStream on: input asByteArray readStream.
-	self 
+	self
 		assert: stream peek
 		equals: $a asInteger.
 	self
-		assert: stream next 
+		assert: stream next
 		equals: $a asInteger.
 	self
-		assert: stream next 
+		assert: stream next
 		equals: Character cr asInteger.
 	self
 		assert: stream peek
@@ -32,4 +32,4 @@ testPeek
 		equals: $b asInteger.
 	self
 		assert: stream next
-		equals: $b asInteger.
+		equals: $b asInteger

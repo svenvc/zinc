@@ -9,7 +9,7 @@ nextCodePointFromStream: stream
 	^ (word < 16rD800 or: [ word > 16rDBFF ])
 		ifTrue: [
 			word ]
-		ifFalse: [ 
+		ifFalse: [
 			leadSurrogate := word.
 			trailSurrogate := self read16BitWordFromStream: stream.
 			code := (leadSurrogate - 16rD800) * 16r400 + (trailSurrogate - 16rDC00).

@@ -1,7 +1,7 @@
 testing
 testEcho
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| response |
 			response := ZnEasy
 				get:

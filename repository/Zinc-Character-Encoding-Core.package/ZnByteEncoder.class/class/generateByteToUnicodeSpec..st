@@ -1,14 +1,14 @@
 utilties
 generateByteToUnicodeSpec: url
-	"Return the formatted source code for an array mapping 
+	"Return the formatted source code for an array mapping
 	the top 128 byte to unicode values from a Unicode.org url"
 	"self generateByteToUnicodeSpec: 'http://unicode.org/Public/MAPPINGS/ISO8859/8859-2.TXT'."
 
 	| mapping |
 	mapping := self parseUnicodeOrgSpec: url.
-	^ String streamContents: [ :stream | 
+	^ String streamContents: [ :stream |
 			stream tab; << '"'; << 'self generateByteToUnicodeSpec: '; print: url; << '"'; cr; cr; tab; << '^ #('.
-			(self top128FromUnicodeSpec: mapping) doWithIndex: [ :each :index | 
+			(self top128FromUnicodeSpec: mapping) doWithIndex: [ :each :index |
 					index - 1 \\ 8 = 0 ifTrue: [ stream cr; tab ].
 					each
 						ifNil: [ stream print: nil; space ]

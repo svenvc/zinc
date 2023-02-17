@@ -1,3 +1,3 @@
 accessing
 systemVersion
-	^ SystemVersion current type , '/' , SystemVersion current dottedMajorMinor 
+	^ SystemVersion current type , '/' , SystemVersion current dottedMajorMinor

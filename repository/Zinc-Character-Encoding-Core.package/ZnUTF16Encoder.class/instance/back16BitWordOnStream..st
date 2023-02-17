@@ -3,6 +3,6 @@ back16BitWordOnStream: stream
 	| firstByte secondByte |
 	firstByte := stream back.
 	secondByte := stream back.
-	^ self isBigEndian 
+	^ self isBigEndian
 		ifTrue: [ secondByte + (firstByte << 8) ]
 		ifFalse: [ firstByte + (secondByte << 8) ]

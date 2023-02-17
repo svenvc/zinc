@@ -6,12 +6,12 @@ capitalizeString: string
 		string do: [ :each |
 			each isAlphaNumeric
 				ifTrue: [
-					capitalExpected 
-						ifTrue: [ 
+					capitalExpected
+						ifTrue: [
 							stream nextPut: each asUppercase.
 							capitalExpected := false. ]
-						ifFalse: [ 
-							stream nextPut: each asLowercase ] ] 
-		 		ifFalse: [ 
+						ifFalse: [
+							stream nextPut: each asLowercase ] ]
+		 		ifFalse: [
 					stream nextPut: each.
 					capitalExpected := true ] ] ]

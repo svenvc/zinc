@@ -1,9 +1,9 @@
 accessing
-upTo: value 
+upTo: value
 	"Read upto but not including value and return them as a collection.
 	If value is not found, return the entire contents of the stream."
-	
-	^ self collectionSpecies 
+
+	^ self collectionSpecies
 		streamContents: [ :writeStream | | element |
-			[ self atEnd or: [ (element := self next) = value ] ] whileFalse: [ 
+			[ self atEnd or: [ (element := self next) = value ] ] whileFalse: [
 				writeStream nextPut: element ] ]

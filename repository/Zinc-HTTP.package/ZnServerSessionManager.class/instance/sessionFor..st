@@ -6,7 +6,7 @@ sessionFor: request
 	id := self sessionIdFromRequest: request.
 	sessions
 		at: id
-		ifPresent: [ :session | 
+		ifPresent: [ :session |
 			session isValid
 				ifTrue: [ ^ session touch; yourself ]
 				ifFalse: [ sessions removeKey: id ] ].

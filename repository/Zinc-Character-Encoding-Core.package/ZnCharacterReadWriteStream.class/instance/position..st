@@ -1,4 +1,4 @@
 accessing
-position: anInteger 
-	
+position: anInteger
+
 	readStream position: anInteger

@@ -7,7 +7,7 @@ readFrom: stream
 	"We have to use the contentLength instance variable instead of the accessor else a representation will be computed"
 	contentLength
 		ifNil: [ bytes := ZnUtils readUpToEnd: stream limit: ( ZnCurrentOptions at: #maximumEntitySize ) ]
-		ifNotNil: [ 
+		ifNotNil: [
 			self contentLength > ( ZnCurrentOptions at: #maximumEntitySize ) ifTrue: [ ZnEntityTooLarge signal ].
 			bytes := ByteArray ofSize: contentLength.
 			stream next: contentLength into: bytes ].

@@ -7,4 +7,4 @@ testBuffering
 	self assert: (stream next: 10) equals: '0123456789'.
 	self deny: stream atEnd.
 	self assert: (stream next: 10) equals: '0123456789'.
-	self assert: stream atEnd	
+	self assert: stream atEnd

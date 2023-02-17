@@ -5,4 +5,3 @@ readStreamingFrom: stream
 	(entityReader := self entityReaderOn: stream)
 		streaming.
 	self entity: entityReader readEntity
-	

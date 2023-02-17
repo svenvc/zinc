@@ -8,7 +8,7 @@ executeOneRequestResponseOn: stream
 	timing := ZnServerTransactionTiming new.
 	^ (request := self readRequestSafely: stream timing: timing)
 		ifNil: [ true ]
-		ifNotNil: [ 
+		ifNotNil: [
 			response := self handleRequest: request timing: timing.
 			self augmentResponse: response forRequest: request.
 			self writeResponseSafely: response on: stream timing: timing.

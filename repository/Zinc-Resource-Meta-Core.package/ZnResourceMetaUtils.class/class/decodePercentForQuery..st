@@ -1,5 +1,5 @@
 converting
 decodePercentForQuery: string
-	^ ZnPercentEncoder new 
-		decodePlusAsSpace: true; 
+	^ ZnPercentEncoder new
+		decodePlusAsSpace: true;
 		decode: string

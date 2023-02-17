@@ -1,4 +1,4 @@
 printing
 pathQueryFragmentPrintString
-	^ String streamContents: [ :stream | 
+	^ String streamContents: [ :stream |
 			self printPathQueryFragmentOn: stream ]

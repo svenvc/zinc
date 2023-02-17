@@ -1,3 +1,3 @@
 accessing
 inactivity
-	^ DateAndTime now - modified 
+	^ DateAndTime now - modified

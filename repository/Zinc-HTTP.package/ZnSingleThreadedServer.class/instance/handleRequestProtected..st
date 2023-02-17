@@ -5,10 +5,10 @@ handleRequestProtected: request
 	If an Error is thrown, return a HTTP Server Error response."
 
 	^ [ [ self authenticateAndDelegateRequest: request ]
-			on: ZnRespond 
+			on: ZnRespond
 			do: [ :notification | notification response ] ]
 		on: Error
-		do: [ :exception | 
+		do: [ :exception |
 			self debugMode
 				ifTrue: [ exception pass ]
 				ifFalse: [

@@ -1,3 +1,3 @@
 convenience
 default
-	^ self applicationOctetStream 
+	^ self applicationOctetStream

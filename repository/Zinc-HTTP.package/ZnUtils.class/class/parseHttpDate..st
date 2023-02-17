@@ -3,7 +3,7 @@ parseHttpDate: string
 	"self parseHttpDate: 'Tue, 13 Sep 2011 08:04:49 GMT'."
 	"self parseHttpDate: 'Tue, 13-Sep-2011 08:04:51 GMT'."
 	"self parseHttpDate: 'Tue Jan 01 00:00:01 2036 GMT'."
-	
+
 	| tokens day month year hour minute second months map yearToken |
 	tokens := (string findTokens: #( $ $- $: $, )) allButFirst.
 	tokens last = 'GMT' ifTrue: [ tokens := tokens allButLast ].

@@ -1,6 +1,6 @@
 private
 cleanupConnection
-	(self isOneShot 
+	(self isOneShot
 		or: [
 			self streaming not
 				and: [

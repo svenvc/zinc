@@ -1,13 +1,13 @@
 public
 handleRequest: request
 	"Dispatch between GET and POST on /image"
-	
+
 	request uri path = #image
-		ifTrue: [ 
+		ifTrue: [
 			request method = #GET
-				ifTrue: [ 
+				ifTrue: [
 					^ self handleGetRequest: request ].
 			request method = #POST
-				ifTrue: [ 
+				ifTrue: [
 					^ self handlePostRequest: request ] ].
 	^ ZnResponse notFound: request uri

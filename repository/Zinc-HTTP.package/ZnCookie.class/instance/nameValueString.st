@@ -1,4 +1,4 @@
 converting
 nameValueString
-	^ String streamContents: [ :stream | 
+	^ String streamContents: [ :stream |
 		self writeNameAndValueOn: stream ]
