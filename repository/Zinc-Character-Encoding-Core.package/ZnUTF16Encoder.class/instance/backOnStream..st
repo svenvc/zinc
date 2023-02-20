@@ -4,6 +4,6 @@ backOnStream: stream
 
 	| word |
 	word := self back16BitWordOnStream: stream.
-	(word < 16rD800 or: [ word > 16rDBFF ])
-		ifFalse: [
+	(self isSurrogateCodePoint: word)
+		ifTrue: [
 			self back16BitWordOnStream: stream ]
