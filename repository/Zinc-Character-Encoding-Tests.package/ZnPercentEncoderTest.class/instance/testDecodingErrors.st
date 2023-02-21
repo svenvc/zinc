@@ -1,4 +1,4 @@
-testing
+tests
 testDecodingErrors
 	| encoder |
 	encoder := ZnPercentEncoder new.

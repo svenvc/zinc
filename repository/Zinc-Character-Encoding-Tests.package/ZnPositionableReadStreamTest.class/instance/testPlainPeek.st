@@ -1,4 +1,4 @@
-testing
+tests
 testPlainPeek
 	| stream |
 	stream := ZnPositionableReadStream on: 'abc' readStream.

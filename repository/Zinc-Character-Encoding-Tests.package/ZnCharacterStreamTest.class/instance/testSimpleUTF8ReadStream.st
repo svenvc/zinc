@@ -1,4 +1,4 @@
-testing
+tests
 testSimpleUTF8ReadStream
 	| string bytes |
 	string := 'élève en Français'.

@@ -1,4 +1,4 @@
-testing
+tests
 testNextLine
 	| reader |
 	reader := ZnFastLineReader on: 'abc' readStream.

@@ -1,4 +1,4 @@
-testing
+tests
 testReadAllLargerBuffer
 	| data stream |
 	data := String new: 500 streamContents: [ :out |

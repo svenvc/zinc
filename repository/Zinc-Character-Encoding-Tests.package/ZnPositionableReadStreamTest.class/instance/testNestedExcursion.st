@@ -1,4 +1,4 @@
-testing
+tests
 testNestedExcursion
 	| stream |
 	stream := ZnPositionableReadStream on: 'abcdef---XYZ!1--------' readStream.

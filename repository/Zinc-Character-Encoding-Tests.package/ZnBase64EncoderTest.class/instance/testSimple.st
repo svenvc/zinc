@@ -1,4 +1,4 @@
-testing
+tests
 testSimple
 	| encoder |
 	encoder := ZnBase64Encoder new.

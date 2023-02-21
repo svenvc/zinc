@@ -1,4 +1,4 @@
-testing
+tests
 testSearchBinary
 	| data stream pattern found |
 	data := ByteArray new: 2000 streamContents: [ :out |

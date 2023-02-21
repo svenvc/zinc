@@ -1,4 +1,4 @@
-testing
+tests
 testUTF8ReadStreamReadInto
 	| string bytes stream buffer |
 	string := 'élève en Français'.

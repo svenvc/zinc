@@ -1,4 +1,4 @@
-testing
+tests
 testPadding
 	| encoder |
 	encoder := ZnBase64Encoder new.

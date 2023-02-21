@@ -1,4 +1,4 @@
-testing
+tests
 testReadStream
 	| stream |
 	stream := ZnCharacterReadStream on: 'ABC' asByteArray readStream.

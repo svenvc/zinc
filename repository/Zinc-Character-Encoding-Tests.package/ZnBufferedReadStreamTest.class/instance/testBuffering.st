@@ -1,4 +1,4 @@
-testing
+tests
 testBuffering
 	| stream |
 	stream := ZnBufferedReadStream on: '01234567890123456789' readStream.

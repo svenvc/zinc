@@ -1,4 +1,4 @@
-testing
+tests
 testInt32Aliases
 	| input writer |
 	writer := [ :block |

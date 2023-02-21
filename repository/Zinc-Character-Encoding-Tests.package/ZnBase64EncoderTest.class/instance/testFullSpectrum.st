@@ -1,4 +1,4 @@
-testing
+tests
 testFullSpectrum
 	| encoder input output |
 	encoder := ZnBase64Encoder new.

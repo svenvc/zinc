@@ -1,4 +1,4 @@
-testing
+tests
 testSearch
 	| data stream found |
 	data := String new: 2000 streamContents: [ :out |

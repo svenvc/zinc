@@ -1,4 +1,4 @@
-testing
+tests
 testUTF8ReadStreamPositioning
 	| bytes stream |
 	bytes := 'élève' utf8Encoded.

@@ -1,4 +1,4 @@
-private
+test support
 decodeBytes: bytes with: encoder
 	| input |
 	input := bytes readStream.

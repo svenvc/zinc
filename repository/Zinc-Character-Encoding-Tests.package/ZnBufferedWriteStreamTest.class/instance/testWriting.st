@@ -1,4 +1,4 @@
-testing
+tests
 testWriting
 	| string |
 	string := String streamContents: [ :stringStream | | bufferedStream |

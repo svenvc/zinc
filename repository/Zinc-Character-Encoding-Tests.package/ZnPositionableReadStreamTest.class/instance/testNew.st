@@ -1,4 +1,4 @@
-testing
+tests
 testNew
 	| stream |
 	stream := ZnPositionableReadStream on: 'abc' readStream.

@@ -1,4 +1,4 @@
-testing
+tests
 testUTF8ReadStreamBack
 	| stream |
 	stream := ZnCharacterReadStream on: 'élève' utf8Encoded readStream.

@@ -1,4 +1,4 @@
-testing
+tests
 testNextPutAllStartingAt
 	| string |
 	string := String streamContents: [ :stringStream |

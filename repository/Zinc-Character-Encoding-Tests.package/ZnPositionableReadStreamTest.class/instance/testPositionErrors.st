@@ -1,4 +1,4 @@
-testing
+tests
 testPositionErrors
 	| data stream |
 	data := ByteArray new: 1000 streamContents: [ :out |

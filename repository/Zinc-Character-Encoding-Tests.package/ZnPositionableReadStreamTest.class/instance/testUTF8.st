@@ -1,4 +1,4 @@
-testing
+tests
 testUTF8
 	| data stream |
 	data := 'Les élèves Françaises ont 100 €'.

@@ -1,4 +1,4 @@
-testing
+tests
 testReadInto
 	| stream buffer count |
 	stream := ZnBufferedReadStream on: '0123456789' readStream.

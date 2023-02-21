@@ -1,4 +1,4 @@
-testing
+tests
 testWhitespaceAtEnd
 	| encoder |
 	encoder := ZnBase64Encoder new.

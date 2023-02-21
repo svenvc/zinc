@@ -1,4 +1,4 @@
-testing
+tests
 testNonAscii
 	| encoder |
 	encoder := ZnPercentEncoder new.

@@ -1,4 +1,4 @@
-testing
+tests
 testLinesDo
 	| lines reader |
 	lines := #( 'foo' 'bar' 'last').

@@ -1,4 +1,4 @@
-testing
+tests
 testInt8
 	| bytes readStream |
 	bytes := ByteArray streamContents: [ :out |

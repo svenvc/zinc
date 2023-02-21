@@ -1,4 +1,4 @@
-testing
+tests
 testQuote
 	| input output encoder break |
 	encoder := ZnBase64Encoder new lineEndConvention: #cr; breakLines; yourself.

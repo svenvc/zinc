@@ -1,4 +1,4 @@
-testing
+tests
 testNextIntegerOfSizeSignedBigEndian
 	self integerEncodingSpec do: [ :spec |
 		| input integer |

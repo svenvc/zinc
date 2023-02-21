@@ -1,4 +1,4 @@
-testing
+tests
 testPeek
 	| string bytes readStream |
 	string := 'élève en Français'.

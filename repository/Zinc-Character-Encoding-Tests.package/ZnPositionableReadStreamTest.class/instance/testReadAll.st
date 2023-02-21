@@ -1,4 +1,4 @@
-testing
+tests
 testReadAll
 	| data stream |
 	data := String new: 200 streamContents: [ :out |
