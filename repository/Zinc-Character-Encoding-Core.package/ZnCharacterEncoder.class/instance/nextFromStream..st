@@ -1,4 +1,4 @@
-converting
+encoding - decoding
 nextFromStream: stream
 	"Read and return the next character from stream"
 

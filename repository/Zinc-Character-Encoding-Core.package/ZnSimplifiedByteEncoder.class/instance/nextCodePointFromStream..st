@@ -1,4 +1,4 @@
-converting
+encoding - decoding
 nextCodePointFromStream: stream
 	"In non-strict mode, we let byte values for holes in our mapping pass through"
 

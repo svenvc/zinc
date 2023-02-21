@@ -1,3 +1,3 @@
-initialize-release
+initialization
 unicodeToByte: map
 	unicodeToByte := map

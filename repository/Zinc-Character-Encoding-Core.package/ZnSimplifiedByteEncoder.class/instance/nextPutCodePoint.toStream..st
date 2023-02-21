@@ -1,4 +1,4 @@
-converting
+encoding - decoding
 nextPutCodePoint: codePoint toStream: stream
 	"In non-strict mode, we let code points for holes in our mapping table pass through"
 

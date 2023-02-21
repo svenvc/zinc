@@ -1,4 +1,4 @@
-converting
+encoding - decoding
 nextPut: character toStream: stream
 	"Write the encoding for character to stream"
 

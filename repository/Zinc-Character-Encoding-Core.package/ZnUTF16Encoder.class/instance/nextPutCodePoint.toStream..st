@@ -1,4 +1,4 @@
-converting
+encoding - decoding
 nextPutCodePoint: codePoint toStream: stream
 	"Write the encoding for integer code point to stream"
 
