@@ -1,5 +1,5 @@
 testing
-isVariable
+isVariableLength
 	"Return true when I am a variable length encoding"
 
-	^ self isFixed not
+	^ self isFixedLength not
