@@ -6,7 +6,7 @@ testGmailEncrypted
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].  
 	
 	(client := ZnClient new) 
-		numberOfRetries:  10;
+		maxNumberOfRedirects:  10;
 		get: 'https://www.gmail.com'.
 	
 	self assert: client isSuccess.
