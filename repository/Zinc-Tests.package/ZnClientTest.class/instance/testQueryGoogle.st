@@ -12,8 +12,8 @@ testQueryGoogle
 	[	
 		self 
 			assert: client isSuccess 
-			description: 'Response is success'.
-			
+			description: ('Response should be success. [{1}] received' format: {
+				client response  statusLine}).
 		self 
 			assert: (client response contentType matches: ZnMimeType textHtml)
 			description: 'Response has content type html'.

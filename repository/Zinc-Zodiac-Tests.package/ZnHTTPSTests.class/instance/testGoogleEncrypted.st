@@ -11,7 +11,8 @@ testGoogleEncrypted
 	[ 
 		self 
 			assert: client isSuccess 
-			description: 'Response is success'.
+			description: ('Response should be success. [{1}] received' format: {
+				client response  statusLine}).
 		self 
 			assert: (client contents includesSubstring: 'Google')
 			description: 'Response includes string google'.    
