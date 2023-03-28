@@ -1,5 +1,6 @@
 testing
 testGzipWriteRead
+	<timeout: 60 "seconds">
 	| data written read |
 	data := String streamContents: [ :out |
 		{ Collection. Stream. Exception. Magnitude } do: [ :cls |
