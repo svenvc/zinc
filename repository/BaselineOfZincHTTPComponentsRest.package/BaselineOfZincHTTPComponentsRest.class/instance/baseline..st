@@ -3,7 +3,7 @@ baseline: spec
 	<baseline>
 	spec for: #common do: [ 
 		spec baseline: 'NeoJSON' with: [ 
-				spec repository: 'github://svenvc/NeoJSON:v17/repository' ].
+				spec repository: 'github://svenvc/NeoJSON:master/repository' ].
 		spec baseline: 'ZincHTTPComponentsCore' with: [ 
 				spec repository: 'github://feenkcom/zinc/repository' ].
 		
