@@ -1,7 +1,7 @@
-testing
+tests
 testReadAll
 	| data stream |
-	data := String new: 200 streamContents: [ :out | 
+	data := String new: 200 streamContents: [ :out |
 		200 timesRepeat: [ out nextPut: 'abc' atRandom ] ].
 	stream := ZnPositionableReadStream on: data readStream.
 	self deny: stream atEnd.

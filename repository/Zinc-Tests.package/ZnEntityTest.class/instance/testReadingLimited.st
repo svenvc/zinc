@@ -2,20 +2,20 @@ testing
 testReadingLimited
 	| contents |
 	contents := String new: 1025 withAll: $X.
-	ZnOptions globalDefault clone 
+	ZnOptions globalDefault clone
 		at: #maximumEntitySize put: 1024;
 		during: [
-			self 
+			self
 				should: [
-					ZnEntity 
-						readFrom: contents asByteArray readStream 
-						usingType: ZnMimeType textPlain 
+					ZnEntity
+						readFrom: contents asByteArray readStream
+						usingType: ZnMimeType textPlain
 						andLength: contents size ]
 				raise: ZnEntityTooLarge.
-			self 
+			self
 				should: [
-					ZnEntity 
-						readFrom: contents asByteArray readStream 
-						usingType: ZnMimeType textPlain 
+					ZnEntity
+						readFrom: contents asByteArray readStream
+						usingType: ZnMimeType textPlain
 						andLength: nil ]
-						raise: ZnEntityTooLarge ] 
+						raise: ZnEntityTooLarge ]

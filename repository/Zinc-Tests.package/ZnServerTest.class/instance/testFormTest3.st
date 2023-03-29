@@ -8,9 +8,9 @@ testFormTest3
 			url: server localUrl;
 			addPathSegment: 'form-test-3'.
 		inputs do: [ :each  |
-			part := ZnMimePart 
-				fieldName: 'file' 
-				fileName: each first 
+			part := ZnMimePart
+				fieldName: 'file'
+				fileName: each first
 				entity: (ZnEntity with: each second).
 			client
 				resetEntity;

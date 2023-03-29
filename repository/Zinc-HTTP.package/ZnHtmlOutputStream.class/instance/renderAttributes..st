@@ -1,6 +1,6 @@
 private - html
 renderAttributes: attributes
-	attributes pairsDo: [ :name :value | 
+	attributes pairsDo: [ :name :value |
 		stream space; nextPutAll: name.
 		value ifNotNil: [
 			stream nextPutAll: '="'.

@@ -1,4 +1,4 @@
 testing
 hasNonDefaultPort
-	^ self hasPort 
+	^ self hasPort
 		and: [ self port ~= (self class defaultPortForScheme: self schemeOrDefault) ]

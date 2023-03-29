@@ -1,5 +1,5 @@
 testing
-isEmpty 
+isEmpty
 	"We actually don't know"
-	
+
 	^ false

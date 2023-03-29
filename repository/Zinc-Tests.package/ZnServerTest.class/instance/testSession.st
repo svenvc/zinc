@@ -1,7 +1,7 @@
 testing
 testSession
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| client sessionId |
 			client := ZnClient new
 				url: (server localUrl addPathSegment: #session);

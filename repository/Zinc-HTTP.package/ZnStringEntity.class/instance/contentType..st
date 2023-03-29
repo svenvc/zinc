@@ -1,13 +1,13 @@
 accessing
 contentType: object
 	"We only allow assignment compatible with our designated mime type"
-	
+
 	| newType |
 	newType := object asZnMimeType.
-	contentType = newType 
+	contentType = newType
 		ifTrue: [ ^ self ]
-		ifFalse: [ 
+		ifFalse: [
 			newType isBinary
-				ifFalse: [ 
+				ifFalse: [
 					contentType := newType.
 					self invalidateEncoder ] ]

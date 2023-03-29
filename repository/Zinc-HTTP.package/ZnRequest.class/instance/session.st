@@ -5,7 +5,7 @@ session
 	This only returns a value during #handleRequest:"
 
 	^ super session
-		ifNil: [ 
+		ifNil: [
 			| session |
 			session := self server sessionFor: self.
 			ZnCurrentServerSession value: session.

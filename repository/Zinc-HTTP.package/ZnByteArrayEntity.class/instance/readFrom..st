@@ -2,7 +2,7 @@ initialize-release
 readFrom: stream
 
 	self contentLength
-		ifNil: [ 
+		ifNil: [
 			self bytes: (ZnUtils readUpToEnd: stream limit: (ZnCurrentOptions at: #maximumEntitySize)).
 			self contentLength: self bytes size
 			]

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnHTTPSTests",
+	"name" : "ZnHTTPSTest",
 	"type" : "normal"
 }

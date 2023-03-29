@@ -1,9 +1,9 @@
 testing
 testRedirectWithCookies
 	self withServerDo: [ :server | | client cookie |
-		server onRequestRespond: [ :request | 
+		server onRequestRespond: [ :request |
 			request uri firstPathSegment = 'one'
-				ifTrue: [ 
+				ifTrue: [
 					(ZnResponse redirect: 'two')
 						addCookie: (ZnCookie name: 'session' value: '123456');
 						yourself ]
@@ -12,8 +12,8 @@ testRedirectWithCookies
 					(request uri firstPathSegment = 'two' and: [ cookie notNil and: [ cookie value = '123456' ] ])
 						ifTrue: [ ZnResponse ok: (ZnEntity text: 'OK!') ]
 		 				ifFalse: [ ZnResponse badRequest: request ] ] ].
-		(client := ZnClient new) 
-			url: server localUrl; addPath: 'one'; 
+		(client := ZnClient new)
+			url: server localUrl; addPath: 'one';
 			post.
 		self assert: client isSuccess.
 		self assert: client contents equals: 'OK!'.

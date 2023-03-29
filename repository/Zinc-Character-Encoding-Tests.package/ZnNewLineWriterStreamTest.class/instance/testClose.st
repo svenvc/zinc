@@ -8,4 +8,4 @@ testClose
 		znstream nextPutAll: string.
 		znstream close ].
 	string at: string size put: Character lf.
-	self assert: result equals: string.
+	self assert: result equals: string

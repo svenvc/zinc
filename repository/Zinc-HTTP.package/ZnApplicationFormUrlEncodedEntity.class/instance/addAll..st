@@ -4,4 +4,4 @@ addAll: keyedCollection
 
 	self invalidateRepresentation.
 	self fields addAllMulti: keyedCollection.
-	^ keyedCollection 
+	^ keyedCollection

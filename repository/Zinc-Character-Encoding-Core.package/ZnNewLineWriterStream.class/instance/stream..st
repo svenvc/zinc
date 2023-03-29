@@ -1,3 +1,3 @@
 accessing
-stream: aWriteStream 
+stream: aWriteStream
 	stream := aWriteStream

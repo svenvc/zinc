@@ -1,6 +1,6 @@
 initialization
 systemPolicy
-	self 
+	self
 		enforceHttpSuccess: true;
 		enforceAcceptContentType: true;
 		numberOfRetries: 2

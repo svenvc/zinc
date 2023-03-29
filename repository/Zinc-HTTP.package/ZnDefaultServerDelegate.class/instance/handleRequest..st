@@ -8,7 +8,7 @@ handleRequest: request
 		ifFalse: [ request uri firstPathSegment ].
 	^ prefixMap
 		at: prefix
-		ifPresent: [ :prefixHandler | 
+		ifPresent: [ :prefixHandler |
 			prefixHandler isSymbol
 				ifTrue: [ self perform: prefixHandler with: request ]
 				ifFalse: [ prefixHandler value: request ]

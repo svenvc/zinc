@@ -2,7 +2,7 @@ utilities
 definitionOf: key
 	| implementors options |
 	implementors := key implementors.
-	options := implementors select: [ :method | 
+	options := implementors select: [ :method |
 		method method pragmas
 			anySatisfy: [ :pragma | pragma selector = #znOption ] ].
 	options ifEmpty: [ self error: 'Not option definition found for ' , key printString ].

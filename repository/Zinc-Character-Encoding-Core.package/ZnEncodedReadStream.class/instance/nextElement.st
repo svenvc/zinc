@@ -1,3 +1,3 @@
 private
 nextElement
-	self subclassResponsibility 
+	self subclassResponsibility

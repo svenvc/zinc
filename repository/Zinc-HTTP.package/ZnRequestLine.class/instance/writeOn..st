@@ -4,8 +4,8 @@ writeOn: stream
 	writeStream := ZnBivalentWriteStream on: stream.
 	writeStream nextPutAll: self method; space.
 	(ZnNetworkingUtils shouldProxyUrl: self uri)
-		ifTrue: [ 
-			self uri hasSecureScheme 
+		ifTrue: [
+			self uri hasSecureScheme
 				ifTrue: [
 					"See also ZnClient>>#setupTLSTo:"
 					method = #CONNECT
@@ -13,4 +13,4 @@ writeOn: stream
 						ifFalse: [ self uri printPathQueryFragmentOn: writeStream ] ]
 				ifFalse: [ self uri printOn: writeStream ] ]
 		ifFalse: [ self uri printPathQueryFragmentOn: writeStream ].
-	writeStream space; nextPutAll: self version; nextPutAll: String crlf 
+	writeStream space; nextPutAll: self version; nextPutAll: String crlf

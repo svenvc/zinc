@@ -1,6 +1,6 @@
 private
 setDefaults
-	self hasScheme 
+	self hasScheme
 		ifFalse: [ self scheme: self schemeOrDefault ].
-	self hasPort 
-		ifFalse: [ self port: self portOrDefault ]    
+	self hasPort
+		ifFalse: [ self port: self portOrDefault ]

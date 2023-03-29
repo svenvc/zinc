@@ -1,4 +1,4 @@
 accessing
-isBinary 
+isBinary
 
 	^true

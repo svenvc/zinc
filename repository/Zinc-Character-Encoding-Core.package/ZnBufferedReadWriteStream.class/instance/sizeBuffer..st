@@ -1,5 +1,5 @@
 initialize-release
-sizeBuffer: anInteger 
-	
+sizeBuffer: anInteger
+
 	readStream sizeBuffer: anInteger.
-	writeStream sizeBuffer: anInteger.
+	writeStream sizeBuffer: anInteger

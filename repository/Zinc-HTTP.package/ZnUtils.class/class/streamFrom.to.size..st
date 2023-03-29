@@ -10,7 +10,7 @@ streamFrom: inputStream to: outputStream size: totalSize
 			inputStream next: readCount into: buffer.
 			leftToRead := leftToRead - readCount.
 			outputStream next: readCount putAll: buffer startingAt: 1.
-			leftToRead > 0 
+			leftToRead > 0
 				ifTrue: [
 					self signalProgress: (totalSize - leftToRead) total: totalSize.
 					outputStream flush ] ]

@@ -22,4 +22,4 @@ handleAuthenticationCallback: aParameterDictionary
 		client request: tokenRequest;
 			post ] ensure: [ client close ].
 
-	self updateTokens: (NeoJSONReader fromString: tokenResponse).
+	self updateTokens: (ZnUtils defaultJSONReader fromString: tokenResponse).

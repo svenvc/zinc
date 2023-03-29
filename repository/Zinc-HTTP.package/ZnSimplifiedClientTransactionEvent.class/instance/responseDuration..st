@@ -1,3 +1,3 @@
 initialize
 responseDuration: responseDuration
-	duration := duration + responseDuration 
+	duration := duration + responseDuration

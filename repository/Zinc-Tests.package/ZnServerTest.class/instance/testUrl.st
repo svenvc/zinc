@@ -1,6 +1,6 @@
 testing
 testUrl
-	self withServerDo: [ :server | 
+	self withServerDo: [ :server |
 		self assert: server url equals: server localUrl.
 		server serverUrl:
 					(ZnUrl new

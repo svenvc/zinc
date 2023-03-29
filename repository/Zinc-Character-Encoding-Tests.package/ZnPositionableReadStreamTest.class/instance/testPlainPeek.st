@@ -1,4 +1,4 @@
-testing
+tests
 testPlainPeek
 	| stream |
 	stream := ZnPositionableReadStream on: 'abc' readStream.
@@ -9,4 +9,3 @@ testPlainPeek
 	self assert: stream peek equals: $c.
 	self assert: stream next equals: $c.
 	self assert: stream atEnd
-

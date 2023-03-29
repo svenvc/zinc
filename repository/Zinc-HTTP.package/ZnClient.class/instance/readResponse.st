@@ -5,9 +5,9 @@ readResponse
 		self withDefaultCharacterEncoderDo: [
 			response := (#(HEAD CONNECT) includes: request method)
 				ifTrue: [ ZnResponse readHeaderFrom: connection ]
-				ifFalse: [ 
+				ifFalse: [
 					self streaming
 						ifTrue: [ ZnResponse readStreamingFrom: connection ]
-						ifFalse: [ 
+						ifFalse: [
 							self reader value: connection ] ] ] ].
 	lastUsed := Time totalSeconds

@@ -1,7 +1,7 @@
 testing
 testDelete
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| response |
 			response := ZnEasy
 				delete:

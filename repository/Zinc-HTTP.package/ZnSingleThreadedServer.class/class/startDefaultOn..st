@@ -8,6 +8,6 @@ startDefaultOn: portNumber
 	Change the port if necessary.
 	Starting the default server will register it automatically."
 
-	^ (self defaultOn: portNumber) 
-		start; 
+	^ (self defaultOn: portNumber)
+		start;
 		yourself

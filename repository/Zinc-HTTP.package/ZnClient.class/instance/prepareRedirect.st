@@ -10,7 +10,7 @@ prepareRedirect
 	self receiveCookies.
 	self prepareNextRequest.
 	(#(307 308) includes: response code)
-		ifFalse: [  
+		ifFalse: [
 			(#(POST PUT) includes: request method)
 				ifTrue: [ self method: #GET ].
 			request hasEntity

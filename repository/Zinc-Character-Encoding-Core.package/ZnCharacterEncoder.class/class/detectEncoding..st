@@ -4,7 +4,7 @@ detectEncoding: bytes
 	This is done by successively trying known encodings in a specific order.
 	If no one is found, signal ZnCharacterEncodingError.
 	This is a heuristic and unreliable [https://en.wikipedia.org/wiki/Charset_detection]."
-	
+
 	| candidates |
 	"Set up an ordered candidates list, 7-bit ascii and utf8 are reasonably reliable, iso88591 is a reasonable default"
 	candidates := #(ascii utf8 iso88591).

@@ -1,6 +1,6 @@
 private
 ensureChunkOrAtEnd
-	atEnd 
+	atEnd
 		ifTrue: [ ^ self ].
-	(chunk isNil or: [ position >= limit ]) 
+	(chunk isNil or: [ position >= limit ])
 		ifTrue: [ self getNextChunk ]

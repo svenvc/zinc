@@ -3,6 +3,6 @@ atEnd
 	| boolean |
 	boolean := stream atEnd.
 	logLevel > 1
-		ifTrue: [ 
+		ifTrue: [
 			logger value: ('{1} atEnd: {2}' format: { identifier. boolean }) ].
 	^ boolean

@@ -1,3 +1,3 @@
 initialize
 timing: timing
-	duration := timing totalDuration 
+	duration := timing totalDuration

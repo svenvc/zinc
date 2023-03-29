@@ -6,8 +6,8 @@ headersDo: block
 	self isEmpty ifTrue: [ ^ self ].
 	self headers keysAndValuesDo: [ :headerKey :headerValue |
 		headerValue isArray
-			ifTrue: [ 
-				headerValue do: [ :each | 
+			ifTrue: [
+				headerValue do: [ :each |
 					block value: headerKey value: each ] ]
 			ifFalse: [
 				block value: headerKey value: headerValue ] ]

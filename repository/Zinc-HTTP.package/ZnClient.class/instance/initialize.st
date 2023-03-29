@@ -1,4 +1,4 @@
 initialization
 initialize
 	request := ZnRequest empty.
-	self loggingOn 
+	self loggingOn

@@ -1,4 +1,4 @@
 initialization
 debugPolicy
-	self 
+	self
 		beOneShot

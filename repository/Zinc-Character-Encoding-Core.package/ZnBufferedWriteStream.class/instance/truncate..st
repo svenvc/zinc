@@ -1,5 +1,5 @@
 accessing
-truncate: anInteger 
-	
+truncate: anInteger
+
 	self flushBuffer.
 	stream truncate: anInteger

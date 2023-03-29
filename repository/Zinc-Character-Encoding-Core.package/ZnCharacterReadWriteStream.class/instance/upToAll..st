@@ -1,22 +1,17 @@
 accessing
 upToAll: aCollection
 	"Answer a subcollection from the current access position to the occurrence (if any, but not inclusive) of aCollection. If aCollection is not in the stream, answer the entire rest of the stream."
-	
-	^ self collectionSpecies streamContents: [ :out |
-		| partialMatch pattern matched |
-		partialMatch := (self collectionSpecies new: aCollection size) writeStream.
+
+	^ self collectionSpecies streamContents: [ :out | | pattern |
 		pattern := aCollection readStream.
-		matched := false.
-		([ matched or: [ self atEnd or: [ pattern atEnd ] ] ]) whileFalse: [
-			| ch |
-			(ch := self next) = pattern next
+		([ self atEnd or: [ pattern atEnd ] ]) whileFalse: [
+			self peek = pattern peek
 				ifTrue: [
-					pattern atEnd
-						ifTrue: [ matched := true ]
-						ifFalse: [ partialMatch nextPut: ch ] ]
+					self next. pattern next ]
 				ifFalse: [
-					pattern reset.
-					out nextPutAll: partialMatch contents.
-					partialMatch reset.
-					out nextPut: ch ] ].
-		matched ifFalse: [ out nextPutAll: partialMatch contents ] ]
+					pattern position = 0
+						ifTrue: [ out nextPut: self next ]
+						ifFalse: [ out next: pattern position putAll: aCollection ].
+					pattern reset ] ].
+		pattern atEnd
+			ifFalse: [ out next: pattern position putAll: aCollection ] ]

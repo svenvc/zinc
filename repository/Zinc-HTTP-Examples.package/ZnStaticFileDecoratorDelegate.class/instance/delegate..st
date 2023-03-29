@@ -1,3 +1,3 @@
 accessing
-delegate: aServerDelegate 
-	delegate := aServerDelegate 
+delegate: aServerDelegate
+	delegate := aServerDelegate

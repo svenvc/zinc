@@ -1,6 +1,6 @@
 testing
 testZeroContentLength
-	self withServerDo: [ :server | 
+	self withServerDo: [ :server |
 		| client |
 		client := ZnClient new
 			url: server localUrl / #echo;

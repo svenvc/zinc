@@ -9,8 +9,8 @@ readFrom: stream
 	self initializeEncoder.
 	[ readStream atEnd ] whileFalse: [
 		[ read := encoder readInto: buffer startingAt: 1 count: buffer size fromStream: readStream ]
-			on: ZnByteStringBecameWideString 
-			do: [ :notification | 
+			on: ZnByteStringBecameWideString
+			do: [ :notification |
 					buffer := notification wideString.
 					stringStream ifNotNil: [ | wideString position |
 						position := stringStream position.
@@ -20,7 +20,7 @@ readFrom: stream
 		totalRead := totalRead + read.
 		totalRead > (ZnCurrentOptions at: #maximumEntitySize)
 			ifTrue: [ ZnEntityTooLarge signal ].
-		stringStream ifNil: [ 
+		stringStream ifNil: [
 			readStream atEnd
 				ifTrue: [ ^ self string: (buffer copyFrom: 1 to: read) ]
 				ifFalse: [ stringStream := (total ifNil: [ buffer species new ] ifNotNil: [ buffer species new: total ]) writeStream ] ].

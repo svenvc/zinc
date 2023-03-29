@@ -5,4 +5,4 @@ readEntity
 	entity := self readEntityFromStream.
 	^ entity isEmpty
 		ifTrue: [ nil ]
-		ifFalse: [ entity ]    
+		ifFalse: [ entity ]

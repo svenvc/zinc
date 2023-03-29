@@ -2,9 +2,9 @@ testing
 testCookies
 	| client |
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			server
-				onRequestRespond: [ :request | 
+				onRequestRespond: [ :request |
 					| cookie1 cookie2 response |
 					cookie1 := request cookies detect: [ :each | each name = 'x' ] ifNone: [ ZnCookie name: 'x' value: '0' ].
 					cookie2 := request cookies detect: [ :each | each name = 'y' ] ifNone: [ ZnCookie name: 'y' value: '100' ].

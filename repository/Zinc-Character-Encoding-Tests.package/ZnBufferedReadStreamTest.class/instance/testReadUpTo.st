@@ -1,4 +1,4 @@
-testing
+tests
 testReadUpTo
 	| stream |
 	stream := ZnBufferedReadStream on: '0123456789' readStream.

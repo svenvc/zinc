@@ -5,7 +5,6 @@ read16BitWordFromStream: stream
 	secondByte := stream next.
 	(firstByte isNil or: [ secondByte isNil ])
 		ifTrue: [ ^ self errorIncomplete ].
-	^ self isBigEndian 
+	^ self isBigEndian
 		ifTrue: [ secondByte + (firstByte << 8) ]
 		ifFalse: [ firstByte + (secondByte << 8) ]
-	

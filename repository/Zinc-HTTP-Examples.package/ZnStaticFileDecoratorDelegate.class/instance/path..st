@@ -1,4 +1,4 @@
 accessing
-path: aString 
+path: aString
 	staticDelegate := ZnStaticFileServerDelegate new
-		directory: aString asFileReference 
+		directory: aString asFileReference

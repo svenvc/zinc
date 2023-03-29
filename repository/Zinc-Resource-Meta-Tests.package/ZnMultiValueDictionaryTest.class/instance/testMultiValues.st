@@ -10,7 +10,7 @@ testMultiValues
 	values := OrderedCollection new.
 	keys := OrderedCollection new.
 	dictionary
-		keysAndValuesDo: [ :key :value | 
+		keysAndValuesDo: [ :key :value |
 			keys add: key.
 			values add: value ].
 	self assert: values equals: (OrderedCollection with: 1 with: 2).

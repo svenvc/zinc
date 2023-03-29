@@ -5,4 +5,4 @@ escapeAttributeValue: string
 	string do: [ :each |
 		each == $"
 			ifTrue: [ stream nextPutAll: '&quot;' ]
-			ifFalse: [ stream nextPut: each ] ] 
+			ifFalse: [ stream nextPut: each ] ]

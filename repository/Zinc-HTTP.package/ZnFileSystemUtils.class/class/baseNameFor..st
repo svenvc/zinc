@@ -1,3 +1,3 @@
 paths
 baseNameFor: fileName
-	^ fileName asFileReference basename 
+	^ fileName asFileReference basename

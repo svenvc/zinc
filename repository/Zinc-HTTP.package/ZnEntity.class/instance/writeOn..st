@@ -1,3 +1,3 @@
 writing
 writeOn: stream
-	self subclassResponsibility 
+	self subclassResponsibility

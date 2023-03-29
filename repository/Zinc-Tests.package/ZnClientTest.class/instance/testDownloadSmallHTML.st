@@ -8,18 +8,18 @@ testDownloadSmallHTML
 		downloadTo: ZnFileSystemUtils defaultDirectoryPath.
 	self assert: client isSuccess.
 	self assert: client response contentType equals: ZnMimeType textHtml.
-	ZnFileSystemUtils 
+	ZnFileSystemUtils
 		readStreamFor: self smallHtmlUrl pathSegments last
 		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].
 	ZnFileSystemUtils deleteIfExists: self smallHtmlUrl pathSegments last.
 	"Second download to an explicitly named file"
-	client 
+	client
 		url: self smallHtmlUrl;
 		downloadTo: self smallHtmlUrl pathSegments last.
 	self assert: client isSuccess.
 	self assert: client response contentType equals: ZnMimeType textHtml.
-	ZnFileSystemUtils 
+	ZnFileSystemUtils
 		readStreamFor: self smallHtmlUrl pathSegments last
-		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].	
+		do: [ :stream | self assert: (stream upToEnd includesSubstring: 'Small') ].
 	client close.
 	ZnFileSystemUtils deleteIfExists: self smallHtmlUrl pathSegments last

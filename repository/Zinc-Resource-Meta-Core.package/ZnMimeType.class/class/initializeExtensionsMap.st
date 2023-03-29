@@ -4,7 +4,7 @@ initializeExtensionsMap
 
 	ExtensionsMap := Dictionary new.
 	self mimeTypeFilenameExtensionsSpec
-		do: [ :each | 
+		do: [ :each |
 			| mimeType |
 			mimeType := self fromString: each first.
 			each allButFirstDo: [ :extension | ExtensionsMap at: extension put: mimeType ] ].
