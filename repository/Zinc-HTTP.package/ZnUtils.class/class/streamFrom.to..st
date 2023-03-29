@@ -12,5 +12,5 @@ streamFrom: inputStream to: outputStream
 					outputStream next: readCount putAll: buffer startingAt: 1 ].
 			inputStream atEnd
 				ifFalse: [
-					self signalProgress: totalRead total: nil. 
+					self signalProgress: totalRead total: nil.
 					outputStream flush ] ]

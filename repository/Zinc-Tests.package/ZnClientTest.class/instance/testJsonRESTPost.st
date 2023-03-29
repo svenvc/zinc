@@ -3,10 +3,10 @@ testJsonRESTPost
 	| client |
 	self class environment at: #STONJSON ifAbsent: [ ^ self skip ].
 	self withServerDo: [ :server |
-		server onRequestRespond: [ :request | 
+		server onRequestRespond: [ :request |
 			request method = #POST
 				ifTrue: [
-					self assert: request contentType equals: ZnMimeType applicationJson.  
+					self assert: request contentType equals: ZnMimeType applicationJson.
 					ZnResponse ok: request entity ]
 				ifFalse: [ ZnResponse badRequest: request ] ].
 		(client := ZnClient new)

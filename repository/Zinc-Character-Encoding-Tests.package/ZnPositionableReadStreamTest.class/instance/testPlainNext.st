@@ -1,4 +1,4 @@
-testing
+tests
 testPlainNext
 	| stream |
 	stream := ZnPositionableReadStream on: 'abc' readStream.
@@ -8,4 +8,3 @@ testPlainNext
 	self assert: stream position equals: 2.
 	self assert: stream next equals: $c.
 	self assert: stream atEnd
-

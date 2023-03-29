@@ -1,7 +1,7 @@
 testing
 testInitialization
 	"Make sure everything is properly initialized"
-	
+
 	ZnConstants officialHTTPStatusCodesSpec pairsDo: [ :code :reason |
 		| statusLine |
 		statusLine := ZnStatusLine code: code.

@@ -10,11 +10,11 @@ testPublicAPI
 	self assert: (ZnCurrentOptions at: #signalProgress) equals: originalValue not.
 	ZnOptions globalDefault at: #signalProgress put: originalValue.
 	"Access an option, using local option, unless set dynamically"
-	localOptions conditionallyDuring: [ 
+	localOptions conditionallyDuring: [
 		self assert: (ZnCurrentOptions at: #signalProgress) equals: originalValue ].
 	"Access an option, using local option, unless set dynamically, when set locally"
 	localOptions at: #signalProgress put: originalValue not.
-	localOptions conditionallyDuring: [ 
+	localOptions conditionallyDuring: [
 		self assert: (ZnCurrentOptions at: #signalProgress) equals: originalValue not ].
 	"Access an option, using local option, unless set dynamically, when set locally,
 	but again overwritten dynamically"
@@ -22,5 +22,5 @@ testPublicAPI
 	localOptions clone
 		at: #signalProgress put: originalValue;
 		during: [
-			localOptions conditionallyDuring: [ 
-				self assert: (ZnCurrentOptions at: #signalProgress) equals: originalValue ] ].
+			localOptions conditionallyDuring: [
+				self assert: (ZnCurrentOptions at: #signalProgress) equals: originalValue ] ]

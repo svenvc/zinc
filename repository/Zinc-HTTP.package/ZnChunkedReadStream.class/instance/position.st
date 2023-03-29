@@ -1,5 +1,5 @@
 accessing
 position
-	^ self atEnd 
+	^ self atEnd
 		ifTrue: [ totalSize ]
 		ifFalse: [ totalSize - chunk size + position ]

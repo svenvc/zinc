@@ -1,4 +1,4 @@
 streams
 fileStreamFor: fileName
-	^ fileName asFileReference 
+	^ fileName asFileReference
 		writeStream

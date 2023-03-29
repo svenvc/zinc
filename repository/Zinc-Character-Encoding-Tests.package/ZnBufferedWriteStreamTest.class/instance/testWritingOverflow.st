@@ -1,4 +1,4 @@
-testing
+tests
 testWritingOverflow
 	| string |
 	string := String streamContents: [ :stringStream | | bufferedStream |

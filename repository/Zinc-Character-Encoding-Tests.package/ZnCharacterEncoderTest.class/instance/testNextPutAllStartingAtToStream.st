@@ -3,9 +3,9 @@ testNextPutAllStartingAtToStream
 	| encoder |
 	encoder := ZnUTF8Encoder new.
 	#( 'ccc' 'ççç' 'c' 'ç' 'çc' 'cç' 'çç' ) do: [ :each |
-		#( ( '' '' ) ( 'ABC' '' ) ( '' 'ABC' ) ( 'ABC' 'ABC' ) 
-			( 'AéC' '' ) ( '' 'AèC' ) ( 'AéC' 'AèC' ) 
-			( 'AXC' 'AèC' ) ( 'AéC' 'AXC' ) 
+		#( ( '' '' ) ( 'ABC' '' ) ( '' 'ABC' ) ( 'ABC' 'ABC' )
+			( 'AéC' '' ) ( '' 'AèC' ) ( 'AéC' 'AèC' )
+			( 'AXC' 'AèC' ) ( 'AéC' 'AXC' )
 			( 'PRE' 'ç' ) ) do: [ :extra |
 				| prefix postfix string bytes |
 				prefix := extra first.

@@ -1,4 +1,4 @@
 accessing
 next
-	
+
 	^ readStream next

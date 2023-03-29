@@ -1,3 +1,3 @@
 testing
 designatedMimeType
-	^ ZnMimeType multiPartFormData  
+	^ ZnMimeType multiPartFormData

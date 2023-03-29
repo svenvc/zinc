@@ -1,5 +1,5 @@
 accessing
 schemeOrDefault
-	^ self hasScheme 
+	^ self hasScheme
 		ifTrue: [ self scheme ]
-		ifFalse: [ #http ]    
+		ifFalse: [ #http ]

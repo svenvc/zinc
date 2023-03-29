@@ -1,7 +1,7 @@
 testing
 testGetUnicodeUtf8
 	self
-		withServerDo: [ :server | 
+		withServerDo: [ :server |
 			| response html |
 			response := ZnEasy
 				get:

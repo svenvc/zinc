@@ -6,7 +6,7 @@ nextPutAll: collection on: stream
 	total < self streamingBufferSize
 		ifTrue: [ ^ stream nextPutAll: collection ].
 	totalWritten := 0.
-	[ totalWritten < total ] whileTrue: [ 
+	[ totalWritten < total ] whileTrue: [
 		toWrite := self streamingBufferSize min: (total - totalWritten).
 		stream next: toWrite putAll: collection startingAt: totalWritten + 1.
 		totalWritten := totalWritten + toWrite.

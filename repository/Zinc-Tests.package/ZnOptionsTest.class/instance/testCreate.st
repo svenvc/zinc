@@ -8,4 +8,4 @@ testCreate
 	self should: [ options at: #foo put: 0 ] raise: ModificationForbidden.
 	self should: [ options at: #xyz ] raise: KeyNotFound.
 	self should: [ options at: #xyz put: -1 ] raise: ModificationForbidden.
-	self should: [ options writable: true ] raise: ModificationForbidden.
+	self should: [ options writable: true ] raise: ModificationForbidden

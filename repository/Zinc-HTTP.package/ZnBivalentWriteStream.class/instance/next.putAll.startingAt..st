@@ -2,16 +2,16 @@ accessing
 next: count putAll: collection startingAt: offset
 	| buffer |
 	self isBinary
-		ifTrue: [ 
+		ifTrue: [
 			(collection isKindOf: ByteArray)
 				ifTrue: [ stream next: count putAll: collection startingAt: offset ]
-				ifFalse: [ 
+				ifFalse: [
 					buffer := ByteArray new: count.
 					buffer replaceFrom: 1 to: count with: collection startingAt: offset.
 					stream nextPutAll: buffer ] ]
-		ifFalse: [ 
+		ifFalse: [
 			(collection isKindOf: ByteArray)
-				ifTrue: [ 
+				ifTrue: [
 					buffer := String new: count.
 					buffer replaceFrom: 1 to: count with: collection startingAt: offset.
 					stream nextPutAll: buffer ]

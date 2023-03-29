@@ -1,8 +1,8 @@
 accessing
 authority
-	^ self hasNonDefaultPort 
-		ifTrue: [ 
-			String streamContents: [ :stream | 
+	^ self hasNonDefaultPort
+		ifTrue: [
+			String streamContents: [ :stream |
 				stream nextPutAll: self host; nextPut: $:; print: self port ] ]
-		ifFalse: [ 
+		ifFalse: [
 			self host ]

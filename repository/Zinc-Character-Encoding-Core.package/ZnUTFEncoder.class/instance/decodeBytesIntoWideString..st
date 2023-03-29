@@ -6,4 +6,4 @@ decodeBytesIntoWideString: bytes
 	byteStream := bytes readStream.
 	^ WideString streamContents: [ :stream |
 		[ byteStream atEnd ] whileFalse: [
-			stream nextPut: (self nextFromStream: byteStream) ] ] 
+			stream nextPut: (self nextFromStream: byteStream) ] ]

@@ -1,6 +1,6 @@
 accessing
 code: integer
-	(ZnConstants httpStatusCodes includesKey: integer) 
+	(ZnConstants httpStatusCodes includesKey: integer)
 		ifFalse: [
 			(integer between: 100 and: 599)
 				ifFalse: [

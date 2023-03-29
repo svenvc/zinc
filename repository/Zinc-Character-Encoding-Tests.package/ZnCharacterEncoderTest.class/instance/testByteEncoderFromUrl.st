@@ -6,11 +6,10 @@ testByteEncoderFromUrl
 	self assert: encoderFromUrl byteDomain equals: iso88592 byteDomain.
 	self assert: encoderFromUrl characterDomain equals: iso88592 characterDomain.
 	bytes := encoderFromUrl byteDomain.
-	self 
+	self
 		assert: (encoderFromUrl decodeBytes: bytes)
 		equals: (iso88592 decodeBytes: bytes).
 	characters := String withAll: encoderFromUrl characterDomain asArray.
-	self 
+	self
 		assert: (encoderFromUrl encodeString: characters)
-		equals: (iso88592 encodeString: characters).
-		
+		equals: (iso88592 encodeString: characters)

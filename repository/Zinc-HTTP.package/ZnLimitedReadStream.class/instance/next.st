@@ -2,6 +2,6 @@ accessing
 next
 	^ self atEnd
 		ifTrue: [ nil ]
-		ifFalse: [ 
+		ifFalse: [
 			position := position + 1.
 			stream next ]

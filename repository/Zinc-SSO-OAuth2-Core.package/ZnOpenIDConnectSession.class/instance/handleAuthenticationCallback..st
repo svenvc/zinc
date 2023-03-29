@@ -20,7 +20,7 @@ handleAuthenticationCallback: aParameterDictionary
 	tokenResponse := ZnClient new 
 		request: tokenRequest ;
 		post.
-	tokenData := NeoJSONReader fromString: tokenResponse.
+	tokenData := ZnUtils defaultJSONReader fromString: tokenResponse.
 		
 	self validateIdToken: (tokenData at: 'id_token').
 

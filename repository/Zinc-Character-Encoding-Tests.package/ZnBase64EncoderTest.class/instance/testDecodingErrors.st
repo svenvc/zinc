@@ -1,4 +1,4 @@
-testing
+tests
 testDecodingErrors
 	| encoder |
 	encoder := ZnBase64Encoder new.
@@ -14,4 +14,4 @@ testDecodingErrors
 	self should: [ encoder decode: '*' ] raise: ZnCharacterEncodingError.
 	self should: [ encoder decode: '**' ] raise: ZnCharacterEncodingError.
 	self should: [ encoder decode: '***' ] raise: ZnCharacterEncodingError.
-	self should: [ encoder decode: '****' ] raise: ZnCharacterEncodingError.
+	self should: [ encoder decode: '****' ] raise: ZnCharacterEncodingError

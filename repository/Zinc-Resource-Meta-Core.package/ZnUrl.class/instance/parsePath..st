@@ -7,7 +7,7 @@ parsePath: stream
 				stringStream nextPut: stream next ] ].
 		segment = '.'
 			ifFalse: [
-				segment = '..' 
+				segment = '..'
 					ifTrue: [ self removeLastPathSegment ]
 					ifFalse: [ self addPathSegment: (self decodePercent: segment) ] ].
 		((stream peekFor: $/) and: [ stream atEnd ])

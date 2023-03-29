@@ -2,7 +2,7 @@ testing
 testCustomDefaultDelegate
 	self withServerDo: [ :server | | customDelegate client |
 		customDelegate := ZnDefaultServerDelegate empty.
-		customDelegate 
+		customDelegate
 			map: 'ok' to: [ :request | ZnResponse ok: (ZnEntity text: 'OK') ];
 			map: '/' to: 'ok';
 			map: 'OK' to: [ :request | ZnResponse redirect: '/ok' ].

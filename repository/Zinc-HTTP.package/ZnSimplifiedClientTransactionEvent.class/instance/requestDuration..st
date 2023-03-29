@@ -1,3 +1,3 @@
 initialize
 requestDuration: requestDuration
-	duration := duration + requestDuration 
+	duration := duration + requestDuration

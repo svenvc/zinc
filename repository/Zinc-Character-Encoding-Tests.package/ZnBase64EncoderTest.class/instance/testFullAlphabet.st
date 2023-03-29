@@ -1,4 +1,4 @@
-testing
+tests
 testFullAlphabet
 	| encoder input output |
 	encoder := ZnBase64Encoder new.

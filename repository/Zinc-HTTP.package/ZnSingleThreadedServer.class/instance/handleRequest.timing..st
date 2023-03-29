@@ -11,6 +11,6 @@ handleRequest: request timing: timing
 	request method = #HEAD
 		ifTrue: [ response clearEntity ].
 	timing handlerDuration: (self logRequest: request response: response handledStarted: initialMilliseconds).
-	ZnCurrentServerSession value 
+	ZnCurrentServerSession value
 		ifNotNil: [ :session | self sessionManager setSession: session in: response ].
 	^ response

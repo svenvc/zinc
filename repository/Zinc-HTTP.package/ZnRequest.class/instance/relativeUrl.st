@@ -1,3 +1,3 @@
 accessing
 relativeUrl
-	^ self url asRelativeUrl 
+	^ self url asRelativeUrl

@@ -11,11 +11,11 @@ actualFilenameFor: uri
 				ifTrue: [ file ]
 				ifFalse: [ ^ nil ] ]. 
 	subElements isEmpty
-		ifTrue: [ entry := subDir entry ] 
+		ifTrue: [ entry := subDir entry ]
 		ifFalse: [ | file |
-			 (file := subDir / subElements last) exists 
-				ifTrue: [ entry := file entry ] 
+			 (file := subDir / subElements last) exists
+				ifTrue: [ entry := file entry ]
 				ifFalse: [ ^ nil ] ].
-	^ entry isDirectory 
+	^ entry isDirectory
 		ifTrue: [ self indexFileIn: entry reference ]
 		ifFalse: [ entry reference fullName ]

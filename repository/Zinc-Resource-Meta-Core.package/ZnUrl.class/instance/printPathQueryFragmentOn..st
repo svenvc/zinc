@@ -1,6 +1,6 @@
 printing
 printPathQueryFragmentOn: stream
-	self isSchemeUsingPath 
+	self isSchemeUsingPath
 		ifTrue: [ self printPathOn: stream ].
 	self hasQuery
 		ifTrue: [ self printQueryOn: stream ].

@@ -1,6 +1,5 @@
 testing
 isDirectoryPath
-	^ self hasPath 
+	^ self hasPath
 		ifTrue: [ segments last = $/ ]
 		ifFalse: [ true ]
-	

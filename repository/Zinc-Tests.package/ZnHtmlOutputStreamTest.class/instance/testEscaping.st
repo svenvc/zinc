@@ -9,4 +9,4 @@ testEscaping
 	self assert: result equals: 'Foo & Bar < 100'.
 	result := ZnHtmlOutputStream streamContents: [ :html |
 		html str: 'Foo & Bar < 100' ].
-	self assert: result equals: 'Foo &amp; Bar &lt; 100'.
+	self assert: result equals: 'Foo &amp; Bar &lt; 100'

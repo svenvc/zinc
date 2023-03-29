@@ -19,7 +19,7 @@ authTokenForUrl: urlObject method: method
 		nextPutAll: (self responseForUrl: urlObject method: method);
 		nextPutAll: '", '.
 	self opaque
-		ifNotNil: [:opaqueValue | 
+		ifNotNil: [:opaqueValue |
 			result
 				nextPutAll: 'opaque="';
 				nextPutAll: opaqueValue;

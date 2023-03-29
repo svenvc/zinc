@@ -1,4 +1,4 @@
 accessing
-nextPut: aCharacter 
-	
+nextPut: aCharacter
+
 	self writingActionDo: [ writeStream nextPut: aCharacter ]

@@ -8,8 +8,8 @@ testUrl
 	self assert: request relativeUrl equals: url asRelativeUrl.
 	self assert: request absoluteUrl equals: url.
 	url := 'http://foo.com/foo.html' asZnUrl.
-	input := 'GET /foo.html HTTP/1.1' , String crlf , 
-		'Host: foo.com' , String crlf , 
+	input := 'GET /foo.html HTTP/1.1' , String crlf ,
+		'Host: foo.com' , String crlf ,
 		String crlf.
 	request := ZnRequest readFrom: input readStream.
 	self assert: request url equals: url asRelativeUrl.

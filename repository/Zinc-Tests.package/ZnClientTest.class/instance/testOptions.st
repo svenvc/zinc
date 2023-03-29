@@ -2,7 +2,7 @@ testing
 testOptions
 	| client |
 	self withServerDo: [ :server |
-		server onRequestRespond: [ :request | 
+		server onRequestRespond: [ :request |
 			request method = #OPTIONS
 				ifTrue: [ | response |
 					response := ZnResponse noContent.

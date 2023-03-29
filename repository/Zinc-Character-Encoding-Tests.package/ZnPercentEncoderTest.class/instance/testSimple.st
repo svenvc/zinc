@@ -1,4 +1,4 @@
-testing
+tests
 testSimple
 	| encoder |
 	encoder := ZnPercentEncoder new.

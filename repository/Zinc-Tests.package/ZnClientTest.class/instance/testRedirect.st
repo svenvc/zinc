@@ -11,7 +11,7 @@ testRedirect
 		url: target.
 	self should: [ client get ] raise: ZnTooManyRedirects.
 	client close.
-	response := [ 
+	response := [
 		ZnClient new
 			beOneShot;
 			maxNumberOfRedirects: 0;

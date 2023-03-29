@@ -1,7 +1,7 @@
 accessing
 next
 	^ peeked
-		ifNil: [ 
+		ifNil: [
 			stream atEnd ifFalse: [ self nextElement ] ]
 		ifNotNil: [ | character |
 			character := peeked.

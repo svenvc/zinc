@@ -5,6 +5,6 @@ testOrder
 	dictionary := ZnMultiValueDictionary new.
 	keys do: [ :each | dictionary at: each put: each ].
 	index := 1.
-	dictionary keysDo: [ :each | 
+	dictionary keysDo: [ :each |
 		self assert: each equals: (keys at: index).
 		index := index + 1 ]

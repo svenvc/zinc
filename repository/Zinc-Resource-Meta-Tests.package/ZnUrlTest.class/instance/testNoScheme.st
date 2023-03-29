@@ -1,10 +1,10 @@
 testing
 testNoScheme
-	"When there is no scheme, there is no host:port interpretation, 
+	"When there is no scheme, there is no host:port interpretation,
 	but instead the input is seen a a path - externalize this in test code"
-	
+
 	#('foo' 'localhost' 'www.foo.com' 'foo.txt' 'foo:1')
-		do: [ :input | 
+		do: [ :input |
 			| url |
 			url := input asZnUrl.
 			self deny: url hasScheme.
@@ -17,7 +17,7 @@ testNoScheme
 			self assert: url firstPathSegment equals: input ].
 
 	#('/dir/foo.txt' 'dir/foo.txt')
-		do: [ :input | 
+		do: [ :input |
 			| url |
 			url := input asZnUrl.
 			self deny: url hasScheme.

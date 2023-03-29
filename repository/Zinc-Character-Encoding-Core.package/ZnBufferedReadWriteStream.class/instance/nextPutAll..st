@@ -1,4 +1,4 @@
 accessing
-nextPutAll: aString 
-	
+nextPutAll: aString
+
 	^ self writingActionDo: [ writeStream nextPutAll: aString ]

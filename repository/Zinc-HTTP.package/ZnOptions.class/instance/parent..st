@@ -4,6 +4,6 @@ parent: otherOptions
 		ifNotNil: [ (ModificationForbidden
 				for: self
 				at: nil
-				with: otherOptions 
+				with: otherOptions
 				retrySelector: #parent:) signal ].
-	parent := otherOptions 
+	parent := otherOptions

@@ -1,3 +1,3 @@
 testing
 isAuthenticationRequired
-	^ self code = 401 
+	^ self code = 401

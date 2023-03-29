@@ -9,4 +9,4 @@ testClone
 	self should: [ options at: #xyz ] raise: KeyNotFound.
 	self should: [ options at: #xyz put: -1 ] raise: KeyNotFound.
 	options reset.
-	self assert: (options at: #foo) equals: 1.	
+	self assert: (options at: #foo) equals: 1.

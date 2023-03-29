@@ -5,7 +5,7 @@ generateWelcomePage
 			html tag: #head do: [
 				html tag: #title with: 'Zinc HTTP Components'.
 				html tag: #style attributes: #(type 'text/css') with: self welcomePageCss ].
-		html tag: #body do: [ 
+		html tag: #body do: [
 			html tag: #div id: #logo with: #Zn.
 			html tag: #h1 with: 'Zinc HTTP Components'.
 			html tag: #p with: self welcomePageGreeting.

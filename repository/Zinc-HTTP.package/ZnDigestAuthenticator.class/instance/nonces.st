@@ -1,3 +1,3 @@
 accessing
-nonces 
+nonces
 	^ nonces ifNil: [ nonces := Dictionary new ]

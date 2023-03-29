@@ -1,3 +1,3 @@
-initialize-release
+initialization
 identifier: object
 	identifier := object

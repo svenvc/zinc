@@ -7,7 +7,7 @@ authenticateAndDelegateRequest: request
 
 	^ self
 		authenticateRequest: request
-		do: [ 
+		do: [
 			self delegate
 				ifNil: [ ZnResponse notFound: request uri ]
 				ifNotNil: [ :delegate | delegate handleRequest: request ] ]

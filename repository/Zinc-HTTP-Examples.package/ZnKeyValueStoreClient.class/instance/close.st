@@ -1,5 +1,5 @@
 initialize-release
 close
-	httpClient ifNotNil: [ 
+	httpClient ifNotNil: [
 		httpClient close.
 		httpClient := nil ]

@@ -1,5 +1,5 @@
 accessing
 close
-	
+
 	writeStream flush.
-	writeStream close.
+	writeStream close

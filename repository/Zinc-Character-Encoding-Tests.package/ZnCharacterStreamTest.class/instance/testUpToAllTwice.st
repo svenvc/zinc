@@ -1,4 +1,4 @@
-testing
+tests
 testUpToAllTwice
 	| utf8Stream stream |
 	utf8Stream := self utf8ReadStreamOn: 'eißendeße'.

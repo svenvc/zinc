@@ -7,7 +7,7 @@ handleRequest: request
 		ifFalse: [ ^ ZnResponse methodNotAllowed: request ].
 	actualFilename := self actualFilenameFor: request uri.
 	^ actualFilename notNil
-		ifTrue: [ 
+		ifTrue: [
 			(self redirectNeededFor: request uri actualFilename: actualFilename)
 				ifTrue: [ self directoryRedirectFor: request uri ]
 				ifFalse: [ self responseForFile: actualFilename fromRequest: request ] ]

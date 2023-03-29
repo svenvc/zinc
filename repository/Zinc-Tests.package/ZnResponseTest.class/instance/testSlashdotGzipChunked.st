@@ -5,10 +5,10 @@ testSlashdotGzipChunked
 		setConnectionClose;
 		setAcceptEncodingGzip.
 	stream := ZnNetworkingUtils socketStreamToUrl: request url.
-	response := [ 
-  		request writeOn: stream. 
-  		stream flush. 
-  		ZnDefaultCharacterEncoder 
+	response := [
+  		request writeOn: stream.
+  		stream flush.
+  		ZnDefaultCharacterEncoder
 			value: ZnNullEncoder new
 			during: [ ZnResponse readFrom: stream ] ] ensure: [ stream close ].
 	response isRedirect ifTrue: [ ^ self ].

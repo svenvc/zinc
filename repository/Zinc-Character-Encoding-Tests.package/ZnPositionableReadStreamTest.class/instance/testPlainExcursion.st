@@ -1,4 +1,4 @@
-testing
+tests
 testPlainExcursion
 	| stream |
 	stream := ZnPositionableReadStream on: 'abcdef-----------' readStream.

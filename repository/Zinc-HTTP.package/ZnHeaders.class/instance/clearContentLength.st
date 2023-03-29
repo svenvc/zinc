@@ -1,3 +1,3 @@
 accessing
 clearContentLength
-	self removeKey: 'Content-Length' ifAbsent: [] 
+	self removeKey: 'Content-Length' ifAbsent: []

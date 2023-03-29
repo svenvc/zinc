@@ -8,4 +8,4 @@ testDefaultPortUnknownScheme
 	self assert: url portOrDefault isNil.
 	self deny: url hasPort.
 	self assert: url equals: url.
-	self should: [ url enforceKnownScheme ] raise: ZnUnknownScheme 
+	self should: [ url enforceKnownScheme ] raise: ZnUnknownScheme
