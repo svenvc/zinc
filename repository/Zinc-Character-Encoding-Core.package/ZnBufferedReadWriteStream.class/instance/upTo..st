@@ -1,4 +1,4 @@
 accessing
-upTo: aCharacter 
-	
+upTo: aCharacter
+
 	^ self readingActionDo: [ readStream upTo: aCharacter ]

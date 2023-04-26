@@ -1,4 +1,4 @@
 streams
 oldFileStreamFor: fileName
-	^ fileName asFileReference 
+	^ fileName asFileReference
 		readStreamIfAbsent: [ FileDoesNotExistException signalWith: fileName asFileReference ]

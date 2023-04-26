@@ -1,9 +1,9 @@
 accessing
 match: subCollection
-	"Try to read and match the elements of subCollection. 
+	"Try to read and match the elements of subCollection.
 	If successful return true and leave the me positioned after the match.
 	If unsuccesful return false and leave me at end."
-	
+
 	| buffer pattern bufferPosition bufferLimit |
 	pattern := subCollection readStream.
 	"we have to use an internal buffer because we are not positionable"
@@ -12,8 +12,8 @@ match: subCollection
 	[ pattern atEnd ] whileFalse: [ | nextElement |
 		self atEnd ifTrue: [ ^ false ].
 		"get the next char to match either from the buffer or from the stream while buffering it"
-		(bufferPosition < bufferLimit) 
-			ifTrue: [ 
+		(bufferPosition < bufferLimit)
+			ifTrue: [
 				nextElement := buffer at: bufferPosition + 1 ]
 			ifFalse: [
 				nextElement := buffer at: bufferPosition + 1 put: self next.

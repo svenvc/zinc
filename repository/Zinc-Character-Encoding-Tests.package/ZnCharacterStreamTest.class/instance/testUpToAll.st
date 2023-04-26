@@ -1,4 +1,4 @@
-testing
+tests
 testUpToAll
 	#(
 		('' '' '')
@@ -38,4 +38,5 @@ testUpToAll
 		('abc' 'ab' '')
 		('abc' 'bc' 'a')
 		('abc' 'cd' 'abc')
+		('ababc' 'abc' 'ab')
 	) do: [ :array | self assertUpToAll: array ]

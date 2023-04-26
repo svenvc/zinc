@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 5/13/2020 16:40",
+	"commentStamp" : "",
 	"super" : "TestCase",
 	"category" : "Zinc-HTTP-Examples",
 	"classinstvars" : [ ],

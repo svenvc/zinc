@@ -1,5 +1,5 @@
 tests
-testBasicStream 
+testBasicStream
 
 	| lines input output |
 
@@ -20,6 +20,6 @@ testBasicStream
 			<< String crlf;
 			<< lines third;
 			<< String crlf ].
-	self 
-		assert: (ZnCRLFReadStream on: input asByteArray readStream) upToEnd 
-		equals: output asByteArray.
+	self
+		assert: (ZnCRLFReadStream on: input asByteArray readStream) upToEnd
+		equals: output asByteArray

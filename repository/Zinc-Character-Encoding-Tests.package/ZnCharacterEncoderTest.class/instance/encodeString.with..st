@@ -1,4 +1,4 @@
-private
+test support
 encodeString: string with: encoder
 	^ ByteArray streamContents: [ :stream |
 		string do: [ :each |

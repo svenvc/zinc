@@ -4,7 +4,7 @@ escapeCharacter: char
 
 	char == $<
 		ifTrue: [ stream nextPutAll: '&lt;' ]
-		ifFalse: [ 
+		ifFalse: [
 			char == $&
 				ifTrue: [ stream nextPutAll: '&amp;' ]
 				ifFalse: [ stream nextPut: char ] ]

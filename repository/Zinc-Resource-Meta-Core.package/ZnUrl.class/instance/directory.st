@@ -1,9 +1,9 @@
-accessing-path
+accessing - path
 directory
 	^ self isDirectoryPath
 		ifTrue: [ self path ]
-		ifFalse: [ 
+		ifFalse: [
 			String streamContents: [ :stream |
-				segments allButLast  
+				segments allButLast
 					do: [ :each | stream nextPutAll: each ]
 					separatedBy: [ stream nextPut: $/ ] ] ]

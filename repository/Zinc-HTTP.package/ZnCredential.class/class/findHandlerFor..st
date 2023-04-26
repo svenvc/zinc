@@ -1,4 +1,4 @@
-accessing class hierarchy
+accessing - class hierarchy
 findHandlerFor: anAuthHeader
 	| type i |
 	i := anAuthHeader indexOf: Character space.

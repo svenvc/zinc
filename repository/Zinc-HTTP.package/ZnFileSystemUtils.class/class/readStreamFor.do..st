@@ -1,5 +1,5 @@
 streams
 readStreamFor: fileName do: block
-	^ fileName asFileReference 
+	^ fileName asFileReference
 		readStreamDo: block
-		ifAbsent: [ FileDoesNotExist signalWith: fileName asFileReference ]
+		ifAbsent: [ FileDoesNotExistException signalWith: fileName asFileReference ]

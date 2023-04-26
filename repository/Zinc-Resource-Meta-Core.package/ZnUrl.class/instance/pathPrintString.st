@@ -1,4 +1,4 @@
 printing
 pathPrintString
-	^ String streamContents: [ :stream | 
+	^ String streamContents: [ :stream |
 			self printPathOn: stream ]

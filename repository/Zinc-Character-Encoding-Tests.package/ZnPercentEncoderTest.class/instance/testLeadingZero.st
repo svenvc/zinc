@@ -1,4 +1,4 @@
-testing
+tests
 testLeadingZero
 	| encoder |
 	encoder := ZnPercentEncoder new.

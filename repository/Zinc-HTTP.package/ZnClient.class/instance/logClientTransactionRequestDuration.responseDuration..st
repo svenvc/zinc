@@ -1,4 +1,4 @@
-private logging
+private - logging
 logClientTransactionRequestDuration: requestDuration responseDuration: responseDuration
 	| logEventClass |
 	logLevel < 1 ifTrue: [ ^ nil ].
@@ -8,7 +8,7 @@ logClientTransactionRequestDuration: requestDuration responseDuration: responseD
 	^ (self newLogEvent: logEventClass)
 		request: request;
 		requestDuration: requestDuration;
-		response: response; 
+		response: response;
 		responseDuration: responseDuration;
 		emit;
 		yourself

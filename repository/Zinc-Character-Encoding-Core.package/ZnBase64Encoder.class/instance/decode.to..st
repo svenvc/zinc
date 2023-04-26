@@ -1,7 +1,7 @@
 converting
 decode: stringStream to: byteStream
 	| char1 char2 char3 char4 |
-	[ stringStream atEnd ] whileFalse: [ 
+	[ stringStream atEnd ] whileFalse: [
 		self skipWhitespace: stringStream.
 		stringStream atEnd ifTrue: [ ^ self ].
 		char1 := stringStream next.

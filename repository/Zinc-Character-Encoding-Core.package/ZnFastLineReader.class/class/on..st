@@ -1,5 +1,5 @@
 instance creation
 on: characterReadStream
-	^ self new 
+	^ self new
 		on: characterReadStream;
 		yourself

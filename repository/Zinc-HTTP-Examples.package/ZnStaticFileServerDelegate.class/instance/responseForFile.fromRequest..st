@@ -10,14 +10,14 @@ responseForFile: filename fromRequest: aRequest
 		at: 'If-Modified-Since'
 		ifPresent: [ modified := time > (ZnUtils parseHttpDate: (aRequest headers at: 'If-Modified-Since')) ].
 	modified
-		ifTrue: [ 
+		ifTrue: [
 			mimeType := ZnMimeType forFilenameExtension: file extension.
 			fileStream := file binaryReadStream.
-			(entity := ZnStreamingEntity type: mimeType length: size) 
+			(entity := ZnStreamingEntity type: mimeType length: size)
 				stream: fileStream.
-			(response := ZnResponse ok: entity) 
+			(response := ZnResponse ok: entity)
 				headers at: 'Modification-Date' put: (ZnUtils httpDate: time).
-			(self maxAgeFor: mimeType) 
+			(self maxAgeFor: mimeType)
 				ifNotNil: [ :maxAge | response headers at: 'Cache-Control' put: maxAge ].
 			(self expirationDateFor: mimeType)
 				ifNotNil: [ :expirationDate | response headers at: 'Expires' put: expirationDate ] ]

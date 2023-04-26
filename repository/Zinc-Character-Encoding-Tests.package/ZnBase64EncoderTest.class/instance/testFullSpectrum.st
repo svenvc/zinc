@@ -1,4 +1,4 @@
-testing
+tests
 testFullSpectrum
 	| encoder input output |
 	encoder := ZnBase64Encoder new.
@@ -7,4 +7,4 @@ testFullSpectrum
 	self assert: (encoder decode: output) equals: input.
 	encoder breakLines.
 	output := encoder encode: input.
-	self assert: (encoder decode: output) equals: input.
+	self assert: (encoder decode: output) equals: input

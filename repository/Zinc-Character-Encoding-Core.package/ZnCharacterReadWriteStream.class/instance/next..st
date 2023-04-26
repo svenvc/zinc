@@ -1,4 +1,4 @@
 accessing
-next: anInteger 
-	
+next: anInteger
+
 	^ readStream next: anInteger

@@ -1,6 +1,5 @@
 accessing
-position: anInteger 
-	
-	self writingActionDo: [ 
+position: anInteger
+
+	self writingActionDo: [
 		writeStream position: anInteger ]
-	

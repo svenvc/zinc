@@ -12,5 +12,3 @@ processNext
 					^ nil ] ].
 	self store: item.
 	^ item
-			
-	

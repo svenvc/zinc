@@ -2,8 +2,8 @@ testing
 testPlainUsingReader
 	| entity headers writer output reader result |
 	entity := ZnEntity text: 'Foo bar!'.
-	headers := ZnHeaders new 
-		acceptEntityDescription: entity; 
+	headers := ZnHeaders new
+		acceptEntityDescription: entity;
 		yourself.
 	output := ByteArray streamContents: [ :out |
 		writer := ZnEntityWriter new

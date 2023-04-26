@@ -2,10 +2,10 @@ parsing
 parseHostPort: stream
 	| hostString portNumber |
 	self isFile
-		ifTrue: [ 
+		ifTrue: [
 			(hostString := stream upTo: $/) isEmpty
 				ifFalse: [ self host: (self decodePercent: hostString) ] ]
-		ifFalse: [ 
+		ifFalse: [
 			(hostString := stream upTo: $:) isEmpty
 				ifFalse: [ self host: (self decodePercent: hostString) ].
 			stream atEnd

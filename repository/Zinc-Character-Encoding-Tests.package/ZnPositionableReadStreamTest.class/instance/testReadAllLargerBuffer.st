@@ -1,7 +1,7 @@
-testing
+tests
 testReadAllLargerBuffer
 	| data stream |
-	data := String new: 500 streamContents: [ :out | 
+	data := String new: 500 streamContents: [ :out |
 		500 timesRepeat: [ out nextPut: 'abc' atRandom ] ].
 	stream := ZnPositionableReadStream on: data readStream.
 	stream sizeBuffer: 500.

@@ -1,4 +1,4 @@
 accessing
 upToEnd
-	
+
 	^ readStream upToEnd

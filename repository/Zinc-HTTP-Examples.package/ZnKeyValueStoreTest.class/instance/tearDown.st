@@ -1,5 +1,5 @@
 running
 tearDown
-	super tearDown.
 	server stop.
-	client close
+	client close.
+	super tearDown

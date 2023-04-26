@@ -1,7 +1,7 @@
 private
 generateEchoRequestString: request
 	"Generate a string echoing the request"
-	
+
 	^ String streamContents: [ :stream |
 		stream nextPutAll: 'This is Zinc HTTP Components echoing your request !'; crlf.
 		stream nextPutAll: 'Running '; print: request server; crlf.

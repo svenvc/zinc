@@ -1,5 +1,4 @@
-initialize-release
+initialization
 initialize
 	super initialize.
-	self contentType: self mimeTypeWithBoundary  
-	
+	self contentType: self mimeTypeWithBoundary

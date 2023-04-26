@@ -1,4 +1,4 @@
-testing
+tests
 testPeek
 	| stream |
 	stream := ZnBufferedReadStream on: '0123456789' readStream.

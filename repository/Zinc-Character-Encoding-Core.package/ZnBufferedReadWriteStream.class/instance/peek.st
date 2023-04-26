@@ -1,5 +1,5 @@
 accessing
 peek
-	
-	^ self readingActionDo: [ 
+
+	^ self readingActionDo: [
 		readStream peek ]

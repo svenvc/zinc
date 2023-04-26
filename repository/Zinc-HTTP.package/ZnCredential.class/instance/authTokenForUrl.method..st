@@ -1,3 +1,3 @@
 accessing
 authTokenForUrl: urlObject method: method
-	self subclassResponsibility 
+	self subclassResponsibility

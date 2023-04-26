@@ -1,4 +1,4 @@
-testing
+tests
 testDecodePlusAsSpace
 	| encoder |
 	encoder := ZnPercentEncoder new.

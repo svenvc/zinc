@@ -1,4 +1,4 @@
 private
 flushBufferIfFull
-	position = self bufferSize 
+	position = self bufferSize
 		ifTrue: [ self flushBuffer ]

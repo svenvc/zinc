@@ -4,8 +4,8 @@ handleRequest: znRequest
 	request to the given delegate"
 	| response |
 	(znRequest method = 'GET')
-		ifTrue: [  
+		ifTrue: [
 			response := (staticDelegate handleRequest: znRequest).
-			response isSuccess ifTrue: [ 
+			response isSuccess ifTrue: [
 				^ response  ] ].
 	^ delegate handleRequest: znRequest

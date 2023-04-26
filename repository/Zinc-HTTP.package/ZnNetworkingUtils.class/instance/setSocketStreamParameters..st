@@ -1,8 +1,8 @@
 private
 setSocketStreamParameters: stream
-	stream 
+	stream
 		binary;
 		shouldSignal: true;
 		autoFlush: false;
 		bufferSize: self bufferSize;
-		timeout: self timeout.
+		timeout: self timeout

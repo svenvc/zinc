@@ -1,11 +1,11 @@
 testing
 testReferenceResolution
 	"RFC 3986 Section 5"
-	
+
 	| baseUri specification result succeeded failed |
 	baseUri := 'http://a/b/c/d;p?q' asZnUrl.
 	specification := {
-		"Examples 5.4.1 - Normal" 
+		"Examples 5.4.1 - Normal"
 		" 'g:h' -> 'g:h'. " "we do not support unknown schemes without //"
 		'mailto:john@acme.com' -> 'mailto:john@acme.com'. "this we can do"
 		'g' -> 'http://a/b/c/g'.
@@ -31,7 +31,7 @@ testReferenceResolution
 		'../..' -> 'http://a/'.
 		'../../' -> 'http://a/'.
 		'../../g' -> 'http://a/g'.
-		"Examples 5.4.2 - Abnormal" 
+		"Examples 5.4.2 - Abnormal"
 		'../../../g' -> 'http://a/g'.
 		'../../../../g' -> 'http://a/g'.
 		'/./g' -> 'http://a/g'.

@@ -9,4 +9,4 @@ testReadingGzipStepped
 	unchunked := (ZnChunkedReadStream on: chunked readStream) upToEnd.
 	ungzipped := (GZipReadStream on: unchunked) upToEnd.
 	self assert: gzipped equals: unchunked.
-	self assert: data equals: ungzipped 
+	self assert: data equals: ungzipped

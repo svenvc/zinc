@@ -2,7 +2,7 @@ instance creation
 fromUrl: anUrl
 
 	^self new initializeWith: (
-		NeoJSONReader fromString: (
+		ZnUtils defaultJSONReader fromString: (
 			ZnClient new
 				accept: ZnMimeType applicationJson ;
 				get: anUrl))

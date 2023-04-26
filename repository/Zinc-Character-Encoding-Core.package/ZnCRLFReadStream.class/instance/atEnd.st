@@ -1,4 +1,4 @@
 accessing
-atEnd 
+atEnd
 
 	^stream atEnd

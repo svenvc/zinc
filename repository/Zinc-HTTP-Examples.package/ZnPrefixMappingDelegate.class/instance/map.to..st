@@ -1,5 +1,5 @@
 public
 map: uriPrefixString to: handler
 	self prefixDictionary
-		at: uriPrefixString 
+		at: uriPrefixString
 		put: handler

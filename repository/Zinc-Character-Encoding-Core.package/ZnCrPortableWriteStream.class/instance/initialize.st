@@ -1,6 +1,6 @@
-initialize
+initialization
 initialize
 
 	super initialize.
 	cr := Character cr.
-	lf := Character lf.
+	lf := Character lf

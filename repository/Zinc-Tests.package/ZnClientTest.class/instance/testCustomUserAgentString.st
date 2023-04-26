@@ -3,7 +3,7 @@ testCustomUserAgentString
 	self withServerDo: [ :server | | client |
 		"change ZnClient's local options"
 		(client := ZnClient new)
-			withOptions: [ :options | 
+			withOptions: [ :options |
 				options at: #userAgentString put: 'foobar client' ];
 			url: server localUrl;
 			addPathSegment: #echo;
@@ -13,7 +13,7 @@ testCustomUserAgentString
 		"dynamically change an option starting from the global default"
 		ZnOptions globalDefault clone
 			at: #userAgentString put: 'foobar client';
-			during: [ 
+			during: [
 				(client := ZnClient new)
 					url: server localUrl;
 					addPathSegment: #echo;
@@ -24,7 +24,7 @@ testCustomUserAgentString
 		client := ZnClient new.
 		client localOptions clone
 			at: #userAgentString put: 'foobar client';
-			during: [ 
+			during: [
 				(client := ZnClient new)
 					url: server localUrl;
 					addPathSegment: #echo;

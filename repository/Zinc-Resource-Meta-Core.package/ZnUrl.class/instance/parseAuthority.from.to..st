@@ -5,5 +5,5 @@ parseAuthority: string from: start to: stop
 		ifTrue: [
 			self parseUserInfo: (ReadStream on: string from: start to: index - 1).
 			self parseHostPort: (ReadStream on: string from: index + 1 to: stop) ]
-		ifFalse: [ 
+		ifFalse: [
 			self parseHostPort: (ReadStream on: string from: start to: stop) ]

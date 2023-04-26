@@ -1,9 +1,11 @@
 public
-handleAuthenticationCallback: aParameterDictionary 
+handleAuthenticationCallback: aParameterDictionary
+
 	"Handle an Authorization Response code by issuing an Access Token Request.
 	
 	See for details: https://tools.ietf.org/html/rfc6749#section-4.1.3"
-	| code tokenRequest tokenResponse |
+
+	| code tokenRequest client tokenResponse |
 	
 	code := aParameterDictionary at: 'code' ifAbsent: [ ^ nil ].
 
@@ -17,10 +19,12 @@ handleAuthenticationCallback: aParameterDictionary
 			yourself);
 		yourself.
 
-	tokenResponse := ZnClient new
+	client := ZnClient new
 		systemPolicy;
 		beOneShot;
-		request: tokenRequest;
-		post.
+		yourself.
+	tokenResponse := [
+		client request: tokenRequest;
+			post ] ensure: [ client close ].
 
-	self updateTokens: (NeoJSONReader fromString: tokenResponse).
+	self updateTokens: (ZnUtils defaultJSONReader fromString: tokenResponse).

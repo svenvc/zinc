@@ -14,4 +14,4 @@ testPostMultipart
 			post.
 		self assert: client isSuccess.
 		self assert: (client contents includesSubstring: 'multipart') ].
-	ZnFileSystemUtils deleteIfExists: 'testPostMultiPart.txt'.
+	ZnFileSystemUtils deleteIfExists: 'testPostMultiPart.txt'

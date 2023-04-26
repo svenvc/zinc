@@ -6,7 +6,7 @@ readAttribute: aToken
 		ifTrue: [
 			key := (aToken copyFrom: 1 to: i - 1) trimBoth asLowercase.
 			data := (aToken copyFrom: i + 1 to: aToken size) trimBoth ]
-		ifFalse: [ 
+		ifFalse: [
 			key := (aToken copyFrom: 1 to: aToken size) trimBoth asLowercase.
 			data := true ].
 	attributes at: key put: data

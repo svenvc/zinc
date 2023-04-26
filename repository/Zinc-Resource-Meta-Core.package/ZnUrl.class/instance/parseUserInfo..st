@@ -1,9 +1,9 @@
 parsing
 parseUserInfo: stream
 	| userString |
-	(userString := stream upTo: $:) isEmpty 
-		ifFalse: [  
+	(userString := stream upTo: $:) isEmpty
+		ifFalse: [
 			self username: (self decodePercent: userString) ].
-	stream atEnd 
-		ifFalse: [ 
+	stream atEnd
+		ifFalse: [
 			self password: (self decodePercent: stream upToEnd) ]

@@ -4,4 +4,4 @@ testAddCredential
 	session := ZnUserAgentSession new.
 	count := session credentials size.
 	session addCredential: self dummyCredential.
-	self assert: ((session credentials size) = (count + 1))
+	self assert: session credentials size equals: count + 1

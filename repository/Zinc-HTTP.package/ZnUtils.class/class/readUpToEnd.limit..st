@@ -11,9 +11,9 @@ readUpToEnd: inputStream limit: limit
 		totalRead := totalRead + readCount.
 		(limit notNil and: [ totalRead > limit ])
 			ifTrue: [ ZnEntityTooLarge signal ].
-		outputStream ifNil: [ 
+		outputStream ifNil: [
 			inputStream atEnd
-				ifTrue: [ ^ buffer copyFrom: 1 to: readCount ] 
+				ifTrue: [ ^ buffer copyFrom: 1 to: readCount ]
 				ifFalse: [ outputStream := (species new: bufferSize) writeStream ] ].
 		outputStream next: readCount putAll: buffer startingAt: 1.
 		self signalProgress: totalRead total: limit ].

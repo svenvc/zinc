@@ -8,8 +8,7 @@
 	"instvars" : [
 		"stream",
 		"position",
-		"limit",
-		"binary"
+		"limit"
 	],
 	"name" : "ZnLimitedReadStream",
 	"type" : "normal"

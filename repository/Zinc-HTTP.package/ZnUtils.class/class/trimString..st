@@ -1,7 +1,7 @@
-conversions
+converting
 trimString: string
 	"Until String>>#trimBoth is available everywhere"
-	
+
 	| left right |
 	left := 1.
 	right := string size.

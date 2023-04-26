@@ -1,9 +1,9 @@
-private html
+private - html
 openTag: tag attribute: name value: value
 	stream
 		nextPut: $<;
 		nextPutAll: tag;
-		space; 
+		space;
 		nextPutAll: name.
 	value ifNotNil: [
 		stream nextPutAll: '="'.

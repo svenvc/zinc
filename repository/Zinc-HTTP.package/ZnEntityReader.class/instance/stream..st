@@ -1,3 +1,3 @@
 accessing
 stream: readStream
-	stream := readStream 
+	stream := readStream

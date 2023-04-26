@@ -1,4 +1,4 @@
 accessing
-skip: anInteger 
-	
+skip: anInteger
+
 	readStream skip: anInteger

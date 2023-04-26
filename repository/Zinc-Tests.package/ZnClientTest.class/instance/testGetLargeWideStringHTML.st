@@ -1,10 +1,10 @@
 testing
 testGetLargeWideStringHTML
 	| client text |
-	text := '<html>{1}<h1>Czech in Czech is {2}e{3}tina.</h1>{1}</html>' 
-		format: { 
+	text := '<html>{1}<h1>Czech in Czech is {2}e{3}tina.</h1>{1}</html>'
+		format: {
 			String new: ZnUtils streamingBufferSize withAll: $X.
-			269 asCharacter. 
+			269 asCharacter.
 			353 asCharacter }.
 	self assert: text isWideString.
 	self withServerDo: [ :server |

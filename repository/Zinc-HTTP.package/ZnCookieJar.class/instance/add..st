@@ -4,4 +4,3 @@ add: aCookie
 	self cookies do: [ :cookie |
 		cookie = aCookie ifTrue: [ self cookies remove: cookie ] ].
 	self cookies add: aCookie
-	

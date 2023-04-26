@@ -1,4 +1,4 @@
 accessing
 setConnectionCloseFor: request
-	request wantsConnectionClose 
+	request wantsConnectionClose
 		ifTrue: [ self setConnectionClose ]

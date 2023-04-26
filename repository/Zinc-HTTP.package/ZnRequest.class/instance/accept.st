@@ -1,3 +1,3 @@
 accessing
 accept
-	^ self headers at: 'Accept'
+	^ self headers singleAt: 'Accept' ifAbsent: [ '*/*' ]

@@ -1,10 +1,10 @@
 testing
 testProgressNoIfFail
-	self 
-		should: [ 
+	self
+		should: [
 			ZnClient new
 				beOneShot;
 				signalProgress: true;
 				ifFail: [ self fail ];
-				get: self smallHtmlUrl ] 
+				get: self smallHtmlUrl ]
 		raise: HTTPProgress

@@ -1,3 +1,3 @@
 accessing
-stream 
+stream
 	^ stream

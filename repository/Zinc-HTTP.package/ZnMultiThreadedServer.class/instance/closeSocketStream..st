@@ -1,5 +1,5 @@
 private
 closeSocketStream: socketStream
-	[ socketStream close ] 
-		on: Exception 
+	[ socketStream close ]
+		on: Exception
 		do: [ ]

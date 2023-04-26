@@ -1,5 +1,5 @@
-converting
+encoding - decoding
 nextCodePointFromStream: stream
 	"Read and return the next integer code point from stream"
-	
-	self subclassResponsibility 
+
+	self subclassResponsibility

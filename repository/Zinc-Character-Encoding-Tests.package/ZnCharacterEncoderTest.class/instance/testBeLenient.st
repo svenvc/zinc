@@ -7,4 +7,4 @@ testBeLenient
 	self should: [ encoder decodeBytes: unmapped ] raise: ZnCharacterEncodingError.
 	encoder beLenient.
 	self assert: (encoder encodeString: unmapped asString) equals: unmapped.
-	self assert: (encoder decodeBytes: unmapped) equals: unmapped asString.
+	self assert: (encoder decodeBytes: unmapped) equals: unmapped asString

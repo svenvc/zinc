@@ -5,4 +5,4 @@ put: urlObject data: entity username: username password: password
 		setBasicAuthenticationUsername: username password: password;
 		entity: entity;
 		put;
-		response	
+		response

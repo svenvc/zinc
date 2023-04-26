@@ -4,6 +4,6 @@ readInto: string startingAt: offset count: requestedCount fromStream: stream
 	returning the number read, there could be less available when stream is atEnd"
 
 	offset to: offset + requestedCount - 1 do: [ :index |
-		stream atEnd ifTrue: [ ^ index - offset ].  
+		stream atEnd ifTrue: [ ^ index - offset ].
 		string at: index put: (self nextFromStream: stream) ].
 	^ requestedCount

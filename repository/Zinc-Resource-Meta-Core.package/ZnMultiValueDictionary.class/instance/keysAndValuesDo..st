@@ -5,8 +5,8 @@ keysAndValuesDo: block
 
 	super keysAndValuesDo: [ :key :value |
 		value isArray
-			ifTrue: [ 
-				value do: [ :each | 
+			ifTrue: [
+				value do: [ :each |
 					block value: key value: each ] ]
 			ifFalse: [
 				block value: key value: value ] ]

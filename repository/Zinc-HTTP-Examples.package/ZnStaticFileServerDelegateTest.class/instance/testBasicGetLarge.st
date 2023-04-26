@@ -1,7 +1,7 @@
 tests
 testBasicGetLarge
 	self withServerDo: [ :server | | client |
-		(client := ZnClient new) 
+		(client := ZnClient new)
 			beOneShot;
 			url: server localUrl;
 			addPath: #('local-files' 'large.html');
@@ -9,11 +9,11 @@ testBasicGetLarge
 		self assert: client isSuccess.
 		self assert: client response contentType = ZnMimeType textHtml.
 		self assert: client contents equals: self largeHtml.
-		self 
+		self
 			assert: (ZnUtils parseHttpDate: (client response headers at: 'Modification-Date'))
 			equals: (ZnFileSystemUtils modificationTimeFor: 'large.html') asUTC.
-		self 
+		self
 			assert: (ZnUtils parseHttpDate: (client response headers at: 'Expires')) > (DateAndTime now + 10 days).
-		self 
+		self
 			assert: (client response headers at: 'Cache-Control')
 			equals: (server delegate maxAgeFor: ZnMimeType textHtml) ]

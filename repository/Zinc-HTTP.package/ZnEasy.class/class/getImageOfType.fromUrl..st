@@ -8,4 +8,4 @@ getImageOfType: mimeType fromUrl: urlObject
 		enforceAcceptContentType: true;
 		get.
 	"ImageReadWriter does automatic type detection"
-	^ ImageReadWriter formFromStream: client entity readStream
+	^ (self environment at: #ImageReadWriter) formFromStream: client entity readStream

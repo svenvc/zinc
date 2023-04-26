@@ -1,4 +1,4 @@
-testing
+tests
 testCustomLineBreaking
 	| encoder input output charCount |
 	encoder := ZnBase64Encoder new.

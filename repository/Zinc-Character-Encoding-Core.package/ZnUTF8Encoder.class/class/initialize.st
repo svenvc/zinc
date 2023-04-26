@@ -13,6 +13,6 @@ initialize
 		(bytes size = 1 and: [ bytes first = each ])
 			ifTrue: [
 				ByteASCIISet at: each + 1 put: 0 ]
-			ifFalse: [  
+			ifFalse: [
 				ByteASCIISet at: each + 1 put: 1.
-				ByteUTF8Encoding at: each + 1 put: bytes ] ] 
+				ByteUTF8Encoding at: each + 1 put: bytes ] ]

@@ -8,4 +8,4 @@ testWritingOverflow
 		bufferedStream nextPutAll: '0123'; nextPutAll: '4567'; nextPutAll: '89'.
 		bufferedStream nextPutAll: '0123456789'; nextPutAll: '0123456789'.
 		bufferedStream flush ].
-	self assert: string = '0123456789012345678901234567890123456789'
+	self assert: string equals: '0123456789012345678901234567890123456789'

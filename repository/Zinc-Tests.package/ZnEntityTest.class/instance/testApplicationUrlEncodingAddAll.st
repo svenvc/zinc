@@ -10,9 +10,9 @@ testApplicationUrlEncodingAddAll
 	entity addAll: data.
 	bytes := ByteArray streamContents: [ :stream | entity writeOn: stream ].
 	self assert: entity contentLength > 0.
-	entity := ZnEntity 
-		readFrom: bytes readStream 
-		usingType: ZnApplicationFormUrlEncodedEntity designatedMimeType 
+	entity := ZnEntity
+		readFrom: bytes readStream
+		usingType: ZnApplicationFormUrlEncodedEntity designatedMimeType
 		andLength: bytes size.
 	self assert: (entity at: 'foo') equals: '1'.
 	self assert: (entity at: 'bar') equals: '2'
