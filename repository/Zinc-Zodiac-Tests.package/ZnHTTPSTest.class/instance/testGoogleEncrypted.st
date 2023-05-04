@@ -6,7 +6,7 @@ testGoogleEncrypted
 	
 	client := ZnClient new.
 	client
-		retryDelay: 10;
+		retryDelay: 20;
 		numberOfRetries: 3;
 		get: 'https://encrypted.google.com/search?q=Smalltalk'.
 		
