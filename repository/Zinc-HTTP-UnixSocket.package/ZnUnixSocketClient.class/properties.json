@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "ZnClient",
+	"category" : "Zinc-HTTP-UnixSocket-Client-Server",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnUnixSocketClient",
+	"type" : "normal"
+}
