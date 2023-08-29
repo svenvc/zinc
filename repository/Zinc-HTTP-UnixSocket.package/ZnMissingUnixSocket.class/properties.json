@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Error",
+	"category" : "Zinc-HTTP-UnixSocket-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"file"
+	],
+	"name" : "ZnMissingUnixSocket",
+	"type" : "normal"
+}
