@@ -4,6 +4,7 @@ unixSocketOnFile: socketFile
 	socketFile exists ifFalse: [ 
 		ZnMissingUnixSocket new file: socketFile; signal ].
 	
+	NetNameResolver initializeNetwork.
 	NetNameResolver
 		primGetAddressInfoHost: ''
 		service: socketFile fullName
