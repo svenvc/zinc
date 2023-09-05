@@ -2,4 +2,4 @@
 socketStreamToUnixSocketFile: socketFile
 	| ipcSocket |
 	ipcSocket := self unixSocketOnFile: socketFile.
-	^ ZnNetworkingUtils socketStreamOn: ipcSocket.
+	^ self socketStreamOn: ipcSocket
