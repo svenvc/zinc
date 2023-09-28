@@ -10,7 +10,8 @@
 	],
 	"instvars" : [
 		"timestamp",
-		"id"
+		"id",
+		"processId"
 	],
 	"name" : "ZnLogEvent",
 	"type" : "normal"

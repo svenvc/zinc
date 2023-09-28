@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"serverId",
-		"processId"
+		"serverId"
 	],
 	"name" : "ZnServerLogEvent",
 	"type" : "normal"

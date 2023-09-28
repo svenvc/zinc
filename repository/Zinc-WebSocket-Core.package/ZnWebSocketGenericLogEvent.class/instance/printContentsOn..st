@@ -1,4 +1,4 @@
 printing
 printContentsOn: stream
 	super printContentsOn: stream.
-	stream << 'Retrying '; print: exception
+	stream << 'WebSocket Generic Log Event ';  print: subject
