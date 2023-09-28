@@ -1,4 +1,4 @@
 printing
 printContentsOn: stream
 	super printContentsOn: stream.
-	clientId ifNotNil: [ stream space; << clientId ]
+	stream << 'WebSocket Control Frame Handled '; print: type

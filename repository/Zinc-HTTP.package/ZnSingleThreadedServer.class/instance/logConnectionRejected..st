@@ -1,4 +1,4 @@
-private logging
+private - logging
 logConnectionRejected: socketStream
 	logLevel < 3 ifTrue: [ ^ nil ].
 	^ (self newLogEvent: ZnConnectionRejectedEvent)
