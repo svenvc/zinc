@@ -1,7 +1,7 @@
 printing
 printContentsOn: stream
 	super printContentsOn: stream.
-	stream << ' Connection Closed '.
+	stream << 'Connection Closed '.
 	address
 		ifNil: [
 			stream print: address ]
