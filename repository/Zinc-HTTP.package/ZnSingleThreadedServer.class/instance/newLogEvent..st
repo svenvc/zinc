@@ -1,5 +1,5 @@
 private - logging
 newLogEvent: logEventClass
 	^ logEventClass new
-		serverId: self route;
+		serverId: (self serverId ifNil: [ self route ]);
 		yourself
