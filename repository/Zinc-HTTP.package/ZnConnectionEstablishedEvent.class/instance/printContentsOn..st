@@ -7,4 +7,5 @@ printContentsOn: stream
 	address
 		ifNil: [ stream print: address ]
 		ifNotNil: [ address do: [ :each | stream print: each ] separatedBy: [ stream nextPut: $. ] ].
-	stream nextPut: $:; print: port	stream space; print: duration; << 'ms'
+	stream nextPut: $:; print: port.
+	stream space; print: duration; << 'ms'
