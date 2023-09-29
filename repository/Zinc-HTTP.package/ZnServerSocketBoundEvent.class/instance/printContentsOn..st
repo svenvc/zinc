@@ -3,8 +3,6 @@ printContentsOn: stream
 	super printContentsOn: stream.
 	stream << 'Server Socket Bound '.
 	address
-		ifNil: [ stream << '<nil>' ]
+		ifNil: [ stream print: address ]
 		ifNotNil: [ address do: [ :each | stream print: each ] separatedBy: [ stream nextPut: $. ] ].
-	stream
-		nextPut: $:;
-		print: port
+	stream nextPut: $:; print: port
