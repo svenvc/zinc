@@ -1,4 +1,4 @@
 printing
 printContentsOn: stream
 	super printContentsOn: stream.
-	stream << 'Started '; << description
+	description ifNotNil: [ stream << 'Started '; << description ]
