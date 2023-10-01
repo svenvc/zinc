@@ -5,17 +5,18 @@ testLogging
 	ZnLogEvent announcer
 		when: ZnLogEvent do: [ :event | logEventCollection add: event ].
 	self withServerDo: [ :server |
-		server serverId: #S1; logLevel: 3.
-		client := ZnClient new.
-		client clientId: #C1; logLevel: 3.
-		client get: (server localUrl addPathSegment: #small).
-		self assert: client isSuccess.
-		client get: (server localUrl addPathSegment: #error).
-		self deny: client isSuccess.
-		server delegate map: #redirect to: [ :request | ZnResponse redirect: #welcome ].
-		client get: (server localUrl addPathSegment: #redirect).
-		self assert: client isSuccess.		
-		client close ].
+		1 to: 3 do: [ :logLevel |
+			server serverId: ('S' , logLevel asString) ; logLevel: logLevel.
+			client := ZnClient new.
+			client clientId: ('C' , logLevel asString); logLevel: logLevel.
+			client get: (server localUrl addPathSegment: #small).
+			self assert: client isSuccess.
+			client get: (server localUrl addPathSegment: #error).
+			self deny: client isSuccess.
+			server delegate map: #redirect to: [ :request | ZnResponse redirect: #welcome ].
+			client get: (server localUrl addPathSegment: #redirect).
+			self assert: client isSuccess.		
+			client close ] ].
 	count := ZnLogEvent announcer numberOfSubscriptions.
 	ZnLogEvent announcer
 		unsubscribe: self.
