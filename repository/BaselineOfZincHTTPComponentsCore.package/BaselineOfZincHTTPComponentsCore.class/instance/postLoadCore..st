@@ -7,3 +7,10 @@ postLoadCore: spec
 	repository := IceRepository registry detect: [ :each | each name = 'zinc' ].
 	head := repository head description.
 	repository checkoutBranch: head.
+	
+	"This is a hack, but somehow there is something wrong in the instance variables layout, 
+	which can only be fixed by recompiling, which should happen but doesn't, so force it.
+	
+	ported from a postload in zinc"
+
+	ZnLogEvent withAllSubclassesDo: #recompile
