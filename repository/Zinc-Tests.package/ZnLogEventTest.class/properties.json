@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ZnUnixSocketClientTest",
+	"name" : "ZnLogEventTest",
 	"type" : "normal"
 }
