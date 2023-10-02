@@ -9,9 +9,9 @@
 		"LogEventAnnouncer"
 	],
 	"instvars" : [
-		"timestamp",
 		"id",
-		"processId"
+		"processId",
+		"timestamp"
 	],
 	"name" : "ZnLogEvent",
 	"type" : "normal"

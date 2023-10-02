@@ -1,6 +1,7 @@
 printing
 printContentsOn: stream
 	super printContentsOn: stream.
+
 	request requestLine printMethodAndUriOn: stream.
 	stream space; print: response code.
 	response hasEntity
