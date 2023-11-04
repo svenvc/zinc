@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"endianness"
+		"endianness",
+		"identifier"
 	],
 	"name" : "ZnEndianSensitiveUTFEncoder",
 	"type" : "normal"

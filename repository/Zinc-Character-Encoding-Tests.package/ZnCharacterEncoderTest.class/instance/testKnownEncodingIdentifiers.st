@@ -1,6 +1,6 @@
 testing
 testKnownEncodingIdentifiers
-	| all minimal asciiString |
+	| all minimal asciiString notSelfIdentifying|
 	all := ZnCharacterEncoder knownEncodingIdentifiers asSet.
 	minimal := #(utf8 latin1 null ascii iso88591) asSet.
 	"make sure at least a minimal set is present"
@@ -12,4 +12,8 @@ testKnownEncodingIdentifiers
 		| encoder bytes |
 		encoder := ZnCharacterEncoder newForEncoding: each.
 		bytes := encoder encodeString: asciiString.
-		self assert: (encoder decodeBytes: bytes) equals: asciiString ]
+		self assert: (encoder decodeBytes: bytes) equals: asciiString ].
+	"make sure identifiers are preserved"
+	notSelfIdentifying := ZnCharacterEncoder knownEncodingIdentifiers reject: [ :each | 
+		each asZnCharacterEncoder identifier = each ].
+	self assert: notSelfIdentifying isEmpty

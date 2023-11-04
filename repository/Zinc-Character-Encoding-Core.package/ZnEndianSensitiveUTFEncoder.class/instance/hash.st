@@ -1,3 +1,3 @@
 comparing
 hash
-	^ super hash bitXor: self endianness hash
+	^ self identifier hash
