@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 10/6/2023 18:45",
+	"super" : "Object",
+	"category" : "Zinc-Resource-Meta-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mediaType",
+		"data",
+		"base64Encoded"
+	],
+	"name" : "ZnDataUrl",
+	"type" : "normal"
+}

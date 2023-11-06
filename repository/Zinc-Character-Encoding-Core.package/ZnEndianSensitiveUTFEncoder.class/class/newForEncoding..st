@@ -5,6 +5,7 @@ newForEncoding: string
 
 	| encoder |
 	encoder := self new.
+	encoder identifier: string.
 	(string asLowercase endsWith: 'be') ifTrue: [ encoder beBigEndian ].
 	(string asLowercase endsWith: 'le') ifTrue: [ encoder beLittleEndian ].
 	^ encoder

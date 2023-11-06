@@ -1,3 +1,3 @@
 accessing
 identifier
-	^ #utf16
+	^ identifier
