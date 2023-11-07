@@ -6,5 +6,5 @@ testDefaultJSONWriter
 	expectedParserClass := self class environment at: #NeoJSONWriter ifAbsent: [
 		          self class environment at: #STONJSON ifAbsent:[nil]].
 
-	self assert: writer notNil.
+	self assert: writer isNotNil.
 	self assert: writer equals: expectedParserClass

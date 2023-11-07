@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-HTTP-Examples'!
+self packageOrganizer ensurePackage: #'Zinc-HTTP-Examples' withTags: #()!

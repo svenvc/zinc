@@ -1,3 +1,3 @@
 testing
 allowsReadingUpToEnd
-	^ allowReadingUpToEnd notNil and: [ allowReadingUpToEnd ]
+	^ allowReadingUpToEnd isNotNil and: [ allowReadingUpToEnd ]

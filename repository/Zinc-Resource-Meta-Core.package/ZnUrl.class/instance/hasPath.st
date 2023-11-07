@@ -1,3 +1,3 @@
 testing
 hasPath
-	^ segments notNil and: [ segments isEmpty not ]
+	^ segments isNotNil and: [ segments isNotEmpty ]

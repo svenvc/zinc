@@ -3,10 +3,10 @@ testDefault
 	| port server initialDefaultServer wasRunning |
 	wasRunning := ZnServer default ifNil: [ false ] ifNotNil: [ ZnServer default isRunning ].
 	initialDefaultServer := ZnServer stopDefault.
-	self assert: ZnServer default isNil.
+	self assert: ZnServer default isNotNil.
 	port := self port.
 	server := ZnServer startDefaultOn: port.
-	self assert: ZnServer default notNil.
+	self assert: ZnServer default isNotNil.
 	self assert: ZnServer default identicalTo: server.
 	self assert: ZnServer default port equals: port.
 	self assert: ZnServer default isRunning.

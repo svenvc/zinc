@@ -1,3 +1,3 @@
 testing
 isBinary
-	^ binary notNil and: [ binary ]
+	^ binary isNotNil and: [ binary ]

@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-Zodiac-Tests'!
+self packageOrganizer ensurePackage: #'Zinc-Zodiac-Tests' withTags: #()!

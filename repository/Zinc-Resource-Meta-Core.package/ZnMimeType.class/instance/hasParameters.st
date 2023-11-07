@@ -1,3 +1,3 @@
 testing
 hasParameters
-	^ parameters notNil and: [ parameters isEmpty not ]
+	^ parameters isNotNil and: [ parameters isNotEmpty ]
