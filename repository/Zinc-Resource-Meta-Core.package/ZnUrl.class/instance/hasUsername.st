@@ -1,3 +1,3 @@
 testing
 hasUsername
-	^ username notNil
+	^ username isNotNil

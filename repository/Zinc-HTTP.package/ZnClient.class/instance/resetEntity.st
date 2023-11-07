@@ -4,5 +4,5 @@ resetEntity
 	This is sometimes necessary after a POST or PUT. This method will be called automatically
 	by #method: for certain requests."
 
-	(request notNil and: [ request hasEntity ])
+	(request isNotNil and: [ request hasEntity ])
 		ifTrue: [ request resetEntity: nil ]
