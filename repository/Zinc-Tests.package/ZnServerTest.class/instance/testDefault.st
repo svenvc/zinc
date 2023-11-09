@@ -6,7 +6,7 @@ testDefault
 	self assert: ZnServer default isNil.
 	port := self port.
 	server := ZnServer startDefaultOn: port.
-	self assert: ZnServer default notNil.
+	self assert: ZnServer default isNotNil.
 	self assert: ZnServer default identicalTo: server.
 	self assert: ZnServer default port equals: port.
 	self assert: ZnServer default isRunning.
