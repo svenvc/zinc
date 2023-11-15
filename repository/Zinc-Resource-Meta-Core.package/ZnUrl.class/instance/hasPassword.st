@@ -1,3 +1,3 @@
 testing
 hasPassword
-	^ password notNil
+	^ password isNotNil

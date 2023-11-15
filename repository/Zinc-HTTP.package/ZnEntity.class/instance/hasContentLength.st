@@ -1,3 +1,3 @@
 testing
 hasContentLength
-	^ contentLength notNil
+	^ contentLength isNotNil

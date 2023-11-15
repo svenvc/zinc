@@ -4,7 +4,7 @@ cleanupConnection
 		or: [
 			self streaming not
 				and: [
-					(request notNil and: [ request wantsConnectionClose ])
-						or: [ response notNil and: [ response wantsConnectionClose ] ] ] ])
+					(request isNotNil and: [ request wantsConnectionClose ])
+						or: [ response isNotNil and: [ response wantsConnectionClose ] ] ] ])
 		ifTrue: [
 			self close ]

@@ -1,10 +1,7 @@
 testing
 testGzipWriteRead
 	| data written read |
-	data := String streamContents: [ :out |
-		{ Collection. Stream. Exception. Magnitude } do: [ :cls |
-			cls allSubclassesDo: [ :each | out nextPutAll: each comment ] ] ].
-	data := data asByteArray.
+	data := (String loremIpsum: 16*1024) utf8Encoded.
 	written := ByteArray streamContents: [ :out |
 		| stream chunkedStream |
 		stream := GZipWriteStream on: (chunkedStream := ZnChunkedWriteStream on: out).

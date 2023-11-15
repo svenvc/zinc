@@ -1,3 +1,3 @@
 testing
 hasPort
-	^ port notNil
+	^ port isNotNil

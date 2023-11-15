@@ -11,7 +11,7 @@ handlePostRequest: request
 		partNamed: #file
 		ifNone: badRequest.
 	newImage := part entity.
-	(newImage notNil and: [ newImage contentType matches: 'image/*' asZnMimeType ])
+	(newImage isNotNil and: [ newImage contentType matches: 'image/*' asZnMimeType ])
 		ifFalse: badRequest.
 	[ self formForImageEntity: newImage ] on: Error do: badRequest.
 	image := newImage.

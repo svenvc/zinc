@@ -1,3 +1,3 @@
 testing
 hasHost
-	^ host notNil
+	^ host isNotNil
