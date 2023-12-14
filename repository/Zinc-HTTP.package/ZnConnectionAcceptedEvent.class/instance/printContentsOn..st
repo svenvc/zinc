@@ -2,5 +2,5 @@ printing
 printContentsOn: stream
 	super printContentsOn: stream.
 
-	stream << 'Connection Accepted'.
+	stream << 'Connection Accepted '.
 	self class printAddress: address on: stream 
