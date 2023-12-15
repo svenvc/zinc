@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-Character-Encoding-Tests'!
+self packageOrganizer ensurePackage: #'Zinc-Character-Encoding-Tests' withTags: #()!
