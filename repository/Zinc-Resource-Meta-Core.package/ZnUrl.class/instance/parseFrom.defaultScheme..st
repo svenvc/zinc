@@ -3,11 +3,12 @@ parseFrom: string defaultScheme: defaultScheme
 	| start end index fragmentIndex|
 	start := 1.
 	end := string size.
-	(fragmentIndex := string indexOf: $#) > 0
+	fragmentIndex := string indexOf: $#.
+	(fragmentIndex) > 0
 		ifTrue: [
 			self fragment: (self decodePercent: (string copyFrom: fragmentIndex + 1 to: end)).
 			end := fragmentIndex - 1 ].
-	((index := string indexOf: $?) > 0 and: [ index < fragmentIndex ])
+	((index := (string copyFrom: 1 to: end) indexOf: $?) > 0)
 		ifTrue: [
 			self query: (self parseQueryFrom: (ReadStream on: string from: index + 1 to: end)).
 			end := index - 1 ].
