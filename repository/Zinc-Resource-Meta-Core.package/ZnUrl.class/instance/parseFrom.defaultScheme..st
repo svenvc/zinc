@@ -8,7 +8,7 @@ parseFrom: string defaultScheme: defaultScheme
 		ifTrue: [
 			self fragment: (self decodePercent: (string copyFrom: fragmentIndex + 1 to: end)).
 			end := fragmentIndex - 1 ].
-	((index := (string copyFrom: 1 to: end) indexOf: $?) > 0)
+	((index := (string indexOf: $?)) between: 1 and: end)
 		ifTrue: [
 			self query: (self parseQueryFrom: (ReadStream on: string from: index + 1 to: end)).
 			end := index - 1 ].
