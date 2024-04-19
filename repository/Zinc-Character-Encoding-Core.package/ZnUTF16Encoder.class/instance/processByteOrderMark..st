@@ -1,8 +1,8 @@
 private
 processByteOrderMark: word
-	^ (word = 16rFEFF or: [ word = 16rFFFE ])
+	^ (word = self byteOrderMark or: [ word = self byteOrderMarkLE ])
 		ifTrue: [
-			word = 16rFFFE
+			word = self byteOrderMarkLE 
 				ifTrue: [ self swapEndianness ].
 			true ]
 		ifFalse: [ false ]

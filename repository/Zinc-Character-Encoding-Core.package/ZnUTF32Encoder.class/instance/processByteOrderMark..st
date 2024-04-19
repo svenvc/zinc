@@ -1,8 +1,8 @@
 private
 processByteOrderMark: codePoint
-	^ (codePoint = 16rFEFF or: [ codePoint = 16rFFFE0000 ])
+	^ (codePoint = self byteOrderMark or: [ codePoint = self byteOrderMarkLE ])
 		ifTrue: [
-			codePoint = 16rFFFE0000
+			codePoint = self byteOrderMarkLE 
 				ifTrue: [ self swapEndianness ].
 			true ]
 		ifFalse: [ false ]

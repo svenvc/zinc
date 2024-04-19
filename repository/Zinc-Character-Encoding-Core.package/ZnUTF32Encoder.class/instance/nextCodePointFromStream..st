@@ -4,7 +4,7 @@ nextCodePointFromStream: stream
 
 	| codePoint |
 	codePoint := self readCodePointFrom: stream.
-	(self processByteOrderMark: codePoint)
+	((self processByteOrderMark: codePoint) and: [ self ignoreByteOrderMark ])
 		ifTrue: [ codePoint := self readCodePointFrom: stream ].
 	((self isSurrogateCodePoint: codePoint) or: [ codePoint > self maximumUTFCode ])
 		ifTrue: [ ^ self errorOutsideRange ].

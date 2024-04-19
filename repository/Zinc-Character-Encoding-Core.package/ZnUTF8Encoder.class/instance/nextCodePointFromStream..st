@@ -22,7 +22,7 @@ nextCodePointFromStream: stream
 					ifFalse: [ ^ self errorIllegalContinuationByte ] ].
 			code < 2048 ifTrue: [ ^ self errorOverlong ].
 			(self isSurrogateCodePoint: code) ifTrue: [ ^ self errorOutsideRange ].
-			code = 65279 "Unicode Byte Order Mark" ifTrue: [
+			(code = self byteOrderMark and: [ self ignoreByteOrderMark ]) ifTrue: [
 				stream atEnd ifTrue: [ ^ self errorIncomplete ].
 				^ self nextCodePointFromStream: stream ].
 			^ code ].
