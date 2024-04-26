@@ -1,6 +1,8 @@
 private - protocol
 executeWithRetriesRemaining: retryCount
-	^ [ self executeWithRedirectsRemaining: self maxNumberOfRedirects ]
+	^ [ self 
+			executeWithRedirectsRemaining: self maxNumberOfRedirects
+			trail: OrderedCollection new ]
 		on: self retryExceptionSet
 		do: [ :exception |
 			retryCount > 0

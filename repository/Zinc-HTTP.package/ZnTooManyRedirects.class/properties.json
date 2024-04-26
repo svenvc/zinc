@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "Error",
 	"category" : "Zinc-HTTP-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"trail"
+	],
 	"name" : "ZnTooManyRedirects",
 	"type" : "normal"
 }
