@@ -16,5 +16,5 @@ testRedirect
 			beOneShot;
 			maxNumberOfRedirects: 0;
 			get: target;
-			response ] on: ZnTooManyRedirects do: [ :exception | exception resume ].
+			response ] on: ZnTooManyRedirects do: [ :exception | exception resume: #doNotRetry ].
 	self assert: response isRedirect
