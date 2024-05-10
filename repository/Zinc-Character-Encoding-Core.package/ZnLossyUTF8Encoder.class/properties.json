@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "ZnUTF8Encoder",
+	"category" : "Zinc-Character-Encoding-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ZnLossyUTF8Encoder",
+	"type" : "normal"
+}
