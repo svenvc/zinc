@@ -4,7 +4,7 @@ nextCodePointFromStream: stream
 
 	| word leadSurrogate trailSurrogate code |
 	word := self read16BitWordFromStream: stream.
-	(self processByteOrderMark: word)
+	((self processByteOrderMark: word) and: [ self ignoreByteOrderMark ])
 		ifTrue: [ word := self read16BitWordFromStream: stream ].
 	^ (word < 16rD800 or: [ word > 16rDBFF ])
 		ifTrue: [
