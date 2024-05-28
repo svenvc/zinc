@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-Character-Encoding-Core'!
+self packageOrganizer ensurePackage: #'Zinc-Character-Encoding-Core' withTags: #()!
