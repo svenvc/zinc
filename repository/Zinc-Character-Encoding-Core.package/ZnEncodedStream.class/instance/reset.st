@@ -1,0 +1,4 @@
+initialization
+reset
+
+	^ stream reset
