@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-Character-Encoding-Core' withTags: #()!
+SystemOrganization addCategory: #'Zinc-Character-Encoding-Core'!
