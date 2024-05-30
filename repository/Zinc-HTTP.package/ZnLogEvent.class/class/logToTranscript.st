@@ -1,7 +1,7 @@
 convenience
 logToTranscript
 	self stopLoggingToTranscript.
-	^ self announcer
-		when: ZnLogEvent
+	^ self announcer 
+		when: ZnLogEvent 
 		do: [ :event | self crTrace: event ]
-		to: self
+		for: self

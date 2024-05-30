@@ -6,7 +6,7 @@ back
 		ifTrue: [
 			stream back ]
 		ifFalse: [ | targetPosition bufferPosition char |
-			position = 1 ifTrue: 
+			position = 1 ifTrue:
 				[ stream position = 0 ifTrue:
 					[ self error: 'Cannot move back from beginning' ]
 				ifFalse:
