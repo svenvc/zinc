@@ -5,4 +5,4 @@ readRequestTerminationExceptionSet
 
 	^ ZnUtils
 		exceptionSet:
-			#(#ConnectionClosed #ConnectionTimedOut #PrimitiveFailed)
+			#(#ConnectionClosed #ConnectionTimedOut #SocketError #PrimitiveFailed)
