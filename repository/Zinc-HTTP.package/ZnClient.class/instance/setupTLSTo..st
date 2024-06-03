@@ -14,7 +14,7 @@ setupTLSTo: url
 	connection sslSession certificateName: self certificate.
 
 	[ connection sslSession serverName: url host ]
-		on: PrimitiveFailed
+		on: (ZnUtils exceptionSet: #( #SocketError #PrimitiveFailed ))
 		do: [ :error | "log it?" ].
 
 	connection connect
