@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Zinc-HTTP-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"proxyBlock",
+		"server"
+	],
+	"name" : "ZnProxyServerDelegate",
+	"type" : "normal"
+}
