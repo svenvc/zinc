@@ -12,10 +12,11 @@ readInto: collection startingAt: offset count: requestedCount
 			| newOffset |
 			newOffset := offset + countRead.
 			(self shouldBufferReadOfCount: countYetToRead)
-				ifTrue: [ self nextBuffer.
+				ifTrue: [
+					self nextBuffer.
 					limit > 0
-						ifTrue:
-							[ countRead := countRead + (self readInto: collection startingAt: newOffset count: countYetToRead) ] ]
-				ifFalse:
-					[ countRead := countRead + (stream readInto: collection startingAt: newOffset count: countYetToRead) ] ].
+						ifTrue: [ countRead := countRead + (self readInto: collection startingAt: newOffset count: countYetToRead) ] ]
+				ifFalse: [
+					self discardBuffer.
+					countRead := countRead + (stream readInto: collection startingAt: newOffset count: countYetToRead) ] ].
 	^ countRead
