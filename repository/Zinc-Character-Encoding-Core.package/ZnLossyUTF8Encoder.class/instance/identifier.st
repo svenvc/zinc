@@ -1,3 +1,3 @@
 accessing
 identifier
-	^ #utf8lossy
+	^ 'utf8lossy'

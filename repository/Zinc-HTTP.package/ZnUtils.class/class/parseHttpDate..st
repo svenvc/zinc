@@ -7,7 +7,7 @@ parseHttpDate: string
 	| tokens day month year hour minute second months map yearToken |
 	tokens := (string findTokens: #( $ $- $: $, )) allButFirst.
 	tokens last = 'GMT' ifTrue: [ tokens := tokens allButLast ].
-	months := #(jan feb mar apr may jun jul aug sep oct nov dec).
+	months := #('jan' 'feb' 'mar' 'apr' 'may' 'jun' 'jul' 'aug' 'sep' 'oct' 'nov' 'dec').
 	(Integer readFrom: tokens first ifFail: [ 0 ]) isZero
 		ifTrue: [ map := #(2 1 6 3 4 5) ]
 		ifFalse: [ map := #(1 2 3 4 5 6) ].

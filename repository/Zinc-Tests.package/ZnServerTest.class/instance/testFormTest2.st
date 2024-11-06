@@ -8,7 +8,7 @@ testFormTest2
 			addPathSegment: 'form-test-2'.
 		inputs do: [ :each  |
 			client
-				formAt: #input put: each;
+				formAt: 'input' put: each;
 				post.
 			self assert: client isSuccess.
 			self assert: (client contents includesSubstring: each) ] ]

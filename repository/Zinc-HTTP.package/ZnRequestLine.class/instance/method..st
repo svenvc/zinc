@@ -1,5 +1,6 @@
 accessing
-method: string
+method: aSymbol
+
 	method := ZnConstants knownHTTPMethods
-		detect: [ :each | each = string ]
-		ifNone: [ (ZnUnknownHttpMethod method: string) signal ]
+		detect: [ :each | each = aSymbol ]
+		ifNone: [ (ZnUnknownHttpMethod method: aSymbol) signal ]

@@ -3,6 +3,6 @@ readFrom: stream
 	| line lineStream |
 	line := (ZnLineReader on: stream) nextLine.
 	lineStream := line readStream.
-	self method: (lineStream upTo: Character space).
+	self method: (lineStream upTo: Character space) asSymbol.
 	self uri: (lineStream upTo: Character space).
 	self version: (lineStream upToEnd)

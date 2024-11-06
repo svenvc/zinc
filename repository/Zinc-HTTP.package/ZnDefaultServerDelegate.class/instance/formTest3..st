@@ -4,7 +4,7 @@ formTest3: request
 	contents := filename := contentType := ''.
 	(request hasEntity and: [ request contentType matches: ZnMimeType multiPartFormData ])
 		ifTrue: [
-			(request entity partNamed: #file ifNone: [ nil ])
+			(request entity partNamed: 'file' ifNone: [ nil ])
 				ifNotNil: [ :part |
 					filename := part fileName.
 					contents := part contents.

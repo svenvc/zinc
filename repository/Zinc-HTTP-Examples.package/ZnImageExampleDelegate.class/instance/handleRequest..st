@@ -2,7 +2,7 @@ public
 handleRequest: request
 	"Dispatch between GET and POST on /image"
 
-	request uri path = #image
+	request uri path = 'image'
 		ifTrue: [
 			request method = #GET
 				ifTrue: [

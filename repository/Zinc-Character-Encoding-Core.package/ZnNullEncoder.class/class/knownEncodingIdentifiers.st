@@ -1,3 +1,3 @@
 accessing
 knownEncodingIdentifiers
-	^ #( null )
+	^ #( 'null' )

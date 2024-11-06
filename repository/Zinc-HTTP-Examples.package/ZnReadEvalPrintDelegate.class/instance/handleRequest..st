@@ -1,6 +1,7 @@
 public
 handleRequest: request
-	request uri firstPathSegment = #repl
+
+	request uri firstPathSegment = 'repl'
 		ifTrue: [
 			request method = #GET
 				ifTrue: [

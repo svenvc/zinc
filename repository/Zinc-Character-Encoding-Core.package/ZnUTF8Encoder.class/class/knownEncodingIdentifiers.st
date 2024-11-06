@@ -1,3 +1,3 @@
 accessing
 knownEncodingIdentifiers
-	^ #( utf8 )
+	^ #( 'utf8' )

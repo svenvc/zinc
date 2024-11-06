@@ -3,7 +3,7 @@ testUpdate
 	"To update an existing object you PUT a new JSON map representation to an existing uri"
 	
 	| data objectUri |
-	data := Dictionary with: #x -> 'foo' with: #y -> 'bar'.
+	data := Dictionary with: 'x' -> 'foo' with: 'y' -> 'bar'.
 	client
 		addPathSegment: 'objects';
 		contents: data;
@@ -11,7 +11,7 @@ testUpdate
 	self assert: client isCreated.
 	objectUri := client response location.
 	client resetEntity.
-	data at: #z put: 100.
+	data at: 'z' put: 100.
 	client
 		url: objectUri; 
 		contents: data;
@@ -22,5 +22,5 @@ testUpdate
 	self assert: client isSuccess.
 	data keysAndValuesDo: [ :key :value |
 		(client contents at: key) = value ].
-	self assert: (client contents at: #'object-uri') equals: objectUri.
-	self assert: (client contents at: #z) equals: 100
+	self assert: (client contents at: 'object-uri') equals: objectUri.
+	self assert: (client contents at: 'z') equals: 100

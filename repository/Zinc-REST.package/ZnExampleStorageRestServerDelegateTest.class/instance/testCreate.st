@@ -5,7 +5,7 @@ testCreate
 	returned as a JSON string and as the Location header"
 	
 	| data objectUri |
-	data := Dictionary with: #x -> 'foo' with: #y -> 'bar'.
+	data := Dictionary with: 'x' -> 'foo' with: 'y' -> 'bar'.
 	client
 		addPathSegment: 'objects';
 		contents: data;
@@ -25,4 +25,4 @@ testCreate
 	self assert: client isSuccess.
 	data keysAndValuesDo: [ :key :value |
 		(client contents at: key) = value ].
-	self assert: (client contents at: #'object-uri') equals: objectUri 
+	self assert: (client contents at: 'object-uri') equals: objectUri 
