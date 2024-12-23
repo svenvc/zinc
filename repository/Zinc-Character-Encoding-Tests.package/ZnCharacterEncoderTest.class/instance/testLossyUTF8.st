@@ -16,3 +16,6 @@ testLossyUTF8
 	self 
 		assert: (encoder decodeBytesSingleReplacement: #[16r41 16rA1 16rA2 16rA3 16r42])
 		equals: ({ $A. replacement . $B } as: String).
+	self
+		assert: (encoder encodeString: ({ $A . 16rFFFD asCharacter . $B } as: String))
+		equals: ({ $A . replacement . $B } as: String) utf8Encoded

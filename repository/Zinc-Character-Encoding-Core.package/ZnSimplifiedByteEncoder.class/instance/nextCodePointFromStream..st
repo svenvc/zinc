@@ -10,5 +10,5 @@ nextCodePointFromStream: stream
 				ifNotNil: [ :unicode | unicode asInteger ]
 				ifNil: [
 					strict
-						ifTrue: [ self errorOutsideRange ]
+						ifTrue: [ ^ self errorOutsideRange: byteValue from:stream ]
 						ifFalse: [ byteValue ] ] ]

@@ -1,3 +1,3 @@
 error handling
-errorIncomplete
+errorOverlong: codePoint from: stream
 	^ self replacementCodePoint

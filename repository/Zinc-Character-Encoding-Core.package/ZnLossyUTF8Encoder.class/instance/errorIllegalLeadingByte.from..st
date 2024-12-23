@@ -1,3 +1,3 @@
 error handling
-errorOverlong
+errorIllegalLeadingByte: byte from: stream
 	^ self replacementCodePoint

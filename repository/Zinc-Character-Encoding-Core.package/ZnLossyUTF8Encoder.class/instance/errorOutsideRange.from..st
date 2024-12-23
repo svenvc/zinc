@@ -1,3 +1,3 @@
 error handling
-errorOutsideRange
+errorOutsideRange: codePoint from: stream
 	^ self replacementCodePoint

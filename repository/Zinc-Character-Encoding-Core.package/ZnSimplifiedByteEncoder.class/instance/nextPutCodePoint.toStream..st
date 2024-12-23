@@ -8,5 +8,5 @@ nextPutCodePoint: codePoint toStream: stream
 			| byte |
 			byte := unicodeToByte at: codePoint ifAbsent: [ nil ].
 			(byte isNil and: [ strict or: [ codePoint > 255 ] ])
-				ifTrue: [ self errorOutsideRange ].
+				ifTrue: [ ^ self errorOutsideRange: codePoint to: stream ].
 			stream nextPut: (byte ifNil: [ codePoint ]) ]

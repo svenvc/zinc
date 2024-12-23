@@ -3,7 +3,8 @@ nextPutCodePoint: codePoint toStream: stream
 	"Write the encoding for integer code point to stream"
 
 	| leadSurrogate trailSurrogate shifted |
-	(self isSurrogateCodePoint: codePoint) ifTrue: [ self errorOutsideRange ].
+	(self isSurrogateCodePoint: codePoint) 
+		ifTrue: [ ^ self errorOutsideRange: codePoint to: stream ].
 	codePoint <= 65535
 		ifTrue: [
 			^ self write16BitWord: codePoint toStream: stream ].
@@ -15,4 +16,4 @@ nextPutCodePoint: codePoint toStream: stream
 			self write16BitWord: leadSurrogate toStream: stream.
 			self write16BitWord: trailSurrogate toStream: stream ]
 		ifFalse: [
-			self errorOutsideRange ]
+			^ self errorOutsideRange: codePoint to: stream ]

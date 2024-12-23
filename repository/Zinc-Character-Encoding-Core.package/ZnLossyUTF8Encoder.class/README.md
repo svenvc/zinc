@@ -12,4 +12,6 @@ In contrast to my superclass I can read any random byte sequence, decoding both 
  My convenience method #decodeBytesSingleReplacement: shows how to decode bytes so that 
  only a single replacement character stands for any amount of illegal encoding between legal encodings.
  
+ When I encounter an illegal code point while writing, I output the encoding for the replacement character.
+ 
 Part of Zinc HTTP Components.

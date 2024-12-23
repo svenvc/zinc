@@ -4,4 +4,4 @@ encodedByteCountForCodePoint: codePoint
 
 	codePoint <= 65535 ifTrue: [ ^ 2 ].
 	codePoint <= self maximumUTFCode ifTrue: [ ^ 4 ].
-	self errorOutsideRange
+	^ self errorOutsideRangeByteCount: codePoint

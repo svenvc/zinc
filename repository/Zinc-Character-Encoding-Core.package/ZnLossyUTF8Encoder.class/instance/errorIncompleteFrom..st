@@ -1,3 +1,3 @@
 error handling
-errorIllegalContinuationByte
+errorIncompleteFrom: stream
 	^ self replacementCodePoint
