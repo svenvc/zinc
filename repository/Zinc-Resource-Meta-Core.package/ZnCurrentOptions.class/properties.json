@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "SvenVanCaekenberghe 1/13/2019 19:34",
 	"super" : "DynamicVariable",
-	"category" : "Zinc-HTTP-Variables",
+	"category" : "Zinc-Resource-Meta-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Zinc-HTTP-Support",
+	"category" : "Zinc-Resource-Meta-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
