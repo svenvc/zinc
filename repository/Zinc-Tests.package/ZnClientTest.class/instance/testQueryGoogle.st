@@ -2,6 +2,9 @@ testing
 testQueryGoogle
 	| client |
 	
+	"Finally give up as all search engines sadly refuse API style calls like this one after a while, especially on CI servers"
+	self skip. 
+	
 	(client := ZnClient new)
 		http;
 		host: 'www.google.com';
