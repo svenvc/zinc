@@ -17,4 +17,11 @@ setupTLSTo: url
 		on: (ZnUtils exceptionSet: #( #SocketError #PrimitiveFailed ))
 		do: [ :error | "log it?" ].
 
-	connection connect
+	connection connect.
+	
+	((ZnCurrentOptions at: #verifyCertificates) 
+			and: [ connection sslSession certificateVerificationState ~= 0 ])
+		ifTrue: [ 
+			ZnCertificateVerificationFailed new 
+				verificationState: connection sslSession certificateVerificationState;
+				signal ]
