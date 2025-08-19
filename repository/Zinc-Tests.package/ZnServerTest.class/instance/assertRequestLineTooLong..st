@@ -3,7 +3,7 @@ assertRequestLineTooLong: serverUrl
 	| url response |
 	url := serverUrl
 		addPathSegment: #echo;
-		addPathSegment: (String new: ZnConstants maximumLineLength withAll: $X);
+		addPathSegment: (String new: (ZnCurrentOptions at: #maximumLineLength) withAll: $X);
 		yourself.
 	response := ZnEasy get: url.
 	self deny: response isSuccess.

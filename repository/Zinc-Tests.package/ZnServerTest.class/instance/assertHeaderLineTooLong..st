@@ -4,7 +4,7 @@ assertHeaderLineTooLong: serverUrl
 	client := ZnClient new
 		url: serverUrl;
 		addPathSegment: #echo;
-		headerAt: 'X-Test' put: (String new: ZnConstants maximumLineLength withAll: $X);
+		headerAt: 'X-Test' put: (String new: (ZnCurrentOptions at: #maximumLineLength) withAll: $X);
 		yourself.
 	response := client
 		get;

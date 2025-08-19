@@ -1,5 +1,5 @@
 class initialization
 initialize
-	"Changed at 2024-01-17"
+	"Changed at 2025-08-19"
 
 	self resetGlobalDefault

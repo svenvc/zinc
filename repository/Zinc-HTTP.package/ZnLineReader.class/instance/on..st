@@ -3,5 +3,5 @@ on: readStream
 	stream := readStream.
 	buffer := String new: 64.
 	self
-		limit: ZnConstants maximumLineLength;
+		limit: (ZnCurrentOptions at: #maximumLineLength);
 		reset
