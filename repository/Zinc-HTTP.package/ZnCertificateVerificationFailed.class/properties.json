@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Error",
+	"category" : "Zinc-HTTP-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"verificationState"
+	],
+	"name" : "ZnCertificateVerificationFailed",
+	"type" : "normal"
+}
