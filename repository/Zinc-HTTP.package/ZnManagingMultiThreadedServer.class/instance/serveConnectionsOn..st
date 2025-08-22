@@ -7,8 +7,8 @@ serveConnectionsOn: listeningSocket
 	| stream socket |
 	socket := listeningSocket waitForAcceptFor: self acceptWaitTimeout.
 	socket ifNil: [ ^ self noteAcceptWaitTimedOut ].
-	stream := [ self withDynamicVariablesDo: [ self socketStreamOn: socket ] ]
-						on: ZnTooManyConcurrentConnections do: [ ^ self ].
+	stream := [ self socketStreamOn: socket ]
+					on: ZnTooManyConcurrentConnections do: [ ^ self ].
 	[ [ [ self executeRequestResponseLoopOn: stream ]
 		ensure: [ self logConnectionClosed: stream. self closeSocketStream: stream ] ]
 			ifCurtailed: [ socket destroy ] ]
