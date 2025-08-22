@@ -5,7 +5,7 @@ serveConnectionsOn: listeningSocket
 	Overwritten to handle logic related to concurrent connections."
 
 	| stream socket |
-	socket := listeningSocket waitForAcceptFor: self acceptWaitTimeout.
+	socket := self acceptOn: listeningSocket.
 	socket ifNil: [ ^ self noteAcceptWaitTimedOut ].
 	stream := [ self socketStreamOn: socket ]
 					on: ZnTooManyConcurrentConnections do: [ ^ self ].
