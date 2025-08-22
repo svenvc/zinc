@@ -1,10 +1,10 @@
 private
 closeConnections
-	self connections isEmpty ifTrue: [ ^ self ].
+	self hasOpenConnections ifFalse: [ ^ self ].
 	self lock critical: [
 		self connections do: [ :each |
 			self logConnectionClosed: each.
 			[ each close ]
 				on: Exception
-				do: [ ] ].
+				do: [ #ignore ] ].
 		self connections removeAll ]
