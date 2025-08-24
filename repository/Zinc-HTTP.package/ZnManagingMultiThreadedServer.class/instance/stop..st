@@ -1,4 +1,4 @@
 public
 stop: unregister
-	super stop: unregister.
+	self stopServer: unregister.
 	self closeConnections
