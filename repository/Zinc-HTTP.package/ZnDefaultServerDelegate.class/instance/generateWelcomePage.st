@@ -1,13 +1,11 @@
 private
 generateWelcomePage
-	^ ZnHtmlOutputStream streamContents: [ :html |
-		html html5; tag: #html do: [
-			html tag: #head do: [
-				html tag: #title with: 'Zinc HTTP Components'.
-				html tag: #style attributes: #(type 'text/css') with: self welcomePageCss ].
-		html tag: #body do: [
-			html tag: #div id: #logo with: #Zn.
-			html tag: #h1 with: 'Zinc HTTP Components'.
-			html tag: #p with: self welcomePageGreeting.
-			self welcomePageLinksOn: html.
-			html tag: #h4 with: 'May the Source be with you!' ] ] ]
+	"Generate the HTML for the welcome page"
+
+	^ self brandedPage: 'Zinc HTTP Components' do: [ :html |
+		html tag: #p do: [ 
+			($\ split: self welcomePageGreeting)
+				do: [ :each | html str: each ] 
+				separatedBy: [ html tag: #br ] ].
+		self welcomePageLinksOn: html.
+		html tag: #h4 with: 'May the Source be with you!' ]
