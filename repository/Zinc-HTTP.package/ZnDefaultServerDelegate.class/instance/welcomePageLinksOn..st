@@ -13,5 +13,5 @@ welcomePageLinksOn: html
 				tag: #a attributes: #(href 'https://zn.stfx.eu') with: 'https://zn.stfx.eu' ].
 		html tag: #li do: [
 			html
-				str: 'Locally available pages'; space;
-				tag: #a attributes: #(href '/help') with: '/help' ] ]
+				str: 'Available routes'; space;
+				tag: #a attributes: #(href '/routes') with: '/routes' ] ]

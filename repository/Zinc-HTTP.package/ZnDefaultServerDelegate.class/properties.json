@@ -8,7 +8,8 @@
 	"instvars" : [
 		"prefixMap",
 		"byteArray",
-		"server"
+		"server",
+		"extraWelcomeText"
 	],
 	"name" : "ZnDefaultServerDelegate",
 	"type" : "normal"

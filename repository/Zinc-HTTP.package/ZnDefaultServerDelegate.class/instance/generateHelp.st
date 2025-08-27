@@ -1,8 +1,8 @@
 private
 generateHelp
-	"Generate an HTML page with links to all pages I support"
+	"Generate an HTML page with links to all routes that I support"
 
-	^ self brandedPage: 'Available Pages' do: [ :html |
+	^ self brandedPage: 'Available Routes' do: [ :html |
 		html tag: #ul do: [
 			prefixMap keys sorted do: [ :each |
 				html tag: #li do: [

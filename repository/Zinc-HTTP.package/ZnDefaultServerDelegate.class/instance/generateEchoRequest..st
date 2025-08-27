@@ -10,7 +10,9 @@ generateEchoRequest: request
 		html tag: #h4 with: 'Headers'.
 		html tag: #ul do: [
 			request headersDo: [ :key :value |
-				html tag: #li with: ('{1}: {2}' format: { key . value }) ] ].
+				html tag: #li do: [
+					html tag: #span attributes: #(style 'color:grey') do: [ html str: key; str: ':' ].
+					html str: value ] ] ].
 
 		request hasEntity ifTrue: [
 			html tag: #h4 with: 'Body'.
