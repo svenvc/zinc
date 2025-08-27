@@ -1,8 +1,15 @@
 # Zinc HTTP Components
 
-
 Zinc HTTP Components is an open-source Smalltalk framework 
 to deal with the HTTP networking protocol.
+
+Based on core classes modelling all main HTTP concepts, 
+a full featured HTTP client and server are provided.
+
+Zinc is part of any [Pharo Smalltalk](https://www.pharo.org) version since 1.3.
+
+
+## CI Actions
 
 [![CI](https://github.com/svenvc/zinc/actions/workflows/CI.yml/badge.svg)](https://github.com/svenvc/zinc/actions/workflows/CI.yml)
 [![Pharo 7.0](https://img.shields.io/badge/Pharo-7.0-informational)](https://pharo.org)
@@ -13,11 +20,8 @@ to deal with the HTTP networking protocol.
 [![Pharo 12](https://img.shields.io/badge/Pharo-12-informational)](https://pharo.org)
 [![Pharo 13](https://img.shields.io/badge/Pharo-13-informational)](https://pharo.org)
 
-Based on core classes modelling all main HTTP concepts, a full featured HTTP client and server are provided.
-
 
 ## API
-
 
 Here are a couple of simple examples to give an impression of the API.
 You start a default (easy to reference) HTTP server with just one line of code.
@@ -26,7 +30,8 @@ You start a default (easy to reference) HTTP server with just one line of code.
 ZnServer startDefaultOn: 1701.
 ```
 
-Now you can browse locally to http://localhost:1701 - in particular have a look at the /help section and /echo - these are part of a set of demonstration handlers.
+Now you can browse locally to http://localhost:1701 - in particular 
+have a look at the `/routes` section and `/echo` - these are part of a set of demonstration handlers.
 
 Accessing the server that we just started from code is easy too.
 
@@ -38,9 +43,12 @@ ZnClient new
   post.
 ```
 
-This builds an HTTP POST to our server's /echo handler with a simple text as resource. The server will echo information about the request it received, including the text resource that you posted.
+This builds an HTTP POST to our server's `/echo` handler with a simple text as resource. 
+The server will echo information about the request it received, including the text resource that you posted.
 
-By default, the demonstration server has a couple of handlers, mostly for testing. You can add your own, to do additions (sum two numbers), for example.
+By default, the demonstration server has a couple of handlers, mostly for testing.
+You can add your own, to do additions (sum two numbers), for example.
+
 
 ```Smalltalk
 ZnServer default delegate 
@@ -51,7 +59,7 @@ ZnServer default delegate
     ZnResponse ok: (ZnEntity text: sum asString) ].
 ```
 
-This creates a new handler /adder that will take 2 query arguments, converts them to numbers and returns the result of adding them together.
+This creates a new handler `/adder` that will take 2 query arguments, converts them to numbers and returns the result of adding them together.
 
 Using the full client, we can test our new functionality.
 
@@ -64,7 +72,7 @@ ZnClient new
   get.
 ```
 
-This builds an appropriate request to our /adder and executes it.
+This builds an appropriate request to our `/adder` and executes it.
 By entering the proper URL directly, this becomes a one liner.
 
 ```Smalltalk
@@ -83,7 +91,7 @@ The code base has decent class and method comments, as well as unit tests and ex
 The best starter documentation can be found in the 
 [Pharo Enterprise](http://books.pharo.org/enterprise-pharo/) book.
 
-In particular, in the following chapters:
+In particular, in the following chapters (these no longer seem to exist):
 - [Client](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-HTTP-Client/Zinc-HTTP-Client.html)
 - [Server](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-HTTP-Server/Zinc-HTTP-Server.html)
 - [WebApp](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/WebApp/WebApp.html)
@@ -109,6 +117,26 @@ Metacello new
 ```
 
 
-*Sven Van Caekenberghe* 
+## Ethymology
+
+Any project needs a name. We also needed a namespace prefix for our Smalltalk classes. 
+We choose `Zinc` and `Zn` or `zn` respectively.
+
+```
+zinc |zi ng k|
+noun
+the chemical element of atomic number 30, a silvery-white metal 
+that is a constituent of brass and is used for coating (galvanizing) 
+iron and steel to protect against corrosion. (Symbol: Zn)
+ORIGIN mid 17th cent.: from German Zink, of unknown origin.
+```
+
+Here is the Wikipedia entry: [Zinc](http://en.wikipedia.org/wiki/Zinc).
+Apart from the fact that this is a nice name, don't go searching for a hidden meaning:
+there is none.
+
+
+*Sven Van Caekenberghe*
+
 
 [MIT Licensed](https://github.com/svenvc/zinc/blob/master/license.txt)
