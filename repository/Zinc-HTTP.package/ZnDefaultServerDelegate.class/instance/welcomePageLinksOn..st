@@ -13,5 +13,12 @@ welcomePageLinksOn: html
 				tag: #a attributes: #(href 'https://zn.stfx.eu') with: 'https://zn.stfx.eu' ].
 		html tag: #li do: [
 			html
-				str: 'Available routes'; space;
+				str: 'Try'; space;
+				tag: #a attributes: #(href '/status') with: '/status'; space;
+				tag: #a attributes: #(href '/echo-html') with: '/echo-html'; space;
+				tag: #a attributes: #(href '/session') with: '/session'; space;
+				tag: #a attributes: #(href '/unicode') with: '/unicode' ].
+		html tag: #li do: [
+			html
+				str: 'All available routes'; space;
 				tag: #a attributes: #(href '/routes') with: '/routes' ] ]

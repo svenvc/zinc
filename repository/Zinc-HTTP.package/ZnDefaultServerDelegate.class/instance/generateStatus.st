@@ -8,8 +8,4 @@ generateStatus
 		html tag: #p with: self uptime.
 		html tag: #p with: self memoryStatistics.
 		html tag: #h1 with: 'Processes'.
-		html tag: #ol do: [
-			self processes do: [ :each |
-				html tag: #li do: [
-					html
-						str: each name; space; nextPut: $[; print: each priority; nextPut: $] ] ] ] ]
+		self processesOn: html ]
