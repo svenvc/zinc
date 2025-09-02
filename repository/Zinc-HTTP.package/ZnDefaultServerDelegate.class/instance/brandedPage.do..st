@@ -9,6 +9,6 @@ brandedPage: title do: block
 					html tag: #title with: title.
 					self inlineCssOn: html ];
 				tag: #body do: [
-					html tag: #div id: #logo with: #Zn.
+					html tag: #a attributes: #(id logo href '/') with: #Zn.
 					html tag: #h1 with: title.
 					block cull: html ] ] ]
