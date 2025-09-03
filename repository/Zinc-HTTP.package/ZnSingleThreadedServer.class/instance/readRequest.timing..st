@@ -5,11 +5,9 @@ readRequest: stream timing: timing
 
 	| request initialMilliseconds |
 	initialMilliseconds := Time millisecondClockValue.
-	request := self withMaximumNumberOfDictionaryEntriesDo: [
-			self withDefaultCharacterEncoderDo: [
-				self reader value: stream ] ].
+	request := self withDefaultCharacterEncoderDo: [ self reader value: stream ].
 	request headers
 		at: ZnConstants remoteAddressHeader
 		put: (ZnNetworkingUtils ipAddressToString: stream socket remoteAddress).
-	timing requestDuration:  (self logRequestRead: request started: initialMilliseconds).
+	timing requestDuration: (self logRequestRead: request started: initialMilliseconds).
 	^ request
