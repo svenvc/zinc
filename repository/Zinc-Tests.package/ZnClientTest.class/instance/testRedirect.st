@@ -1,8 +1,8 @@
-testing
+testing - external
 testRedirect
 	| client response target |
 	target := 'http://zn.stfx.eu'.
-	client := ZnClient new url: target.
+	client := self httpClient url: target.
 	client get.
 	self assert: client isSuccess.
 	client
@@ -12,7 +12,7 @@ testRedirect
 	self should: [ client get ] raise: ZnTooManyRedirects.
 	client close.
 	response := [
-		ZnClient new
+		self httpClient
 			beOneShot;
 			maxNumberOfRedirects: 0;
 			get: target;

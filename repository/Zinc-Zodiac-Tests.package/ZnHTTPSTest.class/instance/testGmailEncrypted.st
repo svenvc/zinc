@@ -4,7 +4,7 @@ testGmailEncrypted
 	| client |
 	self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
-	(client := ZnClient new)
+	(client := self httpClient)
 		maxNumberOfRedirects: 10;
 		get: 'https://www.gmail.com'.
 	self assert: client isSuccess.

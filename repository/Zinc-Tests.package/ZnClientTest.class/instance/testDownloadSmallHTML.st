@@ -1,9 +1,9 @@
-testing
+testing - external
 testDownloadSmallHTML
 	| client |
 	ZnFileSystemUtils deleteIfExists: self smallHtmlUrl pathSegments last.
 	"First download to a directory"
-	(client := ZnClient new)
+	(client := self httpClient)
 		url: self smallHtmlUrl;
 		downloadTo: ZnFileSystemUtils defaultDirectoryPath.
 	self assert: client isSuccess.

@@ -1,7 +1,7 @@
-testing
+testing - external
 testGetSmallHTMLOneShot
 	| client |
-	(client := ZnClient new)
+	(client := self httpClient)
 		beOneShot;
 		url: self smallHtmlUrl;
 		get.

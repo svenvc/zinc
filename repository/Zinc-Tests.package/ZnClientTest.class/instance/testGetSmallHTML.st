@@ -1,7 +1,7 @@
-testing
+testing - external
 testGetSmallHTML
 	| client |
-	(client := ZnClient new)
+	(client := self httpClient)
 		url: self smallHtmlUrl;
 		get.
 	self assert: client isSuccess.

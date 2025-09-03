@@ -4,7 +4,7 @@ testGoogleEncrypted
 	self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
 	
-	client := ZnClient new.
+	client := self httpClient.
 	client
 		retryDelay: 1;
 		numberOfRetries: 3;

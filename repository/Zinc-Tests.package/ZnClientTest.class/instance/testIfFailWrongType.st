@@ -1,7 +1,7 @@
-testing
+testing - external
 testIfFailWrongType
 	| client |
-	(client := ZnClient new)
+	(client := self httpClient)
 		beOneShot;
 		accept: ZnMimeType imagePng;
 		enforceAcceptContentType: true;

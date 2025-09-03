@@ -1,7 +1,7 @@
-testing
+testing - external
 testGetSmallHTMLUrlConstruction
 	| client |
-	(client := ZnClient new)
+	(client := self httpClient)
 		http;
 		host: self smallHtmlUrl host;
 		path: self smallHtmlUrl pathPrintString;

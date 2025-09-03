@@ -1,3 +1,3 @@
 accessing
 defaultTimeLimit
-	^ 60 seconds
+	^ ((self timeout + self retryDelay) * self numberOfRetries) seconds

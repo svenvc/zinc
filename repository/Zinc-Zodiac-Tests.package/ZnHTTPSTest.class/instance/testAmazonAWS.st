@@ -3,7 +3,7 @@ testAmazonAWS
 	| client |
 	self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
-	(client := ZnClient new) 
+	(client := self httpClient) 
 		get: 'https://aws.amazon.com/'.
 	self assert: client isSuccess.
 	self assert: (client contents includesSubstring: 'Amazon').

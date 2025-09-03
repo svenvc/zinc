@@ -1,7 +1,7 @@
-testing
+testing - external
 testIfModifiedSinceNotModified
 	| client  response |
-	(client := ZnClient new) host: 'stfx.eu'.
+	(client := self httpClient) host: 'stfx.eu'.
 	[
 		response := client
 			url: '/small.html';

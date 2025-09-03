@@ -1,7 +1,7 @@
-testing
+testing - external
 testGetGeoIP
 	| result client |
-	result := (client := ZnClient new)
+	result := (client := self httpClient)
 		systemPolicy;
 		url: self t3EasyGeoIPUrl;
 		queryAt: 'address' put: '81.83.7.35';
@@ -14,5 +14,5 @@ testGetGeoIP
 		ifFail: [ ^ self fail ];
 		get.
 	self assert: result isDictionary.
-	self assert: (result at: #country) equals: 'BE'.
+	self assert: (result at: 'country') equals: 'BE'.
 	client close

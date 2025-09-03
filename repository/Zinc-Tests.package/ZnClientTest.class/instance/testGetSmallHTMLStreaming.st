@@ -1,7 +1,7 @@
-testing
+testing - external
 testGetSmallHTMLStreaming
 	| client result contents |
-	result := (client := ZnClient new)
+	result := (client := self httpClient)
 		url: self smallHtmlUrl;
 		streaming: true;
 		get.

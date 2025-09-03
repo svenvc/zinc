@@ -1,4 +1,4 @@
-testing
+testing - external
 testProgress
 	"[ :bar |
 		bar title: 'Downloading Sources...'.
@@ -14,7 +14,7 @@ testProgress
 
 	self
 		should: [
-			ZnClient new
+			self httpClient
 				beOneShot;
 				signalProgress: true;
 				get: self smallHtmlUrl ]

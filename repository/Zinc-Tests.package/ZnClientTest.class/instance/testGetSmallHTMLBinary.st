@@ -1,7 +1,7 @@
-testing
+testing - external
 testGetSmallHTMLBinary
 	| client html bytes |
-	(client := ZnClient new)
+	(client := self httpClient)
 		url: self smallHtmlUrl;
 		get.
 	self assert: client isSuccess.

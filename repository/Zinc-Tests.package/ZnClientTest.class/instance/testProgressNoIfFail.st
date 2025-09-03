@@ -1,8 +1,8 @@
-testing
+testing - external
 testProgressNoIfFail
 	self
 		should: [
-			ZnClient new
+			self httpClient
 				beOneShot;
 				signalProgress: true;
 				ifFail: [ self fail ];

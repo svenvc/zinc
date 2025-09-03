@@ -6,7 +6,7 @@ testTransfers
 	
 	(Integer primesUpTo: 100) do: [ :each | | size client |
 		size := 1024 * each + each.
-		(client := ZnClient new)
+		(client := self httpClient)
 			https;
 			host: 's3-eu-west-1.amazonaws.com';
 			addPath: 'public-stfx-eu';

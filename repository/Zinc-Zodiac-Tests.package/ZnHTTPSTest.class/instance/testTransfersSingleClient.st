@@ -3,7 +3,7 @@ testTransfersSingleClient
 	| client |
 	self ensureSocketStreamFactory.
 	self isNativeSSLPluginPresent ifFalse: [ ^ self ].
-	(client := ZnClient new)
+	(client := self httpClient)
 		https;
 		host: 's3-eu-west-1.amazonaws.com'.
 	(Integer primesUpTo: 100) do: [ :each | | size |
