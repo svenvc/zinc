@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Zinc-Resource-Meta-Tests'!
+self packageOrganizer ensurePackage: #'Zinc-Resource-Meta-Tests' withTags: #()!
