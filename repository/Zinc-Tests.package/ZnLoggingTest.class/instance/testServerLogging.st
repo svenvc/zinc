@@ -16,7 +16,7 @@ testServerLogging
 					client get: (server localUrl addPathSegment: #error).
 					self deny: client isSuccess.
 					server delegate
-						map: #redirect
+						map: 'redirect'
 						to: [ :request | ZnResponse redirect: #welcome ].
 					client get: (server localUrl addPathSegment: #redirect).
 					self assert: client isSuccess.
