@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"prefixMap",
-		"byteArray",
 		"server",
 		"extraWelcomeText"
 	],
