@@ -5,6 +5,7 @@ start
 
 	self stop: false.
 	self class default = self ifTrue: [ self register ].
+	self startDelegate.
 	process := [ [ self listenLoop ] repeat ]
 		forkAt: Processor highIOPriority
 		named: self serverProcessName.

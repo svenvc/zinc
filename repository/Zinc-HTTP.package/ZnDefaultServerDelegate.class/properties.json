@@ -8,7 +8,8 @@
 	"instvars" : [
 		"prefixMap",
 		"server",
-		"extraWelcomeText"
+		"extraWelcomeText",
+		"bootTime"
 	],
 	"name" : "ZnDefaultServerDelegate",
 	"type" : "normal"
