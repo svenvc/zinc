@@ -6,6 +6,6 @@ execute
 	^ self withDynamicVariablesDo: [
 		| result |
 		self prepareRequest.
-		result := self executeWithTimeout.
+		result := self executeHandlingErrors.
 		self prepareNextRequest.
 		result ]
