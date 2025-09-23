@@ -89,7 +89,9 @@ Some of it is somewhat outdated. We list the most recent first.
 The code base has decent class and method comments, as well as unit tests and examples.
 
 The best starter documentation can be found in the 
-[Pharo Enterprise](http://books.pharo.org/enterprise-pharo/) book.
+[Pharo Enterprise](https://books.pharo.org/enterprise-pharo/) book.
+
+My [Blog](https://blog.stfx.eu) contains several entries about Zinc.
 
 In particular, in the following chapters (these no longer seem to exist):
 - [Client](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-HTTP-Client/Zinc-HTTP-Client.html)
@@ -99,7 +101,7 @@ In particular, in the following chapters (these no longer seem to exist):
 - [Encoding](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/Zinc-Encoding-Meta/Zinc-Encoding-Meta.html)
 - [WebSockets](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/WebSockets/WebSockets.html)
 
-A live website can be found at [http://zn.stfx.eu](http://zn.stfx.eu). You can run part of this website locally.
+A live website can be found at [https://zn.stfx.eu](https://zn.stfx.eu). You can run part of this website locally.
 
 The original [Zinc HTTP Components](doc/zinc-http-components-paper.md) paper.
 
@@ -109,10 +111,24 @@ There is a separate [GemStone README](README-gemstone.md).
 
 ## Loading
 
-```Smalltalk
+```smalltalk
 Metacello new
   repository: 'github://svenvc/zinc/repository';
   baseline: 'ZincHTTPComponents';
+  load.
+```
+
+When loading code in an image that already contains Zinc or Zodiac,
+it could be helpful to configure a bunch of options to make sure
+the latest code gets loaded from this repository.
+
+```smalltalk
+Metacello new
+  repository: 'github://svenvc/zinc/repository';
+  baseline: 'ZincHTTPComponents';
+  onConflict: [ :e | e useIncoming ];
+  onUpgrade: [ :e | e useIncoming ];
+  onWarning: [ :e | e load ];
   load.
 ```
 
@@ -131,7 +147,7 @@ iron and steel to protect against corrosion. (Symbol: Zn)
 ORIGIN mid 17th cent.: from German Zink, of unknown origin.
 ```
 
-Here is the Wikipedia entry: [Zinc](http://en.wikipedia.org/wiki/Zinc).
+Here is the Wikipedia entry: [Zinc](https://en.wikipedia.org/wiki/Zinc).
 Apart from the fact that this is a nice name, don't go searching for a hidden meaning:
 there is none.
 
