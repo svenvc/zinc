@@ -9,7 +9,4 @@ decode: stringStream to: byteStream
 				ifFalse: [
 					char == $%
 						ifTrue: [ byteStream nextPut: (self readHexFrom: stringStream) ]
-						ifFalse: [
-							char charCode < 128
-								ifTrue: [ byteStream nextPut: char charCode ]
-								ifFalse: [ self errorAsciiCharacterExpected ] ] ] ]
+						ifFalse: [ self decodeChar: char toByteStream: byteStream ] ] ]
