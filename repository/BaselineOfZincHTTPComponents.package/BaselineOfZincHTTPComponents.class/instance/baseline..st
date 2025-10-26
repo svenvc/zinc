@@ -2,20 +2,21 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #common do: [
+		spec baseline: 'Zodiac' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
 		spec baseline: 'NeoJSON' with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ].
 		spec baseline: 'XMLParser' with: [ spec repository: 'github://pharo-contributions/XML-XMLParser:master/src' ].
-		spec package: 'Zodiac-Core' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
-		spec package: 'Zodiac-Tests' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
 		spec
 			package: 'Zinc-Character-Encoding-Core';
 			package: 'Zinc-Character-Encoding-Tests' with: [ spec requires: 'Zinc-Character-Encoding-Core' ];
 			package: 'Zinc-Resource-Meta-Core' with: [ spec requires: 'Zinc-Character-Encoding-Core' ];
 			package: 'Zinc-Resource-Meta-Tests' with: [ spec requires: 'Zinc-Resource-Meta-Core' ];
 			package: 'Zinc-HTTP' with: [ 
-				spec postLoadDoIt: #recompileZnLogEventHierarchy; requires: #('Zinc-Character-Encoding-Core' 'Zinc-Resource-Meta-Core') ];
+				spec 
+					postLoadDoIt: #recompileZnLogEventHierarchy; 
+					requires: #('Zinc-Character-Encoding-Core' 'Zinc-Resource-Meta-Core') ];
 			package: 'Zinc-HTTP-Examples' with: [ spec requires: #('Zinc-HTTP') ];
 			package: 'Zinc-Tests' with: [ spec requires: 'Zinc-HTTP' ];
-			package: 'Zinc-Zodiac-Core' with: [ spec requires: #('Zinc-HTTP' 'Zodiac-Core') ];
+			package: 'Zinc-Zodiac-Core' with: [ spec requires: #('Zinc-HTTP' 'Zodiac') ];
 			package: 'Zinc-Zodiac-Tests' with: [ spec requires:  #('Zinc-Zodiac-Core') ].
 		spec
 			package: 'Zinc-AWS' with: [ spec requires: #('Zinc-HTTP' 'XMLParser') ];
@@ -35,10 +36,9 @@ baseline: spec
 		spec
 			group: 'default' with: #('Core' 'Tests');
 			group: 'Core' with: #('Zinc-HTTP' 'Zinc-HTTP-Examples' 'Zinc-Zodiac-Core');
-			group: 'Tests' with: #('Zinc-Tests' 'Zinc-Character-Encoding-Tests' 'Zinc-Resource-Meta-Tests' 'Zodiac-Tests' 'Zinc-Zodiac-Tests');
+			group: 'Tests' with: #('Zinc-Tests' 'Zinc-Character-Encoding-Tests' 'Zinc-Resource-Meta-Tests' 'Zinc-Zodiac-Tests');
 			group: 'Character-Encoding' with: #('Zinc-Character-Encoding-Core' 'Zinc-Character-Encoding-Tests');
 			group: 'Resource-Meta' with: #('Zinc-Resource-Meta-Core' 'Zinc-Resource-Meta-Tests');
-			group: 'Zodiac' with: #('Zodiac-Core' 'Zodiac-Tests');
 			group: 'AWS' with: #('Zinc-AWS');
 			group: 'WebDAV' with: #('Zinc-WebDAV');
 			group: 'WebSocket' with: #('Zinc-WebSocket-Core' 'Zinc-WebSocket-Tests');

@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfZincHTTPComponents!
+self packageOrganizer ensurePackage: #BaselineOfZincHTTPComponents withTags: #()!
