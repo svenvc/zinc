@@ -1,8 +1,15 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
+      #baseline : 'Zodiac',
+      #repository: 'github://svenvc/zodiac/repository',
+      #ignoreImage : true,
+      #platforms : [ #pharo ]
+    },
+    SCIMetacelloLoadSpec {
       #baseline : 'ZincHTTPComponents',
       #directory: 'repository',
+      #ignoreImage : true,
       #platforms : [ #pharo ]
     }
   ]
