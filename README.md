@@ -129,6 +129,22 @@ Metacello new
   onConflict: [ :e | e useIncoming ];
   onUpgrade: [ :e | e useIncoming ];
   onWarning: [ :e | e load ];
+  ignoreImage;
+  load.
+```
+
+Also, Zodiac is loaded via its own baseline, but if that baseline is already present,
+as is the case with recent Pharo versions, you might need to force the loading of a 
+more recent BaselineOfZodiac yourself.
+
+```smalltalk
+Metacello new
+  repository: 'github://svenvc/zodiac/repository';
+  baseline: 'Zodiac';
+  onConflict: [ :e | e useIncoming ];
+  onUpgrade: [ :e | e useIncoming ];
+  onWarning: [ :e | e load ];
+  ignoreImage;
   load.
 ```
 
