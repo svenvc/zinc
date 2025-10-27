@@ -2,23 +2,20 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #common do: [
-		spec baseline: 'Zodiac' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ].
-		spec baseline: 'NeoJSON' with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ].
-		spec baseline: 'XMLParser' with: [ spec repository: 'github://pharo-contributions/XML-XMLParser:master/src' ].
+		spec 
+			baseline: 'Zodiac' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ];
+			baseline: 'NeoJSON' with: [ spec repository: 'github://svenvc/NeoJSON:master/repository' ];
+			baseline: 'XMLParser' with: [ spec repository: 'github://pharo-contributions/XML-XMLParser:master/src' ].
 		spec
 			package: 'Zinc-Character-Encoding-Core';
 			package: 'Zinc-Character-Encoding-Tests' with: [ spec requires: 'Zinc-Character-Encoding-Core' ];
 			package: 'Zinc-Resource-Meta-Core' with: [ spec requires: 'Zinc-Character-Encoding-Core' ];
 			package: 'Zinc-Resource-Meta-Tests' with: [ spec requires: 'Zinc-Resource-Meta-Core' ];
-			package: 'Zinc-HTTP' with: [ 
-				spec 
-					postLoadDoIt: #recompileZnLogEventHierarchy; 
-					requires: #('Zinc-Character-Encoding-Core' 'Zinc-Resource-Meta-Core') ];
+			package: 'Zinc-HTTP' with: [ spec postLoadDoIt: #recompileZnLogEventHierarchy; requires: #('Zinc-Character-Encoding-Core' 'Zinc-Resource-Meta-Core') ];
 			package: 'Zinc-HTTP-Examples' with: [ spec requires: #('Zinc-HTTP') ];
 			package: 'Zinc-Tests' with: [ spec requires: 'Zinc-HTTP' ];
 			package: 'Zinc-Zodiac-Core' with: [ spec requires: #('Zinc-HTTP' 'Zodiac') ];
-			package: 'Zinc-Zodiac-Tests' with: [ spec requires:  #('Zinc-Zodiac-Core') ].
-		spec
+			package: 'Zinc-Zodiac-Tests' with: [ spec requires:  #('Zinc-Zodiac-Core') ];
 			package: 'Zinc-AWS' with: [ spec requires: #('Zinc-HTTP' 'XMLParser') ];
 			package: 'Zinc-REST' with: [ spec requires: #('Zinc-HTTP' 'NeoJSON') ];
 			package: 'Zinc-WebSocket-Core' with: [ spec requires: 'Zinc-HTTP' ];
