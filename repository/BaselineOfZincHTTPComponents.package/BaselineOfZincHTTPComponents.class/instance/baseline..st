@@ -1,6 +1,7 @@
 baselines
 baseline: spec
 	<baseline>
+	self unloadBaselineOfZodiac.
 	spec for: #common do: [
 		spec 
 			baseline: 'Zodiac' with: [ spec repository: 'github://svenvc/zodiac:master/repository' ];
