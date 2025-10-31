@@ -16,4 +16,6 @@ setUp
 	ZnFileSystemUtils
 		writeStreamFor: 'index.html'
 		do: [ :stream |
-			stream nextPutAll: self indexHtml ]
+			stream nextPutAll: self indexHtml ].
+	'web/index.html' asFileReference ensureCreateFile 
+		writeStreamDo: [ :stream | stream nextPutAll: self indexHtml ].

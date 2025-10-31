@@ -7,7 +7,7 @@ testBasicGetLarge
 			addPath: #('local-files' 'large.html');
 			get.
 		self assert: client isSuccess.
-		self assert: client response contentType = ZnMimeType textHtml.
+		self assert: client response contentType equals: ZnMimeType textHtml.
 		self assert: client contents equals: self largeHtml.
 		self
 			assert: (ZnUtils parseHttpDate: (client response headers at: 'Modification-Date'))

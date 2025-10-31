@@ -5,4 +5,5 @@ tearDown
 		deleteIfExists: 'large.html';
 		deleteIfExists: 'wide.html';
 		deleteIfExists: 'index.html'.
+	'web/index.html' asFileReference ensureDeleteAll parent ensureDelete.
 	super tearDown
