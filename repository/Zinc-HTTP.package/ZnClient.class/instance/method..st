@@ -7,4 +7,5 @@ method: httpMethod
 
 	(self autoResetEntityMethods includes: httpMethod)
 		ifTrue: [ self resetEntity ].
-	request method: httpMethod
+	self withDynamicVariablesDo: [ 
+		request method: httpMethod ]

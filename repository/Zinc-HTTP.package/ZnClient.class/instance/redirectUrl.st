@@ -1,4 +1,4 @@
-private protocol
+private - protocol
 redirectUrl
 	"We support both absolute and relative locations (http://en.wikipedia.org/wiki/HTTP_location)"
 

@@ -1,6 +1,6 @@
 accessing
 method: aSymbol
 
-	method := ZnConstants knownHTTPMethods
+	method := (ZnCurrentOptions at: #allowedMethods)
 		detect: [ :each | each = aSymbol ]
 		ifNone: [ (ZnUnknownHttpMethod method: aSymbol) signal ]
