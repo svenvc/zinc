@@ -1,5 +1,8 @@
 private
 serverClock
-	| now |
+	| now date time |
 	now := DateAndTime now asUTC.
-	^ 'Server clock: {1}T{2}Z' format: { now asDate yyyymmdd . now asTime print24 }
+	date := now asDate yyyymmdd.
+	time := String streamContents: [ :out | 
+		now asTime print24: true showSeconds: true on: out ].
+	^ '{1}T{2}Z' format: { date . time }

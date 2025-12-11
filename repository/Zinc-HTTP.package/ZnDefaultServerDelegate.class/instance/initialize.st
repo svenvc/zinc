@@ -12,6 +12,7 @@ initialize
 		map: 'random' to: #random:;
 		map: 'bytes' to: #bytes:;
 		map: 'status' to: #status:;
+		map: 'up' to: #up:;
 		map: 'unicode' to: #unicode:;
 		map: 'session' to: #sessionRequest:;
 		map: 'error' to: #errorResponse:;
