@@ -6,6 +6,7 @@ initialize
 		map: 'help' to: #help:;
 		map: 'echo' to: #echoRequest:;
 		map: 'echo-html' to: #echoRequestHtml:;
+		map: 'mirror' to: #mirrorRequest:;
 		map: 'small' to: #small:;
 		map: 'dw-bench' to: #dwbench:;
 		map: 'favicon.ico' to: #favicon:;
@@ -13,6 +14,7 @@ initialize
 		map: 'bytes' to: #bytes:;
 		map: 'status' to: #status:;
 		map: 'up' to: #up:;
+		map: 'status-code' to: #statusCode:;
 		map: 'unicode' to: #unicode:;
 		map: 'session' to: #sessionRequest:;
 		map: 'error' to: #errorResponse:;
