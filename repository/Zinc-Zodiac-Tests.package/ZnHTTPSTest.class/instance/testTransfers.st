@@ -10,7 +10,7 @@ testTransfers
 			https;
 			host: 's3-eu-west-1.amazonaws.com';
 			addPath: 'public-stfx-eu';
-			addPath: ('test-', size asString, '.txt');
+			addPath: ('test-{1}.txt' format: { size });
 			get;
 			close.
 		self assert: client isSuccess.
