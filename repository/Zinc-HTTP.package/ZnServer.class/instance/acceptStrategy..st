@@ -8,6 +8,6 @@ acceptStrategy: strategy
 	once it does, incoming connections are no longer accepted and the server waits for existing connections to close.
 	In this case, 503 Service Unavailable responses are normally not sent."
 
-	self assert: (#(limited unlimted) includes: strategy).
+	self assert: (#(limited unlimited) includes: strategy).
 
 	self localOptions at: #acceptStrategy put: strategy
