@@ -1,19 +1,24 @@
 I am ZnReadEvalPrintDelegate, I export a REPL Web Service.
 You can use this service to work with a headless image.
 
+````
 	ZnReadEvalPrintDelegate startInServerOn: 1701.
 	
 	ZnClient new
 		url: 'http://localhost:1701/repl';
 		contents: '42 factorial';
 		post.
+```
 	
 Web Service API:
 
-	POST /repl <some Smalltalk code>
+	- GET /repl
+	- POST /repl <some Smalltalk code>
+	- GET /display
 	 
 Here is an example terminal session:
 
+````
 $ curl http://localhost:1701/repl
 # Pharo Smalltalk REPL. POST expressions to evaluate
 # Here is one way (type ctrl-d to end input)
@@ -53,5 +58,8 @@ This service gives you absolute control over and access to everything in your im
 For example, the following will kill your image:
 
 $ curl -X POST -H'Content-Type:text/plain' -d 'Smalltalk quitPrimitive' http://localhost:1701/repl
+````
+
+To get a screen shot of the current world as a PNG you can do a GET /display (try it in your browser).
 
 Part of Zinc HTTP Components. 
