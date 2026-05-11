@@ -6,6 +6,7 @@ initialize
 		map: 'help' to: #help:;
 		map: 'echo' to: #echoRequest:;
 		map: 'echo-html' to: #echoRequestHtml:;
+		map: 'echo-raw' to: #echoRequestRaw:;
 		map: 'mirror' to: #mirrorRequest:;
 		map: 'small' to: #small:;
 		map: 'dw-bench' to: #dwbench:;
