@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "2026-05-11T14:29:05.464092+02:00",
+	"super" : "Object",
+	"category" : "Zinc-Character-Encoding-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"chunks",
+		"totalSize",
+		"binary"
+	],
+	"name" : "ZnCollectingWriteStream",
+	"type" : "normal"
+}

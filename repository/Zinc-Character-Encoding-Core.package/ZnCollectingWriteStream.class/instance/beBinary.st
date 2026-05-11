@@ -1,0 +1,3 @@
+initialization
+beBinary
+	binary := true
