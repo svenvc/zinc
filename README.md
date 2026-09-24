@@ -12,13 +12,12 @@ Zinc is part of any [Pharo Smalltalk](https://www.pharo.org) version since 1.3.
 ## CI Actions
 
 [![CI](https://github.com/svenvc/zinc/actions/workflows/CI.yml/badge.svg)](https://github.com/svenvc/zinc/actions/workflows/CI.yml)
-[![Pharo 7.0](https://img.shields.io/badge/Pharo-7.0-informational)](https://pharo.org)
-[![Pharo 8.0](https://img.shields.io/badge/Pharo-8.0-informational)](https://pharo.org)
-[![Pharo 9.0](https://img.shields.io/badge/Pharo-9.0-informational)](https://pharo.org)
+[![Pharo 9](https://img.shields.io/badge/Pharo-9.0-informational)](https://pharo.org)
 [![Pharo 10](https://img.shields.io/badge/Pharo-10-informational)](https://pharo.org)
 [![Pharo 11](https://img.shields.io/badge/Pharo-11-informational)](https://pharo.org)
 [![Pharo 12](https://img.shields.io/badge/Pharo-12-informational)](https://pharo.org)
 [![Pharo 13](https://img.shields.io/badge/Pharo-13-informational)](https://pharo.org)
+[![Pharo 14](https://img.shields.io/badge/Pharo-14-informational)](https://pharo.org)
 
 
 ## API
