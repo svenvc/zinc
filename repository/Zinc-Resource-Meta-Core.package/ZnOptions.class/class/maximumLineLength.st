@@ -6,4 +6,4 @@ maximumLineLength
 
 	<znOption>
 
-	^ 4 * 1024
+	^ 32 * 1024
