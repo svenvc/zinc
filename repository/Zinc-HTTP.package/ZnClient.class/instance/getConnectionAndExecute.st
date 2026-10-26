@@ -3,7 +3,7 @@ getConnectionAndExecute
 	self canReuseConnection
 		ifTrue: [
 			[ ^ self executeRequestResponse; cleanupConnection ]
-				on: Exception
+				on: Error
 				do: [ :exception | self logIgnoringExceptionOnReusedConnection: exception; close ] ].
 	self newConnectionTo: request url.
 	[ self executeRequestResponse ]
