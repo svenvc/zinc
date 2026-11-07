@@ -4,6 +4,10 @@ decodeBytesIntoWideString: bytes
 
 	| byteStream |
 	byteStream := bytes readStream.
-	^ WideString streamContents: [ :stream |
+	^ WideString streamContents: [ :stream | | codePoint |
 		[ byteStream atEnd ] whileFalse: [
-			stream nextPut: (self nextFromStream: byteStream) ] ]
+			codePoint := self nextCodePointFromStream: byteStream.
+			stream nextPut: (Character value: codePoint) ].
+		"An ignored mark is only answered at the end of the input, see #isIgnoredCodePoint:"
+		(codePoint notNil and: [ self isIgnoredCodePoint: codePoint ])
+			ifTrue: [ stream skip: -1 ] ]
