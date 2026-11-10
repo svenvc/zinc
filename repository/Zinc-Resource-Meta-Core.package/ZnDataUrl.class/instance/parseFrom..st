@@ -20,4 +20,5 @@ parseFrom: string
 		ifFalse: [
 			ZnPercentEncoder new 
 				characterEncoder: mediaType charSet asZnCharacterEncoder;
+				urlAsIri: (ZnCurrentOptions at: #urlAsIri);
 				decode:	data ]

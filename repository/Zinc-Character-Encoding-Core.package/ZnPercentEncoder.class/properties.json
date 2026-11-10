@@ -8,7 +8,8 @@
 	"instvars" : [
 		"characterEncoder",
 		"safeSet",
-		"decodePlusAsSpace"
+		"decodePlusAsSpace",
+		"urlAsIri"
 	],
 	"name" : "ZnPercentEncoder",
 	"type" : "normal"
