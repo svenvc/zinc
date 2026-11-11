@@ -4,6 +4,10 @@ decodeAsCodePoints: bytes
 
 	| byteStream |
 	byteStream := bytes readStream.
-	^ Array streamContents: [ :stream |
+	^ Array streamContents: [ :stream | | codePoint |
 		[ byteStream atEnd ] whileFalse: [
-			stream nextPut: (self nextCodePointFromStream: byteStream) ] ]
+			codePoint := self nextCodePointFromStream: byteStream.
+			stream nextPut: codePoint ].
+		"An ignored mark is only answered at the end of the input, see #isIgnoredCodePoint:"
+		(codePoint notNil and: [ self isIgnoredCodePoint: codePoint ])
+			ifTrue: [ stream skip: -1 ] ]

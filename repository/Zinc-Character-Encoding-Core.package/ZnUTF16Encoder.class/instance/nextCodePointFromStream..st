@@ -4,8 +4,10 @@ nextCodePointFromStream: stream
 
 	| word leadSurrogate trailSurrogate code |
 	word := self read16BitWordFromStream: stream.
-	((self processByteOrderMark: word) and: [ self ignoreByteOrderMark ])
-		ifTrue: [ word := self read16BitWordFromStream: stream ].
+	"An ignored mark at the end of the input is answered, see #isIgnoredCodePoint:"
+	[ (self processByteOrderMark: word) and: [ self ignoreByteOrderMark ] ] whileTrue: [
+		stream atEnd ifTrue: [ ^ self byteOrderMark ].
+		word := self read16BitWordFromStream: stream ].
 	^ (word < 16rD800 or: [ word > 16rDBFF ])
 		ifTrue: [
 			word ]
