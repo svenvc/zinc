@@ -11,4 +11,5 @@ printOn: stream
 			stream nextPut: $,.
 			ZnPercentEncoder new 
 				characterEncoder: mediaType charSet asZnCharacterEncoder;
+				urlAsIri: (ZnCurrentOptions at: #urlAsIri);
 				encode: data readStream to: stream ]
