@@ -5,7 +5,7 @@ signalProgress: amount total: total
 			total
 				ifNil: [
 					HTTPProgress new
-						signal: ('Transferred {1} bytes ...' format: { amount humanReadableSIByteSize }) ]
+						signal: ('Transferred {1} bytes ...' format: { self humanReadableSize: amount }) ]
 				ifNotNil: [
 					HTTPProgress new
 						total: total;
