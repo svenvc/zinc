@@ -7,5 +7,8 @@ testUTF8Overlong
 		should: [ ZnUTF8Encoder new decodeBytes: #[ 16rF0 16r82 16r82 16rAC ] ]
 		raise: ZnInvalidUTF8.
 	self
+		should: [ ZnUTF8Encoder new decodeBytes: #[ 16rF0 16r8F 16rBF 16rBF ] ]
+		raise: ZnInvalidUTF8.
+	self
 		should: [ ZnUTF8Encoder new decodeBytes: #(193 129 193 130 193 131 ) ]
 		raise: ZnInvalidUTF8
