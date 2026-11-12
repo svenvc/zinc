@@ -34,7 +34,7 @@ nextCodePointFromStream: stream
 							((next := stream next ifNil: [ ^ self errorIncompleteFrom: stream ]) bitAnd: 2r11000000) == 2r10000000
 								ifTrue: [ code := (code bitShift: 6) + (next bitAnd: 2r00111111) ]
 								ifFalse: [ ^ self errorIllegalContinuationByte: next from: stream ] ].
-						code < 65535 ifTrue: [ ^ self errorOverlong: code from: stream ].
+						code < 65536 ifTrue: [ ^ self errorOverlong: code from: stream ].
 						code > self maximumUTFCode ifTrue: [ ^ self errorOutsideRange: code from: stream ].
 						^ code ].
 				^ self errorIllegalLeadingByte: byte from: stream ] ] repeat
