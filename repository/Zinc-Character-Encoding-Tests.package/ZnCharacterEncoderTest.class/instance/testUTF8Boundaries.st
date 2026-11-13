@@ -14,4 +14,5 @@ testUTF8Boundaries
 			string := String with: each asCharacter.
 			encoded := utf8Encoder encodeString: string.
 			self assert: (utf8Encoder decodeBytes: encoded) equals: string.
-			self assert: encoded size equals: byteCount ] ]
+			self assert: encoded size equals: byteCount.
+			self assert: (utf8Encoder encodedByteCountFor: each asCharacter) equals: byteCount ] ]
